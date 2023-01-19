@@ -2,10 +2,19 @@
   link: /pricing/
   new_window: false
   highlight: false
-#- name: Blog
-#  link: /blog/
-#  new_window: false
-#  highlight: false
+- name: Terms
+  link: /terms/
+  new_window: true
+  highlight: false
+- name: Privacy
+  link: /privacy/
+  new_window: true
+  highlight: false
+- name: Support
+  link: /support/
+  new_window: true
+  highlight: false
+
 #- name: About
 #  link: /about/
 #  new_window: false
