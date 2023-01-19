@@ -2,23 +2,23 @@
   link: /pricing/
   new_window: false
   highlight: false
-- name: Blog
-  link: /blog/
-  new_window: false
-  highlight: false
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: Contact
+#- name: Blog
+#  link: /blog/
+#  new_window: false
+#  highlight: false
+#- name: About
+#  link: /about/
+#  new_window: false
+#  highlight: false
+- name: Support
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
-  new_window: true
-  highlight: true
+#- name: Login
+#  link: /
+#  new_window: true
+#  highlight: false
+#- name: Sign Up
+#  link: /
+#  new_window: true
+#  highlight: true

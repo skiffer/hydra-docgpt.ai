@@ -1,25 +1,28 @@
 # ----
 # Site
 
-title: Hydra Template
-url: "https://proud-alligator.cloudvent.net"
-baseurl:
+title: AI Doc GPT - AI Content Generator for Founders and Content Marketers
+url: "https://docgpt.ai"
+baseurl: https://docgpt.ai
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product marketing template for Jekyll.
+description: AI Doc GPT is the perfect AI Writer for founders and marketers. Add an AI Content Assistant to your team today - Create high quality content with docgpt.ai and GPT-3
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name: Yaroslav Mykhailov
+  email: yaroslav91@gmail.com
+  twitter: ski0xFF
 social:
-  name: Hydra Template
+  name: Yaroslav Mykhailov
   links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
+    - https://twitter.com/ski0xFF
 
+twitter:
+  username: ski0xFF
+  card: summary
 # -----
 # Build
 
