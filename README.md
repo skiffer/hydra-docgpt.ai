@@ -1,3 +1,6 @@
+# CI/CD
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0ca654b1-5d78-4351-8cec-385f71e9af11/deploy-status)](https://app.netlify.com/sites/golden-toffee-52c7c4/deploys)
+
 # Hydra
 
 Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
