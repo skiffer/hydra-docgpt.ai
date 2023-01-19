@@ -8,15 +8,15 @@
   - name: Contact
     link: /contact/
 - links:
-#  - name: Login
-#    link: /
-#    new_window: true
-#  - name: Sign Up
-#    link: /
-#    new_window: true
-#  - name: Docs
-#    link: /
-#    new_window: true
+  - name: Support
+    link: /support
+    new_window: true
+  - name: Terms of Service
+    link: /terms
+    new_window: true
+  - name: Privacy Policy
+    link: /privacy
+    new_window: true
 #  - name: Status
 #    link: /
 #    new_window: true
@@ -29,6 +29,10 @@
     link: https://twitter.com/ski0xFF/
     social_icon: Twitter
     new_window: true
+  - name: Instagram
+    link: https://www.instagram.com/m.yaro001/
+    new_window: true
+    social_icon: Instagram
 #  - name: YouTube
 #    link: https://youtube.com/cloudcannon/
 #    social_icon: YouTube
