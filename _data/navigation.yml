@@ -1,6 +1,6 @@
 - name: Pricing
-  link: /pricing/
-  new_window: false
+  link: https://yaromykhailov.gumroad.com/l/docgpt-ai
+  new_window: true
   highlight: false
 - name: Terms
   link: /terms/
