@@ -14,11 +14,11 @@ When you use "DocGPT - AI Writer for Docs" for the first time, you’ll be asked
 
 <img style="width:50%" src="{{ site.baseurl }}/images/wants_to_access.png" alt="DocGPT - AI Writer for Docs" class="screenshot editable" width="350" title="DocGPT - AI Writer for Docs"/>
 
-| Required permission | Explanation of usage |
-| --- | --- |
-| Connect to an external service | We need to request data at external service for getting list of transactions to provide it on your spreadsheet. |
-| See, edit, create, and delete all your Google Sheets spreadsheets | To edit a spreadsheet where add-on is installed. Change the data, add the data, delete the data. |
-| Display and tun third-party web content in promts and sidebards inside Google applications | To show "DocGPT - AI Writer for Docs" menu bar UI. |
+| Required permission | Explanation of usage                                                                              |
+| --- |---------------------------------------------------------------------------------------------------|
+| Connect to an external service | We need to request data at external service, specifically for getting a response from AI service. |
+| See, edit, create, and delete all your Google Docs documents | To edit a Google Docs where add-on is installed. Change the data, add the data, delete the data.  |
+| To show DocGPT - AI Writer for Docs menu bar UI. | To show DocGPT - AI Writer for Docs menu bar UI.|
 
 ### Why does "DocGPT - AI Writer for Docs" need those permissions?
 
