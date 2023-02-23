@@ -1,5 +1,13 @@
+- name: Home
+  link: /
+  new_window: false
+  highlight: false
 - name: Pricing
   link: https://yaromykhailov.gumroad.com/l/docgpt-ai
+  new_window: true
+  highlight: false
+- name: Blog
+  link: /blog/
   new_window: true
   highlight: false
 - name: Terms
@@ -27,7 +35,3 @@
 #  link: /
 #  new_window: true
 #  highlight: false
-#- name: Sign Up
-#  link: /
-#  new_window: true
-#  highlight: true
