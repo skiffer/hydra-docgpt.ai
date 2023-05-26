@@ -12,7 +12,7 @@ This Privacy Policy describes Our policies and procedures on the collection, use
 
 When you use "GPT for Gmail™ - AI Writer" for the first time, you’ll be asked to accept the minimum-required permissions:
 
-<img style="width:50%" src="{{ site.baseurl }}/images/want_access_2.png" alt="GPT for Gmail™ - AI Writer" class="screenshot editable" width="350" title="GPT for Gmail™ - AI Writer"/>
+<img style="width:50%" src="{{ site.baseurl }}/images/gmail_get_access.png" alt="GPT for Gmail™ - AI Writer" class="screenshot editable" width="350" title="GPT for Gmail™ - AI Writer"/>
 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
@@ -32,7 +32,7 @@ When you use "GPT for Gmail™ - AI Writer" for the first time, you’ll be aske
 
 Absolutely. If you need to review the permissions you granted to "GPT for Gmail™ - AI Writer", you can do so by going to Google Account -> Third-party apps with account access -> [Manage third-party access](https://myaccount.google.com/permissions?utm_source=google-account&utm_medium=web). There, you can change or revoke the permissions.
 
-<img style="width:50%" src="{{ site.baseurl }}/images/revoke_access.png" alt="GPT for Gmail™ - AI Writer - revoke access" class="screenshot editable" width="350" title="GPT for Gmail™ - AI Writer - revoke access"/>
+<img style="width:50%" src="{{ site.baseurl }}/images/gmail_revoke_access.png" alt="GPT for Gmail™ - AI Writer - revoke access" class="screenshot editable" width="350" title="GPT for Gmail™ - AI Writer - revoke access"/>
 
 ### Still have questions?
 
