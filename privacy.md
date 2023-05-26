@@ -14,17 +14,13 @@ When you use "DocGPT - AI Writer for Docs" for the first time, you’ll be asked
 
 <img style="width:50%" src="{{ site.baseurl }}/images/want_access_2.png" alt="DocGPT - AI Writer for Docs" class="screenshot editable" width="350" title="DocGPT - AI Writer for Docs"/>
 
-| Required permission                                                                        | Explanation of usage                                                                                 |
-|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
-| Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
-| View and manage spreadsheets that this application has been installed in                   | To read and write data in the current sheet of a Google Sheets document.                             |
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | View and manage spreadsheets that this application has been installed in                   | To read and write data in the current sheet of a Google Sheets document.                             |
+
 
 ### Why does "DocGPT - AI Writer for Docs" need those permissions?
 
