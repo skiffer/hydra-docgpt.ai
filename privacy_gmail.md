@@ -15,11 +15,11 @@ When you use "GPT for Gmail™ - AI Writer" for the first time, you’ll be aske
 <img style="width:50%" src="{{ site.baseurl }}/images/gmail_get_access.png" alt="GPT for Gmail™ - AI Writer" class="screenshot editable" width="350" title="GPT for Gmail™ - AI Writer"/>
 
 
-| Required permission                                                                        | Explanation of usage                                                                                 |
-|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
-| Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
-| View and manage spreadsheets that this application has been installed in                   | To read and write data in the current sheet of a Google Sheets document.                             |
+| Required permission                                             | Explanation of usage                                                                                                                                                                                |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Manage drafts and send emails when you interact with the add-on | The add-on allows you to work with drafts and add generated email message into your gmail drafts. It provides you with tools and features to compose emails without leaving the add-on environment. |
+| Run as a Gmail add-on                                           | It runs within the Gmail interface, enhancing the functionality and features available to the user.                                                                                                 |
+| Connect to an external service                                  | We need to request data at an external service, specifically for getting a response from AI service.                                                                                                |
 
 
 ### Why does "GPT for Gmail™ - AI Writer" need those permissions?
