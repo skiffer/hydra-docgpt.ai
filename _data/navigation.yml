@@ -16,6 +16,8 @@
   highlight: false
 - name: Privacy
   link: /privacy/
+- name: Privacy Gmail
+  link: /privacy_gmail/
   new_window: true
   highlight: false
 - name: Support
