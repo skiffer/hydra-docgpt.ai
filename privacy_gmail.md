@@ -21,6 +21,8 @@ When you use "GPT for Gmail™ - AI Writer" for the first time, you’ll be aske
 | Run as a Gmail add-on                                           | It runs within the Gmail interface, enhancing the functionality and features available to the user.                                                                                                 |
 | Connect to an external service                                  | We need to request data at an external service, specifically for getting a response from AI service.                                                                                                |
 
+Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part.
+The requests provided in text box for generating will be used for requesting data at openai.com.
 
 ### Why does "GPT for Gmail™ - AI Writer" need those permissions?
 
