@@ -22,6 +22,11 @@ $crisp.push(["do", "chat:open"])
 2. Open Google Docs
 3. Extensions -> DocGPT - AI Writer for Docs -> 🚀 Launch
 
+
+➡️ If you see only "Help" button then you use paid Workspace account
+1. You need use another email (without Workspace account)
+2. Or add the application to allowlist using admin account. Official instruction here: [https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU](https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU) 
+
 📧 Contact Email: <a href = "mailto: yaroslav91@gmail.com">yaroslav91@gmail.com</a>
 
 💬 Twitter: [Yaro](https://twitter.com/ski0xFF)
