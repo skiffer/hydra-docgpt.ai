@@ -23,9 +23,10 @@ $crisp.push(["do", "chat:open"])
 3. Extensions -> DocGPT - AI Writer for Docs -> 🚀 Launch
 
 
-➡️ If you see only "Help" button then you use paid Workspace account
-1. You need use another email (without Workspace account)
-2. Or add the application to allowlist using admin account. Official instruction here: [https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU](https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU) 
+➡️ If you see only "Help" button
+1. Try to refresh the page and wait for 5 seconds to load installed add-ons
+2. (probably you use paid Workspace account, with custom domain etc) You need use another email (without Workspace account)
+3. (probably you use paid Workspace account, with custom domain etc) Add the application to allowlist using admin account. Official instruction here: [https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU](https://support.google.com/a/answer/6089179?sjid=18341478720069833642-EU) 
 
 📧 Contact Email: <a href = "mailto: yaroslav91@gmail.com">yaroslav91@gmail.com</a>
 
