@@ -7,6 +7,7 @@ permalink: /privacy_gmail/
 Last updated: June 13, 2023
 
 **In Short**
+
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
 The only information we store from your Google account is your name, last name, profile picture, and e-mail.
