@@ -20,7 +20,7 @@ $crisp.push(["do", "chat:open"])
 ✅ Getting started
 1. Install the <a href="https://workspace.google.com/u/0/marketplace/app/docgpt_ai_writer_for_docs/466607203252">add-on</a>
 2. Open Google Docs
-3. Extensions -> DocGPT - AI Writer for Docs -> 🚀 Launch
+3. Click on: Extensions -> DocGPT - AI Writer for Docs -> 🚀 Launch
 
 
 ➡️ If you see only "Help" button

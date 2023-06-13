@@ -4,7 +4,16 @@ description:
 permalink: /privacy_gmail/
 ---
 
-Last updated: May 26, 2023
+Last updated: June 13, 2023
+
+**In Short**
+We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
+
+The only information we store from your Google account is your name, last name, profile picture, and e-mail.
+
+We do not share your data with any third party.
+
+The app’s use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://www.google.com/url?q=https://developers.google.com/terms/api-services-user-data-policy%23additional_requirements_for_specific_api_scopes&sa=D&source=editors&ust=1686655767175654&usg=AOvVaw3Ocx5766jCXztFd8UeYE3C), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
