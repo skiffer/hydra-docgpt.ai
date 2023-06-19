@@ -1,12 +1,28 @@
 ---
-title: Privacy Policy
+title: Google Add-ons Privacy Policy
 description: 
 permalink: /privacy_gmail/
 ---
 
-Last updated: June 13, 2023
+Last updated: June 19, 2023
 
-**In Short**
+
+**The personal information you disclose to us**
+
+In Short: We collect personal information that you provide to us.
+
+Since our Google add-ons only work with Google products, a Google account is required for authentication and login. Our Google add-ons collect your email address for the first authentication in the application. Authentication is performed by Google itself using the default authentication method. Our add-ons, without this authentication, will not work properly. Authentication can be revoked by the user at any time. In order to provide services to you, your email address must be used to send you communications, such as confirmation emails and support updates
+
+Your email address will be used to activate your license.
+
+**We do not share, track or sell your personal and business information to third parties.**
+
+**HOW DO WE KEEP YOUR INFORMATION SAFE?**
+
+In Short: We aim to protect your personal information through a system of organizational and technical security measures.
+
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. GPT for Gmail™ - AI Writer uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
@@ -14,7 +30,7 @@ The only information we store from your Google account is your name, last name, 
 
 We do not share your data with any third party.
 
-The "GPT for Gmail™ - AI Writer" use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://www.google.com/url?q=https://developers.google.com/terms/api-services-user-data-policy%23additional_requirements_for_specific_api_scopes&sa=D&source=editors&ust=1686655767175654&usg=AOvVaw3Ocx5766jCXztFd8UeYE3C), including the Limited Use requirements.
+The GPT for Gmail™ - AI Writer use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
