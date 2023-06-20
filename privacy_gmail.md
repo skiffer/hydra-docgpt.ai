@@ -1,5 +1,5 @@
 ---
-title: Google Add-ons Privacy Policy
+title: GPT for Gmail™ - AI Writer: Privacy Policy
 description: 
 permalink: /privacy_gmail/
 ---

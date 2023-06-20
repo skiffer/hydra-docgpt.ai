@@ -16,6 +16,8 @@
     new_window: true
   - name: Privacy Policy
     link: /privacy
+  - name: Privacy Policy for GPT for Gmail™ - AI Writer
+    link: /privacy_gmail/
     new_window: true
 #  - name: Status
 #    link: /
