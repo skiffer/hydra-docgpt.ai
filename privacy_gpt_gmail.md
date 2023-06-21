@@ -1,7 +1,7 @@
 ---
 title: GPT for Gmail™ - AI Writer: Privacy Policy
 description: 
-permalink: /privacy_gmail/
+permalink: /privacy_gpt_gmail/
 ---
 
 Last updated: June 19, 2023
