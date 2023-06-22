@@ -16,6 +16,9 @@
     new_window: true
   - name: Privacy Policy
     link: /privacy
+  - name: Refund Policy for DocGPT - AI Writer for Docs™
+    link: /refund_policy/
+    new_window: true
   - name: Privacy Policy for GPT for Gmail™ - AI Writer
     link: /privacy_gpt_gmail/
     new_window: true
