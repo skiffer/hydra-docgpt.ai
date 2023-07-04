@@ -21,7 +21,7 @@ For the purposes of these Terms and Conditions:
 
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where „control“ means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 - **Country** refers to: Ukraine
-- **Company** (referred to as either „the Company“, „We“, „Us“ or „Our“ in this Agreement) refers to *John McCain* 7, 01047 Kyiv, Ukraine.
+- **Company** (referred to as either „DocGPT.AI“, „We“, „Us“ or „Our“ in this Agreement) refers to *John McCain* 7, 01047 Kyiv, Ukraine.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Service** refers to the Website.
 - **Terms and Conditions** (also referred as „Terms“) mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the [Terms and Conditions Generator](https://www.termsfeed.com/terms-conditions-generator/).
