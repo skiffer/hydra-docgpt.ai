@@ -2,8 +2,12 @@
   link: /
   new_window: false
   highlight: false
-- name: Pricing
+- name: Pricing Docs
   link: /pricing/
+  new_window: true
+  highlight: false
+- name: Pricing Sheets
+  link: /pricing-sheets/
   new_window: true
   highlight: false
 - name: Blog
