@@ -217,9 +217,11 @@ description:
     const emailParam = getURLParameter('email');
 
     // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-    const getStartedLink = document.querySelector('.paddle_button[data-email=""]');
-    if (getStartedLink) {
-        getStartedLink.setAttribute('data-email', emailParam || '');
+    const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+    if (getStartedLinks) {
+        getStartedLinks.forEach(link => {
+            link.setAttribute('data-email', emailParam || '');
+        });
     }
 </script>
 
