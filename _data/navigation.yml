@@ -3,15 +3,15 @@
   new_window: false
   highlight: false
 - name: Pricing Docs
-  link: /pricing/
+  link: /docs-gpt-pricing/
   new_window: true
   highlight: false
 - name: Pricing Sheets
-  link: /pricing-sheets/
+  link: /sheets-gpt-pricing/
   new_window: true
   highlight: false
 - name: Pricing Gmail
-  link: /pricing-gmail/
+  link: /gmail-gpt-pricing/
   new_window: true
   highlight: false
 - name: Blog
