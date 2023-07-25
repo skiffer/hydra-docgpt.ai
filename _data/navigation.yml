@@ -10,6 +10,10 @@
   link: /pricing-sheets/
   new_window: true
   highlight: false
+- name: Pricing Gmail
+  link: /pricing-gmail/
+  new_window: true
+  highlight: false
 - name: Blog
   link: /blog/
   new_window: true
@@ -20,7 +24,7 @@
   highlight: false
 - name: Privacy
   link: /privacy/
-- name: Privacy Policy for GPT for Gmail™ - AI Writer
+- name: Privacy Policy for Gmail™ GPT
   link: /privacy_gpt_gmail/
   new_window: true
   highlight: false
