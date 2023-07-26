@@ -14,15 +14,15 @@
   link: /gmail-gpt-pricing/
   new_window: true
   highlight: false
-- name: Blog
-  link: /blog/
-  new_window: true
-  highlight: false
+#- name: Blog
+#  link: /blog/
+#  new_window: true
+#  highlight: false
 - name: Terms
   link: /terms/
   new_window: true
   highlight: false
-- name: Privacy
+- name: Privacy for Docs™ GPT
   link: /privacy/
 - name: Privacy Policy for Gmail™ GPT
   link: /privacy_gpt_gmail/

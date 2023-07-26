@@ -1,8 +1,8 @@
 - links:
   - name: Pricing
     link: /pricing/
-  - name: Blog
-    link: /blog/
+#  - name: Blog
+#    link: /blog/
 #  - name: About
 #    link: /about/
   - name: Contact
@@ -14,12 +14,12 @@
   - name: Terms of Service
     link: /terms
     new_window: true
-  - name: Privacy Policy
+  - name: Privacy Policy for DocGPT - AI Writer for Docs™
     link: /privacy
   - name: Refund Policy for DocGPT - AI Writer for Docs™
     link: /refund_policy/
     new_window: true
-  - name: Privacy Policy for GPT for Gmail™ - AI Writer
+  - name: Privacy Policy for Gmail™ GPT
     link: /privacy_gpt_gmail/
     new_window: true
 #  - name: Status
