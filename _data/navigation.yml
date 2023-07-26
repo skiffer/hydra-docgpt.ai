@@ -24,7 +24,7 @@
   highlight: false
 - name: Privacy for Docs™ GPT
   link: /privacy/
-- name: Privacy Policy for Gmail™ GPT
+- name: Privacy for Gmail™ GPT
   link: /privacy_gpt_gmail/
   new_window: true
   highlight: false
