@@ -1,12 +1,12 @@
 - links:
-  - name: Pricing
-    link: /pricing/
-#  - name: Blog
-#    link: /blog/
-#  - name: About
-#    link: /about/
-  - name: Contact
-    link: /contact/
+  - name: Pricing for DocGPT - AI Writer for Docs™
+    link: /docs-gpt-pricing/
+  - name: Pricing for DocGPT - AI Writer for Sheets™
+    link: /sheets-gpt-pricing/
+  - name: Pricing for Gmail™ GPT
+    link: /gmail-gpt-pricing/
+#  - name: Contact
+#    link: /contact/
 - links:
   - name: Support
     link: /support
@@ -34,10 +34,10 @@
     link: https://twitter.com/ski0xFF/
     social_icon: Twitter
     new_window: true
-  - name: Instagram
-    link: https://www.instagram.com/m.yaro001/
-    new_window: true
-    social_icon: Instagram
+#  - name: Instagram
+#    link: https://www.instagram.com/m.yaro001/
+#    new_window: true
+#    social_icon: Instagram
 #  - name: YouTube
 #    link: https://youtube.com/cloudcannon/
 #    social_icon: YouTube
