@@ -4,34 +4,34 @@
   highlight: false
 - name: Pricing Docs
   link: /docs-gpt-pricing/
-  new_window: true
+  new_window: false
   highlight: false
 - name: Pricing Sheets
   link: /sheets-gpt-pricing/
-  new_window: true
+  new_window: false
   highlight: false
 - name: Pricing Gmail
   link: /gmail-gpt-pricing/
-  new_window: true
+  new_window: false
   highlight: false
 #- name: Blog
 #  link: /blog/
 #  new_window: true
 #  highlight: false
-- name: Terms
-  link: /terms/
-  new_window: true
-  highlight: false
-- name: Privacy for Docs™ GPT
-  link: /privacy/
-- name: Privacy for Gmail™ GPT
-  link: /privacy_gpt_gmail/
-  new_window: true
-  highlight: false
-- name: Support
-  link: /support/
-  new_window: true
-  highlight: false
+#- name: Terms
+#  link: /terms/
+#  new_window: true
+#  highlight: false
+#- name: Privacy for Docs™ GPT
+#  link: /privacy/
+#- name: Privacy for Gmail™ GPT
+#  link: /privacy_gpt_gmail/
+#  new_window: true
+#  highlight: false
+#- name: Support
+#  link: /support/
+#  new_window: true
+#  highlight: false
 
 #- name: About
 #  link: /about/
