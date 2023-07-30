@@ -108,8 +108,16 @@ description:
         /*font-size: 17px;*/
 
     }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
 </style>
 <div class="top" style="padding-top: 10px">
+<!--        <h1 style="color: #999999;">Boost up your productivity with DocGPT - AI Writer for Google Docs™</h1>-->
         <h5 style="color: #999999;">Find perfect plan</h5>
     <div class="toggle-btn">
         <span style="margin: 0.8em;">Annually</span>
@@ -188,7 +196,7 @@ description:
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4">
                     <li><i class="bi-check-lg icon-pricing"></i><b> Save 30%</b></li>
-                    <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Starter features</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Business features</b></li>
                     <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b>UNLIMITED QUERIES</b></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
@@ -201,7 +209,9 @@ description:
         </div>
     </div>
 </div>
-
+<div class="container mb-5 mt-5 center-img">
+    <img src="{{ site.baseurl }}/images/docs-demo4.gif" alt="demo-docgpt-ai GIF">
+</div>
 <script>
     function check() {
         console.log("Called check!");
