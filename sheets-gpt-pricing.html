@@ -104,6 +104,13 @@ description:
         font-size: 10px;
         color: #999999;
     }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
 </style>
 <div class="top" style="padding-top: 10px">
         <h5 style="color: #999999;">Find perfect plan</h5>
@@ -197,7 +204,9 @@ description:
         </div>
     </div>
 </div>
-
+<div class="container mb-5 mt-5 center-img">
+    <img src="{{ site.baseurl }}/images/sheets-demo.gif" alt="demo-docgpt-ai GIF">
+</div>
 <script>
     function check() {
         console.log("Called check!");
