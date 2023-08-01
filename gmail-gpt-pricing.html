@@ -5,7 +5,27 @@ description:
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 <script type="text/javascript">
-    Paddle.Setup({ vendor: 13096 }); // replace with your vendor ID
+    Paddle.Setup({
+        vendor: 13096,
+        eventCallback: function (data) {
+            if (data.event === "Checkout.Complete") {
+                let dataLayerInfo = {
+                    event: "purchase",
+                    ecommerce: {
+                        transaction_id: data.eventData.checkout.id,
+                        affiliation: "Affiliation Google Gmail",
+                        value: data.eventData.checkout.prices.customer.total,
+                        tax: data.eventData.checkout.prices.customer.total_tax,
+                        shipping: null,
+                        currency: data.eventData.checkout.prices.customer.currency,
+                        coupon: data.eventData.checkout.coupon.coupon_code,
+                        items: data.eventData.checkout.prices.customer.items,
+                    },
+                };
+                dataLayer.push(dataLayerInfo);
+            }
+        }
+    }); // replace with your vendor ID
     // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
 
 </script>
