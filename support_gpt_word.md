@@ -1,7 +1,7 @@
 ---
 title: Support - GPT for Word
 description: 
-permalink: /support_gpt_word.md/
+permalink: /support_gpt_word/
 ---
 <style>
 .getting-started {
