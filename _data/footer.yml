@@ -14,15 +14,21 @@
   - name: Terms of Service
     link: /terms
     new_window: true
-  - name: Privacy Policy for DocGPT - AI Writer for Docs™
+  - name: Privacy Policy DocGPT - AI Writer for Docs™
     link: /privacy
-  - name: Refund Policy for DocGPT - AI Writer for Docs™
+  - name: Refund Policy DocGPT - AI Writer for Docs™
     link: /refund_policy/
     new_window: true
-  - name: Privacy Policy for Gmail™ GPT
+  - name: Privacy Policy Gmail™ GPT
     link: /privacy_gpt_gmail/
     new_window: true
 #  - name: Status
+  - name: Privacy Policy - GPT for Word
+    link: /privacy_gpt_word/
+    new_window: true
+  - name: Support - GPT for Word
+    link: /support_gpt_word/
+    new_window: true
 #    link: /
 #    new_window: true
 - links:
