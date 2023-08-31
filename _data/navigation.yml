@@ -18,6 +18,12 @@
   link: /privacy_gpt_slides/
   new_window: true
   highlight: false
+- name: Privacy Policy Slides AI GPT
+  link: /privacy_gpt_slides_translate/
+  new_window: true
+  highlight: false
+
+  #privacy_gpt_slides_translate
 #- name: Blog
 #  link: /blog/
 #  new_window: true
