@@ -14,6 +14,10 @@
   link: /gmail-gpt-pricing/
   new_window: false
   highlight: false
+- name: Pricing Slides
+  link: /slides-gpt-pricing/
+  new_window: false
+  highlight: false
 - name: Privacy Slides AI GPT
   link: /privacy_gpt_slides/
   new_window: true
