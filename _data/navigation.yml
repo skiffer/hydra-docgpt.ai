@@ -26,6 +26,10 @@
   link: /privacy_gpt_slides_translate/
   new_window: true
   highlight: false
+- name: Privacy GPT Quiz Generator for Forms™
+  link: /privacy_gpt_forms/
+  new_window: true
+  highlight: false
 #- name: Privacy ChatGPT for Slides
 #  link: /privacy_chatgpt_for_slides/
 #  new_window: true
