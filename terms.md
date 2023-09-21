@@ -4,7 +4,7 @@ description:
 permalink: /terms/
 ---
 
-Last updated: January 19, 2023
+Last updated: September 19, 2023
 
 
 Please read these terms and conditions carefully before using Our Service.
