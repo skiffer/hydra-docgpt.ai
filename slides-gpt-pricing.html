@@ -182,7 +182,7 @@ description:
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Free cancellation</li>
                 </ul>
-                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="849683" data-email="" data-customer-email="" data-customer-address-country-code="">Get Started</button>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="849683" data-email="">Get Started</button>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -318,25 +318,9 @@ description:
 
     // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
     const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
-    //data-customer-email
-    // data-customer-address-country-code
     if (getStartedLinks) {
         getStartedLinks.forEach(link => {
             link.setAttribute('data-email', emailParam || '');
-        });
-    }
-    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-    const getStartedLinks2 = document.querySelectorAll('.paddle_button[data-customer-email=""]');
-    if (getStartedLinks2) {
-        getStartedLinks2.forEach(link => {
-            link.setAttribute('data-customer-email', emailParam || '');
-        });
-    }
-
-    const getStartedLinks3 = document.querySelectorAll('.paddle_button[data-customer-address-country-code=""]');
-    if (getStartedLinks3) {
-        getStartedLinks3.forEach(link => {
-            link.setAttribute('data-customer-address-country-code', "PL" || '');
         });
     }
 </script>
