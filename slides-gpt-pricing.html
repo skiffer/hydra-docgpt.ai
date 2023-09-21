@@ -323,6 +323,20 @@ description:
             link.setAttribute('data-email', emailParam || '');
         });
     }
+
+    Paddle.Checkout.open({
+        settings: {
+            displayMode: "overlay",
+            theme: "light",
+            locale: "en"
+        },
+        items: [
+            {
+                dataProduct: '849686'
+            }
+        ]
+    });
+
 </script>
 
 <!--{% if page.faq %}-->
