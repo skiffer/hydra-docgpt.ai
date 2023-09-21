@@ -263,6 +263,11 @@ description:
             link.setAttribute('data-email', emailParam || '');
         });
     }
+
+    Paddle.Checkout.open({
+        product: '841734',
+        email: emailParam || ''
+    });
 </script>
 
 <!--{% if page.faq %}-->

@@ -400,6 +400,11 @@ description:
             link.setAttribute('data-email', emailParam || '');
         });
     }
+
+    Paddle.Checkout.open({
+        product: '850778',
+        email: emailParam || ''
+    });
 </script>
 
 <!--{% if page.faq %}-->
