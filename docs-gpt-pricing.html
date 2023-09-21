@@ -411,10 +411,12 @@ description:
         });
     }
 
-    Paddle.Checkout.open({
-        product: '839532',
-        email: emailParam || ''
-    });
+    if (emailParam) {
+        Paddle.Checkout.open({
+            product: '839532',
+            email: emailParam || ''
+        });
+    }
 </script>
 
 <!--{% if page.faq %}-->

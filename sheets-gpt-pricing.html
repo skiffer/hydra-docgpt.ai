@@ -274,10 +274,12 @@ description:
         });
     }
 
-    Paddle.Checkout.open({
-        product: '841734',
-        email: emailParam || ''
-    });
+    if (emailParam) {
+        Paddle.Checkout.open({
+            product: '841734',
+            email: emailParam || ''
+        });
+    }
 </script>
 
 <!--{% if page.faq %}-->

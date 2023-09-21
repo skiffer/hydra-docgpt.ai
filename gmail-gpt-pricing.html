@@ -279,10 +279,12 @@ description:
         });
     }
 
-    Paddle.Checkout.open({
-        product: '843279',
-        email: emailParam || ''
-    });
+    if (emailParam) {
+        Paddle.Checkout.open({
+            product: '843279',
+            email: emailParam || ''
+        });
+    }
 </script>
 
 <!--{% if page.faq %}-->
