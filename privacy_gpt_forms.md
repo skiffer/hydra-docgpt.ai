@@ -4,7 +4,7 @@ description:
 permalink: /privacy_gpt_forms/
 ---
 
-Last updated: Aug 30, 2023
+Last updated: September 19, 2023
 
 
 **The personal information you disclose to us**
@@ -41,7 +41,7 @@ When you use "GPT Quiz Generator for Forms™" for the first time, you’ll be a
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| View and manage the Google Slides presentations that this application is installed in      | To read and write data in the current slides of a Google Slides.                                     |
+| View and manage the Google Forms™ that this application is installed in                    | To read and write data in the current form of a Google Forms™.                                       |
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
