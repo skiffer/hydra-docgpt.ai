@@ -41,7 +41,7 @@ When you use "Slides™ AI GPT" for the first time, you’ll be asked to accept 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| View and manage the Google Slides presentations that this application is installed in      | To read and write data in the current slides of a Google Slides.                                     |
+| View and manage the Google Slides™ presentations that this application is installed in     | To read and write data in the current presentation of a Google Slides™.                              |
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
