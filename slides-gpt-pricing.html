@@ -150,7 +150,7 @@ description:
         </label>
         <span style="margin: 0.8em;">Monthly</span></div>
 </div>
-<div class="container mb-5 mt-5">
+<div id="pricing"  class="container mb-5 mt-5">
     <div class="pricing card-deck flex-column flex-md-row mb-3">
         <div class="card card-pricing text-center px-3 mb-4 text1">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
@@ -321,6 +321,14 @@ description:
     if (getStartedLinks) {
         getStartedLinks.forEach(link => {
             link.setAttribute('data-email', emailParam || '');
+        });
+    }
+
+    if (pricingSection) {
+        pricingSection.scrollIntoView({
+            behavior: "smooth", // You can use "auto" for instant scrolling
+            block: "start",     // "start" will align the top of the section with the top of the viewport
+            inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
         });
     }
 
