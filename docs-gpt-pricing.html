@@ -401,7 +401,15 @@ description:
         });
     }
 
-    $("#pricing").focus()
+    var pricingSection = document.getElementById("pricing");
+
+    if (pricingSection) {
+        pricingSection.scrollIntoView({
+            behavior: "smooth", // You can use "auto" for instant scrolling
+            block: "start",     // "start" will align the top of the section with the top of the viewport
+            inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
+        });
+    }
 
     Paddle.Checkout.open({
         product: '839532',
