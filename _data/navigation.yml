@@ -14,6 +14,10 @@
   link: /gmail-gpt-pricing/
   new_window: false
   highlight: false
+- name: Blog
+  link: /blog/
+  new_window: true
+  highlight: false
 #- name: Pricing Slides
 #  link: /slides-gpt-pricing/
 #  new_window: false
@@ -36,10 +40,6 @@
 #  highlight: false
 
   #privacy_gpt_slides_translate
-#- name: Blog
-#  link: /blog/
-#  new_window: true
-#  highlight: false
 #- name: Terms
 #  link: /terms/
 #  new_window: true
