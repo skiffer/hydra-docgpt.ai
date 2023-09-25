@@ -21,7 +21,7 @@ AI content creation tools can significantly boost productivity, but it's not alw
 The best alternatives to Copy.ai will vary depending on your priorities, how you integrate these tools into your daily business operations, and your budgetary considerations. Continue reading for a breakdown of the top competitors to Copy AI, which will facilitate your decision-making process, making it quicker and easier! 🙌
 
 ![summary](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*JIkIpApwWMECiI8UGbwA-g.png)
-1. DocGPT - AI Writer for Google Docs™
+## 1. DocGPT - AI Writer for Google Docs™
 
 ![docgpt.ai](https://miro.medium.com/v2/resize:fit:1280/1*TwD7l45_HRJEXXxamwUxeQ.gif)
 
@@ -58,7 +58,7 @@ For spreadsheet-related tasks in Google Sheets, this integration provides invalu
 - [Google Workspace Version](https://docgpt.ai)
 - [Web Version](https://docgpt.ai)
 
-2. Jasper
+## 2. Jasper
 
 ![jasper](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*o9d6GHEtcZqeYFosWmHHxw.png)
 
@@ -92,7 +92,7 @@ This alternative to Copy AI seamlessly integrates with Google Chrome, streamlini
 - G2: 4.7/5 (1,200+ reviews)
 - Capterra: 4.8/5 (1,700+ reviews)
 
-3. Copysmith
+## 3. Copysmith
 ![copysmith](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*iR2cgYqDkfv5wyzlOUM7CA.jpeg)
 Copysmith serves as an e-commerce copywriting software tool designed to enhance sales through top-notch content creation. Powered by GPT-3 technology, this AI writer generates diverse written materials, spanning from extensive, SEO-optimized blog articles to persuasive marketing copy in the form of emails and presentations.
 
@@ -124,7 +124,7 @@ Copysmith's standout features empower you to express your company's identity pre
 - G2: 4.3/5 (10+ reviews)
 - Capterra: 4.2/5 (20+ reviews)
 
-4. Writesonic
+## 4. Writesonic
 ![writesonic](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*T-FS-BS_Y8G96nrv0RbzAQ.jpeg)
 Writesonic's AI writing platform accelerates project completion by significantly reducing the time required for brainstorming ideas and crafting content. With GPT-4 powering all their paid plans, you gain access to cutting-edge technology. ✨
 
@@ -141,7 +141,7 @@ They've carefully designed their features to cater to the needs of marketing tea
 - G2: 4.7/5 (1,700+ reviews)
 - Capterra: 4.8/5 (1,700+ reviews)
 
-5. Rytr
+## 5. Rytr
 ![rytr](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*2Ks4806wWpaPy9FyFexKeQ.jpeg)
 Rytr provides an AI writing tool that has gained popularity among over 5 million users, including copywriters, entrepreneurs, and individuals. Its user-friendly interface ensures a swift and effortless experience.
 
