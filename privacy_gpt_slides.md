@@ -47,7 +47,7 @@ When you use "Slides™ AI GPT" for the first time, you’ll be asked to accept 
 
 Also, it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part and manage request limits.
 
-The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides", "Professional tone"  for generating will be used for requesting data at openai.com.
+The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides", "Professional tone"  for requesting data at openai.com.
 
 ### Why does "Slides™ AI GPT" need those permissions?
 
