@@ -229,13 +229,15 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 				<h2>DocGPT for Google Docs™ and Sheets™ helps you and your team break through creative blocks to create amazing, original content <strong>10X faster</strong>.</h2>
 				<p>Generate months of social media content in minutes.</p>
 			</div>
-			<div class="image" style="width: 20%">
-<!--				<img width="20%" src="{{ site.baseurl }}/images/clock.png" alt="Screenshot" />-->
-						<iframe class="demo-video" width="485" height="338" src="https://www.youtube.com/embed/JBX45eiqe0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<!--					<img src="{{ site.baseurl }}/images/docs-demo4.gif" alt="demo-docgpt-ai GIF">-->
-<!--				<div class="ratio ratio-16x9">-->
-<!--					<iframe src="https://www.youtube.com/embed/JBX45eiqe0w" title="YouTube video" allowfullscreen></iframe>-->
-<!--				</div>-->
+			<div class="col-md-6">
+				<div class="video-container">
+					<!-- Cover image with play button -->
+					<img id="cover-image2" src="{{ site.baseurl }}/images/preview_gpt_for_docs.png" alt="Cover Image">
+					<div id="play-button2" class="play-btn"></div>
+					<!-- Video iframe -->
+					<iframe id="video-frame2" width="560" height="315" class="demo-video" src="https://www.youtube.com/embed/JBX45eiqe0w?si=h8neCjveszyYghYx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+				</div>
 			</div>
 		</div>
 	</section>
@@ -245,15 +247,16 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 			<div class="text editable">
 				<h2>Gmail™ GPT helps you write emails just in <strong>1 click</strong> using AI.</h2>
 			</div>
-			<div class="image" style="width: 20%">
-				<!--				<img width="20%" src="{{ site.baseurl }}/images/clock.png" alt="Screenshot" />-->
-<!--				<iframe width="485" height="338" src="https://www.youtube.com/watch?v=UFsHYssF3TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-				<iframe class="demo-video" width="500" height="315" src="https://www.youtube.com/embed/UFsHYssF3TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				<!--				<div class="ratio ratio-16x9">-->
-				<!--					<iframe src="https://www.youtube.com/embed/JBX45eiqe0w" title="YouTube video" allowfullscreen></iframe>-->
-				<!--				</div>-->
+			<div class="col-md-6">
+				<div class="video-container">
+					<!-- Cover image with play button -->
+					<img id="cover-image" src="{{ site.baseurl }}/images/gmail-1.png" alt="Cover Image">
+					<div id="play-button" class="play-btn"></div>
+					<!-- Video iframe -->
+					<iframe id="video-frame" class="demo-video" width="500" height="315" src="https://www.youtube.com/embed/UFsHYssF3TM?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+				</div>
 			</div>
-		</div>
 	</section>
 	<section>
 		<div class="container flex">
@@ -284,3 +287,76 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 		<div class="button alt"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>
 	</section>
 </div>
+
+<script>
+	// JavaScript to handle video play on play button click
+	const playButton = document.getElementById("play-button");
+	const coverImage = document.getElementById("cover-image");
+	const videoFrame = document.getElementById("video-frame");
+
+	playButton.addEventListener("click", function() {
+		playButton.style.display = "none"; // Hide the play button
+		coverImage.style.display = "none"; // Hide the cover image
+		videoFrame.style.display = "block"; // Show the video frame
+		videoFrame.src += "&autoplay=1"; // Auto-play the video
+	});
+
+	// JavaScript to handle video play on play button click
+	const playButton2 = document.getElementById("play-button2");
+	const coverImage2 = document.getElementById("cover-image2");
+	const videoFrame2 = document.getElementById("video-frame2");
+
+	playButton2.addEventListener("click", function() {
+		playButton2.style.display = "none"; // Hide the play button
+		coverImage2.style.display = "none"; // Hide the cover image
+		videoFrame2.style.display = "block"; // Show the video frame
+		videoFrame2.src += "&autoplay=1"; // Auto-play the video
+	});
+</script>
+
+<style>
+	/* CSS to initially hide the video iframe */
+	.demo-video {
+		display: none;
+	}
+</style>
+
+<style>
+	.play-btn:after {
+		content: '';
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 25px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 15px solid #fff;
+	}
+	.play-btn:before {
+		content: '';
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		background-color: #0075B0;
+		box-shadow: 0 10px 20px rgba(0,111,214,.1);
+		margin-right: 10px;
+		position: absolute;
+	}
+	.play-btn {
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: auto !important;
+		cursor: pointer;
+		right: 0;
+		bottom: 0;
+	}
+	.position-relative {
+		position: relative;
+	}
+</style>
