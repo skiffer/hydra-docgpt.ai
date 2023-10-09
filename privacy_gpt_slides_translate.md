@@ -26,9 +26,12 @@ We have implemented appropriate technical and organizational security measures d
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
-The only information we store from your Google account is your name, last name, profile picture, and e-mail.
+The only information we store from your Google account is email.
 
-We do not share your data with any third party.
+<img class="demo" alt="privacy_slides_ui.png" src="{{ site.baseurl }}/images/privacy_slides_translate_ui.png" />
+
+
+We share data from fields "Translate all slides in click" (language) and texts at your current presentation with AI models provider OpenAI (https://openai.com/)
 
 The Translate Slides™ with AI GPT use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
@@ -45,7 +48,10 @@ When you use "Translate Slides™ with AI GPT" for the first time, you’ll be a
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
-Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
+Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits. 
+
+We do not share your email with any third party.
+
 The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
 
 ### Why does "Translate Slides™ with AI GPT" need those permissions?
