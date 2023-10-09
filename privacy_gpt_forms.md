@@ -26,9 +26,11 @@ We have implemented appropriate technical and organizational security measures d
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
-The only information we store from your Google account is your name, last name, profile picture, and e-mail.
+The only information we store from your Google account is email.
 
-We do not share your data with any third party.
+<img alt="privacy_forms_ui.png" height="350" src="images/privacy_forms_ui.png" width="200"/>
+
+We share data from fields "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content" with AI models provider OpenAI (https://openai.com/)
 
 The GPT Quiz Generator for Forms™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
