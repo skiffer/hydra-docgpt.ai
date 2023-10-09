@@ -22,15 +22,15 @@
 #  link: /slides-gpt-pricing/
 #  new_window: false
 #  highlight: false
-- name: Privacy Slides AI GPT
+- name: Privacy Policy Slides AI GPT
   link: /privacy_gpt_slides/
   new_window: true
   highlight: false
-- name: Privacy Translate Slides™ with AI GPT
+- name: Privacy Policy Translate Slides™ with AI GPT
   link: /privacy_gpt_slides_translate/
   new_window: true
   highlight: false
-- name: Privacy GPT Quiz Generator for Forms™
+- name: Privacy Policy GPT Quiz Generator for Forms™
   link: /privacy_gpt_forms/
   new_window: true
   highlight: false
