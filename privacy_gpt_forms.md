@@ -4,7 +4,7 @@ description:
 permalink: /privacy_gpt_forms/
 ---
 
-Last updated: September 19, 2023
+Last updated: October 9, 2023
 
 
 **The personal information you disclose to us**
@@ -45,7 +45,7 @@ When you use "GPT Quiz Generator for Forms™" for the first time, you’ll be a
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
-Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part.
+Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not disclose email addresses and keep it secure.
 The requests provided in text box for generating will be used for requesting data at openai.com.
 
 ### Why does "GPT Quiz Generator for Forms™" need those permissions?
