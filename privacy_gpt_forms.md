@@ -3,6 +3,11 @@ title: GPT Quiz Generator for Formsâ„¢: Privacy Policy
 description: 
 permalink: /privacy_gpt_forms/
 ---
+<style>
+.demo {
+    width: 40% !important;
+}
+</style>
 
 Last updated: October 9, 2023
 
@@ -28,7 +33,7 @@ We do not store your data (inputs, clicks, or drive files). It stays on Googleâ€
 
 The only information we store from your Google account is email.
 
-<img alt="privacy_forms_ui.png" width="40% !important" src="{{ site.baseurl }}/images/privacy_forms_ui.png" />
+<img class="demo" alt="privacy_forms_ui.png" src="{{ site.baseurl }}/images/privacy_forms_ui.png" />
 
 We share data from fields "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content" with AI models provider OpenAI (https://openai.com/)
 
