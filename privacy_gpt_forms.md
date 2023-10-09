@@ -28,7 +28,7 @@ We do not store your data (inputs, clicks, or drive files). It stays on Google�
 
 The only information we store from your Google account is email.
 
-<img alt="privacy_forms_ui.png" height="350" src="images/privacy_forms_ui.png" width="200"/>
+<img alt="privacy_forms_ui.png" height="350" src="{{ site.baseurl }}/images/privacy_forms_ui.png" width="200"/>
 
 We share data from fields "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content" with AI models provider OpenAI (https://openai.com/)
 
@@ -48,7 +48,7 @@ When you use "GPT Quiz Generator for Forms™" for the first time, you’ll be a
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
 Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
-The requests provided in text box for generating will be used for requesting data at openai.com.
+The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
 
 ### Why does "GPT Quiz Generator for Forms™" need those permissions?
 
