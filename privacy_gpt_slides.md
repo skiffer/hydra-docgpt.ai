@@ -4,6 +4,12 @@ description:
 permalink: /privacy_gpt_slides/
 ---
 
+<style>
+.demo {
+    width: 40% !important;
+}
+</style>
+
 Last updated: October 9, 2023
 
 
@@ -26,9 +32,11 @@ We have implemented appropriate technical and organizational security measures d
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
-The only information we store from your Google account is your name, last name, profile picture, and e-mail.
+The only information we store from your Google account is email.
 
-We do not share your data with any third party.
+<img class="demo" alt="privacy_slides_ui.png" src="{{ site.baseurl }}/images/privacy_slides_ui.png" />
+
+We share data from fields "Type your topic", "Provide additional content (optional)", "Output language", "Writing tone", "Slides" with AI models provider OpenAI (https://openai.com/)
 
 The Slides™ AI GPT use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
@@ -48,7 +56,7 @@ When you use "Slides™ AI GPT" for the first time, you’ll be asked to accept 
 Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
 The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
 
-The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides", "Professional tone"  for requesting data at openai.com.
+The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides"  for requesting data at openai.com.
 
 ### Why does "Slides™ AI GPT" need those permissions?
 
