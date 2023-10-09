@@ -45,8 +45,8 @@ When you use "Translate Slides™ with AI GPT" for the first time, you’ll be a
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
-Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party. 
-The requests provided in text box for generating will be used for requesting data at openai.com.
+Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
+The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
 
 ### Why does "Translate Slides™ with AI GPT" need those permissions?
 

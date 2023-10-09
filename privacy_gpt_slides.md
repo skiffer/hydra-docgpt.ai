@@ -45,7 +45,8 @@ When you use "Slides™ AI GPT" for the first time, you’ll be asked to accept 
 | Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
 | Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
 
-Also, it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part and manage request limits. We do not share your email with any third party.
+Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
+The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
 
 The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides", "Professional tone"  for requesting data at openai.com.
 
