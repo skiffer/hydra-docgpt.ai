@@ -1,5 +1,5 @@
 ---
-title: Slides™ AI GPT: Privacy Policy
+title: AI GPT for Slides™: Privacy Policy
 description: 
 permalink: /privacy_gpt_slides/
 ---
@@ -23,11 +23,25 @@ Your email address will be used to activate your license.
 
 **We do not share, track or sell your personal and business information to third parties.**
 
+
+**Notice**
+
+1. We do not store your data(inputs or drive files).It stays on Google’s servers. Granting us access to your data does not allow us to access your data offline. We only use this access to display them on the Add-on and make actions on your behalf such as adding or updating a task. All the actions performed come from you.
+2. We do not share your data with any third party.
+
+Information we collect and how we use it
+We offer a number of services that do not require you to register for an account or provide any personal information to us, such as the company Search. In order to provide our full range of services, we may collect the following types of information:
+
+When you sign up for an account or other service or promotion that requires registration, we ask you for personal information (such as your name, email address)
+The Application’s use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
+
+
 **HOW DO WE KEEP YOUR INFORMATION SAFE?**
 
 In Short: We aim to protect your personal information through a system of organizational and technical security measures.
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. Slides™ AI GPT uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. AI GPT for Slides™ uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
@@ -38,13 +52,13 @@ The only information we store from your Google account is email.
 
 We share data from fields "Type your topic", "Provide additional content (optional)", "Output language", "Writing tone", "Slides" with AI models provider OpenAI (https://openai.com/)
 
-The Slides™ AI GPT use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+The AI GPT for Slides™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-### Which permissions are needed for "Slides™ AI GPT"?
+### Which permissions are needed for "AI GPT for Slides™"?
 
-When you use "Slides™ AI GPT" for the first time, you’ll be asked to accept the minimum-required permissions:
+When you use "AI GPT for Slides™" for the first time, you’ll be asked to accept the minimum-required permissions:
 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
@@ -58,11 +72,11 @@ The requests provided in text boxes for generating will be used in AI model prov
 
 The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides"  for requesting data at openai.com.
 
-### Why does "Slides™ AI GPT" need those permissions?
+### Why does "AI GPT for Slides™" need those permissions?
 
-"Slides™ AI GPT" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "Slides™ AI GPT" only requests the minimum-required permissions that are essential for it to function optimally.
+"AI GPT for Slides™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "AI GPT for Slides™" only requests the minimum-required permissions that are essential for it to function optimally.
 
-"Slides™ AI GPT" does not have access to your Google account or your password, only to your email  info.
+"AI GPT for Slides™" does not have access to your Google account or your password, only to your email  info.
 
 ### Still have questions?
 
