@@ -22,10 +22,10 @@
 #  link: /slides-gpt-pricing/
 #  new_window: false
 #  highlight: false
-- name: Privacy Policy AI GPT for Slides™
-  link: /privacy_gpt_slides/
-  new_window: true
-  highlight: false
+#- name: Privacy Policy AI GPT for Slides™
+#  link: /privacy_gpt_slides/
+#  new_window: true
+#  highlight: false
 - name: Privacy Policy Translate Slides™ with AI GPT
   link: /privacy_gpt_slides_translate/
   new_window: true

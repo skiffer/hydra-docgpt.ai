@@ -5,6 +5,10 @@
     link: /sheets-gpt-pricing/
   - name: Pricing for Gmail™ GPT
     link: /gmail-gpt-pricing/
+  - name: Privacy Policy AI GPT for Slides™
+    link: /privacy_gpt_slides/
+    new_window: true
+    highlight: false
 #  - name: Contact
 #    link: /contact/
 - links:
