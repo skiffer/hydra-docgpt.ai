@@ -6,6 +6,10 @@
   link: /docs-gpt-pricing/#pricing
   new_window: false
   highlight: false
+- name: Pricing Slides
+  link: /slides-magic-gpt-pricing/#pricing
+  new_window: false
+  highlight: false
 - name: Pricing Sheets
   link: /sheets-gpt-pricing/#pricing
   new_window: false
