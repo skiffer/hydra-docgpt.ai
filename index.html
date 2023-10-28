@@ -8,7 +8,7 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 	}
 	.card {
 		border-radius: 15px !important;
-		min-height: 600px;
+		min-height: 650px;
 		margin-top:20px;
 		/*padding-top:15px;*/
 	}
@@ -217,6 +217,49 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 						</div>
 					</div>
 				</div>
+
+				<div class="col-md-6">
+					<div class="card text-black">
+						<i class="fab fa-apple fa-lg pt-3 pb-1 px-5"></i>
+						<img src="{{ site.baseurl }}/images/slides-gpt-logo-128.png"
+								 class="card-img-top" style="width: 80px !important;" alt="AI GPT for Slides™" />
+						<div class="card-body d-flex flex-column">
+							<div class="text-center">
+								<!--								<h5 class="card-title">ChatGPT in Google Sheets and Docs</h5>-->
+								<p class="text-muted mb-4">AI GPT for Slides™</p>
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Integrated into Google Slides
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Support 36 languages
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Generate a presentation with images by a topic
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Generate a presentation with images using your content
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> No need API Keys
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> 10+ Writing tones
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Customization templates and styles
+							</div>
+
+							<!--							<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+							<!--							<div class="justify-content-between total font-weight-bold mt-4">-->
+							<!--								<span>Total</span><span>$7,197.00</span>-->
+							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+							<!--							</div>-->
+							<div class="install button mt-auto"><a style="background-color: #F1B908" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/ai_gpt_for_slides/517982554715">Get Started Free</a></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -257,15 +300,22 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 
 				</div>
 			</div>
+		</div>
 	</section>
 	<section>
 		<div class="container flex">
 			<div class="text editable">
-				<h2>Write catchy video scripts to go viral on <strong>YouTube and TikTok</strong>. Create content in <strong>36 languages</strong>!</h2>
-				<p>AI DocGPT is trained to produce high-converting marketing copy.</p>
+				<h2>AI GPT for Slides™ helps you create a presentation with images just in <strong>1 click</strong> using AI.</h2>
 			</div>
-			<div class="image">
-				<img src="{{ site.baseurl }}/images/social.png" alt="Screenshot" />
+			<div class="col-md-6">
+				<div class="video-container">
+					<!-- Cover image with play button -->
+					<img id="cover-image3" src="{{ site.baseurl }}/images/slides-1.png" alt="Cover Image">
+					<div id="play-button3" class="play-btn"></div>
+					<!-- Video iframe -->
+					<iframe id="video-frame3" class="demo-video" width="500" height="315" src="https://www.youtube.com/embed/cmCpmThsfdY?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+				</div>
 			</div>
 		</div>
 	</section>
@@ -311,6 +361,18 @@ description: GPT for Google Docs, Sheets, Gmail is the perfect AI Writer for fou
 		coverImage2.style.display = "none"; // Hide the cover image
 		videoFrame2.style.display = "block"; // Show the video frame
 		videoFrame2.src += "&autoplay=1"; // Auto-play the video
+	});
+
+	// JavaScript to handle video play on play button click
+	const playButton3 = document.getElementById("play-button3");
+	const coverImage3 = document.getElementById("cover-image3");
+	const videoFrame3 = document.getElementById("video-frame3");
+
+	playButton3.addEventListener("click", function() {
+		playButton3.style.display = "none"; // Hide the play button
+		coverImage3.style.display = "none"; // Hide the cover image
+		videoFrame3.style.display = "block"; // Show the video frame
+		videoFrame3.src += "&autoplay=1"; // Auto-play the video
 	});
 </script>
 
