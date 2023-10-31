@@ -22,6 +22,20 @@ Your email address will be used to activate your license.
 
 **We do not share, track or sell your personal and business information to third parties.**
 
+
+**Notice**
+
+1. We do not store your data(inputs or drive files).It stays on Google’s servers. Granting us access to your data does not allow us to access your data offline. We only use this access to display them on the Add-on and make actions on your behalf such as adding or updating a task. All the actions performed come from you.
+2. We do not share your data with any third party.
+
+Information we collect and how we use it
+We offer a number of services that do not require you to register for an account or provide any personal information to us, such as the company Search. In order to provide our full range of services, we may collect the following types of information:
+
+When you sign up for an account or other service or promotion that requires registration, we ask you for personal information (such as your name, email address)
+The Application’s use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+
+
+
 **HOW DO WE KEEP YOUR INFORMATION SAFE?**
 
 In Short: We aim to protect your personal information through a system of organizational and technical security measures.
@@ -54,6 +68,8 @@ When you use "GPT Quiz Generator for Forms™" for the first time, you’ll be a
 
 Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
 The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
+
+The requests provided in text boxes: "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content"  for requesting data at openai.com.
 
 ### Why does "GPT Quiz Generator for Forms™" need those permissions?
 
