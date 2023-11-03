@@ -10,6 +10,7 @@
 - links:
   - name: Affiliate program
     link: https://forms.gle/1VZkzGpvkoL6782h8
+    new_window: true
   - name: Support
     link: /support
     new_window: true
