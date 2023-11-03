@@ -8,6 +8,8 @@
 #  - name: Contact
 #    link: /contact/
 - links:
+  - name: 💵 Affiliate program
+    link: https://forms.gle/1VZkzGpvkoL6782h8
   - name: Support
     link: /support
     new_window: true
