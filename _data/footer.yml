@@ -36,7 +36,11 @@
     link: /privacy_gpt_slides/
     new_window: true
     highlight: false
-#    link: /
+  - name: Privacy Policy QR Barcode for Generator Sheets™ Docs™ Forms™
+    link: /privacy_qr_codes/
+    new_window: true
+    highlight: false
+#    link: /privacy_qr_codes
 #    new_window: true
 - links:
 #  - name: Facebook
