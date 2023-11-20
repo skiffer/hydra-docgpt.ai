@@ -1,7 +1,7 @@
 ---
-title: ChatGPT for Slides™: Privacy Policy
+title: QR Barcode for Generator Sheets™ Docs™ Forms™: Privacy Policy
 description: 
-permalink: /privacy_chatgpt_for_slides/
+permalink: /privacy_qr_codes/
 ---
 
 Last updated: Aug 30, 2023
@@ -21,7 +21,7 @@ Your email address will be used to activate your license.
 
 In Short: We aim to protect your personal information through a system of organizational and technical security measures.
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. ChatGPT for Slides™ uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. QR Barcode for Generator Sheets™ Docs™ Forms™ uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
@@ -30,13 +30,13 @@ The only information we store from your Google account is your name, last name, 
 
 We do not share your data with any third party.
 
-The ChatGPT for Slides™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+The QR Barcode for Generator Sheets™ Docs™ Forms™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-### Which permissions are needed for "ChatGPT for Slides™"?
+### Which permissions are needed for "QR Barcode for Generator Sheets™ Docs™ Forms™"?
 
-When you use "ChatGPT for Slides™" for the first time, you’ll be asked to accept the minimum-required permissions:
+When you use "QR Barcode for Generator Sheets™ Docs™ Forms™" for the first time, you’ll be asked to accept the minimum-required permissions:
 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
@@ -47,11 +47,11 @@ When you use "ChatGPT for Slides™" for the first time, you’ll be asked to ac
 Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part.
 The requests provided in text box for generating will be used for requesting data at openai.com.
 
-### Why does "ChatGPT for Slides™" need those permissions?
+### Why does "QR Barcode for Generator Sheets™ Docs™ Forms™" need those permissions?
 
-"ChatGPT for Slides™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "ChatGPT for Slides™" only requests the minimum-required permissions that are essential for it to function optimally.
+"QR Barcode for Generator Sheets™ Docs™ Forms™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "QR Barcode for Generator Sheets™ Docs™ Forms™" only requests the minimum-required permissions that are essential for it to function optimally.
 
-"ChatGPT for Slides™" does not have access to your Google account or your password, only to your email  info.
+"QR Barcode for Generator Sheets™ Docs™ Forms™" does not have access to your Google account or your password, only to your email  info. We do not share your email.
 
 ### Still have questions?
 
