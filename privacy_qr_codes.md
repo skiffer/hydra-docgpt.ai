@@ -4,6 +4,12 @@ description:
 permalink: /privacy_qr_codes/
 ---
 
+<style>
+.demo {
+    width: 40% !important;
+}
+</style>
+
 Last updated: Aug 30, 2023
 
 
