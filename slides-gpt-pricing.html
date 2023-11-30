@@ -309,8 +309,9 @@ description:
 <script type="text/javascript">
     // Function to get the value of a specific URL parameter
     function getURLParameter(name) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(name);
+        const urlParams = new URLSearchParams(window.location.href);
+        const [firstParam, firstValue] = urlParams.entries().next().value || [];
+        return firstValue;
     }
 
     // Get the value of the 'email' parameter
@@ -334,12 +335,12 @@ description:
         });
     }
 
-    if (emailParam) {
+    // if (emailParam) {
         Paddle.Checkout.open({
             product: '849686',
             email: emailParam || ''
         });
-    }
+    // }
 
 </script>
 
