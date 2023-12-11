@@ -99,6 +99,8 @@
 <!--		</script>-->
 <!--Crisp Chat-->
 		<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9893165b-b7ab-477d-b92e-8b474277e9e2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
 	</head>
 	<body>
 	<!-- Google Tag Manager (noscript) -->
@@ -137,5 +139,47 @@
 				return false;
 			};
 		</script>
+
+	<script>
+
+		function getURLParameter_2(name) {
+			const urlParams = new URLSearchParams(window.location.href);
+			const [firstParam, firstValue] = urlParams.entries().next().value || [];
+			return firstValue;
+		}
+
+		document.addEventListener('DOMContentLoaded', function() {
+			const email = getURLParameter_2('email')
+			const currentPage = window.location.href;
+			console.log(email);
+			console.log(currentPage);
+
+			// Send the email and current page to the server (you might want to do this via AJAX)
+			if (email) {
+				// You can add more fields as needed
+
+				const requestData = {
+					email: email,
+					page: currentPage
+				};
+
+				fetch('https://api-free-trial.onrender.com/visit', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(requestData),
+				})
+				.then(response => {
+					if (response.ok) {
+						console.log('Visit recorded successfully');
+					} else {
+						console.error('Failed to record visit');
+					}
+				})
+				.catch(error => console.error('Error:', error));
+			}
+		});
+	</script>
 	</body>
 </html>
