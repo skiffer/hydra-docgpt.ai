@@ -58,6 +58,12 @@ Personal Information also includes Navigational Information or Payment Informati
 When you use our services or view content provided by us, we automatically collect information about your computer hardware and software. This information can include your IP address, browser type, domain names, internet service provider (ISP), the files viewed on our site (e.g., HTML pages, graphics, etc.), operating system, clickstream data, access times, and referring website addresses. This information is used by LinkedIn Automation AI-powered ChatGPT for the operation of the Subscription Service, to maintain the quality of the Subscription Service, and to provide general statistics regarding the use of the LinkedIn Automation AI-powered ChatGPT Website. For these purposes, we do link this automatically-collected data to Personal Information such as name, email address, address, and phone number.
 
 ### Information we collect from third parties
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.
+
+We do not store your data (inputs, clicks..). It stays on clide side (browser). Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
+
+The only information we store from your LinkedIn account is ID - to track free credits and premium access. We do not share it with third party service. It stays only on our server.
+
 
 From time to time, we may receive Personal Information about you from third party sources, including partners with which we engage in marketing activities, and publicly available sources such as social media websites.
 
