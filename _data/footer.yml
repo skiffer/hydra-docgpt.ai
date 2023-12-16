@@ -59,6 +59,10 @@
     link: /privacy_linkedin_crm/
     new_window: true
     highlight: false
+  - name: Privacy Policy Translate Slides™ with AI GPT
+    link: /privacy_gpt_slides_translate/
+    new_window: true
+    highlight: false
 #  - name: Instagram
 #    link: https://www.instagram.com/m.yaro001/
 #    new_window: true

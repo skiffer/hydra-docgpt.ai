@@ -34,10 +34,10 @@
 #  link: /privacy_gpt_slides/
 #  new_window: true
 #  highlight: false
-- name: Privacy Policy Translate Slides™ with AI GPT
-  link: /privacy_gpt_slides_translate/
-  new_window: true
-  highlight: false
+#- name: Privacy Policy Translate Slides™ with AI GPT
+#  link: /privacy_gpt_slides_translate/
+#  new_window: true
+#  highlight: false
 #- name: Privacy ChatGPT for Slides
 #  link: /privacy_chatgpt_for_slides/
 #  new_window: true
