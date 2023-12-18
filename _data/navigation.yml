@@ -54,8 +54,8 @@
 #  link: /privacy_gpt_gmail/
 #  new_window: true
 #  highlight: false
-#- name: Support
-#  link: /support/
+- name: Support
+  link: /support/
 #  new_window: true
 #  highlight: false
 
