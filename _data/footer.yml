@@ -51,6 +51,10 @@
     link: https://twitter.com/ski0xFF/
     social_icon: Twitter
     new_window: true
+  - name: Blog
+    link: /blog/
+    new_window: true
+#    social_icon: Facebook
   - name: Workspace Analytics
     link: https://workspacemarketplace.com/top-charts/top-rated.html
 #    social_icon: Twitter
