@@ -538,7 +538,7 @@ description:
     }
 
     // Get the value of the 'email' parameter
-    const emailParam = getURLParameter('key');
+    const emailParam = getURLParameter(COOKIE_KEY);
     if (emailParam) {
         setCookie(COOKIE_KEY, emailParam);
     }
@@ -547,7 +547,10 @@ description:
     const getStartedLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
     if (getStartedLinks) {
         getStartedLinks.forEach(link => {
-            link.setAttribute('data-custom-data', emailParam || '');
+            link.setAttribute('data-custom-data', JSON.stringify({
+                'linkedin': emailParam || ''
+            }));
+            console.log(link, emailParam);
         });
     }
 
