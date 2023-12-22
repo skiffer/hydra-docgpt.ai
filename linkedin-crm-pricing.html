@@ -533,9 +533,15 @@ description:
 
     // Function to get the value of a specific URL parameter
     function getURLParameter(name) {
-        const urlParams = new URLSearchParams(window.location.href);
-        return urlParams.get(name);
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+        const results = regex.exec(window.location.href);
+
+        if (!results || !results[2]) return null;
+
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
+
+
 
     // Get the value of the 'email' parameter
     var linkedinParam = getURLParameter(LINKEDIN_KEY);
