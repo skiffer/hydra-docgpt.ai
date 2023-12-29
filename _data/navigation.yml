@@ -6,6 +6,10 @@
   link: /docs-gpt-pricing/#pricing
   new_window: false
   highlight: false
+- name: Linkedin CRM
+  link: /linkedin-crm-pricing/#pricing
+  new_window: false
+  highlight: false
 - name: Pricing Forms
   link: /forms-gpt-pricing/#pricing
   new_window: false
@@ -58,8 +62,8 @@
 #  link: /privacy_gpt_gmail/
 #  new_window: true
 #  highlight: false
-- name: Support
-  link: /support/
+#- name: Support
+#  link: /support/
 #- name: Affiliate
 #  link: https://forms.gle/1VZkzGpvkoL6782h8
 #  new_window: true
