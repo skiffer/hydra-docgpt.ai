@@ -541,6 +541,23 @@ description:
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
+    function getAllURLParameters() {
+        const url = window.location.href;
+        const queryString = url.split('?')[1];
+        const regex = /([^&=]+)=([^&]*)/g;
+        const params = {};
+        let match;
+
+        while ((match = regex.exec(queryString)) !== null) {
+            const key = decodeURIComponent(match[1].replace(/\+/g, " "));
+            const value = decodeURIComponent(match[2].replace(/\+/g, " "));
+
+            params[key] = value;
+        }
+
+        return params;
+    }
+
 
 
     // Get the value of the 'email' parameter
@@ -550,20 +567,27 @@ description:
         setCookie(LINKEDIN_KEY, linkedinParam);
     } else {
         if (getCookie(LINKEDIN_KEY)) {
-            console.log('using from cookie linkedinParam: ' + linkedinParam);
             linkedinParam = getCookie(LINKEDIN_KEY);
+            console.log('using from cookie linkedinParam: ' + linkedinParam);
         } else {
             console.log('linkedin key not found.');
         }
     }
 
+    var allParams = getAllURLParameters();
+
+    if (!allParams.hasOwnProperty(LINKEDIN_KEY)) {
+        console.log('taken from cookie');
+        allParams['linkedin'] = linkedinParam || '';
+    }
+
+    console.log('all params: ' + JSON.stringify(allParams));
+
     // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-    const getStartedLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
-    if (getStartedLinks) {
-        getStartedLinks.forEach(link => {
-            link.setAttribute('data-custom-data', JSON.stringify({
-                'linkedin': linkedinParam || ''
-            }));
+    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
+    if (paddleCustomDataLinks) {
+        paddleCustomDataLinks.forEach(link => {
+            link.setAttribute('data-custom-data', JSON.stringify(allParams));
             console.log(link, linkedinParam);
         });
     }

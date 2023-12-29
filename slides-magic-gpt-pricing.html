@@ -170,7 +170,7 @@ description:
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="858323" data-email="">Get Started</button>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="858323" data-email="" data-custom-data="">Get Started</button>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -195,7 +195,7 @@ description:
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="858324" data-email="">Get Started</a>
+                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="858324" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -220,7 +220,7 @@ description:
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858329" data-email="">Get Started</a>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858329" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -241,7 +241,7 @@ description:
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858327" data-email="">Get Started</a>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858327" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -263,7 +263,7 @@ description:
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
                 </ul>
-                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="858325" data-email="">Get Started</button>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="858325" data-email="" data-custom-data="">Get Started</button>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -289,7 +289,7 @@ description:
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="858326" data-email="" >Get Started</a>
+                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="858326" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -314,7 +314,7 @@ description:
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858329" data-email="">Get Started</a>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858329" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -337,7 +337,7 @@ description:
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858328" data-email="">Get Started</a>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="858328" data-email="" data-custom-data="">Get Started</a>
             </div>
         </div>
     </div>
@@ -532,6 +532,35 @@ description:
         Paddle.Checkout.open({
             product: '858326',
             email: emailParam || ''
+        });
+    }
+</script>
+
+<script>
+    function getAllURLParameters() {
+        const url = window.location.href;
+        const queryString = url.split('?')[1];
+        const regex = /([^&=]+)=([^&]*)/g;
+        const params = {};
+        let match;
+
+        while ((match = regex.exec(queryString)) !== null) {
+            const key = decodeURIComponent(match[1].replace(/\+/g, " "));
+            const value = decodeURIComponent(match[2].replace(/\+/g, " "));
+
+            params[key] = value;
+        }
+
+        return params;
+    }
+    var allParams = getAllURLParameters();
+
+    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
+    if (paddleCustomDataLinks) {
+        paddleCustomDataLinks.forEach(link => {
+            link.setAttribute('data-custom-data', JSON.stringify(allParams));
+            console.log(link, linkedinParam);
         });
     }
 </script>
