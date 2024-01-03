@@ -614,9 +614,10 @@ description:
         });
     }
 
-    if (emailParam) {
+    var linkedinParam_query = getURLParameter(LINKEDIN_KEY);
+    if (linkedinParam_query) {
         Paddle.Checkout.open({
-            product: '866319',
+            product: '866318',
             email: linkedinParam || ''
         });
     }
