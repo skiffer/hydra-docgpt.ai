@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: AI Doc GPT - AI Content Generator for Founders and Content Marketers
+title:
 url: "https://docgpt.ai"
 baseurl:
 google_analytics_key: G-DV5BH9XVVS
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: AI Doc GPT is the perfect AI Writer for founders and marketers. Add an AI Content Assistant to your team today - Create high quality content with docgpt.ai and GPT-3
+description:
 author:
   name: Yaroslav Mykhailov
   email: yaroslav91@gmail.com
