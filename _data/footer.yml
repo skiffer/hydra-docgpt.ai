@@ -11,6 +11,7 @@
   - name: Affiliate program
     link: https://forms.gle/1VZkzGpvkoL6782h8
     new_window: true
+    nofollow: true
   - name: Support
     link: /support
     new_window: true
@@ -51,12 +52,14 @@
     link: https://twitter.com/ski0xFF/
     social_icon: Twitter
     new_window: true
+    nofollow: true
   - name: Blog
     link: /blog/
     new_window: true
 #    social_icon: Facebook
-  - name: Workspace Analytics
-    link: https://workspacemarketplace.com/top-charts/top-rated.html
+#  - name: Workspace Analytics
+#    link: https://workspacemarketplace.com/top-charts/top-rated.html
+#    nofollow: true
 #    social_icon: Twitter
     new_window: true
   - name: Privacy Policy LinkedIn Automation AI-powered ChatGPT
