@@ -5,7 +5,7 @@ layout: default
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
 			{% if page.heading %}
-				<h2>{{ page.heading }}</h2>
+				<h1 class="h2" style="text-align: center;">{{ page.heading }}</h1>
 			{% elsif page.title and page.layout != 'archive' %}
 				<h2>{{ page.title }}</h2>
 			{% endif %}
