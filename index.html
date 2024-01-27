@@ -8,7 +8,7 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 	}
 	.card {
 		border-radius: 15px !important;
-		min-height: 660px;
+		min-height: 700px;
 		margin-top:20px;
 		/*padding-top:15px;*/
 	}
@@ -24,6 +24,58 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 	.install a:hover {
 		color: white !important;
 		text-decoration: none !important;
+	}
+
+
+	.button_button {
+		border-radius: 6px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 48px;
+		padding: 0px 24px;
+		cursor: pointer;
+		user-select: none;
+		gap: 8px;
+		font-weight: 500;
+		min-width: 0px;
+		line-height: 100%;
+	}
+
+	.button_install {
+		background: rgb(25, 118, 210);
+		color: rgb(255, 255, 255);
+		height: 64px;
+		padding: 0px 16px 0px 2px;
+		gap: 16px;
+		box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px -1px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+		text-transform: uppercase;
+		position: relative;
+		transition: background 0.3s ease 0s;
+	}
+	.button_install:hover {
+		background: rgb(7, 71, 134);
+	}
+
+	.button_install u {
+		background: #fff;
+		height: 60px;
+		border-radius: 4px 0 0 4px;
+		width: 60px;
+		padding: 10px !important;
+	}
+
+	.layout_iconInstallProduct {
+		width: 60px!important;
+		padding: 0!important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.install_a:hover {
+		text-decoration: none;
+		color: white;
 	}
 </style>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" >
@@ -43,6 +95,143 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 		</div>
 		<div class="container" style="color: #222527">
 			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="card text-black">
+						<i class="pt-3 pb-1 px-5"></i>
+						<img src="{{ site.baseurl }}/images/logo-sheets.png"
+								 class="card-img-top" alt="GPT for Google Sheets AI" />
+						<div class="card-body d-flex flex-column">
+							<div class="text-center">
+								<!--								<h5 class="card-title">ChatGPT in Google Sheets and Docs</h5>-->
+								<p class="text-muted mb-4">GPT for Google Sheets™</p>
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Integrated with Google Sheets as functions
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Support over 50 languages
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT to get the result of ChatGPT in a single cell
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_TABLE to get a table of items from a prompt
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_FORMAT to sanitize your spreadsheet data into the same format
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_EXTRACT to extract entities from your Sheets™ data
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_SUMMARIZE to summarize your spreadsheet content
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_CLASSIFY to classify spreadsheet content into a single category
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your spreadsheet content
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content
+							</div>
+
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.
+							</div>
+							<p></p>
+
+							<!--							<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+							<!--							<div class="justify-content-between total font-weight-bold mt-4">-->
+							<!--								<span>Total</span><span>$7,197.00</span>-->
+							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+							<!--							</div>-->
+							<!--							<div class="install button mt-auto"><a style="background-color: #019E53" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+
+							<a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">
+								<u class="layout_iconInstallProduct">
+									<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+									</svg>
+								</u>
+								<strong>Install for <span>Google Sheets</span></strong>
+							</a>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card text-black">
+						<i class="pt-3 pb-1 px-3"></i>
+						<img src="{{ site.baseurl }}/images/logo-gmail.png"
+								 class="card-img-top" alt="GPT for Google Gmail AI" />
+						<div class="card-body d-flex flex-column">
+							<div class="text-center">
+<!--								<h5 class="card-title">Believing is seeing</h5>-->
+								<p class="text-muted mb-4">Gmail™ GPT</p><p></p>
+							</div>
+							<div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Integrated with Gmail
+								</div>
+					<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Support over 50 languages
+							</div>
+							<div class="text-muted small text-center">
+								<i class="bi-check-lg icon-pricing"></i> Reply to an email in 1 click with AI
+							</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> AI Personalized Cold Emails generator
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Grammar and spelling to style, writing tone, native any language
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Rephrase, Improve email
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Generate a subject for email
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Make longer, shorter email response
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Allows to provide your custom instructions for AI models
+								</div>
+								<div class="text-muted small text-center">
+									<i class="bi-check-lg icon-pricing"></i> Utilizes AI models: ChatGPT and Bard
+								</div>
+<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>-->
+							</div>
+<!--							<div class="justify-content-between total font-weight-bold mt-4 text-center">-->
+<!--								<span>Total</span><span>$7,197.00</span>-->
+<!--								<div class="install button"><a href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>-->
+<!--							</div>-->
+<!--							<div class="install button mt-auto"><a style="background-color: #73A99B" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>-->
+							<a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">
+								<u class="layout_iconInstallProduct">
+									<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+									</svg>
+								</u>
+								<strong>Install for <span>Google Gmail</span></strong>
+							</a>
+
+						</div>
+					</div>
+				</div>
+
 				<div class="col-md-6">
 					<div class="card text-black">
 						<i class="pt-3 pb-1 px-5"></i>
@@ -106,120 +295,17 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 							<!--								<span>Total</span><span>$7,197.00</span>-->
 							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
 							<!--							</div>-->
-							<div class="install button mt-auto"><a style="background-color: #2196F3" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card text-black">
-						<i class="pt-3 pb-1 px-3"></i>
-						<img src="{{ site.baseurl }}/images/logo-gmail.png"
-								 class="card-img-top" alt="GPT for Google Gmail AI" />
-						<div class="card-body d-flex flex-column">
-							<div class="text-center">
-<!--								<h5 class="card-title">Believing is seeing</h5>-->
-								<p class="text-muted mb-4">Gmail™ GPT</p><p></p>
-							</div>
-							<div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Integrated with Gmail
-								</div>
-					<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> Support over 50 languages
-							</div>
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> Reply to an email in 1 click with AI
-							</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> AI Personalized Cold Emails generator
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Grammar and spelling to style, writing tone, native any language
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Rephrase, Improve email
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Generate a subject for email
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Make longer, shorter email response
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Allows to provide your custom instructions for AI models
-								</div>
-								<div class="text-muted small text-center">
-									<i class="bi-check-lg icon-pricing"></i> Utilizes AI models: ChatGPT and Bard
-								</div>
-<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>-->
-							</div>
-<!--							<div class="justify-content-between total font-weight-bold mt-4 text-center">-->
-<!--								<span>Total</span><span>$7,197.00</span>-->
-<!--								<div class="install button"><a href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>-->
-<!--							</div>-->
-							<div class="install button mt-auto"><a style="background-color: #73A99B" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/gmail_gpt/899305976589">Get Started Free</a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card text-black">
-						<i class="pt-3 pb-1 px-5"></i>
-						<img src="{{ site.baseurl }}/images/logo-sheets.png"
-								 class="card-img-top" alt="GPT for Google Sheets AI" />
-						<div class="card-body d-flex flex-column">
-							<div class="text-center">
-								<!--								<h5 class="card-title">ChatGPT in Google Sheets and Docs</h5>-->
-								<p class="text-muted mb-4">GPT for Google Sheets™</p>
-							</div>
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> Integrated with Google Sheets as functions
-							</div>
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> Support over 50 languages
-							</div>
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT to get the result of ChatGPT in a single cell
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_TABLE to get a table of items from a prompt
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_FORMAT to sanitize your spreadsheet data into the same format
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_EXTRACT to extract entities from your Sheets™ data
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_SUMMARIZE to summarize your spreadsheet content
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_CLASSIFY to classify spreadsheet content into a single category
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your spreadsheet content
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content
-							</div>
-
-							<div class="text-muted small text-center">
-								<i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.
-							</div>
-							<p></p>
-
-							<!--							<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
-							<!--							<div class="justify-content-between total font-weight-bold mt-4">-->
-							<!--								<span>Total</span><span>$7,197.00</span>-->
-							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
-							<!--							</div>-->
-							<div class="install button mt-auto"><a style="background-color: #019E53" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>
+							<!--							<div class="install button mt-auto"><a style="background-color: #2196F3" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
+							<a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">
+								<u class="layout_iconInstallProduct">
+									<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+									</svg>
+								</u>
+								<strong>Install for <span>Docs Slides Forms</span></strong>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -261,7 +347,18 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 							<!--								<span>Total</span><span>$7,197.00</span>-->
 							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
 							<!--							</div>-->
-							<div class="install button mt-auto"><a style="background-color: #F1B908" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/ai_gpt_for_slides/517982554715">Get Started Free</a></div>
+<!--							<div class="install button mt-auto"><a style="background-color: #F1B908" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/ai_gpt_for_slides/517982554715">Get Started Free</a></div>-->
+
+							<a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/ai_gpt_for_slides/517982554715">
+								<u class="layout_iconInstallProduct">
+									<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+									</svg>
+								</u>
+								<strong>Install for <span>Google Slides</span></strong>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -310,7 +407,17 @@ description: ChatGPT AI for Google Sheets, Docs, Slides, and Forms. Save hours o
 							<!--								<span>Total</span><span>$7,197.00</span>-->
 							<!--								<div class="install button" style="padding: 5px"><a href="https://workspace.google.com/marketplace/app/docgpt_ai_writer_for_docs/466607203252">Get Started Free</a></div>-->
 							<!--							</div>-->
-							<div class="install button mt-auto"><a style="background-color: #2196F3" target="_blank" href="https://workspace.google.com/marketplace/app/gpt_quiz_generator_for_forms/478132388403">Get Started Free</a></div>
+<!--							<div class="install button mt-auto"><a style="background-color: #2196F3" target="_blank" href="https://workspace.google.com/marketplace/app/gpt_quiz_generator_for_forms/478132388403">Get Started Free</a></div>-->
+							<a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/marketplace/app/gpt_quiz_generator_for_forms/478132388403">
+								<u class="layout_iconInstallProduct">
+									<svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+										<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+										<g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+									</svg>
+								</u>
+								<strong>Install for <span>Google Forms</span></strong>
+							</a>
 						</div>
 					</div>
 				</div>
