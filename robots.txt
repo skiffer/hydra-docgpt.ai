@@ -3,4 +3,11 @@ layout: null
 sitemap: false
 ---
 User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /download
+
+# Host
+Host: https://docgpt.ai
+
 Sitemap: {{ site.url }}/sitemap.xml
