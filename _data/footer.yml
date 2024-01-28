@@ -1,10 +1,10 @@
 - links:
-  - name: Pricing for DocGPT - AI Writer for Docs™
-    link: /docs-gpt-pricing/
-  - name: Pricing for DocGPT - AI Writer for Sheets™
-    link: /sheets-gpt-pricing/
-  - name: Pricing for Gmail™ GPT
-    link: /gmail-gpt-pricing/
+#  - name: Pricing for DocGPT - AI Writer for Docs™
+#    link: /docs-gpt-pricing/
+#  - name: Pricing for DocGPT - AI Writer for Sheets™
+#    link: /sheets-gpt-pricing/
+#  - name: Pricing for Gmail™ GPT
+#    link: /gmail-gpt-pricing/
 #  - name: Contact
 #    link: /contact/
 - links:
@@ -15,32 +15,32 @@
   - name: Support
     link: /support
     new_window: true
-  - name: Terms of Service
-    link: /terms
-    new_window: true
-  - name: Privacy Policy DocGPT - AI Writer for Docs™
-    link: /privacy
-  - name: Refund Policy DocGPT - AI Writer for Docs™
-    link: /refund_policy/
-    new_window: true
-  - name: Privacy Policy Gmail™ GPT
-    link: /privacy_gpt_gmail/
-    new_window: true
-#  - name: Status
-  - name: Privacy Policy - GPT for Word
-    link: /privacy_gpt_word/
-    new_window: true
-  - name: Support - GPT for Word
-    link: /support_gpt_word/
-    new_window: true
-  - name: Privacy Policy AI GPT for Slides™
-    link: /privacy_gpt_slides/
-    new_window: true
-    highlight: false
-  - name: Privacy Policy QR Barcode for Generator Sheets™ Docs™ Forms™
-    link: /privacy_qr_codes/
-    new_window: true
-    highlight: false
+#  - name: Terms of Service
+#    link: /terms
+#    new_window: true
+#  - name: Privacy Policy DocGPT - AI Writer for Docs™
+#    link: /privacy
+#  - name: Refund Policy DocGPT - AI Writer for Docs™
+#    link: /refund_policy/
+#    new_window: true
+#  - name: Privacy Policy Gmail™ GPT
+#    link: /privacy_gpt_gmail/
+#    new_window: true
+##  - name: Status
+#  - name: Privacy Policy - GPT for Word
+#    link: /privacy_gpt_word/
+#    new_window: true
+#  - name: Support - GPT for Word
+#    link: /support_gpt_word/
+#    new_window: true
+#  - name: Privacy Policy AI GPT for Slides™
+#    link: /privacy_gpt_slides/
+#    new_window: true
+#    highlight: false
+#  - name: Privacy Policy QR Barcode for Generator Sheets™ Docs™ Forms™
+#    link: /privacy_qr_codes/
+#    new_window: true
+#    highlight: false
 #    link: /privacy_qr_codes
 #    new_window: true
 - links:
@@ -61,19 +61,19 @@
 #    link: https://workspacemarketplace.com/top-charts/top-rated.html
 #    nofollow: true
 #    social_icon: Twitter
-    new_window: true
-  - name: Privacy Policy LinkedIn Automation AI-powered ChatGPT
-    link: /privacy_linkedin_crm/
-    new_window: true
-    highlight: false
-  - name: Privacy Policy Translate Slides™ with AI GPT
-    link: /privacy_gpt_slides_translate/
-    new_window: true
-    highlight: false
-  - name: Privacy Policy Mail Merge for Sheets™ Gmail™
-    link: /privacy_mail_merge/
-    new_window: true
-    highlight: false
+#    new_window: true
+#  - name: Privacy Policy LinkedIn Automation AI-powered ChatGPT
+#    link: /privacy_linkedin_crm/
+#    new_window: true
+#    highlight: false
+#  - name: Privacy Policy Translate Slides™ with AI GPT
+#    link: /privacy_gpt_slides_translate/
+#    new_window: true
+#    highlight: false
+#  - name: Privacy Policy Mail Merge for Sheets™ Gmail™
+#    link: /privacy_mail_merge/
+#    new_window: true
+#    highlight: false
 #  - name: Instagram
 #    link: https://www.instagram.com/m.yaro001/
 #    new_window: true

@@ -130,14 +130,14 @@
 						{% for link in column.links %}
 							<li><a {% if link.nofollow %}rel="nofollow"{% endif %} {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
 								{% if link.social_icon %}
-									{% include social-icon.html icon=link.social_icon %}
+<!--									{% include social-icon.html icon=link.social_icon %}-->
 								{% endif %}
 								{{ link.name }}</a></li>
 						{% endfor %}
 					</ul>
 					{% endfor %}
 				</div>
-				<p class="copyright">&copy; {{ site.time | date: '%Y' }} DocGPT.ai • <a target="_blank" href="{% link terms.md %}">Terms</a> &amp; <a target="_blank" href="{% link privacy.md %}">Privacy</a> • <a target="_blank" href="https://twitter.com/ski0xFF">Made by Yaroslav Mykhailov</a></p>
+				<p class="copyright">&copy; {{ site.time | date: '%Y' }} DocGPT.ai • <a target="_blank" href="{% link terms.md %}">Terms</a> &amp; <a target="_blank" href="{% link privacy.md %}">Privacy</a> • <a target="_blank" href="https://twitter.com/ski0xFF">Made by Yaro</a></p>
 			</div>
 		</footer>
 		<script>

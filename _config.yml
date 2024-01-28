@@ -12,11 +12,11 @@ disqus_shortname:
 logo: /siteicon.png
 description:
 author:
-  name: Yaroslav Mykhailov
+  name: Yaro
   email: yaroslav91@gmail.com
   twitter: ski0xFF
 social:
-  name: Yaroslav Mykhailov
+  name: Yaro
   links:
     - https://twitter.com/ski0xFF
 
@@ -66,6 +66,26 @@ defaults:
       path: "contact.html"
     values:
       full_width: true
+  - scope:
+      path: "feedback_docs_window.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "feedback_gmail_window.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "feedback_slides_window.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "contact-success"
+    values:
+      sitemap: false
+  - scope:
+      path: "contact"
+    values:
+      sitemap: false
 
 jekyll-archives:
   enabled:
