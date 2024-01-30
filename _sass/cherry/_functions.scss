@@ -1,0 +1,201 @@
+@function getFirstColor($list) {
+  @each $item in $list {
+    @if (type-of($item) == 'list') {
+      $item: getFirstColor($item);
+    }
+    @if (type-of($item) == 'color') {
+      @return $item;
+    }
+  }
+  @return null;
+}
+
+@function mergeColorMaps($map1, $map2) {
+  $merged: $map1;
+  @if type-of($map2) == 'map' {
+    @each $name, $components in $map2 {
+      @if (type-of($name) == 'string') {
+        $value: getColorVariations($components);
+        @if $value {
+          $merged: map-merge($merged, ($name: $value));
+        }
+      }
+    }
+  }
+  @return $merged;
+}
+
+@function getColorVariations($components) {
+  /**
+   * Get color variations from a single color or list of colors
+   * @param  {color|list} components - list requires atlest one element
+   * @return null | $color-base, $color-invert, $color-light, $color-dark, $gradient)
+   */
+  @if (type-of($components) == 'list' or type-of($components) == 'color') and length($components) >= 1 {
+    $color-base: null;
+    $color-invert: null;
+    $color-light: null;
+    $color-dark: null;
+    $gradient: null;
+
+    // The param can either be a single color
+    // or a list of 2 colors
+    @if type-of($components) == 'color' {
+      $color-base: $components;
+      $color-invert: findColorInvert($color-base);
+      $color-light: findLightColor($color-base);
+      $color-dark: findDarkColor($color-base);
+    }
+    @else if type-of($components) == 'list' {
+      $color-base: nth($components, 1);
+      // base, invert, light, dark, and graident are provided
+      @if length($components) > 4 {
+        $color-invert: nth($components, 2);
+        $color-light: nth($components, 3);
+        $color-dark: nth($components, 4);
+        $gradient: nth($components, 5);
+      }
+      // base, invert, light, and dark are provided
+      @else if length($components) > 3 {
+        $color-invert: nth($components, 2);
+        $color-light: nth($components, 3);
+        $color-dark: nth($components, 4);
+      }
+      // base, invert, and light are provided
+      @else if length($components) > 2 {
+        $color-invert: nth($components, 2);
+        $color-light: nth($components, 3);
+        $color-dark: findDarkColor($color-base);
+      }
+      // base, invert|gradient provided
+      @else {
+        @if type-of(nth($components, 2)) == 'color' {
+          $color-invert: nth($components, 2);
+        }
+        @else {
+          $color-invert: findColorInvert($color-base);
+          $gradient: nth($components, 2);
+        }
+        $color-light: findLightColor($color-base);
+        $color-dark: findDarkColor($color-base);
+      }
+    }
+    @if (type-of($gradient) == 'list') {
+      // removes brackets around gradient
+      // $list: ();
+      // $gradient: join($list, $gradient);
+      $gradient: linear-gradient($gradient);
+    }
+    // We only want to merge the map if the color base is an actual color
+    @if type-of($color-base) == 'color' {
+      @return ($color-base, $color-invert, $color-light, $color-dark, $gradient);
+    }
+  }
+  @return null;
+}
+
+@function colorOverride($default, $color, $property) {
+  // UNUSED
+  @if (map-get($btn-color-settings, "#{$color}-#{$property}")) {
+    @return map-get($btn-color-settings, "#{$color}-#{$property}");
+  }
+  @else {
+    @return $default;
+  }
+}
+
+@function powerNumber($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+
+@function colorLuminance($color) {
+  @if type-of($color) != 'color' {
+    @return 0.55;
+  }
+  $color-rgb: ('red': red($color),'green': green($color),'blue': blue($color));
+  @each $name, $value in $color-rgb {
+    $adjusted: 0;
+    $value: $value / 255;
+    @if $value < 0.03928 {
+      $value: $value / 12.92;
+    }
+    @else {
+      $value: ($value + .055) / 1.055;
+      $value: powerNumber($value, 2);
+    }
+    $color-rgb: map-merge($color-rgb, ($name: $value));
+  }
+  @return (map-get($color-rgb, 'red') * .2126) + (map-get($color-rgb, 'green') * .7152) + (map-get($color-rgb, 'blue') * .0722);
+}
+
+@function encodecolor($string) {
+  @if type-of($string) == 'color' {
+    $hex: str-slice(ie-hex-str($string), 4);
+    $string:unquote("#{$hex}");
+  }
+  $string: '%23' + $string;
+  @return $string;
+}
+
+@function findLightColor($color) {
+  @if type-of($color) == 'color' {
+    $l: 96%;
+    @if lightness($color) > 96% {
+      $l: lightness($color);
+    }
+    @return change-color($color, $lightness: $l);
+  }
+  @return $body-background;
+}
+
+@function findDarkColor($color) {
+  @if type-of($color) == 'color' {
+    $base-l: 29%;
+    $luminance: colorLuminance($color);
+    $luminance-delta: (0.53 - $luminance);
+    $target-l: round($base-l + ($luminance-delta * 53));
+    @return change-color($color, $lightness: max($base-l, $target-l));
+  }
+  @return $text-strong;
+}
+
+@function findColorInvert($color) {
+  @if (colorLuminance($color) > 0.55) {
+    @return rgba(#000, 0.7);
+  }
+  @else {
+    @return #fff;
+  }
+}
+
+@function cherryRgba($color, $alpha) {
+  @if type-of($color) != 'color' {
+    @return $color;
+  }
+  @return rgba($color, $alpha);
+}
+
+@function cherryDarken($color, $amount) {
+  @if type-of($color) != 'color' {
+    @return $color;
+  }
+  @return darken($color, $amount);
+}
+
+@function cherryLighten($color, $amount) {
+  @if type-of($color) != 'color' {
+    @return $color;
+  }
+  @return lighten($color, $amount);
+}

@@ -2,6 +2,7 @@
 title: Refund Policy for DocGPT - AI Writer for Docs™
 description: 
 permalink: /refund_policy/
+sitemap: false
 ---
 
 Last updated: January 19, 2023

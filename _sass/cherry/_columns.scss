@@ -1,0 +1,220 @@
+$gap-sizes: 0 0.5 1 1.5 2 2.5 3 4 5 6 7 8 9 !default;
+$col-gap-multiplier: 0.5rem !default;        // i.e. 7.5px
+$col-gap-multiplier-lg: false !default;
+$col-gap-multiplier-md: false !default;
+$col-gap-multiplier-sm: false !default;
+$col-gap-multiplier-xs: false !default;
+
+/* ---- Columns ---------------------- */
+
+  .cols {
+    margin-right: $col-gap-multiplier * 1.5 * -1;
+    margin-left: $col-gap-multiplier * 1.5* -1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-none,    // flex none
+  .col-initial, // flex initial/0
+  .col,         // flex 1
+  .col-1,       // 12 columns
+  .col-1-5,     // 8 columns
+  .col-2,       // 6 columns
+  .col-2-5,     // 2.08 columns
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    flex: none;
+    position: relative;
+    min-height: 1px;
+    padding-left: $col-gap-multiplier * 1.5;
+    padding-right: $col-gap-multiplier * 1.5;
+    box-sizing: border-box;
+  }
+  @mixin sizes($pre, $post) {
+    #{$pre}12#{$post}  { width: 100%; }
+    #{$pre}11#{$post}  { width: 91.6666667%; }
+    #{$pre}10#{$post}  { width: 83.33333333%; }
+    #{$pre}9#{$post}   { width: 75%; }
+    #{$pre}8#{$post}   { width: 66.66666667%; }
+    #{$pre}7#{$post}   { width: 58.33333333%; }
+    #{$pre}6#{$post}   { width: 50%; }
+    #{$pre}5#{$post}   { width: 41.66666667%; }
+    #{$pre}4#{$post}   { width: 33.33333333%; }
+    #{$pre}3#{$post}   { width: 25%; }
+    #{$pre}2-5#{$post} { width: 20%; }
+    #{$pre}2#{$post}   { width: 16.66666667%; }
+    #{$pre}1-5#{$post} { width: 12.5%; } // 8 columns
+    #{$pre}1#{$post}   { width: 8.333333333%; }
+  }
+  @mixin cols-responsive-lg($class) {
+    #{$class} {
+      .col-1,
+      .col-1-5,
+      .col-2 {
+        width: 33.33333333%;
+      }
+    }
+  }
+  @mixin cols-responsive-md($class) {
+    #{$class} {
+      .col-5,
+      .col-6,
+      .col-7,
+      .col-8,
+      .col-9,
+      .col-10,
+      .col-11,
+      .col-12 {
+        width: 100%;
+      }
+      .col-1,
+      .col-1-5,
+      .col-2,
+      .col-2-5,
+      .col-3,
+      .col-4 {
+        width: 50%;
+      }
+    }
+  }
+  @mixin cols-responsive-sm($class) {
+    #{$class} {
+      .col-3,
+      .col-4 {
+        width: 100%;
+      }
+    }
+  }
+  @mixin cols-responsive-xs($class) {
+    #{$class} {
+      .col-1,
+      .col-1-5,
+      .col-2,
+      .col-2-5 {
+        width: 100%;
+      }
+    }
+  }
+
+  @include sizes('.col-', '');
+  @include sizes('.print\\:col-', '');
+  .col { flex: 1; }
+  .col-initial { flex: 0; }
+
+  @media screen and (max-width: $breakpoint-lg) {
+    @include cols-responsive-lg('.cols-responsive');
+    @include sizes('.lg\\:cols-', ' > [class*="col"]');
+    @include sizes('.lg\\:print\\:cols-', ' > [class*="col"]');
+    @include sizes('.cols > [class*="lg\\:col-', '"]');
+    @include sizes('.cols > [class*="lg\\:print\\:col-', '"]');
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    @include cols-responsive-md('.cols-responsive');
+    @include sizes('.md\\:cols-', ' > [class*="col"]');
+    @include sizes('.md\\:print\\:cols-', ' > [class*="col"]');
+    @include sizes('.cols > [class*="md\\:col-', '"]');
+    @include sizes('.cols > [class*="md\\:print\\:col-', '"]');
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    @include cols-responsive-sm('.cols-responsive');
+    @include sizes('.sm\\:cols-', ' > [class*="col"]');
+    @include sizes('.sm\\:print\\:cols-', ' > [class*="col"]');
+    @include sizes('.cols > [class*="sm\\:col-', '"]');
+    @include sizes('.cols > [class*="sm\\:print\\:col-', '"]');
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    @include cols-responsive-xs('.cols-responsive');
+    @include sizes('.xs\\:cols-', ' > [class*="col"]');
+    @include sizes('.xs\\:print\\:cols-', ' > [class*="col"]');
+    @include sizes('.cols > [class*="xs\\:col-', '"]');
+    @include sizes('.cols > [class*="xs\\:print\\:col-', '"]');
+  }
+
+  /* cols-gap */
+
+  @mixin cols-gap($prefix, $multipler) {
+    @each $i in $gap-sizes {
+      $ii: $i;
+      @if $i == 0.5 { $ii: '0-5'; }
+      @if $i == 1.5 { $ii: '1-5'; }
+      @if $i == 2.5 { $ii: '2-5'; }
+      .#{$prefix}gap-#{$ii},
+      .#{$prefix}cols-gap-#{$ii} {
+        margin-right: -#{$col-gap-multiplier * $i * $multipler};
+        margin-left: -#{$col-gap-multiplier * $i * $multipler};
+      }
+      .#{$prefix}gap-#{$ii} > .col,
+      .#{$prefix}gap-#{$ii} > [class*="col-"],
+      .#{$prefix}cols-gap-#{$ii} > .col,
+      .#{$prefix}cols-gap-#{$ii} > [class*="col-"] {
+        padding-right: #{$col-gap-multiplier * $i * $multipler};
+        padding-left: #{$col-gap-multiplier * $i * $multipler};
+      }
+    }
+  }
+
+  @include cols-gap('', 1.0);
+  @media screen and (max-width: $breakpoint-lg) {
+    @if ($col-gap-multiplier-lg != false) { @include cols-gap('', $col-gap-multiplier-lg); }
+    @include cols-gap('lg\\:', 1.0);
+  }
+  @media screen and (max-width: $breakpoint-md) {
+    @if ($col-gap-multiplier-md != false) { @include cols-gap('', $col-gap-multiplier-md); }
+    @include cols-gap('md\\:', 1.0);
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    @if ($col-gap-multiplier-sm != false) { @include cols-gap('', $col-gap-multiplier-sm); }
+    @include cols-gap('sm\\:', 1.0);
+  }
+  @media screen and (max-width: $breakpoint-xs) {
+    @if ($col-gap-multiplier-xs != false) { @include cols-gap('', $col-gap-multiplier-xs); }
+    @include cols-gap('xs\\:', 1.0);
+  }
+
+/* ---- Text columns ----------------- */
+
+  .text3 {
+    column-count: 3;
+    column-gap: 50px;
+    padding: 0 1px;
+  }
+  .text3 p {
+    margin: 0px;
+    display: inline;
+  }
+  @media (max-width: 880px) {
+    .text3 {
+      column-count: 2;
+    }
+  }
+  @media (max-width: 680px) {
+    .text3 {
+      column-count: 1;
+    }
+  }
+
+/* ---- Narrow typo --------------- */
+
+  .typo-narrow p,
+  .typo-narrow ul {
+    width: 70%;
+  }
+  @media (max-width: 1000px) {
+    .typo-narrow p,
+    .typo-narrow ul {
+      width: 88%;
+    }
+  }
+  @media (max-width: 550px) {
+    .typo-narrow p,
+    .typo-narrow ul {
+      width: 100%;
+    }
+  }

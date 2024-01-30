@@ -1,0 +1,56 @@
+$sizes: 0 0.5 1 1.5 2 2.5 3 4 5 6 7 8 9 10 11 12 13 14 !default;
+$spacing-multiplier: 0.5rem !default;   // i.e. 7.5px
+$spacing-multiplier-lg: false !default;
+$spacing-multiplier-md: false !default;
+$spacing-multiplier-sm: false !default;
+$spacing-multiplier-xs: false !default;
+
+$spacing-breakpoints: (
+  (lg, $breakpoint-lg, $spacing-multiplier-lg),
+  (md, $breakpoint-md, $spacing-multiplier-md),
+  (sm, $breakpoint-sm, $spacing-multiplier-sm),
+  (xs, $breakpoint-xs, $spacing-multiplier-xs)
+);
+
+/* ---- Main ------------------------- */
+
+  @mixin spacing($t, $type, $multipler, $prefix) {
+    @each $i in $sizes {
+      $ii: $i;
+      @if $i == 0.5 { $ii: '0-5'; }
+      @if $i == 1.5 { $ii: '1-5'; }
+      @if $i == 2.5 { $ii: '2-5'; }
+      .#{$prefix}#{$t}-#{$ii} {
+        #{$type}: $spacing-multiplier * $i * $multipler !important;
+      }
+      .#{$prefix}#{$t}t-#{$ii},
+      .#{$prefix}#{$t}y-#{$ii} {
+        #{$type}-top: $spacing-multiplier * $i * $multipler !important;
+      }
+      .#{$prefix}#{$t}b-#{$ii},
+      .#{$prefix}#{$t}y-#{$ii} {
+        #{$type}-bottom: $spacing-multiplier * $i * $multipler !important;
+      }
+      .#{$prefix}#{$t}l-#{$ii},
+      .#{$prefix}#{$t}x-#{$ii} {
+        #{$type}-left: $spacing-multiplier * $i * $multipler !important;
+      }
+      .#{$prefix}#{$t}r-#{$ii},
+      .#{$prefix}#{$t}x-#{$ii} {
+        #{$type}-right: $spacing-multiplier * $i * $multipler !important;
+      }
+    }
+  }
+
+  @each $type, $t in (padding, p), (margin, m) {
+    @include spacing($t, $type, 1.0, '');
+  }
+
+  @each $size, $width, $multiplier in $spacing-breakpoints {
+    @media screen and (max-width: $width) {
+      @each $type, $t in (padding, p), (margin, m) {
+        @if ($multiplier != false) { @include spacing($t, $type, $multiplier, ''); }
+        @include spacing($t, $type, 1.0, $size + '\\:');
+      }
+    }
+  }

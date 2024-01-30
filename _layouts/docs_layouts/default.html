@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/css/index.css?v=1" | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV5BH9XVVS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DV5BH9XVVS');
+    </script>
+    {% seo %}
+
+    <!--Crisp Chat-->
+    <script type="text/javascript" async>window.$crisp=[];window.CRISP_WEBSITE_ID="9893165b-b7ab-477d-b92e-8b474277e9e2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+
+
+  </head>
+  <body>
+    <div class="docs">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        {% include sidebar.html %}
+      </div>
+
+      <!-- Content -->
+      <div class="main">
+        <div class="main-body markdown-body">
+          <!-- Edit button -->
+          {% if site.github_url != nil and site.github_url != "" %}
+            <a href="{{ site.github_url }}/edit/master/{% if site.basedir %}{{ site.basedir }}/{% endif %}{{ page.path }}"
+              class="main-edit-pencil">
+              <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16">
+                <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
+              </svg>
+            </a>
+          {% endif %}
+          <!-- Main content -->
+          {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
+          <!-- Footer naviagtion -->
+          {% if page.has_children == true and page.has_toc != false %}
+            <hr>
+            <h2 class="text-delta">Table of contents</h2>
+            {% assign children_list = site.pages | sort:"nav_order" %}
+            <ul>
+              {% for child in children_list %}
+                {% if child.parent == page.title and child.title != page.title %}
+                  <li>
+                    <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+                    {% if child.summary %} - {{ child.summary }}{% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ "/assets/js/anchor.min.js?1" | relative_url }}"></script>
+    <script src="{{ "/assets/js/index.js?1" | relative_url }}"></script>
+    <script>anchors.add();</script>
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview')
+      ;</script>
+    {% endif %}
+  </body>
+</html>

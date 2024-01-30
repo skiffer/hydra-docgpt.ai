@@ -1,0 +1,250 @@
+$list-fade-time:      0s !default; // handy for list styling
+$option-color--active: $primary !default;
+
+/* ---- Main ------------------------- */
+
+  .v-select {
+    position: relative;
+  }
+  .vs__dropdown-toggle {
+    // container for selected-choices & search-input & actions
+    white-space: normal;
+    cursor: pointer;
+    padding-right: 32px;
+  }
+  .vs__selected-options {
+    // container for selected-choices & search-input
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: -7px;
+  }
+
+/* ---- Selected text / tag ---------- */
+
+  .vs__selected {
+    position: relative;
+    align-items: center;
+    background-color: #444444;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px 2em 0px 0.8em;
+    margin: 0 7px 7px 0;
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .vs--single .vs__selected {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    padding: 0;
+  }
+  .vs--single .vs__selected {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .vs--single.vs--searchable .vs__selected {
+    position: absolute;
+  }
+  .vs--single.vs--searchable.vs--open .vs__selected {
+    position: absolute;
+    opacity: .4;
+  }
+  .vs--single.vs--searching .vs__selected {
+    display: none;
+  }
+  .vs__deselect { // x button on tags
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0.3em;
+    margin: -10px 0 0 0;
+    padding: 5px;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    fill: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #fff;
+    transition: all 0.2s ease;
+  }
+  .vs__deselect:hover {
+    fill: rgb(220, 220, 220);
+  }
+
+/* ---- Search input ----------------- */
+
+  .vs__search,
+  .vs__search:active,
+  .vs__search:focus {
+    width: 0;
+    max-width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0 !important;
+    box-shadow: none;
+    flex-grow: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 7px 7px 0;
+    background: transparent;
+  }
+  .vs--single.vs--searching:not(.vs--open):not(.vs--loading) .vs__search {
+    opacity: .2;
+  }
+
+/* ---- Options ------------------------- */
+
+  .vs__dropdown-menu {
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    top: calc(100% - -5px);
+    max-height: 336px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    z-index: 5;
+    background: #fff;
+    padding: 1px;
+    margin: 0 0 0 -1px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 16px, inset rgba(60, 60, 60, 0.55) 0 0px 1px;
+    background-clip: content-box;
+    box-sizing: content-box;
+    cursor: default;
+
+    .vs__dropdown-option {
+      position: relative;
+      list-style: none;
+      margin: 0px -1px;
+      cursor: pointer;
+      line-height: 1.4em;
+      padding: 0.4em 0 0.5em 2em !important;
+      overflow: hidden;
+      /* white-space: nowrap; */
+      /* text-overflow: ellipsis; */
+      text-shadow: none;
+    }
+
+    /* First / last child */
+
+    .vs__dropdown-option:first-child {
+      margin: -1px -1px 0px -1px;
+      border-top: 3px solid transparent;
+      box-sizing: content-box;
+    }
+    .vs__dropdown-option:last-child {
+      margin: 0px -1px -1px -1px;
+      border-bottom: 2px solid transparent;
+      box-sizing: content-box;
+    }
+    .vs__no-options,
+    .vs__dropdown-option:last-child:first-child {
+      box-shadow: none;
+      margin: -1px -1px -1px -1px;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+    }
+    .vs__no-options {
+      text-align: center;
+      line-height: 2.2rem;
+    }
+
+    /* Hover */
+    //.vs__dropdown-option:hover, arrow keys use highlight
+    .vs__dropdown-option--highlight {
+      color: #fff;
+      background: $option-color--active;
+    }
+    .vs__dropdown-option--selected {
+      color: #fff;
+      background: darken($option-color--active, 6%);
+    }
+  }
+  .v-select-no-wrap .vs__dropdown-option {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: none;
+  }
+
+  /* Admin */
+
+  .vs--special-first .vs__dropdown-option:first-child {
+    background: #454545;//darken(#63b376, 5%);//#444
+    color: #fff;
+  }
+  .vs--special-first .vs__dropdown-option--selected:first-child,
+  .vs--special-first .vs__dropdown-option--highlight:first-child {
+    background: #111;//darken(#63b376, 10%);
+  }
+
+/* ---- Spinner ---------------------- */
+
+  .vs__spinner {
+    align-self: center;
+    opacity: 0;
+    font-size: 5px;
+    text-indent: -9999em;
+    overflow: hidden;
+    border: .9em solid hsla(0, 0%, 39.2%, .1);
+    border-left-color: rgba(60, 60, 60, .45);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: vSpinner 1.1s linear infinite;
+    animation: vSpinner 1.1s linear infinite;
+    transition: opacity .1s;
+  }
+  .vs__spinner,
+  .vs__spinner:after {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+  }
+  .vs--loading .vs__spinner {
+    opacity: 1;
+  }
+  @keyframes vSpinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+
+/* ---- Misc  ------------------------ */
+
+  .vs__search::-ms-clear,
+  .vs__search::-webkit-search-cancel-button,
+  .vs__search::-webkit-search-decoration,
+  .vs__search::-webkit-search-results-button,
+  .vs__search::-webkit-search-results-decoration {
+    display: none;
+  }
+  .vs__open-indicator {
+    display: none;
+  }
+
+
+  /* Menu animation */
+
+  .vs__fade-enter-active,
+  .vs__fade-leave-active {
+    transition: opacity 0s ease;
+  }
+  .vs__fade-leave-active {
+    transition: opacity $list-fade-time 0s ease;
+  }
+  .vs__fade-enter,
+  .vs__fade-leave-to {
+    opacity: 0;
+  }

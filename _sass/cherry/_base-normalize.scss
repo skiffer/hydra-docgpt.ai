@@ -1,0 +1,274 @@
+$family-primary:       BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+                       "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-secondary:     BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+                      "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-mono:          monospace !default;
+$body-background:      transparent !default;
+$body-color:           $text !default;
+$body-font-family:     $family-primary !default;
+$body-font-size:       1em !default;
+$body-font-weight:     400 !default;
+$body-letter-spacing:  0 !default;
+$body-line-height:     1.5em !default;
+$doc-font-size:        15px !default;
+$link-text-decoration: underline !default;
+$link-outline:         none !default;
+
+/* ---- Main ------------------------- */
+
+  html {
+    font-size: $doc-font-size;
+    -webkit-text-size-adjust: 100%;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: $body-background;
+    color: $body-color;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    font-weight: $body-font-weight;
+    letter-spacing: $body-letter-spacing;
+    line-height: $body-line-height;
+    overflow-y: scroll;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .preload * {
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+  }
+  a {
+    color: $link;
+    background-color: transparent; /* ie10 */
+    text-decoration: $link-text-decoration;
+    text-decoration-color: $link;
+    transition: 0.13s ease;
+  }
+  a:hover {
+    color: $link--hover;
+    text-decoration-color: $link--hover;
+  }
+  a:focus {
+    color: $link--focus;
+    text-decoration-color: $link--focus;
+    outline: $link-outline;
+  }
+  q,
+  div,
+  article,
+  aside,
+  details,
+  figcaption,
+  form,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  hr {
+    border: none;
+    height: 0;
+    border-bottom: 1px solid #f0f0f0;
+    overflow: hidden;
+  }
+  img {
+    border-style: none;
+  }
+  pre, code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 0.9em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  ul, ol, li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* ---- Table ------------------------ */
+
+  table,
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: inherit;
+  }
+  .thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+  .tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  th,
+  .th {
+    padding: 0;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+  }
+  td,
+  .td {
+    display: table-cell;
+    vertical-align: inherit;
+  }
+  .td,
+  .th {
+    text-align: inherit;
+  }
+  td:not([align]),
+  th:not([align]) {
+    text-align: inherit;
+  }
+
+/* ---- Forms ------------------------ */
+
+  form {
+    margin: 0;
+  }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  button,
+  select {
+    text-transform: none;
+  }
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  [hidden] {
+    display: none;
+  }
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="time"],
+  input[type="month"],
+  input[type="week"] {
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+  textarea {
+    overflow: auto;
+  }
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+
+/* ---- Selection -------------------- */
+
+  ::-moz-selection {
+    background: #5984FF;
+    text-shadow: none;
+    color: #fff;
+    -webkit-text-fill-color: #fff !important;
+  }
+  ::selection {
+    background: #5984FF;
+    text-shadow: none;
+    color: #fff;
+    -webkit-text-fill-color: #fff !important;
+  }
+  ::-moz-selection {
+    background: #5984FF;
+    text-shadow: none;
+    color: #fff;
+    -webkit-text-fill-color: #fff !important;
+  }

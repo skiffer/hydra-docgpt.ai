@@ -1,0 +1,305 @@
+$btn-background-color:   $primary !default;
+$btn-background-image:   null !default;
+$btn-border-color:       null !default;
+$btn-border-radius:      5px !default;
+$btn-border-width:       2px !default;
+$btn-box-shadow:         none !default;
+$btn-box-shadow--active: $btn-box-shadow !default;
+$btn-disabled-opacity:   0.5 !default;
+$btn-font-family:        $body-font-family !default;
+$btn-font-size:          1rem !default;
+$btn-font-weight:        600 !default;
+$btn-icon-size:          1.3em !default;
+$btn-icon-margin:        0.4em !default;
+$btn-line-height:        1.5em !default;
+$btn-padding:            12px 31px !default;
+$btn-min-height:         0 !default;
+$btns-margin-right:      1rem !default;
+$btns-margin-bottom:     1.5rem !default;
+
+// Add default color to loop over
+$btn-app-colors: mergeColorMaps($app-colors, (
+  "default": ($btn-background-color, $btn-background-image)
+));
+
+@mixin loader($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 18 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 9C2 5.5 4.64444 2 9.15556 2C13.6667 2 16 5.88889 16 9" stroke="#{encodecolor($color)}" stroke-width="2"/></svg>')
+}
+
+@function calcBoxShadow($border-color: null) {
+  // Pass $border-color to add border into the box-shadow
+  $border-width: $btn-border-width;
+  $border-shadow: null;
+  // Default border width
+  @if ($border-width <= 0px) {
+    $border-width: 2px;
+  }
+  // Get values
+  @if ($border-color and $btn-box-shadow != none) {
+    @return 0 0 0 $border-width $border-color inset, $btn-box-shadow;
+  }
+  @else if ($border-color) {
+    @return 0 0 0 $border-width $border-color inset;
+  }
+  @else if ($btn-box-shadow != none) {
+    @return $btn-box-shadow;
+  }
+  @else {
+    @return none;
+  }
+}
+
+/* ---- Main ------------------------- */
+
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: $btn-padding;
+    font-family: $btn-font-family;
+    font-style: normal;
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    min-height: $btn-min-height;
+    line-height: $btn-line-height;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    background-size: 200% auto; /* 200% for gradients */
+    border-radius: $btn-border-radius;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 200ms ease;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  .btn.is-full,
+  .btn.is-fullwidth, {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Icon */
+
+  .btn .icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: $btn-icon-size;
+    width: $btn-icon-size;
+    transition: opacity 200ms ease;
+    &:first-child:not(:last-child) {
+      margin-left: calc(-0.2em - 1px);
+      margin-right: $btn-icon-margin;
+    }
+    &:last-child:not(:first-child) {
+      margin-right: calc(-0.2em - 1px);
+      margin-left: $btn-icon-margin;
+    }
+  }
+
+  /* Multiple buttons */
+
+  .btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .btns .btn {
+    margin-right: $btns-margin-right;
+    margin-bottom: $btns-margin-bottom;
+  }
+  .btns .btn:last-child {
+    margin-right: 0;
+  }
+
+  /* Loading */
+
+  .btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    margin: -10px;
+    opacity: 0;
+    z-index: 0;
+    animation: loaderOne .9s cubic-bezier(.435,.165,.615,.81) infinite;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 2;
+    @include loader(#fff);
+  }
+  .btn.is-loading,
+  .btn.is-loading:hover,
+  .btn.is-loading:focus {
+    cursor: default;
+    color: transparent !important;
+  }
+  .btn.is-loading .icon {
+    opacity: 0;
+  }
+  .btn.is-loading svg.icon {
+    fill: transparent !important;
+  }
+  .btn.is-loading::after {
+    opacity: 1;
+  }
+  @keyframes loaderOne {
+    0% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Button styles */
+
+  @each $name, $value in $btn-app-colors {
+    $cssname: '.btn';
+    $color: nth($value, 1);
+    $color-invert: nth($value, 2);
+    $background-image: nth($value, 5);
+    $border-color: null;
+
+    @if ($background-image == null) {
+      $background-image: none;
+    }
+    @if ($name == 'default') {
+      $border-color: $btn-border-color;
+    }
+    @if $name != 'default' {
+      $cssname: '.btn.is-#{$name}';
+    }
+
+    #{$cssname} {
+      color: $color-invert;
+      background-color: $color;
+      box-shadow: calcBoxShadow($border-color);
+      background-image: $background-image;
+      &:hover,
+      &:focus,
+      &:active,
+      &.is-hovered,
+      &.is-focused,
+      &.is-active {
+        color: $color-invert;
+        background-color: cherryDarken($color, 8%);
+        background-position: right center;
+        box-shadow: calcBoxShadow($border-color);
+      }
+      &[disabled],
+      fieldset[disabled] & {
+        opacity: $btn-disabled-opacity;
+        background-color: $color;
+        cursor: default;
+      }
+      &.is-loading {
+        background-color: $color;
+        background-position: left center;
+        &::after {
+          @include loader($color-invert);
+        }
+      }
+      &.is-inverted {
+        color: $color;
+        background-color: $color-invert;
+        background-image: none;
+        box-shadow: calcBoxShadow();
+        &::after {
+          @include loader($color);
+        }
+        &:hover,
+        &:focus,
+        &:active,
+        &.is-hovered,
+        &.is-focused,
+        &.is-active {
+          background-color: cherryDarken($color-invert, 5%);
+        }
+        &[disabled],
+        fieldset[disabled] &,
+        &.is-loading {
+          color: $color;
+          background-color: $color-invert;
+        }
+      }
+      &.is-outlined {
+        // Use $color if default `border-color` not set
+        $border-color-outlined: $border-color;
+        @if ($border-color == null) {
+          $border-color-outlined: $color;
+        }
+        color: $color;
+        background-color: transparent;
+        background-image: none;
+        box-shadow: calcBoxShadow($border-color-outlined);
+        &::after {
+          @include loader($color);
+        }
+        &:hover,
+        &:focus,
+        &:active,
+        &.is-hovered,
+        &.is-focused,
+        &.is-active {
+          color: $color-invert;
+          background-color: $color;
+          background-image: $background-image;
+          box-shadow: calcBoxShadow(transparent);
+        }
+        &[disabled],
+        fieldset[disabled] &,
+        &.is-loading {
+          color: $color;
+          background-color: transparent;
+          background-image: none;
+          box-shadow: calcBoxShadow($border-color-outlined);
+        }
+      }
+      // If light and dark colors are provided
+      @if length($value) >= 4 and nth($value, 4) {
+        $color-light: nth($value, 3);
+        $color-dark: nth($value, 4);
+        &.is-light {
+          color: $color-dark;
+          background-color: $color-light;
+          background-image: none;
+          box-shadow: calcBoxShadow();
+          &::after {
+            @include loader($color-dark);
+          }
+          &:hover,
+          &:focus,
+          &:active,
+          &.is-hovered,
+          &.is-focused,
+          &.is-active {
+            background-color: cherryDarken($color-light, 4%);
+            color: $color-dark;
+          }
+          &[disabled],
+          fieldset[disabled] &,
+          &.is-loading {
+            color: $color-dark;
+            background-color: $color-light;
+            background-image: none;
+            box-shadow: calcBoxShadow();
+          }
+        }
+      }
+    }
+  }

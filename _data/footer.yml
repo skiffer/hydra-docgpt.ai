@@ -50,11 +50,10 @@
 #    social_icon: Facebook
   - name: Twitter
     link: https://twitter.com/ski0xFF/
-    social_icon: Twitter
     new_window: true
     nofollow: true
-  - name: Blog
-    link: /blog/
+  - name: Documentation
+    link: /docs/gpt-for-gmail
     new_window: true
 #    social_icon: Facebook
 #  - name: Workspace Analytics

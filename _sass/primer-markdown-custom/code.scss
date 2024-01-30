@@ -1,0 +1,49 @@
+.markdown-body {
+  // Inline code snippets
+  code,
+  tt {
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    // font-size: 85%;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    background-color: rgba(#000, 0.05);
+    border-radius: 4px;
+    br { display: none; }
+  }
+  // Code blocks
+  pre {
+    padding: $markdown-spacer-3;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.4;
+    background-color: $gray-100;
+    border-radius: 6px;
+    word-wrap: normal;
+    // Code tags within code blocks
+    > code {
+      padding: 0;
+      margin: 0;
+      font-size: 100%;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+    code,
+    tt {
+      display: inline;
+      max-width: auto;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+  .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+  }
+}

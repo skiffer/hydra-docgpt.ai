@@ -1,0 +1,25 @@
+.markdown-body {
+  .csv-data {
+    td,
+    th {
+      padding: 5px;
+      overflow: hidden;
+      font-size: $markdown-font-size-small;
+      line-height: 1em;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .blob-num {
+      padding: 10px $markdown-spacer-2 9px;
+      text-align: right;
+      background: #fff;
+      border: 0;
+    }
+    tr { border-top: 0; }
+    th {
+      font-weight: $markdown-font-weight-bold;
+      background: $gray-100;
+      border-top: 0;
+    }
+  }
+}

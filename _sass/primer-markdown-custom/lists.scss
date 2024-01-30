@@ -1,0 +1,42 @@
+.markdown-body {
+  ul,
+  ol {
+    padding-left: 2em;
+    &.no-list {
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  li {
+    word-wrap: break-all;
+  }
+  li > p {
+    margin-top: $markdown-spacer-3;
+  }
+  li + li {
+    margin-top: 0.55em;
+  }
+  dl {
+    padding: 0;
+    dt {
+      margin: 0;
+      padding: 0;
+      margin-top: $markdown-spacer-3;
+      font-size: 1em;
+      font-style: italic;
+      font-weight: $markdown-font-weight-bold;
+    }
+    dd {
+      margin: 0;
+      padding: 0 $markdown-spacer-3;
+      margin-bottom: $markdown-spacer-3;
+    }
+  }
+}

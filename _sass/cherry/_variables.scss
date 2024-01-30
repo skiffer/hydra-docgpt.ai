@@ -1,0 +1,48 @@
+@import "functions.scss";
+
+// Base colors
+$black:            hsl(0, 0%, 0%) !default;
+$black-light:      hsl(0, 0%, 7%) !default;
+$black-lighter:    hsl(0, 0%, 13%) !default;
+$black-lightest:   hsl(0, 0%, 17%) !default;
+
+$grey:             hsl(0, 0%, 27%) !default;
+$grey-light:       hsl(0, 0%, 47%) !default;
+$grey-lighter:     hsl(0, 0%, 73%) !default;
+$grey-lightest:    hsl(0, 0%, 91%) !default;
+
+$white-darkest:    hsl(0, 0%, 94%) !default;
+$white-darker:     hsl(0, 0%, 96%) !default;
+$white-dark:       hsl(0, 0%, 98%) !default;
+$white:            hsl(0, 0%, 100%) !default;
+
+$orange:           hsl(14,  100%, 53%) !default;
+$yellow:           hsl(48,  100%, 67%) !default;
+$green:            hsl(141, 53%,  53%) !default;
+$turquoise:        hsl(171, 100%, 41%) !default;
+$cyan:             hsl(204, 71%,  53%) !default;
+$blue:             hsl(217, 71%,  53%) !default;
+$violet:           hsl(259, 100%, 67%) !default;
+$purple:           hsl(271, 100%, 71%) !default;
+$red:              hsl(348, 86%, 61%) !default;
+
+// App colors
+$primary:          $violet !default;
+$secondary:        $blue !default;
+$success:          $green !default;
+$info:             $blue !default;
+$warning:          $yellow !default;
+$danger:           $red !default;
+$text:             $black-light !default;
+$text-light:       $grey !default;
+$text-lighter:     $grey-light !default;
+$text-strong:      $black !default;
+$link:             $black-light !default;
+$link--hover:      $blue !default;
+$link--focus:      $blue !default;
+
+// Breakpoints
+$breakpoint-lg: 1023px !default; /*desktop*/
+$breakpoint-md: 768px !default; /*tablet*/
+$breakpoint-sm: 590px !default; /*mobile*/
+$breakpoint-xs: 589px !default; /*mobile*/

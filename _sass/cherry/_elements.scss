@@ -1,0 +1,339 @@
+/* ---- Avatar ----------------------- */
+
+  .avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 60px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center center;
+    overflow: hidden;
+  }
+
+/* ---- Infinite loading ------------- */
+
+  .infinite-status-prompt {
+    padding: 0 !important;
+  }
+  .infinite-loader {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+    padding: 0;
+    border: 2px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    opacity: 0.9;
+    color: rgba(0, 0, 0, 0.85);
+    color: $primary;
+    background-color: transparent;
+    animation: infinite-loader .9s cubic-bezier(.435,.165,.615,.81) infinite
+  }
+  @keyframes infinite-loader {
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
+/* ---- NProgress -------------------- */
+
+  #nprogress {
+    /* Make clicks pass-through */
+    // opacity: 0;
+    // animation-name: example;
+    // animation-duration: 0.2s;
+    // animation-delay: 0.2s;
+    // animation-fill-mode: both;
+    pointer-events: none;
+  }
+  @keyframes example {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  #nprogress .bar {
+    background: $primary;
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  /* Fancy blur effect */
+  #nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 8px $primary, 0 0 4px $primary;
+    opacity: 1.0;
+    transform: rotate(3deg) translate(0px, -4px);
+  }
+  .nprogress-custom-parent {
+    overflow: hidden;
+    position: relative;
+  }
+  .nprogress-custom-parent #nprogress .bar {
+    position: absolute;
+  }
+
+/* ---- X ---------------------------- */
+
+  .x1 {}
+  .x1,
+  .x2 {
+    width: 34px;
+    height: 34px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .x1:after,
+  .x1:before,
+  .x2:after,
+  .x2:before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -7px;
+    content: '';
+    width: 14px;
+    height: 2px;
+    border-radius: 8px;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    transition: color ease .2s
+  }
+  .x1:before,
+  .x2:before {
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+  }
+  .x1:after,
+  .x2:after {
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+  }
+  .x1:before,
+  .x1:after,
+  .x2:before,
+  .x2:after {
+    background-color: #111;
+    box-shadow: 0 0 1px rgba(255,255,255,.12)
+  }
+  .x1:hover:before,
+  .x1:hover:after,
+  .x2:hover:before,
+  .x2:hover:after {
+    width: 16px;
+    margin-left: -8px
+  }
+
+  /* x2 deviations */
+
+
+  .x2:before,
+  .x2:after {
+    margin-top: -2px;
+    margin-left: -8px;
+    width: 17px;
+    height: 2.5px;
+    border-radius: 0px;
+  }
+  .x2:hover:before,
+  .x2:hover:after {
+    width: 19px;
+    margin-left: -9px
+  }
+
+  /* white */
+
+  .x-white:before,
+  .x-white:after {
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+/* ---- table ------------------------ */
+
+  /* Thanks to Bulma for the following.. */
+
+  $table-color: $text !default;
+  $table-background-color: #fff !default;
+
+  $table-cell-border: 1px solid $grey-lightest !default;
+  $table-cell-border-width: 0 0 1px !default;
+  $table-cell-padding: 0.6em 0.9em !default;
+  $table-cell-heading-color: $text-strong !default;
+
+  $table-head-cell-border-width: 0 0 1px !default;
+  $table-head-cell-color: $text-strong !default;
+  $table-foot-cell-border-width: 1px 0 0 !default;
+  $table-foot-cell-color: $text-strong !default;
+
+  $table-head-background-color: transparent !default;
+  $table-body-background-color: transparent !default;
+  $table-foot-background-color: transparent !default;
+
+  $table-row-hover-background-color: darken($table-background-color, 8%) !default;
+  $table-row-active-background-color: $primary !default;
+  $table-row-active-color: $primary-invert !default;
+  $table-striped-row-even-background-color: #fafafa !default;
+  $table-striped-row-even-hover-background-color: darken($table-striped-row-even-background-color, 8%) !default;
+
+  $table-colors: $app-colors !default;
+
+  .table {
+    background-color: $table-background-color;
+    color: $table-color;
+    td,
+    th,
+    .td,
+    .th {
+      border: $table-cell-border;
+      border-width: $table-cell-border-width;
+      padding: $table-cell-padding;
+      // Colors
+      @each $name, $pair in $table-colors {
+        $color: nth($pair, 1);
+        $color-invert: nth($pair, 2);
+        &.is-#{$name} {
+          background-color: $color;
+          border-color: $color;
+          color: $color-invert;
+        }
+      }
+      // Modifiers
+      &.is-narrow {
+        white-space: nowrap;
+        width: 1%;
+      }
+      &.is-selected {
+        background-color: $table-row-active-background-color;
+        color: $table-row-active-color;
+        a,
+        strong {
+          color: currentColor;
+        }
+      }
+      &.is-vcentered {
+        vertical-align: middle;
+      }
+    }
+    th,
+    .th {
+      color: $table-cell-heading-color;
+    }
+    tr.is-selected,
+    .tr.is-selected {
+      background-color: $table-row-active-background-color;
+      color: $table-row-active-color;
+      a,
+      strong {
+        color: currentColor;
+      }
+      td,
+      th,
+      .td,
+      .th {
+        border-color: $table-row-active-color;
+        color: currentColor;
+      }
+    }
+    thead,
+    .thead {
+      background-color: $table-head-background-color;
+      td,
+      th,
+      .td,
+      .th {
+        border-width: $table-head-cell-border-width;
+        color: $table-head-cell-color;
+      }
+    }
+    tfoot,
+    .tfoot {
+      background-color: $table-foot-background-color;
+      td,
+      th,
+      .td,
+      .th {
+        border-width: $table-foot-cell-border-width;
+        color: $table-foot-cell-color;
+      }
+    }
+    tbody,
+    .tbody {
+      background-color: $table-body-background-color;
+      tr:last-child,
+      .tr:last-child {
+        td,
+        th,
+        .td,
+        .th {
+          border-bottom-width: 0;
+        }
+      }
+    }
+    // Modifiers
+    &.is-bordered {
+      td,
+      th,
+      .td,
+      .th {
+        border-width: 1px;
+      }
+      tr:last-child,
+      .tr:last-child {
+        td,
+        th,
+        .td,
+        .th {
+          border-bottom-width: 1px;
+        }
+      }
+    }
+    &.is-full {
+      width: 100%;
+    }
+    &.is-hoverable {
+      tbody tr:not(.is-selected):hover,
+      .tbody .tr:not(.is-selected):hover {
+        background-color: $table-row-hover-background-color;
+      }
+      &.is-striped tbody tr:not(.is-selected):hover,
+      &.is-striped .tbody .tr:not(.is-selected):hover {
+        background-color: $table-row-hover-background-color;
+        &:nth-child(even) {
+          background-color: $table-striped-row-even-hover-background-color;
+        }
+      }
+    }
+    &.is-narrow td,
+    &.is-narrow th,
+    &.is-narrow .td,
+    &.is-narrow .th {
+      padding: 0.25em 0.5em;
+    }
+    &.is-striped tbody tr:not(.is-selected):nth-child(even),
+    &.is-striped .tbody .tr:not(.is-selected):nth-child(even) {
+      background-color: $table-striped-row-even-background-color;
+    }
+  }
+  .table-container {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+  }

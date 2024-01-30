@@ -36,6 +36,8 @@ paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 
+
+
 defaults:
   - scope:
       path: ""
@@ -62,6 +64,10 @@ defaults:
       path: "index.html"
     values:
       layout: "default"
+  - scope:
+      path: "docs"
+    values:
+      layout: "docs_layouts/page"
   - scope:
       path: "contact.html"
     values:
