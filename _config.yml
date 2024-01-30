@@ -109,8 +109,10 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
+  - _redirects
 
-# -----------
+include:
+  - _redirects
 # CloudCannon
 
 _select_data:
