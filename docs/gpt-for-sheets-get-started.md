@@ -4,10 +4,10 @@ title: Get Started
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/get-started
+description: Explore GPT functions like, GPT_TRANSLATE for language translation and GPT_EXTRACT for data extraction. Follow example use cases, enhancing your Google Sheets experience. Simplify email responses, improve text, and streamline explanations effortlessly. Watch the installation guide here.
 ---
 
-## Install GPT for Sheets
-
+# How to Install GPT for Sheets
 
 To leverage the capabilities of language models using GPT functions within your Google spreadsheets, install the GPT for Sheets, Docs, Slides, Forms add-on. Once installed, this add-on also extends the capabilities of AI to Google Sheets, Docs, Forms, Slides.
 
@@ -30,7 +30,7 @@ To leverage the capabilities of language models using GPT functions within your 
 
 7. A notification in a pop-up window will confirm the successful installation of GPT for Docs, Sheets, Slides, and Forms.
 
-## How to launch GPT for Sheets
+## How to Launch GPT for Sheets
 
 1. Open your Google Sheet.
 2. Click on **Extensions** > **GPT for Docs, Sheets, Slides, and Forms** > **Launch** ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-launch.png)

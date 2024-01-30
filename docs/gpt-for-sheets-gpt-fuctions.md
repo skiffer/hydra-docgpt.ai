@@ -4,6 +4,7 @@ title: GPT functions
 nav_order: 2
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/gpt-functions
+description: Effortlessly enhance Google Sheets with GPT functions! Install the GPT for Sheets add-on, use AI-powered features for tasks like translation, extraction, formatting, tagging, classifying, summarizing, and table generation. Leverage GPT capabilities directly within your spreadsheet, saving time and boosting efficiency.
 ---
 
 # GPT functions
