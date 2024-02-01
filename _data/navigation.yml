@@ -2,7 +2,7 @@
   link: /
   new_window: false
   highlight: false
-- name: Pricing Docs
+- name: Google Doc AI
   link: /google-doc-ai/#pricing
   new_window: false
   highlight: false
@@ -10,23 +10,23 @@
   link: /lead-generation-linkedin/#pricing
   new_window: false
   highlight: false
-- name: Pricing Forms
+- name: Quiz Generator
   link: /ai-quiz-generator/#pricing
   new_window: false
   highlight: false
-- name: Pricing Slides
+- name: Google Slide AI
   link: /google-slide-ai/#pricing
   new_window: false
   highlight: false
-- name: Pricing Sheets
+- name: GPT for Sheets
   link: /gpt-for-sheets/#pricing
   new_window: false
   highlight: false
-- name: Pricing Gmail
+- name: AI Email Assistant
   link: /ai-email-assistant/#pricing
   new_window: false
   highlight: false
-- name: Pricing QR/Barcode Generator
+- name: QR Barcode Generator
   link: /qr-code-generator-pricing/#pricing
   new_window: false
   highlight: false
