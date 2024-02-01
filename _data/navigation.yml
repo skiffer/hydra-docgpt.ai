@@ -3,7 +3,7 @@
   new_window: false
   highlight: false
 - name: Pricing Docs
-  link: /docs-gpt-pricing/#pricing
+  link: /google-doc-ai/#pricing
   new_window: false
   highlight: false
 - name: Linkedin CRM
@@ -11,19 +11,19 @@
   new_window: false
   highlight: false
 - name: Pricing Forms
-  link: /forms-gpt-pricing/#pricing
+  link: /ai-quiz-generator/#pricing
   new_window: false
   highlight: false
 - name: Pricing Slides
-  link: /slides-magic-gpt-pricing/#pricing
+  link: /google-slide-ai/#pricing
   new_window: false
   highlight: false
 - name: Pricing Sheets
-  link: /sheets-gpt-pricing/#pricing
+  link: /gpt-for-sheets/#pricing
   new_window: false
   highlight: false
 - name: Pricing Gmail
-  link: /gmail-gpt-pricing/#pricing
+  link: /ai-email-assistant/#pricing
   new_window: false
   highlight: false
 - name: Pricing QR/Barcode Generator
