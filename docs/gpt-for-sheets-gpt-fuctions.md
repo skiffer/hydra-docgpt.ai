@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: GPT functions
+title: Explore GPT functions - learn how to use them into your Google Sheets
 nav_order: 2
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/gpt-functions

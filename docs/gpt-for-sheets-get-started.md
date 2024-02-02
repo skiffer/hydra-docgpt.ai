@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: Get Started
+title: Get Started with GPT for Sheets
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/get-started
