@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: GPT for Gmail
+title: The AI Email Assistant integrates GPT directly into your Gmail
 nav_order: 2
 has_children: false
 permalink: /docs/gpt-for-gmail
