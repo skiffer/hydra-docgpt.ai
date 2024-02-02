@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: AI Email Assistant for Gmail
+title: AI Email Assistant for Gmail | GPT
 nav_order: 2
 has_children: false
 permalink: /docs/gpt-for-gmail
