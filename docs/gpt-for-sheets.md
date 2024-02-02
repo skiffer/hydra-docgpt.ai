@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: GPT for Sheets brings GPT-3 and GPT-4 into your Google Sheets
+title: GPT for Sheets
 nav_order: 2
 has_children: true
 permalink: /docs/gpt-for-sheets
