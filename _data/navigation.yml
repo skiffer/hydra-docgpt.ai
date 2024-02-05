@@ -3,31 +3,31 @@
   new_window: false
   highlight: false
 - name: Google Doc AI
-  link: /google-doc-ai/#pricing
+  link: /google-doc-ai/
   new_window: false
   highlight: false
 - name: Linkedin CRM
-  link: /lead-generation-linkedin/#pricing
+  link: /lead-generation-linkedin/
   new_window: false
   highlight: false
 - name: Quiz Generator
-  link: /ai-quiz-generator/#pricing
+  link: /ai-quiz-generator/
   new_window: false
   highlight: false
 - name: Google Slide AI
-  link: /google-slide-ai/#pricing
+  link: /google-slide-ai/
   new_window: false
   highlight: false
 - name: GPT for Sheets
-  link: /gpt-for-sheets/#pricing
+  link: /gpt-for-sheets/
   new_window: false
   highlight: false
 - name: AI Email Assistant
-  link: /ai-email-assistant/#pricing
+  link: /ai-email-assistant/
   new_window: false
   highlight: false
 - name: QR Barcode Generator
-  link: /qr-code-generator-pricing/#pricing
+  link: /qr-code-generator-pricing/
   new_window: false
   highlight: false
 #- name: Blog
