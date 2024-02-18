@@ -52,8 +52,11 @@
     link: https://twitter.com/ski0xFF/
     new_window: true
     nofollow: true
-  - name: Tutorials and Examples
+  - name: How to use AI Email Assistant (GPT for Gmail)
     link: /docs/gpt-for-gmail
+    new_window: true
+  - name: How to use GPT for Sheets
+    link: /docs/gpt-for-sheets/get-started
     new_window: true
 #    social_icon: Facebook
 #  - name: Workspace Analytics
