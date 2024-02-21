@@ -1,6 +1,6 @@
 ---
 title: GPT for Sheets - Chat GPT functions into your documents
-heading: GPT for Sheets
+heading: GPT for Google Sheets
 description: Leverage the GPT for Google Sheets to seamlessly incorporate the power of GPT-3.5 and GPT-4 directly into your Google Sheets.
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
@@ -158,7 +158,7 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
           <li><i class="bi-check-lg icon-pricing"></i> 500 queries / month</li>
           <li><i class="bi-check-lg icon-pricing"></i> Support 40+ languages</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT to get the result of ChatGPT in a single cell</li>
-          <li><i class="bi-check-lg icon-pricing"></i> GPT_TABLE to get a table of items from a prompt</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_TABLE, GPT_LIST to get a table of items from a prompt</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT_FORMAT to sanitize your sheet data into the same format</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT_EXTRACT to extract entities from your Sheets™ data</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT_SUMMARIZE to summarize your sheet content</li>
@@ -166,8 +166,9 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
           <li><i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your sheet content</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content</li>
           <li><i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_APPLY to apply any AI processing of you text</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_SPLIT to split your text by phrase, sentence, etc..</li>
           <li><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
-          <li><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
           <li class=""><i class="bi-check-lg icon-pricing"></i> Online Support</li>
           <li><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
         </ul>
@@ -239,9 +240,8 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
           <li style="color: white"> .</li>
           <li style="color: white"> .</li>
           <li style="color: white"> .</li>
-          <!--                    <li style="color: white"> .</li>-->
-          <!--                    <li style="color: white"> .</li>-->
-          <!--                    <li style="color: white"> .</li>-->
+                              <li style="color: white"> .</li>
+                              <li style="color: white"> .</li>
           <!--                    <li style="color: white"> .</li>-->
           <!--                    <li style="color: white"> .</li>-->
           <!--                    <li style="color: white"> .</li>-->
@@ -272,8 +272,9 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your sheet content</li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content</li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_APPLY to apply any AI processing of you text</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_SPLIT to split your text by phrase, sentence, etc..</li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
-          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
         </ul>
@@ -350,8 +351,8 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
           <li style="color: white"> .</li>
           <li style="color: white"> .</li>
           <li style="color: white"> .</li>
-          <!--                    <li style="color: white"> .</li>-->
-          <!--                    <li style="color: white"> .</li>-->
+                              <li style="color: white"> .</li>
+<!--                              <li style="color: white"> .</li>-->
           <!--                    <li style="color: white"> .</li>-->
           <!--                    <li style="color: white"> .</li>-->
           <!--                    <li style="color: white"> .</li>-->
@@ -437,6 +438,7 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
 <style>
   .help-header {
     padding-bottom: 15px;
+    font-size: 22px;
   }
 
   .help-image {
@@ -674,6 +676,135 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
     </div>
   </div>
   <!-- END ROW -->
+
+  <!-- Start ROW -->
+  <div class="row help-row">
+    <h2 class="help-header container">GPT_TABLE generates a table with data</h2>
+<!--    <div class="col-md-12">-->
+<!--      <img alt="GPT_TAG helps to categorize and classify text" class="help-image" src="/images/gpt-tag.png">-->
+<!--    </div>-->
+    <div class="center-table">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Syntax</th>
+          <th>=GPT_TABLE(prompt, [headers])</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_TABLE("top 10 most popular cities and their population")</code></td>
+        </tr>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_TABLE("top 10 most popular cities and their population", A1:C1)</code></td>
+        </tr>
+        <tr>
+          <td>Localization</td>
+          <td>In some Google Sheets localization, you need to use ";" to separate parameters instead of ","</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END ROW -->
+
+  <!-- Start ROW -->
+  <div class="row help-row">
+    <h2 class="help-header container">GPT_LIST/GPT_HLIST generating a list with data</h2>
+    <!--    <div class="col-md-12">-->
+    <!--      <img alt="GPT_TAG helps to categorize and classify text" class="help-image" src="/images/gpt-tag.png">-->
+    <!--    </div>-->
+    <div class="center-table">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Syntax</th>
+          <th>=GPT_LIST(prompt, [value])</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_LIST("top 10 most popular cities")</code></td>
+        </tr>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_HLIST("top 10 most popular cities")</code></td>
+        </tr>
+        <tr>
+          <td>Localization</td>
+          <td>In some Google Sheets localization, you need to use ";" to separate parameters instead of ","</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END ROW -->
+
+  <!-- Start ROW -->
+  <div class="row help-row">
+    <h2 class="help-header container">GPT_SPLIT/GPT_HSPLIT splits text semantically, such as by section, paragraph, sentence, customer...</h2>
+    <!--    <div class="col-md-12">-->
+    <!--      <img alt="GPT_TAG helps to categorize and classify text" class="help-image" src="/images/gpt-tag.png">-->
+    <!--    </div>-->
+    <div class="center-table">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Syntax</th>
+          <th>=GPT_SPLIT(text, split_by)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_SPLIT("The sky is blue. The cat purrs softly. The sun shines brightly.", "sentences")</code></td>
+        </tr>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_HSPLIT("The sky is blue. The cat purrs softly. The sun shines brightly.", "sentences")</code></td>
+        </tr>
+        <tr>
+          <td>Localization</td>
+          <td>In some Google Sheets localization, you need to use ";" to separate parameters instead of ","</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END ROW -->
+
+  <!-- Start ROW -->
+  <div class="row help-row">
+    <h2 class="help-header container">GPT_APPLY utilizes the specified task on the provided text, with the default objective being to correct grammar and spelling errors</h2>
+    <!--    <div class="col-md-12">-->
+    <!--      <img alt="GPT_TAG helps to categorize and classify text" class="help-image" src="/images/gpt-tag.png">-->
+    <!--    </div>-->
+    <div class="center-table">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Syntax</th>
+          <th>=GPT_APPLY(text, [task])</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Copy/paste example</td>
+          <td><code>=GPT_APPLY("He hav a book", "fix grammar and spelling")</code></td>
+        </tr>
+        <tr>
+          <td>Localization</td>
+          <td>In some Google Sheets localization, you need to use ";" to separate parameters instead of ","</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- END ROW -->
+
 </div>
 <!--        <div class="container flex">-->
 <!--            <div class="text editable">-->
