@@ -1,0 +1,680 @@
+---
+title: Translate Slides and Rephrase Presentation with AI ChatGPT
+heading: Boost up your productivity with Translate Slides | Rephrase with AI ChatGPT
+description: Translate or Rephrase a presentation with AI ChatGPT in one click. AI-Powered Add-On enables you to translation and rephrasing slides into over 50 languages and writing tones.
+---
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+    Paddle.Setup({
+        vendor: 13096,
+        eventCallback: function (data) {
+            if (data.event === "Checkout.Complete") {
+                let dataLayerInfo = {
+                    event: "purchase",
+                    ecommerce: {
+                        transaction_id: data.eventData.checkout.id,
+                        affiliation: "Affiliation Google Docs",
+                        value: data.eventData.checkout.prices.customer.total,
+                        tax: data.eventData.checkout.prices.customer.total_tax,
+                        shipping: null,
+                        currency: data.eventData.checkout.prices.customer.currency,
+                        coupon: data.eventData.checkout.coupon.coupon_code,
+                        items: data.eventData.checkout.prices.customer.items,
+                    },
+                };
+                dataLayer.push(dataLayerInfo);
+            }
+        }
+    }); // replace with your vendor ID
+    // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
+
+</script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0A6EBD;
+        -webkit-transition: 0.4s;
+
+        /*box-shadow: 2px 6px 25px #1e2321;*/
+        transform: translate(0px, 0px);
+        transition: 0.6s ease transform, 0.6s box-shadow;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    input,
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 0;
+    }
+
+    input:checked + .slider {
+        background-color: #068FFF;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #068FFF;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ribbon {
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+        background: #4dbe3b;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -42px;
+        top: 20px;
+        padding-top: 7px;
+    }
+    .billed-annually {
+        font-size: 10px;
+        color: #999999;
+    }
+    .icon-pricing {
+        /*font-size: 17px;*/
+
+    }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    .text-feature {
+        font-size: 13px;
+    }
+</style>
+
+<div class="top" style="padding-top: 10px">
+<!--        <h1 style="color: #999999;">Boost up your productivity with DocGPT - AI Writer for Google Docs™</h1>-->
+        <div class="h5" style="color: #999999;">Find perfect plan</div>
+    <div class="toggle-btn">
+        <span style="margin: 0.8em;">Annually</span>
+        <label class="switch">
+            <input type="checkbox" id="checbox" onclick="check();" />
+            <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Monthly</span></div>
+</div>
+<div id="pricing" class="container mb-5 mt-5">
+    <div class="pricing card-deck flex-column flex-md-row mb-3">
+        <div class="card card-pricing text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-muted text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 50 Slides / month</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Translate slides into any language</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Rephrase slides into any writing tone</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Tailored templates and pre-designed styles ready for use</li>
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Upto 12,000 Character Input limit</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Up to 20 slides per presentation</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 10 writing tones</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="874324" data-email="" data-custom-data="">Get Started</button>
+            </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="ribbon">POPULAR</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">15.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Slides / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Up to 30 slides per presentation</b></li>-->
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Upto 12,000 Character Input limit</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="874325" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <!--                <div class="ribbon">POPULAR</div>-->
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Slides / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Up to 30 slides per presentation</b></li>-->
+<!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Upto 12,000 Character Input limit</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="874330" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Organization</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+<!--                <div class="ribbon">POPULAR</div>-->
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">499</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>License for everyone on your domain</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Dedicated support & onboarding</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Slides / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="874328" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+        <div class="card card-pricing text-center px-3 mb-4 text2">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="45">$<span class="price">4.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually">Billed $59.99 annually</div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 30%</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 200 Slides / month</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Translate slides into any language</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Rephrase slides into any writing tone</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Tailored templates and pre-designed styles ready for use</li>
+                    <!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Upto 12,000 Character Input limit</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <!--                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Up to 20 slides per presentation</li>-->
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 10 writing tones</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                </ul>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="874326" data-email="" data-custom-data="">Get Started</button>
+            </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="ribbon">BEST VALUE</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">11.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually">Billed 143.99 annually</div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 30%</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Presentations / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+<!--                    <li style="color: white"> .</li>-->
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="874327" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <!--                <div class="ribbon">POPULAR</div>-->
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Slides / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="874330" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+        <div class="card card-pricing text-center px-3 mb-4 text2">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Organization</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <!--                <div class="ribbon">BEST VALUE</div>-->
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">349</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually">Billed $4188 annually</div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>License for everyone on your domain</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Dedicated support & onboarding</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited Slides / month</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No need API keys</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Protecting Your Privacy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Supports over 50 languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="874329" data-email="" data-custom-data="">Get Started</a>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--<div class="container mb-5 mt-5 text-center center-img">-->
+<!--    <a target="_blank" rel="nofollow" href="https://www.producthunt.com/posts/ai-gpt-for-google-slides?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ai&#0045;gpt&#0045;for&#0045;google&#0045;slides" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=422624&theme=light" alt="AI&#0032;GPT&#0032;for&#0032;Google&#0032;Slides - Create&#0032;Google&#0032;Slides&#0032;with&#0032;AI&#0032;and&#0032;ChatGPT&#0032;just&#0032;in&#0032;1&#0032;click | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>-->
+<!--</div>-->
+<!--<div class="container mb-5 mt-5 text-center" style="width: 70%">-->
+<!--    <div class="d-flex justify-content-center">-->
+<!--        <img src="{{ site.baseurl }}/images/slides-5.gif" style="border-radius: 10px; padding: 10px" alt="google slide ai - creating a presentation in one click">-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="container mb-5 mt-5 text-center center-img">
+    <div class="d-flex justify-content-center">
+        <img src="{{ site.baseurl }}/images/slides-translation-0.png" style="border-radius: 10px; padding: 10px" alt="Translate slides with AI GPT">
+        <img src="{{ site.baseurl }}/images/slides-translation-1.png" style="border-radius: 10px; padding: 10px" alt="Translate slides with AI GPT - step 1">
+        <img src="{{ site.baseurl }}/images/slides-translation-2.png" style="border-radius: 10px; padding: 10px" alt="Translate slides with AI GPT - step 2">
+    </div>
+</div>
+
+<style>
+
+    .install a:hover {
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+
+    .button_button {
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        padding: 0px 24px;
+        cursor: pointer;
+        user-select: none;
+        gap: 8px;
+        font-weight: 500;
+        min-width: 0px;
+        line-height: 100%;
+    }
+
+    .button_install {
+        background: rgb(25, 118, 210);
+        color: rgb(255, 255, 255);
+        height: 64px;
+        padding: 0px 16px 0px 2px;
+        gap: 16px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px -1px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+        text-transform: uppercase;
+        position: relative;
+        transition: background 0.3s ease 0s;
+    }
+    .button_install:hover {
+        background: rgb(7, 71, 134);
+    }
+
+    .button_install u {
+        background: #fff;
+        height: 60px;
+        border-radius: 4px 0 0 4px;
+        width: 60px;
+        padding: 10px !important;
+    }
+
+    .layout_iconInstallProduct {
+        width: 60px!important;
+        padding: 0!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .install_a:hover {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<div class="container d-flex justify-content-center">
+    <a class="install_a button_button button_install mt-auto" rel="nofollow" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=pricing_page">
+        <u class="layout_iconInstallProduct">
+            <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+            </svg>
+        </u>
+        <strong>Install for <span>Slides</span></strong>
+    </a>
+</div>
+<!--Steps start-->
+<div class="container mb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="h4 card-title mb-5">Get Started</div>
+
+                        <div class="hori-timeline" dir="ltr">
+                            <ul class="list-inline events">
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 1</div>
+                                        <div class="h5 font-size-16">Install Add-On</div>
+                                        <p class="text-muted">Go to Workspace Marketplace and click on Install button.</p>
+                                        <div>
+                                            <a target="_blank" href="https://workspace.google.com/u/0/marketplace/app/gpt_ai_for_slides/517982554715?utm_source=pricing_page" class="btn btn-primary btn-sm">🚀️️️️️️ Install Add-On</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 2</div>
+                                        <div class="h5 font-size-16">Open a Google Slides</div>
+                                        <p class="text-muted">Please open a document where you want to use the add-on.</p>
+<!--                                        <p style="color:white">.</p>-->
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 Video Tutorial</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 3</div>
+                                        <div class="h5 font-size-16">Launch the Add-On</div>
+                                        <p class="text-muted">Click on Extensions button, choose AI GPT for Slides™ and click Launch.</p>
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 Video Tutorial</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 4</div>
+                                        <div class="h5 font-size-16">Ready to use</div>
+                                        <p class="text-muted">You have now opened the sidebar for add-on functionality.</p>
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 Video Tutorial</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    body{
+        background:#eee;
+        margin-top:20px;
+    }
+    .hori-timeline .events {
+        border-top: 3px solid #e9ecef;
+    }
+    .hori-timeline .events .event-list {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+    }
+    .hori-timeline .events .event-list:before {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-right: 2px dashed #dee2e6;
+        top: 0;
+    }
+    .hori-timeline .events .event-list .event-date {
+        position: absolute;
+        top: 38px;
+        left: 0;
+        right: 0;
+        width: 75px;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 2px 4px;
+    }
+    @media (min-width: 1140px) {
+        .hori-timeline .events .event-list {
+            display: inline-block;
+            width: 24%;
+            padding-top: 45px;
+        }
+        .hori-timeline .events .event-list .event-date {
+            top: -12px;
+        }
+    }
+    .bg-soft-primary {
+        background-color: rgba(64,144,203,.3)!important;
+    }
+    .bg-soft-success {
+        background-color: rgba(71,189,154,.3)!important;
+    }
+    .bg-soft-danger {
+        background-color: rgba(231,76,94,.3)!important;
+    }
+    .bg-soft-warning {
+        background-color: rgba(249,213,112,.3)!important;
+    }
+    .card {
+        border: none;
+        margin-bottom: 24px;
+        -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+        box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    }
+
+</style>
+<!--Steps end-->
+<script>
+    function check() {
+        console.log("Called check!");
+        var checkBox = document.getElementById("checbox");
+        var text1 = document.getElementsByClassName("text1");
+        var text2 = document.getElementsByClassName("text2");
+
+        for (var i = 0; i < text1.length; i++) {
+            if (checkBox.checked == true) {
+                text1[i].style.display = "block";
+                text2[i].style.display = "none";
+            } else if (checkBox.checked == false) {
+                text1[i].style.display = "none";
+                text2[i].style.display = "block";
+            }
+        }
+    }
+    check();
+</script>
+<script type="text/javascript">
+    // Function to get the value of a specific URL parameter
+    function getURLParameter(name) {
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+        const results = regex.exec(window.location.href);
+
+        if (!results || !results[2]) return null;
+
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Get the value of the 'email' parameter
+    const emailParam = getURLParameter('email');
+
+    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+    const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+    if (getStartedLinks) {
+        getStartedLinks.forEach(link => {
+            link.setAttribute('data-email', emailParam || '');
+        });
+    }
+
+    var pricingSection = document.getElementById("pricing");
+
+    if (pricingSection) {
+        pricingSection.scrollIntoView({
+            behavior: "smooth", // You can use "auto" for instant scrolling
+            block: "start",     // "start" will align the top of the section with the top of the viewport
+            inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
+        });
+    }
+
+    if (emailParam) {
+        Paddle.Checkout.open({
+            product: '858326',
+            email: emailParam || ''
+        });
+    }
+</script>
+
+<script>
+    function getAllURLParameters() {
+        const url = window.location.href;
+        const queryString = url.split('?')[1];
+        const regex = /([^&=]+)=([^&]*)/g;
+        const params = {};
+        let match;
+
+        while ((match = regex.exec(queryString)) !== null) {
+            const key = decodeURIComponent(match[1].replace(/\+/g, " "));
+            const value = decodeURIComponent(match[2].replace(/\+/g, " "));
+
+            params[key] = value;
+        }
+
+        return params;
+    }
+    var allParams = getAllURLParameters();
+
+    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
+    if (paddleCustomDataLinks) {
+        paddleCustomDataLinks.forEach(link => {
+            link.setAttribute('data-custom-data', JSON.stringify(allParams));
+            console.log(link, linkedinParam);
+        });
+    }
+</script>
+
+<!--{% if page.faq %}-->
+<!--	<h2>Pricing FAQ</h2>-->
+<!--	<dl class="faq">-->
+<!--		{% for item in page.faq %}-->
+<!--			<div>-->
+<!--				<dt>{{ item.question }}</dt>-->
+<!--				<dd>{{ item.answer }}</dd>-->
+<!--			</div>-->
+<!--		{% endfor %}-->
+<!--	</dl>-->
+<!--{% endif %}-->

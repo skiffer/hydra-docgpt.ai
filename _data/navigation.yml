@@ -26,8 +26,8 @@
   link: /ai-email-assistant/
   new_window: false
   highlight: false
-- name: QR Barcode Generator
-  link: /qr-code-generator-pricing/
+- name: Translate Slides AI
+  link: /translate-slides-with-ai-gpt
   new_window: false
   highlight: false
 #- name: Blog
