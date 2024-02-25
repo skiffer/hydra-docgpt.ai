@@ -52,16 +52,16 @@
 #    link: https://facebook.com/cloudcannon/
 #    new_window: true
 #    social_icon: Facebook
-  - name: Top Alternatives Copy AI
-    link: /top-alternatives-copy-ai/
-    new_window: true
-    nofollow: true
   - name: How to use AI Email Assistant (GPT for Gmail)
     link: /docs/gpt-for-gmail
     new_window: true
   - name: How to use GPT for Sheets
     link: /docs/gpt-for-sheets/get-started
     new_window: true
+  - name: Top Alternatives Copy AI
+    link: /top-alternatives-copy-ai/
+    new_window: true
+    nofollow: true
 #    social_icon: Facebook
 #  - name: Workspace Analytics
 #    link: https://workspacemarketplace.com/top-charts/top-rated.html
