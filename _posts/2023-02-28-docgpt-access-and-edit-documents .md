@@ -1,5 +1,5 @@
 ---
-date: 2023-02-28
+date: 2024-02-24
 title: DocGPT.ai for Google Docs™ is a great tool to quickly draft flawless emails and proposals 
 categories:
   - ai-writer

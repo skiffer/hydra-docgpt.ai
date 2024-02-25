@@ -15,6 +15,10 @@
   - name: Support
     link: /support
     new_window: true
+  - name: Twitter
+    link: https://twitter.com/ski0xFF/
+    new_window: true
+    nofollow: true
 #  - name: Terms of Service
 #    link: /terms
 #    new_window: true
@@ -48,8 +52,8 @@
 #    link: https://facebook.com/cloudcannon/
 #    new_window: true
 #    social_icon: Facebook
-  - name: Twitter
-    link: https://twitter.com/ski0xFF/
+  - name: Top Alternatives Copy AI
+    link: /top-alternatives-copy-ai/
     new_window: true
     nofollow: true
   - name: How to use AI Email Assistant (GPT for Gmail)

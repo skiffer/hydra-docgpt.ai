@@ -93,16 +93,16 @@ defaults:
     values:
       sitemap: false
 
-jekyll-archives:
-  enabled:
-    - categories
+#jekyll-archives:
+#  enabled:
+#    - categories
 
 plugins:
-  - jekyll-archives
+#  - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  - jekyll-paginate
+#  - jekyll-paginate
 
 exclude:
   - Gemfile

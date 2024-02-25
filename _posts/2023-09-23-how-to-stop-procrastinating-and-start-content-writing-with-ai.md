@@ -1,5 +1,5 @@
 ---
-date: 2023-02-28
+date: 2024-02-28
 title: Using GPT for Google Docs to Overcome Procrastination in Content Writing 
 categories: [Writing, AI, Productivity, docgpt.ai, gpt, chatgpt, gpt4, OpenAI]
 author_staff_member: yaro
