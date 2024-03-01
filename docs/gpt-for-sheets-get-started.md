@@ -1,10 +1,10 @@
 ---
 layout: docs_layouts/default
-title: Get Started with GPT for Sheets
+title: GPT for Sheets - Get Started
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/get-started
-description: Explore GPT functions like, GPT_TRANSLATE for language translation and GPT_EXTRACT for data extraction. Follow example use cases, enhancing your Google Sheets experience. Simplify email responses, improve text, and streamline explanations effortlessly. Watch the installation guide here.
+description: GPT for Sheets - Get Started | Explore GPT functions like, GPT_TRANSLATE for language translation and GPT_EXTRACT for data extraction. Follow example use cases, enhancing your Google Sheets experience. Simplify email responses, improve text, and streamline explanations effortlessly. Watch the installation guide here.
 ---
 
 # How to Install GPT for Sheets
