@@ -1,7 +1,7 @@
 ---
 title: Support
 description: 
-permalink: /support/
+permalink: /support_old/
 ---
 <style>
 .getting-started {
