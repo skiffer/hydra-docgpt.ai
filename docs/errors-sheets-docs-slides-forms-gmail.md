@@ -25,6 +25,30 @@ Reason
 Solution
 - Please refresh your page, wait for 30 seconds, and then attempt to access the Extensions menu again
 
+### ScriptError: Authorisation is required to perform that action
+```ScriptError: Authorisation is required to perform that action```
+
+Reason
+> You use company email account, you need to use a personal email or ask admin to allow execution addons
+> You used multiple Google accounts in the same Chrome session or you use company email account.
+
+Solution #1
+1. Use Personal Email
+
+Solution #2
+1. Create a new Chrome profile
+2. Create a new spreadsheet
+3. Try a GPT function again
+
+Solution #3
+- Clean up cookies in your browser
+- Login again in Google account
+- Uninstall and Install again the add-on
+
+Solution #4
+- Ask admin of the workspace account to allow execution add-ons
+
+
 ### Exceeded maximum execution time
 
 
@@ -73,22 +97,6 @@ Solution #2
 - Login again in Google account
 - Uninstall and Install again the add-on
 
-
-### ScriptError: Authorisation is required to perform that action 
-```ScriptError: Authorisation is required to perform that action```
-
-Reason
-> You used multiple Google accounts in the same Chrome session.
-
-Solution #1
-1. Create a new Chrome profile
-2. Create a new spreadsheet
-3. Try a GPT function again
-
-Solution #2
-- Clean up cookies in your browser
-- Login again in Google account
-- Uninstall and Install again the add-on
 
 ### Service invoked too many times
 ```Exception: Service invoked too many times for one day```
