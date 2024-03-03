@@ -9,8 +9,11 @@ description: GPT for Sheets is an AI writer and assistant tailored for Google Sh
 
 # GPT for Sheets
 
+### Links:
+- <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
+- <a href="/gpt-for-sheets/">Upgrade to Premium</a>
 
-GPT for Sheets is an AI writer and assistant tailored for Google Sheets. It allows seamless integration of ChatGPT directly into Google Sheets. This system is developed on the foundation of OpenAI ChatGPT and leverages both GPT-3 and GPT-4 models.
+<a href="/gpt-for-sheets/">GPT for Sheets</a> is an AI writer and assistant tailored for <a href="/gpt-for-sheets/">Google Sheets</a>. It allows seamless integration of ChatGPT directly into Google Sheets. This system is developed on the foundation of OpenAI ChatGPT and leverages both GPT-3 and GPT-4 models.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

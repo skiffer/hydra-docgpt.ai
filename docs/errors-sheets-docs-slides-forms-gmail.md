@@ -7,6 +7,14 @@ permalink: /docs/errors-sheets-docs-slides-forms-gmail/
 description: Troubleshoot common error in GPT for Google Sheets, Docs, Slides, Forms, Gmail.
 ---
 
+### Links:
+- <a href="/google-doc-ai/">GPT for Docs, Slides, Forms</a>
+- <a href="/gpt-for-sheets/">GPT for Sheets</a>
+- <a href="/ai-email-assistant/">GPT for Gmail</a>
+- <a href="/google-slide-ai/">Google Slides AI</a>
+- <a href="/quiz-maker-ai/">Quiz Maker AI</a>
+- <a href="/translate-slides-with-ai-gpt/">Translate and Rephrase Slides in 1 click</a>
+
 # Errors
 
 ### Only shows 'Help'

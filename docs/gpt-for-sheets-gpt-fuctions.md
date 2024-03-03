@@ -7,7 +7,11 @@ permalink: /docs/gpt-for-sheets/gpt-functions
 description: Effortlessly enhance Google Sheets with GPT functions! Install the GPT for Sheets add-on, use AI-powered features for tasks like translation, extraction, formatting, tagging, classifying, summarizing, and table generation. Leverage GPT capabilities directly within your spreadsheet, saving time and boosting efficiency.
 ---
 
-# GPT functions
+# <a href="/gpt-for-sheets/">GPT functions for Google Sheets</a>
+
+### Links:
+- <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
+- <a href="/gpt-for-sheets/">Upgrade to Premium</a>
 
 ### Example of use
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

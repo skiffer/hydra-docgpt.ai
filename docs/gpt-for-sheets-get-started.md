@@ -7,9 +7,14 @@ permalink: /docs/gpt-for-sheets/get-started
 description: GPT for Sheets - Get Started | Explore GPT functions like, GPT_TRANSLATE for language translation and GPT_EXTRACT for data extraction. Follow example use cases, enhancing your Google Sheets experience. Simplify email responses, improve text, and streamline explanations effortlessly. Watch the installation guide here.
 ---
 
-# How to Install GPT for Sheets
+# How to Install <a href="/gpt-for-sheets/">GPT for Sheets</a>
 
-To leverage the capabilities of language models using GPT functions within your Google spreadsheets, install the GPT for Sheets, Docs, Slides, Forms add-on. Once installed, this add-on also extends the capabilities of AI to Google Sheets, Docs, Forms, Slides.
+### Links: 
+- <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
+- <a href="/gpt-for-sheets/">Upgrade to Premium</a>
+
+
+To leverage the capabilities of language models using GPT functions within your Google spreadsheets, <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">install the GPT for Sheets, Docs, Slides, Forms</a> add-on. Once installed, this add-on also extends the capabilities of AI to Google Sheets, Docs, Forms, Slides.
 
 > If you use multiple Google accounts, it is recommended that you create a Chrome profile for each account.
 
@@ -30,7 +35,7 @@ To leverage the capabilities of language models using GPT functions within your 
 
 7. A notification in a pop-up window will confirm the successful installation of GPT for Docs, Sheets, Slides, and Forms.
 
-## How to Launch GPT for Sheets
+## How to Launch <a href="/gpt-for-sheets/">GPT for Sheets</a>
 
 1. Open your Google Sheet.
 2. Click on **Extensions** > **GPT for Docs, Sheets, Slides, and Forms** > **Launch** ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-launch.png)

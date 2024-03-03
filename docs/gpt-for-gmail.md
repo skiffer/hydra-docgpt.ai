@@ -9,7 +9,12 @@ description: GPT for GMAIL™ is an email drafting application powered by ChatGP
 
 # GPT for Gmail
 
-GPT for GMAIL™ is an email drafting application powered by ChatGPT. It generates AI-driven draft emails by analyzing the context of your previous emails and the prompts you supply, saving you numerous hours each year on email composition.
+### Links:
+- <a href="https://workspace.google.com/u/0/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install AI Email Assistant (GPT for Gmail)</a> add-on
+- <a href="/ai-email-assistant/">Upgrade to Premium</a>
+
+
+<a href="/ai-email-assistant/">GPT for GMAIL™</a> is an email drafting application powered by ChatGPT. It generates AI-driven draft emails by analyzing the context of your previous emails and the prompts you supply, saving you numerous hours each year on email composition.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UFsHYssF3TM?si=nobbE_LSWdEa5rdT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -22,7 +27,7 @@ GPT for GMAIL™ is an email drafting application powered by ChatGPT. It generat
 - Simplify explanations in emails.
 - Translate emails efficiently as a native speaker.
 
-## How to install GPT for Gmail
+## How to install <a href="/ai-email-assistant/">GPT for Gmail</a>
 
 1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_gmail_chatgpt_ai/899305976589).
 
@@ -39,7 +44,7 @@ GPT for GMAIL™ is an email drafting application powered by ChatGPT. It generat
 7. A notification in a pop-up window will confirm the successful installation of GPT for Gmail.
 
 
-## How to launch GPT for Gmail - Sidebar
+## How to launch <a href="/ai-email-assistant/">GPT for Gmail</a> - Sidebar
 
 1. Open a browser tab with your gmail account
 2. Click on the **GPT for Gmail icon** located on the right side of the screen. ![GPT-for-Gmail-How-to_launch]({{ site.baseurl }}/images/gpt-for-gmail-launch-sidebar.png)
@@ -47,7 +52,7 @@ GPT for GMAIL™ is an email drafting application powered by ChatGPT. It generat
 
 ![GPT-for-Sidebar]({{ site.baseurl }}/images/gpt-for-gmail-sidebar.png)
 
-## How to launch GPT for Gmail - Advanced mode
+## How to launch <a href="/ai-email-assistant/">GPT for Gmail</a> - Advanced mode
 
 1. Open a browser tab with your gmail account
 2. Click on **Compose** button
