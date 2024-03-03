@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Errors in Google Sheets, Docs, Slides, Forms, Gmail
 nav_order: 0
 has_children: false
-permalink: /docs/support-gpt-sheets-docs-slides-forms-gmail/
+permalink: /docs/help-gpt-sheets-docs-slides-forms-gmail/
 description: Troubleshoot common error in GPT for Google Sheets, Docs, Slides, Forms, Gmail.
 ---
 
