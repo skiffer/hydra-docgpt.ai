@@ -47,15 +47,17 @@ description: GPT for GMAIL™ is an email drafting application powered by ChatGP
 ## How to launch <a href="/ai-email-assistant/">GPT for Gmail</a> - Sidebar
 
 1. Open a browser tab with your gmail account
-2. Click on the **GPT for Gmail icon** located on the right side of the screen. ![GPT-for-Gmail-How-to_launch]({{ site.baseurl }}/images/gpt-for-gmail-launch-sidebar.png)
+2. Click on the **GPT for Gmail icon** located on the right side of the screen. ![GPT-for-Gmail-How-to_launch]({{ site.baseurl }}/images/gpt-for-gmail-launch-sidebar.png){: width="400"}
 3. You will see opened sidebar 
 
-![GPT-for-Sidebar]({{ site.baseurl }}/images/gpt-for-gmail-sidebar.png)
+![GPT-for-Sidebar]({{ site.baseurl }}/images/gpt-for-gmail-sidebar.png){: width="300"}
 
 ## How to launch <a href="/ai-email-assistant/">GPT for Gmail</a> - Advanced mode
 
 1. Open a browser tab with your gmail account
 2. Click on **Compose** button
-3. Click on the GPT for Gmail icon located on the right side of the screen. ![GPT-for-Gmail-How-to_launch-advanced-mode]({{ site.baseurl }}/images/gpt-gmail-launch-full.png)
-4. You will see advanced mode ![GPT-for-Gmail-How-to_launch-advanced-mode]({{ site.baseurl }}/images/gpt-gmail-full.png)
+3. Click on the GPT for Gmail icon located on the right side of the screen.
+![GPT-for-Gmail-How-to_launch-advanced-mode]({{ site.baseurl }}/images/gpt-gmail-launch-full.png){: width="400"}
+4. You will see advanced mode
 
+![GPT-for-Gmail-How-to_launch-advanced-mode]({{ site.baseurl }}/images/gpt-gmail-full.png){: width="400"}
