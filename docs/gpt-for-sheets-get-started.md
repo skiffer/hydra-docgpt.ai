@@ -39,7 +39,9 @@ To leverage the capabilities of language models using GPT functions within your 
 
 1. Open your Google Sheet.
 2. Click on **Extensions** > **GPT for Docs, Sheets, Slides, and Forms** > **Launch** ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-launch.png)
-3. A **sidebar** will be opened on the right side of the page.  ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-sidebar.png)
+3. A **sidebar** will be opened on the right side of the page.
+
+![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-sidebar.png){: width="500"}
 
 ## Template with Examples
 
