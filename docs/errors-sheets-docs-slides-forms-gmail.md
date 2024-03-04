@@ -30,7 +30,7 @@ Solution
 
 Reason
 > You use company email account, you need to use a personal email or ask admin to allow execution addons
-> You used multiple Google accounts in the same Chrome session or you use company email account.
+> You used multiple Google accounts in the same Chrome session
 
 Solution #1
 1. Use Personal Email
