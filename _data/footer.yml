@@ -62,6 +62,12 @@
     link: /top-alternatives-copy-ai/
     new_window: true
     nofollow: true
+  - name: How to Set up OpenAI key in GPT for Sheets
+    link: /docs/gpt-for-sheets/set-up-openai-api-keys
+    new_window: true
+    nofollow: true
+
+#    /docs/gpt-for-sheets/set-up-openai-api-keys
 #    social_icon: Facebook
 #  - name: Workspace Analytics
 #    link: https://workspacemarketplace.com/top-charts/top-rated.html
