@@ -489,7 +489,7 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
            data-product="862410"
            data-theme="none"
            data-success="/docs/gpt-for-sheets/get-started/"
-           data-passthrough='{"user_id": me, "affiliation": "Acme Corp Enterprise"}'
+           data-passthrough=""
            href="#!">Get Started</a>
       </div>
     </div>
@@ -535,7 +535,7 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
            data-custom-data=""
            data-email=""
            data-product="875610"
-           data-passthrough='{"user_id": me, "affiliation": "Acme Corp Lifetime"}'
+           data-passthrough=""
            data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/"
            data-theme="none" href="#!">Get Started</a>
       </div>
@@ -1163,6 +1163,32 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
     Paddle.Checkout.open({
       product: '841734',
       email: emailParam || ''
+    });
+  }
+</script>
+
+<script>
+  function getURLParameterV2(name) {
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const results = regex.exec(window.location.href);
+
+    if (!results || !results[2]) {
+      return null;
+    }
+
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  // Get the value of the 'email' parameter
+  const affiliate = getURLParameterV2('aff');
+
+
+  //passthrough
+  const getPassthrough = document.querySelectorAll('.paddle_button[data-passthrough=""]');
+  if (getPassthrough) {
+    getPassthrough.forEach(link => {
+      link.setAttribute('data-passthrough', affiliate || '');
+      console.log('setting up affilate: ' + affiliate);
     });
   }
 </script>
