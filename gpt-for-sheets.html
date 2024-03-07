@@ -1167,61 +1167,61 @@ description: Leverage the GPT for Google Sheets to seamlessly incorporate the po
   }
 </script>
 
-<script>
-  function getURLParameterV2(name) {
-    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
-    const results = regex.exec(window.location.href);
+<!--<script>-->
+<!--  function getURLParameterV2(name) {-->
+<!--    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");-->
+<!--    const results = regex.exec(window.location.href);-->
 
-    if (!results || !results[2]) {
-      return null;
-    }
+<!--    if (!results || !results[2]) {-->
+<!--      return null;-->
+<!--    }-->
 
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
+<!--    return decodeURIComponent(results[2].replace(/\+/g, " "));-->
+<!--  }-->
 
-  // Get the value of the 'email' parameter
-  const affiliate = getURLParameterV2('aff');
+<!--  // Get the value of the 'email' parameter-->
+<!--  const affiliate = getURLParameterV2('aff');-->
 
 
-  //passthrough
-  const getPassthrough = document.querySelectorAll('.paddle_button[data-passthrough=""]');
-  if (getPassthrough) {
-    getPassthrough.forEach(link => {
-      link.setAttribute('data-passthrough', affiliate || '');
-      console.log('setting up affilate: ' + affiliate);
-    });
-  }
-</script>
+<!--  //passthrough-->
+<!--  const getPassthrough = document.querySelectorAll('.paddle_button[data-passthrough=""]');-->
+<!--  if (getPassthrough) {-->
+<!--    getPassthrough.forEach(link => {-->
+<!--      link.setAttribute('data-passthrough', affiliate || '');-->
+<!--      console.log('setting up affilate: ' + affiliate);-->
+<!--    });-->
+<!--  }-->
+<!--</script>-->
 
-<script>
-  function getAllURLParameters() {
-    const url = window.location.href;
-    const queryString = url.split('?')[1];
-    const regex = /([^&=]+)=([^&]*)/g;
-    const params = {};
-    let match;
+<!--<script>-->
+<!--  function getAllURLParameters() {-->
+<!--    const url = window.location.href;-->
+<!--    const queryString = url.split('?')[1];-->
+<!--    const regex = /([^&=]+)=([^&]*)/g;-->
+<!--    const params = {};-->
+<!--    let match;-->
 
-    while ((match = regex.exec(queryString)) !== null) {
-      const key = decodeURIComponent(match[1].replace(/\+/g, " "));
-      const value = decodeURIComponent(match[2].replace(/\+/g, " "));
+<!--    while ((match = regex.exec(queryString)) !== null) {-->
+<!--      const key = decodeURIComponent(match[1].replace(/\+/g, " "));-->
+<!--      const value = decodeURIComponent(match[2].replace(/\+/g, " "));-->
 
-      params[key] = value;
-    }
+<!--      params[key] = value;-->
+<!--    }-->
 
-    return params;
-  }
+<!--    return params;-->
+<!--  }-->
 
-  var allParams = getAllURLParameters();
+<!--  var allParams = getAllURLParameters();-->
 
-  // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-  const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
-  if (paddleCustomDataLinks) {
-    paddleCustomDataLinks.forEach(link => {
-      link.setAttribute('data-custom-data', JSON.stringify(allParams));
-      console.log(link, allParams);
-    });
-  }
-</script>
+<!--  // Fill the data-email attribute with the 'email' parameter value or an empty string if not available-->
+<!--  const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""-->
+<!--  if (paddleCustomDataLinks) {-->
+<!--    paddleCustomDataLinks.forEach(link => {-->
+<!--      link.setAttribute('data-custom-data', JSON.stringify(allParams));-->
+<!--      console.log(link, allParams);-->
+<!--    });-->
+<!--  }-->
+<!--</script>-->
 
 <!--{% if page.faq %}-->
 <!--	<h2>Pricing FAQ</h2>-->
