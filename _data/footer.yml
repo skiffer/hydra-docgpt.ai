@@ -9,7 +9,7 @@
 #    link: /contact/
 - links:
   - name: Affiliate program
-    link: https://docgpt.tolt.io/login
+    link: /affiliate
     new_window: true
     nofollow: true
   - name: Support & Troubleshooting
