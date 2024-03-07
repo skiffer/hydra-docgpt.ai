@@ -207,45 +207,35 @@
 	</script>
 
 <script>
-	// function getAllURLParameters() {
-	// 	const url = window.location.href;
-	// 	const queryString = url.split('?')[1];
-	// 	const regex = /([^&=]+)=([^&]*)/g;
-	// 	const params = {};
-	// 	let match;
-	//
-	// 	while ((match = regex.exec(queryString)) !== null) {
-	// 		const key = decodeURIComponent(match[1].replace(/\+/g, " "));
-	// 		const value = decodeURIComponent(match[2].replace(/\+/g, " "));
-	//
-	// 		params[key] = value;
-	// 	}
-	//
-	// 	return params;
-	// }
-	//
-	function affilateProgram() {
-		var customeData = {
-			tolt_referral: window.tolt_referral
-		};
-		// Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-		const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
-		if (paddleCustomDataLinks) {
-			paddleCustomDataLinks.forEach(link => {
-				link.setAttribute('data-custom-data', JSON.stringify(customeData));
-				console.log('link: ' + link);
-				console.log('customeData: ' + JSON.stringify(customeData));
+	function affiliateProgram() {
+		// Check if window.tolt_referral is accessible
+		if (typeof window.tolt_referral !== 'undefined') {
+			var customData = {
+				tolt_referral: window.tolt_referral
+			};
+			// Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+			const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
+			if (paddleCustomDataLinks) {
+				paddleCustomDataLinks.forEach(link => {
+					link.setAttribute('data-custom-data', JSON.stringify(customData));
+					console.log('link: ' + link);
+					console.log('customData: ' + JSON.stringify(customData));
+					console.log('window.tolt_referral:' + window.tolt_referral);
+				});
+			} else {
+				console.log('No links found with empty custom data attribute.');
 				console.log('window.tolt_referral:' + window.tolt_referral);
-			});
+			}
 		} else {
-			console.log('not found links');
-			console.log('window.tolt_referral:' + window.tolt_referral);
+			// Retry after 100 milliseconds if window.tolt_referral is not accessible yet
+			setTimeout(affiliateProgram, 150);
 		}
 	}
 
 	document.addEventListener('DOMContentLoaded', function() {
-		affilateProgram();
+		affiliateProgram();
 	});
 </script>
+
 	</body>
 </html>
