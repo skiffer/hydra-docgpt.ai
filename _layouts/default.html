@@ -224,23 +224,28 @@
 	// 	return params;
 	// }
 	//
-	// var allParams = getAllURLParameters();
-	var customeData = {
-		tolt_referral: window.tolt_referral
-	};
-	// Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-	const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
-	if (paddleCustomDataLinks) {
-		paddleCustomDataLinks.forEach(link => {
-			link.setAttribute('data-custom-data', JSON.stringify(customeData));
-			console.log('link: ' + link);
-			console.log('customeData: ' + customeData);
+	function affilateProgram() {
+		var customeData = {
+			tolt_referral: window.tolt_referral
+		};
+		// Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+		const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
+		if (paddleCustomDataLinks) {
+			paddleCustomDataLinks.forEach(link => {
+				link.setAttribute('data-custom-data', JSON.stringify(customeData));
+				console.log('link: ' + link);
+				console.log('customeData: ' + JSON.stringify(customeData));
+				console.log('window.tolt_referral:' + window.tolt_referral);
+			});
+		} else {
+			console.log('not found links');
 			console.log('window.tolt_referral:' + window.tolt_referral);
-		});
-	} else {
-		console.log('not found links');
-		console.log('window.tolt_referral:' + window.tolt_referral);
+		}
 	}
+
+	document.addEventListener('DOMContentLoaded', function() {
+		affilateProgram();
+	});
 </script>
 	</body>
 </html>
