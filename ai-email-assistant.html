@@ -902,7 +902,7 @@ description: Chat GPT for Gmail is an AI-driven (GPT4) email writing application
     }
 </style>
 <script>
-    window.onload = function() {
+    hideElements = function() {
         const isHidden = getURLParameter('is_hidden');
         if (isHidden && isHidden === 'true') {
             const elementsToHide = document.querySelectorAll('.should-be-hidden');
@@ -911,6 +911,7 @@ description: Chat GPT for Gmail is an AI-driven (GPT4) email writing application
             });
         }
     }
+    hideElements();
 </script>
 <!--{% if page.faq %}-->
 <!--	<h2>Pricing FAQ</h2>-->
