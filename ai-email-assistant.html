@@ -1264,7 +1264,7 @@ description: Chat GPT for Gmail is an AI-driven (GPT4) email writing application
             console.error("Element with id 'new-design' not found.");
         }
     }
-    hideNewDesign();
+    showNewDesign();
     hideOldDesign();
     posthog.onFeatureFlags(function () {
         // test - is old design
@@ -1280,11 +1280,10 @@ description: Chat GPT for Gmail is an AI-driven (GPT4) email writing application
             showNewDesign();
         }
         else {
-            console.log('else posthog: ' + posthog.getFeatureFlag('feature-flag'));
             hideOldDesign();
             showNewDesign();
         }
-    })
+    });
 </script>
 <!--{% if page.faq %}-->
 <!--	<h2>Pricing FAQ</h2>-->
