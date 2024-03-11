@@ -1267,30 +1267,54 @@ description: Chat GPT for Gmail is an AI-driven (GPT4) email writing application
 
     hideNewDesign();
     hideOldDesign();
-    posthog.onFeatureFlags(function () {
+    // posthog.onFeatureFlags(function () {
+    //     loadedPostHog = true;
+    //     // test - is old design
+    //     if (posthog.getFeatureFlag('feature-flag') === 'test') {
+    //         console.log('posthog test: ' + posthog.getFeatureFlag('feature-flag'));
+    //         hideNewDesign();
+    //         showOldDesign();
+    //
+    //     // control - is new design
+    //     } else if (posthog.getFeatureFlag('feature-flag') === 'control'){
+    //         console.log('posthog: control' + posthog.getFeatureFlag('feature-flag'));
+    //         hideOldDesign();
+    //         showNewDesign();
+    //     }
+    //     else {
+    //         hideOldDesign();
+    //         showNewDesign();
+    //     }
+    // },
+    //     function (error) {
+    //         console.error('posthog feature flag error:', error);
+    //         // Handle failure, perhaps by applying default behavior
+    //         hideOldDesign();
+    //         showNewDesign();
+    //     });
+
+    window.onload = function() {
+        // Call your function here
         // test - is old design
         if (posthog.getFeatureFlag('feature-flag') === 'test') {
             console.log('posthog test: ' + posthog.getFeatureFlag('feature-flag'));
             hideNewDesign();
             showOldDesign();
 
-        // control - is new design
+            // control - is new design
         } else if (posthog.getFeatureFlag('feature-flag') === 'control'){
             console.log('posthog: control' + posthog.getFeatureFlag('feature-flag'));
             hideOldDesign();
             showNewDesign();
         }
         else {
+            console.log('ad blocker');
             hideOldDesign();
             showNewDesign();
         }
-    },
-        function (error) {
-            console.error('posthog feature flag error:', error);
-            // Handle failure, perhaps by applying default behavior
-            hideOldDesign();
-            showNewDesign();
-        });
+    };
+
+
 </script>
 <!--{% if page.faq %}-->
 <!--	<h2>Pricing FAQ</h2>-->
