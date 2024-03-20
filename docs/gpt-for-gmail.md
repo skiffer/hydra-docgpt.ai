@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: AI Email Assistant for Gmail | GPT
+title: AI Email Assistant for Gmail | GPT, Claude, Gemini
 nav_order: 2
 has_children: false
 permalink: /docs/gpt-for-gmail
-description: GPT for GMAIL™ is an email drafting application powered by ChatGPT for writing emails in 1 click. It generates AI-driven draft emails by analyzing the context of your previous emails and the prompts you supply, saving you numerous hours each year on email composition.
+description: GPT, Claude, Gemini for GMAIL™ is an email drafting application powered by ChatGPT for writing emails in 1 click. It generates AI-driven draft emails by analyzing the context of your previous emails and the prompts you supply, saving you numerous hours each year on email composition.
 ---
 
-# GPT for Gmail
+# GPT, Claude, Gemini for Gmail
 
 ### Links:
 - <a href="https://workspace.google.com/u/0/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install AI Email Assistant (GPT for Gmail)</a> add-on
@@ -26,6 +26,7 @@ description: GPT for GMAIL™ is an email drafting application powered by ChatGP
 - Enhance the quality of your email text.
 - Simplify explanations in emails.
 - Translate emails efficiently as a native speaker.
+- Use multiple AI models - GPT, Claude, Gemini
 
 ## How to install <a href="/ai-email-assistant/">GPT for Gmail</a>
 
