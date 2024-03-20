@@ -10,7 +10,7 @@ description: GPT, Claude, Gemini for GMAIL™ is an email drafting application p
 # GPT, Claude, Gemini for Gmail
 
 ### Links:
-- <a href="https://workspace.google.com/u/0/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install AI Email Assistant (GPT for Gmail)</a> add-on
+- <a href="https://workspace.google.com/u/0/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install AI Email Assistant (GPT, Claude, Gemini for Gmail)</a> add-on
 - <a href="/ai-email-assistant/">Upgrade to Premium</a>
 
 
