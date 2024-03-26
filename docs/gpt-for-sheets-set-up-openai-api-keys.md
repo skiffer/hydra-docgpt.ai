@@ -45,4 +45,12 @@ description: Post payment instruction - How to set up OpenAI API keys
 #### 11. Type a simple formula in a cell and get a response from GPT
 > =GPT("Write a title for coffee shop")
 
+#### Useful links
+- <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free" rel="nofollow" target="_blank">How to increase — Rate Limits for Open AI Keys </a>
+- <a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>
+- <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+
+
+
+
 You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any user granted Editor access to this spreadsheet can utilize GPT functions using this API key
