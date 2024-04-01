@@ -45,6 +45,13 @@ description: Post payment instruction - How to set up OpenAI API keys
 #### 11. Type a simple formula in a cell and get a response from GPT
 > =GPT("Write a title for coffee shop")
 
+
+#### Troubleshooting
+> You exceeded your current quota, please check your plan and billing details
+
+OpenAI transitioned to prepaid plans starting March 25, 2024.
+Please review your OpenAI API Key account here: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+
 #### Useful links
 - <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free" rel="nofollow" target="_blank">How to increase — Rate Limits for Open AI Keys </a>
 - <a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>
