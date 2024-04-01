@@ -52,6 +52,8 @@ description: Post payment instruction - How to set up OpenAI API keys
 OpenAI transitioned to prepaid plans starting March 25, 2024.
 Please review your OpenAI API Key account here: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
 
+Other possible issues could be found here: <a target="_blank" href="/docs/support-gpt-sheets-docs-slides-forms-gmail/">Troubleshooting</a>
+
 #### Useful links
 - <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free" rel="nofollow" target="_blank">How to increase — Rate Limits for Open AI Keys </a>
 - <a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>
