@@ -1233,14 +1233,14 @@ description: Leverage the GPT, Claude, Mistral, and Gemini AI models within Goog
   }
 
   window.onload = function() {
+    var utmTags;
     if (getURLParameter('utm_source')) {
-      storeUTMTags(); // Call this function when the page loads to store UTM tags in a cookie
-      var utmTags = getUTMTags(); // Call this function to retrieve UTM tags from the cookie
-      console.log(utmTags);
-      setPassthroughAttribute(JSON.stringify(utmTags));
-    } else {
-      console.log('no tags.');
+      storeUTMTags();
     }
+
+    utmTags = getUTMTags();
+    console.log(utmTags);
+    setPassthroughAttribute(JSON.stringify(utmTags));
   };
 
 </script>
