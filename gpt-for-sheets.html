@@ -1173,6 +1173,77 @@ description: Leverage the GPT, Claude, Mistral, and Gemini AI models within Goog
   }
 </script>
 
+<script>
+
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Function to get a cookie value by name
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  // Function to store UTM parameters as JSON string in a cookie
+  function storeUTMTags() {
+    var utmTags = {
+      utm_source: getURLParameter('utm_source'),
+      utm_medium: getURLParameter('utm_medium'),
+      utm_campaign: getURLParameter('utm_campaign'),
+      utm_content: getURLParameter('utm_content'),
+      utm_term: getURLParameter('utm_term'),
+      email: getURLParameter('email'),
+      creation_time: new Date().toISOString()
+    };
+    setCookie('utm_tags', JSON.stringify(utmTags), 14);
+  }
+
+  // Function to retrieve UTM parameters from the cookie and parse them as JSON
+  function getUTMTags() {
+    var utmTagsJson = getCookie('utm_tags');
+    if (utmTagsJson) {
+      return JSON.parse(utmTagsJson);
+    } else {
+      return null;
+    }
+  }
+
+  function setPassthroughAttribute(val) {
+    const getPassthrough = document.querySelectorAll('.paddle_button[data-passthrough=""]');
+    if (getPassthrough) {
+      getPassthrough.forEach(link => {
+        link.setAttribute('data-passthrough', val || '');
+        console.log('setting up data-passthrough: ' + val);
+      });
+    }
+  }
+
+  window.onload = function() {
+    if (getURLParameter('utm_source')) {
+      storeUTMTags(); // Call this function when the page loads to store UTM tags in a cookie
+      var utmTags = getUTMTags(); // Call this function to retrieve UTM tags from the cookie
+      console.log(utmTags);
+      setPassthroughAttribute(JSON.stringify(utmTags));
+    } else {
+      console.log('no tags.');
+    }
+  };
+
+</script>
 <!--<script>-->
 <!--  function getURLParameterV2(name) {-->
 <!--    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");-->
