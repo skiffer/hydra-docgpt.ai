@@ -43,6 +43,15 @@ To leverage the capabilities of language models using GPT functions within your 
 
 ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-sidebar.png){: width="500"}
 
+
+## Important!
+
+![IMPORTANT-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-warning.png){: width="500"}
+
+> After getting a final result, please click on 'Replace All GPTs' or 'Replace Selected' button to replace the formula with the result.
+> If to don't do this - Google Sheets re-execution all formulas on refreshing page and every 1–2 minutes. (could affect your credits on Open AI or Internal credits, depends on plan)
+
+
 ## Template with Examples
 
 > Here you can find a Google Sheet Template with examples [Google Sheet Template](https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/edit?usp=sharing){:target="_blank"}.

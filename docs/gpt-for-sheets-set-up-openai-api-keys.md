@@ -46,6 +46,14 @@ description: Post payment instruction - How to set up OpenAI API keys
 > =GPT("Write a title for coffee shop")
 
 
+## Important!
+
+![IMPORTANT-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-warning.png){: width="500"}
+
+> After getting a final result, please click on 'Replace All GPTs' or 'Replace Selected' button to replace the formula with the result.
+> If to don't do this - Google Sheets re-execution all formulas on refreshing page and every 1–2 minutes. (could affect your credits on Open AI or Internal credits, depends on plan)
+
+
 #### Troubleshooting
 > You exceeded your current quota, please check your plan and billing details
 

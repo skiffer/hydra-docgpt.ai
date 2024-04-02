@@ -22,6 +22,14 @@ description: Effortlessly enhance Google Sheets with GPT functions! Install the 
 > The file is accessible in read-only mode. To make modifications, please create a copy using **File** > **Make a copy**, or you can simply **copy** functions/examples into your own sheet.
 
 
+## Important!
+
+![IMPORTANT-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-warning.png){: width="500"}
+
+> After getting a final result, please click on 'Replace All GPTs' or 'Replace Selected' button to replace the formula with the result.
+> If to don't do this - Google Sheets re-execution all formulas on refreshing page and every 1–2 minutes. (could affect your credits on Open AI or Internal credits, depends on plan)
+
+
 ### GPT
 > The most straightforward function to initiate GPT in Google Sheets. Generates the outcome within a single cell.
 
