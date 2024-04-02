@@ -1223,7 +1223,7 @@ description: Leverage the GPT, Claude, Mistral, and Gemini AI models within Goog
   }
 
   function setPassthroughAttribute(val) {
-    const getPassthrough = document.querySelectorAll('.paddle_button[data-passthrough=""]');
+    const getPassthrough = document.querySelectorAll('.paddle_button[data-custom-data=""]');
     if (getPassthrough) {
       getPassthrough.forEach(link => {
         link.setAttribute('data-passthrough', val || '');
