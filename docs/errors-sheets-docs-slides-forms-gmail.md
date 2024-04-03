@@ -16,6 +16,14 @@ description: Troubleshoot common error in GPT for Google Sheets, Docs, Slides, F
 - <a href="/translate-slides-with-ai-gpt/">Translate and Rephrase Slides in 1 click</a>
 
 # Errors
+### Name #ERROR or the function return #ERROR everytime
+
+Reason
+> You have installed other GPT add-ons that use the same 'GPT()' function name, resulting in a conflict
+
+Solution
+- Please remove all other add-on that provides AI/GPT functions, refresh the page, re-run the add-on, click on 'Refresh Account' button
+
 
 ### Only shows 'Help'
 
@@ -29,7 +37,7 @@ Solution
 ```ScriptError: Authorisation is required to perform that action```
 
 Reason
-> You use company email account, you need to use a personal email or ask admin to allow execution addons
+> You use a company email account, you need to use a personal email or ask admin to allow execution addons
 > You used multiple Google accounts in the same Chrome session
 
 Solution #1
