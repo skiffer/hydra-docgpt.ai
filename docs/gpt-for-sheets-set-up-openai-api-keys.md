@@ -7,12 +7,14 @@ permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
 description: Post payment instruction - How to set up OpenAI API keys
 ---
 
-# How to set up OpenAI API, Claude, Gemini, Mistral keys in <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
+# How to set up OpenAI, Claude, Gemini, and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
 
 ### Before you have started
 - Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 - <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 
+### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located on the sidebar
+![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
 
 ### Create an OpenAI API key
 
