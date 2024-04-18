@@ -44,6 +44,7 @@ This Privacy Policy describes Our policies and procedures on the collection, use
 
 When you use "Mail Merge for Sheets™ Gmail™" for the first time, you’ll be asked to accept the minimum-required permissions:
 
+Google Workspace APIs are not used to develop, improve, or train generalized AI and/or ML models.
 
 | Required permission                                                                        | Explanation of usage                                                                              |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
