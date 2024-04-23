@@ -15,6 +15,9 @@ description: Troubleshoot common error in GPT for Google Sheets, Docs, Slides, F
 - <a href="/quiz-maker-ai/">Quiz Maker AI</a>
 - <a href="/translate-slides-with-ai-gpt/">Translate and Rephrase Slides in 1 click</a>
 
+
+### RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
+
 # Errors
 ### Name #ERROR or the function return #ERROR everytime
 
