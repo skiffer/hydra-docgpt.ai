@@ -15,6 +15,10 @@
   - name: Support & Troubleshooting
     link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
     new_window: true
+  - name: Privacy Policy for Mail Merge
+    link: /privacy_mail_merge/
+    new_window: true
+    nofollow: true
   - name: Twitter
     link: https://twitter.com/ski0xFF/
     new_window: true
