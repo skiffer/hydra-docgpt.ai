@@ -77,3 +77,27 @@ Other possible issues could be found here: <a target="_blank" href="/docs/suppor
 
 
 You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any user granted Editor access to this spreadsheet can utilize GPT functions using this API key
+
+
+
+### How to create Mistral API keys
+
+#### 1. Please create an account https://console.mistral.ai/
+
+#### 2. Go to https://console.mistral.ai/api-keys/ and create an api key
+
+#### 3.  Here is the pricing page for the Mistral api keys: https://docs.mistral.ai/platform/pricing/
+
+
+### How to create Claude (Anthropic) api key
+
+#### 1. Please follow this official page https://docs.anthropic.com/claude/reference/getting-started-with-the-api
+
+#### 2. If you have already account, check your keys here: https://console.anthropic.com/settings/keys
+
+
+
+
+### How to create Gemini API keys
+
+####  You can create your api key at this page: https://aistudio.google.com/app/apikey
