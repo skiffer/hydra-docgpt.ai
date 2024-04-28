@@ -68,6 +68,15 @@ Please review your OpenAI API Key account here: <a href="https://platform.openai
 
 Other possible issues could be found here: <a target="_blank" href="/docs/support-gpt-sheets-docs-slides-forms-gmail/">Troubleshooting</a>
 
+
+> Exception: Request failed for https://api.openai.com returned code 404. Truncated server response: { "error": { "message": "The model gpt-4-0125-preview does not exist or you do not have access to it.", "type": "invalid_requ... (use muteHttpExceptions option to examine full response) (line 366).
+
+It happens due to of your tier in Open AI, please increase your tier in OpenAI and the model will appear for your account.
+
+Official message from OpenAI
+> On July 6, 2023, we gave access to the [GPT-4 API](https://platform.openai.com/docs/models/gpt-4) (8k) to all API users who have made a successful payment of $1 or more. We plan to open up access to all developers soon, and then start raising rate-limits after that depending on compute availability.
+> For API accounts created after August 18, 2023, you can get instant access to GPT-4 after purchasing $0.50 worth or more of pre-paid credits. You can read about prepaid billing.
+
 #### Useful links
 - <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-free" rel="nofollow" target="_blank">How to increase — Rate Limits for Open AI Keys </a>
 - <a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>
