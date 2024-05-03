@@ -64,7 +64,7 @@ The add-on could be executed in Google Sheets™ - it has pretty similar functio
 
 The add-on in Google Sheets™ has permissions to your current executed document for getting provided list of emails. 
 
-Content of the fields will be sent to our server to generate QR Code images.
+Content of the fields will be sent to our server to identify you and track limits for executions
 - We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process.
 - We do not share this information.
 - We do not store this information on our server.
