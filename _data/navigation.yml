@@ -26,8 +26,13 @@
   link: /ai-email-assistant/
   new_window: false
   highlight: false
-- name: Translate Slides AI
-  link: /translate-slides-with-ai-gpt
+#- name: Translate Slides AI
+#  link: /translate-slides-with-ai-gpt
+#  new_window: false
+#  highlight: false
+
+- name: Import data in Sheets
+  link: /import-data-in-sheets
   new_window: false
   highlight: false
 #- name: Blog
