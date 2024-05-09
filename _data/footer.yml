@@ -19,6 +19,10 @@
     link: /privacy_mail_merge/
     new_window: true
     nofollow: true
+  - name: Privacy Policy - Import data in Sheets™
+    link: /privacy_import_data/
+    new_window: true
+    nofollow: true
   - name: Twitter
     link: https://twitter.com/ski0xFF/
     new_window: true
