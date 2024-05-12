@@ -52,7 +52,9 @@ When you use "Mail Merge for Sheets™ Gmail™" for the first time, you’ll be
 | Connect to an external service                                                             | We need to request data at an external service, specifically for tracking limits per accounts.    |
 | View and manage spreadsheets that this application has been installed in                   | For creating needed headers to use correct structure. Read columns for getting emails to send out |
 | Send email on your behalf                                                                  | For sending out emails                                                                            |
-| Allow this application to run when you are not present                                     | For scheduling an email campaings at specific time                                                |
+| Allow this application to run when you are not present                                     | For scheduling an email campaigns at specific time                                                |
+| See and edit your labels                                                                   | To create labels that will be managed by this add-on                                              |
+| Read, compose, and send emails from your Gmail account                                     | To assign labels for sent messages by this add-on                                                 |
 
 Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part.
 
