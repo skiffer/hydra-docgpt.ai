@@ -105,6 +105,22 @@ You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any u
 #### 2. If you have already account, check your keys here: https://console.anthropic.com/settings/keys
 
 
+### How to create Perplexity AI api key
+
+#### 1. Please follow this official page https://docs.perplexity.ai/docs/getting-started
+
+#### 2. If you have already account, check your keys here: https://www.perplexity.ai/settings/api
+
+#### 3. Generate API Key, copy it
+
+#### 4. Go to the GPT for Sheets and click on Set Up Open AI keys. Scroll down and insert the key
+
+#### 5. Click on 'Check' button to validate it. After that click on 'Save' button
+
+#### 6. Now You can user Perplexity AI with function '=PERPLEXITY('what are top youtube videos for today')'
+
+
+
 
 
 ### How to create Gemini API keys
