@@ -117,7 +117,7 @@ You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any u
 
 #### 5. Click on 'Check' button to validate it. After that click on 'Save' button
 
-#### 6. Now You can user Perplexity AI with function '=PERPLEXITY('what are top youtube videos for today')'
+#### 6. Now you can use Perplexity AI with function '=PERPLEXITY('what are top youtube videos for today')'
 
 
 
