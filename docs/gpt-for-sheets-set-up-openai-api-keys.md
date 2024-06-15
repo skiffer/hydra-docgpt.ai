@@ -18,7 +18,10 @@ description: Post payment instruction - How to set up OpenAI API keys
 ![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
 
 
-### RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers. 
+### RECOMMENDATION: 
+- Optimal performance with Google Add-Ons is by using the Google Chrome browser.
+- If you use multiple accounts in the same Google Chrome Profile, please create a separated Google Chrome Profile for this account. (Google sometime unstable with multi-accounts cookies)
+- If you use company email - sometime company emails have restrictions with installation add-ons. It could require asking admin of the company email to configure for allowing installation add-ons or USE a PERSONAL ACCOUNT. (if needed to move subscription, please write to support chat or email — yaroslav91@gmail.com)
 
 ### Create an OpenAI API key
 
