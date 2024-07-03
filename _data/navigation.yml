@@ -31,9 +31,9 @@
 #  new_window: false
 #  highlight: false
 
-- name: Import data in Sheets
-  link: /import-data-in-sheets
-  new_window: false
+- name: Auto-reply AI Gmail
+  link: https://instabotgpt.com/ai-email-assistant/?utm_source=docgpt&utm_medium=navbar&utm_campaign=email_assistant&utm_content=ad1
+  new_window: true
   highlight: false
 #- name: Blog
 #  link: /blog/
