@@ -4,7 +4,7 @@ title: Set Up OpenAI API Keys
 nav_order: 3
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
-description: Post payment instruction - How to set up OpenAI API keys
+description: How to set up OpenAI API keys
 ---
 
 # How to set up OpenAI, Claude, Gemini, and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
