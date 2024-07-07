@@ -9,6 +9,11 @@ description: Translate content using ChatGPT from Google Sheets in 2024
 
 # Translate content using ChatGPT from Google Sheets in 2024
 
+### Demo Video - GPT for Sheets
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xZMA3DITtB8?si=xjLNmKK5ADm7eX8v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ## Prerequisites
 
 1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252).
@@ -17,9 +22,6 @@ description: Translate content using ChatGPT from Google Sheets in 2024
 
 
 ### Use GPT(prompt) function to translate your text any language
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IVehBwbRvWE?si=zwhMZZBP9WccCmiu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 1. Get content of the site using web functions
 > =WEB_URL("https://docgpt.ai")
