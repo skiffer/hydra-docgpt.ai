@@ -13,7 +13,7 @@ description: Translate your 100 sites in 1 click The easiest way
 
 ## Prerequisites 
 
-1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252).
+1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252).
 
 2. Click **Install**. ![Install-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-install.png)
 
