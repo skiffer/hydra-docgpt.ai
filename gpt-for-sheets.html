@@ -754,6 +754,134 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
 </div>
 <!-- END ROW -->
 
+<div class="container center-table">
+  <div>
+    <h2 class="text-center mb-4">Supported Functions</h2>
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Function</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>=GPT(prompt, [value])</td>
+        <td>Generates text based on the provided prompt using GPT models (GPT-3 or GPT-4).</td>
+      </tr>
+      <tr>
+        <td>=SERP(query)</td>
+        <td>Retrieve search engine results pages (SERP) for the specified query.</td>
+      </tr>
+      <tr>
+        <td>=WEB_URL("https://docgpt.ai")</td>
+        <td>Retrieve the URL from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=CLAUDE(prompt)</td>
+        <td>Generates text based on the provided prompt using the Claude model.</td>
+      </tr>
+      <tr>
+        <td>=GEMINI(prompt)</td>
+        <td>Generates text based on the provided prompt using the Gemini model.</td>
+      </tr>
+      <tr>
+        <td>=MISTRAL(prompt)</td>
+        <td>Generates text based on the provided prompt using the Mistral model.</td>
+      </tr>
+      <tr>
+        <td>=GPT_IMAGE(url, prompt)</td>
+        <td>Analyzes an image from the provided URL and generates text based on the prompt.</td>
+      </tr>
+      <tr>
+        <td>=GPT_TAG(text, [tags])</td>
+        <td>Tags the provided text with the specified tags.</td>
+      </tr>
+      <tr>
+        <td>=GPT_EXTRACT(text, to_extract)</td>
+        <td>Extracts specified information from the provided text.</td>
+      </tr>
+      <tr>
+        <td>=GPT_TRANSLATE(text, target, [source])</td>
+        <td>Translates the provided text to the target language, with an optional source language.</td>
+      </tr>
+      <tr>
+        <td>=GPT_SUMMARIZE(text, [format])</td>
+        <td>Summarize the provided text, with an optional specified format.</td>
+      </tr>
+      <tr>
+        <td>=GPT_FORMAT(text, source, target)</td>
+        <td>Convert the provided text from the source format to the target format.</td>
+      </tr>
+      <tr>
+        <td>=GPT_CLASSIFY(text, categories)</td>
+        <td>Classifies the provided text into the specified categories.</td>
+      </tr>
+      <tr>
+        <td>=GPT_FILL(examples, inputs)</td>
+        <td>Fills in the blanks in the provided inputs based on the examples given.</td>
+      </tr>
+      <tr>
+        <td>=GPT_LIST(prompt, [value])</td>
+        <td>Generates a list based on the provided prompt.</td>
+      </tr>
+      <tr>
+        <td>=GPT_HLIST(prompt, [value])</td>
+        <td>Generates a hierarchical list based on the provided prompt.</td>
+      </tr>
+      <tr>
+        <td>=GPT_SPLIT(text, split_by)</td>
+        <td>Split the provided text by the specified delimiter.</td>
+      </tr>
+      <tr>
+        <td>=GPT_HSPLIT(text, split_by)</td>
+        <td>Splits the provided text hierarchically by the specified delimiter.</td>
+      </tr>
+      <tr>
+        <td>=GPT_APPLY(text, [task])</td>
+        <td>Apply the specified task to the provided text.</td>
+      </tr>
+      <tr>
+        <td>=GPT_TABLE(prompt, headers)</td>
+        <td>Generates a table based on the provided prompt and headers.</td>
+      </tr>
+      <tr>
+        <td>=WEB_URL("https://docgpt.ai")</td>
+        <td>Retrieve the URL from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_TITLE("https://docgpt.ai")</td>
+        <td>Retrieve the title from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_DESCRIPTION("https://docgpt.ai")</td>
+        <td>Retrieve the description from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_H1("https://docgpt.ai")</td>
+        <td>Retrieve the first-level heading (H1) from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_H2("https://docgpt.ai/")</td>
+        <td>Retrieve the second-level heading (H2) from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_HEADINGS("https://docgpt.ai")</td>
+        <td>Retrieve all the headings from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_PARAGRAPHS("https://docgpt.ai")</td>
+        <td>Retrieve all the paragraphs from the specified web address.</td>
+      </tr>
+      <tr>
+        <td>=WEB_URLS_DATA(A37:A39)</td>
+        <td>Retrieves data from the URLs specified in the range A37:A39.</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <div class="row pt-5">
   <h2 class="help-header container">Scraping WEB functions: Content, title, description, h1, h2, paragraphs, fetch in bulk</h2>
   <div class="container center-img">
