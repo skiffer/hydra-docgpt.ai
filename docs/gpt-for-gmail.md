@@ -31,7 +31,7 @@ description: GPT, Claude, Gemini for GMAIL™ is an email drafting application p
 
 ## How to install <a href="/ai-email-assistant/">GPT for Gmail</a>
 
-1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_gmail_chatgpt_ai/899305976589).
+1. Go to the [AI Email Assistant](https://workspace.google.com/u/0/marketplace/app/gpt_for_gmail_chatgpt_ai/899305976589).
 
 2. Click **Install**. ![Install-GPT-for-Gmail]({{ site.baseurl }}/images/gpt-for-gmail.png)
 

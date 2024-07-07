@@ -15,7 +15,7 @@ description: Translate content using ChatGPT from Google Sheets in 2024
 
 ## Prerequisites
 
-1. Go to the [Workspace Installation Page](https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252).
+1. Go to the [GPT for Sheets](https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252).
 
 2. Click **Install**. ![Install-GPT-Mistral-Gemini-Claude-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-install.png)
 
