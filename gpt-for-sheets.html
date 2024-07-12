@@ -277,7 +277,7 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
               <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b>MISTRAL(prompt)</b></li>
-              <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_IMAGE(url, prompt)</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("search")</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b>With API function you can push/pull your content on your site, service from Sheets!</b></li>
@@ -467,7 +467,7 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
                       <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>
-                      <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_IMAGE(url, prompt)</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("search")</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>With API function you can push/pull your content on your site, service from Sheets!</b></li>
@@ -584,7 +584,7 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
           <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>
-          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_IMAGE(url, prompt)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("search")</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>With API function you can push/pull your content on your site, service from Sheets!</b></li>
@@ -796,7 +796,7 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
         <td>Generates text based on the provided prompt using the Mistral model.</td>
       </tr>
       <tr>
-        <td><code>=GPT_IMAGE(url, prompt)</code></td>
+        <td><code>=GPT_VISION(url, prompt)</code></td>
         <td>Analyzes an image from the provided URL and generates text based on the prompt.</td>
       </tr>
       <tr>
@@ -1040,26 +1040,26 @@ description: Leverage the GPT (GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistra
     <!-- END ROW -->
   <!-- Start ROW -->
   <div class="row pt-5">
-    <h2 class="help-header container">Use GPT_IMAGE allows the model to take in images and answer questions about them</h2>
+    <h2 class="help-header container">Use GPT_VISION allows the model to take in images and answer questions about them</h2>
     <div class="col-md-12">
-      <img alt="Use GPT_IMAGE allows the model to take in images and answer questions about them" class="help-image" src="/images/gpt-image-landing.png">
+      <img alt="Use GPT_VISION allows the model to take in images and answer questions about them" class="help-image" src="/images/gpt-image-landing.png">
     </div>
     <div class="center-table">
       <table class="table table-bordered">
         <thead>
         <tr>
           <th>Syntax</th>
-          <th>=GPT_IMAGE(url, prompt)</th>
+          <th>=GPT_VISION(url, prompt)</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>Copy/paste example</td>
-          <td><code>=GPT_IMAGE("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-jBrhbr.png", "Write a short description for this product")</code></td>
+          <td><code>=GPT_VISION("https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-jBrhbr.png", "Write a short description for this product")</code></td>
         </tr>
         <tr>
           <td>Copy/paste example</td>
-          <td><code>=GPT_IMAGE(A1, A2)</code></td>
+          <td><code>=GPT_VISION(A1, A2)</code></td>
         </tr>
         <tr>
           <td>Localization</td>
