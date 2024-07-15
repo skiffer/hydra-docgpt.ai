@@ -25,6 +25,8 @@ Once installed, access the add-on from the Extensions menu within any Google spr
 
 In the rapidly evolving world of artificial intelligence, Mistral AI has emerged as a formidable competitor to established players like Open AI's ChatGPT. Backed by significant investment, including a recent infusion of $16 million from Microsoft, Mistral AI offers powerful capabilities at a compelling value. Whether you're a seasoned AI enthusiast or just beginning to explore this exciting field, here’s how you can start using Mistral AI today on your computer or smartphone.
 
+### DEMO - Mistral for Google Sheets
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Na-pVhwaq7s?si=-0DDzd5cyMg95s4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### What is Mistral AI and Why Choose It?
 
