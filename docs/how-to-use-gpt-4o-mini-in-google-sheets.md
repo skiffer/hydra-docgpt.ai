@@ -27,11 +27,12 @@ To use the GPT-4-Mini AI assistant in Google Sheets, follow these steps:
 6. **Click the "Refresh account" button**, then the "Set Up OpenAI Key" button that appears.
 
 7. **Paste your OpenAI API key** where indicated, click "Check", then "Save".
-8. **Select GPT-4o-mini in select box
+8. **Select GPT-4o-mini in select box**
 
 9. **Type a simple formula in a cell** to get a response from GPT, for example:
    ```plaintext
    =GPT("Write a title for coffee shop")
+   ```
 
 10. After getting the result, click "Replace All GPTs" or "Replace Selected" to replace the formula with the AI-generated text. This is important to avoid the sheet re-executing the formulas frequently, which could impact your OpenAI credits.
 
