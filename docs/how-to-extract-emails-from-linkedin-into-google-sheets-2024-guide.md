@@ -1,10 +1,10 @@
 ---
 layout: docs_layouts/default
-title: Extract Instagram Emails to Google Sheets in 2024 Best Practices
+title: Extract Linkedin Emails to Google Sheets in 2024 Best Practices
 nav_order: 3
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-extract-emails-from-linkedin-into-google-sheets-2024-guide
-description: Extract Instagram Emails to Google Sheets in 2024 Best Practices
+description: Extract Linkedin Emails to Google Sheets in 2024 Best Practices
 ---
 
 # Extract LinkedIn Emails to Google Sheets in 2024 Best Practices
