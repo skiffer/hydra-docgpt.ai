@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Create Top Article to Rank on Google in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/create-top-article-to-rank-on-google-in-2024.md
+permalink: /docs/ai-prompts/create-top-article-to-rank-on-google-in-2024
 description: Unlock the secrets to ranking #1 on Google in 2024 with our expert guide. Learn cutting-edge SEO techniques, keyword strategies, and content optimization tips to create articles that dominate search results. Perfect for bloggers, marketers, and business owners aiming for top Google rankings.
 ---
 

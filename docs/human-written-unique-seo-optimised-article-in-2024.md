@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Human Written Unique SEO Optimised Article in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/human-written-unique-seo-optimised-article-in-2024.md
+permalink: /docs/ai-prompts/human-written-unique-seo-optimised-article-in-2024
 description: Boost your online visibility with a human-crafted, unique SEO-optimized article in 2024. Drive traffic, enhance engagement, and improve rankings with expertly written content designed to meet the latest SEO trends and algorithms.
 ---
 

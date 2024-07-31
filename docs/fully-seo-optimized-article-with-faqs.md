@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Fully SEO Optimized Article with FAQs
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/fully-seo-optimized-article-with-faqs.md
+permalink: /docs/ai-prompts/fully-seo-optimized-article-with-faqs
 description: Boost your online presence with our Fully SEO Optimized Article. Crafted to enhance visibility, it includes well-researched FAQs to address common questions, optimize user engagement, and improve search engine rankings. Get noticed with content that works for you!
 ---
 

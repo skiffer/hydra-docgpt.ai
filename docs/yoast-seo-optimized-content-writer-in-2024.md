@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Yoast SEO Optimized Content Writer in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/yoast-seo-optimized-content-writer-in-2024.md
+permalink: /docs/ai-prompts/yoast-seo-optimized-content-writer-in-2024
 description: Boost your website's visibility with a seasoned Yoast SEO Optimized Content Writer in 2024. Enhance your search engine rankings with expertly crafted, keyword-rich content designed to engage and convert. Drive traffic and grow your online presence today!
 ---
 
