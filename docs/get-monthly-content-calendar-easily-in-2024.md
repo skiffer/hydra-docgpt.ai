@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Get Monthly Content Calendar Easily in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/get-monthly-content-calendar-easily-in-2024.md
+permalink: /docs/ai-prompts/get-monthly-content-calendar-easily-in-2024
 description: Simplify your content planning with our 2024 Monthly Content Calendar! Stay organized and ahead of schedule with easy-to-use templates designed for social media, blogs, and marketing campaigns. Maximize your reach and engagement effortlessly all year round.
 ---
 

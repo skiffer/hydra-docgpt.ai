@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Humanlike Rewriter in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/humanlike-rewriter-in-2024.md
+permalink: /docs/ai-prompts/humanlike-rewriter-in-2024
 description: Discover the power of Humanlike Rewriter in 2024, your ultimate tool for creating natural and authentic content effortlessly. Enhance your writing with AI-driven precision, ensuring readability and maintaining a human touch. Perfect for bloggers, marketers, and content creators. Try it today!
 ---
 

@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Create a Full Book in One Click
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/create-a-full-book-in-one-click.md
+permalink: /docs/ai-prompts/create-a-full-book-in-one-click
 description: Discover the revolutionary tool that lets you create a full book in just one click! Streamline your writing process and effortlessly generate high-quality content. Perfect for authors, bloggers, and content creators looking to boost productivity and creativity.
 ---
 

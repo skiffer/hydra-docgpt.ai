@@ -3,7 +3,7 @@ layout: docs_layouts/default
 title: Outrank Article in 2024
 nav_order: 1
 parent: AI Prompts
-permalink: /docs/ai-prompts/outrank-article-in-2024.md
+permalink: /docs/ai-prompts/outrank-article-in-2024
 description: Boost your website's visibility and stay ahead of the competition in 2024! Learn key strategies and tips to outrank any article and dominate search engine results. Perfect your SEO game and drive more organic traffic. Say goodbye to low rankings!
 ---
 
