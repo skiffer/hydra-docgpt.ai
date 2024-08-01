@@ -23,6 +23,8 @@ description: How to set up OpenAI API keys
 - If you use multiple accounts in the same Google Chrome Profile, please create a separated Google Chrome Profile for this account. (Google sometime unstable with multi-accounts cookies)
 - If you use company email - sometime company emails have restrictions with installation add-ons. It could require asking admin of the company email to configure for allowing installation add-ons or USE a PERSONAL ACCOUNT. (if needed to move subscription, please write to support chat or email — yaroslav91@gmail.com)
 
+### If you use multiple accounts in the same Chrome browser - Please create a separate Chrome Profile for this one account. Sometime Google API see you as another account.
+
 ### Create an OpenAI API key
 
 > Create an OpenAI API key to gain access to the ChatGPT API and other OpenAI APIs. This key allows OpenAI to track your usage and generate accurate billing.
