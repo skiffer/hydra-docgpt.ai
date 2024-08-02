@@ -12,7 +12,7 @@ description: How to set up OpenAI API keys
 ### Before you have started
 - Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 - <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
-- Optional -> RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
+- RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
 
 ### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located on the sidebar
 ![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
