@@ -43,6 +43,11 @@ Alternatively, you can use the =GPT() function to generate content for your site
 ## Indexing Pages with the GOOGLE_INDEXING Function
 The GOOGLE_INDEXING function allows site owners to directly notify Google when pages are added or updated. This function is available for 'User Pro' plans.
 
+### Authorize Application
+Launch the sidebar of the add-on: <a href="/gpt-for-sheets/">GPT for Sheets</a>
+
+### Open GOOGLE_INDEX() function with description and click on **Authorize Application**
+
 ### Function Syntax
 =GOOGLE_INDEXING(url)
 - url (required): The URL to notify Google for indexing. 
