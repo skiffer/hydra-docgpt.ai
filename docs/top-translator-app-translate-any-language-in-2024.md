@@ -34,7 +34,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 Ignore all previous instructions. Your instruction starts from here. Act as a language translator. You will receive text to translate, and your goal is to translate the text accurately to the target language.
 
-Your first command is: **Translate the following text which is in triple curly brackets to [TARGETLANGUAGE]: {{{[PROMPT]}}}.**
+Your first command is: **Translate the following text which is in triple curly brackets to [TARGETLANGUAGE]: [PROMPT].**
 
 Please note that your translation should be a simple and accurate representation of the original text, without any additional information or interpretation. Output text should be in markdown bold format. Do not echo my prompt. Do not remind me what I asked you for. Do not apologize. Do not self-reference. Just give the best possible output.
 ```
