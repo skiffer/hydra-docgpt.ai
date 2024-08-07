@@ -14,8 +14,8 @@ description: How to set up OpenAI API keys
 - <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 - RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
 
-### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located on the sidebar
-![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
+### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
+![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
 
 
 ### RECOMMENDATION: 
@@ -46,10 +46,10 @@ description: How to set up OpenAI API keys
 #### 5. Please make sure that you have removed all other add-ons that provides GPT functions, to dont have conflicts
 #### 6. At this step you should have subscription to <a href="/gpt-for-sheets/" target="_blank">Pro User plan</a>
 ![created-api-key.png]({{ site.baseurl }}/images/subscription-pro-user.png){: width="300"}
-#### 7. Click on 'Refresh account' after that there will be appeared 'Set Up OpenAI Key' button
-![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
-#### 8. Click on 'Set Up OpenAI Key'
-![set-up-api-key.png]({{ site.baseurl }}/images/set-up-api-key.png){: width="300"}
+#### 7. Click on 'Refresh account': Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
+![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
+#### 8. Click on 'Set Up OpenAI Key': Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
+![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
 #### 9. Paste your OpenAI API key where indicated, and click 'Check' button
 ![check-and-save-api-key.png]({{ site.baseurl }}/images/check-and-save-api-key.png){: width="600"}
 #### 10. Click on 'Save' button
