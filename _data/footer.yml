@@ -1,4 +1,8 @@
 - links:
+  - name: Affiliate program
+    link: /affiliate
+    new_window: true
+    nofollow: true
 #  - name: Pricing for DocGPT - AI Writer for Docs™
 #    link: /docs-gpt-pricing/
 #  - name: Pricing for DocGPT - AI Writer for Sheets™
@@ -8,21 +12,21 @@
 #  - name: Contact
 #    link: /contact/
 - links:
-  - name: Affiliate program
-    link: /affiliate
-    new_window: true
-    nofollow: true
+#  - name: Affiliate program
+#    link: /affiliate
+#    new_window: true
+#    nofollow: true
   - name: Support & Troubleshooting
     link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
     new_window: true
-  - name: Privacy Policy - Mail Merge for Sheets Gmail
-    link: /privacy_mail_merge/
-    new_window: true
-    nofollow: true
-  - name: Privacy Policy - Import data in Sheets™
-    link: /privacy_import_data/
-    new_window: true
-    nofollow: true
+#  - name: Privacy Policy - Mail Merge for Sheets Gmail
+#    link: /privacy_mail_merge/
+#    new_window: true
+#    nofollow: true
+#  - name: Privacy Policy - Import data in Sheets™
+#    link: /privacy_import_data/
+#    new_window: true
+#    nofollow: true
   - name: Twitter
     link: https://twitter.com/ski0xFF/
     new_window: true
