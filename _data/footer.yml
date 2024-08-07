@@ -63,15 +63,23 @@
   - name: How to use AI Email Assistant (GPT for Gmail)
     link: /docs/gpt-for-gmail
     new_window: true
+  - name: How to Set up OpenAI key in GPT for Sheets
+    link: /docs/gpt-for-sheets/set-up-openai-api-keys
+    new_window: true
+    nofollow: true
+  - name: Extracting emails from Instagram, Linkedin, Twitter
+    link: /docs/gpt-for-sheets/how-to-extract-emails-from-instagram-into-google-sheets-2024-guide
+    new_window: true
+    nofollow: true
+  - name: Indexing pages for search results in Google Sheets
+    link: /docs/gpt-for-sheets/indexing-pages-for-search-results-in-google-sheets
+    new_window: true
+    nofollow: true
   - name: How to use GPT for Sheets
     link: /docs/gpt-for-sheets/get-started
     new_window: true
   - name: Top Alternatives Copy AI
     link: /top-alternatives-copy-ai/
-    new_window: true
-    nofollow: true
-  - name: How to Set up OpenAI key in GPT for Sheets
-    link: /docs/gpt-for-sheets/set-up-openai-api-keys
     new_window: true
     nofollow: true
 
