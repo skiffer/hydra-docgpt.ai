@@ -1,8 +1,8 @@
 - links:
-  - name: Affiliate program
-    link: /affiliate
-    new_window: true
-    nofollow: true
+#  - name: Affiliate program
+#    link: /affiliate
+#    new_window: true
+#    nofollow: true
 #  - name: Pricing for DocGPT - AI Writer for Docs™
 #    link: /docs-gpt-pricing/
 #  - name: Pricing for DocGPT - AI Writer for Sheets™
@@ -12,10 +12,10 @@
 #  - name: Contact
 #    link: /contact/
 - links:
-#  - name: Affiliate program
-#    link: /affiliate
-#    new_window: true
-#    nofollow: true
+  - name: Affiliate program
+    link: /affiliate
+    new_window: true
+    nofollow: true
   - name: Support & Troubleshooting
     link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
     new_window: true
