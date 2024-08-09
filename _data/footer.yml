@@ -27,10 +27,10 @@
 #    link: /privacy_import_data/
 #    new_window: true
 #    nofollow: true
-  - name: Twitter
-    link: https://twitter.com/ski0xFF/
-    new_window: true
-    nofollow: true
+#  - name: Twitter
+#    link: https://twitter.com/ski0xFF/
+#    new_window: true
+#    nofollow: true
 #  - name: Terms of Service
 #    link: /terms
 #    new_window: true
