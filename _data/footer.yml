@@ -1,7 +1,7 @@
 - links:
-#  - name: Affiliate program
-#    link: /affiliate
-#    new_window: true
+  - name: GPT Translation
+    link: /gpt-translation
+    new_window: true
 #    nofollow: true
 #  - name: Pricing for DocGPT - AI Writer for Docs™
 #    link: /docs-gpt-pricing/
