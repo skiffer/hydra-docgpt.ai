@@ -1,24 +1,26 @@
-- links:
-  - name: GPT Translation
-    link: /gpt-translation
-    new_window: true
-#    nofollow: true
-#  - name: Pricing for DocGPT - AI Writer for Docs™
-#    link: /docs-gpt-pricing/
-#  - name: Pricing for DocGPT - AI Writer for Sheets™
-#    link: /sheets-gpt-pricing/
-#  - name: Pricing for Gmail™ GPT
-#    link: /gmail-gpt-pricing/
-#  - name: Contact
-#    link: /contact/
-- links:
-  - name: Affiliate program
-    link: /affiliate
-    new_window: true
-    nofollow: true
-  - name: Support & Troubleshooting
-    link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
-    new_window: true
+- name: "Tools"
+  links:
+    - name: GPT Translation
+      link: /gpt-translation
+      new_window: true
+  #    nofollow: true
+  #  - name: Pricing for DocGPT - AI Writer for Docs™
+  #    link: /docs-gpt-pricing/
+  #  - name: Pricing for DocGPT - AI Writer for Sheets™
+  #    link: /sheets-gpt-pricing/
+  #  - name: Pricing for Gmail™ GPT
+  #    link: /gmail-gpt-pricing/
+  #  - name: Contact
+  #    link: /contact/
+- name: "Links"
+  links:
+    - name: Affiliate program
+      link: /affiliate
+      new_window: true
+      nofollow: true
+    - name: Support & Troubleshooting
+      link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
+      new_window: true
 #  - name: Privacy Policy - Mail Merge for Sheets Gmail
 #    link: /privacy_mail_merge/
 #    new_window: true
@@ -59,33 +61,34 @@
 #    highlight: false
 #    link: /privacy_qr_codes
 #    new_window: true
-- links:
+- name: "Docs"
+  links:
 #  - name: Facebook
 #    link: https://facebook.com/cloudcannon/
 #    new_window: true
 #    social_icon: Facebook
-  - name: How to use AI Email Assistant (GPT for Gmail)
-    link: /docs/gpt-for-gmail
-    new_window: true
-  - name: How to Set up OpenAI key in GPT for Sheets
-    link: /docs/gpt-for-sheets/set-up-openai-api-keys
-    new_window: true
-    nofollow: true
-  - name: Extracting emails from Instagram, Linkedin, Twitter
-    link: /docs/gpt-for-sheets/how-to-extract-emails-from-instagram-into-google-sheets-2024-guide
-    new_window: true
-    nofollow: true
-  - name: Indexing pages for search results in Google Sheets
-    link: /docs/gpt-for-sheets/indexing-pages-for-search-results-in-google-sheets
-    new_window: true
-    nofollow: true
-  - name: How to use GPT for Sheets
-    link: /docs/gpt-for-sheets/get-started
-    new_window: true
-  - name: Top Alternatives Copy AI
-    link: /top-alternatives-copy-ai/
-    new_window: true
-    nofollow: true
+    - name: How to use AI Email Assistant (GPT for Gmail)
+      link: /docs/gpt-for-gmail
+      new_window: true
+    - name: How to Set up OpenAI key in GPT for Sheets
+      link: /docs/gpt-for-sheets/set-up-openai-api-keys
+      new_window: true
+      nofollow: true
+    - name: Extracting emails from Instagram, Linkedin, Twitter
+      link: /docs/gpt-for-sheets/how-to-extract-emails-from-instagram-into-google-sheets-2024-guide
+      new_window: true
+      nofollow: true
+    - name: Indexing pages for search results in Google Sheets
+      link: /docs/gpt-for-sheets/indexing-pages-for-search-results-in-google-sheets
+      new_window: true
+      nofollow: true
+    - name: How to use GPT for Sheets
+      link: /docs/gpt-for-sheets/get-started
+      new_window: true
+    - name: Top Alternatives Copy AI
+      link: /top-alternatives-copy-ai/
+      new_window: true
+      nofollow: true
 
 #    /docs/gpt-for-sheets/set-up-openai-api-keys
 #    social_icon: Facebook
