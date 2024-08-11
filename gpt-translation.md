@@ -235,7 +235,7 @@ const translateButton = $('#translate-button');
         </div>
         <!-- Banner 2: Translate a Document -->
         <div class="col-md-6">
-            <p class="font-weight-bold mb-2">Need to translate a document?</p>
+            <p class="font-weight-bold mb-2">Need to translate a long document?</p>
             <p>
                 <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Docs</a></b>
             </p>
