@@ -9,6 +9,8 @@ permalink: /gpt-translation/
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function() {
+const translateButton = $('#translate-button');
+
     $('#translate-button').on('click', function() {
         const sourceText = $('#source-text').val();
         const sourceLanguage = $('#source-language').val();
@@ -20,22 +22,30 @@ $(document).ready(function() {
             return;
         }
 
-        // Example AJAX request
+        const payload = {
+            sourceText: sourceText,
+            sourceLanguage: sourceLanguage,
+            targetLanguage: targetLanguage,
+            instructions: instructions
+        };
+
+        // console.log(JSON.stringify(payload, null, 2));
+        translateButton.prop('disabled', true);
         $.ajax({
             url: 'https://api.docgpt.ai/free-tools/translation',
             type: 'POST',
             contentType: 'application/json',
-            data: JSON.stringify({
-                sourceText: sourceText,
-                sourceLanguage: sourceLanguage,
-                targetLanguage: targetLanguage,
-                instructions: instructions
-            }),
+            data: JSON.stringify(payload),
             success: function(response) {
                 $('#translated-text').val(response.translatedText);
             },
             error: function(xhr, status, error) {
                 console.error('Error:', error);
+                $('#translated-text').val('Error occurred while translating.');
+            },
+            complete: function() {
+                // Enable the button after the request is complete
+                translateButton.prop('disabled', false);
             }
         });
     });
