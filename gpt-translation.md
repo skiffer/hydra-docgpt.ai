@@ -1,6 +1,6 @@
 ---
 title: GPT Translation of your text
-description: Enter the text you want to translate using GPT Translation. You can include custom instructions and a glossary of special terms. GPT-4o-mini will handle the translation, ensuring it meets your specifications and translates accurately into your selected language
+description: Enter the text you want to translate using GPT Translation. You can include custom instructions and a glossary of special terms. GPT-4o will handle the translation, ensuring it meets your specifications and translates accurately into your selected language
 permalink: /gpt-translation/
 ---
 
@@ -213,14 +213,39 @@ const translateButton = $('#translate-button');
         <div class="separator"></div>
         <button id="translate-button" class="btn btn-primary" style="margin-top:50px;">Translate</button>
         <div class="separator"></div>
+        <div class="promotion-banner" >
+            <p style="font-size: 15px !important;">Translated with GPT-4o <i class="bi bi-translate"></i></p>
+        </div>
         <div class="translate-glossary-container">
         <label for="custom-instructions">Custom instructions</label>
             <div class="form-group textarea-container-small">
                 <textarea id="custom-instructions" class="form-control" placeholder="Enter custom instructions, such as voice or tone or glossary of special words..." maxlength="70"></textarea>
             </div>
         </div>
-        <div class="separator"></div>
-        <div class="promotion-banner">
-            <p>Translated with GPT-4o-mini <i class="bi bi-translate"></i></p>
+    </div>
+<!-- Container for Promotion Banners -->
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to translate in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to translate a document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Docs</a></b>
+            </p>
         </div>
     </div>
+
+</div>
+<style>
+#banner {
+    border: 5px solid grey;
+    border-radius: 20px;
+}
+</style>
