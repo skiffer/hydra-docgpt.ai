@@ -6,6 +6,12 @@
     - name: ChatGPT Prompts Generator
       link: /chatgpt-prompts-generator/
       new_window: true
+    - name: Midjourney Prompts Generator
+      link: /midjourney-prompts-generator/
+      new_window: true
+    - name: Stable Diffusion Prompts Generator
+      link: /stable-diffusion-prompts-generator/
+      new_window: true
   #    nofollow: true
   #  - name: Pricing for DocGPT - AI Writer for Docs™
   #    link: /docs-gpt-pricing/
