@@ -1,0 +1,218 @@
+---
+title: AI Prompts Generator - Updated 2024
+description: Enhance your content strategy with our AI-driven prompt generator. Create custom, high-quality prompts in seconds and achieve superior results. Give it a try today!
+permalink: /ai-prompts-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free AI Prompt Generator: Create Custom Prompts in one click!</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Give me a AI LLM Prompt to:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Convert text into Spanish" maxlength="200" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2>The Art of Crafting Effective Prompts</h2>
+                    <p>Generative AI language models have become a cornerstone of modern technology, offering remarkable capabilities in processing and generating human-like text. These tools, which include models like GPT (Generative Pre-trained Transformer), can assist in a wide range of tasks from drafting emails to generating creative content and even coding. At the heart of effectively utilizing these models lies the skill of crafting precise and effective prompts. In this article, we’ll delve into the essentials of generating AI language model prompts, explore techniques for crafting them, and highlight practical applications to enhance productivity and creativity.</p>
+
+                    <h3>Understanding Prompts and Their Impact</h3>
+                    <p>Prompts are the instructions or queries you provide to an AI language model to elicit a response. They serve as the starting point for generating text based on the model’s training and knowledge. The effectiveness of a prompt can significantly influence the quality and relevance of the AI’s output. A well-structured prompt leads to more accurate, coherent, and useful responses, while a vague or poorly formulated prompt can result in responses that are off-target or nonsensical.</p>
+                    <p>To illustrate, consider two different prompts for a model designed to assist with writing product descriptions:</p>
+                    <ul>
+                        <li><strong>Prompt 1:</strong> "Write a product description."</li>
+                        <li><strong>Prompt 2:</strong> "Create a compelling product description for a new eco-friendly yoga mat that emphasizes its durability, comfort, and sustainability."</li>
+                    </ul>
+                    <p>The second prompt provides specific details and context, guiding the AI to produce a more tailored and relevant response. Understanding this nuance is key to leveraging the full potential of AI language models.</p>
+
+                    <h3>Key Techniques for Effective Prompting</h3>
+                    <p>Crafting effective prompts involves several techniques that enhance clarity and precision. Here are some essential strategies:</p>
+                    <ul>
+                        <li><strong>Be Specific:</strong> Include detailed information about what you want the AI to generate. The more context you provide, the better the model can tailor its response. For example, if you need a summary of a scientific article, specify the article’s topic and the length of the summary required.</li>
+                        <li><strong>Define the Format:</strong> Indicate the format or style of the response you’re expecting. Whether you need a list, a paragraph, a formal tone, or a conversational style, specifying this in your prompt can help the model deliver content that meets your needs.</li>
+                        <li><strong>Ask Follow-Up Questions:</strong> If your initial prompt yields incomplete or unclear information, use follow-up prompts to refine and expand the response. This iterative approach helps in obtaining more accurate and comprehensive results.</li>
+                        <li><strong>Provide Examples:</strong> When appropriate, provide examples of the kind of output you’re seeking. This can serve as a guide for the AI, ensuring that the response aligns with your expectations.</li>
+                    </ul>
+
+                    <h2>Practical Applications of Effective Prompting</h2>
+                    <p>Effective prompt crafting can unlock a wide array of applications across different domains. Here are a few practical scenarios where well-crafted prompts can make a significant difference:</p>
+
+                    <h3>Content Creation</h3>
+                    <p>In the realm of content creation, generating high-quality written material is essential. By providing clear and detailed prompts, you can guide AI models to create blog posts, articles, social media content, and more. For instance, a prompt asking for a blog post on "sustainable fashion trends" can yield insights and ideas that are both relevant and engaging.</p>
+
+                    <h3>Business Applications</h3>
+                    <p>Businesses can leverage AI language models for various tasks, including drafting emails, creating marketing copy, and generating reports. A prompt that specifies the target audience and key points can help generate marketing content that resonates with customers. Similarly, prompts can be tailored to draft professional emails or summarize meeting notes effectively.</p>
+
+                    <h3>Education and Learning</h3>
+                    <p>In educational settings, AI language models can assist with tutoring, generating study materials, and providing explanations on complex topics. For example, a prompt requesting a detailed explanation of a mathematical concept or historical event can help students gain a deeper understanding of the subject matter.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>Mastering the art of crafting effective prompts for AI language models is crucial for harnessing their full potential. By being specific, defining formats, asking follow-up questions, and providing examples, you can significantly improve the quality and relevance of the AI’s responses. Whether for content creation, business applications, or educational purposes, effective prompt crafting can enhance productivity, creativity, and overall efficiency. As AI technology continues to advance, developing these skills will be increasingly valuable for achieving optimal results and staying ahead in a rapidly evolving digital landscape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const payload = {
+                prompt: prompt
+            };
+            console.log(JSON.stringify(payload));
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/prompt-generation',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.generated_prompt);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+</script>
