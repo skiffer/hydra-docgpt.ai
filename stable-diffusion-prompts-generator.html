@@ -1,0 +1,221 @@
+---
+title: Stable Diffusion Prompts Generator - Updated 2024
+description: Utilize our advanced Stable Diffusion prompt generator, powered by cutting-edge NLP algorithms, to analyze your text and recommend optimal keywords for image creation.
+permalink: /stable-diffusion-prompts-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free Stable Diffusion Prompt Generator: Create Custom Stable Diffusion Prompts</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Idea to display:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Convert text into Spanish" maxlength="200" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="mb-4">Harnessing the Power of Text-to-Image Technology</h2>
+                    <p>With the advancements in text-to-image technology and automated image generation, the ability to create images from just a few words is now a reality. Technologies like Midjourney and Stable Diffusion make this possible.</p>
+
+                    <p>However, not everyone excels at crafting precise prompts. This is where prompt engineering becomes crucial. For those who may not have the time to dive deep into prompt engineering, a Stable Diffusion prompt generator can be a valuable tool.</p>
+
+                    <p>This prompt generator utilizes advanced natural language processing (NLP) algorithms to analyze your text and recommend optimal keywords for image creation. It then provides you with a Stable Diffusion prompt that incorporates these keywords, enabling you to generate images efficiently and accurately.</p>
+
+                    <h3 class="mt-4">Interested in Learning Stable Diffusion Prompting? Here's a Guide:</h3>
+
+                    <h4 class="mt-3">What Is Text-to-Image Technology?</h4>
+                    <p>Text-to-image technology, also known as image synthesis, converts text input into images. By using natural language processing techniques, it interprets the meaning of the text and generates an image based on that understanding.</p>
+                    <p>Companies like Midjourney, Stable Diffusion, and DALL-E (by OpenAI) use a diffusion approach to create images. This method involves applying a series of transformations to a base image to produce new, visually distinct images based on the user's prompt. For example, a prompt like "a strawberry in the snow" results in an image of a strawberry covered in snowflakes.</p>
+
+                    <h4 class="mt-3">What Is a Stable Diffusion Prompt?</h4>
+                    <p>A Stable Diffusion prompt is a collection of keywords and phrases that describe an image. These keywords are used by image synthesis algorithms to generate high-quality, realistic images.</p>
+                    <p>Prompts are detailed and specific, typically including attributes such as:</p>
+                    <ul>
+                        <li>Subject</li>
+                        <li>Medium</li>
+                        <li>Style</li>
+                        <li>Artist</li>
+                        <li>Website</li>
+                        <li>Resolution</li>
+                        <li>Additional details</li>
+                        <li>Color</li>
+                        <li>Lighting</li>
+                    </ul>
+                    <p>For instance, a basic prompt might be "a pink rose on a white background with delicate petals." An enhanced prompt could be "A pink rose with delicate, round petals on a white background in the style of Monet, by Nikita Kravchenko."</p>
+
+                    <h4 class="mt-3">How to Generate a Stable Diffusion Prompt?</h4>
+                    <p>Generating a Stable Diffusion prompt is straightforward. Input some text, and the generator will suggest a series of relevant keywords and phrases for image creation.</p>
+                    <p>For example, if you provide the prompt "a strawberry in the snow," the generator might suggest keywords such as "snowfall," "cold," or "berry."</p>
+                    <p>After selecting the appropriate keywords, combine them to form your prompt. This is crucial, as it will be used to generate your image. Additionally, consider including a negative prompt to exclude unwanted elements. For example, you might add "not red" if you don't want the strawberry to appear red.</p>
+
+                    <h4 class="mt-3">How Does a Stable Diffusion Prompt Generator Work?</h4>
+                    <p>A Stable Diffusion prompt generator is an AI-driven tool that uses NLP algorithms to recommend keywords and phrases for image synthesis.</p>
+                    <p>The generator processes your input text using machine learning algorithms to produce a list of keywords that best match the description. It also suggests a negative prompt to help avoid undesirable results. For instance, with the input "a strawberry in the snow," it might suggest adding terms like "not red" or "no leaves."</p>
+                    <p>Once you’ve chosen the keywords and phrases, combine them into a Stable Diffusion prompt. This prompt can then be used to generate a high-quality image using Stable Diffusion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const payload = {
+                prompt: prompt
+            };
+            console.log(JSON.stringify(payload));
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/prompt-generation',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.generated_prompt);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+</script>
