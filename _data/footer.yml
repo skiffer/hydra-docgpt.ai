@@ -1,7 +1,10 @@
 - name: "Tools"
   links:
     - name: GPT Translation
-      link: /gpt-translation
+      link: /gpt-translation/
+      new_window: true
+    - name: ChatGPT Prompts Generator
+      link: /chatgpt-prompts-generator/
       new_window: true
   #    nofollow: true
   #  - name: Pricing for DocGPT - AI Writer for Docs™
