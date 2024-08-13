@@ -1,0 +1,214 @@
+---
+title: ChatGPT Prompts Generator - Updated 2024
+description: Boost your content strategy with our AI-powered ChatGPT prompt generator. Generate custom, high-quality prompts in seconds and drive better results. Try it now!
+permalink: /chatgpt-prompts-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free ChatGPT Prompt Generator: Create Custom Prompts Easily</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Give me a ChatGPT Prompt to:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Convert text into Spanish" maxlength="200" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-center">Mastering the Art of Prompting</h1>
+                    <p>Prompting isn’t just a task; it’s an art form that has evolved into a highly lucrative profession. As a prompt engineer, you can earn over $300,000 annually. But what happens when you’re stuck crafting the perfect prompt to get ChatGPT to perform exactly as you intend?</p>
+                    <p>This is where our AI prompt generator becomes invaluable. Utilizing advanced natural language processing technology, it crafts ready-to-use prompts tailored to your needs.</p>
+                    <p>Simply provide the generator with one of the following:</p>
+                    <ul>
+                        <li>What you want ChatGPT to accomplish.</li>
+                        <li>The role you want ChatGPT to assume.</li>
+                    </ul>
+                    <p>You'll receive a precisely tailored prompt, enabling ChatGPT to interact with your desired accuracy and efficiency.</p>
+
+                    <h2>What Is ChatGPT?</h2>
+                    <p>ChatGPT is an AI-powered language model developed by OpenAI, designed to generate human-like text based on the input provided. It’s akin to conversing with a chatbot, but it leverages machine learning to enhance its responses over time. Trained on a vast corpus of internet text, including forums, books, and other publications, ChatGPT is a powerful tool for generating text.</p>
+
+                    <h2>How Can I Use ChatGPT?</h2>
+                    <p>Interacting with ChatGPT is as straightforward as having a conversation. However, unlike a human, ChatGPT doesn’t have beliefs or desires and won’t understand context unless explicitly stated. For instance, asking it to "Write a play like Shakespeare" will yield results, but for something more specific, like a romantic play, you need to provide detailed prompts.</p>
+                    <p>Providing ChatGPT with the right prompts is crucial for getting accurate results. AI prompt generators, like the one we offer, use natural language processing (NLP) to generate prompts tailored to your specific needs.</p>
+                    <p>These generators consider:</p>
+                    <ul>
+                        <li>Your goal.</li>
+                        <li>The context of the conversation.</li>
+                        <li>The language and tone you wish to maintain.</li>
+                    </ul>
+                    <p>With these tools, you can quickly generate prompts that help ChatGPT understand your requirements, delivering more precise results faster than manual prompting.</p>
+
+                    <h2>What Is a ChatGPT Prompt Generator?</h2>
+                    <p>A ChatGPT prompt generator is an NLP-powered tool designed to help developers and non-developers alike create relevant prompts that provide clear instructions for ChatGPT and other AI-driven tools. By eliminating guesswork, these generators ensure that your instructions lead to accurate responses from GPT-powered systems.</p>
+                    <p>For instance, if you need ChatGPT to function as a customer service chatbot, a prompt generator can help create context-specific instructions, optimizing AI-driven tasks.</p>
+
+                    <h2>How Does a ChatGPT Prompt Generator Work?</h2>
+                    <p>The generator operates on a reverse engineering methodology. We’ve curated a database of the best ChatGPT prompts used in various contexts. This database, powered by NLP techniques, processes user input to generate the most suitable prompt, presenting it in an optimized format.</p>
+                    <p>These generated prompts can be fed directly into ChatGPT to create effective conversational AI-driven tasks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const payload = {
+                prompt: prompt
+            };
+            console.log(JSON.stringify(payload));
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/prompt-generation',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.generated_prompt);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+</script>
