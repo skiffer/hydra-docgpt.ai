@@ -1,0 +1,205 @@
+---
+title: Midjourney Prompts Generator - Updated 2024
+description: Introducing our advanced Midjourney prompt generator, which leverages state-of-the-art natural language processing technology to create highly effective prompts.
+permalink: /midjourney-prompts-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free Midjourney Prompt Generator: Create Custom Midjourney Prompts</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Give me a Midjourney Prompt to:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Convert text into Spanish" maxlength="200" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="mb-4">Prompting Isn't Easy—It's an Art</h2>
+                    <p>Creating art from text prompts is a nuanced skill. Midjourney is a text-to-image generator designed to help you transform your words into visuals. However, generating these images isn't as straightforward as it seems. You need the right ideas and inspiration to find the perfect combination of words to produce something visually appealing.</p>
+
+                    <p>To effectively use this image generator, consider the following:</p>
+                    <ul>
+                        <li>What kind of image are you aiming to create?</li>
+                        <li>What attributes should it have?</li>
+                    </ul>
+
+                    <p>These considerations require more than just a spark of creativity.</p>
+
+                    <p>Fortunately, Midjourney offers pre-built attributes to get you started. Whether you're interested in landscapes, abstract art, or something else entirely, there are numerous options available. Learning all these attributes may take time, but there's a shortcut:</p>
+
+                    <h3 class="mt-4">Introducing the Midjourney Prompt Generator</h3>
+                    <p>We've developed a Midjourney Prompt Generator to help you create professional-looking images using simple English words. It simplifies prompt engineering, making it accessible even if you're new to this field.</p>
+
+                    <h4 class="mt-4">What Is a Text-to-Image Model?</h4>
+                    <p>A text-to-image model is an AI-powered system that converts natural language input into images corresponding to the text description. These models are trained on large datasets of text-image pairs, learning to accurately map linguistic descriptions to visual representations.</p>
+
+                    <h4 class="mt-4">How Does the Prompt Generator Work?</h4>
+                    <p>The Midjourney Prompt Generator uses a reverse engineering approach. It interprets the natural language description you provide and generates a set of keywords for Midjourney to use in creating the image.</p>
+                    <p>It breaks down your description into individual words and processes them through machine learning algorithms. The resulting keywords are then used to find matching images in Midjourney's extensive library. For instance, a prompt like "vertical image" might be translated into the attribute "--ar 2:3," which Midjourney recognizes to produce the desired image.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const payload = {
+                prompt: prompt
+            };
+            console.log(JSON.stringify(payload));
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/prompt-generation',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.generated_prompt);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+</script>
