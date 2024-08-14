@@ -1,0 +1,272 @@
+---
+title: Gmail email extractor
+description: Gmail Email Extractor: Streamline your lead generation by effortlessly extracting email addresses from your Gmail account. This web-based tool features smart filtering to enhance email collection, making it perfect for marketers and professionals looking to efficiently build and manage their leads.
+permalink: /gmail-email-extractor/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free Gmail Email Extractor</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Enter Text to Extract Emails:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Your text that contain emails example@domain.com, or any secured like test at gmail com" maxlength="300" required></textarea>
+                <div class="mt-2">
+                    <small id="charCount" class="text-muted">0 / 300 characters</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Extract</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2>How to Extract Gmail Addresses from Text: A Comprehensive Guide</h2>
+                    <p>In today’s digital age, effective email list management is crucial for successful marketing campaigns. One of the most valuable assets in your marketing toolkit is a well-curated list of email addresses. Extracting Gmail addresses from text can significantly streamline your lead generation efforts, allowing you to target your audience more effectively. This guide will explore various methods to extract Gmail addresses from text, including practical Google search techniques.</p>
+
+                    <h2>Why Extract Gmail Addresses?</h2>
+                    <p>Extracting Gmail addresses from text can provide several benefits:</p>
+                    <ul>
+                        <li><strong>Targeted Marketing:</strong> Directly reach users with Gmail accounts, often associated with high engagement.</li>
+                        <li><strong>Efficient Lead Generation:</strong> Quickly build an email list for campaigns or outreach efforts.</li>
+                        <li><strong>Data Accuracy:</strong> Ensure you’re contacting active and reliable email addresses.</li>
+                    </ul>
+
+                    <h2>Tools for Extracting Gmail Addresses</h2>
+                    <p>While there are various tools available for extracting emails from text, the focus here will be on using Google search queries to find and extract Gmail addresses effectively.</p>
+
+                    <h2>How to Extract Gmail Addresses Using Google</h2>
+
+                    <h2>1. Google Search Queries</h2>
+                    <p>Google search can be a powerful tool for finding Gmail addresses embedded in public text. Here are some example queries you can use:</p>
+                    <ul>
+                        <li><strong>Search for Gmail Addresses in Public Documents:</strong> <code>"site:.pdf 'Gmail.com'"</code> This query searches for PDFs that mention Gmail addresses. Replace <code>.pdf</code> with other file types if needed, like <code>.docx</code> or <code>.txt</code>.</li>
+                        <li><strong>Find Gmail Addresses on Specific Websites:</strong> <code>"site:example.com 'Gmail.com'"</code> Replace <code>example.com</code> with the domain you’re interested in. This search looks for Gmail addresses within that specific site.</li>
+                        <li><strong>Locate Gmail Addresses in Online Content:</strong> <code>"Gmail.com 'contact'"</code> This query targets pages where Gmail addresses are associated with contact information, potentially on forums, blog posts, or other online platforms.</li>
+                    </ul>
+
+                    <h2>2. Use Google’s Advanced Search Operators</h2>
+                    <p>Advanced search operators can refine your search results to find Gmail addresses more effectively:</p>
+                    <ul>
+                        <li><strong>Inurl Operator:</strong> <code>"inurl:contact 'Gmail.com'"</code> This query finds pages with <code>'contact'</code> in the URL that might contain Gmail addresses.</li>
+                        <li><strong>Intitle Operator:</strong> <code>"intitle:directory 'Gmail.com'"</code> This search focuses on directories or listings that may include Gmail addresses.</li>
+                    </ul>
+
+                    <h2>3. Scraping Email Addresses from Web Pages</h2>
+                    <p>Once you’ve identified relevant web pages using Google search, you can use web scraping tools to extract Gmail addresses. Tools like BeautifulSoup (Python) or import.io can automate this process. Here’s a basic example using Python’s BeautifulSoup:</p>
+                    <pre><code>import requests
+from bs4 import BeautifulSoup
+import re
+
+# URL of the page to scrape
+url = 'http://example.com'
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Parse the HTML content
+soup = BeautifulSoup(response.content, 'html.parser')
+
+# Find all email addresses
+emails = re.findall(r'[a-zA-Z0-9._%+-]+@gmail\.com', soup.text)
+
+# Print extracted Gmail addresses
+for email in emails:
+    print(email)</code></pre>
+                    <p><strong>Note:</strong> Ensure you have permission to scrape the website and comply with its terms of service.</p>
+
+                    <h2>Best Practices for Email Extraction</h2>
+                    <ul>
+                        <li><strong>Respect Privacy:</strong> Ensure that the email addresses you extract are used in accordance with privacy regulations like GDPR.</li>
+                        <li><strong>Verify Accuracy:</strong> Use email verification tools to ensure that the addresses are valid and active.</li>
+                        <li><strong>Avoid Spamming:</strong> Use extracted email addresses responsibly and in compliance with anti-spam laws.</li>
+                    </ul>
+
+                    <h2>Conclusion</h2>
+                    <p>Extracting Gmail addresses from text is a powerful technique to enhance your lead generation strategy. By using Google search queries and advanced search operators, you can efficiently locate Gmail addresses across various public sources. Combined with proper email management practices, this method can significantly boost your marketing efforts and improve your CPA (Cost Per Acquisition).</p>
+                    <p>For the best results, complement these techniques with dedicated email extraction tools and always prioritize ethical practices in your email marketing campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            if (prompt.length > 300) {
+                alert('The text must be less  than 300 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+            const forceCommand = `Extract emails from text: ${prompt}. You must return only emails. Display as a column of emails. Return only emails. No need any comments.`
+            const payload = {
+                prompt: forceCommand
+            };
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/execute-prompt',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.result);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+
+
+    const outputTextarea = document.getElementById('inputPrompt');
+    const charCountElement = document.getElementById('charCount');
+
+    function updateCharCount() {
+        const text = outputTextarea.value;
+        const charCount = text.length;
+        charCountElement.textContent = `${charCount} / 300 characters`;
+    }
+
+    // Event listener to update character count whenever the content changes
+    outputTextarea.addEventListener('input', updateCharCount);
+
+    // Initialize the character count display
+    updateCharCount();
+</script>
