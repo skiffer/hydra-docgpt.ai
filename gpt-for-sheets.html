@@ -23,6 +23,12 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           },
         };
         dataLayer.push(dataLayerInfo);
+
+        // Facebook Pixel Purchase Tracking
+        fbq('track', 'Purchase', {
+          value: data.eventData.checkout.prices.customer.total,
+          currency: data.eventData.checkout.prices.customer.currency
+        });
       }
     }
   }); // replace with your vendor ID
