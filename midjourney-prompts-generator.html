@@ -145,6 +145,12 @@ permalink: /midjourney-prompts-generator/
                 alert('The prompt must be at least 10 characters long.');
                 return;
             }
+
+            if (prompt.length > 200) {
+                alert('The prompt must be less than 200 characters long.');
+                return;
+            }
+
             const requestCount = getRequestCount();
             if (requestCount >= MAX_REQUESTS) {
                 // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")

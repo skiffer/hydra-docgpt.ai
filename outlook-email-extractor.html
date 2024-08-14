@@ -1,0 +1,271 @@
+---
+title: Outlook email extractor
+description: Extracts email addresses from your Outlook account. This web-based tool simplifies email collection, offering smart filtering and CSV export for seamless contact management. Ideal for marketers and professionals looking to streamline their email lists
+permalink: /outlook-email-extractor/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Free Outlook Email Extractor</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Enter Text to Extract Emails:</label>
+                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Your text that contain emails example@domain.com, or any secured like test at gmail com" maxlength="300" required></textarea>
+                <div class="mt-2">
+                    <small id="charCount" class="text-muted">0 / 300 characters</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Extract</button>
+        </form>
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <!-- Hero Section -->
+                    <div class="text-center mb-4">
+                        <h2 class="display-4">Outlook Email Extractor</h2>
+                        <p class="lead">Optimize Lead Generation with Efficient Email Extraction</p>
+                    </div>
+
+                    <!-- Features Section -->
+                    <h2>Key Features</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 feature-item mb-4">
+                            <h2>Automated Text Extraction</h2>
+                            <p>Quickly extract email addresses from diverse text formats, including emails, documents, and web content. The tool automates the extraction process, making it faster and more reliable than manual methods.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 feature-item mb-4">
+                            <h2>Advanced Filtering</h2>
+                            <p>Tailor your extraction process with sophisticated filtering options. Extract emails based on specific criteria, such as domain names or keywords, to ensure that your lead list is relevant and high-quality.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 feature-item mb-4">
+                            <h2>CSV Export</h2>
+                            <p>Effortlessly export extracted emails to a CSV file for seamless integration with CRM systems, email marketing platforms, or lead management tools. This feature supports efficient data handling and facilitates targeted outreach.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-4 feature-item mb-4">
+                            <h2>User-Friendly Interface</h2>
+                            <p>The tool features an intuitive interface that makes it accessible to users of all experience levels. This ensures a smooth and efficient email extraction process.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ways to Extract Emails -->
+                    <h2 class="mt-4">Ways to Extract Emails</h2>
+                    <ul>
+                        <li><strong>From Emails:</strong> Use the Outlook Email Extractor to gather email addresses from your Outlook inbox, sent items, and other folders. This method is ideal for compiling leads from existing communications.</li>
+                        <li><strong>From Documents:</strong> Extract email addresses from various text documents, such as reports, proposals, or spreadsheets. The tool supports multiple document formats, ensuring comprehensive data extraction.</li>
+                        <li><strong>From Web Content:</strong> Capture email addresses from web pages or online content. The extractor can pull emails directly from text on websites, helping you build your email list from online sources.</li>
+                        <li><strong>From Custom Text:</strong> Paste or upload custom text that contains email addresses. The tool will extract and organize these emails, making it easy to manage and utilize the contact data.</li>
+                    </ul>
+
+                    <!-- Examples of How to Get Emails for Leads -->
+                    <h2 class="mt-4">Examples of How to Get Emails for Leads</h2>
+                    <h2>Google Search Queries:</h2>
+                    <ul>
+                        <li>"site:.com 'email' 'marketing manager'": Find email addresses of marketing managers listed on LinkedIn.</li>
+                        <li>"contact email 'software development' site:.com": Locate contact emails for software development teams on specific company websites.</li>
+                        <li>"email addresses 'sales' 'lead' filetype:pdf": Search for PDFs containing email addresses related to sales leads.</li>
+                    </ul>
+                    <h2>Social Media and Professional Networks:</h2>
+                    <ul>
+                        <li><strong>LinkedIn:</strong> Use LinkedIn’s search features to find professionals in your industry and extract their email addresses from profiles or contact information listed in their posts and articles.</li>
+                    </ul>
+                    <h2>Company Websites:</h2>
+                    <ul>
+                        <li><strong>Contact Pages:</strong> Visit the contact or team pages of company websites to gather email addresses of key personnel.</li>
+                        <li><strong>Press Releases:</strong> Extract email addresses from press releases or news articles published on company websites.</li>
+                    </ul>
+                    <h2>Industry Directories:</h2>
+                    <ul>
+                        <li><strong>Online Directories:</strong> Browse industry-specific directories and databases to find email addresses of potential leads.</li>
+                    </ul>
+
+                    <!-- Benefits Section -->
+                    <div class="benefits-section text-center mt-4">
+                        <h2>Benefits</h2>
+                        <p>By incorporating the Outlook Email Extractor into your lead generation strategy, you can efficiently acquire and manage email addresses from a variety of text sources. The tool’s automated extraction and advanced filtering capabilities ensure that you build a highly targeted email list, enhancing your outreach efforts and improving campaign results.</p>
+                        <p>Maximize your lead generation potential with the Outlook Email Extractor. Whether extracting emails from text documents, web content, or using targeted Google search queries, this tool provides the precision and efficiency needed to optimize your email marketing and outreach strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 20;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+            var prompt = $('#inputPrompt').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            if (prompt.length > 300) {
+                alert('The text must be less  than 300 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                // $('#output').val("You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.")
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+                    <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+                    <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</p>
+                </b>`).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+            const forceCommand = `Extract emails from text: ${prompt}. You must return only emails. Display as a column of emails. Return only emails. No need any comments.`
+            const payload = {
+                prompt: forceCommand
+            };
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/execute-prompt',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function (response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.result);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function () {
+                    // Re-enable the button after execution
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+
+
+    const outputTextarea = document.getElementById('inputPrompt');
+    const charCountElement = document.getElementById('charCount');
+
+    function updateCharCount() {
+        const text = outputTextarea.value;
+        const charCount = text.length;
+        charCountElement.textContent = `${charCount} / 300 characters`;
+    }
+
+    // Event listener to update character count whenever the content changes
+    outputTextarea.addEventListener('input', updateCharCount);
+
+    // Initialize the character count display
+    updateCharCount();
+</script>
