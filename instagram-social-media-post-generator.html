@@ -1,0 +1,434 @@
+---
+title: Instagram Social Media Post Generator
+description: Transform your Instagram presence with our Social Media Post Generator. Effortlessly create eye-catching captions, enhance engagement, and streamline content creation. Perfect for marketers looking to elevate their Instagram strategy and captivate their audience with creative posts!
+permalink: /instagram-social-media-post-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 Instagram Social Media Post Generator</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Enter topic</label>
+                <textarea class="form-control" id="inputPrompt" rows="2" placeholder="Health and Fitness" maxlength="200" required></textarea>
+                <div class="mt-2">
+                    <small id="charCount" class="text-muted">0 / 300 characters</small>
+                </div>
+            </div>
+
+            <!-- Tone Dropdown -->
+            <div class="form-group mt-3">
+                <label for="toneSelect">Tone</label>
+                <div class="input-group">
+                    <select class="form-control" id="toneSelect">
+                        <option value="friendly">Friendly</option>
+                        <option value="professional">Professional</option>
+                        <option value="informal">Informal</option>
+                        <option value="excited">Excited</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform Dropdown -->
+            <div class="form-group mt-3">
+                <label for="platformSelect">Platform</label>
+                <div class="input-group">
+                    <select class="form-control" id="platformSelect">
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="linkedin">LinkedIn</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-platform"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Style Dropdown -->
+            <div class="form-group mt-3">
+                <label for="styleSelect">Style</label>
+                <div class="input-group">
+                    <select class="form-control" id="styleSelect">
+                        <option value="concise">Concise</option>
+                        <option value="detailed">Detailed</option>
+                        <option value="persuasive">Persuasive</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audience Dropdown -->
+            <div class="form-group mt-3">
+                <label for="audienceSelect">Audience</label>
+                <div class="input-group">
+                    <select class="form-control" id="audienceSelect">
+                        <option value="25-35">25-35 years old</option>
+                        <option value="teenagers">Teenagers</option>
+                        <option value="professionals">Professionals</option>
+                        <option value="general">General</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-people"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="form-group mt-3">
+                <label for="languageSelect">Language</label>
+                <div class="input-group">
+                    <select class="form-control" id="languageSelect">
+                        <option value="Arabic">Arabic</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                        <option value="Czech">Czech</option>
+                        <option value="Danish">Danish</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="English" selected>English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Estonian">Estonian</option>
+                        <option value="Finnish">Finnish</option>
+                        <option value="French">French</option>
+                        <option value="Hungarian">Hungarian</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Lithuanian">Lithuanian</option>
+                        <option value="Latvian">Latvian</option>
+                        <option value="Norwegian">Norwegian</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="Polish">Polish</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Romanian">Romanian</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Slovak">Slovak</option>
+                        <option value="Slovenian">Slovenian</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Ukrainian">Ukrainian</option>
+                        <option value="Chinese Simplified">Chinese Simplified</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate Post</button>
+        </form>
+
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NGwuIUOJxdWUsFvXqtpQczZ8uaAEY4ZvwS68OV-1_wg/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-extract-emails.png?raw=true" alt=" template for data enrichment, extracting emails from social media  ">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Extracting emails from social media </h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets - template for programmatic seo">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Programmatic seo | Generate 30 SEO-optimized pages at once</h5>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 10px !important;">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NK40aDWerT-qbdrVSVvYhWnNLTLr_q3y59a1Ui9nk_M/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-smm-generator.png?raw=true" alt="gpt for sheets | social media post generator with ai">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">AI Social Media Generator</h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1W1OrA-xLhQjnPLHR11lP9ZEqlIHXb_5ZVp7s1n1zldE/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-google-indexing.png?raw=true" alt="gpt for sheets | google indexing from google sheets">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">Notify Google when pages are added</h5>
+            </div>
+            <!--      <div class="col-lg-5 col-md-6 col-sm-6 image-container">-->
+            <!--        <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">-->
+            <!--          <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets">-->
+            <!--        </a>-->
+            <!--      </div>-->
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<style>
+    body {
+        padding-top: 20px;
+    }
+    .section-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .prompt-list {
+        margin-bottom: 30px;
+    }
+    .prompt-list li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="section-content">
+                        <h2 class="section-title">Understanding AI Prompts for Social Media</h2>
+                        <p>AI prompts are instructions given to artificial intelligence tools to generate, refine, or enhance social media content. These prompts act as a catalyst for creativity, enabling marketers to brainstorm new ideas, improve messaging, and repurpose existing content. By using well-structured prompts, you can leverage AI to produce engaging and impactful social media posts.</p>
+                    </div>
+
+                    <!-- How AI Prompts Enhance Social Media Content Creation -->
+                    <div class="section-content">
+                        <h2 class="section-title">How AI Prompts Enhance Social Media Content Creation</h2>
+                        <div class="example-prompts">
+                            <h4>Generating Fresh Content Ideas</h4>
+                            <p>AI prompts can be invaluable when it comes to generating new content ideas. If you’re struggling to come up with engaging posts, AI tools can provide a variety of creative suggestions based on your input.</p>
+                            <ul>
+                                <li><strong>Prompt:</strong> "Generate five Instagram post ideas for a fitness brand promoting a new workout program."</li>
+                                <li><strong>Prompt:</strong> "Suggest three Twitter post ideas for announcing a limited-time discount on our online courses."</li>
+                            </ul>
+                        </div>
+                        <div class="example-prompts">
+                            <h4>Refining Your Messaging</h4>
+                            <p>Crafting a compelling message is crucial for capturing your audience's attention. AI prompts can help you refine your messaging by suggesting improvements in clarity, tone, and impact.</p>
+                            <ul>
+                                <li><strong>Prompt:</strong> "Rewrite this LinkedIn post to make it more persuasive and professional while maintaining a tone of authority."</li>
+                                <li><strong>Prompt:</strong> "Provide three alternative versions of this Facebook post to make it more engaging and audience-friendly."</li>
+                            </ul>
+                        </div>
+                        <div class="example-prompts">
+                            <h4>Repurposing and Revising Content</h4>
+                            <p>Repurposing content across different platforms and revising drafts based on feedback are essential tasks in social media management. AI prompts can simplify these processes significantly.</p>
+                            <ul>
+                                <li><strong>Prompt:</strong> "Transform this blog post into a series of Twitter threads that highlight key points."</li>
+                                <li><strong>Prompt:</strong> "Rewrite this promotional Facebook post with a more casual and engaging tone, and suggest three variations."</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Structuring Effective AI Prompts -->
+                    <div class="section-content">
+                        <h2 class="section-title">Structuring Effective AI Prompts</h2>
+                        <p>Creating effective AI prompts is essential for generating high-quality content. Here are some tips for structuring your prompts to get the best results:</p>
+                        <ul>
+                            <li><strong>Provide Context:</strong> Giving AI tools more context about your goals and preferences helps them produce better outputs. For example, if you need a post for a specific event, include details such as the event name, date, and key highlights.</li>
+                            <li><strong>Be Specific:</strong> Clearly define your requirements. Instead of asking for a “short post,” specify the length, format, and any particular elements you want to include, such as hashtags or emojis.</li>
+                            <li><strong>Establish the Format:</strong> Different platforms have different requirements. Specify if you need a LinkedIn article, a Twitter thread, or an Instagram story, and provide any necessary format guidelines.</li>
+                            <li><strong>Be Detailed:</strong> The more detailed your prompt, the better the AI’s output. For example, instead of just asking for a post idea, include information about your target audience, the message you want to convey, and any specific elements you want to include.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+
+            var prompt = $('#inputPrompt').val();
+            var tone = $('#toneSelect').val();
+            var style = $('#styleSelect').val();
+            var audience = $('#audienceSelect').val();
+            var language = $('#languageSelect').val();
+            var platform = $('#platformSelect').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            if (prompt.length > 300) {
+                alert('The text must be less than 300 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+            <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+            <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</b></p>
+        `).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const forceCommand = `Generate a social media post for ${platform} with the following details:
+                    - **Topic**: ${prompt}
+                    - **Tone**: ${tone}
+                    - **Style**: ${style}
+                    - **Audience**: ${audience}
+                    - **Language**: ${language}
+
+                    Ensure the post is engaging and suitable for the ${tone} tone and ${audience} audience. The style should be ${style} and the language should be ${language}. Tailor the content to fit ${platform}, considering its typical post format and audience expectations.`;
+
+            const payload = {
+                prompt: forceCommand,
+            };
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/execute-prompt',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function(response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.result);
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function() {
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+
+
+    const outputTextarea = document.getElementById('inputPrompt');
+    const charCountElement = document.getElementById('charCount');
+
+    function updateCharCount() {
+        const text = outputTextarea.value;
+        const charCount = text.length;
+        charCountElement.textContent = `${charCount} / 300 characters`;
+    }
+
+    // Event listener to update character count whenever the content changes
+    outputTextarea.addEventListener('input', updateCharCount);
+
+    // Initialize the character count display
+    updateCharCount();
+</script>
