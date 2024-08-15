@@ -36,28 +36,201 @@ permalink: /midjourney-prompts-generator/
         margin-top: 10px;
         cursor: pointer;
     }
+    .form-select {
+        border-radius: 0.375rem; /* Rounded corners */
+        border: 1px solid #ced4da; /* Gray border */
+        padding: 0.375rem 0.75rem; /* Padding */
+        background-color: #fff; /* White background */
+        transition: border-color 0.2s, box-shadow 0.2s; /* Smooth transition */
+    }
+    .form-select:focus {
+        border-color: #0d6efd; /* Blue border on focus */
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Focus shadow */
+    }
+    .form-select option {
+        padding: 0.5rem; /* Padding inside options */
+    }
+    /* Custom styling for option elements in select */
+    .form-select option {
+        background-color: #fff;
+        color: #000;
+    }
+    .form-select option:hover {
+        background-color: #e9ecef; /* Light gray background on hover */
+    }
 </style>
 
-<div class="container">
-    <div class="form-container">
-        <h2 class="text-center">🤖 Free Midjourney Prompt Generator: Create Custom Midjourney Prompts</h2>
-        <form id="promptForm">
-            <div class="form-group">
-                <label for="inputPrompt">Idea to display:</label>
-                <textarea class="form-control" id="inputPrompt" rows="4" placeholder="Convert text into Spanish" maxlength="200" required></textarea>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">Midjourney Prompt Generator</h2>
+            <div class="mb-3">
+                <input type="text" id="inputText" class="form-control" placeholder="cats">
             </div>
-            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate</button>
-        </form>
-        <div class="form-group mt-4">
-            <label id="outputLabel" for="output">Output:</label>
-            <textarea class="form-control" id="output" rows="4" readonly></textarea>
-            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
-                <i class="bi bi-clipboard"></i> Copy Output
-            </button>
+            <div class="mb-3">
+                <textarea id="promptTextarea" class="form-control" rows="2" readonly></textarea>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <button class="btn btn-primary" onclick="copyPrompt()">Copy Prompt</button>
+<!--                <button class="btn btn-success">Save to My Prompts</button>-->
+<!--                <button class="btn btn-danger">Optimize</button>-->
+            </div>
+
+            <!-- Row 1 -->
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="aspectRatio" class="form-label"><i class="fas fa-crop"></i> Aspect Ratio</label>
+                    <select id="aspectRatio" class="form-select">
+                        <option value="" selected>--------</option>
+                        <option value="1:1">1:1</option>
+                        <option value="5:4">5:4</option>
+                        <option value="3:2">3:2</option>
+                        <option value="7:4">7:4</option>
+                        <option value="16:9">16:9</option>
+                        <option value="2:1">2:1</option>
+                        <option value="9:16">9:16</option>
+                        <option value="1:2">1:2</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="version" class="form-label"><i class="fas fa-list-alt"></i> Version</label>
+                    <select id="version" class="form-select">
+                        <option value="" selected>--------</option>
+                        <option value="6">6</option>
+                        <option value="5.2">5.2</option>
+                        <option value="5.1">5.1</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                        <option value="niji">niji</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="quality" class="form-label"><i class="fas fa-star"></i> Quality</label>
+                    <select id="quality" class="form-select">
+                        <option value="" selected>--------</option>
+                        <option value=".25">.25</option>
+                        <option value=".5">.5</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="stylize" class="form-label"><i class="fas fa-paint-brush"></i> Stylize</label>
+                    <input type="number" id="stylize" class="form-control" placeholder="0 to 1000">
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="chaos" class="form-label"><i class="fas fa-random"></i> Chaos</label>
+                    <input type="number" id="chaos" class="form-control" placeholder="0 to 100">
+                </div>
+                <div class="col-md-3">
+                    <label for="stop" class="form-label"><i class="fas fa-stopwatch"></i> Stop</label>
+                    <input type="number" id="stop" class="form-control" placeholder="10 to 100">
+                </div>
+                <div class="col-md-3">
+                    <label for="tile" class="form-label"><i class="fas fa-tachometer-alt"></i> Tile</label>
+                    <select id="tile" class="form-select">
+                        <option value="" selected>--------</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="seed" class="form-label"><i class="fas fa-seedling"></i> Seed</label>
+                    <input type="number" id="seed" class="form-control" placeholder="0 to 4294967295">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="exclude" class="form-label"><i class="fas fa-ban"></i> Exclude</label>
+                <input type="text" id="exclude" class="form-control" placeholder="Avoid these terms in the...">
+            </div>
+
+            <button class="btn btn-outline-primary w-100" onclick="clearAll()">Clear All</button>
         </div>
-        <div id="message"></div>
     </div>
 </div>
+
+<script>
+    function generatePrompt() {
+        // Get values from inputs and selects
+        const inputText = document.getElementById('inputText').value.trim();
+        const aspectRatio = document.getElementById('aspectRatio').value;
+        const version = document.getElementById('version').value;
+        const quality = document.getElementById('quality').value;
+        const stylize = document.getElementById('stylize').value;
+        const chaos = document.getElementById('chaos').value;
+        const stop = document.getElementById('stop').value;
+        const tile = document.getElementById('tile').value;
+        const seed = document.getElementById('seed').value;
+        const exclude = document.getElementById('exclude').value.trim();
+
+        // Construct the prompt string
+        let prompt = `/imagine prompt: ${inputText}`;
+        if (aspectRatio) prompt += ` --aspect ${aspectRatio}`;
+        if (version) prompt += ` --version ${version}`;
+        if (quality) prompt += ` --quality ${quality}`;
+        if (stylize) prompt += ` --stylize ${stylize}`;
+        if (chaos) prompt += ` --chaos ${chaos}`;
+        if (stop) prompt += ` --stop ${stop}`;
+        if (tile === 'yes') prompt += ` --tile`;
+        if (seed) prompt += ` --seed ${seed}`;
+        if (exclude) prompt += ` --no ${exclude}`;
+
+        // Update the textarea with the generated prompt
+        document.getElementById('promptTextarea').value = prompt;
+    }
+
+    function clearAll() {
+        // Clear all form fields and reset to default
+        document.getElementById('inputText').value = '';
+        document.getElementById('aspectRatio').value = '';
+        document.getElementById('version').value = '';
+        document.getElementById('quality').value = '';
+        document.getElementById('stylize').value = '';
+        document.getElementById('chaos').value = '';
+        document.getElementById('stop').value = '';
+        document.getElementById('tile').value = '';
+        document.getElementById('seed').value = '';
+        document.getElementById('exclude').value = '';
+
+        // Clear the prompt textarea
+        document.getElementById('promptTextarea').value = '';
+    }
+
+    function copyPrompt() {
+        // Generate the prompt
+        generatePrompt();
+
+        // Get the textarea element and select the text
+        const textarea = document.getElementById('promptTextarea');
+        textarea.select();
+        textarea.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text
+        document.execCommand('copy');
+
+        // Alert the user
+        alert('Prompt copied to clipboard!');
+    }
+
+    // Attach event listeners to all relevant fields
+    document.getElementById('inputText').addEventListener('input', generatePrompt);
+    document.getElementById('aspectRatio').addEventListener('change', generatePrompt);
+    document.getElementById('version').addEventListener('change', generatePrompt);
+    document.getElementById('quality').addEventListener('change', generatePrompt);
+    document.getElementById('stylize').addEventListener('input', generatePrompt);
+    document.getElementById('chaos').addEventListener('input', generatePrompt);
+    document.getElementById('stop').addEventListener('input', generatePrompt);
+    document.getElementById('tile').addEventListener('change', generatePrompt);
+    document.getElementById('seed').addEventListener('input', generatePrompt);
+    document.getElementById('exclude').addEventListener('input', generatePrompt);
+</script>
 
 <div class="container mt-5">
     <!-- Banner 1: Translate in Bulk -->
