@@ -1,0 +1,439 @@
+---
+title: AI Social Media Post Generator
+description:
+permalink: /ai-social-media-post-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 AI Social Media Post Generator</h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Enter topic</label>
+                <textarea class="form-control" id="inputPrompt" rows="2" placeholder="Health and Fitness" maxlength="200" required></textarea>
+                <div class="mt-2">
+                    <small id="charCount" class="text-muted">0 / 300 characters</small>
+                </div>
+            </div>
+
+            <!-- Tone Dropdown -->
+            <div class="form-group mt-3">
+                <label for="toneSelect">Tone</label>
+                <div class="input-group">
+                    <select class="form-control" id="toneSelect">
+                        <option value="friendly">Friendly</option>
+                        <option value="professional">Professional</option>
+                        <option value="informal">Informal</option>
+                        <option value="excited">Excited</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform Dropdown -->
+            <div class="form-group mt-3">
+                <label for="platformSelect">Platform</label>
+                <div class="input-group">
+                    <select class="form-control" id="platformSelect">
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="linkedin">LinkedIn</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-platform"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Style Dropdown -->
+            <div class="form-group mt-3">
+                <label for="styleSelect">Style</label>
+                <div class="input-group">
+                    <select class="form-control" id="styleSelect">
+                        <option value="concise">Concise</option>
+                        <option value="detailed">Detailed</option>
+                        <option value="persuasive">Persuasive</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audience Dropdown -->
+            <div class="form-group mt-3">
+                <label for="audienceSelect">Audience</label>
+                <div class="input-group">
+                    <select class="form-control" id="audienceSelect">
+                        <option value="25-35">25-35 years old</option>
+                        <option value="teenagers">Teenagers</option>
+                        <option value="professionals">Professionals</option>
+                        <option value="general">General</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-people"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="form-group mt-3">
+                <label for="languageSelect">Language</label>
+                <div class="input-group">
+                    <select class="form-control" id="languageSelect">
+                        <option value="Arabic">Arabic</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                        <option value="Czech">Czech</option>
+                        <option value="Danish">Danish</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="English" selected>English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Estonian">Estonian</option>
+                        <option value="Finnish">Finnish</option>
+                        <option value="French">French</option>
+                        <option value="Hungarian">Hungarian</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Lithuanian">Lithuanian</option>
+                        <option value="Latvian">Latvian</option>
+                        <option value="Norwegian">Norwegian</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="Polish">Polish</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Romanian">Romanian</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Slovak">Slovak</option>
+                        <option value="Slovenian">Slovenian</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Ukrainian">Ukrainian</option>
+                        <option value="Chinese Simplified">Chinese Simplified</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate Post</button>
+        </form>
+
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NGwuIUOJxdWUsFvXqtpQczZ8uaAEY4ZvwS68OV-1_wg/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-extract-emails.png?raw=true" alt=" template for data enrichment, extracting emails from social media  ">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Extracting emails from social media </h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets - template for programmatic seo">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Programmatic seo | Generate 30 SEO-optimized pages at once</h5>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 10px !important;">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NK40aDWerT-qbdrVSVvYhWnNLTLr_q3y59a1Ui9nk_M/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-smm-generator.png?raw=true" alt="gpt for sheets | social media post generator with ai">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">AI Social Media Generator</h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1W1OrA-xLhQjnPLHR11lP9ZEqlIHXb_5ZVp7s1n1zldE/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-google-indexing.png?raw=true" alt="gpt for sheets | google indexing from google sheets">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">Notify Google when pages are added</h5>
+            </div>
+            <!--      <div class="col-lg-5 col-md-6 col-sm-6 image-container">-->
+            <!--        <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">-->
+            <!--          <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets">-->
+            <!--        </a>-->
+            <!--      </div>-->
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">👍️️️️️️ Try also GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">Need to generate a long document?</p>
+            <p>
+                <b><a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Docs</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<style>
+    body {
+        padding-top: 20px;
+    }
+    .section-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .prompt-list {
+        margin-bottom: 30px;
+    }
+    .prompt-list li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">30 Effective AI Prompts for Social Media Professionals</h2>
+                    <p class="text-center">Explore a comprehensive list of 50 AI prompts for creating, engaging with, and analyzing social media content. These prompts have been tested with Planable’s AI feature, with screenshots for 10 of them to showcase the tool's response.</p>
+                    <p class="text-center">Use these prompts as they are or modify them to fit your specific needs and create your own unique content.</p>
+
+                    <div class="section-header">AI Prompts for Inspirational Instagram Posts</div>
+                    <ul class="list-unstyled prompt-list">
+                        <li><strong>1.</strong> Motivational Quotes: Act as a social media marketing expert and write five motivational quotes that inspire [insert your target audience] to [insert desired action]. Each quote should be uplifting and no longer than 25 words for Instagram Stories.</li>
+                        <li><strong>2.</strong> Reel Ideas: Suggest five ideas for inspiring Instagram Reels with viral potential. The ideas should appeal to [insert your target audience] and promote [insert your product/brand].</li>
+                        <li><strong>3.</strong> Captivating Instagram Caption: Craft an inspirational caption about [insert your topic] to engage [insert your target audience]. Provide five options with a compelling hook to capture attention.</li>
+                        <li><strong>4.</strong> Engaging Captions: Generate three variations of an Instagram caption for a photo of [insert your product/topic]. Each caption should be 1-2 sentences long, include relevant hashtags, and be designed to engage [insert your target audience].</li>
+                        <li><strong>5.</strong> Inspirational Tone Adjustment: Revise the proposed Instagram caption below into three different options with a more inspirational tone. [insert your proposal]</li>
+                    </ul>
+
+                    <div class="section-header">ChatGPT Prompts for Creating Social Media Content</div>
+                    <ul class="list-unstyled prompt-list">
+                        <li><strong>6.</strong> Social Media Post Ideas: Generate 10 engaging post ideas for {{company_name}}’s {{platform}} account that align with our brand voice and {{target_audience}}’s interests.</li>
+                        <li><strong>7.</strong> Captions for Promotion: Write 3 compelling captions for {{company_name}}’s {{platform}} account to promote our latest {{blog_post/product/event}}.</li>
+                        <li><strong>8.</strong> Educational Posts: Create a series of 5 educational posts for {{company_name}}’s {{platform}} account showcasing our expertise in {{industry/topic}}.</li>
+                        <li><strong>9.</strong> Video Concept: Develop a social media video concept for {{company_name}} highlighting our {{product/service}} benefits, encouraging shares and engagement.</li>
+                        <li><strong>10.</strong> Interactive Post Ideas: Generate 5 interactive post ideas for {{company_name}}’s {{platform}} account, such as quizzes, polls, or challenges, to boost engagement and shares.</li>
+                        <li><strong>11.</strong> Behind-the-Scenes: Create a series of 3 behind-the-scenes posts for {{company_name}}’s {{platform}} account, showcasing our company culture, team members, or production process.</li>
+                        <li><strong>12.</strong> Live Video Script: Write a script for a live video stream on {{company_name}}’s {{platform}} account, featuring a Q&A with our {{CEO/expert}} on {{topic}}.</li>
+                        <li><strong>13.</strong> User-Generated Content: Develop a series of 5 user-generated content posts for {{company_name}}’s {{platform}} account, showcasing our customers’ experiences and success stories with our {{product/service}}.</li>
+                    </ul>
+
+                    <div class="section-header">ChatGPT Prompts for Engaging with Users</div>
+                    <ul class="list-unstyled prompt-list">
+                        <li><strong>14.</strong> Personalized Responses: Craft 5 personalized responses to user comments and questions on {{company_name}}’s recent {{platform}} posts, maintaining a friendly and helpful tone.</li>
+                        <li><strong>15.</strong> Poll/Survey Questions: Generate 3 poll or survey questions for {{company_name}}’s {{platform}} account to encourage engagement and gather valuable insights.</li>
+                        <li><strong>16.</strong> Relevant Hashtags: Identify 5 relevant hashtags for {{company_name}} to join on {{platform}} and draft sample posts for participating in each conversation.</li>
+                        <li><strong>17.</strong> User-Generated Content Campaign: Develop a campaign idea including a unique hashtag and promotional strategy for {{company_name}}’s {{platform}} account.</li>
+                        <li><strong>18.</strong> FAQ Responses: Draft a set of 5 template responses for frequently asked questions or comments on {{company_name}}’s {{platform}} account, maintaining a consistent brand voice.</li>
+                        <li><strong>19.</strong> Social Media Contest: Create a contest idea for {{company_name}}’s {{platform}} account, including prize ideas, entry requirements, and promotional strategies.</li>
+                        <li><strong>20.</strong> Community Engagement: Identify 3 relevant {{platform}} communities or groups for {{company_name}} to join and draft sample posts for introducing our brand and engaging with members.</li>
+                        <li><strong>21.</strong> Direct Messaging Strategy: Develop a strategy for using {{platform}}’s direct messaging feature to provide personalized customer service and support for {{company_name}}’s followers.</li>
+                    </ul>
+
+                    <div class="section-header">ChatGPT Prompts for Analyzing Social Media Performance</div>
+                    <ul class="list-unstyled prompt-list">
+                        <li><strong>22.</strong> KPIs and Reporting: Develop a set of social media KPIs and reporting templates for {{company_name}}, aligned with our overall business objectives and marketing goals for each platform.</li>
+                        <li><strong>23.</strong> Engagement Analysis: Analyze engagement rates (likes, comments, shares) of {{company_name}}’s {{platform}} posts over the last month and identify top-performing content themes and formats.</li>
+                        <li><strong>24.</strong> Ad Performance Comparison: Compare click-through rates and conversion rates of {{company_name}}’s {{platform}} ads to industry benchmarks and provide recommendations for improvement.</li>
+                        <li><strong>25.</strong> Reach and Impressions: Evaluate the organic reach and impressions of {{company_name}}’s {{platform}} posts before and after implementing {{new_strategy}} and report on the impact.</li>
+                        <li><strong>26.</strong> Influencer Analysis: Identify the top 3 {{platform}} influencers driving the most engagement and traffic for {{company_name}} and suggest ways to collaborate further.</li>
+                        <li><strong>27.</strong> Audience Analysis: Analyze the demographics and psychographics of {{company_name}}’s {{platform}} followers and compare them to our target customer persona, identifying gaps or opportunities.</li>
+                        <li><strong>28.</strong> Story Performance: Evaluate the performance of {{company_name}}’s {{platform}} stories over the last month, including views, completion rates, and engagement, and provide recommendations.</li>
+                        <li><strong>29.</strong> Competitor Posts: Identify the top 3 {{platform}} posts from {{company_name}}’s competitors that drove the highest engagement or virality, and provide insights on their success.</li>
+                        <li><strong>30.</strong> Sentiment Analysis: Conduct a sentiment analysis of {{company_name}}’s {{platform}} mentions and comments over the last quarter, identifying trends, issues, or opportunities for improvement.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+
+            var prompt = $('#inputPrompt').val();
+            var tone = $('#toneSelect').val();
+            var style = $('#styleSelect').val();
+            var audience = $('#audienceSelect').val();
+            var language = $('#languageSelect').val();
+            var platform = $('#platformSelect').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            if (prompt.length > 300) {
+                alert('The text must be less than 300 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+            <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+            <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</b></p>
+        `).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const forceCommand = `Generate a social media post for ${platform} with the following details:
+                    - **Topic**: ${prompt}
+                    - **Tone**: ${tone}
+                    - **Style**: ${style}
+                    - **Audience**: ${audience}
+                    - **Language**: ${language}
+
+                    Ensure the post is engaging and suitable for the ${tone} tone and ${audience} audience. The style should be ${style} and the language should be ${language}. Tailor the content to fit ${platform}, considering its typical post format and audience expectations.`;
+
+            const payload = {
+                prompt: forceCommand,
+            };
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/execute-prompt',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function(response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.result);
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function() {
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+
+
+    const outputTextarea = document.getElementById('inputPrompt');
+    const charCountElement = document.getElementById('charCount');
+
+    function updateCharCount() {
+        const text = outputTextarea.value;
+        const charCount = text.length;
+        charCountElement.textContent = `${charCount} / 300 characters`;
+    }
+
+    // Event listener to update character count whenever the content changes
+    outputTextarea.addEventListener('input', updateCharCount);
+
+    // Initialize the character count display
+    updateCharCount();
+</script>

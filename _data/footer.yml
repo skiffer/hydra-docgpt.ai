@@ -18,6 +18,11 @@
     - name: Gmail email extractor
       link: /gmail-email-extractor/
       new_window: true
+    - name: AI Social Media Post Generator
+      link: /ai-social-media-post-generator/
+      new_window: true
+
+#      /ai-social-media-post-generator/
   #    nofollow: true
   #  - name: Pricing for DocGPT - AI Writer for Docs™
   #    link: /docs-gpt-pricing/
