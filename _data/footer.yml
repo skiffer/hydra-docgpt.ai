@@ -12,6 +12,12 @@
     - name: Stable Diffusion Prompts Generator
       link: /stable-diffusion-prompts-generator/
       new_window: true
+    - name: Outlook email extractor
+      link: /outlook-email-extractor/
+      new_window: true
+    - name: Gmail email extractor
+      link: /gmail-email-extractor/
+      new_window: true
   #    nofollow: true
   #  - name: Pricing for DocGPT - AI Writer for Docs™
   #    link: /docs-gpt-pricing/
