@@ -1,0 +1,386 @@
+---
+title: AI Email Generator
+description: Craft exceptional emails effortlessly with our advanced AI email generator—ideal for anyone aiming to elevate their email marketing to a luxury standard!
+permalink: /ai-email-generator/
+---
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<style>
+    #banner {
+        border: 5px solid grey;
+        border-radius: 20px;
+    }
+    .display-try-also {
+        color: black !important;
+    }
+    .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        border-radius: 5px;
+    }
+    .copy-button {
+        margin-top: 10px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="text-center">🤖 AI-Powered Email Generator </h2>
+        <form id="promptForm">
+            <div class="form-group">
+                <label for="inputPrompt">Purpose</label>
+                <textarea class="form-control" id="inputPrompt" rows="2" placeholder="Example: I am writing to propose a new marketing campaign that I believe will be effective for your business." maxlength="500" required></textarea>
+                <div class="mt-2">
+                    <small id="charCount" class="text-muted">0 / 500 characters</small>
+                </div>
+            </div>
+
+            <!-- Tone Dropdown -->
+            <div class="form-group mt-3">
+                <label for="toneSelect">Tone</label>
+                <div class="input-group">
+                    <select class="form-control" id="toneSelect">
+                        <option value="friendly">Friendly</option>
+                        <option value="professional">Professional</option>
+                        <option value="informal">Informal</option>
+                        <option value="excited">Excited</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style Dropdown -->
+            <div class="form-group mt-3">
+                <label for="styleSelect">Style</label>
+                <div class="input-group">
+                    <select class="form-control" id="styleSelect">
+                        <option value="professional" selected>Professional 💼</option>
+                        <option value="casual">Casual 🧢</option>
+                        <option value="friendly">Friendly 😊</option>
+                        <option value="formal">Formal 📝</option>
+                        <option value="humorous">Humorous 😂</option>
+                        <option value="inspirational">Inspirational 🌟</option>
+                        <option value="persuasive">Persuasive 🗣️</option>
+                        <option value="empathetic">Empathetic 🤗</option>
+                        <option value="authoritative">Authoritative 🔥</option>
+                        <option value="playful">Playful 🎉</option>
+                        <option value="bold">Bold 💪</option>
+                        <option value="sarcastic">Sarcastic 😏</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audience Dropdown -->
+            <div class="form-group mt-3">
+                <label for="audienceSelect">Audience</label>
+                <div class="input-group">
+                    <select class="form-control" id="audienceSelect">
+                        <option value="25-35">25-35 years old</option>
+                        <option value="teenagers">Teenagers</option>
+                        <option value="professionals">Professionals</option>
+                        <option value="general" selected>General</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-people"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Dropdown -->
+            <div class="form-group mt-3">
+                <label for="languageSelect">Language</label>
+                <div class="input-group">
+                    <select class="form-control" id="languageSelect">
+                        <option value="Arabic">Arabic</option>
+                        <option value="Bulgarian">Bulgarian</option>
+                        <option value="Czech">Czech</option>
+                        <option value="Danish">Danish</option>
+                        <option value="German">German</option>
+                        <option value="Greek">Greek</option>
+                        <option value="English" selected>English</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Estonian">Estonian</option>
+                        <option value="Finnish">Finnish</option>
+                        <option value="French">French</option>
+                        <option value="Hungarian">Hungarian</option>
+                        <option value="Indonesian">Indonesian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Lithuanian">Lithuanian</option>
+                        <option value="Latvian">Latvian</option>
+                        <option value="Norwegian">Norwegian</option>
+                        <option value="Dutch">Dutch</option>
+                        <option value="Polish">Polish</option>
+                        <option value="Portuguese">Portuguese</option>
+                        <option value="Romanian">Romanian</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Slovak">Slovak</option>
+                        <option value="Slovenian">Slovenian</option>
+                        <option value="Swedish">Swedish</option>
+                        <option value="Turkish">Turkish</option>
+                        <option value="Ukrainian">Ukrainian</option>
+                        <option value="Chinese Simplified">Chinese Simplified</option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="bi bi-globe"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="generateButton">Generate Email</button>
+        </form>
+
+        <div class="form-group mt-4">
+            <label id="outputLabel" for="output">Output:</label>
+            <textarea class="form-control" id="output" rows="4" readonly></textarea>
+            <button type="button" class="btn btn-secondary copy-button" id="copyOutputBtn">
+                <i class="bi bi-clipboard"></i> Copy Output
+            </button>
+        </div>
+        <div id="message"></div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <!-- Banner 1: Translate in Bulk -->
+    <div id="banner" class="row promotion-banner align-items-center py-4 text-center" >
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">🤔️️️️️️️ Need to execute prompts in bulk?</p>
+            <p>
+                <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">📄 GPT for Sheets</a>
+            </p>
+        </div>
+        <!-- Banner 2: Translate a Document -->
+        <div class="col-md-6">
+            <p class="font-weight-bold mb-2">👍️️️️️️ Try also AI Email Assistant Add-On for Gmail</p>
+            <p>
+                <b><a href="/ai-email-assistant/" target="_blank">📧 AI Email Assistant Add-On for Gmail</a></b>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container mb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NGwuIUOJxdWUsFvXqtpQczZ8uaAEY4ZvwS68OV-1_wg/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-extract-emails.png?raw=true" alt=" template for data enrichment, extracting emails from social media  ">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Extracting emails from social media </h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets - template for programmatic seo">
+                </a>
+                <h5 class="h5" style="text-align: center !important; padding-top: 5px !important;">Programmatic seo | Generate 30 SEO-optimized pages at once</h5>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="padding-top: 10px !important;">
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1NK40aDWerT-qbdrVSVvYhWnNLTLr_q3y59a1Ui9nk_M/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-smm-generator.png?raw=true" alt="gpt for sheets | social media post generator with ai">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">AI Social Media Generator</h5>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-6 image-container">
+                <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1W1OrA-xLhQjnPLHR11lP9ZEqlIHXb_5ZVp7s1n1zldE/template/preview">
+                    <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-google-indexing.png?raw=true" alt="gpt for sheets | google indexing from google sheets">
+                </a>
+                <h5 class="h5 grey" style="text-align: center !important; padding-top: 5px !important;">Notify Google when pages are added</h5>
+            </div>
+            <!--      <div class="col-lg-5 col-md-6 col-sm-6 image-container">-->
+            <!--        <a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1MZlC79O_ZtEBwxJ74fBQdgIEpxmTXvXR8ucANNuDbgk/template/preview">-->
+            <!--          <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/prev-programatic-seo.png?raw=true" alt="gpt for sheets">-->
+            <!--        </a>-->
+            <!--      </div>-->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<style>
+    body {
+        padding-top: 20px;
+    }
+    .section-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .prompt-list {
+        margin-bottom: 30px;
+    }
+    .prompt-list li {
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+        const MAX_REQUESTS = 2;
+        const TIME_WINDOW = 20 * 60 * 1000; // 20 minutes in milliseconds
+
+        function getRequestCount() {
+            const count = localStorage.getItem('requestCount');
+            const timestamp = localStorage.getItem('timestamp');
+            if (timestamp && (Date.now() - timestamp > TIME_WINDOW)) {
+                // Reset count if time window has passed
+                localStorage.setItem('requestCount', 0);
+                localStorage.setItem('timestamp', Date.now());
+                return 0;
+            }
+            return parseInt(count) || 0;
+        }
+
+        function updateRequestCount(count) {
+            localStorage.setItem('requestCount', count);
+            if (!localStorage.getItem('timestamp')) {
+                localStorage.setItem('timestamp', Date.now());
+            }
+        }
+
+        $('#promptForm').on('submit', function(event) {
+            event.preventDefault();
+
+            var prompt = $('#inputPrompt').val();
+            var tone = $('#toneSelect').val();
+            var style = $('#styleSelect').val();
+            var audience = $('#audienceSelect').val();
+            var language = $('#languageSelect').val();
+
+            if (prompt.length < 10) {
+                alert('The prompt must be at least 10 characters long.');
+                return;
+            }
+            if (prompt.length > 500) {
+                alert('The text must be less than 500 characters long.');
+                return;
+            }
+            const requestCount = getRequestCount();
+            if (requestCount >= MAX_REQUESTS) {
+                $('#output').hide(); // Hide output area
+                $('#copyOutputBtn').hide();
+                $('#outputLabel').hide();
+                $('#message').html(`
+            <p>You have reached the maximum number of requests allowed within the 20-minute window. Please try again later.</p>
+            <p>Or 👍️️️️️️ <b class="display-try-also">Try <a href="https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252" target="_blank">GPT for Sheets</a> without limitations.</b></p>
+        `).show();
+                return;
+            }
+
+            $('#generateButton').attr('disabled', true);
+
+            const forceCommand = `Generate a email for purpose ${prompt} with the following details:
+                    - **Topic**: ${prompt}
+                    - **Tone**: ${tone}
+                    - **Style**: ${style}
+                    - **Audience**: ${audience}
+                    - **Language**: ${language}
+
+                    Output must be in text format.
+                    `;
+
+            const payload = {
+                prompt: forceCommand,
+            };
+
+            $.ajax({
+                url: 'https://api.docgpt.ai/free-tools/execute-prompt',
+                method: 'POST',
+                data: JSON.stringify(payload),
+                success: function(response) {
+                    updateRequestCount(requestCount + 1); // Increment request count
+                    $('#output').val(response.result);
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error:", error);
+                    alert("An error occurred while generating the prompt.");
+                },
+                complete: function() {
+                    $('#generateButton').attr('disabled', false);
+                }
+            });
+        });
+
+        // $('#copyOutputBtn').on('click', function() {
+        //     var promptText = $('#inputPrompt').val();
+        //     navigator.clipboard.writeText(promptText).then(function() {
+        //         alert('Prompt copied to clipboard!');
+        //     }, function(err) {
+        //         console.error('Failed to copy prompt: ', err);
+        //     });
+        // });
+
+        $('#copyOutputBtn').on('click', function() {
+            var outputText = $('#output').val();
+            navigator.clipboard.writeText(outputText).then(function() {
+                alert('Output copied to clipboard!');
+            }, function(err) {
+                console.error('Failed to copy output: ', err);
+            });
+        });
+    });
+
+
+    const outputTextarea = document.getElementById('inputPrompt');
+    const charCountElement = document.getElementById('charCount');
+
+    function updateCharCount() {
+        const text = outputTextarea.value;
+        const charCount = text.length;
+        charCountElement.textContent = `${charCount} / 300 characters`;
+    }
+
+    // Event listener to update character count whenever the content changes
+    outputTextarea.addEventListener('input', updateCharCount);
+
+    // Initialize the character count display
+    updateCharCount();
+</script>
