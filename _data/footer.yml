@@ -24,6 +24,9 @@
     - name: AI Email Generator
       link: /ai-email-generator/
       new_window: true
+    - name: AI Email Reply Generator
+      link: /ai-email-generator/
+      new_window: true
 
 #      /ai-social-media-post-generator/
   #    nofollow: true
