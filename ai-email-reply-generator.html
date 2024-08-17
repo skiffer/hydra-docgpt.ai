@@ -1,6 +1,6 @@
 ---
-title: AI Email Generator
-description: Craft exceptional emails effortlessly with our advanced AI email generator—ideal for anyone aiming to elevate their email marketing to a luxury standard!
+title: AI Email Reply Generator
+description: Elevate your email marketing effortlessly with our cutting-edge AI email reply generator. Designed for those seeking luxury-level communication, it crafts outstanding, personalized emails that stand out in any inbox. Experience the perfect blend of efficiency and sophistication today!
 permalink: /ai-email-generator/
 ---
 
@@ -40,14 +40,19 @@ permalink: /ai-email-generator/
 
 <div class="container">
     <div class="form-container">
-        <h2 class="text-center">🤖 AI-Powered Email Generator </h2>
+        <h2 class="text-center">🤖 AI Email Reply Generator </h2>
         <form id="promptForm">
             <div class="form-group">
-                <label for="inputPrompt">Purpose</label>
-                <textarea class="form-control" id="inputPrompt" rows="2" placeholder="Example: I am writing to propose a new marketing campaign that I believe will be effective for your business." maxlength="500" required></textarea>
+                <label for="inputPrompt">Received Email</label>
+                <textarea class="form-control" id="inputPrompt" rows="2" placeholder="" maxlength="500" required></textarea>
                 <div class="mt-2">
                     <small id="charCount" class="text-muted">0 / 500 characters</small>
                 </div>
+            </div>
+
+            <div class="form-group">
+                <label for="responseGoal">Response goal</label>
+                <textarea class="form-control" id="responseGoal" rows="2" placeholder="Confirm the meeting" maxlength="500" required></textarea>
             </div>
 
             <!-- Tone Dropdown -->
@@ -274,6 +279,7 @@ permalink: /ai-email-generator/
             event.preventDefault();
 
             var prompt = $('#inputPrompt').val();
+            var responseGoal = $('#responseGoal').val();
             var tone = $('#toneSelect').val();
             var style = $('#styleSelect').val();
             var language = $('#languageSelect').val();
@@ -283,6 +289,11 @@ permalink: /ai-email-generator/
                 return;
             }
             if (prompt.length > 500) {
+                alert('The text must be less than 500 characters long.');
+                return;
+            }
+
+            if (responseGoal.length > 500) {
                 alert('The text must be less than 500 characters long.');
                 return;
             }
@@ -300,7 +311,7 @@ permalink: /ai-email-generator/
 
             $('#generateButton').attr('disabled', true);
 
-            const forceCommand = `Generate a email for purpose ${prompt} with the following details:
+            const forceCommand = `Generate a email reply for received message: ${prompt}, with purpose of the reply :${responseGoal} and the following details:
                     - **Tone**: ${tone}
                     - **Style**: ${style}
                     - **Language**: ${language}
