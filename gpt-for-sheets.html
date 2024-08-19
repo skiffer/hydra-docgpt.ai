@@ -1632,6 +1632,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
       creation_time: new Date().toISOString()
     };
     setCookie('utm_tags', JSON.stringify(utmTags), 14);
+    console.log('stored: ' + JSON.stringify(utmTags));
   }
 
   // Function to retrieve UTM parameters from the cookie and parse them as JSON
@@ -1645,14 +1646,19 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
   }
 
   function setPassthroughAttribute(val) {
-    const getPassthrough = document.querySelectorAll('.paddle_button[data-custom-data=""]');
-    if (getPassthrough) {
-      getPassthrough.forEach(link => {
+    const passthroughLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]');
+
+    if (passthroughLinks.length > 0) {
+      passthroughLinks.forEach(link => {
         link.setAttribute('data-passthrough', val || '');
-        console.log('setting up data-passthrough: ' + val);
+        link.setAttribute('data-custom-data', val || '');
+        console.log('Setting data-passthrough on element:', link, 'with value:', val);
       });
+    } else {
+      console.log('No elements found with the specified selector.');
     }
   }
+
 
   window.onload = function() {
     var utmTags;
@@ -1661,7 +1667,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
     }
 
     utmTags = getUTMTags();
-    console.log(utmTags);
+    console.log('utmTags:' + JSON.stringify(utmTags));
     setPassthroughAttribute(JSON.stringify(utmTags));
   };
 
