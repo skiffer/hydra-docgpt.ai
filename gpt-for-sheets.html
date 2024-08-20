@@ -490,9 +490,10 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
                       <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>
-                      <li><i class="bi-check-lg icon-pricing"></i> <b>With API() function you can push/pull your content on your site, service from Sheets!</b></li>
-                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
-                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>Integration with Zapier, HubSpot, Airtable, Wordpress, Twitter, LinkedIn, Instagram or any other service using API()</b></li>
+<!--                      <li><i class="bi-check-lg icon-pricing"></i> <b>With API() function you can push/pull your content to/from your site, service in Sheets!</b></li>-->
+<!--                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>-->
+<!--                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>-->
                       <!--              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>-->
                       <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green;"><a target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your OpenAI, GEMINI, CLAUDE, or MISTRAL API key</a></b></li>
 <!--                        <li style="color: white"> .</li>-->
@@ -532,7 +533,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
            data-product="862410" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/get-started/">Get Started</a>
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -544,6 +545,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_SEARCH()</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_INDEXING()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">REPLACE_TEMPLATE() - Create multiple templated content in Sheets </b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Brave Search API (web, videos, discussion) - returns search data for AI (2k /m requests free)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get Top Ranking Keywords of Competitors</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
@@ -904,6 +906,46 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
       <tr>
         <td><code>=SERP(query)</code></td>
         <td>Retrieves search engine results pages (SERP) for the specified query.</td>
+      </tr>
+      <tr>
+        <td><code>=REPLACE_TEMPLATES(template, VAR_1, VAR_2, ...)</code></td>
+        <td>Replaces templated variables in a string with values from specified cells or hardcoded strings, allowing you to create dynamic text by replacing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc., with corresponding values.</td>
+      </tr>
+      <tr>
+        <td><code>=GOOGLE_RANKED_KEYWORDS(domain, count)</code></td>
+        <td>Fetches the ranked keywords for a specified domain using the DataForSEO API, providing insights into the keywords for which a domain is ranking in Google search results.</td>
+      </tr>
+      <tr>
+        <td><code>=GOOGLE_SEARCH_API(query, contextId, apiKey, pages)</code></td>
+        <td>Performs a Google Custom Search and retrieves the top search results. Official API from Google!</td>
+      </tr>
+      <tr>
+        <td><code>=GOOGLE_INDEXING(url)</code></td>
+        <td>Allows site owners to directly notify Google when pages are added or updated.</td>
+      </tr>
+      <tr>
+        <td><code>=SEO_BLOG(blog title, writing tone, language)</code></td>
+        <td>Generates an SEO-optimized blog post (1k+ words) based on the provided title, writing tone, and language.</td>
+      </tr>
+      <tr>
+        <td><code>=SEO_STRATEGY(keywords, language)</code></td>
+        <td>Generates a comprehensive SEO strategy based on the provided keywords and language.</td>
+      </tr>
+      <tr>
+        <td><code>=GOOGLE_KEYWORD_SUGGESTIONS(seedKeyword, login, password)</code></td>
+        <td>Generates keyword suggestions based on a seed keyword using the DataForSEO API, helping you discover related keywords and phrases relevant to your seed keyword.</td>
+      </tr>
+      <tr>
+        <td><code>=GOOGLE_KEYWORD_IDEAS(seedKeyword, login, password)</code></td>
+        <td>Generates keyword ideas based on a seed keyword using the DataForSEO API, helping you discover new keyword opportunities related to your seed keyword and enhancing your SEO and content strategies.</td>
+      </tr>
+      <tr>
+        <td><code>=SEO_OUTRANK(url outrank, writing tone, language)</code></td>
+        <td>Analyzes the given URL and provides content recommendations to outrank it in search engine results.</td>
+      </tr>
+      <tr>
+        <td><code>=BRAVE_SEARCH_WEB(query, subscriptionToken, resultFilter, count, country)</code></td>
+        <td>Fetches search results from Brave's web search API based on the specified query and parameters, useful for data enrichment tasks. <a href="https://brave.com/search/api/#api-features" target="_blank">Get Free API Key</a> - <strong>2,000 queries per month</strong></td>
       </tr>
       <tr>
         <td><code>=CLAUDE(prompt)</code></td>
