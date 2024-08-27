@@ -9,6 +9,7 @@ description: How to set up OpenAI API keys
 
 # How to set up OpenAI, Claude, Gemini, and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
 
+
 ### Before you have started
 1. Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 2. <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
@@ -16,6 +17,12 @@ description: How to set up OpenAI API keys
 4. Follow the instructions below to set up your OpenAI key. (<a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>)
 5. Make sure you have at least 1$ on your Open AI Billing account: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
 6. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
+
+
+### Important! If you encounter the message: "Authorization is required to perform this action."
+1. **Use a personal Gmail account**: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat or email at yaroslav91@gmail.com.
+2. If you use personal account and still gets this issue, just re-install the add-on
+
 
 ### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
 ![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
