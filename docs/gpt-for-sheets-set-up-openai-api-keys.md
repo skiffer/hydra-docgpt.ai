@@ -24,6 +24,7 @@ description: How to set up OpenAI API keys
 2. If you use personal account and still gets this issue, just re-install the add-on
 
 
+
 ### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
 ![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
 
