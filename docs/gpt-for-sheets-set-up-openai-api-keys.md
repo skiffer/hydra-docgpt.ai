@@ -15,7 +15,7 @@ description: How to set up OpenAI API keys
 2. <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 3. Please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
 4. Follow the instructions below to set up your OpenAI key. (<a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>)
-5. Make sure you have at least 1$ on your Open AI Billing account: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+5. Make **sure you have at least 1$ on your Open AI Billing account**: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
 6. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
 
 
