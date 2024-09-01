@@ -29,9 +29,11 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           value: data.eventData.checkout.prices.customer.total,
           currency: data.eventData.checkout.prices.customer.currency
         });
+        qp('track', 'Purchase');
       }
 
       if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
+        qp('track', 'InitiateCheckout');
         fbq('track', 'InitiateCheckout');
       }
     }
