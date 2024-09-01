@@ -29,6 +29,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           value: data.eventData.checkout.prices.customer.total,
           currency: data.eventData.checkout.prices.customer.currency
         });
+        qp('track', 'Purchase');
       }
 
       if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
@@ -37,8 +38,6 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
     }
   }); // replace with your vendor ID
   // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
-
-</script>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
 
 <style>
