@@ -7,16 +7,16 @@ permalink: /docs/gpt-for-sheets/how-to-use-linkedin-automation-tool
 description: How to use Linkedin Automation Tool
 ---
 
-# How to use Linkedin Automation Tool & set up premium — <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a>
+# How to use LinkedIn Automation Tool & set up premium — <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a>
 
 
-### Before you have started
-1. Install <a href="https://chromewebstore.google.com/detail/ai-chatgpt-lead-generatio/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page" target="_blank">LinkedIn Automation Tool</a>
+### Prerequisites
+1. Install <a href="https://chromewebstore.google.com/detail/ai-chatgpt-lead-generatio/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page" target="_blank">LinkedIn Automation Tool</a> from Google Chrome Store
 2. <a href="/lead-generation-linkedin/" target="_blank">Upgrade subscription to Enterprise/Business plan</a>
 
 
 ### Set up Premium
-1. Open LinkedIn Automation Tool
+1. Open LinkedIn Automation Tool, also click on "Pin" to have it on the toolbar
     ![linkedin-automation-1.png]({{ site.baseurl }}/images/linkedin-automation-1.png)
 2. Click on 'LinkedIn CRM' to open primary dashboard
    ![linkedin-automation-2.png]({{ site.baseurl }}/images/linkedin-automation-2.png)
