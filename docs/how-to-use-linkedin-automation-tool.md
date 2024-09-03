@@ -1,9 +1,9 @@
 ---
 layout: docs_layouts/default
 title: How to use Linkedin Automation Tool
-nav_order: 3
-parent: GPT for Sheets
-permalink: /docs/gpt-for-sheets/how-to-use-linkedin-automation-tool
+nav_order: 4
+parent: LinkedIn Automation Tool
+permalink: /docs/linkedin-automation-tool/how-to-use-linkedin-automation-tool
 description: How to use Linkedin Automation Tool
 ---
 
