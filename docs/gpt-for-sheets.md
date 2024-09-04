@@ -1,7 +1,7 @@
 ---
 layout: docs_layouts/default
 title: GPT for Sheets
-nav_order: 2
+nav_order: 4
 has_children: true
 permalink: /docs/gpt-for-sheets
 description: GPT for Sheets is an AI writer and assistant tailored for Google Sheets. It allows seamless integration of ChatGPT directly into Google Sheets. This service is developed on the foundation of OpenAI ChatGPT and leverages both GPT-3 and GPT-4 models.
