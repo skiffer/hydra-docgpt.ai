@@ -1,7 +1,7 @@
 ---
 layout: docs_layouts/default
 title: Set Up OpenAI API Keys
-nav_order: 3
+nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
 description: How to set up OpenAI API keys
