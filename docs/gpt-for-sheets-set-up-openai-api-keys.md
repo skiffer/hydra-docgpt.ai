@@ -21,8 +21,9 @@ description: How to set up OpenAI API keys
 
 ### Important! If you encounter the message: "Authorization is required to perform this action."
 1. **Use a personal Gmail account**: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat or email at yaroslav91@gmail.com.
-2. If you use personal account and still gets this issue, just re-install the add-on
-
+2. If you use a personal account and still gets this issue, just re-install the add-on
+3. Use the Google account in a separated Google Chrome Profile
+   ![create-profile.png]({{ site.baseurl }}/images/create-profile.png){: width="300"}
 
 
 ### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
