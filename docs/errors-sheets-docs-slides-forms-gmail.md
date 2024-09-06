@@ -19,22 +19,6 @@ description: Troubleshooting GPT for Google Sheets, Docs, Slides, Forms, Gmail
 ### RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
 
 # Errors
-### Name #ERROR or the function return #ERROR everytime
-
-Reason
-> You have installed other GPT add-ons that use the same 'GPT()' function name, resulting in a conflict
-
-Solution
-- Please remove all other add-on that provides AI/GPT functions, refresh the page, re-run the add-on, click on 'Refresh Account' button
-
-
-### Only shows 'Help'
-
-Reason
-> If you navigate to Extensions > GPT for Docs, Sheets, Docs, Forms, Slides - you might notice that the only available option is Help. This issue could occur if you access the Extensions menu immediately upon opening your spreadsheet
-
-Solution
-- Please refresh your page, wait for 30 seconds, and then attempt to access the Extensions menu again
 
 ### ScriptError: Authorisation is required to perform that action
 ```ScriptError: Authorisation is required to perform that action```
@@ -58,6 +42,37 @@ Solution #3
 
 Solution #4
 - Ask admin of the workspace account to allow execution add-ons
+
+
+### You’ve exceeded your current quota. Please review your plan and billing details.
+### Exception: "The model gpt-4-0125-preview does not exist or you do not have access to it."
+
+> OpenAI switched to prepaid plans on March 25, 2024.  
+> Please review your OpenAI API Key account here: [Billing for OpenAI Account](https://platform.openai.com/account/billing/overview)
+
+This issue is related to your current tier on OpenAI. To resolve it, consider upgrading your tier so the model becomes accessible for your account.
+
+1. **Free Tier Users**: Please add at least $5 to your account to reach **Tier 1**. [View Rate Limits](https://platform.openai.com/docs/guides/rate-limits?context=tier-one)
+2. **Check Your Tier**: Use this link to view your current tier: [Check Your Tier](https://platform.openai.com/settings/organization/limits)
+3. **API Key**: Recreate your API key and try using [GPT, Claude, Mistral, Gemini for Sheets](https://docgpt.ai/gpt-for-sheets/) with the newly generated API key.
+
+
+### Name #ERROR or the function return #ERROR everytime
+
+Reason
+> You have installed other GPT add-ons that use the same 'GPT()' function name, resulting in a conflict
+
+Solution
+- Please remove all other add-on that provides AI/GPT functions, refresh the page, re-run the add-on, click on 'Refresh Account' button
+
+
+### Only shows 'Help'
+
+Reason
+> If you navigate to Extensions > GPT for Docs, Sheets, Docs, Forms, Slides - you might notice that the only available option is Help. This issue could occur if you access the Extensions menu immediately upon opening your spreadsheet
+
+Solution
+- Please refresh your page, wait for 30 seconds, and then attempt to access the Extensions menu again
 
 
 ### Exceeded maximum execution time
