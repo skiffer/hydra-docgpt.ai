@@ -15,7 +15,7 @@ description: How to set up OpenAI API keys
 2. <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 3. Please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
 4. Follow the instructions below to set up your OpenAI key. (<a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>)
-5. Make **sure you have at least 1$ on your Open AI Billing account**: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+5. Ensure you have **at least $1** in your OpenAI billing account. If your account is new, you will initially have access to the Free Tier with relatively small limits. It is recommended to add **at least $5 to your account to upgrade to Tier 1**, which offers higher rate limits and access to GPT-4o: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
 6. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
 
 
@@ -25,6 +25,13 @@ description: How to set up OpenAI API keys
 3. Use the Google account in a separated Google Chrome Profile
    ![create-profile.png]({{ site.baseurl }}/images/create-profile.png){: width="300"}
 
+## Comparison Rate Limits for Free Tier and Tier 1
+
+### Free Tier
+![tier-0.png]({{ site.baseurl }}/images/tier-0.png){: width="300"}
+
+### Tier 1
+![tier-1.png]({{ site.baseurl }}/images/tier-1.png){: width="300"}
 
 ### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
 ![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
