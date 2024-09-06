@@ -7,6 +7,7 @@ permalink: /docs/gpt-for-sheets/you-exceeded-your-current-quota-please-check-you
 description: You exceeded your current quota, please check your plan and billing details
 ---
 
+
 # You exceeded your current quota, please check your plan and billing details
 
 It happens due to of your tier in Open AI, please increase your tier in OpenAI and the model will appear for your account.
