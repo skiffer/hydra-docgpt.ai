@@ -24,6 +24,9 @@ Gemini comes in both free and paid Advanced versions. The free version lets you 
 
 Integrating Gemini with Google Sheets enables you to handle thousands of cells simultaneously. By prompting Gemini with your instructions, the Sheets add-on executes them, neatly organizing the output in rows and columns. Additionally, using the familiar Google Sheets interface eliminates the need to switch between different apps. Google Sheets is already excellent for teamwork, allowing real-time collaboration. With the Gemini for Sheets add-on, this collaboration becomes even more productive.
 
+### Demo Gemini for Google Sheets
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Na-pVhwaq7s?si=-0DDzd5cyMg95s4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### How to Install Gemini for Sheets Add-On
 
 1. Go to the [Gemini for Sheets Add-On](https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252){:target="_blank"} on the Google Workspace Marketplace.
@@ -42,6 +45,7 @@ Once installed, you can access the add-on from the Extensions menu in any Google
 Gemini is available in hundreds of countries and supports English, Japanese, and Korean. Some features are currently only available in English, but this is changing as Gemini expands worldwide.
 
 ### Here's how to sign up for Google Gemini:
+
 
 1. **Go to [gemini.google.com](https://gemini.google.com){:target="_blank" rel="nofollow"}**
 
@@ -63,9 +67,11 @@ Gemini is available in hundreds of countries and supports English, Japanese, and
 
 Once you have access to Google Gemini, here’s how you can start exploring its features:
 
-1. **Visit [gemini.google.com](https://gemini.google.com){:target="_blank" rel="nofollow"}**
+1. **Visit [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey){:target="_blank" rel="nofollow"}**
 
    Head over to gemini.google.com, and you should be immediately taken to the AI tool. If not, double-check that you have been granted access.
+
+![gemini-create-api-key.png]({{ site.baseurl }}/images/gemini-create-api-key.png){: width="400"}
 
 2. **Enter a query or search term**
 
