@@ -7,7 +7,7 @@ permalink: /docs/gpt-for-sheets/the-model-gpt-4o-does-not-exist-or-you-do-not-ha
 description: The model GPT-4o does not exist or you do not have access to it
 ---
 
-# The model GPT-4o does not exist or you do not have access to it
+# The model GPT-4o does not exist, or you do not have access to it
 
 
 To access the pay-per-use API, you must first set up a payment plan and purchase credits. Please refer to the [Billing Overview](https://platform.openai.com/settings/organization/billing/overview) for details.
