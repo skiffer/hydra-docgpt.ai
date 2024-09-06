@@ -8,6 +8,7 @@ description: How to Use ChatGPT (GPT-4, GPT-4-turbo, GPT-3.5 Turbo, DALL·E) in 
 ---
 # How to Use ChatGPT (GPT-4, GPT-4-turbo, GPT-3.5 Turbo, DALL·E) in Google Sheets
 
+
 In this guide, you'll discover how to easily integrate ChatGPT into Google Sheets, letting you generate AI-driven content right in your spreadsheets. Whether you're a marketer, data analyst, or simply curious about AI, this step-by-step tutorial will guide you through the entire process from start to finish.
 
 ## Before You Begin
