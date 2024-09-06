@@ -1,8 +1,8 @@
 ---
 layout: docs_layouts/default
 title: The model GPT-4o does not exist or you do not have access to it
-nav_order: 53
-parent: GPT for Sheets
+nav_order: 1
+parent: Troubleshooting GPT for Google Sheets, Docs, Slides, Forms, Gmail
 permalink: /docs/gpt-for-sheets/the-model-gpt-4o-does-not-exist-or-you-do-not-have-access-to-it
 description: The model GPT-4o does not exist or you do not have access to it
 ---
