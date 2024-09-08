@@ -47,6 +47,9 @@
     - name: Support & Troubleshooting
       link: /docs/support-gpt-sheets-docs-slides-forms-gmail/
       new_window: true
+    - name: Refund Policy
+      link: /refund_policy/
+      new_window: true
 #  - name: Privacy Policy - Mail Merge for Sheets Gmail
 #    link: /privacy_mail_merge/
 #    new_window: true
