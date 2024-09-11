@@ -1,7 +1,7 @@
 ---
 title: GPT for Sheets (and Claude, Gemini, Mistral)
 heading: GPT for Sheets (and Claude, Gemini, Mistral) - Great fit for Lean SEO, Programmatic SEO and Data Enrichment
-description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), Claude, Mistral, and Gemini AI models within Google Sheets to seamlessly incorporate the power of GPT-4o, GPT-3 Turbo, GPT-4, Claude, and Gemini directly into your spreadsheets. Enjoy a seamless experience straight out of the box, without the hassle of dealing with API keys. Setup is simple and hassle-free.
+description: Unlock the power of GPT-4o-Mini, GPT-Vision, DALL-E, GPT-4o, GPT-4 Turbo, Claude, Perplexity, Mistral, OpenRoute, and Gemini AI models directly within Google Sheets. Effortlessly integrate AI with web access, data enrichment, programmatic SEO, API integration, scrapping sites, bulk file creation, and Google indexing—all with a hassle-free, out-of-the-box setup.
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 <script type="text/javascript">
@@ -350,6 +350,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_SEARCH()</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_INDEXING()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CREATE_FILE()</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Brave Search API (web, videos, discussion) - returns search data for AI (2k /m requests free)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get Top Ranking Keywords of Competitors</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
@@ -554,6 +555,7 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_SEARCH()</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_INDEXING()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CREATE_FILE()</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">REPLACE_TEMPLATE() - Create multiple templated content in Sheets </b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Brave Search API (web, videos, discussion) - returns search data for AI (2k /m requests free)</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get Top Ranking Keywords of Competitors</b></li>
@@ -681,7 +683,9 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
     <strong>Install <span>GPT for Sheets</span></strong>
   </a>
 </div>
-
+<div class="container d-flex justify-content-center pt-2">
+  <a href="https://forms.gle/R5nCvQ3uW61JH6uw8" target="_blank" rel="nofollow">💡️️️️ Request a new feature</a>
+</div>
 <div class="container mb-5 mt-5">
   <div class="container-fluid">
     <div class="row justify-content-center">
@@ -930,6 +934,10 @@ description: Leverage the GPT (GPT-4o-Mini, GPT-4o, GPT-4 Turbo, GPT-4 Turbo), C
       <tr>
         <td><code>=REPLACE_TEMPLATES(template, VAR_1, VAR_2, ...)</code></td>
         <td>Replaces templated variables in a string with values from specified cells or hardcoded strings, allowing you to create dynamic text by replacing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc., with corresponding values.</td>
+      </tr>
+      <tr>
+        <td><code>=CREATE_FILE_ON_DRIVE(fileName, content, MimeType)</code></td>
+        <td>Allows users to create a file in Google Drive with the specified content and MIME type.</td>
       </tr>
       <tr>
         <td><code>=GOOGLE_RANKED_KEYWORDS(domain, count)</code></td>
