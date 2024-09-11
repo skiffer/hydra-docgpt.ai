@@ -39,6 +39,8 @@ Ensure that you have also enabled access to Google Drive through your app's perm
 This will create an HTML file named `index.html` in Google Drive with the content `<h1>Hello World!</h1>`.
 
 > =CREATE_FILE_ON_DRIVE("index.html", "<h1>Hello World!</h1>")
+> =CREATE_FILE_ON_DRIVE("index.html", A11)
+> =CREATE_FILE_ON_DRIVE("index.html", A11 & B11)
 
 #### Example 2: Create a Microsoft Word Document (DOCX)
 
