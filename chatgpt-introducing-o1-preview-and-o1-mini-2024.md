@@ -4,6 +4,32 @@ description:
 permalink: /chatgpt-introducing-o1-preview-and-o1-mini-september-2024/
 ---
 
+<div style="
+  position: fixed;
+  right: 0;
+  top: 100px; /* Adjust the top value as needed */
+  width: 283px; /* Adjust the width as needed */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  z-index: 9999;
+">
+            <h3>🤔️ Need to execute tasks in bulk?</h3>
+            <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demo-sheets2.gif?raw=true" alt="GIF Demo" style="width: 100%; border-radius: 10px; margin-bottom: 15px;"/>
+            <p style="font-size: 18px; margin-top: 10px;"><b>👍️️️️️️ Try <a href="https://docgpt.ai/gpt-for-sheets/" style="color: #007bff; text-decoration: none;" target="_blank">GPT for Sheets!</a></b></p>
+            <ul style="list-style-type: none; padding: 0; font-size: 16px;">
+              <li>📄 Create product descriptions at once</li>
+              <li>💼 Generate leads and enrich data</li>
+              <li>🔗️️️️️️ Scrapping sites</li>
+              <li>🌎 Google Search</li>
+              <li>🔍 Programmatic SEO & bulk page generation</li>
+              <li>📣 AI-powered social media post generator</li>
+              <li>📈 Extract top-ranked competitor keywords</li>
+              <li>🤖 Support Perplexity, Claude, Mistral, Gemini, OpenRoute</li>
+            </ul>
+          </div>
 <style>
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
