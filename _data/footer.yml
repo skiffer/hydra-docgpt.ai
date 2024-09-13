@@ -27,6 +27,9 @@
     - name: AI Email Reply Generator
       link: /ai-email-generator/
       new_window: true
+    - name: ChatGPT Introducing o1-preview and o1-mini
+      link: /chatgpt-introducing-o1-preview-and-o1-mini-september-2024/
+      new_window: true
 
 #      /ai-social-media-post-generator/
   #    nofollow: true
