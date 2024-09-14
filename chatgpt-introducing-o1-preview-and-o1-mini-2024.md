@@ -83,6 +83,10 @@ h5, h6 {
 
 OpenAI has unveiled its latest AI model, codenamed *Strawberry*, and officially named *OpenAI o1*. This new model is part of a family that includes two versions: **o1-preview** and **o1-mini**. While **o1-preview** is a comprehensive model, **o1-mini** is smaller and more efficient, primarily designed for code generation.
 
+Developers on tiers 1-4: these models aren’t available in the API for your account while we’re in this short beta period.
+
+ChatGPT Plus subscribers can also try o1 today.
+
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif; text-align: left;">
   <thead>
     <tr style="background-color: #f2f2f2;">
