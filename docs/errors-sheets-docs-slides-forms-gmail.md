@@ -20,6 +20,7 @@ description: Troubleshooting GPT for Google Sheets, Docs, Slides, Forms, Gmail
 
 # Errors
 
+### We are sorry, but you do not have access to this Addon. Please contact your Organization Administrator for access.
 ### ScriptError: Authorisation is required to perform that action
 ```ScriptError: Authorisation is required to perform that action```
 
