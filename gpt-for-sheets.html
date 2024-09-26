@@ -41,6 +41,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
             currency: data.eventData.checkout.prices.customer.currency,
             coupon: data.eventData.checkout.coupon.coupon_code,
             items: data.eventData.checkout.prices.customer.items,
+            passthrough: data.eventData.checkout.passthrough || "no"
           },
         };
         dataLayer.push(dataLayerInfo);
