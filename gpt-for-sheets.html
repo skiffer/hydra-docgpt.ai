@@ -23,6 +23,8 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
           },
         };
         dataLayer.push(dataLayerInfo);
+        console.log('> Checkout.Complete');
+        console.log(JSON.stringify(data));
 
         // Facebook Pixel Purchase Tracking
         fbq('track', 'Purchase', {
@@ -35,6 +37,9 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
       if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
         qp('track', 'InitiateCheckout');
         fbq('track', 'InitiateCheckout');
+        console.log('> Checkout.Loaded');
+        console.log(JSON.stringify(data));
+
       }
     }
   }); // replace with your vendor ID
@@ -1669,7 +1674,8 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
   if (emailParam) {
     Paddle.Checkout.open({
       product: '875278',
-      email: emailParam || ''
+      email: emailParam || '',
+      passthrough: JSON.stringify(getUTMTags())
     });
   }
 </script>
@@ -1720,21 +1726,21 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
     if (utmTagsJson) {
       return JSON.parse(utmTagsJson);
     } else {
-      return null;
+      return {"exist": "false"};
     }
   }
 
   function setPassthroughAttribute(val) {
-    const passthroughLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]');
+    const passthroughLinks = document.querySelectorAll(".paddle_button");
 
     if (passthroughLinks.length > 0) {
-      passthroughLinks.forEach(link => {
-        link.setAttribute('data-passthrough', val || '');
-        link.setAttribute('data-custom-data', val || '');
-        // console.log('Setting data-passthrough on element:', link, 'with value:', val);
+      passthroughLinks.forEach((link) => {
+        link.setAttribute("data-passthrough", val || "");
+        link.setAttribute("data-custom-data", val || "");
+        console.log('Setting data-passthrough on element:', link, 'with value:', val);
       });
     } else {
-      console.log('No elements found with the specified selector.');
+      console.log("No elements found with the specified selector.");
     }
   }
 
