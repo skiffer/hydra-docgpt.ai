@@ -4,6 +4,17 @@ heading: ChatGPT for Sheets. Now with Perplexity, Claude, Gemini, Mistral, Dall-
 description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, Perplexity, Mistral, o1-Preview, o1-Mini, and Gemini AI models directly within Google Sheets. Integrate AI with web access, image generation, data enrichment, programmatic SEO, API integration, scrapping sites, bulk site creation, and Google indexing.
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script>
+  function getUTMTags() {
+    var utmTagsJson = getCookie('utm_tags');
+    if (utmTagsJson) {
+      return JSON.parse(utmTagsJson);
+    } else {
+      return {"exist": "false"};
+    }
+  }
+
+</script>
 <script type="text/javascript">
   Paddle.Setup({
     vendor: 13096,
@@ -1675,7 +1686,8 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
     Paddle.Checkout.open({
       product: '875278',
       email: emailParam || '',
-      passthrough: JSON.stringify(getUTMTags())
+      passthrough: JSON.stringify(getUTMTags()),
+      custom_data: JSON.stringify(getUTMTags())
     });
   }
 </script>
@@ -1720,15 +1732,6 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
     console.log('stored: ' + JSON.stringify(utmTags));
   }
 
-  // Function to retrieve UTM parameters from the cookie and parse them as JSON
-  function getUTMTags() {
-    var utmTagsJson = getCookie('utm_tags');
-    if (utmTagsJson) {
-      return JSON.parse(utmTagsJson);
-    } else {
-      return {"exist": "false"};
-    }
-  }
 
   function setPassthroughAttribute(val) {
     const passthroughLinks = document.querySelectorAll(".paddle_button");
