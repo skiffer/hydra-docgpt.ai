@@ -26,17 +26,6 @@ description: How to set up OpenAI API keys
 
 4. ![create-profile.png]({{ site.baseurl }}/images/create-profile.png){: width="300"}
 
-## Comparison Rate Limits for Free Tier and Tier 1
-
-### Free Tier
-![tier-0.png]({{ site.baseurl }}/images/tier-0.png){: width="300"}
-
-### Tier 1
-![tier-1.png]({{ site.baseurl }}/images/tier-1.png){: width="300"}
-
-### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
-![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
-
 
 ### RECOMMENDATION: 
 - Optimal performance with Google Add-Ons is by using the Google Chrome browser.
@@ -85,6 +74,19 @@ description: How to set up OpenAI API keys
 > If to don't do this - Google Sheets re-execution all formulas on refreshing page and every 1–2 minutes. (could affect your credits on Open AI or Internal credits, depends on plan)
 
 
+## Comparison Rate Limits for Free Tier and Tier 1
+
+### Free Tier
+![tier-0.png]({{ site.baseurl }}/images/tier-0.png){: width="300"}
+
+### Tier 1
+![tier-1.png]({{ site.baseurl }}/images/tier-1.png){: width="300"}
+
+### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
+![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
+
+
+
 #### Troubleshooting
 ##### You exceeded your current quota, please check your plan and billing details
 ##### Exception: "The model gpt-4-0125-preview does not exist or you do not have access to it
@@ -96,6 +98,7 @@ It happens due to of your tier in Open AI, please increase your tier in OpenAI a
 1. If you have Free Tier - Please fill in your account at least for 5$ to have Tier 1 <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-one" rel="nofollow" target="_blank">Rate Limits</a>
 2. To check your tier please follow this link: <a href="https://platform.openai.com/settings/organization/limits"  rel="nofollow" target="_blank">Check your Tier</a>
 3. Recreate the API Key and try to use [GPT, Claude, Mistral, Gemini for Sheets](https://docgpt.ai/gpt-for-sheets/) with the new (recreated) API Key
+
 
 
 ##### ScriptError: Authorisation is required to perform that action
