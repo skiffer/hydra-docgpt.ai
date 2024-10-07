@@ -13,17 +13,14 @@ description: GPT for Sheets - Get Started | Explore GPT functions like, GPT_TRAN
 - <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
 - <a href="/gpt-for-sheets/">Upgrade to Premium</a>
 - <a href="/docs/gpt-for-sheets/set-up-openai-api-keys">How to set up your API KEY</a>
-- Optional -> RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
-
-### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located on the sidebar
-![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
-
-To leverage the capabilities of language models using GPT functions within your Google spreadsheets, <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">install the GPT for Sheets, Docs, Slides, Forms</a> add-on. Once installed, this add-on also extends the capabilities of AI to Google Sheets, Docs, Forms, Slides.
-
-> If you use multiple Google accounts, it is recommended that you create a Chrome profile for each account.
+- RECOMMENDATION: It is preferable to use a personal Google account. If you use a company Workspace account, you may need to request your company’s admin to allow the execution of the add-on in the Workspace configuration.
+- RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
+- RECOMMENDATION: If you use multiple Google accounts, it is recommended that you create a Chrome profile for each account.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+# How to install
 
 1. Go to the [GPT for Sheets](https://workspace.google.com/u/0/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252).
 
@@ -38,17 +35,17 @@ To leverage the capabilities of language models using GPT functions within your 
 6. Grant the necessary permissions by clicking on **Allow**.
 
 7. A notification in a pop-up window will confirm the successful installation of GPT for Docs, Sheets, Slides, and Forms.
-
-## How to Launch <a href="/gpt-for-sheets/">GPT for Sheets</a>
-
-1. Open your Google Sheet.
-2. Click on **Extensions** > **GPT for Docs, Sheets, Slides, and Forms** > **Launch** ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-launch.png)
-3. A **sidebar** will be opened on the right side of the page.
+8. Open your Google Sheet.
+9. Click on **Extensions** > **GPT for Docs, Sheets, Slides, and Forms** > **Launch** ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-launch.png)
+10. A **sidebar** will be opened on the right side of the page.
 
 ![Launch-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-sidebar.png){: width="500"}
 
+### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located on the sidebar
+![refresh-account.png]({{ site.baseurl }}/images/refresh-account.png){: width="300"}
 
-## Important!
+
+### !!! After getting a final result, please click on ‘Replace All GPTs’ or ‘Replace Selected’
 
 ![IMPORTANT-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-warning.png){: width="500"}
 
@@ -58,7 +55,7 @@ To leverage the capabilities of language models using GPT functions within your 
 
 ## Template with Examples
 
-> Here you can find a Google Sheet Template with examples [Google Sheet Template](https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/edit?usp=sharing){:target="_blank"}.
+> Here you can find a Google Sheet Template with examples [Google Sheet Template](https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview){:target="_blank"}.
 > The file is accessible in read-only mode. To make modifications, please create a copy using **File** > **Make a copy**, or you can simply copy functions/examples into your own sheet.
 
 ## How to use GPT functions
