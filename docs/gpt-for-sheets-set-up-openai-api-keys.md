@@ -7,6 +7,16 @@ permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
 description: How to set up OpenAI API keys
 ---
 
+<script>
+window.onload = function() {
+    var promoElement = document.getElementById("promo-sheets");
+    if (promoElement) {
+        promoElement.style.display = "none";
+    }
+};
+
+</script>
+
 # How to set up OpenAI, Claude, Gemini, Perplexity and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
 
 
