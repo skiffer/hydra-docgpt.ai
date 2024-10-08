@@ -32,13 +32,16 @@ window.onload = function() {
 
 
 
-#### Important! If you encounter the message: "Authorization is required to perform this action."
+### Important!
+#### If you encounter the message: "Authorization is required to perform this action."
 1. **Use a personal Gmail account**: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat or email at yaroslav91@gmail.com.
 2. If you use a personal account and still gets this issue, just re-install the add-on
 3. Use the Google account in a separated Google Chrome Profile - usually it requires if you use multiple Google Accounts (Google Issue)
 
 4. ![create-profile.png]({{ site.baseurl }}/images/create-profile.png){: width="300"}
 
+#### If you encounter the message: "You exceeded your current quota, please check your plan and billing details"
+1. <a href="https://platform.openai.com/settings/organization/billing/overview" rel="noopener noreferrer nofollow" target="_blank">Ensure you have **at least $1** in your OpenAI billing account.</a> The actual cost of using OpenAI will be low, as it was designed to bypass the rate limits of GPT
 
 #### RECOMMENDATION: 
 - Optimal performance with Google Add-Ons is by using the Google Chrome browser.
