@@ -17,15 +17,17 @@ Here you can copy your API Key: <a href="https://platform.openai.com/api-keys" r
 1. Upon a successful payment (minimum $5), higher rate limits for the GPT-4 model and above will be enabled. You need to have at least Tier 1!.
 2. Usually it can take 5 minutes before the credit was noticed by the playground, even though the dashboard showed it right away.
 3. Try also re-create API Key after successful payment
-   ![refresh-account.png]({{ site.baseurl }}/images/billing-screen-page.png){: width="400"}
+
+   ![refresh-account.png]({{ site.baseurl }}/images/billing-screen-page.png){: width="600"}
 4. Check your Rate Limits here: <a rel="nofollow" target="_blank" href="https://platform.openai.com/settings/organization/limits"> Rate Limits</a>
-   ![limits-screen-page.png]({{ site.baseurl }}/images/limits-screen-page.png){: width="400"}
+
+   ![limits-screen-page.png]({{ site.baseurl }}/images/limits-screen-page.png){: width="600"}
 So you need to fill in your OpenAI account or try to use our other plans with our OpenAI API Key with the highest Tier and highest rate limit for enterprise apps from OpenAI.
 
 **For using GPT-4o you need to have at least Tier 1!**
 Good news — you do not need Open AI Plus Subscription.
 
-![tier-limits-screen-page.png]({{ site.baseurl }}/images/tier-limits-screen-page.png){: width="400"}
+![tier-limits-screen-page.png]({{ site.baseurl }}/images/tier-limits-screen-page.png){: width="600"}
 
 With GPT for Google Sheets, you can use gpt-4o without OpenAI Plus subscriptions. Pay as you go.
 

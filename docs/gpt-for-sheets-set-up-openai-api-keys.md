@@ -7,19 +7,22 @@ permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
 description: How to set up OpenAI API keys
 ---
 
-# How to set up OpenAI, Claude, Gemini, and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
+# How to set up OpenAI, Claude, Gemini, Perplexity and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
 
 
 ### Before you have started
 1. Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 2. <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 3. Please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
-4. Follow the instructions below to set up your OpenAI key. (<a href="https://platform.openai.com/api-keys" rel="nofollow" target="_blank">Your API Keys</a>)
-5. Ensure you have **at least $1** in your OpenAI billing account. If your account is new, you will initially have access to the Free Tier with relatively small limits. It is recommended to add **at least $5 to your account to upgrade to Tier 1**, which offers higher rate limits and access to GPT-4o: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
-6. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
+4. Ensure you have **at least $1** in your OpenAI billing account. The actual cost of using OpenAI will be low, as it was designed to bypass the rate limits of GPT. If your account is new, you will initially have access to the Free Tier with relatively small limits. It is recommended to add **at least $5 to your account to upgrade to Tier 1**, which offers higher rate limits and access to GPT-4o: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+5. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
+6. If you encounter any errors while using or launching, please check these pages before reaching out to support:  
+- <a href="/docs/support-gpt-sheets-docs-slides-forms-gmail/" target="_blank"> Troubleshooting</a>
+- <a href="/docs/gpt-for-sheets/the-model-gpt-4o-does-not-exist-or-you-do-not-have-access-to-it/" target="_blank"> The model GPT-4o does not exist, or you do not have access to it</a>
 
 
-### Important! If you encounter the message: "Authorization is required to perform this action."
+
+#### Important! If you encounter the message: "Authorization is required to perform this action."
 1. **Use a personal Gmail account**: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat or email at yaroslav91@gmail.com.
 2. If you use a personal account and still gets this issue, just re-install the add-on
 3. Use the Google account in a separated Google Chrome Profile - usually it requires if you use multiple Google Accounts (Google Issue)
@@ -27,14 +30,14 @@ description: How to set up OpenAI API keys
 4. ![create-profile.png]({{ site.baseurl }}/images/create-profile.png){: width="300"}
 
 
-### RECOMMENDATION: 
+#### RECOMMENDATION: 
 - Optimal performance with Google Add-Ons is by using the Google Chrome browser.
 - If you use multiple accounts in the same Google Chrome Profile, please create a separated Google Chrome Profile for this account. (Google sometime unstable with multi-accounts cookies)
 - If you use company email - sometime company emails have restrictions with installation add-ons. It could require asking admin of the company email to configure for allowing installation add-ons or USE a PERSONAL ACCOUNT. (if needed to move subscription, please write to support chat or email — yaroslav91@gmail.com)
 
-### If you use multiple accounts in the same Chrome browser - Please create a separate Chrome Profile for this one account. Sometime Google API see you as another account.
+#### If you use multiple accounts in the same Chrome browser - Please create a separate Chrome Profile for this one account. Sometime Google API see you as another account.
 
-### Create an OpenAI API key
+# Instructions - How to set up OpenAI API keys
 
 > Create an OpenAI API key to gain access to the ChatGPT API and other OpenAI APIs. This key allows OpenAI to track your usage and generate accurate billing.
 
@@ -43,7 +46,7 @@ description: How to set up OpenAI API keys
 
 ![sign-up-openai.png]({{ site.baseurl }}/images/sign-up-openai.png)
 
-#### 2. Click on Create new secret key
+#### 2. Click on Create new secret key. <a href="https://platform.openai.com/settings/organization/billing/overview" rel="noopener noreferrer nofollow" target="_blank">Ensure you have **at least $1** in your OpenAI billing account.</a> The actual cost of using OpenAI will be low, as it was designed to bypass the rate limits of GPT
 
 ![generate-api-key.png]({{ site.baseurl }}/images/generate-api-key.png)
 
@@ -65,25 +68,25 @@ description: How to set up OpenAI API keys
 #### 11. Type a simple formula in a cell and get a response from GPT
 > =GPT("Write a title for coffee shop")
 
+### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
+![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
 
-## Important!
+
+### Important!
 
 ![IMPORTANT-GPT-for-Sheets]({{ site.baseurl }}/images/gpt-for-sheets-warning.png){: width="500"}
 
-> After getting a final result, please click on 'Replace All GPTs' or 'Replace Selected' button to replace the formula with the result.
+> After getting a final result, please click on **'Replace All GPTs'** or **'Replace Selected'** button to replace the formula with the result.
 > If to don't do this - Google Sheets re-execution all formulas on refreshing page and every 1–2 minutes. (could affect your credits on Open AI or Internal credits, depends on plan)
 
 
-## Comparison Rate Limits for Free Tier and Tier 1
+### Comparison Rate Limits for Free Tier and Tier 1
 
-### Free Tier
-![tier-0.png]({{ site.baseurl }}/images/tier-0.png){: width="300"}
+#### Free Tier
+![tier-0.png]({{ site.baseurl }}/images/tier-0.png){: width="500"}
 
-### Tier 1
-![tier-1.png]({{ site.baseurl }}/images/tier-1.png){: width="300"}
-
-### !!! After subscribing or changing your plan, please click on the 'Refresh Account' button located: Extensions > GPT for Sheets, Docs, Slides, Forms > Refresh Account
-![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="600"}
+#### Tier 1
+![tier-1.png]({{ site.baseurl }}/images/tier-1.png){: width="500"}
 
 
 
