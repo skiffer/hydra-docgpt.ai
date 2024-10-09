@@ -6,6 +6,15 @@ parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/get-started
 description: GPT for Sheets - Get Started | Explore GPT functions like, GPT_TRANSLATE for language translation and GPT_EXTRACT for data extraction. Follow example use cases, enhancing your Google Sheets experience. Simplify email responses, improve text, and streamline explanations effortlessly. Watch the installation guide here.
 ---
+<script>
+window.onload = function() {
+    var promoElement = document.getElementById("promo-sheets");
+    if (promoElement) {
+        promoElement.style.display = "none";
+    }
+};
+
+</script>
 
 # How to Install <a href="/gpt-for-sheets/">GPT for Sheets</a>
 
