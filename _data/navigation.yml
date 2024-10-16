@@ -2,8 +2,20 @@
   link: /
   new_window: false
   highlight: false
+- name: GPT for Sheets
+  link: /gpt-for-sheets/
+  new_window: false
+  highlight: false
+- name: AI Email Assistant
+  link: /ai-email-assistant/
+  new_window: false
+  highlight: false
 - name: Google Doc AI
   link: /google-doc-ai/
+  new_window: false
+  highlight: false
+- name: Google Slide AI
+  link: /google-slide-ai/
   new_window: false
   highlight: false
 - name: Linkedin Automation
@@ -12,18 +24,6 @@
   highlight: false
 - name: Quiz Maker AI
   link: /quiz-maker-ai/
-  new_window: false
-  highlight: false
-- name: Google Slide AI
-  link: /google-slide-ai/
-  new_window: false
-  highlight: false
-- name: GPT for Sheets
-  link: /gpt-for-sheets/
-  new_window: false
-  highlight: false
-- name: AI Email Assistant
-  link: /ai-email-assistant/
   new_window: false
   highlight: false
 #- name: Translate Slides AI
