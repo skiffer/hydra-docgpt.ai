@@ -2,27 +2,27 @@
   link: /
   new_window: false
   highlight: false
-- name: GPT for Sheets
+- name: 🔥 GPT for Sheets
   link: /gpt-for-sheets/
   new_window: false
   highlight: false
-- name: AI Email Assistant
+- name: ✉️ AI Email Assistant
   link: /ai-email-assistant/
   new_window: false
   highlight: false
-- name: Google Doc AI
+- name: 📄 Google Doc AI
   link: /google-doc-ai/
   new_window: false
   highlight: false
-- name: Google Slide AI
+- name: 🖼️ Google Slide AI
   link: /google-slide-ai/
   new_window: false
   highlight: false
-- name: Linkedin Automation
+- name: 🔗 Linkedin Automation
   link: /lead-generation-linkedin/
   new_window: false
   highlight: false
-- name: Quiz Maker AI
+- name: 📝 Quiz Maker AI
   link: /quiz-maker-ai/
   new_window: false
   highlight: false
@@ -31,10 +31,10 @@
 #  new_window: false
 #  highlight: false
 
-- name: 🔥
-  link: https://instabotgpt.com/ai-email-assistant/?utm_source=docgpt&utm_medium=navbar&utm_campaign=email_assistant&utm_content=ad1
-  new_window: true
-  highlight: false
+#- name: AI Chats
+#  link: https://instabotgpt.com/?utm_source=docgpt&utm_medium=navbar&utm_campaign=site&utm_content=ad1
+#  new_window: true
+#  highlight: false
 #- name: Blog
 #  link: /blog/
 #  new_window: true
