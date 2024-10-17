@@ -24,14 +24,13 @@ window.onload = function() {
 1. Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 2. <a href="/gpt-for-sheets/" target="_blank">Upgrade subscription to Pro User plan</a>
 3. Launch the Add-On: Extensions > GPT for Sheets, Docs, Slides, Forms > **Launch**
-4. Please click on the **'Refresh Account'** button located: Extensions > GPT for Sheets, Docs, Slides, Forms > **Refresh Account**
-![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-1.png){: width="400"}
-5. Ensure you have **at least $1** in your OpenAI billing account. The actual cost of using OpenAI will be low, as it was designed to bypass the rate limits of GPT. If your account is new, you will initially have access to the Free Tier with relatively small limits. It is recommended to add **at least $5 to your account to upgrade to Tier 1**, which offers higher rate limits and access to GPT-4o: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
-6. <a href="/docs/gpt-for-sheets/set-up-openai-api-keys/#1-log-in-or-sign-up-to-the-openai-platform"> Copy and Configure the API Key and Model in the Add-on: Extensions > GPT for Sheets, Docs, Slides, Forms > **Set up API Key**.</a>
-![refresh-account.png]({{ site.baseurl }}/images/setup-api-keys-2.png){: width="400"}
-7. Copy and insert into any cell examples from the sidebar: Extensions > Add-On > **Launch**
-8. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
-9. If you encounter any errors while using or launching, please check these pages before reaching out to support:  
+4. Please click on the **'Refresh Account'** button located: Extensions > GPT for Sheets, Docs, Slides, Forms > **Refresh Account** <img style="display: block;" src="{{ site.baseurl }}/images/setup-api-keys-1.png" alt="Refresh Account" width="400">
+5. If you **already have an API key** for the desired AI model (OpenAI, Claude, Mistral, Perplexity, Gemini), please click on **'Set Up API Key'** and paste **your API key** <img style="display: block;" src="{{ site.baseurl }}/images/setup-api-keys-2.png" alt="Refresh Account" width="400">  The actual **cost of using OpenAI will be VERY LOW**, as it was designed to bypass the rate limits of GPT.
+6. <a href="/docs/gpt-for-sheets/set-up-openai-api-keys/#1-log-in-or-sign-up-to-the-openai-platform">If you **don't have an API key**, please follow these instructions on how to obtain one</a>
+7. Ensure you have **at least $1** in your OpenAI billing account. The actual cost of using OpenAI will be VERY LOW, as it was designed **TO BYPASS THE RATE LIMITS OF GPT**. If your account is new, you will initially have access to the Free Tier with relatively small limits. It is recommended to add at least $5 to your account to upgrade to Tier 1, which offers higher rate limits and access to GPT-4o: <a href="https://platform.openai.com/account/billing/overview" rel="nofollow" target="_blank">Billing for OpenAI Account</a>
+8. Copy and insert into any cell examples from the sidebar: Extensions > Add-On > **Launch**
+9. RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using **a separated Google Chrome Profile for your single gmail account!** (sometimes, Google API does not work well with multiple accounts in the same Chrome profile) This helps bypass any potential issues that may arise from compatibility with other browsers.
+10. If you encounter any errors while using or launching, please check these pages before reaching out to support:  
 - <a href="/docs/support-gpt-sheets-docs-slides-forms-gmail/" target="_blank"> Troubleshooting</a>
 - <a href="/docs/gpt-for-sheets/the-model-gpt-4o-does-not-exist-or-you-do-not-have-access-to-it/" target="_blank"> The model GPT-4o does not exist, or you do not have access to it</a>
 
