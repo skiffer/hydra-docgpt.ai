@@ -7,7 +7,7 @@ permalink: /docs/linkedin-automation-tool/how-to-use-linkedin-automation-tool
 description: How to use Linkedin Automation Tool
 ---
 
-# How to use LinkedIn Automation Tool & set up premium — <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a>
+# How to use <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a> & set up premium 
 
 
 ### Prerequisites
