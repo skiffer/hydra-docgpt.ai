@@ -11,9 +11,9 @@ description: You exceeded your current quota, please check your plan and billing
 # You exceeded your current quota, please check your plan and billing details
 
 It happens due to of your tier in Open AI, please increase your tier in OpenAI and the model will appear for your account.
-1. If you have Free Tier - Please fill in your account at least for 5$ to have Tier 1 <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-one" rel="nofollow" target="_blank">Rate Limits</a>
+1. If you have Free Tier - Please fill in your account at least for 1-5$ to have Tier 1 <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-one" rel="nofollow" target="_blank">Rate Limits</a>
 2. To check your tier please follow this link: <a href="https://platform.openai.com/settings/organization/limits"  rel="nofollow" target="_blank">Check your Tier</a>
-3. Recreate the API Key and try to use [GPT, Claude, Mistral, Gemini for Sheets](https://docgpt.ai/gpt-for-sheets/) with the new (recreated) API Key
+3. [Recreate the API Key](https://platform.openai.com/api-keys) and try to use with the new (recreated) API Key
 
 ### Bulk using GPT-4 in Google Sheets
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

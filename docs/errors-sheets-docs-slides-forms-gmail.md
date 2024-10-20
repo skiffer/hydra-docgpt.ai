@@ -46,6 +46,18 @@ Solution #4
 
 
 ### You’ve exceeded your current quota. Please review your plan and billing details.
+
+It happens due to of your tier in Open AI, please increase your tier in OpenAI and the model will appear for your account.
+1. If you have Free Tier - Please fill in your account at least for 1-5$ to have Tier 1 <a href="https://platform.openai.com/docs/guides/rate-limits?context=tier-one" rel="nofollow" target="_blank">Rate Limits</a>
+2. To check your tier please follow this link: <a href="https://platform.openai.com/settings/organization/limits"  rel="nofollow" target="_blank">Check your Tier</a>
+3. [Recreate the API Ke](https://platform.openai.com/api-keys)y and try to use with the new (recreated) API Key
+
+Official message from OpenAI
+> On July 6, 2023, we gave access to the [GPT-4 API](https://platform.openai.com/docs/models/gpt-4) (8k) to all API users who have made a successful payment of $1 or more. We plan to open up access to all developers soon, and then start raising rate-limits after that depending on compute availability.
+> For API accounts created after August 18, 2023, you can get instant access to GPT-4 after purchasing $0.50 worth or more of pre-paid credits. You can read about prepaid billing.
+
+So you need to fill in your OpenAI account or try to use our other plans with our OpenAI API Key with the highest Tier and highest rate limit for enterprise apps from OpenAI.
+
 ### Exception: "The model gpt-4-0125-preview does not exist or you do not have access to it."
 
 > OpenAI switched to prepaid plans on March 25, 2024.  
