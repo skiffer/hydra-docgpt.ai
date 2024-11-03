@@ -59,8 +59,8 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
       if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
         qp('track', 'InitiateCheckout');
         fbq('track', 'InitiateCheckout');
-        // console.log('> Checkout.Loaded');
-        // console.log(JSON.stringify(data));
+        console.log('> Checkout.Loaded');
+        console.log(JSON.stringify(data));
 
       }
     }
