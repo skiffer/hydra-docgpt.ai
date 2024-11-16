@@ -10,10 +10,13 @@ description: How to use Linkedin Automation Tool
 # How to use <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a> & set up premium 
 
 
+
+### Demo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W71LSsmjMRc?si=OSncOwQK2fM1VAn2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Prerequisites
 1. Install <a href="https://chromewebstore.google.com/detail/ai-chatgpt-lead-generatio/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page" target="_blank">LinkedIn Automation Tool</a> from Google Chrome Store
 2. <a href="/lead-generation-linkedin/" target="_blank">Upgrade subscription to Enterprise/Business plan</a>
-
 
 ### Set up Premium
 1. Open LinkedIn Automation Tool, also click on "Pin" to have it on the toolbar
