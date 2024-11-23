@@ -1766,6 +1766,8 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 
   // Get the value of the 'email' parameter
   const emailParam = getURLParameter('email');
+  const couponParam = getURLParameter('coupon');
+  const planIdParam = getURLParameter('plan_id');
 
   // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
   const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
@@ -1785,13 +1787,25 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
     });
   }
 
-  if (emailParam) {
+  if (couponParam) {
+    console.log(`applying code: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+    Paddle.Checkout.open({
+      product: planIdParam || '875610',
+      email: emailParam || '',
+      discountCode: couponParam,
+      passthrough: JSON.stringify(getUTMTags()),
+      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+    });
+  } else if (emailParam) {
+    console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
     Paddle.Checkout.open({
       product: '875278',
       email: emailParam || '',
       passthrough: JSON.stringify(getUTMTags()),
       success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
     });
+  } else {
+    console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
   }
 </script>
 
