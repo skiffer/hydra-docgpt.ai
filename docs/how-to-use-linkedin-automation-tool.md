@@ -7,32 +7,31 @@ permalink: /docs/linkedin-automation-tool/how-to-use-linkedin-automation-tool
 description: How to use Linkedin Automation Tool
 ---
 
-# How to use <a href="/lead-generation-linkedin/" target="_blank">LinkedIn Automation Tool</a> & set up premium 
+# How to use <a href="/cold-outreach-messages-linkedin-2024/" target="_blank">LinkedIn Automation Tool</a>
 
 
 
-### Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W71LSsmjMRc?si=OSncOwQK2fM1VAn2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[//]: # (### Demo)
+
+[//]: # (<iframe width="560" height="315" src="https://www.youtube.com/embed/W71LSsmjMRc?si=OSncOwQK2fM1VAn2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
 
 ### Prerequisites
-1. Install <a href="https://chromewebstore.google.com/detail/ai-chatgpt-lead-generatio/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page" target="_blank">LinkedIn Automation Tool</a> from Google Chrome Store
-2. <a href="/lead-generation-linkedin/" target="_blank">Upgrade subscription to Enterprise/Business plan</a>
+1. Install <a href="https://chromewebstore.google.com/detail/linkedin-automation-email/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page&utm_medium=success_doc_page&utm_campaign=success_doc_page
+   " target="_blank">LinkedIn Automation Tool</a> from Google Chrome Store
+2. <a href="/cold-outreach-messages-linkedin-2024/" target="_blank">Upgrade subscription</a>
 
-### Set up Premium
-1. Open LinkedIn Automation Tool, also click on "Pin" to have it on the toolbar
+### First Launch
+1. Open the puzzle button with Extensions, Find LinkedIn Automation and click on “Pin” to have it on the toolbar
     ![linkedin-automation-1.png]({{ site.baseurl }}/images/linkedin-automation-1.png)
-2. Click on 'LinkedIn CRM' to open primary dashboard
+2. Click on 'LinkedIn Automation' in the toolbar, enter your email, and a new menu will appear. Please click on the 'Dashboard' or 'LinkedIn CRM' buttons to open the primary dashboard.
    ![linkedin-automation-2.png]({{ site.baseurl }}/images/linkedin-automation-2.png)
-3. Click on Activate Subscription
-   ![linkedin-automation-3.png]({{ site.baseurl }}/images/linkedin-automation-3.png)
-4. Insert your email billing address that was used to purchase subscription and click 'Activate' button
-   ![linkedin-automation-4.png]({{ site.baseurl }}/images/linkedin-automation-4.png)
-5. That's it. Now you can use premium features like - bulk messaging, bulk invitation, auto-commenting
+3. That’s it. Now you can use features like - bulk messaging, bulk connecting, auto-commenting, auto-reacting, finding emails and phones
+ ![linkedin-automation-3.png]({{ site.baseurl }}/images/linkedin-automation-3.png)
 
 
 ### Collecting LinkedIn profiles
 1. Go to <a href="https://www.linkedin.com/search/results/people/?origin=SWITCH_SEARCH_VERTICAL"> LinkedIn Search page </a>
-2. Filter your LinkedIn profiles
+2. You can filter your LinkedIn profiles like Job Title, Location etc... 
 3. Here you will see additional injected form to collect LinkedIn profiles into CRM.
 4. Please set up number of contacts to collect and click button 'Collect'
    ![linkedin-automation-5.png]({{ site.baseurl }}/images/linkedin-automation-5.png)
@@ -43,8 +42,9 @@ description: How to use Linkedin Automation Tool
 8. When you message is ready, please click on Launch button. It will start sending invitations with the messages.
    ![linkedin-automation-7.png]({{ site.baseurl }}/images/linkedin-automation-7.png)
 
+### For automating commenting and reacting to LinkedIn posts, follow the same process—just change the action to the relevant one
 
-### Auto commenting LinkedIn posts
+### Manual commenting LinkedIn posts with AI
 1. Go to <a href="https://www.linkedin.com/feed/"> LinkedIn Feed</a>
 2. Select any post and click on the comment button
 3. Now you will see the LinkedIn Automation Tool injected additionally a form to generate a comment/reply to the post
