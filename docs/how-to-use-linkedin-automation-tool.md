@@ -18,7 +18,11 @@ description: How to use Linkedin Automation Tool
 ### Prerequisites
 1. Install <a href="https://chromewebstore.google.com/detail/linkedin-automation-email/elgfcjbemdchphggeegglnmjoagoeial?utm_source=pricing_page&utm_medium=success_doc_page&utm_campaign=success_doc_page
    " target="_blank">LinkedIn Automation Tool</a> from Google Chrome Store
-2. <a href="/cold-outreach-messages-linkedin-2024/" target="_blank">Upgrade subscription</a>
+2. <a href="/cold-outreach-messages-linkedin/" target="_blank">Upgrade subscription</a>
+
+
+# Video Tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xPmo3c9AaFQ?si=C2fP6XFzR-n0YogF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### First Launch
 1. Open the puzzle button with Extensions, Find LinkedIn Automation and click on “Pin” to have it on the toolbar
