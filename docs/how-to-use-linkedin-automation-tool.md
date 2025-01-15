@@ -7,7 +7,7 @@ permalink: /docs/linkedin-automation-tool/how-to-use-linkedin-automation-tool
 description: How to use Linkedin Automation Tool
 ---
 
-# How to use <a href="/cold-outreach-messages-linkedin-2024/" target="_blank">LinkedIn Automation Tool</a>
+# How to use <a href="/cold-outreach-messages-linkedin/" target="_blank">LinkedIn Automation Tool</a>
 
 
 
