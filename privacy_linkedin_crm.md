@@ -1,5 +1,5 @@
 ---
-title: LinkedIn Automation AI-powered ChatGPT: Privacy Policy
+title: LinkedIn™ Automation Tool - Lead Generation, Email Finder: Privacy Policy
 description: 
 permalink: /privacy_linkedin_crm/
 ---
@@ -13,9 +13,9 @@ permalink: /privacy_linkedin_crm/
 Last updated: November 20, 2023
 
 
-# LinkedIn Automation AI-powered ChatGPT Privacy Policy
+# LinkedIn™ Automation Tool - Lead Generation, Email Finder Privacy Policy
 
-We at LinkedIn Automation AI-powered ChatGPT are committed to protecting your privacy. This Privacy Policy applies to both our Website (www.docgpt.ai) and our Subscription Service (the Subscription Service), including our associated Google Chrome extension (Web App).
+We at LinkedIn™ Automation Tool - Lead Generation, Email Finder are committed to protecting your privacy. This Privacy Policy applies to both our Website (www.docgpt.ai) and our Subscription Service (the Subscription Service), including our associated Google Chrome extension (Web App).
 
 This Privacy Policy governs our data collection, processing, and usage practices. It also describes your choices regarding use, access, and correction of your personal information. If you do not agree with the data practices described in this Privacy Policy, you should not use the Websites or the Subscription Service.
 
@@ -27,11 +27,11 @@ If you have any questions about this Privacy Policy or our treatment of the info
 
 ## Use of the Subscription Service by our Customers
 
-Our online Subscription Service allows any individual or company that uses it to maximize marketing efforts on LinkedIn by automating time-consuming processes and making the prospecting process simpler. The Subscription Service can also be used to help organize marketing data (social selling index, average profile views, search appearances, etc.) of a LinkedIn user in a clear way. The information added to the Subscription Service, either by site visitors providing their contact information or when a Subscription Service user adds the information, is stored and managed on our service providers’ servers. This information is then used to contact visitors about their interest in the company’s services and interact with the company.
+Our online Subscription Service allows any individual or company that uses it to maximize marketing efforts on LinkedIn™ by automating time-consuming processes and making the prospecting process simpler. The Subscription Service can also be used to help organize marketing data (social selling index, average profile views, search appearances, etc.) of a LinkedIn™ user in a clear way. The information added to the Subscription Service, either by site visitors providing their contact information or when a Subscription Service user adds the information, is stored and managed on our service providers’ servers. This information is then used to contact visitors about their interest in the company’s services and interact with the company.
 
-Our customers use the Subscription Service to automate processes on LinkedIn (way by creating lists of users in their personal CRM page and eventually working with these lists daily) and observe their marketing efforts in a simple way. LinkedIn Automation AI-powered ChatGPT does not control the content of these lists or the types of information that our customers may choose to collect or manage using the Subscription Service. That information belongs to them and is used, disclosed, and protected by them and is not subject to this Privacy Policy.
+Our customers use the Subscription Service to automate processes on LinkedIn (way by creating lists of users in their personal CRM page and eventually working with these lists daily) and observe their marketing efforts in a simple way. LinkedIn™ Automation Tool - Lead Generation, Email Finder does not control the content of these lists or the types of information that our customers may choose to collect or manage using the Subscription Service. That information belongs to them and is used, disclosed, and protected by them and is not subject to this Privacy Policy.
 
-LinkedIn Automation AI-powered ChatGPT processes our customers’ information as they direct and in accordance with our agreements with our customers, and we store it on our service providers’ servers, but we do not have control over its collection or management. Our agreements with our customers prohibit us from using that information, except as necessary to provide and improve the Subscription Service, as permitted by this Privacy Policy, and as required by law. LinkedIn Automation AI-powered ChatGPT acknowledges that you have the right to access your Personal Information.
+LinkedIn™ Automation Tool - Lead Generation, Email Finder processes our customers’ information as they direct and in accordance with our agreements with our customers, and we store it on our service providers’ servers, but we do not have control over its collection or management. Our agreements with our customers prohibit us from using that information, except as necessary to provide and improve the Subscription Service, as permitted by this Privacy Policy, and as required by law. LinkedIn™ Automation Tool - Lead Generation, Email Finder acknowledges that you have the right to access your Personal Information.
 
 ## Information We Collect
 
@@ -49,20 +49,20 @@ We may link information we store within the analytics software to Personal Infor
 
 ### “Personal Information”
 
-This refers to any information that you voluntarily submit to us and that identifies you personally, including contact information, such as your name, email address, company name, address, phone number, and other information about yourself or your business. Personal Information can also include information about any transactions, both free and paid, that you enter into on the Websites, and information about you that is available on the internet, such as from Facebook, LinkedIn, Twitter, and Google, or publicly available information that we acquire from service providers.
+This refers to any information that you voluntarily submit to us and that identifies you personally, including contact information, such as your name, email address, company name, address, phone number, and other information about yourself or your business. Personal Information can also include information about any transactions, both free and paid, that you enter into on the Websites, and information about you that is available on the internet, such as from Facebook, LinkedIn™, Twitter, and Google, or publicly available information that we acquire from service providers.
 
 Personal Information also includes Navigational Information or Payment Information where such information can directly or indirectly identify an individual. Navigational information refers to information about your computer and your visits to this website, such as your IP address, geographical location, browser type, referral source, length of visit, and pages viewed. Please see the “Navigation Information” section below.
 
 ### Log Files
 
-When you use our services or view content provided by us, we automatically collect information about your computer hardware and software. This information can include your IP address, browser type, domain names, internet service provider (ISP), the files viewed on our site (e.g., HTML pages, graphics, etc.), operating system, clickstream data, access times, and referring website addresses. This information is used by LinkedIn Automation AI-powered ChatGPT for the operation of the Subscription Service, to maintain the quality of the Subscription Service, and to provide general statistics regarding the use of the LinkedIn Automation AI-powered ChatGPT Website. For these purposes, we do link this automatically-collected data to Personal Information such as name, email address, address, and phone number.
+When you use our services or view content provided by us, we automatically collect information about your computer hardware and software. This information can include your IP address, browser type, domain names, internet service provider (ISP), the files viewed on our site (e.g., HTML pages, graphics, etc.), operating system, clickstream data, access times, and referring website addresses. This information is used by LinkedIn™ Automation Tool - Lead Generation, Email Finder for the operation of the Subscription Service, to maintain the quality of the Subscription Service, and to provide general statistics regarding the use of the LinkedIn™ Automation Tool - Lead Generation, Email Finder Website. For these purposes, we do link this automatically-collected data to Personal Information such as name, email address, address, and phone number.
 
 ### Information we collect from third parties
 We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure.
 
 We do not store your data (inputs, clicks..). It stays on clide side (browser). Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
 
-The only information we store from your LinkedIn account is ID - to track free credits and premium access. We do not share it with third party service. It stays only on our server.
+The only information we store from your LinkedIn™ account is ID - to track free credits and premium access. We do not share it with third party service. It stays only on our server.
 
 
 From time to time, we may receive Personal Information about you from third party sources, including partners with which we engage in marketing activities, and publicly available sources such as social media websites.
@@ -86,7 +86,7 @@ We will never sell your Personal Information to any third party.
 In addition to the uses identified elsewhere in this Privacy Policy, we may use your Personal Information to:
 
 - Improve your browsing experience by personalizing the Website and to improve the Subscription Service;
-- Send information or LinkedIn Automation AI-powered ChatGPT content to you, which we think may be of interest to you by post, email, or other means, and send you marketing communications relating to our business;
+- Send information or LinkedIn™ Automation Tool - Lead Generation, Email Finder content to you, which we think may be of interest to you by post, email, or other means, and send you marketing communications relating to our business;
 - Promote the use of our services to you and share promotional and information content with you in accordance with your communication preferences;
 - Provide other companies with statistical information about our users — but this information will not be used to identify any individual user;
 - Send information to you regarding changes to our Customer Terms of Service, Privacy Policy (including the Cookie Policy), or other legal agreements;
@@ -98,11 +98,11 @@ We use the information collected through our Subscription Service by our custome
 
 - To provide the Subscription Service (which may include the detection, prevention, and resolution of security and technical issues);
 - To respond to customer support requests;
-- Otherwise, to fulfill the obligations under the LinkedIn Automation AI-powered ChatGPT Customer Terms of Service.
+- Otherwise, to fulfill the obligations under the LinkedIn™ Automation Tool - Lead Generation, Email Finder Customer Terms of Service.
 
 ### Use of Navigational Information
 
-We use Navigational Information to operate and improve the Websites and the Subscription Service. We may also use Navigational Information alone or in combination with Personal Information to provide you with personalized information about LinkedIn Automation AI-powered ChatGPT.
+We use Navigational Information to operate and improve the Websites and the Subscription Service. We may also use Navigational Information alone or in combination with Personal Information to provide you with personalized information about LinkedIn™ Automation Tool - Lead Generation, Email Finder.
 
 ### Customer Testimonials and Comments
 
@@ -128,7 +128,7 @@ We retain Personal Information that you provide to us where we have an ongoing l
 
 When we have no ongoing legitimate business need to process your Personal Information, we securely delete the information or anonymize it or, if this is not possible, then we will securely store your Personal Information and isolate it from any further processing until deletion is possible. We will delete this information from the servers at an earlier date if you so request, as described in “To Unsubscribe from Our Communications” below.
 
-If you have elected to receive marketing communications from us, we retain information about your marketing preferences for a reasonable period of time from the date you last expressed interest in our content, products, or services, such as when you last opened an email from us or ceased using your LinkedIn Automation AI-powered ChatGPT account. We retain information derived from cookies and other tracking technologies for a reasonable period of time from the date such information was created.
+If you have elected to receive marketing communications from us, we retain information about your marketing preferences for a reasonable period of time from the date you last expressed interest in our content, products, or services, such as when you last opened an email from us or ceased using your LinkedIn™ Automation Tool - Lead Generation, Email Finder account. We retain information derived from cookies and other tracking technologies for a reasonable period of time from the date such information was created.
 
 ## How we Share Information we Collect
 
@@ -136,7 +136,7 @@ If you have elected to receive marketing communications from us, we retain infor
 
 We employ other companies to provide services to visitors to our Websites, our customers, and users of the Subscription Service and may need to share your information with them to provide information, products or services to you. Examples may include removing repetitive information from prospect lists, analyzing data, or performing statistical analysis, providing marketing assistance, processing credit card payments, supplementing the information you provide us in order to provide you with better service, and providing customer service or support. In all cases where we share your information with such agents, we explicitly require the agent to acknowledge and adhere to our privacy and customer data handling policies.
 
-### LinkedIn Automation AI-powered ChatGPT Partners
+### LinkedIn™ Automation Tool - Lead Generation, Email Finder Partners
 
 In addition, we may share data with trusted partners to contact you based on your request to receive such communications, help us perform statistical analysis, or provide customer support. Such third parties are prohibited from using your Personal Information except for these purposes, and they are required to maintain the confidentiality of your information.
 
@@ -150,7 +150,7 @@ We reserve the right to use or disclose your Personal Information if required by
 
 ### Cookies
 
-LinkedIn Automation AI-powered ChatGPT and its partners use cookies or similar technologies (such as web beacons) to analyze trends, administer the website, track users’ movements around the website, and to gather demographic information about our user base as a whole.
+LinkedIn™ Automation Tool - Lead Generation, Email Finder and its partners use cookies or similar technologies (such as web beacons) to analyze trends, administer the website, track users’ movements around the website, and to gather demographic information about our user base as a whole.
 
 When you interact with the Site, we try to make that experience simple and meaningful. When you visit the Site, our web server sends a cookie to your computer. Cookies are small pieces of information which are issued to your computer when you visit a website and which store and sometimes track information about your use of the Site. For example, cookies are used to personalize web search engines and to store shopping lists of items a user has selected while browsing through a virtual shopping mall. A number of cookies we use last only for the duration of your web session and expire when you close your browser. Other cookies are used to remember you when you return to the Site and will last for longer.
 
