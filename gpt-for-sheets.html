@@ -304,7 +304,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 </div>
 <div class="container text-center">
   <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
-  <p class="lead"><span class="badge bg-warning text-dark"> I’m actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
+  <p class="lead"><span class="badge bg-warning text-dark"> I'm actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
 </div>
 <div class="container mb-5 mt-5" id="pricing">
   <div class="pricing card-deck flex-column flex-md-row mb-3">
@@ -508,7 +508,6 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 <!--          <li style="color: white"> .</li>-->
 <!--          <li style="color: white"> .</li>-->
 <!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
 <!--        </ul>-->
 <!--        <a class="paddle_button btn btn-primary mb-3 btn-lg" data-custom-data="" data-email="" data-product="873994" data-theme="none" href="#!">Get-->
 <!--          Started</a>-->
@@ -685,9 +684,6 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 <!--          <li style="color: white"> .</li>-->
 <!--          <li style="color: white"> .</li>-->
 <!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
         </ul>
 <!--        <a class="paddle_button btn btn-primary mb-3 btn-lg"-->
 <!--           data-custom-data="some affiliate"-->
@@ -801,7 +797,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
   <h3>Important!</h3>
   <p>If you encounter the message: <strong>"Authorization is required to perform this action."</strong></p>
   <ol>
-    <li><strong>Use a personal Gmail account</strong>: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat.</li>
+    <li><strong>Use a personal Gmail account</strong>: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it's recommended to use a personal account. If you need to transfer your subscription, please contact support via chat.</li>
     <li>If you use a personal account and still encounter this issue, simply re-install the add-on.</li>
     <li>
       For more help, check out the following resources:
@@ -907,73 +903,154 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
   </div>
 </div>
 
-<section class="testimonial" style="margin: 30px 0; padding: 10px 0;">
-  <div class="container flex">
-    <div class="testimonial-block">
-      <div class="square-image">
-        <img style="width: 100%;" src="{{ site.baseurl }}/images/feedback-2.jpeg" alt="docgpt ai feedback" class="editable">
+<!-- Add these styles -->
+<style>
+/* Modern testimonials styling */
+.testimonials-section {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+
+.testimonial {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #017BFE;
+}
+
+.testimonial-info {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #2D3748;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.testimonial-position {
+  color: #718096;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.testimonial-content {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4A5568;
+  margin: 0;
+}
+
+.testimonial-quote::before {
+  content: '"';
+  font-size: 4em;
+  position: absolute;
+  left: -1rem;
+  top: -2rem;
+  color: #017BFE;
+  opacity: 0.1;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial {
+    margin: 1rem 0;
+  }
+}
+</style>
+
+<!-- Replace the existing testimonials section with this updated version -->
+<section class="testimonials-section">
+  <div class="container">
+    <h2 class="text-center mb-2">What Our Users Say</h2>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img class="testimonial-image" src="{{ site.baseurl }}/images/feedback-2.jpeg" alt="User testimonial">
+          <div class="testimonial-info">
+            <h4 class="testimonial-name">Vice President</h4>
+            <p class="testimonial-position">iLoveToCreate</p>
+          </div>
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-quote">
+            I've employed this add-on within Sheets to craft SEO-focused product descriptions, meta descriptions, and meta titles for more than 300 products. It's been a lifesaver!
+          </p>
+        </div>
       </div>
-      <blockquote>
-        <p class="editable" data-cms-source="/index.html" data-cms-index="10">
-          I've employed this add-on within Sheets to craft SEO-focused product descriptions, meta descriptions, and meta titles for more than 300 products. It's been a lifesaver!
-        </p>
-        <p class="editable author" data-cms-source="/index.html" data-cms-index="11">
-          Vice President of Human Resources at iLoveToCreate
-        </p>
-      </blockquote>
-    </div>
-    <div class="testimonial-block">
-      <div class="square-image">
-        <img style="width: 100%;" src="{{ site.baseurl }}/images/feedback-1.jpeg" alt="docgpt ai feedback" class="editable">
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img class="testimonial-image" src="{{ site.baseurl }}/images/feedback-1.jpeg" alt="User testimonial">
+          <div class="testimonial-info">
+            <h4 class="testimonial-name">Ryan Hotchkiss</h4>
+            <p class="testimonial-position">Senior Digital Marketing Manager</p>
+          </div>
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-quote">
+            I purchased an annual subscription for the Professional version. Can't tell you how excited I am!
+          </p>
+        </div>
       </div>
-      <blockquote>
-        <p class="editable" data-cms-source="/index.html" data-cms-index="10">
-          I purchased an annual subscription for the Professional version. Can't tell you how excited I am!
-        <div style="color: #f5f5f5 !important;">.</div>
-        <div style="color: #f5f5f5 !important;">.</div>
-        </p>
-        <p class="editable author" data-cms-source="/index.html" data-cms-index="11">
-          Ryan Hotchkiss - Senior Digital Marketing Manager
-        </p>
-      </blockquote>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img class="testimonial-image" src="{{ site.baseurl }}/images/feedback-3.jpeg" alt="User testimonial">
+          <div class="testimonial-info">
+            <h4 class="testimonial-name">Dee</h4>
+            <p class="testimonial-position">Founder at the Pearl Lemon Group</p>
+          </div>
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-quote">
+            A few of our team members recently started using GPT for Sheets as part of their workflow and have been really enjoying it. Just wanted to reach out first of all and say awesome job! Thanks so much!
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="testimonial" style="margin: 30px 0; padding: 10px 0;">
-  <div class="container flex">
-    <div class="testimonial-block">
-      <div class="square-image">
-        <img style="width: 100%;" src="{{ site.baseurl }}/images/feedback-3.jpeg" alt="docgpt ai feedback" class="editable">
-      </div>
-      <blockquote>
-        <p class="editable" data-cms-source="/index.html" data-cms-index="10">
-          A few of our team members recently started using GPT for Sheets as part of their workflow and have been really enjoying it :)
-
-          Just wanted to reach out first of all and say awesome job!
-
-          Thanks so much!
-
-        </p>
-        <p class="editable author" data-cms-source="/index.html" data-cms-index="11">
-          Dee - founder at the Pearl Lemon Group
-        </p>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!--https://docs.google.com/spreadsheets/d/1D2Fd-ELjipmNH-4OKhHgnW5dVYFRE9G4VlSWx0Uhw8E/edit?usp=sharing-->
-
-
-<!--<div class="container mb-5 mt-5 center-img">-->
-<!--    <a target="_blank" rel="nofollow" href="https://www.producthunt.com/posts/docgpt-ai-writer-for-docs?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-docgpt&#0045;ai&#0045;writer&#0045;for&#0045;docs" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=377406&theme=light" alt="DocGPT&#0032;AI&#0032;Writer&#0032;for&#0032;Docs - Transform&#0032;your&#0032;writing&#0032;process&#0032;with&#0032;AI&#0032;for&#0032;Docs | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>-->
-<!--</div>-->
-<!--<div class="container mb-5 mt-5 center-img">-->
-<!--    <a target="_blank" href="https://workspace.google.com/marketplace/app/gpt_ai_writer_for_docs_forms_slides_shee/466607203252"> <img src="{{ site.baseurl }}/images/sheets-demo.gif" alt="gpt for sheets"></a>-->
-<!--</div>-->
-
-<!--Steps start-->
+<!-- Steps start-->
 <div class="container mb-5 mt-5">
   <div class="container-fluid">
     <div class="row">
@@ -1047,16 +1124,6 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
   </div>
 </div>
 <!-- END ROW -->
-
-<!--<div class="container text-center py-4">-->
-<!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
-<!--  <p class="lead">To celebrate the spooky season, I am offering a special discount on <strong>Annual Enterprise, Professional</strong> and <strong>Lifetime Plans</strong> — available only to the first 20 customers!</p>-->
-<!--  <p class="lead">-->
-<!--    Use the code <span class="badge bg-warning text-dark">HELLOWEEN-20</span> at checkout to get <strong>20% off</strong>.-->
-<!--  </p>-->
-<!--  <p class="lead">Don't miss out! 👻</p>-->
-<!--</div>-->
-
 
 <!-- Start ROW -->
 <div class="row pt-5">
