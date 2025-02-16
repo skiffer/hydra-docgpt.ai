@@ -4,6 +4,7 @@ heading: ChatGPT for Sheets. Now with Perplexity, Claude, Gemini, Mistral, Dall-
 description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, Perplexity, Mistral, o1, o1-mini, o1-preview, o3-mini, o1-mini-high, and Gemini AI models directly within Google Sheets. Integrate AI with web access, image generation, data enrichment, programmatic SEO, API integration, scrapping sites, bulk site creation, bulk email sending (Mail Merge), and Google indexing. Apollo, LeadMagic and Prospeo integration for retrieving contacts by domain, and obtaining LinkedIn information/emails by URL (alternative to Clay).
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<!--<script src="{{ site.baseurl }}/assets/js/windows.js"></script>-->
 <script>
   function getCookie(name) {
     var nameEQ = name + "=";
@@ -1077,177 +1078,177 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 <!--&lt;!&ndash;Embded code&ndash;&gt;-->
 <!--<a href="https://theresanaiforthat.com/ai/docgpt-ai-writer-for-docs/?ref=featured&v=1071512" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>-->
 
-<div class="container center-table">
-  <div>
-    <h2 class="text-center mb-4">Supported Functions</h2>
-    <table class="table table-bordered">
-      <thead>
-      <tr>
-        <th>Function</th>
-        <th>Description</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td><code>=API(method, url, body, headers)</code></td>
-        <td>Enables you to retrieve and send content across your website, services, WordPress, Twitter, LinkedIn, Airtable, Zapier, or any other platform..</td>
-      </tr>
-      <tr>
-        <td><code>=GPT(prompt, [value])</code></td>
-        <td>Generates text based on the provided prompt using GPT models (GPT-3 or GPT-4).</td>
-      </tr>
-      <tr>
-        <td><code>=SERP(query)</code></td>
-        <td>Retrieves search engine results pages (SERP) for the specified query.</td>
-      </tr>
-      <tr>
-        <td><code>=REPLACE_TEMPLATES(template, VAR_1, VAR_2, ...)</code></td>
-        <td>Replaces templated variables in a string with values from specified cells or hardcoded strings, allowing you to create dynamic text by replacing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc., with corresponding values.</td>
-      </tr>
-      <tr>
-        <td><code>=CREATE_FILE_ON_DRIVE(fileName, content, MimeType)</code></td>
-        <td>Allows users to create a file in Google Drive with the specified content and MIME type.</td>
-      </tr>
-      <tr>
-        <td><code>=GOOGLE_RANKED_KEYWORDS(domain, count)</code></td>
-        <td>Fetches the ranked keywords for a specified domain using the DataForSEO API, providing insights into the keywords for which a domain is ranking in Google search results.</td>
-      </tr>
-      <tr>
-        <td><code>=GOOGLE_SEARCH_API(query, contextId, apiKey, pages)</code></td>
-        <td>Performs a Google Custom Search and retrieves the top search results. Official API from Google!</td>
-      </tr>
-      <tr>
-        <td><code>=GOOGLE_INDEXING(url)</code></td>
-        <td>Allows site owners to directly notify Google when pages are added or updated.</td>
-      </tr>
-      <tr>
-        <td><code>=SEO_BLOG(blog title, writing tone, language)</code></td>
-        <td>Generates an SEO-optimized blog post (1k+ words) based on the provided title, writing tone, and language.</td>
-      </tr>
-      <tr>
-        <td><code>=SEO_STRATEGY(keywords, language)</code></td>
-        <td>Generates a comprehensive SEO strategy based on the provided keywords and language.</td>
-      </tr>
-      <tr>
-        <td><code>=GOOGLE_KEYWORD_SUGGESTIONS(seedKeyword, login, password)</code></td>
-        <td>Generates keyword suggestions based on a seed keyword using the DataForSEO API, helping you discover related keywords and phrases relevant to your seed keyword.</td>
-      </tr>
-      <tr>
-        <td><code>=GOOGLE_KEYWORD_IDEAS(seedKeyword, login, password)</code></td>
-        <td>Generates keyword ideas based on a seed keyword using the DataForSEO API, helping you discover new keyword opportunities related to your seed keyword and enhancing your SEO and content strategies.</td>
-      </tr>
-      <tr>
-        <td><code>=SEO_OUTRANK(url outrank, writing tone, language)</code></td>
-        <td>Analyzes the given URL and provides content recommendations to outrank it in search engine results.</td>
-      </tr>
-      <tr>
-        <td><code>=BRAVE_SEARCH_WEB(query, subscriptionToken, resultFilter, count, country)</code></td>
-        <td>Fetches search results from Brave's web search API based on the specified query and parameters, useful for data enrichment tasks. <a href="https://brave.com/search/api/#api-features" target="_blank">Get Free API Key</a> - <strong>2,000 queries per month</strong></td>
-      </tr>
-      <tr>
-        <td><code>=CLAUDE(prompt)</code></td>
-        <td>Generates text based on the provided prompt using the Claude model.</td>
-      </tr>
-      <tr>
-        <td><code>=GEMINI(prompt)</code></td>
-        <td>Generates text based on the provided prompt using the Gemini model.</td>
-      </tr>
-      <tr>
-        <td><code>=MISTRAL(prompt)</code></td>
-        <td>Generates text based on the provided prompt using the Mistral model.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_VISION(url, prompt)</code></td>
-        <td>Analyzes an image from the provided URL and generates text based on the prompt.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_TAG(text, [tags])</code></td>
-        <td>Tags the provided text with the specified tags.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_URL("https://docgpt.ai")</code></td>
-        <td>Retrieves the URL from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_TITLE("https://docgpt.ai")</code></td>
-        <td>Retrieves the title from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_DESCRIPTION("https://docgpt.ai")</code></td>
-        <td>Retrieves the description from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_H1("https://docgpt.ai")</code></td>
-        <td>Retrieves the first-level heading (H1) from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_H2("https://docgpt.ai/")</code></td>
-        <td>Retrieves the second-level heading (H2) from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_HEADINGS("https://docgpt.ai")</code></td>
-        <td>Retrieves all the headings from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_PARAGRAPHS("https://docgpt.ai")</code></td>
-        <td>Retrieves all the paragraphs from the specified web address.</td>
-      </tr>
-      <tr>
-        <td><code>=WEB_URLS_DATA(A37:A39)</code></td>
-        <td>Retrieves data from the URLs specified in the range A37:A39.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_EXTRACT(text, to_extract)</code></td>
-        <td>Extracts specified information from the provided text.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_TRANSLATE(text, target, [source])</code></td>
-        <td>Translates the provided text to the target language, with an optional source language.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_SUMMARIZE(text, [format])</code></td>
-        <td>Summarizes the provided text, with an optional specified format.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_FORMAT(text, source, target)</code></td>
-        <td>Converts the provided text from the source format to the target format.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_CLASSIFY(text, categories)</code></td>
-        <td>Classifies the provided text into the specified categories.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_FILL(examples, inputs)</code></td>
-        <td>Fills in the blanks in the provided inputs based on the examples given.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_LIST(prompt, [value])</code></td>
-        <td>Generates a list based on the provided prompt.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_HLIST(prompt, [value])</code></td>
-        <td>Generates a hierarchical list based on the provided prompt.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_SPLIT(text, split_by)</code></td>
-        <td>Splits the provided text by the specified delimiter.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_HSPLIT(text, split_by)</code></td>
-        <td>Splits the provided text hierarchically by the specified delimiter.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_APPLY(text, [task])</code></td>
-        <td>Applies the specified task to the provided text.</td>
-      </tr>
-      <tr>
-        <td><code>=GPT_TABLE(prompt, headers)</code></td>
-        <td>Generates a table based on the provided prompt and headers.</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+<!--<div class="container center-table">-->
+<!--  <div>-->
+<!--    <h2 class="text-center mb-4">Supported Functions</h2>-->
+<!--    <table class="table table-bordered">-->
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th>Function</th>-->
+<!--        <th>Description</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--      <tr>-->
+<!--        <td><code>=API(method, url, body, headers)</code></td>-->
+<!--        <td>Enables you to retrieve and send content across your website, services, WordPress, Twitter, LinkedIn, Airtable, Zapier, or any other platform..</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT(prompt, [value])</code></td>-->
+<!--        <td>Generates text based on the provided prompt using GPT models (GPT-3 or GPT-4).</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=SERP(query)</code></td>-->
+<!--        <td>Retrieves search engine results pages (SERP) for the specified query.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=REPLACE_TEMPLATES(template, VAR_1, VAR_2, ...)</code></td>-->
+<!--        <td>Replaces templated variables in a string with values from specified cells or hardcoded strings, allowing you to create dynamic text by replacing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc., with corresponding values.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=CREATE_FILE_ON_DRIVE(fileName, content, MimeType)</code></td>-->
+<!--        <td>Allows users to create a file in Google Drive with the specified content and MIME type.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GOOGLE_RANKED_KEYWORDS(domain, count)</code></td>-->
+<!--        <td>Fetches the ranked keywords for a specified domain using the DataForSEO API, providing insights into the keywords for which a domain is ranking in Google search results.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GOOGLE_SEARCH_API(query, contextId, apiKey, pages)</code></td>-->
+<!--        <td>Performs a Google Custom Search and retrieves the top search results. Official API from Google!</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GOOGLE_INDEXING(url)</code></td>-->
+<!--        <td>Allows site owners to directly notify Google when pages are added or updated.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=SEO_BLOG(blog title, writing tone, language)</code></td>-->
+<!--        <td>Generates an SEO-optimized blog post (1k+ words) based on the provided title, writing tone, and language.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=SEO_STRATEGY(keywords, language)</code></td>-->
+<!--        <td>Generates a comprehensive SEO strategy based on the provided keywords and language.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GOOGLE_KEYWORD_SUGGESTIONS(seedKeyword, login, password)</code></td>-->
+<!--        <td>Generates keyword suggestions based on a seed keyword using the DataForSEO API, helping you discover related keywords and phrases relevant to your seed keyword.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GOOGLE_KEYWORD_IDEAS(seedKeyword, login, password)</code></td>-->
+<!--        <td>Generates keyword ideas based on a seed keyword using the DataForSEO API, helping you discover new keyword opportunities related to your seed keyword and enhancing your SEO and content strategies.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=SEO_OUTRANK(url outrank, writing tone, language)</code></td>-->
+<!--        <td>Analyzes the given URL and provides content recommendations to outrank it in search engine results.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=BRAVE_SEARCH_WEB(query, subscriptionToken, resultFilter, count, country)</code></td>-->
+<!--        <td>Fetches search results from Brave's web search API based on the specified query and parameters, useful for data enrichment tasks. <a href="https://brave.com/search/api/#api-features" target="_blank">Get Free API Key</a> - <strong>2,000 queries per month</strong></td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=CLAUDE(prompt)</code></td>-->
+<!--        <td>Generates text based on the provided prompt using the Claude model.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GEMINI(prompt)</code></td>-->
+<!--        <td>Generates text based on the provided prompt using the Gemini model.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=MISTRAL(prompt)</code></td>-->
+<!--        <td>Generates text based on the provided prompt using the Mistral model.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_VISION(url, prompt)</code></td>-->
+<!--        <td>Analyzes an image from the provided URL and generates text based on the prompt.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_TAG(text, [tags])</code></td>-->
+<!--        <td>Tags the provided text with the specified tags.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_URL("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves the URL from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_TITLE("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves the title from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_DESCRIPTION("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves the description from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_H1("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves the first-level heading (H1) from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_H2("https://docgpt.ai/")</code></td>-->
+<!--        <td>Retrieves the second-level heading (H2) from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_HEADINGS("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves all the headings from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_PARAGRAPHS("https://docgpt.ai")</code></td>-->
+<!--        <td>Retrieves all the paragraphs from the specified web address.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=WEB_URLS_DATA(A37:A39)</code></td>-->
+<!--        <td>Retrieves data from the URLs specified in the range A37:A39.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_EXTRACT(text, to_extract)</code></td>-->
+<!--        <td>Extracts specified information from the provided text.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_TRANSLATE(text, target, [source])</code></td>-->
+<!--        <td>Translates the provided text to the target language, with an optional source language.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_SUMMARIZE(text, [format])</code></td>-->
+<!--        <td>Summarizes the provided text, with an optional specified format.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_FORMAT(text, source, target)</code></td>-->
+<!--        <td>Converts the provided text from the source format to the target format.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_CLASSIFY(text, categories)</code></td>-->
+<!--        <td>Classifies the provided text into the specified categories.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_FILL(examples, inputs)</code></td>-->
+<!--        <td>Fills in the blanks in the provided inputs based on the examples given.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_LIST(prompt, [value])</code></td>-->
+<!--        <td>Generates a list based on the provided prompt.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_HLIST(prompt, [value])</code></td>-->
+<!--        <td>Generates a hierarchical list based on the provided prompt.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_SPLIT(text, split_by)</code></td>-->
+<!--        <td>Splits the provided text by the specified delimiter.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_HSPLIT(text, split_by)</code></td>-->
+<!--        <td>Splits the provided text hierarchically by the specified delimiter.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_APPLY(text, [task])</code></td>-->
+<!--        <td>Applies the specified task to the provided text.</td>-->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td><code>=GPT_TABLE(prompt, headers)</code></td>-->
+<!--        <td>Generates a table based on the provided prompt and headers.</td>-->
+<!--      </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+<!--  </div>-->
+<!--</div>-->
 
 <div class="row pt-5">
   <h2 class="help-header container">Scraping WEB functions: Content, title, description, h1, h2, paragraphs, fetch in bulk</h2>
