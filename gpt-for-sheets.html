@@ -41,6 +41,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
             currency: data.eventData.checkout.prices.customer.currency,
             coupon: data.eventData.checkout.coupon.coupon_code,
             items: data.eventData.checkout.prices.customer.items,
+            customData: data.eventData.checkout.customData,
             passthrough: data.eventData.checkout.passthrough || "no"
           },
         };
@@ -1839,6 +1840,9 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
       email: emailParam || '',
       coupon: couponParam,
       passthrough: JSON.stringify(getUTMTags()),
+      customData: {
+        tolt_referral: window.tolt_referral,
+      },
       success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
     });
   } else if (emailParam) {
@@ -1846,6 +1850,9 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
     Paddle.Checkout.open({
       product: '875278',
       email: emailParam || '',
+      customData: {
+        tolt_referral: window.tolt_referral,
+      },
       passthrough: JSON.stringify(getUTMTags()),
       success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
     });
