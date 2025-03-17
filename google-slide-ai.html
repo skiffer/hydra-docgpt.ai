@@ -17,6 +17,7 @@ description: Create a presentation with AI ChatGPT in one click. AI-Powered Goog
                         value: data.eventData.checkout.prices.customer.total,
                         tax: data.eventData.checkout.prices.customer.total_tax,
                         shipping: null,
+                        customData: data.eventData.checkout.customData,
                         currency: data.eventData.checkout.prices.customer.currency,
                         coupon: data.eventData.checkout.coupon.coupon_code,
                         items: data.eventData.checkout.prices.customer.items,
@@ -641,7 +642,10 @@ description: Create a presentation with AI ChatGPT in one click. AI-Powered Goog
     if (emailParam) {
         Paddle.Checkout.open({
             product: '858326',
-            email: emailParam || ''
+            email: emailParam || '',
+            customData: {
+                tolt_referral: window.tolt_referral,
+            },
         });
     }
 </script>

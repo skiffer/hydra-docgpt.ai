@@ -17,6 +17,7 @@ description: GPT, Gemini, Claude Quiz Maker - Create Quizzes with AI ChatGPT. Th
                         value: data.eventData.checkout.prices.customer.total,
                         tax: data.eventData.checkout.prices.customer.total_tax,
                         shipping: null,
+                        customData: data.eventData.checkout.customData,
                         currency: data.eventData.checkout.prices.customer.currency,
                         coupon: data.eventData.checkout.coupon.coupon_code,
                         items: data.eventData.checkout.prices.customer.items,
@@ -621,7 +622,10 @@ description: GPT, Gemini, Claude Quiz Maker - Create Quizzes with AI ChatGPT. Th
     if (emailParam) {
         Paddle.Checkout.open({
             product: '839532',
-            email: emailParam || ''
+            email: emailParam || '',
+            customData: {
+                tolt_referral: window.tolt_referral,
+            },
         });
     }
 </script>

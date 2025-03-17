@@ -18,6 +18,7 @@ description: GPT, Claude, Gemini for Gmail is an AI-driven email writing add-on.
                         tax: data.eventData.checkout.prices.customer.total_tax,
                         shipping: null,
                         currency: data.eventData.checkout.prices.customer.currency,
+                        customData: data.eventData.checkout.customData,
                         coupon: data.eventData.checkout.coupon.coupon_code,
                         items: data.eventData.checkout.prices.customer.items,
                     },
@@ -1095,7 +1096,10 @@ description: GPT, Claude, Gemini for Gmail is an AI-driven email writing add-on.
     if (emailParam) {
         Paddle.Checkout.open({
             product: '843279',
-            email: emailParam || ''
+            email: emailParam || '',
+            customData: {
+                tolt_referral: window.tolt_referral,
+            },
         });
     }
 </script>
