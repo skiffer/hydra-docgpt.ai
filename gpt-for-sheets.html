@@ -4,6 +4,23 @@ heading: ChatGPT for Sheets. Now with Perplexity, Claude, Gemini, Mistral, Dall-
 description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, Perplexity, Mistral, o1, o1-mini, o1-preview, o3-mini, o3-mini-high, and Gemini AI models directly within Google Sheets. Integrate AI with web access, image generation, data enrichment, programmatic SEO, API integration, scrapping sites, bulk site creation, bulk email sending (Mail Merge), and Google indexing. Lead Research - Hunter, Apollo, LeadMagic and Prospeo integration for retrieving contacts by domain, and obtaining LinkedIn information/emails by URL (alternative to Clay).
 ---
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<!-- Event snippet for Begin checkout -1 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/_uxkCMvilKEZEIDO29sD',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
 <script>
   function getCookie(name) {
     var nameEQ = name + "=";
@@ -46,6 +63,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
           },
         };
         dataLayer.push(dataLayerInfo);
+        gtag_report_conversion();
         // console.log('> Checkout.Complete');
         // console.log(JSON.stringify(data));
 
