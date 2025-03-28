@@ -21,6 +21,25 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   }
 </script>
 
+<!-- Event snippet for Purchase (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion_purchase(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/oTPECKzt7rAaEIDO29sD',
+      'transaction_id': '',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+
 <script>
   function getCookie(name) {
     var nameEQ = name + "=";
@@ -63,6 +82,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           },
         };
         dataLayer.push(dataLayerInfo);
+        gtag_report_conversion_purchase();
         // gtag_report_conversion();
         // console.log('> Checkout.Complete');
         // console.log(JSON.stringify(data));
