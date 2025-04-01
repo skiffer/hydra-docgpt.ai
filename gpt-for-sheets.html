@@ -7,11 +7,12 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 <!-- Event snippet for Begin checkout -1 conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  function gtag_report_conversion(url, value, currency) {
+  function gtag_report_conversion(value, currency) {
     var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
+      // if (typeof(url) != 'undefined') {
+      //   window.location = url;
+      // }
+      console.log('callback: gtag_report_conversion');
     };
     gtag('event', 'conversion', {
       'send_to': 'AW-997648128/_uxkCMvilKEZEIDO29sD',
@@ -26,17 +27,36 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!-- Event snippet for Purchase (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  function gtag_report_conversion_purchase(url, value, currency) {
+  function gtag_report_conversion_purchase(value, currency) {
     var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
+      console.log('callback: gtag_report_conversion_purchase');
+      // if (typeof(url) != 'undefined') {
+      //   window.location = url;
+      // }
     };
     gtag('event', 'conversion', {
       'send_to': 'AW-997648128/oTPECKzt7rAaEIDO29sD',
       'value': value,
       'currency': currency,
       'transaction_id': '',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<!-- Event snippet for Install add-on conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion_install_addon(url) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion_install_addon');
+      // if (typeof(url) != 'undefined') {
+      //   window.location = url;
+      // }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/IYmnCJr04LIaEIDO29sD',
       'event_callback': callback
     });
     return false;
@@ -356,7 +376,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 </div>
 <div class="container text-center">
   <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
-  <p class="lead"><span class="badge bg-warning text-dark"> I’m actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
+  <p class="lead"><span class="badge bg-warning text-dark"> I'm actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
 </div>
 <div class="container mb-5 mt-5" id="pricing">
   <div class="pricing card-deck flex-column flex-md-row mb-3">
@@ -828,7 +848,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 <div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 500+ reviews and 1M+ installs</b></div>
 <div class="container d-flex justify-content-center">
-  <a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=landing_page_new">
+  <a class="install_a button_button button_install mt-auto"
+     target="_blank"
+     href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=landing_page_new"
+     onclick="return gtag_report_conversion_install_addon();">
     <u class="layout_iconInstallProduct">
       <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -853,7 +876,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <h3>Important!</h3>
   <p>If you encounter the message: <strong>"Authorization is required to perform this action."</strong></p>
   <ol>
-    <li><strong>Use a personal Gmail account</strong>: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat.</li>
+    <li><strong>Use a personal Gmail account</strong>: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it's recommended to use a personal account. If you need to transfer your subscription, please contact support via chat.</li>
     <li>If you use a personal account and still encounter this issue, simply re-install the add-on.</li>
     <li>
       For more help, check out the following resources:
