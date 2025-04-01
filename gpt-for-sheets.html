@@ -7,7 +7,7 @@ description: Unlock the power of GPT-4o, Replicate, GPT-Vision, DALL-E, Claude, 
 <!-- Event snippet for Begin checkout -1 conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  function gtag_report_conversion(url) {
+  function gtag_report_conversion(url, value, currency) {
     var callback = function () {
       if (typeof(url) != 'undefined') {
         window.location = url;
@@ -15,6 +15,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     };
     gtag('event', 'conversion', {
       'send_to': 'AW-997648128/_uxkCMvilKEZEIDO29sD',
+      'value': value,
+      'currency': currency,
       'event_callback': callback
     });
     return false;
@@ -24,7 +26,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!-- Event snippet for Purchase (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  function gtag_report_conversion_purchase(url) {
+  function gtag_report_conversion_purchase(url, value, currency) {
     var callback = function () {
       if (typeof(url) != 'undefined') {
         window.location = url;
@@ -32,6 +34,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     };
     gtag('event', 'conversion', {
       'send_to': 'AW-997648128/oTPECKzt7rAaEIDO29sD',
+      'value': value,
+      'currency': currency,
       'transaction_id': '',
       'event_callback': callback
     });
@@ -82,7 +86,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           },
         };
         dataLayer.push(dataLayerInfo);
-        gtag_report_conversion_purchase();
+        gtag_report_conversion_purchase(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
         // gtag_report_conversion();
         // console.log('> Checkout.Complete');
         // console.log(JSON.stringify(data));
@@ -100,8 +107,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         fbq('track', 'InitiateCheckout');
         console.log('> Checkout.Loaded');
         console.log(JSON.stringify(data));
-        // gtag_report_conversion();
 
+        gtag_report_conversion(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
       }
     }
   }); // replace with your vendor ID
