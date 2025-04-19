@@ -26,6 +26,11 @@
   link: /quiz-maker-ai/
   new_window: false
   highlight: false
+- name: Privacy Form™ Timer and Form™ Scheduler
+  link: /privacy_form_timer_scheduler/
+  new_window: true
+  highlight: false
+  nofollow: true
 #- name: Translate Slides AI
 #  link: /translate-slides-with-ai-gpt
 #  new_window: false

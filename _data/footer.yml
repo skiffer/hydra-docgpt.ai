@@ -139,6 +139,11 @@
       link: /docs/support-gpt-sheets-docs-slides-forms-gmail
       new_window: true
       nofollow: true
+    - name: Privacy Form™ Timer and Form™ Scheduler
+      link: /privacy_form_timer_scheduler/
+      new_window: true
+      highlight: false
+      nofollow: true
 
 #    /docs/gpt-for-sheets/set-up-openai-api-keys
 #    social_icon: Facebook
