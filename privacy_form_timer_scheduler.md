@@ -49,7 +49,7 @@ We do not store your data (inputs, clicks, or form files). It stays on Google’
 
 The only information we store from your Google account is your email address.
 
-<img class="demo" alt="privacy_forms_ui.png" src="{{ site.baseurl }}/images/form-timer.png" />
+<img class="demo" alt="privacy_form_timer_scheduler.png" src="{{ site.baseurl }}/images/form-timer.png" />
 
 ---
 
