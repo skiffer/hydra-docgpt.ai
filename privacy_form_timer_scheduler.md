@@ -76,6 +76,11 @@ The add-on uses the `https://www.googleapis.com/auth/userinfo.email` scope for i
 
 We **do not** have access to your Google account or password. Only your email address is used internally for identification.
 
+### Can I review and revoke access?
+Absolutely. If you need to review the permissions you granted to "Form Timer and Form Scheduler™", you can do so by going to Google Account -> Third-party apps with account access -> [Manage third-party access](https://myaccount.google.com/permissions?utm_source=google-account&utm_medium=web). There, you can change or revoke the permissions.
+
+<img style="width:50%" src="{{ site.baseurl }}/images/revoke_access.png" alt="Form Timer and Form Scheduler™" class="screenshot editable" width="350" title="Form Timer and Form Scheduler™- revoke access"/>
+
 ---
 
 ### Still have questions?
