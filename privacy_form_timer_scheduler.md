@@ -1,7 +1,7 @@
 ---
 title: Form™ Timer and Form™ Scheduler: Privacy Policy  
 description:  
-permalink: /privacy_form_timer_scheduler/  
+permalink: /privacy_form_timer_scheduler/
 ---
 
 <style>
