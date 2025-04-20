@@ -55,7 +55,7 @@ The only information we store from your Google account is your email address.
 
 ### Which permissions are needed for "Form Timer and Form™ Scheduler"?
 
-When you use "Form Timer and Form™ Scheduler" for the first time, you’ll be asked to accept the minimum-required permissions:
+When you use "Form™ Timer and Form™ Scheduler" for the first time, you’ll be asked to accept the minimum-required permissions:
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
