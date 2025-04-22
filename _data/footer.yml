@@ -43,9 +43,10 @@
   #    link: /contact/
 - name: "Links"
   links:
-#    - name: 👍 Try also - Linkedin Automation for B2B Sales
-#      link: /cold-outreach-messages-linkedin-2024/
-#      new_window: true
+    - name: 👍 Try also - Linkedin Automation for B2B Sales
+      link: /cold-outreach-messages-linkedin/
+      new_window: true
+    - link: /cold-outreach-messages-linkedin/
     - name: 👍 Try also - AI Web Chats
       link: https://instabotgpt.com/?utm_source=docgpt&utm_medium=footer&utm_campaign=site&utm_content=aiwebchats
       new_window: true
