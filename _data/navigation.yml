@@ -6,10 +6,10 @@
   link: /gpt-for-sheets/
   new_window: false
   highlight: false
-#- name: 🤝 Linkedin Automation
-#  link: /cold-outreach-messages-linkedin/
-#  new_window: true
-#  highlight: false
+- name: 🤝 Linkedin Automation
+  link: /cold-outreach-messages-linkedin/
+  new_window: true
+  highlight: false
 - name: ✉️ AI Email Assistant
   link: /ai-email-assistant/
   new_window: false
