@@ -27,6 +27,10 @@ Your email address will be used to activate your license.
 1. We do not store your data (inputs or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access your data offline. We only use this access to display them on the Add-on and make actions on your behalf such as managing form behavior. All the actions performed come from you.
 2. We do not share your data with any third party.
 
+#### We do not use data obtained through Google Workspace APIs to develop, improve, or train generalized artificial intelligence (AI) or machine learning (ML) models. All data accessed via Google Workspace APIs is used solely to provide and improve the specific functionality of our Workspace Add-on, in compliance with Google’s API Services User Data Policy.
+
+We are committed to maintaining user privacy and data confidentiality, and we do not use this data for any form of generalized AI/ML model training or development, including but not limited to large language models.
+
 ### Information we collect and how we use it
 
 We offer a number of services that do not require you to register for an account or provide any personal information to us. However, to provide the full range of services, we may collect the following types of information:
