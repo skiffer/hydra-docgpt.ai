@@ -10,7 +10,7 @@ permalink: /privacy_form_timer_scheduler/
 }
 </style>
 
-Last updated: April 19, 2025
+Last updated: April 21, 2025
 
 **The personal information you disclose to us**
 
