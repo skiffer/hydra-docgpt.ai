@@ -10,7 +10,7 @@ permalink: /privacy_mail_merge/
 }
 </style>
 
-Last updated: Dec 26, 2023
+Last updated: May 4, 2025
 
 
 **The personal information you disclose to us**
@@ -90,11 +90,16 @@ Content of the fields will be sent to our server to identify you and track limit
 - it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part.
 
 
+<img class="demo" alt="privacy_form_timer_scheduler.png" src="{{ site.baseurl }}/images/gmail-screen-privacy.png" />
+
 ### Why does "Mail Merge for Sheets™ Gmail™" need those permissions?
 
 "Mail Merge for Sheets™ Gmail™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "Mail Merge for Sheets™ Gmail™" only requests the minimum-required permissions that are essential for it to function optimally.
 
 "Mail Merge for Sheets™ Gmail™" does not have access to your Google account or your password, only to your email  info. We do not share your email.
+
+### Can I review and revoke access?
+Absolutely. If you need to review the permissions you granted to Mail Merge for Sheets™ Gmail™, you can do so by going to Google Account -> Third-party apps with account access -> Manage third-party access. There, you can change or revoke the permissions.
 
 ### Still have questions?
 
