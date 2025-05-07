@@ -1,0 +1,1029 @@
+---
+title: Form Timer and Form Scheduler
+heading: Form Timer and Form Scheduler Heading
+description: Form Timer and Form Scheduler Description
+---
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<!-- Event snippet for Begin checkout -1 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(value, currency) {
+    var callback = function () {
+      // if (typeof(url) != 'undefined') {
+      //   window.location = url;
+      // }
+      console.log('callback: gtag_report_conversion');
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/_uxkCMvilKEZEIDO29sD',
+      'value': value,
+      'currency': currency,
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<!-- Event snippet for Purchase (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion_purchase(value, currency) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion_purchase');
+      // if (typeof(url) != 'undefined') {
+      //   window.location = url;
+      // }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/oTPECKzt7rAaEIDO29sD',
+      'value': value,
+      'currency': currency,
+      'transaction_id': '',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<!-- Event snippet for Install add-on conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion_install_addon(url) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion_install_addon');
+      // if (typeof(url) != 'undefined') {
+      //   window.open(url, '_blank');
+      // }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/IYmnCJr04LIaEIDO29sD',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+
+<script>
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+  function getUTMTags() {
+    var utmTagsJson = getCookie('utm_tags');
+    if (utmTagsJson) {
+      return JSON.parse(utmTagsJson);
+    } else {
+      return {"exist": "false"};
+    }
+  }
+
+</script>
+<script type="text/javascript">
+  Paddle.Setup({
+    vendor: 13096,
+    eventCallback: function (data) {
+      if (data.event === "Checkout.Complete") {
+        let dataLayerInfo = {
+          event: "purchase",
+          ecommerce: {
+            transaction_id: data.eventData.checkout.id,
+            affiliation: "Affiliation Google Sheets",
+            value: data.eventData.checkout.prices.customer.total,
+            tax: data.eventData.checkout.prices.customer.total_tax,
+            shipping: null,
+            currency: data.eventData.checkout.prices.customer.currency,
+            coupon: data.eventData.checkout.coupon.coupon_code,
+            items: data.eventData.checkout.prices.customer.items,
+            customData: data.eventData.checkout.customData,
+            passthrough: data.eventData.checkout.passthrough || "no"
+          },
+        };
+        dataLayer.push(dataLayerInfo);
+        gtag_report_conversion_purchase(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
+        // gtag_report_conversion();
+        // console.log('> Checkout.Complete');
+        // console.log(JSON.stringify(data));
+
+        // Facebook Pixel Purchase Tracking
+        fbq('track', 'Purchase', {
+          value: data.eventData.checkout.prices.customer.total,
+          currency: data.eventData.checkout.prices.customer.currency
+        });
+        qp('track', 'Purchase');
+      }
+
+      if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
+        qp('track', 'InitiateCheckout');
+        fbq('track', 'InitiateCheckout');
+        console.log('> Checkout.Loaded');
+        console.log(JSON.stringify(data));
+
+        gtag_report_conversion(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
+      }
+    }
+  }); // replace with your vendor ID
+  // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
+
+</script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+
+<style>
+  .text-feature {
+    font-size: 13px;
+    text-align: left !important;
+  }
+  .box-selected {
+    /*box-shadow: 0 .5rem 1rem  #4DBE3B !important;*/
+    border: 2px solid #017BFE !important;
+    border-radius: 10px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0A6EBD;
+    -webkit-transition: 0.4s;
+
+    /*box-shadow: 2px 6px 25px #1e2321;*/
+    transform: translate(0px, 0px);
+    transition: 0.6s ease transform, 0.6s box-shadow;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input,
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+  }
+
+  input:checked + .slider {
+    background-color: #068FFF;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #068FFF;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ribbon {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+    background: #4dbe3b;
+    transform: rotate(90deg);
+    position: absolute;
+    right: -42px;
+    top: 20px;
+    padding-top: 7px;
+  }
+
+  .billed-annually {
+    font-size: 10px;
+    color: #999999;
+    /*display: none;*/
+  }
+
+  .center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+</style>
+
+<style>
+
+  .install a:hover {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+
+  .button_button {
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0px 24px;
+    cursor: pointer;
+    user-select: none;
+    gap: 8px;
+    font-weight: 500;
+    min-width: 0px;
+    line-height: 100%;
+  }
+
+  .button_install {
+    background: rgb(25, 118, 210);
+    color: rgb(255, 255, 255);
+    height: 64px;
+    padding: 0px 16px 0px 2px;
+    gap: 16px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px -1px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background 0.3s ease 0s;
+  }
+  .button_install:hover {
+    background: rgb(7, 71, 134);
+  }
+
+  .button_install u {
+    background: #fff;
+    height: 60px;
+    border-radius: 4px 0 0 4px;
+    width: 60px;
+    padding: 10px !important;
+  }
+
+  .layout_iconInstallProduct {
+    width: 60px!important;
+    padding: 0!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .install_a:hover {
+    text-decoration: none;
+    color: white;
+  }
+</style>
+
+<!--<div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 1000+ reviews and 1M+ installs</b></div>-->
+
+
+<div class="top" style="padding-top: 10px">
+  <div class="h5" style="color: #999999;">Find perfect plan</div>
+  <div class="toggle-btn">
+    <span style="margin: 0.8em;">Annually</span>
+    <label class="switch">
+      <input id="checbox" onclick="check();" type="checkbox"/>
+      <span class="slider round"></span>
+    </label>
+    <span style="margin: 0.8em;">Monthly</span></div>
+</div>
+<div class="container text-center">
+  <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
+  <p class="lead"><span class="badge bg-warning text-dark"> I'm actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
+</div>
+<div class="container mb-5 mt-5" id="pricing">
+  <div class="pricing card-deck flex-column flex-md-row mb-3">
+    <div class="card card-pricing text-center px-3 mb-4 text1">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">$<span class="price">19.99</span><span
+            class="h6 text-muted ml-2">/ mo</span></div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+           data-product="841733" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/get-started/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled mb-4 text-muted text-feature">
+          <li><i class="bi-check-lg icon-pricing"></i> 1000 queries / month - About 5 million words of gpt-4o inputs & output</li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>No need for API keys</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>SERP function to get top results from the Search</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>WEB Scraping functions</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> Support 100+ languages</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT to get the result of ChatGPT in a single cell</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_TABLE, GPT_LIST to get a table of items from a prompt</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_FORMAT to sanitize your sheet data into the same format</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_EXTRACT to extract entities from your Sheets™ data</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_SUMMARIZE to summarize your sheet content</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_CLASSIFY to classify sheet content into a single category</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your sheet content</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_APPLY to apply any AI processing of you text</li>
+          <li><i class="bi-check-lg icon-pricing"></i> GPT_SPLIT to split your text by phrase, sentence, etc..</li>
+<!--          <li class=""><i class="bi-check-lg icon-pricing"></i> Online Support</li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i></li>-->
+        </ul>
+<!--        <button class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-custom-data="" data-email="" data-product="841733" data-theme="none"-->
+<!--                type="button" data-success="/docs/gpt-for-sheets/get-started/">Get Started-->
+<!--        </button>-->
+      </div>
+    </div>
+    <div class="card card-pricing popular text-center px-3 mb-4 text1">
+        <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro User</span>
+        <div class="bg-transparent card-header pt-4 border-0">
+                <div class="ribbon">EXPERT</div>
+            <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">29.99</span><span class="h6 text-muted ml-2">/ mo</span></h1>
+        </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+           data-product="875279" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+      </div>
+        <div class="card-body pt-0">
+            <ul class="list-unstyled text-feature mb-4">
+              <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b>15000/ mo</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Starter features</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-3.7, DeepSeek</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b> GPT-4 Vision, DALL-E</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b> Other AI models: Claude, Mistral, Gemini, Perplexity</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>Image generation</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>Image vision</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>
+              <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_SEARCH()</b></li>-->
+              <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("docgpt.ai")</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>With <b style="color: green">API()</b> function you can push/pull your content on your site, service from Sheets!</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b>FLATTEN_JSON() - convert your JSON into table</b></li>
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>CLAUDE(prompt)</b></li>-->
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>-->
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>-->
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>-->
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>-->
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>-->
+              <li><i class="bi-check-lg icon-pricing"></i> <b>WEB Scrapping functions</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+<!--              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>-->
+              <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+<!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>-->
+<!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email support</li>-->
+<!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online support</li>-->
+                <li style="color: white"> .</li>
+                <li style="color: white"> .</li>
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--                <li style="color: white"> .</li>-->
+<!--              <li style="color: white"> .</li>-->
+            </ul>
+<!--            <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none"-->
+<!--               data-product="875279" data-email="" data-custom-data=""-->
+<!--               data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>-->
+        </div>
+    </div>
+    <div class="card card-pricing popular box-selected text-center px-3 mb-4 text1">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+        <div class="ribbon">POPULAR</div>
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">39.99</span><span
+            class="h6 text-muted ml-2">/ mo</span></div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
+           data-product="890230" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled text-feature mb-4">
+          <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green">Unlimited</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Pro User features</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-3.7, DeepSeek</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Place enriching tool using Google Maps</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Youtube Data integration - Search YouTube creators and videos</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">EMAIL_SEND() - Bulk email sending</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Apollo, Hunter integration - get contacts by a domain</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Prospeo integration - get emails by a domain</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Prospeo - get linkedin and emails by a url</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">LeadMagic integration</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">MailChimp integration for sending emails</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">REPLICATE() - integrated with <a target="_blank" rel="nofollow" href="https://replicate.com/explore">Replicate AI service</a> to help you generate images in bulk, using ANY AI model</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_SEARCH()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_INDEXING()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CREATE_FILE()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Brave Search API (web, videos, discussion) - returns search data for AI (2k /m requests free)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get Top Ranking Keywords of Competitors</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword ideas by a keyword</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get related keywords</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CLOUDINARY() - Upload images to file hosting</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+        </ul>
+<!--        <a class="paddle_button btn btn-primary mb-3 btn-lg" data-custom-data=""-->
+<!--           data-email="" data-product="862411" data-theme="none"-->
+<!--           data-success="/docs/gpt-for-sheets/get-started/" href="#!">Get Started</a>-->
+      </div>
+    </div>
+
+<!--    <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">-->
+<!--      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Expert</span>-->
+<!--      <div class="bg-transparent card-header pt-4 border-0">-->
+<!--&lt;!&ndash;        <div class="ribbon">POPULAR</div>&ndash;&gt;-->
+<!--        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">69.99</span><span-->
+<!--                class="h6 text-muted ml-2">/ mo</span></div>-->
+<!--      </div>-->
+<!--      <div class="card-body pt-0">-->
+<!--        <ul class="list-unstyled text-feature mb-4">-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>Save 40%</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Starter features</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>No need for API keys</b></li>-->
+<!--          <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b>3000 queries / month</b></li>-->
+<!--          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>-->
+<!--          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>-->
+<!--          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--        </ul>-->
+<!--        <a class="paddle_button btn btn-primary mb-3 btn-lg" data-custom-data="" data-email="" data-product="873994" data-theme="none" href="#!">Get-->
+<!--          Started</a>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+    <div class="card card-pricing text-center px-3 mb-4 text2">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="45">$<span class="price">11.17</span><span
+            class="h6 text-muted ml-2">/ mo</span></div>
+        <div class="billed-annually">Billed $133.99 annually</div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+           data-product="841734" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/get-started/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled mb-4 text-feature">
+          <li><i class="bi-check-lg icon-pricing"></i><b> Save 30%</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 1250 queries/mo - About 7 million words of gpt-4o mini inputs & output</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Access to all features</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>No need for API keys</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>SERP function to get top results from the Search</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>WEB Scraping functions</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Support 90+ languages</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT to get the result of ChatGPT in a single cell</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_TABLE to get a table of items from a prompt</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_FORMAT to sanitize your sheet data into the same format</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_EXTRACT to extract entities from your Sheets™ data</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_SUMMARIZE to summarize your sheet content</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_CLASSIFY to classify sheet content into a single category</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_TAG to apply tags to your sheet content</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_TRANSLATE to translate your spreadsheet content</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_CONVERT to convert CSV to HTML to JSON to XML, etc.</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_APPLY to apply any AI processing of you text</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> GPT_SPLIT to split your text by phrase, sentence, etc..</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online Support</li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+<!--          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i></li>-->
+        </ul>
+<!--        <button class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-custom-data=""-->
+<!--                data-email="" data-product="841734" data-theme="none"-->
+<!--                type="button" data-success="/docs/gpt-for-sheets/get-started/">Get Started-->
+<!--        </button>-->
+      </div>
+    </div>
+            <div class="card card-pricing popular text-center px-3 mb-4 text2">
+                <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro User</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <div class="ribbon">POPULAR</div>
+                    <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ mo</span></h1>
+                    <div class="billed-annually">Billed $119.99 annually <s>$360</s></div>
+                </div>
+              <div>
+                <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+                   data-product="875278" data-email="" data-custom-data="" data-passthrough=""
+                   data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+              </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled text-feature mb-4">
+                        <li><i class="bi-check-lg icon-pricing"></i><b> Save 60%</b></li>
+                      <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b>17000/ mo</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Professional features</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-3.7, DeepSeek</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b> GPT-4.5 Vision, DALL-E</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b> Other AI models: Claude, Mistral, Gemini, Perplexity</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>Image generation</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>Image vision</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_SEARCH()</b></li>-->
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("docgpt.ai")</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>With <b style="color: green">API()</b> function you can push/pull your content on your site, service from Sheets!</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>FLATTEN_JSON() - convert your JSON into table</b></li>
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>CLAUDE(prompt)</b></li>-->
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>-->
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>-->
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>-->
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>-->
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>-->
+                      <li><i class="bi-check-lg icon-pricing"></i> <b>WEB Scrapping functions</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+                      <!--              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>-->
+                      <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                        <li style="color: white"> .</li>-->
+<!--                       <li style="color: white"> .</li>-->
+
+                    </ul>
+<!--                    <a href="#!" class="paddle_button btn btn-primary mb-3  btn-lg"-->
+<!--                       data-theme="none" data-product="875278"-->
+<!--                       data-email=""-->
+<!--                       data-custom-data=""-->
+<!--                       data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>-->
+                </div>
+            </div>
+    <div class="card card-pricing popular shadow box-selected text-center px-3 mb-4 text2">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Business</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+        <div class="ribbon">UNLIMITED</div>
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">19.99</span><span
+            class="h6 text-muted ml-2">/ mo</span></div>
+        <div class="billed-annually">Billed $199.99 annually <s>$480</s></div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
+           data-product="862410" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled text-feature mb-4">
+          <li><i class="bi-check-lg icon-pricing"></i><b> Save 60%</b></li>
+          <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green">Unlimited</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Pro User features</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-3.7, DeepSeek</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Place enriching tool using Google Maps</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Youtube Data integration - Search YouTube creators and videos</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">EMAIL_SEND() - Bulk email sending</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Apollo, Hunter integration - get emails by a domain</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Prospeo integration - get emails by a domain</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Prospeo - get linkedin and emails by a url</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">LeadMagic integration</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">MailChimp integration for sending emails</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">REPLICATE() - integrated with <a target="_blank" rel="nofollow" href="https://replicate.com/explore">Replicate AI service</a> to help you generate images in bulk, using ANY AI model</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_SEARCH()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">GOOGLE_INDEXING()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CREATE_FILE()</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">REPLACE_TEMPLATE() - Create multiple templated content in Sheets </b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Brave Search API (web, videos, discussion) - returns search data for AI (2k /m requests free)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get Top Ranking Keywords of Competitors</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword ideas by a keyword</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get related keywords</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CLOUDINARY() - Upload images to file hosting</b></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+          <li style="color: white"> .</li>
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+        </ul>
+<!--        <a class="paddle_button btn btn-primary mb-3 btn-lg"-->
+<!--           data-custom-data="some affiliate"-->
+<!--           data-email=""-->
+<!--           data-product="862410"-->
+<!--           data-theme="none"-->
+<!--           data-success="/docs/gpt-for-sheets/get-started/"-->
+<!--           data-passthrough=""-->
+<!--           href="#!">Get Started</a>-->
+      </div>
+    </div>
+    <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+<!--        <div class="ribbon">BEST VALUE</div>-->
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price"><strike>299</strike></span>
+          <span class="h6 text-muted ml-2">/ once</span>
+        </div>
+        <div class="billed-annually"><b style="color: black">$199 - Special offer until <span id="offerEndDate"></span></b></div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+           data-product="875610" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled text-feature mb-4">
+          <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green">Unlimited</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Business features</b></li>
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4o, GPT-4o-Mini</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT-3 Turbo, GPT-4, GPT-4 Vision</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_SEARCH()</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_INDEXING()</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("docgpt.ai")</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>CLAUDE(prompt)</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>-->
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>With API() function you can push/pull your content on your site, service from Sheets!</b></li>-->
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-3.7, DeepSeek</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green;"><a target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your OpenAI, GEMINI, CLAUDE, or MISTRAL API key</a></b></li>-->
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
+          <li style="color: white"> .</li>
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+<!--          <li style="color: white"> .</li>-->
+        </ul>
+<!--        <a class="paddle_button btn btn-primary mb-3 btn-lg"-->
+<!--           data-custom-data="{ interesting }"-->
+<!--           data-email=""-->
+<!--           data-product="875610"-->
+<!--           data-passthrough=""-->
+<!--           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/"-->
+<!--           data-theme="none" href="#!">Get Started</a>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 500+ reviews and 1M+ installs</b></div>
+<div class="container d-flex justify-content-center">
+  <a class="install_a button_button button_install mt-auto" href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=landing_page_new"
+     target="_blank"
+     onclick="gtag_report_conversion_install_addon(this.href); window.open(this.href, '_blank'); return false;">
+    <u class="layout_iconInstallProduct">
+      <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+      </svg>
+    </u>
+    <strong>Install <span>Form Timer and Scheduler</span></strong>
+  </a>
+</div>
+
+<style>
+  body {
+    background: #eee;
+    margin-top: 20px;
+  }
+
+  .hori-timeline .events {
+    border-top: 3px solid #e9ecef;
+  }
+
+  .hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+  }
+
+  .hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+  }
+
+  .hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+
+  @media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+      display: inline-block;
+      width: 24%;
+      padding-top: 45px;
+    }
+
+    .hori-timeline .events .event-list .event-date {
+      top: -12px;
+    }
+  }
+
+  .bg-soft-primary {
+    background-color: rgba(64, 144, 203, .3) !important;
+  }
+
+  .bg-soft-success {
+    background-color: rgba(71, 189, 154, .3) !important;
+  }
+
+  .bg-soft-danger {
+    background-color: rgba(231, 76, 94, .3) !important;
+  }
+
+  .bg-soft-warning {
+    background-color: rgba(249, 213, 112, .3) !important;
+  }
+
+  .card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
+    box-shadow: 0 0 13px 0 rgba(236, 236, 241, .44);
+  }
+
+</style>
+<!--Steps end-->
+<script>
+  function check() {
+    console.log("Called check!");
+    var checkBox = document.getElementById("checbox");
+    var text1 = document.getElementsByClassName("text1");
+    var text2 = document.getElementsByClassName("text2");
+
+    for (var i = 0; i < text1.length; i++) {
+      if (checkBox.checked == true) {
+        text1[i].style.display = "block";
+        text2[i].style.display = "none";
+      } else if (checkBox.checked == false) {
+        text1[i].style.display = "none";
+        text2[i].style.display = "block";
+      }
+    }
+  }
+
+  check();
+</script>
+<script type="text/javascript">
+  // Function to get the value of a specific URL parameter
+  function getURLParameter(name) {
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const results = regex.exec(window.location.href);
+
+    if (!results || !results[2]) {
+      return null;
+    }
+
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  // Get the value of the 'email' parameter
+  const emailParam = getURLParameter('email');
+  const couponParam = getURLParameter('coupon');
+  const planIdParam = getURLParameter('plan_id');
+
+  // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+  const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+  if (getStartedLinks) {
+    getStartedLinks.forEach(link => {
+      link.setAttribute('data-email', emailParam || '');
+    });
+  }
+
+  var pricingSection = document.getElementById("pricing");
+
+  if (pricingSection) {
+    pricingSection.scrollIntoView({
+      behavior: "smooth", // You can use "auto" for instant scrolling
+      block: "start",     // "start" will align the top of the section with the top of the viewport
+      inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
+    });
+  }
+
+  if (couponParam) {
+    console.log(`applying code: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+    Paddle.Checkout.open({
+      product: planIdParam || '875610',
+      email: emailParam || '',
+      coupon: couponParam,
+      passthrough: JSON.stringify(getUTMTags()),
+      customData: {
+        tolt_referral: window.tolt_referral,
+      },
+      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+    });
+  } else if (emailParam) {
+    console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+    Paddle.Checkout.open({
+      product: '875278',
+      email: emailParam || '',
+      customData: {
+        tolt_referral: window.tolt_referral,
+      },
+      passthrough: JSON.stringify(getUTMTags()),
+      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+    });
+  } else {
+    console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+  }
+</script>
+
+<script>
+
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+
+  // Function to store UTM parameters as JSON string in a cookie
+  function storeUTMTags() {
+    var utmTags = {
+      utm_source: getURLParameter('utm_source'),
+      utm_medium: getURLParameter('utm_medium'),
+      utm_campaign: getURLParameter('utm_campaign'),
+      utm_content: getURLParameter('utm_content'),
+      utm_term: getURLParameter('utm_term'),
+      email: getURLParameter('email'),
+      creation_time: new Date().toISOString()
+    };
+    setCookie('utm_tags', JSON.stringify(utmTags), 28);
+    console.log('stored: ' + JSON.stringify(utmTags));
+  }
+
+
+  function setPassthroughAttribute(val) {
+    const passthroughLinks = document.querySelectorAll(".paddle_button");
+
+    if (passthroughLinks.length > 0) {
+      passthroughLinks.forEach((link) => {
+        link.setAttribute("data-passthrough", val || "");
+        link.setAttribute("data-custom-data", val || "");
+        // console.log('Setting data-passthrough on element:', link, 'with value:', val);
+      });
+    } else {
+      console.log("No elements found with the specified selector.");
+    }
+  }
+
+
+  window.onload = function() {
+    var utmTags;
+    if (getURLParameter('utm_source')) {
+      storeUTMTags();
+    }
+
+    utmTags = getUTMTags();
+    console.log('utmTags:' + JSON.stringify(utmTags));
+    setPassthroughAttribute(JSON.stringify(utmTags));
+  };
+
+</script>
