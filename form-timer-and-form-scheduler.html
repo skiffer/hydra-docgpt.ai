@@ -342,7 +342,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
-           data-product="841733" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+           data-product="910099" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled mb-4 text-muted text-feature">
@@ -359,7 +359,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         </div>
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
-           data-product="875279" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+           data-product="910100" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
       </div>
         <div class="card-body pt-0">
             <ul class="list-unstyled text-feature mb-4">
@@ -378,7 +378,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
-           data-product="890230" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+           data-product="910101" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -398,7 +398,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
-           data-product="841734" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+           data-product="910102" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled mb-4 text-feature">
@@ -418,7 +418,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 </div>
               <div>
                 <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
-                   data-product="875278" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+                   data-product="910103" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
               </div>
                 <div class="card-body pt-0">
                     <ul class="list-unstyled text-feature mb-4">
@@ -439,7 +439,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       </div>
       <div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
-           data-product="862410" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
+           data-product="910104" data-email="" data-custom-data="" data-passthrough="">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -626,25 +626,23 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   if (couponParam) {
     console.log(`applying code: [${couponParam}], [${emailParam}], [${planIdParam}]`);
     Paddle.Checkout.open({
-      product: planIdParam || '875610',
+      product: planIdParam || '910103',
       email: emailParam || '',
       coupon: couponParam,
       passthrough: JSON.stringify(getUTMTags()),
       customData: {
         tolt_referral: window.tolt_referral,
-      },
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+      }
     });
   } else if (emailParam) {
     console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
     Paddle.Checkout.open({
-      product: '875278',
+      product: '910103',
       email: emailParam || '',
       customData: {
         tolt_referral: window.tolt_referral,
       },
-      passthrough: JSON.stringify(getUTMTags()),
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+      passthrough: JSON.stringify(getUTMTags())
     });
   } else {
     console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
