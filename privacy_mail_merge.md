@@ -66,7 +66,7 @@ When you use "Mail Merge for Sheets™ Gmail™" for the first time, you'll be a
 | Run as a Gmail add-on                                                                      | Allows execution of add-on code in the Gmail context when accessed from Gmail interface.                         |
 | Manage drafts and send emails when you interact with the add-on                            | Enables direct integration with Gmail compose functionality.                                                     |
 | View and manage spreadsheets that this application has been installed in                   | Reads recipient data and writes tracking delivery statistics to the active spreadsheet only.                     |
-| See and download all your Google Drive files                                               | Finds and attaches Google Drive files to emails when using personalized attachments feature.                     |
+| See and upload specific Google Drive files you select                                      | Finds and attaches Google Drive files to emails when using personalized attachments feature.                     |
 | Display and run third-party web content in prompts and sidebars inside Google applications | Creates user interface elements like sidebars and dialogs for campaign management.                               |
 | See and download your contacts                                                             | Imports recipient data from user's Google Contacts through the People API.                                       |
 | Allow this application to run when you are not present                                     | Manages scheduled campaigns through time-based triggers.                                                         |
