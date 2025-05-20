@@ -29,6 +29,22 @@ In Short: We aim to protect your personal information through a system of organi
 
 We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. Mail Merge for Sheets™ Gmail™ uses and transfers to any other app of information received from Google API's will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
+**DATA RETENTION AND DELETION**
+
+In Short: We do not store your personal data on our servers. All data processing occurs in real-time through Google's services. We store only email to track if customer has subscription and manage quota.
+
+1. **Data Storage**: We do not store any of your personal data, email content, or spreadsheet data on our servers. All data remains on Google's servers and is accessed only when you actively use the add-on.
+
+2. **Data Deletion**: Since we do not store your data, there is no need for data deletion from our systems. When you revoke access to the add-on through your Google Account settings, all access to your data is immediately terminated.
+
+3. **Account Deletion**: You can completely remove the add-on and its access to your data at any time by:
+   - Going to https://myaccount.google.com/connections
+   - Finding "Mail Merge for Sheets™ Gmail™" in the list
+   - Clicking "Delete all connections you have with Mail Merge for Sheets™ Gmail™"
+
+<img style="width:50%" src="{{ site.baseurl }}/images/revoke-mail-merge-add-on.png" alt="Mail Merge for Sheets™ Gmail™ - revoke access" class="screenshot editable" width="350" title="Mail Merge for Sheets™ Gmail™ - revoke access"/>
+
+4. **Data Processing**: Any data processing occurs only during active use of the add-on and is not retained after the session ends.
 
 **We do not share, track or sell your personal and business information to third parties.**
 
