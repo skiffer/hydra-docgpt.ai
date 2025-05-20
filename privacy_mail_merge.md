@@ -10,7 +10,7 @@ permalink: /privacy_mail_merge/
 }
 </style>
 
-Last updated: May 4, 2025
+Last updated: May 19, 2025
 
 
 **The personal information you disclose to us**
