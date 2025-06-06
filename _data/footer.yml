@@ -53,6 +53,9 @@
     - name: 👍 Try also - AI Email Assistant with Auto-replies, trained on your docs
       link: https://instabotgpt.com/?utm_source=docgpt&utm_medium=footer&utm_campaign=site&utm_content=aiwebchats
       new_window: true
+    - name: Contacts
+      link: /mycontacts/
+      new_window: true
     - name: Affiliate program
       link: https://docgptai.tolt.io/login
       new_window: true
