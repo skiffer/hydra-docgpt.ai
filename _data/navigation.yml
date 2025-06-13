@@ -26,11 +26,6 @@
   link: /quiz-maker-ai/
   new_window: false
   highlight: false
-- name: Privacy Mail Merge for Sheets™ Gmail™
-  link: /privacy_mail_merge/
-  new_window: true
-  highlight: false
-  nofollow: true
 #- name: Translate Slides AI
 #  link: /translate-slides-with-ai-gpt
 #  new_window: false
