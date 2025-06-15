@@ -198,8 +198,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   }
 
   input:checked + .slider {
-    background-color: #068FFF;
-  }
+        background-color: #017BFE !important; /* Updated color when turned on */
+    }
+    .slider {
+        background-color: #CBD5E0 !important; /* Updated color when turned off */
+    }
+    .offer-box {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        margin-left: 5px;
+        border-radius: 4px;
+        font-weight: bold;
+        display: inline-block; /* To make it behave like an inline element */
+    }
 
   input:focus + .slider {
     box-shadow: 0 0 1px #068FFF;
@@ -364,15 +376,15 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 </div>
 <!-- END ROW -->
 
-<div class="top" style="padding-top: 10px">
+<div class="top" style="padding-top: 10px;">
   <div class="h5" style="color: #999999;">Find perfect plan</div>
-  <div class="toggle-btn">
-    <span style="margin: 0.8em;">Annually</span>
-    <label class="switch">
-      <input id="checbox" onclick="check();" type="checkbox"/>
+<div class="toggle-btn">
+  <span style="margin: 0.8em;" id="monthly-text">Monthly</span>
+  <label class="switch">
+      <input type="checkbox" id="checbox" onclick="check();" checked />
       <span class="slider round"></span>
-    </label>
-    <span style="margin: 0.8em;">Monthly</span></div>
+  </label>
+  <span style="margin: 0.8em;" id="annually-text">Annually <span class="offer-box"> 40% OFF</span></span></div>
 </div>
 <div class="container text-center">
   <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
@@ -769,6 +781,39 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!--           href="#!">Get Started</a>-->
       </div>
     </div>
+    
+    <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+      <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+      <div class="bg-transparent card-header pt-4 border-0">
+<!--        <div class="ribbon">BEST VALUE</div>-->
+        <div class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">299</span>
+          <span class="h6 text-muted ml-2">/ once</span>
+        </div>
+        <div class="billed-annually" style="display:none"><b style="color: black">$199 - Special offer until <span id="offerEndDate"></span></b></div>
+      </div>
+      <div>
+        <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
+           data-product="875610" data-email="" data-custom-data="" data-passthrough=""
+           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+      </div>
+      <div class="card-body pt-0">
+        <ul class="list-unstyled text-feature mb-4">
+          <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green">Unlimited</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Business features</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-4, DeepSeek</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+<!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green;"><a target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your OpenAI, GEMINI, CLAUDE, or MISTRAL API key</a></b></li>-->
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
+          <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
+          <li style="color: white"> .</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
       <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
       <div class="bg-transparent card-header pt-4 border-0">
@@ -787,19 +832,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <ul class="list-unstyled text-feature mb-4">
           <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green">Unlimited</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Business features</b></li>
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4o, GPT-4o-Mini</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT-3 Turbo, GPT-4, GPT-4 Vision</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_SEARCH()</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GOOGLE_INDEXING()</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>SERP("docgpt.ai")</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>CLAUDE(prompt)</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>API(method, url, body, headers)</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>OpenRouter AI</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>PERPLEXITY(prompt)</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GEMINI(prompt)</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>GPT_VISION(url, prompt)</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>WEB SCRAPING</b></li>-->
-<!--          <li><i class="bi-check-lg icon-pricing"></i> <b>With API() function you can push/pull your content on your site, service from Sheets!</b></li>-->
+
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">NEW: GPT-4.5, GPT-4.1, o1, Claude-4, DeepSeek</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
@@ -810,33 +843,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
           <li style="color: white"> .</li>
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
-<!--          <li style="color: white"> .</li>-->
         </ul>
-<!--        <a class="paddle_button btn btn-primary mb-3 btn-lg"-->
-<!--           data-custom-data="{ interesting }"-->
-<!--           data-email=""-->
-<!--           data-product="875610"-->
-<!--           data-passthrough=""-->
-<!--           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/"-->
-<!--           data-theme="none" href="#!">Get Started</a>-->
       </div>
     </div>
   </div>
@@ -1846,21 +1853,29 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!--Steps end-->
 <script>
   function check() {
-    console.log("Called check!");
-    var checkBox = document.getElementById("checbox");
-    var text1 = document.getElementsByClassName("text1");
-    var text2 = document.getElementsByClassName("text2");
+        console.log("Called check!");
+        var checkBox = document.getElementById("checbox");
+        var text1 = document.getElementsByClassName("text2");
+        var text2 = document.getElementsByClassName("text1");
 
-    for (var i = 0; i < text1.length; i++) {
-      if (checkBox.checked == true) {
-        text1[i].style.display = "block";
-        text2[i].style.display = "none";
-      } else if (checkBox.checked == false) {
-        text1[i].style.display = "none";
-        text2[i].style.display = "block";
-      }
+        // Retrieve the element by its ID
+        var monthlyText = document.getElementById("monthly-text");
+        var annuallyText = document.getElementById("annually-text");
+
+        for (var i = 0; i < text1.length; i++) {
+            if (checkBox.checked == true) {
+                text1[i].style.display = "block";
+                text2[i].style.display = "none";
+                monthlyText.style.fontWeight = "normal";
+                annuallyText.style.fontWeight = "bold";
+            } else if (checkBox.checked == false) {
+                text1[i].style.display = "none";
+                text2[i].style.display = "block";
+                monthlyText.style.fontWeight = "bold";
+                annuallyText.style.fontWeight = "normal";
+            }
+        }
     }
-  }
 
   check();
 </script>
