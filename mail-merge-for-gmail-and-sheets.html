@@ -1,0 +1,1180 @@
+---
+title: Mail Merge for Gmail and Sheets | Best Email Marketing Tool 2025
+heading: Mail Merge for Gmail and Sheets - Your marketing email outreach with the best-rated platform
+description: Transform your email marketing with our powerful Mail Merge for Gmail & Google Sheets. Send personalized mass emails, track opens & clicks, and achieve 98% deliverability. Perfect for sales teams, marketers & recruiters. Start free - no credit card required. Trusted by 100,000+ professionals for email campaigns, automated follow-ups & CRM integration.
+---
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<!-- Event snippet for Begin checkout -1 conversion page -->
+<script>
+  function gtag_report_conversion(value, currency) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion');
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/_uxkCMvilKEZEIDO29sD',
+      'value': value,
+      'currency': currency,
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<!-- Event snippet for Purchase conversion page -->
+<script>
+  function gtag_report_conversion_purchase(value, currency) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion_purchase');
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/oTPECKzt7rAaEIDO29sD',
+      'value': value,
+      'currency': currency,
+      'transaction_id': '',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<!-- Event snippet for Install add-on conversion page -->
+<script>
+  function gtag_report_conversion_install_addon(url) {
+    var callback = function () {
+      console.log('callback: gtag_report_conversion_install_addon');
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-997648128/IYmnCJr04LIaEIDO29sD',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
+<script>
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+  function getUTMTags() {
+    var utmTagsJson = getCookie('utm_tags');
+    if (utmTagsJson) {
+      return JSON.parse(utmTagsJson);
+    } else {
+      return {"exist": "false"};
+    }
+  }
+</script>
+
+<script type="text/javascript">
+  Paddle.Setup({
+    vendor: 13096,
+    eventCallback: function (data) {
+      if (data.event === "Checkout.Complete") {
+        let dataLayerInfo = {
+          event: "purchase",
+          ecommerce: {
+            transaction_id: data.eventData.checkout.id,
+            affiliation: "Affiliation Mail Merge",
+            value: data.eventData.checkout.prices.customer.total,
+            tax: data.eventData.checkout.prices.customer.total_tax,
+            shipping: null,
+            currency: data.eventData.checkout.prices.customer.currency,
+            coupon: data.eventData.checkout.coupon.coupon_code,
+            items: data.eventData.checkout.prices.customer.items,
+            customData: data.eventData.checkout.customData,
+            passthrough: data.eventData.checkout.passthrough || "no"
+          },
+        };
+        dataLayer.push(dataLayerInfo);
+        gtag_report_conversion_purchase(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
+
+        // Facebook Pixel Purchase Tracking
+        fbq('track', 'Purchase', {
+          value: data.eventData.checkout.prices.customer.total,
+          currency: data.eventData.checkout.prices.customer.currency
+        });
+        qp('track', 'Purchase');
+      }
+
+      if (data.event === "Checkout.Loaded") {
+        qp('track', 'InitiateCheckout');
+        fbq('track', 'InitiateCheckout');
+        console.log('> Checkout.Loaded');
+        console.log(JSON.stringify(data));
+
+        gtag_report_conversion(
+                data.eventData.checkout.prices.customer.total,
+                data.eventData.checkout.prices.customer.currency
+        );
+      }
+    }
+  });
+</script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
+
+<style>
+  .text-feature {
+    font-size: 13px;
+    text-align: left !important;
+  }
+  .box-selected {
+    border: 2px solid #017BFE !important;
+    border-radius: 10px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0A6EBD;
+    -webkit-transition: 0.4s;
+    transform: translate(0px, 0px);
+    transition: 0.6s ease transform, 0.6s box-shadow;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input,
+  label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
+  }
+
+  input:checked + .slider {
+    background-color: #017BFE !important;
+  }
+  .slider {
+    background-color: #CBD5E0 !important;
+  }
+  .offer-box {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 4px 4px 4px 4px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #068FFF;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ribbon {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+    background: #4dbe3b;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 25px;
+    right: -30px;
+    line-height: 32px;
+  }
+
+  .billed-annually {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .pricing {
+    margin-bottom: 20px;
+  }
+
+  .card-pricing {
+    position: relative;
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .card-pricing.popular {
+    border-color: #007bff;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+  }
+
+  .icon-pricing {
+    color: #28a745;
+    margin-right: 8px;
+  }
+
+  .text1 { display: block; }
+  .text2 { display: none; }
+  
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .offer-box {
+    background-color: #ff4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+</style>
+
+<!-- <div class="container text-center">
+  <h1>Mail Merge for Gmail and Sheets Pricing</h1>
+  <p class="lead">The most powerful way to send personalized bulk emails directly from Google Sheets. Track every interaction, schedule campaigns, and boost your email success.</p>
+</div> -->
+
+<div class="container text-center">
+  <div class="row justify-content-center mb-5">
+    <div class="col-lg-10">
+      <div class="card border-primary">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <i class="bi bi-shield-check text-primary" style="font-size: 2.5rem;"></i>
+              <h5 class="mt-2">Secure & Trusted</h5>
+              <p class="small mb-0">GDPR Compliant<br>TAS Security Certified</p>
+            </div>
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <i class="bi bi-graph-up text-primary" style="font-size: 2.5rem;"></i>
+              <h5 class="mt-2">Real-time Tracking</h5>
+              <p class="small mb-0">Opens, Clicks, Replies<br>Bounces & Unsubscribes</p>
+            </div>
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <i class="bi bi-clock text-primary" style="font-size: 2.5rem;"></i>
+              <h5 class="mt-2">Smart Scheduling</h5>
+              <p class="small mb-0">Send at Perfect Time<br>Timezone Intelligent</p>
+            </div>
+            <div class="col-md-3 text-center">
+              <i class="bi bi-person-check text-primary" style="font-size: 2.5rem;"></i>
+              <h5 class="mt-2">Personalization</h5>
+              <p class="small mb-0">Custom Fields<br>Dynamic Content and images, pdfs, slides, spreadsheets, attachments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+        <p class="lead">During purchase, please use <span class="badge bg-warning text-dark">the same email you will use in Google (Sheets, Gmail)</span></p>
+  </div>
+  
+  <!-- Pricing Toggle -->
+  <div class="container text-center mb-5">
+    <div class="top" style="padding-top: 10px;">
+      <div class="h5" style="color: #999999;">Choose Your Plan</div>
+      <div class="toggle-btn">
+        <span style="margin: 0.8em;" id="monthly-text">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="checbox" onclick="check();" checked />
+          <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em; font-weight: bold;" id="annually-text">Annually <span class="offer-box">SAVE 40%</span></span>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set initial state to checked (annual)
+      var checkbox = document.getElementById("checbox");
+      checkbox.checked = true;
+      // Initial check to set correct display
+      check();
+    });
+  
+    function check() {
+      console.log("Toggle pricing display");
+      var checkBox = document.getElementById("checbox");
+      var monthlyPricing = document.getElementsByClassName("text1");
+      var yearlyPricing = document.getElementsByClassName("text2");
+      var monthlyText = document.getElementById("monthly-text");
+      var annuallyText = document.getElementById("annually-text");
+  
+      for (var i = 0; i < monthlyPricing.length; i++) {
+        if (checkBox.checked) {
+          monthlyPricing[i].style.display = "none";
+          yearlyPricing[i].style.display = "block";
+          monthlyText.style.fontWeight = "normal";
+          annuallyText.style.fontWeight = "bold";
+        } else {
+          monthlyPricing[i].style.display = "block";
+          yearlyPricing[i].style.display = "none";
+          monthlyText.style.fontWeight = "bold";
+          annuallyText.style.fontWeight = "normal";
+        }
+      }
+    }
+  </script>
+  
+  <!-- Pricing Cards Container -->
+  <div class="container mb-5 mt-5" id="pricing">
+    <div class="pricing card-deck flex-column flex-md-row mb-3">
+      <!-- Monthly Pricing Cards -->
+      <div class="card card-pricing text-center px-3 mb-4 text1">
+        <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+        <div class="bg-transparent card-header pt-4 border-0">
+          <h1 class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">4</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
+        </div>
+        <div>
+          <a href="https://buy.stripe.com/eVqcMYbTV0nO40056R8k80c" 
+             class="btn btn-outline-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+        <div class="card-body pt-0">
+          <!-- <p class="text-muted mb-3">Everything in Free, plus:</p> -->
+          <ul class="list-unstyled mb-4 text-feature">
+            <li><i class="bi-check-lg icon-pricing"></i> <b>5,000 emails/month</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>10 campaigns</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>1 sender</b></li>
+            <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Send on Autopilot</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Remove branding</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Basic personalization</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Gmail integration</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Google Sheets integration</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Premium Plan - Monthly -->
+      <div class="card card-pricing popular text-center px-3 mb-4 text1">
+          <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium</span>
+          <div class="bg-transparent card-header pt-4 border-0">
+              <div class="ribbon">POPULAR</div>
+              <h1 class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">12</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
+          </div>
+        <div>
+          <a href="https://buy.stripe.com/cNi00c4rt4E48gg56R8k80d" 
+             class="btn btn-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+          <div class="card-body pt-0">
+              <p class="text-muted mb-3">Everything in Starter, plus:</p>
+              <ul class="list-unstyled text-feature mb-4">
+                <li><i class="bi-check-lg icon-pricing"></i> <b>15,000 emails/month</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>25 campaigns</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>3 senders</b></li>
+                <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Email tracking</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Sheets Automation</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Add attachments</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> Advanced personalization</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Campaign scheduling</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Custom templates</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
+              </ul>
+          </div>
+      </div>
+  
+      <!-- Pro Plan - Monthly -->
+      <div class="card card-pricing text-center px-3 mb-4 text1">
+        <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro</span>
+        <div class="bg-transparent card-header pt-4 border-0">
+          <div class="ribbon">BEST VALUE</div>
+          <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">24</span><span class="h6 text-muted ml-2">.99 /month</span></div>
+        </div>
+        <div>
+          <a href="https://buy.stripe.com/7sYbIU6zB7Qgcww56R8k80e" 
+             class="btn btn-outline-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+        <div class="card-body pt-0">
+          <p class="text-muted mb-3">Everything in Premium, plus:</p>
+          <ul class="list-unstyled text-feature mb-4">
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Unlimited emails/month</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Unlimited campaigns</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>5 senders</b></li>
+            <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Bounce detection</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Email verification</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Create follow-up campaign</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Priority support</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> Advanced analytics</li>
+            <!-- <li><i class="bi-check-lg icon-pricing"></i> API access</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Custom integrations</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Dedicated account manager</li> -->
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Yearly Pricing Cards -->
+      <div class="card card-pricing text-center px-3 mb-4 text2">
+        <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
+        <div class="bg-transparent card-header pt-4 border-0">
+          <h1 class="h1 font-weight-normal text-primary text-center mb-0"><span class="price">3</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
+          <div class="billed-annually">Billed annually (2 months free)</div>
+        </div>
+        <div>
+          <a href="https://buy.stripe.com/fZu7sE7DF0nO7cc7eZ8k80h" 
+             class="btn btn-outline-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+        <div class="card-body pt-0">
+          <!-- <p class="text-muted mb-3">Everything in Free, plus:</p> -->
+          <ul class="list-unstyled mb-4 text-feature">
+            <li><i class="bi-check-lg icon-pricing"></i> <b>5,000 emails/month</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>10 campaigns</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>1 sender</b></li>
+            <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Send on Autopilot</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Remove branding</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Basic personalization</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Gmail integration</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Google Sheets integration</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Premium Plan - Yearly -->
+      <div class="card card-pricing popular text-center px-3 mb-4 text2">
+          <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium</span>
+          <div class="bg-transparent card-header pt-4 border-0">
+              <div class="ribbon">POPULAR</div>
+              <h1 class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">10</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
+              <div class="billed-annually">Billed annually (2 months free)</div>
+          </div>
+        <div>
+          <a href="https://buy.stripe.com/4gM14ggabb2s8gg2YJ8k80g" 
+             class="btn btn-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+          <div class="card-body pt-0">
+              <p class="text-muted mb-3">Everything in Starter, plus:</p>
+              <ul class="list-unstyled text-feature mb-4">
+                <li><i class="bi-check-lg icon-pricing"></i> <b>15,000 emails/month</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>25 campaigns</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>3 senders</b></li>
+                <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Email tracking</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Sheets Automation</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> <b>Add attachments</b></li>
+                <li><i class="bi-check-lg icon-pricing"></i> Advanced personalization</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Campaign scheduling</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Custom templates</li>
+                <li><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
+              </ul>
+          </div>
+      </div>
+  
+      <!-- Pro Plan - Yearly -->
+      <div class="card card-pricing popular shadow box-selected text-center px-3 mb-4 text2">
+        <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro</span>
+        <div class="bg-transparent card-header pt-4 border-0">
+          <div class="ribbon">BEST VALUE</div>
+          <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">20</span><span class="h6 text-muted ml-2">.99 /month</span></div>
+          <div class="billed-annually">Billed annually (2 months free)</div>
+        </div>
+        <div>
+          <a href="https://buy.stripe.com/fZueV6cXZ8Uk7cceHr8k80f" 
+             class="btn btn-primary btn-block mb-3" 
+             target="_blank">Upgrade Now</a>
+        </div>
+        <div class="card-body pt-0">
+          <p class="text-muted mb-3">Everything in Premium, plus:</p>
+          <ul class="list-unstyled text-feature mb-4">
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Unlimited emails/month</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Unlimited campaigns</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>5 senders</b></li>
+            <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Bounce detection</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Email verification</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Create follow-up campaign</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>Priority support</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> Advanced analytics</li>
+            <!-- <li><i class="bi-check-lg icon-pricing"></i> API access</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Custom integrations</li>
+            <li><i class="bi-check-lg icon-pricing"></i> Dedicated account manager</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container text-center">
+        <!-- <p class="lead">Join and scale <span class="badge bg-warning text-dark"> your email outreach with the best-rated platform</span></p> -->
+    <!-- <p class="lead"><span class="badge bg-warning text-dark"> Special launch pricing! The price will increase as we add more features. Lock in your rate now! </span></p> -->
+    <p class="lead"><span class="badge bg-warning text-dark"> Special launch pricing! The price will increase as we add more features. Lock in your rate now! </span></p>
+  </div>
+
+  <div class="container text-center mb-5">
+    <div class="alert alert-info" role="alert">
+      <h4 class="alert-heading"><i class="bi bi-lightning-charge"></i> Power Features Included in All Plans</h4>
+      <div class="row mt-4">
+        <div class="col-md-6 text-left mb-3">
+          <h5><i class="bi bi-envelope-check"></i> Advanced Email Features</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2"></i> Schedule emails for perfect timing</li>
+            <li><i class="bi bi-check2"></i> Personalized file attachments per recipient</li>
+            <li><i class="bi bi-check2"></i> CC and BCC support for each email</li>
+            <li><i class="bi bi-check2"></i> Use Gmail drafts as templates</li>
+            <li><i class="bi bi-check2"></i> HTML email support with rich formatting</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-left mb-3">
+          <h5><i class="bi bi-graph-up"></i> Real-time Tracking</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2"></i> Track email opens and link clicks</li>
+            <li><i class="bi bi-check2"></i> Monitor replies and bounces</li>
+            <li><i class="bi bi-check2"></i> Unsubscribe tracking</li>
+            <li><i class="bi bi-check2"></i> Visual status updates in Sheets</li>
+            <li><i class="bi bi-check2"></i> Detailed engagement analytics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6 text-left mb-3">
+          <h5><i class="bi bi-person-bounding-box"></i> Deep Personalization</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2"></i> Unlimited custom fields</li>
+            <li><i class="bi bi-check2"></i> Dynamic content insertion</li>
+            <li><i class="bi bi-check2"></i> Personalized links and URLs</li>
+            <li><i class="bi bi-check2"></i> Custom images per recipient</li>
+            <li><i class="bi bi-check2"></i> AI-powered personalization</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-left">
+          <h5><i class="bi bi-shield-check"></i> Security & Compliance</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check2"></i> GDPR compliant</li>
+            <li><i class="bi bi-check2"></i> TAS security certified</li>
+            <li><i class="bi bi-check2"></i> Data never leaves Google</li>
+            <li><i class="bi bi-check2"></i> Native Gmail delivery</li>
+            <li><i class="bi bi-check2"></i> Automatic error handling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <!-- <p class="lead">During purchase, please use <span class="badge bg-warning text-dark">the same email you will use in Google Sheets</span>, preferably a personal (not company) email.</p> -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card border-success mb-4">
+          <div class="card-body text-center">
+            <h4 class="card-title"><i class="bi bi-rocket-takeoff"></i> Quick Start</h4>
+            <p class="card-text">Get started in less than 2 minutes</p>
+            <a href="https://workspace.google.com/marketplace/app/mail_merge_for_gmail_sheets/213303404172?utm_source=pricing_page&utm_medium=website&utm_campaign=install_button_top" 
+               class="btn btn-success btn-lg btn-block mb-2" 
+               target="_blank">
+              <i class="bi bi-download"></i> Get Started Now
+            </a>
+            <small class="text-muted">No credit card required</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Preview Screenshots Section -->
+<div class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h2 class="text-center mb-5">See Mail Merge in Action</h2>
+        
+        <!-- Preview 1: Send and Track -->
+        <div class="card mb-5">
+          <div class="card-body p-0">
+            <div class="row align-items-center">
+              <div class="col-md-6 p-4">
+                <h3>Send and Track Personalized Bulk Emails</h3>
+                <p class="lead">Monitor your campaign progress in real-time with detailed status tracking for each recipient:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check-circle-fill text-success"></i> Track email opens and clicks</li>
+                  <li><i class="bi bi-check-circle-fill text-success"></i> Monitor replies and unsubscribes</li>
+                  <li><i class="bi bi-check-circle-fill text-success"></i> View delivery status</li>
+                  <li><i class="bi bi-check-circle-fill text-success"></i> Get instant campaign metrics</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img src="{{ site.baseurl }}/images/mail-merge-prev-1.png" alt="Mail Merge Campaign Tracking Interface" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Preview 2: Analytics -->
+        <div class="card mb-5">
+          <div class="card-body p-0">
+            <div class="row align-items-center flex-row-reverse">
+              <div class="col-md-6 p-4">
+                <h3>Track Campaign Success with Clear Analytics</h3>
+                <p class="lead">Get comprehensive insights into your campaign performance:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-graph-up text-primary"></i> Delivery rate analysis</li>
+                  <li><i class="bi bi-graph-up text-primary"></i> Open and click-through rates</li>
+                  <li><i class="bi bi-graph-up text-primary"></i> Response tracking</li>
+                  <li><i class="bi bi-graph-up text-primary"></i> Bounce and unsubscribe monitoring</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img src="{{ site.baseurl }}/images/mail-merge-prev-2.png" alt="Campaign Analytics Dashboard" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Preview 3: Personalization -->
+        <div class="card mb-5">
+          <div class="card-body p-0">
+            <div class="row align-items-center">
+              <div class="col-md-6 p-4">
+                <h3>Advanced Email Personalization</h3>
+                <p class="lead">Create highly personalized emails with dynamic content:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-person-check text-success"></i> Custom variables and fields</li>
+                  <li><i class="bi bi-link-45deg text-success"></i> Personalized links and URLs</li>
+                  <li><i class="bi bi-image text-success"></i> Dynamic images and attachments</li>
+                  <li><i class="bi bi-envelope-check text-success"></i> Smart mail merge tags</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img src="{{ site.baseurl }}/images/mail-merge-prev-3.png" alt="Email Personalization Interface" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Preview 4: Scheduling -->
+        <div class="card mb-5">
+          <div class="card-body p-0">
+            <div class="row align-items-center flex-row-reverse">
+              <div class="col-md-6 p-4">
+                <h3>Smart Campaign Scheduling</h3>
+                <p class="lead">Send your emails at the perfect time:</p>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-clock text-primary"></i> Schedule campaigns in advance</li>
+                  <li><i class="bi bi-calendar-check text-primary"></i> Choose optimal sending times</li>
+                  <li><i class="bi bi-globe text-primary"></i> Timezone-intelligent delivery</li>
+                  <li><i class="bi bi-arrow-repeat text-primary"></i> Automated follow-ups</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <img src="{{ site.baseurl }}/images/mail-merge-prev-4.png" alt="Campaign Scheduling Interface" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container text-center">
+  <!-- <p class="lead">During purchase, please use <span class="badge bg-warning text-dark">the same email you will use in Google Sheets</span>, preferably a personal (not company) email.</p> -->
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card border-success mb-4">
+        <div class="card-body text-center">
+          <h4 class="card-title"><i class="bi bi-rocket-takeoff"></i> Quick Start</h4>
+          <p class="card-text">Get started in less than 2 minutes</p>
+          <a href="https://workspace.google.com/marketplace/app/mail_merge_for_gmail_sheets/213303404172?utm_source=pricing_page&utm_medium=website&utm_campaign=install_button_top" 
+             class="btn btn-success btn-lg btn-block mb-2" 
+             target="_blank">
+            <i class="bi bi-download"></i> Get Started Now
+          </a>
+          <small class="text-muted">No credit card required</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Onboarding Steps -->
+<div class="container mb-5" id="onboarding">
+  <h2 class="text-center mb-4">Start Sending Personalized Emails in Minutes</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="timeline">
+        <div class="row">
+          <!-- Step 1: Install -->
+          <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                  <i class="bi bi-download" style="font-size: 24px;"></i>
+                </div>
+                <h5>1. Install Add-on</h5>
+                <ul class="list-unstyled text-left small">
+                  <li><i class="bi bi-check-circle text-success"></i> Install from Google Workspace</li>
+                  <li><i class="bi bi-check-circle text-success"></i> <a href="https://sheets.new" target="_blank">Open Google Sheet</a></li>
+                  <li><i class="bi bi-check-circle text-success"></i> Go to Extensions menu</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Select "Mail Merge for Gmail and Sheets"</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Click "Launch"</li>
+                </ul>
+                <a href="https://workspace.google.com/marketplace/app/mail_merge_for_gmail_sheets/213303404172?utm_source=pricing_page&utm_medium=website&utm_campaign=step1" 
+                   class="btn btn-outline-primary btn-sm mt-2" 
+                   target="_blank">Install Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Setup Sheet -->
+          <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                  <i class="bi bi-table" style="font-size: 24px;"></i>
+                </div>
+                <h5>2. Setup Sheet</h5>
+                <ul class="list-unstyled text-left small">
+                  <li><i class="bi bi-check-circle text-success"></i> Click "Set Up Sheet" in sidebar</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Required columns will be added</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Import from Google Contacts</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Or paste from other sources</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Add custom columns as needed</li>
+                </ul>
+                <!-- <a href="https://sheets.google.com" 
+                   class="btn btn-outline-success btn-sm mt-2" 
+                   target="_blank">Open Sheets</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Create Draft -->
+          <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="rounded-circle bg-info text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                  <i class="bi bi-envelope" style="font-size: 24px;"></i>
+                </div>
+                <h5>3. Create Gmail Draft</h5>
+                <ul class="list-unstyled text-left small">
+                  <li><i class="bi bi-check-circle text-success"></i> Open Gmail drafts</li>
+                  <li><i class="bi bi-check-circle text-success"></i> <a href="https://mail.google.com/mail/#compose" target="_blank">Create new draft</a></li>
+                  <li><i class="bi bi-check-circle text-success"></i> Use {{Column Name}} variables</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Add personalized links/images</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Save as draft</li>
+                </ul>
+                <!-- <a href="https://mail.google.com/mail/#drafts" 
+                   class="btn btn-outline-info btn-sm mt-2" 
+                   target="_blank">Create Draft</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Launch Campaign -->
+          <div class="col-md-3 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="rounded-circle bg-warning text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                  <i class="bi bi-rocket" style="font-size: 24px;"></i>
+                </div>
+                <h5>4. Launch Campaign</h5>
+                <ul class="list-unstyled text-left small">
+                  <li><i class="bi bi-check-circle text-success"></i> Click "Start New Campaign"</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Select your draft</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Enable tracking options</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Click "Start Campaign"</li>
+                  <li><i class="bi bi-check-circle text-success"></i> Monitor progress</li>
+                </ul>
+                <!-- <button class="btn btn-outline-warning btn-sm mt-2">Start Sending</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Template Variables Guide -->
+        <div class="card border-primary mt-4">
+          <div class="card-header bg-primary text-white">
+            <h5 class="mb-0"><i class="bi bi-braces"></i> Quick Variable Guide</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h6 class="mb-3">Common Variables:</h6>
+                <ul class="list-unstyled">
+                  <li><code>&#123;&#123;First Name&#125;&#125;</code> - Recipient's first name</li>
+                  <li><code>&#123;&#123;Last Name&#125;&#125;</code> - Recipient's last name</li>
+                  <li><code>&#123;&#123;Email&#125;&#125;</code> - Email address</li>
+                  <li><code>&#123;&#123;Company&#125;&#125;</code> - Company name</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="mb-3">Advanced Variables:</h6>
+                <ul class="list-unstyled">
+                  <li><code>&#123;&#123;Custom URL&#125;&#125;</code> - Personalized links</li>
+                  <li><code>&#123;&#123;Meeting Time&#125;&#125;</code> - Schedule slots</li>
+                  <li><code>&#123;&#123;Product&#125;&#125;</code> - Product details</li>
+                  <li><code>&#123;&#123;Any Column&#125;&#125;</code> - Any sheet column</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campaign Monitoring -->
+        <div class="card border-success mt-4">
+          <div class="card-header bg-success text-white">
+            <h5 class="mb-0"><i class="bi bi-graph-up"></i> Campaign Monitoring</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h6 class="mb-3">Track Your Campaign:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check2"></i> Click "Refresh Email Status" to update</li>
+                  <li><i class="bi bi-check2"></i> Monitor opens, clicks, and bounces</li>
+                  <li><i class="bi bi-check2"></i> Track unsubscribe requests</li>
+                  <li><i class="bi bi-check2"></i> View detailed event timeline</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h6 class="mb-3">Status Details:</h6>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check2"></i> Click on Mail Merge status</li>
+                  <li><i class="bi bi-check2"></i> See all event timestamps</li>
+                  <li><i class="bi bi-check2"></i> Export campaign analytics</li>
+                  <li><i class="bi bi-check2"></i> Generate performance reports</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Action -->
+        <div class="text-center mt-4">
+          <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading mb-0">Ready to Start?</h4>
+            <p class="mb-0">Install now and send your first campaign in minutes!</p>
+          </div>
+          <a href="https://workspace.google.com/marketplace/app/mail_merge_for_gmail_sheets/213303404172?utm_source=pricing_page&utm_medium=website&utm_campaign=bottom_install" 
+             class="btn btn-primary btn-lg" 
+             target="_blank">
+            <i class="bi bi-rocket-takeoff"></i> Get Started Free
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card border-success">
+        <div class="card-body">
+          <h3 class="text-center mb-4">Perfect For Every Business Need</h3>
+          <div class="row text-center">
+            <div class="col-md-3 mb-4">
+              <i class="bi bi-briefcase text-success" style="font-size: 2rem;"></i>
+              <h5>Sales Teams</h5>
+              <p class="small">Personalized outreach<br>Lead nurturing<br>Follow-ups</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <i class="bi bi-megaphone text-success" style="font-size: 2rem;"></i>
+              <h5>Marketers</h5>
+              <p class="small">Newsletters<br>Campaigns<br>Analytics</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <i class="bi bi-people text-success" style="font-size: 2rem;"></i>
+              <h5>HR Teams</h5>
+              <p class="small">Recruiting<br>Onboarding<br>Internal comms</p>
+            </div>
+            <div class="col-md-3 mb-4">
+              <i class="bi bi-person text-success" style="font-size: 2rem;"></i>
+              <h5>Freelancers</h5>
+              <p class="small">Client updates<br>Proposals<br>Invoicing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<div class="container mb-5 mt-5" id="faq">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+      
+      <div class="accordion" id="faqAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What is Mail Merge for Gmail and Sheets?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+            <div class="card-body">
+              Mail Merge for Gmail and Sheets is a powerful tool that allows you to send personalized bulk emails directly from Google Sheets using your Gmail account. You can customize each email with recipient-specific information stored in your spreadsheet.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How many emails can I send per day?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+            <div class="card-body">
+              Your daily email limit depends on your Gmail account type. Regular Gmail accounts can send up to 500 emails per day, while Google Workspace accounts can send up to 2,000 emails per day. Our plans work within these Gmail limits.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Can I track email opens and clicks?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+            <div class="card-body">
+              Yes! All plans include email tracking features. You can see when emails are opened, track clicks on links, and monitor bounces. The Pro and Business plans offer more advanced analytics and reporting features.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What file formats can I attach to emails?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+            <div class="card-body">
+              You can attach various file formats including PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, TXT, CSV, and common image formats (JPG, PNG, GIF). The Starter plan supports CSV attachments, while Pro and Business plans support multiple file attachments.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Is my data secure?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+            <div class="card-body">
+              Absolutely! We use industry-standard encryption and security practices. Your emails are sent directly through your Gmail account, and we don't store your email content or recipient data. We only access the necessary permissions to read your Google Sheets and send emails through Gmail.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Can I schedule emails to be sent later?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+            <div class="card-body">
+              Yes! The Pro and Business plans include email scheduling features. You can set specific dates and times for your mail merge campaigns to be sent automatically.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                What support do you offer?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+            <div class="card-body">
+              All plans include email support. Pro plans get priority email support, while Business plans include both priority email support and phone support. We also have extensive documentation and video tutorials available.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingEight">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Can I cancel my subscription anytime?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+            <div class="card-body">
+              Yes, you can cancel your subscription at any time. If you cancel, you'll continue to have access to your plan features until the end of your billing period. No cancellation fees apply.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+      <div class="alert alert-warning" role="alert">
+        <h4><i class="bi bi-clock-history"></i> Limited Time Offer!</h4>
+        <p class="mb-0">Lock in our current prices before they increase! Start with our free plan and upgrade anytime.</p>
+      </div>
+      <a href="https://workspace.google.com/marketplace/app/mail_merge_for_gmail_sheets/213303404172?utm_source=pricing_page&utm_medium=website&utm_campaign=bottom_cta" class="btn btn-primary btn-lg" target="_blank">Get Started Now - Install Free Add-on</a>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Trusted by users for their email marketing needs</b></div>
+
+<script type="text/javascript">
+  function getURLParameter(name) {
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const results = regex.exec(window.location.href);
+
+    if (!results || !results[2]) {
+      return null;
+    }
+
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  const emailParam = getURLParameter('email');
+  const couponParam = getURLParameter('coupon');
+  const planIdParam = getURLParameter('plan_id');
+
+  const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+  if (getStartedLinks) {
+    getStartedLinks.forEach(link => {
+      link.setAttribute('data-email', emailParam || '');
+    });
+  }
+
+  var pricingSection = document.getElementById("pricing");
+
+  if (pricingSection) {
+    pricingSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
+
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  function storeUTMTags() {
+    var utmTags = {
+      utm_source: getURLParameter('utm_source'),
+      utm_medium: getURLParameter('utm_medium'),
+      utm_campaign: getURLParameter('utm_campaign'),
+      utm_content: getURLParameter('utm_content'),
+      utm_term: getURLParameter('utm_term'),
+      email: getURLParameter('email'),
+      creation_time: new Date().toISOString()
+    };
+    setCookie('utm_tags', JSON.stringify(utmTags), 28);
+    console.log('stored: ' + JSON.stringify(utmTags));
+  }
+
+  function setPassthroughAttribute(val) {
+    const passthroughLinks = document.querySelectorAll(".paddle_button");
+
+    if (passthroughLinks.length > 0) {
+      passthroughLinks.forEach((link) => {
+        link.setAttribute("data-passthrough", val || "");
+        link.setAttribute("data-custom-data", val || "");
+      });
+    } else {
+      console.log("No elements found with the specified selector.");
+    }
+  }
+
+  window.onload = function() {
+    var utmTags;
+    if (getURLParameter('utm_source')) {
+      storeUTMTags();
+    }
+
+    utmTags = getUTMTags();
+    console.log('utmTags:' + JSON.stringify(utmTags));
+    setPassthroughAttribute(JSON.stringify(utmTags));
+  };
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script> 

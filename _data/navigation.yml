@@ -1,10 +1,14 @@
 - name: Home
   link: /
-  new_window: false
+  new_window: true
   highlight: false
 - name: 🔥 GPT for Sheets
   link: /gpt-for-sheets/
-  new_window: false
+  new_window: true
+  highlight: false
+- name: ✉️ Mail Merge for Gmail
+  link: /mail-merge-for-gmail-and-sheets-pricing/
+  new_window: true
   highlight: false
 - name: 🤝 Linkedin Automation
   link: /cold-outreach-messages-linkedin/
@@ -12,19 +16,19 @@
   highlight: false
 - name: ✉️ AI Email Assistant
   link: /ai-email-assistant/
-  new_window: false
+  new_window: true
   highlight: false
 - name: 📄 Google Doc AI
   link: /google-doc-ai/
-  new_window: false
+  new_window: true
   highlight: false
 - name: 🖼️ Google Slide AI
   link: /google-slide-ai/
-  new_window: false
+  new_window: true
   highlight: false
 - name: 📝 Quiz Maker AI
   link: /quiz-maker-ai/
-  new_window: false
+  new_window: true
   highlight: false
 #- name: Translate Slides AI
 #  link: /translate-slides-with-ai-gpt

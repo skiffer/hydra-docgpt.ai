@@ -1,5 +1,8 @@
 - name: "Tools"
   links:
+    - name: Mail Merge for Gmail and Sheets
+      link: /mail-merge-for-gmail-and-sheets-pricing/
+      new_window: true
     - name: GPT Translation
       link: /gpt-translation/
       new_window: true
