@@ -376,7 +376,7 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
   <div class="container mb-5 mt-5" id="pricing">
     <div class="pricing card-deck flex-column flex-md-row mb-3">
       <!-- Monthly Pricing Cards -->
-      <div class="card card-pricing text-center px-3 mb-4 text1">
+      <div class="card card-pricing text-center px-3 mb-4 shadow popular text1">
         <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
         <div class="bg-transparent card-header pt-4 border-0">
           <h1 class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">4</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
@@ -389,7 +389,7 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
         <div class="card-body pt-0">
           <!-- <p class="text-muted mb-3">Everything in Free, plus:</p> -->
           <ul class="list-unstyled mb-4 text-feature">
-            <li><i class="bi-check-lg icon-pricing"></i> <b>5,000 emails/month</b></li>
+            <li><i class="bi-check-lg icon-pricing"></i> <b>30 emails/day</b></li>
             <li><i class="bi-check-lg icon-pricing"></i> <b>10 campaigns</b></li>
             <li><i class="bi-check-lg icon-pricing"></i> <b>1 sender</b></li>
             <li class="font-weight-bold mt-3">ADDITIONAL FEATURES</li>
@@ -403,7 +403,7 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
       </div>
   
       <!-- Premium Plan - Monthly -->
-      <div class="card card-pricing popular text-center px-3 mb-4 text1">
+      <div class="card card-pricing popular text-center px-3 mb-4 box-selected popular shadow text1">
           <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium</span>
           <div class="bg-transparent card-header pt-4 border-0">
               <div class="ribbon">POPULAR</div>
@@ -433,7 +433,7 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
       </div>
   
       <!-- Pro Plan - Monthly -->
-      <div class="card card-pricing text-center px-3 mb-4 text1">
+      <div class="card card-pricing text-center px-3 mb-4 shadow popular text1">
         <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro</span>
         <div class="bg-transparent card-header pt-4 border-0">
           <div class="ribbon">BEST VALUE</div>
@@ -464,11 +464,11 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
       </div>
   
       <!-- Yearly Pricing Cards -->
-      <div class="card card-pricing text-center px-3 mb-4 text2">
+      <div class="card card-pricing text-center px-3 mb-4 popular shadow text2">
         <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter</span>
         <div class="bg-transparent card-header pt-4 border-0">
           <h1 class="h1 font-weight-normal text-primary text-center mb-0"><span class="price">3</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
-          <div class="billed-annually">Billed annually (2 months free)</div>
+          <div class="billed-annually"><strong>💰 Save $12/year</strong> • Pay annually</div>
         </div>
         <div>
           <a href="https://buy.stripe.com/fZu7sE7DF0nO7cc7eZ8k80h" 
@@ -492,12 +492,12 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
       </div>
   
       <!-- Premium Plan - Yearly -->
-      <div class="card card-pricing popular text-center px-3 mb-4 text2">
+      <div class="card card-pricing popular box-selected shadow text-center px-3 mb-4 text2">
           <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium</span>
           <div class="bg-transparent card-header pt-4 border-0">
               <div class="ribbon">POPULAR</div>
               <h1 class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">10</span><span class="h6 text-muted ml-2">.99 /month</span></h1>
-              <div class="billed-annually">Billed annually (2 months free)</div>
+              <div class="billed-annually"><strong>💰 Save $24/year</strong> • Pay annually</div>
           </div>
         <div>
           <a href="https://buy.stripe.com/4gM14ggabb2s8gg2YJ8k80g" 
@@ -523,16 +523,16 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
       </div>
   
       <!-- Pro Plan - Yearly -->
-      <div class="card card-pricing popular shadow box-selected text-center px-3 mb-4 text2">
+      <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
         <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro</span>
         <div class="bg-transparent card-header pt-4 border-0">
           <div class="ribbon">BEST VALUE</div>
           <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">20</span><span class="h6 text-muted ml-2">.99 /month</span></div>
-          <div class="billed-annually">Billed annually (2 months free)</div>
+          <div class="billed-annually"><strong>💰 Save $48/year</strong> • Pay annually</div>
         </div>
         <div>
           <a href="https://buy.stripe.com/fZueV6cXZ8Uk7cceHr8k80f" 
-             class="btn btn-primary btn-block mb-3" 
+             class="btn btn-outline-primary btn-block mb-3" 
              target="_blank">Upgrade Now</a>
         </div>
         <div class="card-body pt-0">
@@ -1233,6 +1233,22 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
   const couponParam = getURLParameter('coupon');
   const planIdParam = getURLParameter('plan_id');
 
+  // Function to update Stripe links with email parameter
+  function updateStripeLinksWithEmail() {
+    const stripeLinks = document.querySelectorAll('a[href*="buy.stripe.com"]');
+    
+    if (emailParam) {
+      stripeLinks.forEach(link => {
+        const currentHref = link.getAttribute('href');
+        const separator = currentHref.includes('?') ? '&' : '?';
+        const newHref = currentHref + separator + 'prefilled_email=' + encodeURIComponent(emailParam);
+        link.setAttribute('href', newHref);
+      });
+      
+      console.log('Updated ' + stripeLinks.length + ' Stripe links with email: ' + emailParam);
+    }
+  }
+
   const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
   if (getStartedLinks) {
     getStartedLinks.forEach(link => {
@@ -1296,6 +1312,9 @@ description: Transform your email marketing with our powerful Mail Merge for Gma
     utmTags = getUTMTags();
     console.log('utmTags:' + JSON.stringify(utmTags));
     setPassthroughAttribute(JSON.stringify(utmTags));
+    
+    // Update Stripe links with email parameter
+    updateStripeLinksWithEmail();
   };
 </script>
 
