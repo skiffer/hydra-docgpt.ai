@@ -22,12 +22,11 @@ nav {
 
 	@media #{$mid-point} {
 		text-align: right;
-		position: absolute;
-		top: 13px;
-		right: 0;
-		padding: 0 20px;
+		position: static;
+		width: auto;
+		flex-shrink: 0;
+		padding: 0;
 	}
-
 
 	a {
 		margin: 0 3px;
@@ -42,12 +41,11 @@ nav {
 			padding: 10px;
 		}
 
-
 		&.nav-toggle {
 			display: inline;
 			position: absolute;
-			right: 10px;
-			top: -22px;
+			right: 20px;
+			top: 15px;
 			font-size: 1.9em;
 			border: 0;
 
@@ -62,7 +60,6 @@ nav {
 	}
 
 	a:hover {
-
 		border-bottom: 1px solid rgba(255,255,255,.3);
 		color: #fff;
 	}
@@ -82,5 +79,4 @@ nav {
 	a.active {
 		color: #fff;
 	}
-
 }
