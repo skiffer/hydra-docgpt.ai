@@ -66,6 +66,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 
 </script>
+
+
 <script type="text/javascript">
   Paddle.Setup({
     vendor: 13096,
@@ -119,6 +121,512 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
 
 </script>
+
+<script type="text/javascript">
+  // Function to get the value of a specific URL parameter
+  function getURLParameter(name) {
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    const results = regex.exec(window.location.href);
+
+    if (!results || !results[2]) {
+      return null;
+    }
+
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  // Get the value of the 'email' parameter
+  const emailParam = getURLParameter('email');
+  const couponParam = getURLParameter('coupon');
+  const planIdParam = getURLParameter('plan_id');
+
+  // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
+  const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+  if (getStartedLinks) {
+    getStartedLinks.forEach(link => {
+      link.setAttribute('data-email', emailParam || '');
+    });
+  }
+
+  var pricingSection = document.getElementById("pricing");
+
+  if (pricingSection) {
+    pricingSection.scrollIntoView({
+      behavior: "smooth", // You can use "auto" for instant scrolling
+      block: "start",     // "start" will align the top of the section with the top of the viewport
+      inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
+    });
+  }
+
+  if (couponParam) {
+    console.log(`applying code: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+    
+    // Check if we have a valid tolt_referral to use instead of attribution data
+    let passthroughData, customData;
+    
+    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
+      // Use tolt_referral as primary payload
+      const toltData = {
+        tolt_referral: window.tolt_referral
+      };
+      passthroughData = JSON.stringify(toltData);
+      customData = JSON.stringify(toltData);
+      console.log('🎯 Using tolt_referral for Paddle:', window.tolt_referral);
+    } else {
+      // Fall back to attribution data
+      const attributionData = createPaddleAttributionData();
+      const attributionCustomData = createPaddleCustomData();
+      passthroughData = JSON.stringify(attributionData);
+      customData = attributionCustomData;
+      console.log('🎯 Paddle Attribution Data Size:', JSON.stringify(attributionData).length, 'chars');
+      console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
+    }
+    
+    Paddle.Checkout.open({
+      product: planIdParam || '875610',
+      email: emailParam || '',
+      coupon: couponParam,
+      passthrough: passthroughData,
+      customData: customData,
+      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+    });
+  } else if (emailParam) {
+    console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+    
+    // Check if we have a valid tolt_referral to use instead of attribution data
+    let passthroughData, customData;
+    
+    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
+      // Use tolt_referral as primary payload
+      const toltData = {
+        tolt_referral: window.tolt_referral
+      };
+      passthroughData = JSON.stringify(toltData);
+      customData = JSON.stringify(toltData);
+      console.log('🎯 Using tolt_referral for Paddle:', window.tolt_referral);
+    } else {
+      // Fall back to attribution data
+      const attributionData = createPaddleAttributionData();
+      const attributionCustomData = createPaddleCustomData();
+      passthroughData = JSON.stringify(attributionData);
+      customData = attributionCustomData;
+      console.log('🎯 Paddle Attribution Data Size:', JSON.stringify(attributionData).length, 'chars');
+      console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
+    }
+    
+    Paddle.Checkout.open({
+      product: '875278',
+      email: emailParam || '',
+      customData: customData,
+      passthrough: passthroughData,
+      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+    });
+  } else {
+    console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
+  }
+
+  // Function to set a cookie
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Function to get a cookie
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+
+  // Function to classify traffic source
+
+  // Function to get all URL parameters except email and paid ads params
+  function getAllQueryParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const params = {};
+    
+    for (const [key, value] of urlParams) {
+      // Exclude email and paid ads parameters (containing 'clid')
+      if (key !== 'email' && !key.includes('clid')) {
+        params[key] = value;
+      }
+    }
+    
+    return params;
+  }
+
+  // Function to create a touch point
+  function createTouchPoint() {
+    const now = new Date();
+    // Human readable timestamp in UTC without milliseconds
+    const timestamp = now.toISOString().split('.')[0] + 'Z';
+    const sessionId = getOrCreateSessionId();
+    
+    let referrer = null;
+    if (document.referrer) {
+      try {
+        const refUrl = new URL(document.referrer);
+        // Include full path without query parameters
+        referrer = refUrl.origin + refUrl.pathname;
+      } catch (e) {
+        // Fallback to original referrer if URL parsing fails
+        referrer = document.referrer;
+      }
+    }
+    
+    const touchData = {
+      ts: timestamp,
+      sid: sessionId, // session ID for 30-minute grouping
+      ref: referrer,
+      page: window.location.pathname,
+      time_spent: 0, // will be updated when user leaves
+      params: getAllQueryParams() // All query params except email and clid params
+    };
+
+    return touchData;
+  }
+
+  // Function to store first touch (permanent, 90 days)
+  function storeFirstTouch() {
+    const existingFirstTouch = getCookie('first_touch');
+    
+    if (existingFirstTouch) {
+      console.log('🔒 First touch already exists');
+      return;
+    }
+
+    const firstTouch = createTouchPoint();
+    setCookie('first_touch', JSON.stringify(firstTouch), 90);
+    console.log('🎯 First touch stored:', firstTouch);
+  }
+
+  // Function to store/update last touch (current session, 30 days)
+  function storeLastTouch() {
+    const existingLastTouch = getCookie('last_touch');
+    const currentSessionId = getOrCreateSessionId();
+    
+    // Check if we need to create a new touch or update existing one
+    let shouldCreateNewTouch = true;
+    
+    if (existingLastTouch) {
+      try {
+        const lastTouch = JSON.parse(existingLastTouch);
+        // If same session ID, update the existing touch
+        if (lastTouch.sid === currentSessionId) {
+          shouldCreateNewTouch = false;
+        }
+      } catch (e) {
+        console.error('Error parsing last touch:', e);
+      }
+    }
+    
+    if (shouldCreateNewTouch) {
+      // Create new touch for new session
+      const newTouch = createTouchPoint();
+      setCookie('last_touch', JSON.stringify(newTouch), 30);
+      console.log('🆕 New session touch created:', newTouch);
+    } else {
+      // Update existing touch with current page
+      const updatedTouch = createTouchPoint();
+      setCookie('last_touch', JSON.stringify(updatedTouch), 30);
+      console.log('🔄 Session touch updated:', updatedTouch);
+    }
+  }
+
+  // Function to store all touches (for comprehensive tracking)
+  function storeAllTouches() {
+    const existingTouches = getCookie('all_touches');
+    let touchHistory = [];
+    
+    if (existingTouches) {
+      try {
+        touchHistory = JSON.parse(existingTouches);
+      } catch (e) {
+        touchHistory = [];
+      }
+    }
+
+    const currentTouch = createTouchPoint();
+    touchHistory.push(currentTouch);
+
+    // Keep only last 10 touches to prevent cookie size issues
+    if (touchHistory.length > 10) {
+      touchHistory = touchHistory.slice(-10);
+    }
+
+    setCookie('all_touches', JSON.stringify(touchHistory), 30);
+    console.log('📈 Touch added to history:', currentTouch);
+  }
+
+  // Function to update time spent on current touch
+  function updateTimeSpent(seconds) {
+    // Update last touch
+    const lastTouchStr = getCookie('last_touch');
+    if (lastTouchStr) {
+      try {
+        const lastTouch = JSON.parse(lastTouchStr);
+        lastTouch.time_spent = seconds;
+        setCookie('last_touch', JSON.stringify(lastTouch), 30);
+      } catch (e) {
+        console.error('Error updating last touch time:', e);
+      }
+    }
+
+    // Update all touches - update the most recent one
+    const allTouchesStr = getCookie('all_touches');
+    if (allTouchesStr) {
+      try {
+        const touches = JSON.parse(allTouchesStr);
+        if (touches.length > 0) {
+          touches[touches.length - 1].time_spent = seconds;
+          setCookie('all_touches', JSON.stringify(touches), 30);
+        }
+      } catch (e) {
+        console.error('Error updating touches time:', e);
+      }
+    }
+  }
+
+  // Function to create optimized attribution data for Paddle (under 950 chars)
+  function createPaddleAttributionData() {
+    const firstTouchStr = getCookie('first_touch');
+    const lastTouchStr = getCookie('last_touch');
+    const allTouchesStr = getCookie('all_touches');
+
+    let firstTouch = null;
+    let lastTouch = null;
+    let allTouches = [];
+
+    try {
+      if (firstTouchStr) firstTouch = JSON.parse(firstTouchStr);
+      if (lastTouchStr) lastTouch = JSON.parse(lastTouchStr);
+      if (allTouchesStr) allTouches = JSON.parse(allTouchesStr);
+    } catch (e) {
+      console.error('Error parsing attribution data:', e);
+    }
+
+    // Create optimized data structure (session ID kept internal only)
+    const attributionData = {
+      ft: firstTouch, // first touch
+      lt: lastTouch   // last touch
+    };
+
+    // Session ID is used internally but not sent to Paddle to save space
+
+
+    // Check if first + last touch exceeds 900 chars
+    const baseSize = JSON.stringify(attributionData).length;
+    
+    if (baseSize > 900) {
+      // If first + last touch is too big, send only last touch
+      return {
+        lt: lastTouch
+      };
+    }
+
+    // Try to include all touches if space allows
+    const allTouchesSize = JSON.stringify(allTouches).length;
+    
+    // If adding all touches keeps us under 900 chars (leaving buffer), include them
+    if (baseSize + allTouchesSize < 900) {
+      attributionData.touches = allTouches;
+    }
+
+    return attributionData;
+  }
+
+  // Function to create custom data for Paddle (same data as passthrough)
+  function createPaddleCustomData() {
+    // Send the same data as passthrough in customData
+    const attributionData = createPaddleAttributionData();
+    
+    // Add tolt_referral if it exists
+    if (window.tolt_referral) {
+      attributionData.tolt_referral = window.tolt_referral;
+    }
+
+    return attributionData;
+  }
+
+  // Helper function to get or create session ID
+  function getOrCreateSessionId() {
+    const sessionCookieName = 'touch_session_id';
+    const sessionDurationMinutes = 1; // 1 minute session
+    
+    let sessionId = getCookie(sessionCookieName);
+    
+    if (!sessionId) {
+      // Create new session ID
+      sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+      setCookie(sessionCookieName, sessionId, sessionDurationMinutes / (24 * 60)); // Convert minutes to days
+      console.log('🆕 New 1-minute session created:', sessionId);
+    } else {
+      // Extend existing session
+      setCookie(sessionCookieName, sessionId, sessionDurationMinutes / (24 * 60)); // Refresh expiration
+      console.log('🔄 Session extended for 1 minute:', sessionId);
+    }
+    
+    return sessionId;
+  }
+
+  // Function to calculate total time spent across all touches
+
+  // Track time on current page
+  let pageStartTime = Date.now();
+  
+  // Update time spent when user leaves page
+  window.addEventListener('beforeunload', function() {
+    const timeSpent = Math.round((Date.now() - pageStartTime) / 1000);
+    updateTimeSpent(timeSpent);
+  });
+
+  // Also update time periodically for longer sessions
+  setInterval(function() {
+    const timeSpent = Math.round((Date.now() - pageStartTime) / 1000);
+    updateTimeSpent(timeSpent);
+  }, 5000); // Update every 5 seconds
+
+// ... existing code ...
+</script>
+
+<script>
+
+  function setPassthroughAttribute(val) {
+    const passthroughLinks = document.querySelectorAll(".paddle_button");
+
+    if (passthroughLinks.length > 0) {
+      passthroughLinks.forEach((link) => {
+        link.setAttribute("data-passthrough", val || "");
+        link.setAttribute("data-custom-data", val || "");
+        // console.log('Setting data-passthrough on element:', link, 'with value:', val);
+      });
+    } else {
+      console.log("No elements found with the specified selector.");
+    }
+  }
+
+  // Debug functions for checking attribution data
+  function getAttributionDashboard() {
+    const firstTouch = getCookie('first_touch');
+    const lastTouch = getCookie('last_touch');
+    const allTouches = getCookie('all_touches');
+    
+    console.clear();
+    console.log('%c🎯 ATTRIBUTION TRACKING DASHBOARD', 'font-size: 20px; font-weight: bold; color: #017BFE;');
+    console.log('%c═══════════════════════════════════════', 'color: #017BFE;');
+    
+    console.group('🚀 First Touch (Purchase Attribution)');
+    if (firstTouch) {
+      const ft = JSON.parse(firstTouch);
+      console.log('Referrer:', ft.ref);
+      console.log('Page:', ft.page);
+      console.log('Timestamp:', ft.ts);
+      console.log('Time Spent:', ft.time_spent + ' seconds');
+      if (ft.params && Object.keys(ft.params).length > 0) {
+        console.log('Parameters:', ft.params);
+      }
+    } else {
+      console.log('No first touch recorded yet');
+    }
+    console.groupEnd();
+    
+    console.group('📊 Last Touch (Current Session)');
+    if (lastTouch) {
+      const lt = JSON.parse(lastTouch);
+      console.log('Referrer:', lt.ref);
+      console.log('Page:', lt.page);
+      console.log('Timestamp:', lt.ts);
+      console.log('Time Spent:', lt.time_spent + ' seconds');
+      if (lt.params && Object.keys(lt.params).length > 0) {
+        console.log('Parameters:', lt.params);
+      }
+    } else {
+      console.log('No last touch recorded yet');
+    }
+    console.groupEnd();
+    
+    console.group('📈 All Touches');
+    if (allTouches) {
+      const touches = JSON.parse(allTouches);
+      console.log('Total touches:', touches.length);
+      touches.forEach((touch, index) => {
+        console.log(`${index + 1}. ${touch.ref || 'direct'} (${touch.time_spent}s) - ${touch.ts}`);
+      });
+    } else {
+      console.log('No touch history recorded yet');
+    }
+    console.groupEnd();
+    
+    console.group('🎯 Paddle Data Preview');
+    const paddleData = createPaddleAttributionData();
+    const customData = createPaddleCustomData();
+    console.log('Attribution Data Size:', JSON.stringify(paddleData).length + ' characters');
+    console.log('Custom Data Size:', JSON.stringify(customData).length + ' characters');
+    console.log('Attribution Data:', paddleData);
+    console.log('Custom Data:', customData);
+    console.groupEnd();
+    
+    console.log('%c═══════════════════════════════════════', 'color: #017BFE;');
+    console.log('%cTo view this dashboard again, type: getAttributionDashboard()', 'color: #666; font-style: italic;');
+  }
+
+  // Make dashboard available globally
+  window.getAttributionDashboard = getAttributionDashboard;
+
+  // INITIALIZATION: This runs when the page loads
+  window.onload = function() {
+    // Always store first touch (only if not already stored)
+    storeFirstTouch();
+    
+    // Always store last touch for current 1-minute session
+    storeLastTouch();
+    
+    // Store all touches for comprehensive tracking
+    storeAllTouches();
+    
+
+    // Check if we have a valid tolt_referral to use instead of attribution data
+    let passthroughData, customData;
+    
+    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
+      // Use tolt_referral as primary payload
+      const toltData = { tolt_referral: window.tolt_referral }; passthroughData = JSON.stringify(toltData);
+      customData = JSON.stringify(toltData);
+      console.log('🎯 Touch tracking initialized with tolt_referral:', window.tolt_referral);
+    } else {
+      // Fall back to attribution data
+      const attributionData = createPaddleAttributionData();
+      const attributionCustomData = createPaddleCustomData();
+      passthroughData = JSON.stringify(attributionData);
+      customData = JSON.stringify(attributionCustomData);
+      console.log('🎯 Touch tracking initialized');
+      console.log('📊 Attribution data size:', JSON.stringify(attributionData).length + ' chars');
+      console.log('💡 Use getAttributionDashboard() to see full details');
+    }
+    
+    // Set up paddle button attributes
+    setPassthroughAttribute(passthroughData);
+    
+    // Also set custom data attributes
+    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button');
+    paddleCustomDataLinks.forEach(link => {
+      link.setAttribute('data-custom-data', customData);
+    });
+  };
+
+</script>
+
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet">
 
 <style>
@@ -1860,510 +2368,4 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     }
 
   check();
-</script>
-<script type="text/javascript">
-  // Function to get the value of a specific URL parameter
-  function getURLParameter(name) {
-    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
-    const results = regex.exec(window.location.href);
-
-    if (!results || !results[2]) {
-      return null;
-    }
-
-    return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
-
-  // Get the value of the 'email' parameter
-  const emailParam = getURLParameter('email');
-  const couponParam = getURLParameter('coupon');
-  const planIdParam = getURLParameter('plan_id');
-
-  // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-  const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
-  if (getStartedLinks) {
-    getStartedLinks.forEach(link => {
-      link.setAttribute('data-email', emailParam || '');
-    });
-  }
-
-  var pricingSection = document.getElementById("pricing");
-
-  if (pricingSection) {
-    pricingSection.scrollIntoView({
-      behavior: "smooth", // You can use "auto" for instant scrolling
-      block: "start",     // "start" will align the top of the section with the top of the viewport
-      inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
-    });
-  }
-
-  if (couponParam) {
-    console.log(`applying code: [${couponParam}], [${emailParam}], [${planIdParam}]`);
-    
-    // Check if we have a valid tolt_referral to use instead of attribution data
-    let passthroughData, customData;
-    
-    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
-      // Use tolt_referral as primary payload
-      const toltData = {
-        tolt_referral: window.tolt_referral
-      };
-      passthroughData = JSON.stringify(toltData);
-      customData = JSON.stringify(toltData);
-      console.log('🎯 Using tolt_referral for Paddle:', window.tolt_referral);
-    } else {
-      // Fall back to attribution data
-      const attributionData = createPaddleAttributionData();
-      const attributionCustomData = createPaddleCustomData();
-      passthroughData = JSON.stringify(attributionData);
-      customData = attributionCustomData;
-      console.log('🎯 Paddle Attribution Data Size:', JSON.stringify(attributionData).length, 'chars');
-      console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
-    }
-    
-    Paddle.Checkout.open({
-      product: planIdParam || '875610',
-      email: emailParam || '',
-      coupon: couponParam,
-      passthrough: passthroughData,
-      customData: customData,
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
-    });
-  } else if (emailParam) {
-    console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
-    
-    // Check if we have a valid tolt_referral to use instead of attribution data
-    let passthroughData, customData;
-    
-    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
-      // Use tolt_referral as primary payload
-      const toltData = {
-        tolt_referral: window.tolt_referral
-      };
-      passthroughData = JSON.stringify(toltData);
-      customData = JSON.stringify(toltData);
-      console.log('🎯 Using tolt_referral for Paddle:', window.tolt_referral);
-    } else {
-      // Fall back to attribution data
-      const attributionData = createPaddleAttributionData();
-      const attributionCustomData = createPaddleCustomData();
-      passthroughData = JSON.stringify(attributionData);
-      customData = attributionCustomData;
-      console.log('🎯 Paddle Attribution Data Size:', JSON.stringify(attributionData).length, 'chars');
-      console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
-    }
-    
-    Paddle.Checkout.open({
-      product: '875278',
-      email: emailParam || '',
-      customData: customData,
-      passthrough: passthroughData,
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
-    });
-  } else {
-    console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
-  }
-</script>
-
-<script>
-
-  // Function to set a cookie
-  function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  }
-
-  // Function to get a cookie
-  function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-  }
-
-  // Function to classify traffic source
-
-  // Function to get all URL parameters except email and paid ads params
-  function getAllQueryParams() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const params = {};
-    
-    for (const [key, value] of urlParams) {
-      // Exclude email and paid ads parameters (containing 'clid')
-      if (key !== 'email' && !key.includes('clid')) {
-        params[key] = value;
-      }
-    }
-    
-    return params;
-  }
-
-  // Function to create a touch point
-  function createTouchPoint() {
-    const now = new Date();
-    // Human readable timestamp in UTC without milliseconds
-    const timestamp = now.toISOString().split('.')[0] + 'Z';
-    const sessionId = getOrCreateSessionId();
-    
-    let referrer = null;
-    if (document.referrer) {
-      try {
-        const refUrl = new URL(document.referrer);
-        // Include full path without query parameters
-        referrer = refUrl.origin + refUrl.pathname;
-      } catch (e) {
-        // Fallback to original referrer if URL parsing fails
-        referrer = document.referrer;
-      }
-    }
-    
-    const touchData = {
-      ts: timestamp,
-      sid: sessionId, // session ID for 30-minute grouping
-      ref: referrer,
-      page: window.location.pathname,
-      time_spent: 0, // will be updated when user leaves
-      params: getAllQueryParams() // All query params except email and clid params
-    };
-
-    return touchData;
-  }
-
-  // Function to store first touch (permanent, 90 days)
-  function storeFirstTouch() {
-    const existingFirstTouch = getCookie('first_touch');
-    
-    if (existingFirstTouch) {
-      console.log('🔒 First touch already exists');
-      return;
-    }
-
-    const firstTouch = createTouchPoint();
-    setCookie('first_touch', JSON.stringify(firstTouch), 90);
-    console.log('🎯 First touch stored:', firstTouch);
-  }
-
-  // Function to store/update last touch (current session, 30 days)
-  function storeLastTouch() {
-    const existingLastTouch = getCookie('last_touch');
-    const currentSessionId = getOrCreateSessionId();
-    
-    // Check if we need to create a new touch or update existing one
-    let shouldCreateNewTouch = true;
-    
-    if (existingLastTouch) {
-      try {
-        const lastTouch = JSON.parse(existingLastTouch);
-        // If same session ID, update the existing touch
-        if (lastTouch.sid === currentSessionId) {
-          shouldCreateNewTouch = false;
-        }
-      } catch (e) {
-        console.error('Error parsing last touch:', e);
-      }
-    }
-    
-    if (shouldCreateNewTouch) {
-      // Create new touch for new session
-      const newTouch = createTouchPoint();
-      setCookie('last_touch', JSON.stringify(newTouch), 30);
-      console.log('🆕 New session touch created:', newTouch);
-    } else {
-      // Update existing touch with current page
-      const updatedTouch = createTouchPoint();
-      setCookie('last_touch', JSON.stringify(updatedTouch), 30);
-      console.log('🔄 Session touch updated:', updatedTouch);
-    }
-  }
-
-  // Function to store all touches (for comprehensive tracking)
-  function storeAllTouches() {
-    const existingTouches = getCookie('all_touches');
-    let touchHistory = [];
-    
-    if (existingTouches) {
-      try {
-        touchHistory = JSON.parse(existingTouches);
-      } catch (e) {
-        touchHistory = [];
-      }
-    }
-
-    const currentTouch = createTouchPoint();
-    touchHistory.push(currentTouch);
-
-    // Keep only last 10 touches to prevent cookie size issues
-    if (touchHistory.length > 10) {
-      touchHistory = touchHistory.slice(-10);
-    }
-
-    setCookie('all_touches', JSON.stringify(touchHistory), 30);
-    console.log('📈 Touch added to history:', currentTouch);
-  }
-
-  // Function to update time spent on current touch
-  function updateTimeSpent(seconds) {
-    // Update last touch
-    const lastTouchStr = getCookie('last_touch');
-    if (lastTouchStr) {
-      try {
-        const lastTouch = JSON.parse(lastTouchStr);
-        lastTouch.time_spent = seconds;
-        setCookie('last_touch', JSON.stringify(lastTouch), 30);
-      } catch (e) {
-        console.error('Error updating last touch time:', e);
-      }
-    }
-
-    // Update all touches - update the most recent one
-    const allTouchesStr = getCookie('all_touches');
-    if (allTouchesStr) {
-      try {
-        const touches = JSON.parse(allTouchesStr);
-        if (touches.length > 0) {
-          touches[touches.length - 1].time_spent = seconds;
-          setCookie('all_touches', JSON.stringify(touches), 30);
-        }
-      } catch (e) {
-        console.error('Error updating touches time:', e);
-      }
-    }
-  }
-
-  // Function to create optimized attribution data for Paddle (under 950 chars)
-  function createPaddleAttributionData() {
-    const firstTouchStr = getCookie('first_touch');
-    const lastTouchStr = getCookie('last_touch');
-    const allTouchesStr = getCookie('all_touches');
-
-    let firstTouch = null;
-    let lastTouch = null;
-    let allTouches = [];
-
-    try {
-      if (firstTouchStr) firstTouch = JSON.parse(firstTouchStr);
-      if (lastTouchStr) lastTouch = JSON.parse(lastTouchStr);
-      if (allTouchesStr) allTouches = JSON.parse(allTouchesStr);
-    } catch (e) {
-      console.error('Error parsing attribution data:', e);
-    }
-
-    // Create optimized data structure (session ID kept internal only)
-    const attributionData = {
-      ft: firstTouch, // first touch
-      lt: lastTouch   // last touch
-    };
-
-    // Session ID is used internally but not sent to Paddle to save space
-
-
-    // Check if first + last touch exceeds 900 chars
-    const baseSize = JSON.stringify(attributionData).length;
-    
-    if (baseSize > 900) {
-      // If first + last touch is too big, send only last touch
-      return {
-        lt: lastTouch
-      };
-    }
-
-    // Try to include all touches if space allows
-    const allTouchesSize = JSON.stringify(allTouches).length;
-    
-    // If adding all touches keeps us under 900 chars (leaving buffer), include them
-    if (baseSize + allTouchesSize < 900) {
-      attributionData.touches = allTouches;
-    }
-
-    return attributionData;
-  }
-
-  // Function to create custom data for Paddle (same data as passthrough)
-  function createPaddleCustomData() {
-    // Send the same data as passthrough in customData
-    const attributionData = createPaddleAttributionData();
-    
-    // Add tolt_referral if it exists
-    if (window.tolt_referral) {
-      attributionData.tolt_referral = window.tolt_referral;
-    }
-
-    return attributionData;
-  }
-
-  // Helper function to get or create session ID
-  function getOrCreateSessionId() {
-    const sessionCookieName = 'touch_session_id';
-    const sessionDurationMinutes = 1; // 1 minute session
-    
-    let sessionId = getCookie(sessionCookieName);
-    
-    if (!sessionId) {
-      // Create new session ID
-      sessionId = 'sess_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-      setCookie(sessionCookieName, sessionId, sessionDurationMinutes / (24 * 60)); // Convert minutes to days
-      console.log('🆕 New 1-minute session created:', sessionId);
-    } else {
-      // Extend existing session
-      setCookie(sessionCookieName, sessionId, sessionDurationMinutes / (24 * 60)); // Refresh expiration
-      console.log('🔄 Session extended for 1 minute:', sessionId);
-    }
-    
-    return sessionId;
-  }
-
-  // Function to calculate total time spent across all touches
-
-  // Track time on current page
-  let pageStartTime = Date.now();
-  
-  // Update time spent when user leaves page
-  window.addEventListener('beforeunload', function() {
-    const timeSpent = Math.round((Date.now() - pageStartTime) / 1000);
-    updateTimeSpent(timeSpent);
-  });
-
-  // Also update time periodically for longer sessions
-  setInterval(function() {
-    const timeSpent = Math.round((Date.now() - pageStartTime) / 1000);
-    updateTimeSpent(timeSpent);
-  }, 5000); // Update every 5 seconds
-
-// ... existing code ...
-</script>
-
-<script>
-
-  function setPassthroughAttribute(val) {
-    const passthroughLinks = document.querySelectorAll(".paddle_button");
-
-    if (passthroughLinks.length > 0) {
-      passthroughLinks.forEach((link) => {
-        link.setAttribute("data-passthrough", val || "");
-        link.setAttribute("data-custom-data", val || "");
-        // console.log('Setting data-passthrough on element:', link, 'with value:', val);
-      });
-    } else {
-      console.log("No elements found with the specified selector.");
-    }
-  }
-
-  // Debug functions for checking attribution data
-  function getAttributionDashboard() {
-    const firstTouch = getCookie('first_touch');
-    const lastTouch = getCookie('last_touch');
-    const allTouches = getCookie('all_touches');
-    
-    console.clear();
-    console.log('%c🎯 ATTRIBUTION TRACKING DASHBOARD', 'font-size: 20px; font-weight: bold; color: #017BFE;');
-    console.log('%c═══════════════════════════════════════', 'color: #017BFE;');
-    
-    console.group('🚀 First Touch (Purchase Attribution)');
-    if (firstTouch) {
-      const ft = JSON.parse(firstTouch);
-      console.log('Referrer:', ft.ref);
-      console.log('Page:', ft.page);
-      console.log('Timestamp:', ft.ts);
-      console.log('Time Spent:', ft.time_spent + ' seconds');
-      if (ft.params && Object.keys(ft.params).length > 0) {
-        console.log('Parameters:', ft.params);
-      }
-    } else {
-      console.log('No first touch recorded yet');
-    }
-    console.groupEnd();
-    
-    console.group('📊 Last Touch (Current Session)');
-    if (lastTouch) {
-      const lt = JSON.parse(lastTouch);
-      console.log('Referrer:', lt.ref);
-      console.log('Page:', lt.page);
-      console.log('Timestamp:', lt.ts);
-      console.log('Time Spent:', lt.time_spent + ' seconds');
-      if (lt.params && Object.keys(lt.params).length > 0) {
-        console.log('Parameters:', lt.params);
-      }
-    } else {
-      console.log('No last touch recorded yet');
-    }
-    console.groupEnd();
-    
-    console.group('📈 All Touches');
-    if (allTouches) {
-      const touches = JSON.parse(allTouches);
-      console.log('Total touches:', touches.length);
-      touches.forEach((touch, index) => {
-        console.log(`${index + 1}. ${touch.ref || 'direct'} (${touch.time_spent}s) - ${touch.ts}`);
-      });
-    } else {
-      console.log('No touch history recorded yet');
-    }
-    console.groupEnd();
-    
-    console.group('🎯 Paddle Data Preview');
-    const paddleData = createPaddleAttributionData();
-    const customData = createPaddleCustomData();
-    console.log('Attribution Data Size:', JSON.stringify(paddleData).length + ' characters');
-    console.log('Custom Data Size:', JSON.stringify(customData).length + ' characters');
-    console.log('Attribution Data:', paddleData);
-    console.log('Custom Data:', customData);
-    console.groupEnd();
-    
-    console.log('%c═══════════════════════════════════════', 'color: #017BFE;');
-    console.log('%cTo view this dashboard again, type: getAttributionDashboard()', 'color: #666; font-style: italic;');
-  }
-
-  // Make dashboard available globally
-  window.getAttributionDashboard = getAttributionDashboard;
-
-  // INITIALIZATION: This runs when the page loads
-  window.onload = function() {
-    // Always store first touch (only if not already stored)
-    storeFirstTouch();
-    
-    // Always store last touch for current 1-minute session
-    storeLastTouch();
-    
-    // Store all touches for comprehensive tracking
-    storeAllTouches();
-    
-
-    // Check if we have a valid tolt_referral to use instead of attribution data
-    let passthroughData, customData;
-    
-    if (window.tolt_referral && typeof window.tolt_referral === 'string' && window.tolt_referral.trim() !== '') {
-      // Use tolt_referral as primary payload
-      const toltData = { tolt_referral: window.tolt_referral }; passthroughData = JSON.stringify(toltData);
-      customData = JSON.stringify(toltData);
-      console.log('🎯 Touch tracking initialized with tolt_referral:', window.tolt_referral);
-    } else {
-      // Fall back to attribution data
-      const attributionData = createPaddleAttributionData();
-      const attributionCustomData = createPaddleCustomData();
-      passthroughData = JSON.stringify(attributionData);
-      customData = JSON.stringify(attributionCustomData);
-      console.log('🎯 Touch tracking initialized');
-      console.log('📊 Attribution data size:', JSON.stringify(attributionData).length + ' chars');
-      console.log('💡 Use getAttributionDashboard() to see full details');
-    }
-    
-    // Set up paddle button attributes
-    setPassthroughAttribute(passthroughData);
-    
-    // Also set custom data attributes
-    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button');
-    paddleCustomDataLinks.forEach(link => {
-      link.setAttribute('data-custom-data', customData);
-    });
-  };
-
 </script>
