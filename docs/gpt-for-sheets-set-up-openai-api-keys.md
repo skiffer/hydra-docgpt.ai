@@ -39,6 +39,21 @@ If you encounter any errors while using or launching, please check these pages b
 
 
 
+## 🌐 Other Languages
+- [日本語 (Japanese)](/docs/gpt-for-sheets/set-up-openai-api-keys-ja){: target="_blank"}
+- [Svenska (Swedish)](/docs/gpt-for-sheets/set-up-openai-api-keys-sv){: target="_blank"}
+- [Polski (Polish)](/docs/gpt-for-sheets/set-up-openai-api-keys-pl){: target="_blank"}
+- [Türkçe (Turkish)](/docs/gpt-for-sheets/set-up-openai-api-keys-tr){: target="_blank"}
+- [Deutsch (Swiss)](/docs/gpt-for-sheets/set-up-openai-api-keys-ch){: target="_blank"}
+- [Français (French)](/docs/gpt-for-sheets/set-up-openai-api-keys-fr){: target="_blank"}
+- [Nederlands (Dutch)](/docs/gpt-for-sheets/set-up-openai-api-keys-nl){: target="_blank"}
+- [Español (Spanish)](/docs/gpt-for-sheets/set-up-openai-api-keys-es){: target="_blank"}
+- [Português (Portuguese)](/docs/gpt-for-sheets/set-up-openai-api-keys-pt){: target="_blank"}
+- [中文 (Chinese)](/docs/gpt-for-sheets/set-up-openai-api-keys-zh){: target="_blank"}
+- [Українська (Ukrainian)](/docs/gpt-for-sheets/set-up-openai-api-keys-uk){: target="_blank"}
+- [Русский (Russian)](/docs/gpt-for-sheets/set-up-openai-api-keys-ru){: target="_blank"}
+
+
 ### Important!
 #### If you encounter the message: "Authorization is required to perform this action."
 1. **Use a personal Gmail account**: If you use a company email (workspace), it may have restrictions on using add-ons. You might need to ask your company's email administrator to configure settings to allow the installation of add-ons. Therefore, it’s recommended to use a personal account. If you need to transfer your subscription, please contact support via chat or email at yaroslav91@gmail.com.
