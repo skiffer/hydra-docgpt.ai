@@ -298,14 +298,31 @@
 			return firstValue;
 		}
 
+		function shouldSendVisit(email, page) {
+			if (!email) return false;
+			
+			const currentHour = new Date().toISOString().slice(0, 13); // YYYY-MM-DDTHH format
+			const pageKey = btoa(page).slice(0, 20); // Create short hash of page URL
+			const visitKey = `visit_${email}_${pageKey}`;
+			const lastVisitHour = localStorage.getItem(visitKey);
+			
+			// If we haven't sent a visit for this page this hour, allow sending
+			if (lastVisitHour !== currentHour) {
+				localStorage.setItem(visitKey, currentHour);
+				return true;
+			}
+			
+			return false;
+		}
+
 		document.addEventListener('DOMContentLoaded', function() {
 			const email = getURLParameter_2('email')
 			const currentPage = window.location.href;
 			console.log(email);
 			console.log(currentPage);
 
-			// Send the email and current page to the server (you might want to do this via AJAX)
-			if (email) {
+			// Send the email and current page to the server only if it's the first visit for this page this hour
+			if (email && shouldSendVisit(email, currentPage)) {
 				// You can add more fields as needed
 
 				const requestData = {
@@ -322,12 +339,14 @@
 				})
 				.then(response => {
 					if (response.ok) {
-						console.log('Visit recorded successfully');
+						console.log('Visit recorded successfully (first visit for this page this hour)');
 					} else {
 						console.error('Failed to record visit');
 					}
 				})
 				.catch(error => console.error('Error:', error));
+			} else if (email) {
+				console.log('Visit not sent - already recorded for this page this hour');
 			}
 		});
 	</script>
