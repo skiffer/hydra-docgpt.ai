@@ -50,14 +50,16 @@
 - name: "Links"
   links:
     - name: 👍 Try also - Linkedin Automation for B2B Sales
-      link: /cold-outreach-messages-linkedin/
+      link: /cold-message-on-linkedin
       new_window: true
-    - link: /cold-outreach-messages-linkedin/
-    - name: 👍 Try also - AI Web Chats
-      link: https://instabotgpt.com/?utm_source=docgpt&utm_medium=footer&utm_campaign=site&utm_content=aiwebchats
+    - name: 👍 Try also - Mail Merge for Gmail and Sheets
+      link: /mail-merge-for-gmail-and-sheets
       new_window: true
-    - name: 👍 Try also - AI Email Assistant with Auto-replies, trained on your docs
-      link: https://instabotgpt.com/?utm_source=docgpt&utm_medium=footer&utm_campaign=site&utm_content=aiwebchats
+    - name: 👍 Try also - Form Timer, Form Scheduler and Limiter
+      link: /form-timer-and-form-scheduler
+      new_window: true
+    - name: Translate & Rephrase Slides Presentations with AI
+      link: /translate-slides-with-ai-gpt
       new_window: true
     - name: Affiliate program
       link: https://docgptai.tolt.io/login
