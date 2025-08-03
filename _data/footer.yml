@@ -36,6 +36,15 @@
     - name: ChatGPT Introducing o1-preview and o1-mini
       link: /chatgpt-introducing-o1-preview-and-o1-mini-september-2024/
       new_window: true
+    - name: QR Code Generator
+      link: /qr-code-generator-pricing/
+      new_window: true
+    - name: Form Timer and Form Scheduler
+      link: /form-timer-and-form-scheduler/
+      new_window: true
+    - name: Translate Slides with AI GPT
+      link: /translate-slides-with-ai-gpt/
+      new_window: true
 
 #      /ai-social-media-post-generator/
   #    nofollow: true
