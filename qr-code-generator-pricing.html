@@ -3,31 +3,17 @@ title: QR Barcode Generator inside your Google Sheets, Docs, Forms™
 heading: QR Barcode Generator for Sheets™ Docs™ Forms™
 description: Empower your documents and forms with the ability to generate QR codes effortlessly, enhancing accessibility and interactivity. Whether you're creating dynamic spreadsheets, crafting professional documents, or designing interactive forms.
 ---
-<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<!-- Stripe Integration - Replaced Paddle -->
 <script type="text/javascript">
-    Paddle.Setup({
-        vendor: 13096,
-        eventCallback: function (data) {
-            if (data.event === "Checkout.Complete") {
-                let dataLayerInfo = {
-                    event: "purchase",
-                    ecommerce: {
-                        transaction_id: data.eventData.checkout.id,
-                        affiliation: "Affiliation Google Docs",
-                        value: data.eventData.checkout.prices.customer.total,
-                        tax: data.eventData.checkout.prices.customer.total_tax,
-                        shipping: null,
-                        currency: data.eventData.checkout.prices.customer.currency,
-                        coupon: data.eventData.checkout.coupon.coupon_code,
-                        items: data.eventData.checkout.prices.customer.items,
-                    },
-                };
-                dataLayer.push(dataLayerInfo);
-            }
+    // Stripe payment tracking
+    function trackStripeCheckout(plan) {
+        if (typeof dataLayer !== 'undefined') {
+            dataLayer.push({
+                event: 'stripe_checkout_started',
+                plan_name: plan
+            });
         }
-    }); // replace with your vendor ID
-    // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
-
+    }
 </script>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -172,7 +158,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="866044" data-email="" data-custom-data="">Get Started</button>
+                <a href="https://buy.stripe.com/cNi9AM3np5I8eEEczj8k80s" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="starter-monthly" onclick="trackStripeCheckout('starter-monthly')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -200,7 +186,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="866045" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/dRmcMYcXZfiIgMM8j38k80t" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="professional-monthly" onclick="trackStripeCheckout('professional-monthly')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -227,7 +213,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="853509" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="trackStripeCheckout('lifetime')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -253,7 +239,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="850777" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/4gM9AM6zB9Yo2VW8j38k80u" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-monthly" onclick="trackStripeCheckout('organization-monthly')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -279,7 +265,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none" data-product="866046" data-email="" data-custom-data="">Get Started</button>
+                <a href="https://buy.stripe.com/00w5kw6zB0nO2VW7eZ8k80v" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="business-annual" onclick="trackStripeCheckout('business-annual')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -311,7 +297,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg"  data-theme="none" data-product="866047" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/3cI6oAaPRb2s8gg42N8k80w" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="enterprise-annual" onclick="trackStripeCheckout('enterprise-annual')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -341,7 +327,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="853509" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="trackStripeCheckout('lifetime')">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -370,7 +356,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"  data-theme="none" data-product="850778" data-email="" data-custom-data="">Get Started</a>
+                <a href="https://buy.stripe.com/14AeV68HJ7Qg7ccbvf8k80x" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-annual" onclick="trackStripeCheckout('organization-annual')">Get Started</a>
             </div>
         </div>
     </div>
@@ -539,11 +525,13 @@ description: Empower your documents and forms with the ability to generate QR co
     // Get the value of the 'email' parameter
     const emailParam = getURLParameter('email');
 
-    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-    const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
-    if (getStartedLinks) {
-        getStartedLinks.forEach(link => {
-            link.setAttribute('data-email', emailParam || '');
+    // Add email parameter to Stripe payment links if available
+    const stripeLinks = document.querySelectorAll('.stripe-payment-link');
+    if (stripeLinks && emailParam) {
+        stripeLinks.forEach(link => {
+            const currentHref = link.getAttribute('href');
+            const separator = currentHref.includes('?') ? '&' : '?';
+            link.setAttribute('href', currentHref + separator + 'prefilled_email=' + encodeURIComponent(emailParam));
         });
     }
 
@@ -557,11 +545,10 @@ description: Empower your documents and forms with the ability to generate QR co
         });
     }
 
+    // Auto-redirect to Stripe if email parameter is present
     if (emailParam) {
-        Paddle.Checkout.open({
-            product: '866046',
-            email: emailParam || ''
-        });
+        // Default to business annual plan
+        window.location.href = 'https://buy.stripe.com/qr-generator-business-annual?prefilled_email=' + encodeURIComponent(emailParam);
     }
 </script>
 
@@ -584,14 +571,33 @@ description: Empower your documents and forms with the ability to generate QR co
     }
     var allParams = getAllURLParameters();
 
-    // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
-    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]'); //data-custom-data=""
-    if (paddleCustomDataLinks) {
-        paddleCustomDataLinks.forEach(link => {
-            link.setAttribute('data-custom-data', JSON.stringify(allParams));
-            console.log(link, linkedinParam);
-        });
-    }
+    // Add tracking parameters to Stripe links
+    const addTrackingParams = () => {
+        const stripePaymentLinks = document.querySelectorAll('.stripe-payment-link');
+        if (stripePaymentLinks) {
+            stripePaymentLinks.forEach(link => {
+                let href = link.getAttribute('href');
+                const separator = href.includes('?') ? '&' : '?';
+                
+                // Add client reference ID for tracking
+                const clientReferenceId = allParams.id || allParams.user_id || '';
+                if (clientReferenceId) {
+                    href += separator + 'client_reference_id=' + encodeURIComponent(clientReferenceId);
+                }
+                
+                // Add metadata as URL parameters (Stripe will handle these)
+                Object.keys(allParams).forEach(key => {
+                    if (key !== 'email' && key !== 'id' && key !== 'user_id') {
+                        href += '&metadata[' + key + ']=' + encodeURIComponent(allParams[key]);
+                    }
+                });
+                
+                link.setAttribute('href', href);
+            });
+        }
+    };
+    
+    addTrackingParams();
 </script>
 
 <!--{% if page.faq %}-->
