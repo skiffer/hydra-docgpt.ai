@@ -102,7 +102,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           value: data.eventData.checkout.prices.customer.total,
           currency: data.eventData.checkout.prices.customer.currency
         });
-        qp('track', 'Purchase');
+        
+        // Enhanced Quora Purchase Tracking
+        qp('track', 'Purchase', {
+          value: data.eventData.checkout.prices.customer.total,
+          currency: data.eventData.checkout.prices.customer.currency,
+          transaction_id: data.eventData.checkout.id,
+          content_type: 'product',
+          content_name: 'GPT for Sheets Subscription',
+          content_id: data.eventData.checkout.product.id,
+          coupon_code: data.eventData.checkout.coupon ? data.eventData.checkout.coupon.coupon_code : null
+        });
       }
 
       if (data.event === "Checkout.Loaded") { // "Checkout.Loaded" is the event when checkout is opened
@@ -115,6 +125,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                 data.eventData.checkout.prices.customer.total,
                 data.eventData.checkout.prices.customer.currency
         );
+      }
+      
+      if (data.event === "Checkout.Customer.Created") {
+        qp('track', 'CompleteRegistration');
+        console.log('> Checkout.Customer.Created - Lead generated');
       }
     }
   }); // replace with your vendor ID
@@ -139,6 +154,13 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   const emailParam = getURLParameter('email');
   const couponParam = getURLParameter('coupon');
   const planIdParam = getURLParameter('plan_id');
+
+  // Initialize Quora with email attribution if email parameter exists
+  if (emailParam && emailParam.trim() !== '') {
+    // Re-initialize Quora pixel with email for better attribution
+    qp('init', 'a1a2dd9f89d743378e9e880656c97ba6', {'email': emailParam});
+    console.log('Quora: Re-initialized with email attribution:', emailParam);
+  }
 
   // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
   const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
@@ -182,6 +204,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
     }
     
+    // Track Quora InitiateCheckout for direct checkout with coupon
+    qp('track', 'InitiateCheckout', {
+      content_type: 'product',
+      content_name: 'Direct Checkout with Coupon',
+      content_id: planIdParam || '875610',
+      coupon_code: couponParam
+    });
+    
     Paddle.Checkout.open({
       product: planIdParam || '875610',
       email: emailParam || '',
@@ -213,6 +243,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       console.log('🎯 Paddle Attribution Data Size:', JSON.stringify(attributionData).length, 'chars');
       console.log('📊 Paddle Custom Data Size:', JSON.stringify(attributionCustomData).length, 'chars');
     }
+    
+    // Track Quora InitiateCheckout for direct checkout with email
+    qp('track', 'InitiateCheckout', {
+      content_type: 'product',
+      content_name: 'Direct Checkout with Email',
+      content_id: '875278',
+      has_email: true
+    });
     
     Paddle.Checkout.open({
       product: '875278',
@@ -623,6 +661,135 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       link.setAttribute('data-custom-data', customData);
     });
   };
+
+  // Enhanced Quora Event Tracking
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Track pricing button clicks
+    const pricingButtons = document.querySelectorAll('.paddle_button');
+    pricingButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const product = this.getAttribute('data-product');
+        const planName = this.closest('.card-pricing').querySelector('.h6').textContent;
+        qp('track', 'AddToCart', {
+          content_type: 'product',
+          content_name: planName,
+          content_id: product,
+          value: this.closest('.card-pricing').querySelector('.price').textContent,
+          currency: 'USD'
+        });
+        console.log('Quora: AddToCart tracked for', planName);
+      });
+    });
+    
+    // Track install button clicks
+    const installButtons = document.querySelectorAll('.install_a, .button_install');
+    installButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        qp('track', 'Lead', {
+          content_type: 'install',
+          content_name: 'Google Workspace Install'
+        });
+        console.log('Quora: Lead tracked for install button');
+      });
+    });
+    
+    // Track scroll depth for engagement
+    let scrollDepthTracked = false;
+    window.addEventListener('scroll', function() {
+      const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent > 50 && !scrollDepthTracked) {
+        qp('track', 'ViewContent', {
+          content_type: 'page',
+          content_name: 'GPT for Sheets Landing Page',
+          engagement_level: 'high'
+        });
+        scrollDepthTracked = true;
+        console.log('Quora: ViewContent tracked for 50% scroll depth');
+      }
+    });
+    
+    // Track demo video interactions
+    const demoVideos = document.querySelectorAll('video');
+    demoVideos.forEach(video => {
+      video.addEventListener('play', function() {
+        qp('track', 'ViewContent', {
+          content_type: 'video',
+          content_name: 'Demo Video',
+          engagement_type: 'play'
+        });
+        console.log('Quora: ViewContent tracked for video play');
+      });
+      
+      video.addEventListener('ended', function() {
+        qp('track', 'ViewContent', {
+          content_type: 'video',
+          content_name: 'Demo Video',
+          engagement_type: 'complete'
+        });
+        console.log('Quora: ViewContent tracked for video completion');
+      });
+    });
+    
+    // Track pricing section visibility
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            qp('track', 'ViewContent', {
+              content_type: 'pricing',
+              content_name: 'Pricing Section View'
+            });
+            console.log('Quora: ViewContent tracked for pricing section view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(pricingSection);
+    }
+    
+    // Track form interactions (if any email forms exist)
+    const emailInputs = document.querySelectorAll('input[type="email"]');
+    emailInputs.forEach(input => {
+      input.addEventListener('focus', function() {
+        qp('track', 'Lead', {
+          content_type: 'form',
+          content_name: 'Email Input Focus'
+        });
+        console.log('Quora: Lead tracked for email input focus');
+      });
+    });
+    
+    // Track external link clicks
+    const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="docgpt.ai"])');
+    externalLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        qp('track', 'ViewContent', {
+          content_type: 'external_link',
+          content_name: this.href,
+          engagement_type: 'click'
+        });
+        console.log('Quora: ViewContent tracked for external link click:', this.href);
+      });
+    });
+    
+    // Track time on page for engagement
+    let timeOnPageTracked = false;
+    setTimeout(function() {
+      if (!timeOnPageTracked) {
+        qp('track', 'ViewContent', {
+          content_type: 'page',
+          content_name: 'GPT for Sheets Landing Page',
+          engagement_level: 'engaged',
+          time_on_page: '30_seconds'
+        });
+        timeOnPageTracked = true;
+        console.log('Quora: ViewContent tracked for 30+ seconds on page');
+      }
+    }, 30000);
+    
+  });
 
 </script>
 
