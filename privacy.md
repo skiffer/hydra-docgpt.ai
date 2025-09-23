@@ -48,6 +48,9 @@ We do not share your data with any third party.
 
 We are committed to maintaining user privacy and data confidentiality, and we do not use this data for any form of generalized AI/ML model training or development, including but not limited to large language models.
 
+#### We do not use data obtained through Google Workspace APIs to develop, improve, or train generalized artificial intelligence (AI) or machine learning (ML) models. All data accessed via Google Workspace APIs is used solely to provide and improve the specific functionality of our Workspace Add-on, in compliance with Google’s API Services User Data Policy.
+
+We are committed to maintaining user privacy and data confidentiality, and we do not use this data for any form of generalized AI/ML model training or development, including but not limited to large language models.
 
 ### Which permissions are needed for "GPT for Sheets™ Docs™ Forms™ Slides™"?
 When you use "GPT for Sheets™ Docs™ Forms™ Slides™" for the first time, you’ll be asked to accept the minimum-required permissions:
