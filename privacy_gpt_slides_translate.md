@@ -1,79 +1,99 @@
 ---
-title: Translate Slides™ with AI GPT: Privacy Policy
-description: 
+title: "Translate Slides™ with AI GPT: Privacy Policy"
+description: "Privacy Policy for Translate Slides™ with AI GPT - Comprehensive disclosure of data collection, use, and sharing practices"
 permalink: /privacy_gpt_slides_translate/
 ---
 
-Last updated: October 9, 2023
+# Privacy Policy for Translate Slides™ with AI GPT
+
+**Last updated: December 24, 2024**
+
+This Privacy Policy describes how Translate Slides™ with AI GPT ("we", "our", or "us") collects, uses, and shares your information when you use our Google Workspace add-on service ("Service"). This policy complies with Google API Services User Data Policy requirements.
+
+## 1. INFORMATION WE COLLECT
+
+### Personal Information
+- **Email Address**: We collect your Google account email address for authentication and license activation
+- **Google Slides Content**: We access the content of your Google Slides presentations only when you use our translation features
+
+### How We Collect Information
+- **Authentication**: Through Google's OAuth system when you first install and authorize our add-on
+- **Service Usage**: When you use our translation features within Google Slides
+
+## 2. HOW WE USE YOUR INFORMATION
+
+We use the collected information solely to:
+- Authenticate your access to the Service
+- Process translation requests for your Google Slides content
+- Send license activation confirmations and essential service communications
+- Track usage limits to ensure fair service availability
+
+## 3. DATA SHARING AND THIRD PARTIES
+
+### OpenAI Partnership
+We share the following data with OpenAI (https://openai.com/) to provide translation services:
+- Text content from your Google Slides presentations
+- Your selected target language for translation
+
+### No Other Third Party Sharing
+- We do NOT sell, track, or share your personal information with any other third parties
+- We do NOT share your email address with third parties
+- We do NOT store your Google Slides content on our servers
+
+## 4. DATA STORAGE AND SECURITY
+
+- **No Local Storage**: We do not store your Google Slides content or translation inputs on our servers
+- **Email Only**: The only personal data we retain is your email address for authentication purposes
+- **Google Servers**: Your presentation data remains on Google's servers at all times
+- **Temporary Processing**: Translation requests are processed in real-time and not stored
+
+## 5. GOOGLE API COMPLIANCE
+
+Our Service's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 
-**The personal information you disclose to us**
+## 6. SECURITY MEASURES
 
-In Short: We collect personal information that you provide to us.
+We implement appropriate technical and organizational security measures to protect your personal information. However, no electronic transmission over the Internet can be guaranteed to be 100% secure. 
 
-Since our Google add-ons only work with Google products, a Google account is required for authentication and login. Our Google add-ons collect your email address for the first authentication in the application. Authentication is performed by Google itself using the default authentication method. Our add-ons, without this authentication, will not work properly. Authentication can be revoked by the user at any time. In order to provide services to you, your email address must be used to send you communications, such as confirmation emails and support updates
+Key security practices:
+- All data transmission uses secure protocols
+- Authentication is handled entirely by Google's secure OAuth system
+- We maintain minimal data retention (email addresses only)
+- No offline access to your Google account data
 
-Your email address will be used to activate your license.
+## 7. YOUR RIGHTS AND CHOICES
 
-**We do not share, track or sell your personal and business information to third parties.**
+- **Revoke Access**: You can revoke our access to your Google account at any time through your Google Account settings
+- **Data Deletion**: Contact us to request deletion of your email address from our records
+- **Service Termination**: You can stop using our service at any time by removing the add-on
 
+<img class="demo" alt="Privacy Settings UI" src="{{ site.baseurl }}/images/privacy_slides_translate_ui.png" />
 
-**Notice**
+## 8. PERMISSIONS AND SCOPES
 
-1. We do not store your data(inputs or drive files).It stays on Google’s servers. Granting us access to your data does not allow us to access your data offline. We only use this access to display them on the Add-on and make actions on your behalf such as adding or updating a task. All the actions performed come from you.
-2. We do not share your data with any third party.
+When you first use Translate Slides™ with AI GPT, you'll be asked to grant these minimum-required permissions:
 
-Information we collect and how we use it
-We offer a number of services that do not require you to register for an account or provide any personal information to us, such as the company Search. In order to provide our full range of services, we may collect the following types of information:
+| Permission | Purpose | Usage |
+|------------|---------|-------|
+| View and manage Google Slides presentations | Core functionality | To read presentation content for translation and write translated content back |
+| Display third-party web content in Google applications | User interface | To show our translation interface within Google Slides |
+| Connect to external service | Translation processing | To send content to OpenAI for translation services |
+| Access to email address (`userinfo.email`) | Authentication & limits | To identify users and track usage limits (not shared with third parties) |
 
-When you sign up for an account or other service or promotion that requires registration, we ask you for personal information (such as your name, email address)
-The Application’s use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+### Why These Permissions Are Required
 
+Our add-on requires integration with Google Workspace to provide seamless translation services. We request only the minimum permissions essential for core functionality. We do not have access to your Google account password or other Google services outside of the specified scopes.
 
+## 9. CONTACT INFORMATION
 
-**HOW DO WE KEEP YOUR INFORMATION SAFE?**
+If you have questions about this Privacy Policy or our data practices, please contact us:
 
-In Short: We aim to protect your personal information through a system of organizational and technical security measures.
+**Email**: yaroslav91@gmail.com  
+**Website**: [DocGPT.ai](https://docgpt.ai)
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. Translate Slides™ with AI GPT uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+We will respond to privacy-related inquiries within 30 days.
 
+---
 
-We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
-
-The only information we store from your Google account is email.
-
-<img class="demo" alt="privacy_slides_ui.png" src="{{ site.baseurl }}/images/privacy_slides_translate_ui.png" />
-
-
-We share data from fields "Translate all slides in click" (language) and texts at your current presentation with AI models provider OpenAI (https://openai.com/)
-
-The Translate Slides™ with AI GPT use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
-
-This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
-
-### Which permissions are needed for "Translate Slides™ with AI GPT"?
-
-When you use "Translate Slides™ with AI GPT" for the first time, you’ll be asked to accept the minimum-required permissions:
-
-
-| Required permission                                                                        | Explanation of usage                                                                                 |
-|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| View and manage the Google Slides™ presentations that this application is installed in     | To read and write data in the current presentation of a Google Slides™.                              |
-| Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
-| Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
-
-Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
-The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
-
-The requests provided in text boxes: "Translate all slides in click" (language) and content from your Google Slides™ (presentation) for requesting data at openai.com.
-
-### Why does "Translate Slides™ with AI GPT" need those permissions?
-
-"Translate Slides™ with AI GPT" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "Translate Slides™ with AI GPT" only requests the minimum-required permissions that are essential for it to function optimally.
-
-"Translate Slides™ with AI GPT" does not have access to your Google account or your password, only to your email  info.
-
-### Still have questions?
-
-Please contact by email: yaroslav91@gmail.com and will be happy to help you.
-Also you can contact by a chat at the bottom.
+*This Privacy Policy is designed to comply with Google API Services User Data Policy and Google Workspace Marketplace requirements.*
