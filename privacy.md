@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: "Privacy Policy: GPT for Sheets™ Docs™ Forms™ Slides™"
 description: 
 permalink: /privacy/
 ---
