@@ -1,6 +1,6 @@
 ---
-title: AI GPT for Slides™: Privacy Policy
-description: 
+title: "Create Presentation with AI ChatGPT | Slides™: Privacy Policy"
+description: "Privacy Policy for Create Presentation with AI ChatGPT | Slides™ - data collection, use, and sharing disclosure"
 permalink: /privacy_gpt_slides/
 ---
 
@@ -41,7 +41,7 @@ The Application’s use and transfer of information received from Google APIs to
 
 In Short: We aim to protect your personal information through a system of organizational and technical security measures.
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. AI GPT for Slides™ uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. Create Presentation with AI ChatGPT | Slides™ uses and transfers to any other app of information received from Google API's will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
@@ -52,13 +52,13 @@ The only information we store from your Google account is email.
 
 We share data from fields "Type your topic", "Provide additional content (optional)", "Output language", "Writing tone", "Slides" with AI models provider OpenAI (https://openai.com/)
 
-The AI GPT for Slides™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+The Create Presentation with AI ChatGPT | Slides™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-### Which permissions are needed for "AI GPT for Slides™"?
+### Which permissions are needed for "Create Presentation with AI ChatGPT | Slides™"?
 
-When you use "AI GPT for Slides™" for the first time, you’ll be asked to accept the minimum-required permissions:
+When you use "Create Presentation with AI ChatGPT | Slides™" for the first time, you'll be asked to accept the minimum-required permissions:
 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
@@ -72,11 +72,11 @@ The requests provided in text boxes for generating will be used in AI model prov
 
 The requests provided in text boxes: "Type your topic", "Provide additional content (optional)", "Output Language", "Slides"  for requesting data at openai.com.
 
-### Why does "AI GPT for Slides™" need those permissions?
+### Why does "Create Presentation with AI ChatGPT | Slides™" need those permissions?
 
-"AI GPT for Slides™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "AI GPT for Slides™" only requests the minimum-required permissions that are essential for it to function optimally.
+"Create Presentation with AI ChatGPT | Slides™" is integrated with G Suite apps like Slides. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "Create Presentation with AI ChatGPT | Slides™" only requests the minimum-required permissions that are essential for it to function optimally.
 
-"AI GPT for Slides™" does not have access to your Google account or your password, only to your email  info.
+"Create Presentation with AI ChatGPT | Slides™" does not have access to your Google account or your password, only to your email  info.
 
 ### Still have questions?
 
