@@ -58,6 +58,18 @@
   #    link: /contact/
 - name: "Links"
   links:
+    - name: Privacy Policy - GPT for Gmail™ | AI Email Assistant | Gemini
+      link: /privacy_gpt_gmail/
+      new_window: true
+      nofollow: true
+    - name: Privacy Policy - Create Presentation with AI ChatGPT | Slides™
+      link: /privacy_gpt_slides/
+      new_window: true
+      nofollow: true
+    - name: Privacy Policy - GPT for Forms™| AI Quiz Maker | Quiz Generator
+      link: /privacy_gpt_forms/
+      new_window: true
+      nofollow: true
     - name: 👍 Try also - Linkedin Automation for B2B Sales
       link: /cold-message-on-linkedin
       new_window: true
