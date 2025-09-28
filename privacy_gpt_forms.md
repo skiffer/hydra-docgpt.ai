@@ -3,81 +3,151 @@ title: "GPT for Forms™| AI Quiz Maker | Quiz Generator: Privacy Policy"
 description: "Privacy Policy for GPT for Forms™| AI Quiz Maker | Quiz Generator - data collection, use, and sharing disclosure"
 permalink: /privacy_gpt_forms/
 ---
+
 <style>
 .demo {
     width: 40% !important;
 }
 </style>
 
-Last updated: September 28, 2025
+# Privacy Policy for GPT for Forms™| AI Quiz Maker | Quiz Generator
 
+**Last updated: September 28, 2025**
 
-**The personal information you disclose to us**
+This Privacy Policy describes how GPT for Forms™| AI Quiz Maker | Quiz Generator ("we", "our", or "us") collects, uses, and shares your information when you use our Google Workspace add-on service ("Service"). This policy complies with Google API Services User Data Policy requirements and provides comprehensive disclosure of our data practices.
 
-In Short: We collect personal information that you provide to us.
+## 1. INFORMATION WE COLLECT
 
-Since our Google add-ons only work with Google products, a Google account is required for authentication and login. Our Google add-ons collect your email address for the first authentication in the application. Authentication is performed by Google itself using the default authentication method. Our add-ons, without this authentication, will not work properly. Authentication can be revoked by the user at any time. In order to provide services to you, your email address must be used to send you communications, such as confirmation emails and support updates
+### Personal Information
+- **Email Address**: Your Google account email address for authentication and license activation
+- **Profile Information**: Name, profile picture from your Google account
+- **Google Forms Content**: Content from your Google Forms when you use our AI quiz generation features
+- **User Input Data**: Quiz configuration settings, question parameters, and content you provide for AI processing
 
-Your email address will be used to activate your license.
+### How We Collect Information
+- **Authentication**: Through Google's OAuth system when you install and authorize our add-on
+- **Service Usage**: When you use AI quiz generation features within Google Forms
+- **Content Access**: Only when you actively use our AI features on specific forms
 
-**We do not share, track or sell your personal and business information to third parties.**
+## 2. HOW WE USE YOUR INFORMATION
 
+We use the collected information solely to:
+- **Authenticate Access**: Verify your identity and manage your account
+- **Process AI Requests**: Send your content and quiz parameters to AI services for quiz generation
+- **Provide Core Features**: Enable AI-powered quiz creation within Google Forms
+- **License Management**: Activate and manage your subscription
+- **Essential Communications**: Send license confirmations and critical service updates
 
-**Notice**
+## 3. DATA SHARING AND THIRD PARTIES
 
-1. We do not store your data(inputs or drive files).It stays on Google’s servers. Granting us access to your data does not allow us to access your data offline. We only use this access to display them on the Add-on and make actions on your behalf such as adding or updating a task. All the actions performed come from you.
-2. We do not share your data with any third party.
+### ⚠️ **IMPORTANT: OpenAI Partnership**
 
-Information we collect and how we use it
-We offer a number of services that do not require you to register for an account or provide any personal information to us, such as the company Search. In order to provide our full range of services, we may collect the following types of information:
+**We share the following data with OpenAI (https://openai.com/) to provide AI quiz generation functionality:**
+- Question configuration settings ("Question configuration", "Questions count", "Answers count", "Correct answers")
+- Content you paste or input ("Paste your content")
+- Form structure and quiz parameters
+- Context needed to generate quiz questions and answers
 
-When you sign up for an account or other service or promotion that requires registration, we ask you for personal information (such as your name, email address)
-The Application’s use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+### Data Sharing Details
+- **Purpose**: To process your requests and generate AI-powered quiz content
+- **Data Transmitted**: Only content you actively choose to process with our AI features
+- **Retention**: Processed according to OpenAI's data retention policies
+- **Security**: Transmitted using secure, encrypted connections
 
+### No Other Third-Party Sharing
+- We do NOT sell, track, or share your personal information with any other third parties
+- We do NOT share your email address or profile information with third parties
+- We do NOT store your Google Forms content on our servers
 
+## 4. DATA STORAGE AND SECURITY
 
-**HOW DO WE KEEP YOUR INFORMATION SAFE?**
+### Security Measures
+- **Encryption in Transit**: All data transmission uses secure HTTPS protocols
+- **No Local Storage**: We do not store your Google Forms content on our servers
+- **Minimal Data Retention**: We only retain email addresses for authentication
+- **Google OAuth**: Authentication handled entirely by Google's secure system
+- **Third-Party Security**: OpenAI processing follows their security standards
 
-In Short: We aim to protect your personal information through a system of organizational and technical security measures.
+### Data Location
+- **Your Forms**: Remain on Google's servers at all times
+- **Processing**: Temporarily processed by OpenAI for AI quiz generation
+- **Personal Data**: Email and profile info stored securely for authentication only
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. GPT for Forms™| AI Quiz Maker | Quiz Generator uses and transfers to any other app of information received from Google API's will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+<img class="demo" alt="Privacy Settings UI for GPT Forms" src="{{ site.baseurl }}/images/privacy_forms_ui.png" />
 
+## 5. GOOGLE API COMPLIANCE
 
-We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
+Our Service's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
-The only information we store from your Google account is email.
+### AI Model Training Policy
+**We do NOT use data obtained through Google Workspace APIs to develop, improve, or train generalized artificial intelligence (AI) or machine learning (ML) models.** All data accessed via Google Workspace APIs is used solely to provide and improve the specific functionality of our Workspace Add-on, in compliance with Google's API Services User Data Policy.
 
-<img class="demo" alt="privacy_forms_ui.png" src="{{ site.baseurl }}/images/privacy_forms_ui.png" />
+### Data Processing Principles
+- Data stays on Google's servers except during active AI processing
+- No offline access to your Google account data
+- All actions performed come from your direct requests
+- Temporary processing only for immediate AI responses
 
-We share data from fields "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content" with AI models provider OpenAI (https://openai.com/)
+## 6. YOUR RIGHTS AND CHOICES
 
-The GPT for Forms™| AI Quiz Maker | Quiz Generator use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+### Access Control
+- **Revoke Access**: You can revoke our access to your Google account at any time through [Google Account Settings](https://myaccount.google.com/permissions)
+- **Selective Usage**: You choose which forms to process with our AI features
+- **Service Termination**: You can stop using our service by removing the add-on
 
-This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+### Data Rights
+- **Data Deletion**: Contact us to request deletion of your email address from our records
+- **Data Access**: Request information about what personal data we have stored
+- **Privacy Inquiries**: Contact us with any privacy-related questions
 
-### Which permissions are needed for "GPT for Forms™| AI Quiz Maker | Quiz Generator"?
+### How to Exercise Your Rights
+1. **For Google Data Access**: Use Google's account settings
+2. **For Our Data**: Email us at yaroslav91@gmail.com
+3. **Response Time**: We respond to privacy requests within 30 days
 
-When you use "GPT for Forms™| AI Quiz Maker | Quiz Generator" for the first time, you'll be asked to accept the minimum-required permissions:
+## 7. PERMISSIONS AND SCOPES
 
+When you first use GPT for Forms™| AI Quiz Maker | Quiz Generator, you'll be asked to grant these minimum-required permissions:
 
-| Required permission                                                                        | Explanation of usage                                                                                 |
-|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| View and manage the Google Forms™ that this application is installed in                    | To read and write data in the current form of a Google Forms™.                                       |
-| Display and run third-party web content in prompts and sidebars inside Google applications | To show custom UI in the Google Workspace editor or other Google Workspace applications.             |
-| Connect to an external service                                                             | We need to request data at an external service, specifically for getting a response from AI service. |
+| Permission | Purpose | Specific Usage |
+|------------|---------|----------------|
+| **View and manage Google Forms** | Form processing | Read form structure, write AI-generated quiz content, analyze form data |
+| **Display third-party web content** | User interface | Show our AI quiz generation interface within Google Forms |
+| **Connect to external service** | AI processing | Send content to OpenAI for quiz generation and AI functionality |
+| **Access to email address** (`userinfo.email`) | Authentication | Identify users and track usage limits (not shared with third parties) |
 
-Also it uses scope https://www.googleapis.com/auth/userinfo.email for identifying you at the backend part for tracking requests limits only. We do not share your email with any third party.
-The requests provided in text boxes for generating will be used in AI model provider OpenAI (https://openai.com).
+### Why These Permissions Are Required
 
-The requests provided in text boxes: "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content"  for requesting data at openai.com.
+Our add-on requires Google Forms integration to provide seamless AI quiz generation functionality. We request only the minimum permissions essential for core functionality:
 
-### Why does "GPT for Forms™| AI Quiz Maker | Quiz Generator" need those permissions?
+- **Forms Access**: Required to read your form structure and write AI-generated quiz content
+- **External Service**: Essential for connecting to OpenAI's AI services for quiz generation
+- **UI Display**: Needed to show our interface within Google Forms
+- **Email Access**: Used only for authentication and usage limit tracking
 
-"GPT for Forms™| AI Quiz Maker | Quiz Generator" is integrated with G Suite apps like Forms. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "GPT for Forms™| AI Quiz Maker | Quiz Generator" only requests the minimum-required permissions that are essential for it to function optimally.
+**Important**: We do NOT have access to your Google account password or other Google services outside of the specified scopes.
 
-"GPT for Forms™| AI Quiz Maker | Quiz Generator" does not have access to your Google account or your password, only to your email  info.
+### Permission Management
 
-### Still have questions?
+You can review and revoke permissions at any time:
+1. Go to [Google Account Settings](https://myaccount.google.com/permissions)
+2. Find "GPT for Forms™| AI Quiz Maker | Quiz Generator" in your third-party apps
+3. Review or revoke access as needed
 
-Please contact by email: yaroslav91@gmail.com and will be happy to help you.
-Also you can contact by a chat at the bottom.
+## 8. CONTACT INFORMATION
+
+For privacy-related questions or requests:
+
+**Email**: yaroslav91@gmail.com  
+**Website**: [DocGPT.ai](https://docgpt.ai)  
+**Response Time**: We respond to privacy inquiries within 30 days
+
+### Data Protection Inquiries
+- Request data deletion
+- Access your personal data
+- Report privacy concerns
+- Request policy clarifications
+
+---
+
+*This Privacy Policy is designed to comply with Google API Services User Data Policy and Google Workspace Marketplace requirements. By using our service, you acknowledge that you have read and understood this policy, including our data sharing practices with OpenAI for AI functionality.*
