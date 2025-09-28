@@ -1,6 +1,6 @@
 ---
-title: GPT Quiz Generator for Forms™: Privacy Policy
-description: 
+title: "GPT for Forms™| AI Quiz Maker | Quiz Generator: Privacy Policy"
+description: "Privacy Policy for GPT for Forms™| AI Quiz Maker | Quiz Generator - data collection, use, and sharing disclosure"
 permalink: /privacy_gpt_forms/
 ---
 <style>
@@ -9,7 +9,7 @@ permalink: /privacy_gpt_forms/
 }
 </style>
 
-Last updated: October 9, 2023
+Last updated: September 28, 2025
 
 
 **The personal information you disclose to us**
@@ -40,7 +40,7 @@ The Application’s use and transfer of information received from Google APIs to
 
 In Short: We aim to protect your personal information through a system of organizational and technical security measures.
 
-We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. GPT Quiz Generator for Forms™ uses and transfers to any other app of information received from Google API’s will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure. GPT for Forms™| AI Quiz Maker | Quiz Generator uses and transfers to any other app of information received from Google API's will to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 
 We do not store your data (inputs, clicks, or drive files). It stays on Google’s servers. Granting us access to your data does not allow us to access it offline. This access is only used for displaying your information on the app and for taking actions on your behalf. All the actions performed come from you.
@@ -51,13 +51,13 @@ The only information we store from your Google account is email.
 
 We share data from fields "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content" with AI models provider OpenAI (https://openai.com/)
 
-The GPT Quiz Generator for Forms™ use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
+The GPT for Forms™| AI Quiz Maker | Quiz Generator use and transfer of information received from Google APIs adheres to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes), including the Limited Use requirements.
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
-### Which permissions are needed for "GPT Quiz Generator for Forms™"?
+### Which permissions are needed for "GPT for Forms™| AI Quiz Maker | Quiz Generator"?
 
-When you use "GPT Quiz Generator for Forms™" for the first time, you’ll be asked to accept the minimum-required permissions:
+When you use "GPT for Forms™| AI Quiz Maker | Quiz Generator" for the first time, you'll be asked to accept the minimum-required permissions:
 
 
 | Required permission                                                                        | Explanation of usage                                                                                 |
@@ -71,11 +71,11 @@ The requests provided in text boxes for generating will be used in AI model prov
 
 The requests provided in text boxes: "Question configuration", "Questions count", "Answers count", "Correct answers", "Paste your content"  for requesting data at openai.com.
 
-### Why does "GPT Quiz Generator for Forms™" need those permissions?
+### Why does "GPT for Forms™| AI Quiz Maker | Quiz Generator" need those permissions?
 
-"GPT Quiz Generator for Forms™" is integrated with G Suite apps like Sheets. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "GPT Quiz Generator for Forms™" only requests the minimum-required permissions that are essential for it to function optimally.
+"GPT for Forms™| AI Quiz Maker | Quiz Generator" is integrated with G Suite apps like Forms. It requires access to the Google environment to provide services seamlessly across the G Suite apps. "GPT for Forms™| AI Quiz Maker | Quiz Generator" only requests the minimum-required permissions that are essential for it to function optimally.
 
-"GPT Quiz Generator for Forms™" does not have access to your Google account or your password, only to your email  info.
+"GPT for Forms™| AI Quiz Maker | Quiz Generator" does not have access to your Google account or your password, only to your email  info.
 
 ### Still have questions?
 
