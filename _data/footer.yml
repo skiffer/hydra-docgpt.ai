@@ -58,6 +58,9 @@
   #    link: /contact/
 - name: "Links"
   links:
+    - name: Add-On - Create Presentation with AI ChatGPT | Slides™
+      link: /google-slide-ai/
+      new_window: true
     - name: Privacy Policy - GPT for Gmail™ | AI Email Assistant | Gemini
       link: /privacy_gpt_gmail/
       new_window: true
