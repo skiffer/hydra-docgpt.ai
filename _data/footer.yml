@@ -168,6 +168,30 @@
     - name: How to use GPT for Sheets
       link: /docs/gpt-for-sheets/get-started
       new_window: true
+    - name: Claude for Google Sheets - Complete How-to Guide
+      link: /claude-for-google-sheets-how-to-guide/
+      new_window: true
+    - name: Gemini for Google Sheets - Complete How-to Guide
+      link: /gemini-for-google-sheets-how-to-guide/
+      new_window: true
+    - name: Google Indexing Pages in Google Sheets Guide
+      link: /google-indexing-pages-google-sheets-guide/
+      new_window: true
+    - name: Google Search API in Google Sheets Guide
+      link: /google-search-api-google-sheets-guide/
+      new_window: true
+    - name: Send Emails from Google Sheets Guide
+      link: /send-emails-from-google-sheets-guide/
+      new_window: true
+    - name: Google Maps Integration for Google Sheets Guide
+      link: /google-maps-integration-google-sheets-guide/
+      new_window: true
+    - name: SERP Analysis in Google Sheets Guide
+      link: /serp-analysis-google-sheets-guide/
+      new_window: true
+    - name: YouTube Data Analysis in Google Sheets Guide
+      link: /youtube-data-analysis-google-sheets-guide/
+      new_window: true
     - name: Troubleshooting Workspace Add-Ons
       link: /docs/support-gpt-sheets-docs-slides-forms-gmail
       new_window: true
