@@ -85,6 +85,9 @@
     - name: Translate & Rephrase Slides Presentations with AI
       link: /translate-slides-with-ai-gpt
       new_window: true
+    - name: AI Slides Translator - 100+ Languages
+      link: /slides-translator-ai-powered/
+      new_window: true
     - name: Affiliate program
       link: https://docgptai.tolt.io/login
       new_window: true

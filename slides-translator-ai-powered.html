@@ -1,0 +1,713 @@
+---
+title: AI Slides Translator - Translate Google Slides in 100+ Languages
+heading: AI-Powered Slides Translator | Translate Presentations Instantly
+description: Professional AI Slides Translator for Google Slides. Translate presentations into 100+ languages instantly with ChatGPT. Perfect for multilingual presentations, international teams, and global business communications.
+canonical_url: /slides-translator-ai-powered/
+keywords: slides translator, translate google slides, AI presentation translator, multilingual slides, translate powerpoint, presentation translation tool, automatic slide translation, google slides language converter
+---
+<script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+<script type="text/javascript">
+    Paddle.Setup({
+        vendor: 13096,
+        eventCallback: function (data) {
+            if (data.event === "Checkout.Complete") {
+                let dataLayerInfo = {
+                    event: "purchase",
+                    ecommerce: {
+                        transaction_id: data.eventData.checkout.id,
+                        affiliation: "Affiliation Slides Translator",
+                        value: data.eventData.checkout.prices.customer.total,
+                        tax: data.eventData.checkout.prices.customer.total_tax,
+                        shipping: null,
+                        currency: data.eventData.checkout.prices.customer.currency,
+                        coupon: data.eventData.checkout.coupon.coupon_code,
+                        items: data.eventData.checkout.prices.customer.items,
+                    },
+                };
+                dataLayer.push(dataLayerInfo);
+            }
+        }
+    });
+</script>
+
+<!-- Schema Markup for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AI Slides Translator",
+  "description": "Professional AI-powered translator for Google Slides. Translate presentations into 50+ languages instantly with advanced AI technology.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "14.99",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1200"
+  },
+  "features": [
+    "Translate slides into 50+ languages",
+    "AI-powered translation accuracy",
+    "Preserve slide formatting",
+    "Bulk translation capabilities",
+    "Professional business translations"
+  ]
+}
+</script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<style>
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0A6EBD;
+        -webkit-transition: 0.4s;
+        transform: translate(0px, 0px);
+        transition: 0.6s ease transform, 0.6s box-shadow;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    input,
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 0;
+    }
+
+    input:checked + .slider {
+        background-color: #068FFF;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #068FFF;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .hero-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+
+    .feature-card {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ribbon {
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+        background: #4dbe3b;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -42px;
+        top: 20px;
+        padding-top: 7px;
+    }
+    .billed-annually {
+        font-size: 10px;
+        color: #999999;
+    }
+    .icon-pricing {
+        /*font-size: 17px;*/
+    }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .text-feature {
+        font-size: 13px;
+    }
+
+    .seo-content {
+        background: #f8f9fa;
+        padding: 3rem 0;
+    }
+
+    .language-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .language-item {
+        background: white;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1>AI Slides Translator</h1>
+        <p class="lead">Translate Google Slides presentations into 100+ languages instantly with advanced AI technology</p>
+        <div class="mt-4">
+            <span class="badge badge-light badge-lg mr-2">🌍 100+ Languages Supported</span>
+            <span class="badge badge-light badge-lg mr-2">⚡ Instant Translation</span>
+            <span class="badge badge-light badge-lg">🎯 Format Preservation</span>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="seo-content">
+    <div class="container">
+        <h2 class="text-center mb-5">Why Choose Our AI Slides Translator?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h4>100+ Languages Support</h4>
+                <p>Translate your presentations into major world languages including Spanish, French, German, Chinese, Japanese, Arabic, and 95+ more languages.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h4>Format Preservation</h4>
+                <p>Maintain original slide formatting, images, and layout while translating text content with pixel-perfect accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h4>Instant Translation</h4>
+                <p>Translate entire presentations in seconds, not hours. Perfect for urgent international meetings and deadlines.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h4>AI-Powered Accuracy</h4>
+                <p>Advanced ChatGPT technology ensures contextually accurate translations that understand business terminology and nuances.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h4>Team Collaboration</h4>
+                <p>Perfect for international teams, global businesses, and educational institutions requiring multilingual presentations.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h4>Privacy Protected</h4>
+                <p>Your presentation content remains secure with enterprise-grade privacy protection and no data retention.</p>
+            </div>
+        </div>
+
+        <!-- Supported Languages Section -->
+        <div class="mt-5">
+            <h3 class="text-center mb-4">Supported Languages</h3>
+            <div class="language-grid">
+                <div class="language-item">🇺🇸 English</div>
+                <div class="language-item">🇪🇸 Spanish</div>
+                <div class="language-item">🇫🇷 French</div>
+                <div class="language-item">🇩🇪 German</div>
+                <div class="language-item">🇮🇹 Italian</div>
+                <div class="language-item">🇵🇹 Portuguese</div>
+                <div class="language-item">🇷🇺 Russian</div>
+                <div class="language-item">🇨🇳 Chinese</div>
+                <div class="language-item">🇯🇵 Japanese</div>
+                <div class="language-item">🇰🇷 Korean</div>
+                <div class="language-item">🇸🇦 Arabic</div>
+                <div class="language-item">🇮🇳 Hindi</div>
+                <div class="language-item">🇳🇱 Dutch</div>
+                <div class="language-item">🇵🇱 Polish</div>
+                <div class="language-item">🇹🇷 Turkish</div>
+                <div class="language-item">And 85+ more...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top" style="padding-top: 40px">
+    <h2 style="color: #333; margin-bottom: 1rem;">Choose Your Slides Translator Plan</h2>
+    <div class="h5" style="color: #666;">Perfect for businesses, educators, and international teams</div>
+    <div class="toggle-btn">
+        <span style="margin: 0.8em;">Annually</span>
+        <label class="switch">
+            <input type="checkbox" id="checbox" onclick="check();" />
+            <span class="slider round"></span>
+        </label>
+        <span style="margin: 0.8em;">Monthly</span>
+    </div>
+</div>
+
+<div id="pricing" class="container mb-5 mt-5">
+    <div class="pricing card-deck flex-column flex-md-row mb-3">
+        <div class="card card-pricing text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Starter Translator</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">$<span class="price">14.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-muted text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 50 Slides translation / month</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Translate slides into any of 100+ languages</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> AI-powered translation accuracy</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Preserve original formatting</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No API keys required</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Privacy protection guaranteed</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Professional business translations</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email support included</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-lg" data-theme="none"
+                        data-product="874324" data-email=""
+                        data-success="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator"
+                        data-custom-data="">Start Translating</button>
+            </div>
+        </div>
+        
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional Translator</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="ribbon">MOST POPULAR</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">19.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited slide translations</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> All 100+ languages supported</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Advanced AI translation engine</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Batch translation capabilities</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority translation processing</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Premium support included</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Team collaboration features</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-primary mb-3 btn-lg" data-theme="none"
+                   data-product="874325" data-email=""
+                   data-success="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator"
+                   data-custom-data="">Get Professional</a>
+            </div>
+        </div>
+
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime Translator</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2">one-time</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> <b>Unlimited translations forever</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Lifetime access to all features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> All future language additions</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority customer support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No monthly fees ever</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Enterprise-grade features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Lifetime updates included</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"
+                   data-success="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator"
+                   data-theme="none" data-product="874330" data-email="" data-custom-data="">Get Lifetime Access</a>
+            </div>
+        </div>
+
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise Translator</span>
+            <div class="bg-transparent card-header pt-4 border-0">
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">499</span><span class="h6 text-muted ml-2">/ month</span></div>
+            </div>
+            <div class="card-body pt-0">
+                <ul class="list-unstyled mb-4 text-feature">
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Organization-wide license</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Dedicated enterprise support</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Unlimited translations for all users</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Custom branding options</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Advanced security features</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority feature requests</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Training and onboarding</li>
+                    <li style="color: white"> .</li>
+                </ul>
+                <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-lg"
+                   data-success="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator"
+                   data-theme="none" data-product="874328" data-email="" data-custom-data="">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5 mt-5 text-center center-img">
+    <div class="d-flex justify-content-center flex-wrap">
+        <img src="{{ site.baseurl }}/images/slides-translation-0.png" style="border-radius: 10px; padding: 10px; max-width: 300px;" alt="AI Slides Translator Interface">
+        <img src="{{ site.baseurl }}/images/slides-translation-1.png" style="border-radius: 10px; padding: 10px; max-width: 300px;" alt="Google Slides Translation Step 1">
+        <img src="{{ site.baseurl }}/images/slides-translation-2.png" style="border-radius: 10px; padding: 10px; max-width: 300px;" alt="Google Slides Translation Complete">
+    </div>
+</div>
+
+<style>
+    .button_button {
+        border-radius: 6px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        padding: 0px 24px;
+        cursor: pointer;
+        user-select: none;
+        gap: 8px;
+        font-weight: 500;
+        min-width: 0px;
+        line-height: 100%;
+    }
+
+    .button_install {
+        background: rgb(25, 118, 210);
+        color: rgb(255, 255, 255);
+        height: 64px;
+        padding: 0px 16px 0px 2px;
+        gap: 16px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px -1px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
+        text-transform: uppercase;
+        position: relative;
+        transition: background 0.3s ease 0s;
+    }
+    .button_install:hover {
+        background: rgb(7, 71, 134);
+    }
+
+    .button_install u {
+        background: #fff;
+        height: 60px;
+        border-radius: 4px 0 0 4px;
+        width: 60px;
+        padding: 10px !important;
+    }
+
+    .layout_iconInstallProduct {
+        width: 60px!important;
+        padding: 0!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .install_a:hover {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<div class="container d-flex justify-content-center mb-5">
+    <a class="install_a button_button button_install mt-auto" target="_blank" href="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator">
+        <u class="layout_iconInstallProduct">
+            <svg width="100px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V12.9726L14.4306 11.0119C14.7001 10.6974 15.1736 10.661 15.4881 10.9306C15.8026 11.2001 15.839 11.6736 15.5694 11.9881L12.5694 15.4881C12.427 15.6543 12.2189 15.75 12 15.75C11.7811 15.75 11.573 15.6543 11.4306 15.4881L8.43056 11.9881C8.16099 11.6736 8.19741 11.2001 8.51191 10.9306C8.8264 10.661 9.29988 10.6974 9.56944 11.0119L11.25 12.9726V2C11.25 1.58579 11.5858 1.25 12 1.25ZM6.99583 8.25196C7.41003 8.24966 7.74768 8.58357 7.74999 8.99778C7.7523 9.41199 7.41838 9.74964 7.00418 9.75194C5.91068 9.75803 5.1356 9.78643 4.54735 9.89448C3.98054 9.99859 3.65246 10.1658 3.40901 10.4092C3.13225 10.686 2.9518 11.0746 2.85315 11.8083C2.75159 12.5637 2.75 13.5648 2.75 15.0002V16.0002C2.75 17.4356 2.75159 18.4367 2.85315 19.1921C2.9518 19.9259 3.13225 20.3144 3.40901 20.5912C3.68577 20.868 4.07435 21.0484 4.80812 21.1471C5.56347 21.2486 6.56458 21.2502 8 21.2502H16C17.4354 21.2502 18.4365 21.2486 19.1919 21.1471C19.9257 21.0484 20.3142 20.868 20.591 20.5912C20.8678 20.3144 21.0482 19.9259 21.1469 19.1921C21.2484 18.4367 21.25 17.4356 21.25 16.0002V15.0002C21.25 13.5648 21.2484 12.5637 21.1469 11.8083C21.0482 11.0746 20.8678 10.686 20.591 10.4092C20.3475 10.1658 20.0195 9.99859 19.4527 9.89448C18.8644 9.78643 18.0893 9.75803 16.9958 9.75194C16.5816 9.74964 16.2477 9.41199 16.25 8.99778C16.2523 8.58357 16.59 8.24966 17.0042 8.25196C18.0857 8.25799 18.9871 8.28387 19.7236 8.41916C20.4816 8.55839 21.1267 8.82364 21.6517 9.34857C22.2536 9.95048 22.5125 10.7084 22.6335 11.6085C22.75 12.4754 22.75 13.5778 22.75 14.9453V16.0551C22.75 17.4227 22.75 18.525 22.6335 19.392C22.5125 20.2921 22.2536 21.0499 21.6517 21.6519C21.0497 22.2538 20.2919 22.5127 19.3918 22.6337C18.5248 22.7503 17.4225 22.7502 16.0549 22.7502H7.94513C6.57754 22.7502 5.47522 22.7503 4.60825 22.6337C3.70814 22.5127 2.95027 22.2538 2.34835 21.6519C1.74643 21.0499 1.48754 20.2921 1.36652 19.392C1.24996 18.525 1.24998 17.4227 1.25 16.0551V14.9453C1.24998 13.5778 1.24996 12.4754 1.36652 11.6085C1.48754 10.7084 1.74643 9.95048 2.34835 9.34857C2.87328 8.82363 3.51835 8.55839 4.27635 8.41916C5.01291 8.28387 5.9143 8.25798 6.99583 8.25196Z" fill="#4181E4"/> </g>
+            </svg>
+        </u>
+        <strong>Install Slides Translator</strong>
+    </a>
+</div>
+
+<!-- SEO Content Section -->
+<div class="seo-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h2>The Ultimate AI Slides Translator for Global Teams</h2>
+                <p>Transform your Google Slides presentations for international audiences with our advanced AI-powered slides translator supporting 100+ languages. Whether you're presenting to global clients, teaching international students, or collaborating with remote teams, our translation tool ensures your message resonates across language barriers.</p>
+                
+                <h3>Why Professional Slide Translation Matters</h3>
+                <p>In today's global business environment, effective communication across languages is crucial. Our AI slides translator goes beyond simple word-for-word translation, understanding context, business terminology, and cultural nuances to deliver professional-quality translations that maintain your presentation's impact and credibility.</p>
+                
+                <h3>How Our AI Slides Translator Works</h3>
+                <ol>
+                    <li><strong>Upload Your Presentation:</strong> Open any Google Slides presentation</li>
+                    <li><strong>Select Target Language:</strong> Choose from 100+ supported languages</li>
+                    <li><strong>AI Translation:</strong> Our advanced AI analyzes and translates your content</li>
+                    <li><strong>Format Preservation:</strong> Original layout and design remain intact</li>
+                    <li><strong>Review & Export:</strong> Review translations and share globally</li>
+                </ol>
+                
+                <h3>Perfect for Every Use Case</h3>
+                <ul>
+                    <li><strong>Business Presentations:</strong> Pitch to international clients and investors</li>
+                    <li><strong>Educational Content:</strong> Reach students in their native languages</li>
+                    <li><strong>Marketing Materials:</strong> Adapt campaigns for global markets</li>
+                    <li><strong>Training Programs:</strong> Deliver consistent training across regions</li>
+                    <li><strong>Conference Presentations:</strong> Present at international events with confidence</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Steps start-->
+<div class="container mb-5 mt-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="h4 card-title mb-5">How to Start Using the AI Slides Translator</div>
+
+                        <div class="hori-timeline" dir="ltr">
+                            <ul class="list-inline events">
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 1</div>
+                                        <div class="h5 font-size-16">Install Slides Translator</div>
+                                        <p class="text-muted">Go to Google Workspace Marketplace and install the AI Slides Translator add-on.</p>
+                                        <div>
+                                            <a target="_blank" href="https://workspace.google.com/u/0/marketplace/app/translate_slides_rephrase_with_ai_chatgp/932334450328?utm_source=slides_translator" class="btn btn-primary btn-sm">🚀 Install Translator</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 2</div>
+                                        <div class="h5 font-size-16">Open Google Slides</div>
+                                        <p class="text-muted">Open the presentation you want to translate into multiple languages.</p>
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 Watch Tutorial</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 3</div>
+                                        <div class="h5 font-size-16">Launch the Translator</div>
+                                        <p class="text-muted">Click Extensions → AI Slides Translator → Launch to start translating.</p>
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 See Demo</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">Step 4</div>
+                                        <div class="h5 font-size-16">Translate & Share</div>
+                                        <p class="text-muted">Select target language and let AI translate your entire presentation instantly.</p>
+                                        <div>
+                                            <a target="_blank" rel="nofollow" href="https://www.youtube.com/watch?v=eKm5tgDaOmY" class="btn btn-primary btn-sm">📺 Complete Guide</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body{
+        background:#eee;
+        margin-top:20px;
+    }
+    .hori-timeline .events {
+        border-top: 3px solid #e9ecef;
+    }
+    .hori-timeline .events .event-list {
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+        margin-right: 0;
+    }
+    .hori-timeline .events .event-list:before {
+        content: "";
+        position: absolute;
+        height: 36px;
+        border-right: 2px dashed #dee2e6;
+        top: 0;
+    }
+    .hori-timeline .events .event-list .event-date {
+        position: absolute;
+        top: 38px;
+        left: 0;
+        right: 0;
+        width: 75px;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 2px 4px;
+    }
+    @media (min-width: 1140px) {
+        .hori-timeline .events .event-list {
+            display: inline-block;
+            width: 24%;
+            padding-top: 45px;
+        }
+        .hori-timeline .events .event-list .event-date {
+            top: -12px;
+        }
+    }
+    .bg-soft-primary {
+        background-color: rgba(64,144,203,.3)!important;
+    }
+    .card {
+        border: none;
+        margin-bottom: 24px;
+        -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+        box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    }
+</style>
+
+<script>
+    function check() {
+        console.log("Called check!");
+        var checkBox = document.getElementById("checbox");
+        var text1 = document.getElementsByClassName("text1");
+        var text2 = document.getElementsByClassName("text2");
+
+        for (var i = 0; i < text1.length; i++) {
+            if (checkBox.checked == true) {
+                text1[i].style.display = "block";
+                text2[i].style.display = "none";
+            } else if (checkBox.checked == false) {
+                text1[i].style.display = "none";
+                text2[i].style.display = "block";
+            }
+        }
+    }
+    check();
+</script>
+
+<script type="text/javascript">
+    function getURLParameter(name) {
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+        const results = regex.exec(window.location.href);
+        if (!results || !results[2]) return null;
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    const emailParam = getURLParameter('email');
+    const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
+    if (getStartedLinks) {
+        getStartedLinks.forEach(link => {
+            link.setAttribute('data-email', emailParam || '');
+        });
+    }
+
+    var pricingSection = document.getElementById("pricing");
+    if (pricingSection) {
+        pricingSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+        });
+    }
+
+    if (emailParam) {
+        Paddle.Checkout.open({
+            product: '874327',
+            email: emailParam || ''
+        });
+    }
+
+    function getAllURLParameters() {
+        const url = window.location.href;
+        const queryString = url.split('?')[1];
+        const regex = /([^&=]+)=([^&]*)/g;
+        const params = {};
+        let match;
+
+        while ((match = regex.exec(queryString)) !== null) {
+            const key = decodeURIComponent(match[1].replace(/\+/g, " "));
+            const value = decodeURIComponent(match[2].replace(/\+/g, " "));
+            params[key] = value;
+        }
+        return params;
+    }
+    
+    var allParams = getAllURLParameters();
+    const paddleCustomDataLinks = document.querySelectorAll('.paddle_button[data-custom-data=""]');
+    if (paddleCustomDataLinks) {
+        paddleCustomDataLinks.forEach(link => {
+            link.setAttribute('data-custom-data', JSON.stringify(allParams));
+        });
+    }
+</script>
