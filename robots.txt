@@ -4,7 +4,42 @@ sitemap: false
 ---
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /docs/
+Allow: /*-for-google-sheets-how-to-guide/
 Disallow: /404
 Disallow: /download
+Disallow: /privacy*
+Disallow: /feedback*
+
+# Explicitly allow LLM crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /docs/
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /docs/
+
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+Allow: /docs/
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+Allow: /docs/
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+Allow: /docs/
+
+# LLMs.txt location
+# LLMs can find comprehensive site information at /llms.txt
 
 Sitemap: {{ site.url }}/sitemap.xml
+Sitemap: {{ site.url }}/llms-sitemap.xml

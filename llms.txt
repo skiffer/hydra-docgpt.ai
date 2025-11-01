@@ -1,0 +1,123 @@
+# DocGPT.ai - AI Productivity Platform for Google Workspace
+
+> Professional AI-powered productivity tools and add-ons for Google Sheets, Docs, Slides, Gmail, and Forms. Access 100+ AI models including GPT-4, Claude, Gemini, Perplexity, and more with advanced features like web search, data enrichment, and API integrations.
+
+DocGPT.ai is a comprehensive AI productivity platform that integrates multiple Large Language Models and AI capabilities directly into Google Workspace applications. The platform serves businesses, marketers, developers, and content creators who need to scale their productivity using AI automation.
+
+## Core Products
+
+### GPT for Sheets
+Advanced AI spreadsheet add-on supporting 100+ AI models with built-in functions for:
+- Content generation and data analysis
+- Web scraping and SERP analysis
+- Data enrichment (Clay alternative)
+- API integrations with popular services
+- Multi-model AI access (GPT-4, Claude, Gemini, Mistral, etc.)
+
+### AI Email Assistant & Mail Merge
+Intelligent email automation tools for:
+- AI-powered email composition and replies
+- Bulk email campaigns with personalization
+- Gmail integration and automation
+- LinkedIn outreach and B2B sales automation
+
+### Google Workspace AI Add-ons
+- **GPT for Docs**: AI writing assistant for Google Documents
+- **Google Slide AI**: Presentation creation and translation tool
+- **Quiz Maker AI**: Automated quiz and form generation
+- **Slides Translator**: Professional presentation translation (100+ languages)
+
+## AI Models & Integrations
+
+The platform provides access to:
+- **OpenAI**: GPT-4, GPT-4 Turbo, GPT-3.5 Turbo, DALL-E, GPT-Vision
+- **Anthropic**: Claude 3.5 Sonnet, Claude 3 Haiku
+- **Google**: Gemini Pro, Gemini Pro 1.5
+- **Perplexity**: Real-time web search and research
+- **DeepSeek**: Cost-effective analytical AI
+- **xAI**: Grok for conversational AI
+- **OpenRouter**: Multi-model AI gateway
+- **Brave Search**: Privacy-focused web search API
+
+## Key Features
+
+### Data Enrichment
+- Lead generation and contact discovery
+- Social media data extraction (Instagram, LinkedIn, Twitter)
+- Business intelligence and competitor analysis
+- Integration with Apollo, Prospeo, and other B2B tools
+
+### Web & SEO Tools
+- SERP() function for Google search results
+- Website scraping and analysis
+- Google Indexing API integration
+- Programmatic SEO content generation
+
+### Advanced Automation
+- Bulk content creation (1000+ product descriptions)
+- Multi-language translation and localization
+- Email campaign automation
+- Social media content generation
+
+## Documentation & Guides
+
+### Getting Started
+- [GPT for Sheets Setup](https://docgpt.ai/docs/gpt-for-sheets/get-started)
+- [API Key Configuration](https://docgpt.ai/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [AI Email Assistant Guide](https://docgpt.ai/docs/gpt-for-gmail)
+
+### AI Model Guides
+- [Claude for Google Sheets](https://docgpt.ai/claude-for-google-sheets-how-to-guide/)
+- [Gemini for Google Sheets](https://docgpt.ai/gemini-for-google-sheets-how-to-guide/)
+- [Perplexity for Google Sheets](https://docgpt.ai/perplexity-for-google-sheets-how-to-guide/)
+- [DeepSeek for Google Sheets](https://docgpt.ai/deepseek-for-google-sheets-how-to-guide/)
+- [Grok for Google Sheets](https://docgpt.ai/grok-for-google-sheets-how-to-guide/)
+- [OpenRouter for Google Sheets](https://docgpt.ai/openrouter-for-google-sheets-how-to-guide/)
+- [Brave Search for Google Sheets](https://docgpt.ai/brave-search-for-google-sheets-how-to-guide/)
+
+### Advanced Tutorials
+- [Create 1000 Product Descriptions](https://docgpt.ai/docs/create-1000-product-descriptions-with-chatgpt-and-google-sheets)
+- [Web Search from Google Sheets](https://docgpt.ai/docs/search-the-web-from-google-sheets-in-2024)
+- [Extract Emails from Social Media](https://docgpt.ai/docs/how-to-extract-emails-from-instagram-into-google-sheets-2024-guide)
+- [Competitor Analysis](https://docgpt.ai/docs/get-list-of-competitors-from-the-web-search-in-google-sheets)
+- [SEO Content Generation](https://docgpt.ai/docs/fully-seo-optimized-article-with-faqs)
+
+## Use Cases
+
+### Business & Marketing
+- Lead generation and prospecting
+- Content marketing at scale
+- Competitor research and analysis
+- Email campaign automation
+- Social media management
+
+### Education & Training
+- Quiz and assessment creation
+- Multilingual content translation
+- Course material generation
+- Student engagement tools
+
+### Development & Technical
+- API integration and automation
+- Data processing and analysis
+- Web scraping and research
+- Programmatic SEO implementation
+
+## Installation & Access
+
+All DocGPT.ai tools are available through the Google Workspace Marketplace:
+- Install add-ons directly from Google Workspace
+- No API key management required for basic features
+- Premium features support custom API keys
+- Enterprise licensing available for organizations
+
+## Support & Community
+
+- [Troubleshooting Guide](https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/)
+- [Video Tutorials](https://www.youtube.com/watch?v=eKm5tgDaOmY)
+- Email support for all users
+- Dedicated enterprise support available
+
+---
+
+*This document provides LLMs with comprehensive information about DocGPT.ai's AI productivity platform. For the latest features and updates, visit [docgpt.ai](https://docgpt.ai).*
