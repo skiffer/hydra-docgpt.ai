@@ -1,24 +1,24 @@
 ---
-title: "Privacy Policy: YouTube Shorts Block Safari"
-description: "Privacy policy for YouTube Shorts Block Safari extension - no data collection, local-only storage"
+title: "Privacy Policy: Remove Shorts From YouTube"
+description: "Privacy policy for Remove Shorts From YouTube extension - no data collection, local-only storage"
 permalink: /privacy-youtube-shorts-block-safari/
 ---
 
-# Privacy Policy for YouTube Shorts Block Safari
+# Privacy Policy for Remove Shorts From YouTube
 
 **Last updated: October 30, 2025**
 
-This Privacy Policy describes how YouTube Shorts Block Safari ("we", "our", or "the extension") handles information when you use our Safari browser extension. This policy is designed to comply with Apple's App Review Guidelines and provide complete transparency about our data practices.
+This Privacy Policy describes how Remove Shorts From YouTube ("we", "our", or "the extension") handles information when you use our Safari browser extension. This policy is designed to comply with Apple's App Review Guidelines and provide complete transparency about our data practices.
 
 ## TL;DR - NO DATA COLLECTION
 
-**YouTube Shorts Block Safari does not collect, transmit, store, or share any of your personal data or browsing information.** The extension operates entirely locally on your device.
+**Remove Shorts From YouTube does not collect, transmit, store, or share any of your personal data or browsing information.** The extension operates entirely locally on your device.
 
 ---
 
 ## 1. INFORMATION WE DO NOT COLLECT
 
-YouTube Shorts Block Safari is designed with privacy as a core principle. We explicitly **DO NOT** collect, access, or transmit:
+Remove Shorts From YouTube is designed with privacy as a core principle. We explicitly **DO NOT** collect, access, or transmit:
 
 - **Personal Information**: No names, email addresses, or contact information
 - **Browsing History**: No tracking of websites you visit
@@ -29,7 +29,7 @@ YouTube Shorts Block Safari is designed with privacy as a core principle. We exp
 
 ## 2. WHAT THE EXTENSION DOES
 
-YouTube Shorts Block Safari performs the following operations **entirely on your device**:
+Remove Shorts From YouTube performs the following operations **entirely on your device**:
 
 ### Content Blocking
 - **YouTube Page Access**: The extension accesses YouTube web pages (www.youtube.com and m.youtube.com) to identify and hide YouTube Shorts content
@@ -43,7 +43,7 @@ YouTube Shorts Block Safari performs the following operations **entirely on your
 
 ## 3. PERMISSIONS EXPLAINED
 
-YouTube Shorts Block Safari requires the following Safari permissions to function:
+Remove Shorts From YouTube requires the following Safari permissions to function:
 
 | Permission | Purpose | What We Access |
 |------------|---------|----------------|
@@ -77,7 +77,7 @@ YouTube Shorts Block Safari requires the following Safari permissions to functio
 
 ## 5. NO THIRD-PARTY SHARING
 
-YouTube Shorts Block Safari **does not share any data** with third parties because:
+Remove Shorts From YouTube **does not share any data** with third parties because:
 - We don't collect any data to share
 - We don't use analytics services
 - We don't use advertising networks
@@ -94,12 +94,12 @@ YouTube Shorts Block Safari **does not share any data** with third parties becau
 
 ### How to Remove All Data
 1. Open Safari > Settings > Extensions
-2. Find "YouTube Shorts Block Safari"
+2. Find "Remove Shorts From YouTube"
 3. Click "Uninstall" to remove the extension and all local data
 
 ## 7. CHILDREN'S PRIVACY
 
-YouTube Shorts Block Safari does not collect any personal information from anyone, including children under 13. The extension is safe for users of all ages as it operates entirely locally without data collection.
+Remove Shorts From YouTube does not collect any personal information from anyone, including children under 13. The extension is safe for users of all ages as it operates entirely locally without data collection.
 
 ## 8. CHANGES TO THIS PRIVACY POLICY
 
@@ -110,7 +110,7 @@ We may update this Privacy Policy to reflect changes to the extension or legal r
 
 ## 9. OPEN SOURCE AND TRANSPARENCY
 
-YouTube Shorts Block Safari's code can be reviewed to verify our privacy claims. The extension's content blocking logic is transparent and operates entirely in your browser without external communications.
+Remove Shorts From YouTube's code can be reviewed to verify our privacy claims. The extension's content blocking logic is transparent and operates entirely in your browser without external communications.
 
 ## 10. CONTACT INFORMATION
 
@@ -130,7 +130,7 @@ For privacy-related questions or concerns:
 
 ## Summary
 
-**YouTube Shorts Block Safari is a privacy-first extension:**
+**Remove Shorts From YouTube is a privacy-first extension:**
 - ✅ **No data collection** - We don't collect any personal information
 - ✅ **No tracking** - We don't track your browsing or YouTube activity
 - ✅ **Local only** - All settings stored on your device
@@ -140,4 +140,4 @@ For privacy-related questions or concerns:
 
 ---
 
-*By using YouTube Shorts Block Safari, you acknowledge that you have read and understood this Privacy Policy. This policy complies with Apple's App Review Guidelines and reflects our commitment to user privacy.*
+*By using Remove Shorts From YouTube, you acknowledge that you have read and understood this Privacy Policy. This policy complies with Apple's App Review Guidelines and reflects our commitment to user privacy.*
