@@ -644,9 +644,23 @@ description: Create a presentation with AI ChatGPT in one click. AI-Powered Goog
         });
     }
 
+    // Get the plan parameter from URL
+    const planParam = getURLParameter('plan');
+
+    // Map plan names to Paddle product IDs
+    const productIds = {
+        'starter': '858323',        // Starter Monthly
+        'professional': '858324',   // Professional Monthly
+        'business': '858325',       // Business Yearly
+        'enterprise': '858326'      // Enterprise Yearly
+    };
+
+    // Determine which product to show
+    const productId = planParam && productIds[planParam] ? productIds[planParam] : '858326'; // Default to Enterprise
+
     if (emailParam) {
         Paddle.Checkout.open({
-            product: '858326',
+            product: productId,
             email: emailParam || '',
             customData: {
                 tolt_referral: window.tolt_referral,
