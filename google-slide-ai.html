@@ -144,18 +144,69 @@ description: Create a presentation with AI ChatGPT in one click. AI-Powered Goog
     border: 2px solid #017BFE !important;
     border-radius: 10px;
   }
+
+  .toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .discount-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #4dbe3b 0%, #3da832 100%);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(77, 190, 59, 0.3);
+    animation: pulse-badge 2s ease-in-out infinite;
+    margin-left: -5px;
+  }
+
+  @keyframes pulse-badge {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 2px 8px rgba(77, 190, 59, 0.3);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(77, 190, 59, 0.5);
+    }
+  }
+
+  .annually-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pricing-period {
+    transition: all 0.3s ease;
+    font-weight: 400;
+  }
+
+  .pricing-period.active {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.05em;
+  }
 </style>
 
 <div class="top" style="padding-top: 10px">
 <!--        <h1 style="color: #999999;">Boost up your productivity with DocGPT - AI Writer for Google Docs™</h1>-->
         <div class="h5" style="color: #999999;">Find perfect plan</div>
     <div class="toggle-btn">
-        <span style="margin: 0.8em;">Annually</span>
+        <div class="annually-option">
+            <span id="annually-text" class="pricing-period" style="margin: 0.8em;">Annually</span>
+            <span class="discount-badge">💰 SAVE 30%</span>
+        </div>
         <label class="switch">
             <input type="checkbox" id="checbox" onclick="check();" />
             <span class="slider round"></span>
         </label>
-        <span style="margin: 0.8em;">Monthly</span></div>
+        <span id="monthly-text" class="pricing-period" style="margin: 0.8em;">Monthly</span>
+    </div>
 </div>
 <div id="pricing" class="container mb-5 mt-5">
     <div class="pricing card-deck flex-column flex-md-row mb-3">
@@ -605,14 +656,22 @@ description: Create a presentation with AI ChatGPT in one click. AI-Powered Goog
         var checkBox = document.getElementById("checbox");
         var text1 = document.getElementsByClassName("text1");
         var text2 = document.getElementsByClassName("text2");
+        var annuallyText = document.getElementById("annually-text");
+        var monthlyText = document.getElementById("monthly-text");
 
         for (var i = 0; i < text1.length; i++) {
             if (checkBox.checked == true) {
+                // Monthly selected
                 text1[i].style.display = "block";
                 text2[i].style.display = "none";
+                annuallyText.classList.remove("active");
+                monthlyText.classList.add("active");
             } else if (checkBox.checked == false) {
+                // Annually selected
                 text1[i].style.display = "none";
                 text2[i].style.display = "block";
+                annuallyText.classList.add("active");
+                monthlyText.classList.remove("active");
             }
         }
     }
