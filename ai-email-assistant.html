@@ -1072,8 +1072,9 @@ description: GPT, Claude, Gemini for Gmail is an AI-driven email writing add-on.
 
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
-    // Get the value of the 'email' parameter
+    // Get the value of the 'email' and 'product' parameters
     const emailParam = getURLParameter('email');
+    const productParam = getURLParameter('product');
 
     // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
     const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
@@ -1093,14 +1094,18 @@ description: GPT, Claude, Gemini for Gmail is an AI-driven email writing add-on.
         });
     }
 
-    if (emailParam) {
+    // Auto-open Paddle checkout if both email and product parameters are provided
+    if (emailParam && productParam) {
+        console.log('Opening Paddle checkout with email:', emailParam, 'and product:', productParam);
         Paddle.Checkout.open({
-            product: '843279',
+            product: parseInt(productParam, 10),  // Ensure product ID is an integer
             email: emailParam || '',
             customData: {
                 tolt_referral: window.tolt_referral,
             },
         });
+    } else {
+        console.log('Paddle checkout not auto-opened. Email:', emailParam, 'Product:', productParam);
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
