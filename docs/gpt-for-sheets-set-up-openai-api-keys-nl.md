@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: OpenAI API-sleutels instellen - Complete handleiding voor Google Sheets AI-integratie
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-nl
 description: Uitgebreide handleiding voor het instellen van OpenAI, Claude, Gemini, Perplexity en Mistral API-sleutels in Google Sheets. Maximaliseer AI-prestaties in uw spreadsheets.
 ---

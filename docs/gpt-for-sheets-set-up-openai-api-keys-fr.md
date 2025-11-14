@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: Configuration des clés API OpenAI
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-fr
 description: Comment configurer les clés API OpenAI
 ---

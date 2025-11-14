@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: OpenAI APIキーの設定方法 - Google スプレッドシートでAIを使う完全ガイド
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-ja
 description: Google スプレッドシートでOpenAI、Claude、Gemini、Perplexity、MistralのAPIキーを設定する方法を詳しく解説。初心者でも簡単に導入できる完全ガイド。
 ---

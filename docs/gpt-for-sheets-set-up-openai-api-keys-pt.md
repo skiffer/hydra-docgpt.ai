@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: Configurar chaves API OpenAI - Guia completo para integração de IA no Google Planilhas
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-pt
 description: Guia detalhado para configurar as chaves API do OpenAI, Claude, Gemini, Perplexity e Mistral no Google Planilhas. Maximize o desempenho da IA em suas planilhas.
 ---

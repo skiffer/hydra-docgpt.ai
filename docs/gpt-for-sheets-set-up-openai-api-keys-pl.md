@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: Konfiguracja kluczy API OpenAI - Kompletny przewodnik integracji AI w Arkuszach Google
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-pl
 description: Szczegółowy przewodnik konfiguracji kluczy API OpenAI, Claude, Gemini, Perplexity i Mistral w Arkuszach Google. Zmaksymalizuj wydajność AI w swoich arkuszach.
 ---

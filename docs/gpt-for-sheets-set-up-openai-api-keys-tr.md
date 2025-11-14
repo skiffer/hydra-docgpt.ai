@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: OpenAI API Anahtarlarını Yapılandırma - Google E-Tablolar için Kapsamlı AI Entegrasyon Kılavuzu
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-tr
 description: Google E-Tablolar'da OpenAI, Claude, Gemini, Perplexity ve Mistral API anahtarlarının yapılandırılması için detaylı kılavuz. E-tablolarınızda AI performansını en üst düzeye çıkarın.
 ---

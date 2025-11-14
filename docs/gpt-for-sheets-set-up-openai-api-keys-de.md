@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: OpenAI API-Schlüssel einrichten - Komplette Anleitung für Google Tabellen KI-Integration
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-de
 description: Umfassende Anleitung zur Einrichtung von OpenAI, Claude, Gemini, Perplexity und Mistral API-Schlüsseln in Google Tabellen. Maximieren Sie die KI-Leistung in Ihren Tabellenkalkulationen.
 ---

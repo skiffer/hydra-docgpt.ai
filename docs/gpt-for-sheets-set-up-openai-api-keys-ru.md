@@ -2,7 +2,7 @@
 layout: docs_layouts/default
 title: Настройка API-ключей OpenAI - Полное руководство по интеграции ИИ в Google Таблицы
 nav_order: 1
-parent: GPT for Sheets
+parent: GPT for Sheets - other languages
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys-ru
 description: Подробное руководство по настройке API-ключей OpenAI, Claude, Gemini, Perplexity и Mistral в Google Таблицах. Максимизируйте производительность ИИ в ваших таблицах.
 ---
