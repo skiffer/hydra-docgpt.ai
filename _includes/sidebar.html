@@ -23,19 +23,45 @@
             {%- if page.parent == node.title or page.grand_parent == node.title -%}
               {%- assign first_level_url = node.url | absolute_url -%}
             {%- endif -%}
-            <a href="{{ node.url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}">{{ node.title }}</a>
+            <div class="nav-item-wrapper">
+              {%- if node.has_children -%}
+                <button class="nav-collapse-btn" aria-label="Toggle {{ node.title }} submenu" data-nav-id="nav-{{ node.title | slugify }}">
+                  <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              {%- endif -%}
+              <a href="{{ node.url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}{% if node.has_children %} has-children{% endif %}">{{ node.title }}</a>
+            </div>
             {%- if node.has_children -%}
               {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
-              <ul class="navigation-list-child-list ">
+              {%- assign is_section_active = false -%}
+              {%- if page.url == node.url or page.parent == node.title or page.grand_parent == node.title -%}
+                {%- assign is_section_active = true -%}
+              {%- endif -%}
+              <ul class="navigation-list-child-list{% unless is_section_active %} collapsed{% endunless %}" id="nav-{{ node.title | slugify }}" aria-expanded="{% if is_section_active %}true{% else %}false{% endif %}">
                 {%- for child in children_list -%}
                   <li class="navigation-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
                     {%- if page.url == child.url or page.parent == child.title -%}
                       {%- assign second_level_url = child.url | absolute_url -%}
                     {%- endif -%}
-                    <a href="{{ child.url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+                    <div class="nav-item-wrapper">
+                      {%- if child.has_children -%}
+                        <button class="nav-collapse-btn" aria-label="Toggle {{ child.title }} submenu" data-nav-id="nav-{{ child.title | slugify }}">
+                          <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                      {%- endif -%}
+                      <a href="{{ child.url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}{% if child.has_children %} has-children{% endif %}">{{ child.title }}</a>
+                    </div>
                     {%- if child.has_children -%}
-                        {%- assign grand_children_list = site.html_pages | where: "parent", child.title | sort:"nav_order" -%}
-                        <ul class="navigation-list-child-list">
+                      {%- assign grand_children_list = site.html_pages | where: "parent", child.title | sort:"nav_order" -%}
+                      {%- assign is_child_active = false -%}
+                      {%- if page.url == child.url or page.parent == child.title -%}
+                        {%- assign is_child_active = true -%}
+                      {%- endif -%}
+                      <ul class="navigation-list-child-list{% unless is_child_active %} collapsed{% endunless %}" id="nav-{{ child.title | slugify }}" aria-expanded="{% if is_child_active %}true{% else %}false{% endif %}">
                         {%- for grand_child in grand_children_list -%}
                           <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
                             <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>

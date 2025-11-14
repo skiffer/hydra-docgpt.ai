@@ -244,6 +244,111 @@ $menu-color: #483973;
     padding-left: 50px;
   }
 
+  /* collapsible navigation */
+
+  .nav-item-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navigation-list-item > .nav-item-wrapper {
+    padding-left: 30px;
+  }
+
+  .navigation-list-child-list .navigation-list-item > .nav-item-wrapper {
+    padding-left: 30px;
+  }
+
+  .nav-collapse-btn {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    color: $menu-color;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.6;
+    position: relative;
+    z-index: 10;
+  }
+
+  .nav-collapse-btn:hover {
+    background-color: rgba($menu-color, 0.15);
+    opacity: 1;
+  }
+
+  .nav-collapse-btn:focus {
+    outline: 2px solid rgba($menu-color, 0.3);
+    outline-offset: 2px;
+  }
+
+  .collapse-icon {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+
+  .nav-collapse-btn.expanded .collapse-icon {
+    transform: rotate(90deg);
+  }
+
+  .navigation-list-child-list {
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.3s ease;
+    max-height: 5000px;
+    opacity: 1;
+  }
+
+  .navigation-list-child-list.collapsed {
+    max-height: 0 !important;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navigation-list-link.has-children {
+    flex: 1;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .navigation-list-link:not(.has-children) {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  /* Override for child list links */
+  .navigation-list-child-list .navigation-list-link.has-children {
+    padding-left: 0 !important;
+  }
+
+  .navigation-list-child-list .navigation-list-link:not(.has-children) {
+    padding-left: 50px !important;
+  }
+
+  /* mobile touch targets */
+  @media (max-width: 800px) {
+    .nav-collapse-btn {
+      width: 28px;
+      height: 28px;
+    }
+
+    .navigation-list-child-list {
+      transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                  opacity 0.2s ease;
+    }
+  }
+
   /* aux navigation */
 
   .navigation-list-aux {
