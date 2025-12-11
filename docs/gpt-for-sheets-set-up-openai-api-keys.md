@@ -39,6 +39,7 @@ If you encounter any errors while using or launching, please check these pages b
 
 
 
+
 ## 🌐 Other Languages
 - [日本語 (Japanese)](/docs/gpt-for-sheets/set-up-openai-api-keys-ja){: target="_blank"}
 - [Svenska (Swedish)](/docs/gpt-for-sheets/set-up-openai-api-keys-sv){: target="_blank"}
@@ -174,7 +175,6 @@ Other possible issues could be found here: <a target="_blank" href="/docs/suppor
 You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any user granted Editor access to this spreadsheet can utilize GPT functions using this API key
 
 
-
 ### How to create Mistral API keys
 
 #### 1. Please create an account https://console.mistral.ai/
@@ -206,9 +206,9 @@ You've configured your OpenAI API key within GPT for Sheets and Docs. Now, any u
 #### 6. Now you can use Perplexity AI with function =PERPLEXITY('what are top youtube videos for today')
 
 
-
-
-
 ### How to create Gemini API keys
 
 ####  You can create your api key at this page: https://aistudio.google.com/app/apikey
+
+
+### If you still have any issues, please contact to me directly by email: yaroslav91@gmail.com
