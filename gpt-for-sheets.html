@@ -983,68 +983,98 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   }
 </style>
 
-<!-- Start HERO SECTION - Simple & Professional -->
+<!-- Start ROW -->
+<!--<div class="row pt-1">-->
+<!--  <div class="container center-img">-->
+<!--     <img style="width: 600px !important;" src="{{ site.baseurl }}/images/preview-sheets-1.png" alt="gpt for sheets"/>-->
+<!--  </div>-->
+<!--</div>-->
+<!-- Product Preview Section -->
 <style>
-  .hero-previews {
+  .product-previews-container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    margin: 40px auto;
+    padding: 0 20px;
   }
 
-  .hero-previews-grid {
+  .previews-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
     align-items: start;
   }
 
-  .preview-item {
+  .preview-image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: #fff;
+  }
+
+  .preview-image-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .preview-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .preview-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 20px 15px 15px;
+    font-size: 1rem;
+    font-weight: 600;
     text-align: center;
   }
 
-  .preview-item img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  .preview-caption {
-    margin-top: 15px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
-  }
-
   @media (max-width: 992px) {
-    .hero-previews-grid {
+    .previews-grid {
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-previews-container {
+      margin: 30px auto;
+    }
+
+    .preview-label {
+      font-size: 0.9rem;
+      padding: 15px 12px 12px;
     }
   }
 </style>
 
-<div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 1000+ reviews and 1M+ installs</b></div>
+<div class="product-previews-container">
+  <div class="previews-grid">
+    <a href="#pricing" class="preview-image-wrapper">
+      <img src="{{ site.baseurl }}/images/gpt-for-sheets-how-to-use.png"
+           alt="GPT for Sheets - How to Use Tutorial"
+           loading="eager">
+      <div class="preview-label">How to Use GPT for Sheets</div>
+    </a>
 
-<div class="hero-previews">
-  <div class="hero-previews-grid">
-    <div class="preview-item">
-      <a href="#pricing">
-        <img src="{{ site.baseurl }}/images/gpt-for-sheets-how-to-use.png" alt="GPT for Sheets - How to Use" loading="eager">
-      </a>
-      <div class="preview-caption">How to Use GPT for Sheets</div>
-    </div>
-
-    <div class="preview-item">
-      <a href="#pricing">
-        <img src="{{ site.baseurl }}/images/gpt-for-sheets-ai-agent-preview.png" alt="GPT for Sheets - AI Agent Features" loading="eager">
-      </a>
-      <div class="preview-caption">AI Agent Features</div>
-    </div>
+    <a href="#pricing" class="preview-image-wrapper">
+      <img src="{{ site.baseurl }}/images/gpt-for-sheets-ai-agent-preview.png"
+           alt="GPT for Sheets - AI Agent Features Preview"
+           loading="eager">
+      <div class="preview-label">AI Agent Features</div>
+    </a>
   </div>
 </div>
-<!-- End HERO SECTION -->
+
+<div class="container mb-5 mt-5 center-img"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 1000+ reviews and 1M+ installs</b></div>
 
 
 <div class="container d-flex align-items-center justify-content-center pt-3" style="width: 800px;">
