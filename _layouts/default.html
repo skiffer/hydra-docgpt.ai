@@ -570,7 +570,7 @@
 			}
 		});
 
-		// Countdown timer
+		// Smart Dynamic Countdown Timer with Progressive Urgency
 		function updateCountdown() {
 			// Set end date to January 2, 2026 23:59:59
 			const endDate = new Date('2026-01-02T23:59:59').getTime();
@@ -584,18 +584,32 @@
 
 			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
 			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-			let timeString = '';
-			if (days > 0) {
-				timeString = `${days}d ${hours}h ${minutes}m`;
+			let urgencyMessage = '';
+
+			// Smart dynamic messaging based on time remaining
+			if (days >= 14) {
+				// 2+ weeks left: Low urgency, positive framing
+				urgencyMessage = 'Limited Time Offer! ⏰';
+			} else if (days >= 7) {
+				// 1-2 weeks left: Medium urgency
+				urgencyMessage = 'Hurry! Sale Ends Soon! 🔥';
+			} else if (days >= 3) {
+				// 3-6 days left: High urgency with specific days
+				urgencyMessage = `Only ${days} Days Left! ⚡`;
+			} else if (days >= 1) {
+				// 1-2 days left: Critical urgency
+				urgencyMessage = 'LAST 48 HOURS! 🚨';
 			} else if (hours > 0) {
-				timeString = `${hours}h ${minutes}m`;
+				// Final day: Maximum urgency
+				urgencyMessage = `ENDS TONIGHT! ${hours}h Left! 🎁`;
 			} else {
-				timeString = `${minutes}m`;
+				// Final hours: Countdown mode
+				const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				urgencyMessage = `FINAL MINUTES! ${minutes}m ⏰`;
 			}
 
-			document.getElementById('timeRemaining').textContent = timeString;
+			document.getElementById('timeRemaining').textContent = urgencyMessage;
 		}
 
 		// Update countdown every minute
