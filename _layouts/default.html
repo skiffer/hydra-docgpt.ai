@@ -22,6 +22,49 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon.png?v=3"/>
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/favicon.png?v=3"/>
 		<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png?v=3"/>
+
+		<!-- Organization Schema for Brand Entity & Sitelinks -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "DocGPT.AI",
+			"alternateName": "DocGPT",
+			"url": "{{ site.url }}",
+			"logo": "{{ site.url }}/favicon.png",
+			"description": "{{ site.description }}",
+			"foundingDate": "2023",
+			"sameAs": [
+				"https://twitter.com/{{ site.twitter.username }}",
+				"https://www.linkedin.com/company/docgpt-ai"
+			],
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"contactType": "Customer Support",
+				"email": "{{ site.author.email }}"
+			}
+		}
+		</script>
+
+		<!-- Website Schema for Sitelinks Search Box -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "DocGPT.AI",
+			"alternateName": "DocGPT",
+			"url": "{{ site.url }}",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": {
+					"@type": "EntryPoint",
+					"urlTemplate": "{{ site.url }}/search?q={search_term_string}"
+				},
+				"query-input": "required name=search_term_string"
+			}
+		}
+		</script>
+
 <!--		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-ndOBCx5Tkj3UBv/Z+MlP12gIjyB05Q1n/6ezvmzJvWnIABX2Yw5C5V4zZWWcCSHlH07IBkzpvo2IO5apGOmmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
 <!--		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>-->
 

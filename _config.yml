@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title:
+title: "DocGPT.AI - AI Productivity Tools for Google Workspace | ChatGPT, Claude & Gemini"
 url: "https://docgpt.ai"
 baseurl:
 google_analytics_key: G-DV5BH9XVVS
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /favicon.png
-description:
+description: "DocGPT.AI is the ultimate AI productivity platform for Google Workspace. Access ChatGPT, Claude, Gemini & 100+ AI models in Google Sheets, Docs, Slides & Gmail. Automate content creation, data enrichment, SEO, email writing & more. Trusted by 500K+ users worldwide."
 author:
   name: Yaro
   email: yaroslav91@gmail.com
