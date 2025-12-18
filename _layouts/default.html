@@ -241,6 +241,368 @@
 	<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSWQD9SK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 	<!-- End Google Tag Manager (noscript) -->
 
+	<!-- HOLIDAY25 Promotion Banner -->
+	<div class="holiday-promo-banner" id="holidayBanner">
+		<div class="holiday-banner-content">
+			<span class="holiday-emoji">🎁</span>
+			<span class="holiday-text">
+				<strong>HOLIDAY SALE:</strong> 25% OFF All Products
+			</span>
+			<span class="holiday-divider">|</span>
+			<span class="holiday-code-section">
+				Use Code:
+				<span class="holiday-code-badge" id="couponCode">HOLIDAY25</span>
+				<button class="holiday-copy-btn" id="copyCodeBtn" onclick="copyHolidayCode()">
+					<i class="far fa-copy"></i> Copy
+				</button>
+			</span>
+			<span class="holiday-divider holiday-divider-mobile-hide">|</span>
+			<span class="holiday-countdown" id="countdownTimer">Ends in: <span id="timeRemaining">--</span></span>
+			<span class="holiday-emoji">🎄</span>
+		</div>
+		<button class="holiday-close-btn" onclick="closeHolidayBanner()" aria-label="Close banner">×</button>
+	</div>
+
+	<!-- Holiday Banner Styles -->
+	<style>
+		.holiday-promo-banner {
+			background: linear-gradient(135deg, #c41e3a 0%, #165b33 100%);
+			color: white;
+			text-align: center;
+			padding: 12px 20px;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+			font-size: 15px;
+			position: sticky;
+			top: 0;
+			z-index: 10000;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+			animation: slideDown 0.5s ease-out;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+
+		@keyframes slideDown {
+			from {
+				transform: translateY(-100%);
+				opacity: 0;
+			}
+			to {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+		.holiday-banner-content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 10px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.holiday-emoji {
+			font-size: 20px;
+			animation: pulse 2s ease-in-out infinite;
+		}
+
+		@keyframes pulse {
+			0%, 100% { transform: scale(1); }
+			50% { transform: scale(1.1); }
+		}
+
+		.holiday-text {
+			color: white;
+			font-size: 15px;
+			letter-spacing: 0.3px;
+		}
+
+		.holiday-text strong {
+			font-weight: 700;
+			font-size: 16px;
+		}
+
+		.holiday-divider {
+			color: rgba(255,255,255,0.6);
+			font-weight: 300;
+			margin: 0 5px;
+		}
+
+		.holiday-code-section {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			color: white;
+		}
+
+		.holiday-code-badge {
+			background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+			color: #1a1a1a;
+			padding: 6px 14px;
+			border-radius: 6px;
+			font-weight: 800;
+			font-size: 15px;
+			letter-spacing: 1px;
+			box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+			border: 2px solid #fff;
+			animation: glow 2s ease-in-out infinite;
+		}
+
+		@keyframes glow {
+			0%, 100% { box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4); }
+			50% { box-shadow: 0 2px 15px rgba(255, 215, 0, 0.8); }
+		}
+
+		.holiday-copy-btn {
+			background: rgba(255,255,255,0.2);
+			color: white;
+			border: 1px solid rgba(255,255,255,0.4);
+			padding: 5px 12px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 13px;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.holiday-copy-btn:hover {
+			background: rgba(255,255,255,0.3);
+			border-color: rgba(255,255,255,0.6);
+			transform: translateY(-1px);
+		}
+
+		.holiday-copy-btn:active {
+			transform: translateY(0);
+		}
+
+		.holiday-copy-btn.copied {
+			background: #4CAF50;
+			border-color: #4CAF50;
+		}
+
+		.holiday-countdown {
+			color: white;
+			font-weight: 600;
+			font-size: 14px;
+		}
+
+		#timeRemaining {
+			font-weight: 700;
+			color: #ffd700;
+		}
+
+		.holiday-close-btn {
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			background: rgba(255,255,255,0.2);
+			color: white;
+			border: none;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			cursor: pointer;
+			font-size: 20px;
+			line-height: 1;
+			transition: all 0.3s ease;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.holiday-close-btn:hover {
+			background: rgba(255,255,255,0.3);
+			transform: translateY(-50%) rotate(90deg);
+		}
+
+		/* Mobile Responsive */
+		@media (max-width: 768px) {
+			.holiday-promo-banner {
+				padding: 10px 15px;
+				font-size: 13px;
+			}
+
+			.holiday-banner-content {
+				gap: 6px;
+			}
+
+			.holiday-emoji {
+				font-size: 16px;
+			}
+
+			.holiday-text {
+				font-size: 13px;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+
+			.holiday-text strong {
+				font-size: 14px;
+			}
+
+			.holiday-divider-mobile-hide {
+				display: none;
+			}
+
+			.holiday-code-section {
+				font-size: 12px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.holiday-code-badge {
+				padding: 5px 10px;
+				font-size: 13px;
+			}
+
+			.holiday-copy-btn {
+				padding: 4px 10px;
+				font-size: 12px;
+			}
+
+			.holiday-countdown {
+				font-size: 12px;
+				width: 100%;
+				margin-top: 5px;
+			}
+
+			.holiday-close-btn {
+				right: 10px;
+				width: 24px;
+				height: 24px;
+				font-size: 18px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.holiday-promo-banner {
+				padding: 8px 10px;
+			}
+
+			.holiday-text {
+				font-size: 12px;
+			}
+
+			.holiday-code-badge {
+				font-size: 12px;
+				padding: 4px 8px;
+			}
+		}
+	</style>
+
+	<!-- Holiday Banner JavaScript -->
+	<script>
+		// Copy coupon code to clipboard
+		function copyHolidayCode() {
+			const code = 'HOLIDAY25';
+			const btn = document.getElementById('copyCodeBtn');
+
+			navigator.clipboard.writeText(code).then(function() {
+				// Success feedback
+				const originalHTML = btn.innerHTML;
+				btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+				btn.classList.add('copied');
+
+				setTimeout(function() {
+					btn.innerHTML = originalHTML;
+					btn.classList.remove('copied');
+				}, 2000);
+			}).catch(function(err) {
+				// Fallback for older browsers
+				const textArea = document.createElement('textarea');
+				textArea.value = code;
+				document.body.appendChild(textArea);
+				textArea.select();
+				document.execCommand('copy');
+				document.body.removeChild(textArea);
+
+				const originalHTML = btn.innerHTML;
+				btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+				btn.classList.add('copied');
+
+				setTimeout(function() {
+					btn.innerHTML = originalHTML;
+					btn.classList.remove('copied');
+				}, 2000);
+			});
+		}
+
+		// Close banner and save to localStorage
+		function closeHolidayBanner() {
+			const banner = document.getElementById('holidayBanner');
+			banner.style.animation = 'slideUp 0.3s ease-out';
+
+			setTimeout(function() {
+				banner.style.display = 'none';
+			}, 300);
+
+			localStorage.setItem('holidayBannerClosed', 'true');
+		}
+
+		// Slide up animation
+		const style = document.createElement('style');
+		style.textContent = `
+			@keyframes slideUp {
+				from {
+					transform: translateY(0);
+					opacity: 1;
+				}
+				to {
+					transform: translateY(-100%);
+					opacity: 0;
+				}
+			}
+		`;
+		document.head.appendChild(style);
+
+		// Check if banner was previously closed
+		document.addEventListener('DOMContentLoaded', function() {
+			const bannerClosed = localStorage.getItem('holidayBannerClosed');
+			if (bannerClosed === 'true') {
+				document.getElementById('holidayBanner').style.display = 'none';
+			}
+		});
+
+		// Countdown timer
+		function updateCountdown() {
+			// Set end date to January 2, 2026 23:59:59
+			const endDate = new Date('2026-01-02T23:59:59').getTime();
+			const now = new Date().getTime();
+			const distance = endDate - now;
+
+			if (distance < 0) {
+				document.getElementById('timeRemaining').textContent = 'Expired';
+				return;
+			}
+
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+			let timeString = '';
+			if (days > 0) {
+				timeString = `${days}d ${hours}h ${minutes}m`;
+			} else if (hours > 0) {
+				timeString = `${hours}h ${minutes}m`;
+			} else {
+				timeString = `${minutes}m`;
+			}
+
+			document.getElementById('timeRemaining').textContent = timeString;
+		}
+
+		// Update countdown every minute
+		updateCountdown();
+		setInterval(updateCountdown, 60000);
+	</script>
+
 	<!-- Add this style for the banner -->
 	<style>
 		.black-friday-banner {
