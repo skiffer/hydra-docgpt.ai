@@ -255,7 +255,15 @@
 				<button class="holiday-copy-btn" id="copyCodeBtn" onclick="copyHolidayCode()">
 					<i class="far fa-copy"></i> Copy
 				</button>
+				<span class="holiday-info-icon" onclick="toggleHolidayInstructions()">
+					<i class="fas fa-info-circle"></i>
+				</span>
 			</span>
+			<div class="holiday-instructions" id="holidayInstructions">
+				<span class="holiday-instructions-text">
+					💡 <strong>How to use:</strong> Select your product/plan → Checkout → Click "Add Discount" → Paste code HOLIDAY25
+				</span>
+			</div>
 			<span class="holiday-divider holiday-divider-mobile-hide">|</span>
 			<span class="holiday-countdown" id="countdownTimer">Ends in: <span id="timeRemaining">--</span></span>
 			<span class="holiday-emoji">🎄</span>
@@ -384,6 +392,55 @@
 		.holiday-copy-btn.copied {
 			background: #4CAF50;
 			border-color: #4CAF50;
+		}
+
+		.holiday-info-icon {
+			color: rgba(255,255,255,0.8);
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			margin-left: 5px;
+		}
+
+		.holiday-info-icon:hover {
+			color: #ffd700;
+			transform: scale(1.1);
+		}
+
+		.holiday-instructions {
+			display: none;
+			width: 100%;
+			background: rgba(255,255,255,0.15);
+			border-radius: 6px;
+			padding: 8px 15px;
+			margin-top: 8px;
+			animation: slideInDown 0.3s ease-out;
+		}
+
+		.holiday-instructions.show {
+			display: block;
+		}
+
+		@keyframes slideInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-10px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.holiday-instructions-text {
+			color: white;
+			font-size: 13px;
+			line-height: 1.5;
+			display: block;
+		}
+
+		.holiday-instructions-text strong {
+			font-weight: 700;
 		}
 
 		.holiday-countdown {
@@ -544,6 +601,12 @@
 			}, 300);
 
 			localStorage.setItem('holidayBannerClosed', 'true');
+		}
+
+		// Toggle redemption instructions
+		function toggleHolidayInstructions() {
+			const instructions = document.getElementById('holidayInstructions');
+			instructions.classList.toggle('show');
 		}
 
 		// Slide up animation
