@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docgpt.ai)",
+      "WebFetch(domain:workspace.google.com)",
+      "Bash(ls:*)",
+      "Bash(mv:*)",
+      "WebFetch(domain:raineyllc.com)",
+      "WebFetch(domain:raineyllc.com)"
+    ],
+    "deny": []
+  }
+}

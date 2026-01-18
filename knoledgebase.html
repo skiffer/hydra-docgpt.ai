@@ -1,0 +1,2032 @@
+<div class="function-list">
+    <!-- GPT Function -->
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=GPT(<span class="text-arg">prompt</span>, [<span class="text-arg">value</span>])</div>
+            <!-- <div class="plan-badge pro">User Pro</div> -->
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The simplest function to start using GPT in Sheets. Outputs the result in a single cell.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">prompt</span> (required): The instruction or text for GPT to process.</div>
+            <div><span class="text-arg">value</span> (optional): Additional context or value to use in processing.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT("write a tagline for coffee shop")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Value:</span>
+            <div class="code-example">
+                <code>=GPT("write a tagline for ", A1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Concatenation:</span>
+            <div class="code-example">
+                <code>=GPT("describe the product: " & A1 & " available at the price: " & B1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Multiple Concatenations:</span>
+            <div class="code-example">
+                <code>=GPT("Create an ad for " & A1 & " and highlight its features: " & B1 & ", " & C1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <div class="img-container">
+                <img src="https://raw.githubusercontent.com/skiffer/hydra-docgpt.ai/main/images/demoGpt.gif">
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">search</span>
+            <div class="function-name">=SERP(<span class="text-arg">query</span>, <span class="text-arg">limit</span>)</div>
+            <!-- <div class="plan-badge pro">User Pro</div> -->
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Submits a search query to a search engine and returns the top search results.</p>
+            <p><a href="https://duckduckgo.com/duckduckgo-help-pages/results/syntax/">Supported operators</a></p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">query</span> (required): The search query.</div>
+            <div><span class="text-arg">limit</span> (optional): The maximum number of search results to return. Default is 20.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=SERP("docgpt.ai", 10)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example for Pulling Emails from Instagram:</span>
+            <div class="code-example">
+                <code>=SERP("site:instagram.com Yoga gmail.com", 40)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <p><strong>Note:</strong> This function is currently in beta. It can be called once every 20 seconds.</p>
+        </div>
+    </div>
+
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=PERPLEXITY(<span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The simplest function to start using PERPLEXITY (support WEB ACCESS!) in Sheets. Outputs the result in a single cell.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">prompt</span> (required): The instruction or text for PERPLEXITY to process.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=PERPLEXITY("write a tagline for coffee shop")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Concatenation:</span>
+            <div class="code-example">
+                <code>=PERPLEXITY("describe the product: " & A1 & " available at the price: " & B1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Multiple Concatenations:</span>
+            <div class="code-example">
+                <code>=PERPLEXITY("Create an ad for " & A1 & " and highlight its features: " & B1 & ", " & C1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=GEMINI(<span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The simplest function to start using GEMINI in Sheets. Outputs the result in a single cell.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">prompt</span> (required): The instruction or text for GEMINI to process.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GEMINI("write a tagline for coffee shop")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=CLAUDE(<span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The simplest function to start using CLAUDE in Sheets. Outputs the result in a single cell.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=CLAUDE(<span class="prompt-example">"write a tagline for coffee shop"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=LINKEDIN_POST(<span class="text-arg">text</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>
+                This function facilitates creating a post on LinkedIn.
+                You can include emojis, multi-line text, and links as part of this content.
+            </p>
+
+            <p><strong>Arguments:</strong></p>
+            <div>
+                <span class="text-arg">text</span> (required): The text that you want
+                to share on LinkedIn. Can be a direct string (e.g., <code>"Hello LinkedIn!"</code>)
+                or a reference to a cell (e.g., <code>A1</code>).
+            </div>
+
+            <span class="example-label">Example: Simple Text</span>
+            <div class="code-example">
+                <code>=LINKEDIN_POST("Hello from LinkedIn!🚀🚀🚀")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                Clicking the resulting link should open a LinkedIn “Share Offsite” dialog,
+                attempting to pre-fill your text.
+            </p>
+
+            <span class="example-label">Example: Emojis</span>
+            <div class="code-example">
+                <code>=LINKEDIN_POST("Check out my new product 🚀")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                Emojis will be URL-encoded so they should appear correctly in the share dialog.
+            </p>
+
+            <span class="example-label">Example: Multi-Line & Links</span>
+            <div class="code-example">
+                <code>=LINKEDIN_POST("Join our webinar🚀🚀🚀!\nSign up at https://example.com\nLet’s learn together!")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                Use <code>\n</code> to create multi-line text. Links (like <code>https://example.com</code>)
+                are also preserved.
+            </p>
+
+            <span class="example-label">Referencing a Cell</span>
+            <div class="code-example">
+                <code>=LINKEDIN_POST(A1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                Whatever text is in cell <strong>A1</strong> will be passed to LinkedIn.
+                It can include emojis, multiple lines, or links.
+            </p>
+
+            <span class="example-label">Clickable Hyperlink (Optional)</span>
+            <div class="code-example">
+                <code>=HYPERLINK(LINKEDIN_POST("Connect with me on LinkedIn!🚀🚀🚀"), "Click to Share")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                Use <code>HYPERLINK</code> to convert the generated URL into a more
+                user-friendly clickable text.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="function-card" data-category="api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=TWITTER_POST(<span class="text-arg">text</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>
+                This function facilitates creating a post on X (formerly Twitter).
+                It automatically handles spaces, emojis, multi-line text, and links by URL-encoding the string.
+            </p>
+
+            <p><strong>Arguments:</strong></p>
+            <div>
+                <span class="text-arg">text</span> (required): The text to place in your pre-filled X post.
+                This can be a literal string (<code>"Hello World"</code>), or a reference to a cell containing text—even multi-line text.
+            </div>
+
+            <span class="example-label">Example: Simple Text</span>
+            <div class="code-example">
+                <code>=TWITTER_POST("Hello World🚀🚀🚀")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>This will create a link that, when clicked, opens the X post composer with "Hello World" pre-filled.</p>
+
+            <span class="example-label">Example: Emojis</span>
+            <div class="code-example">
+                <code>=TWITTER_POST("Greetings from the future! 🤖")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>Emojis are automatically URL-encoded, so they appear correctly in your pre-filled post.</p>
+
+            <span class="example-label">Example: Referencing a Cell</span>
+            <div class="code-example">
+                <code>=TWITTER_POST(A1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                If cell <strong>A1</strong> contains <code>Hello from cell data!</code>, the generated link
+                will pre-fill that text in X.
+            </p>
+
+            <span class="example-label">Example: Multi-Line Text with Emojis and Links</span>
+            <div class="code-example">
+                <code>=TWITTER_POST("Hi everyone!\nCheck out my site: https://example.com\nHere’s a rocket: 🚀")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                This example demonstrates multi-line usage. <br>
+                A new line is represented by <code>\n</code>, and the text includes a link and an emoji.
+                All special characters are properly encoded, ensuring the URL is valid.
+            </p>
+
+            <span class="example-label">Optional: Creating a Clickable Link with HYPERLINK</span>
+            <div class="code-example">
+                <code>=HYPERLINK(TWITTER_POST(A1), "Click to Post!")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                This wraps the URL in a clickable link titled <em>Click to Post!</em>, so people can just click
+                it to open X and see the pre-filled text.
+            </p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">work</span>
+            <div class="function-name">=LINKEDIN_AUTOMATION()</div>
+            <div class="plan-badge new">NEW</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Automates various LinkedIn actions such as collecting profiles by filter from Search, Events, Sales Navigator. Sending connection requests and messages, auto-commenting, liking posts, using predefined workflows.</p>
+
+            <p><strong>Setup Required:</strong></p>
+            <div><b>IMPORTANT: <a onclick="window.open('https://chromewebstore.google.com/detail/linkedin-automation-tool/elbfcbohlknhgbepebflbbohkkmhmgeh/?utm_source=sheets&utm_medium=addon&utm_campaign=linkedin_automation', '_blank'); return false;" href="https://chromewebstore.google.com/detail/linkedin-automation-tool/elbfcbohlknhgbepebflbbohkkmhmgeh/?utm_source=sheets&utm_medium=addon&utm_campaign=linkedin_automation" target="_blank">To use this, please install the extension by visiting this link</a></b></div>
+        </div>
+    </div>
+
+
+
+    <div class="function-card" data-category="web-seo google api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">public</span>
+            <div class="function-name">=GOOGLE_INDEXING(<span class="text-arg">url</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Allows site owners to directly notify Google when pages are added or updated.</p>
+
+            <p><strong>Authentication:</strong></p>
+            <div>Before using, please click on <a id="auth-link" href="#" target="_blank">this link to Authorize Application</a>.</div>
+            <script>
+                // Update the link dynamically
+                google.script.run.withSuccessHandler(function(url) {
+                    document.getElementById('auth-link').href = url;
+                }).getAuthorizationUrl();
+            </script>
+            <div>Ensure you have added the current email to Google Console Search with the role of Owner.</div>
+            <p><a href="https://docgpt.ai/docs/gpt-for-sheets/indexing-pages-for-search-results-in-google-sheets" target="_blank">Indexing pages for search results</a></p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">url</span> (required): The URL to notify Google for indexing.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_INDEXING("https://docgpt.ai/docs/")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <p><strong>Note:</strong> The function will notify Google of the URL's presence, but indexing status might take some time to update. Ensure your Google Search Console account is configured correctly.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google utility api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">email</span>
+            <div class="function-name">=SEND_EMAIL(<span class="text-arg">recipientEmail</span>, <span class="text-arg">subject</span>, <span class="text-arg">messageBody</span>, <span class="text-arg">isHtml</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Sends an email using the Gmail API, supporting both HTML and plain text formats.</p>
+
+            <p><strong>Authentication:</strong></p>
+            <div>Before using, please click on <a id="auth-gmail-link" href="#" target="_blank">this link to Authorize Application</a>.</div>
+            <script>
+                // Update the link dynamically
+                google.script.run.withSuccessHandler(function(url) {
+                    document.getElementById('auth-gmail-link').href = url;
+                }).gmailGetAuthorizationUrl();
+            </script>
+            <div>Ensure your Gmail account is connected and authorized for API access.</div>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">recipientEmail</span> (required): The recipient's email address.</div>
+            <div><span class="text-arg">subject</span> (required): The subject of the email.</div>
+            <div><span class="text-arg">messageBody</span> (required): The content of the email (can be HTML or plain text).</div>
+            <div><span class="text-arg">isHtml</span> (optional, default = false): A boolean indicating whether the email content is HTML (true) or plain text (false).</div>
+
+            <span class="example-label">Example (Sending Plain Text):</span>
+            <div class="code-example">
+                <code>=SEND_EMAIL("example@example.com", "Greetings", "Hello! This is a plain text email.", false)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example (Sending HTML):</span>
+            <div class="code-example">
+                <code>=SEND_EMAIL("example@example.com", "Hello World!", "&lt;b&gt;Welcome&lt;/b&gt; to our service!", true)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <p><strong>Note:</strong> This function requires OAuth authorization to send emails on behalf of the user. If authorization has not been granted, the function will return an authorization URL. Once authorized, the email will be sent via the Gmail API. Ensure your Gmail account is configured correctly.</p>
+
+            <span class="example-label">Example (Sending HTML from a Cell):</span>
+            <div class="code-example">
+                <code>=SEND_EMAIL(
+                    "example@example.com",
+                    "Hello from a Cell!",
+                    A1,
+                    TRUE
+                    )</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example (Sending HTML with Emojis):</span>
+            <div class="code-example">
+                <code>=SEND_EMAIL(
+                    "example@example.com",
+                    "Monthly Newsletter",
+                    "&lt;h1&gt;Hello, Subscriber! 👋&lt;/h1&gt;&lt;p&gt;We’re thrilled to share our latest updates with you.&lt;br&gt;Have a look at this exciting feature: 🚀&lt;/p&gt;&lt;a href='https://example.com'&gt;Click here for details&lt;/a&gt;&lt;p&gt;Best Regards,&lt;br&gt;&lt;strong&gt;The Awesome Team&lt;/strong&gt;&lt;/p&gt;",
+                    TRUE
+                    )</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="function-card" data-category="api utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">api</span>
+            <div class="function-name">=API(<span class="text-arg">method</span>, <span class="text-arg">url</span>, <span class="text-arg">queryParams</span>, <span class="text-arg">body</span>, <span class="text-arg">headers</span>, <span class="text-arg">isJson</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Makes HTTP requests to external APIs with customizable parameters.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">method</span> (required): GET, POST, PUT, DELETE, OPTIONS, HEAD</div>
+            <div><span class="text-arg">url</span> (required): URL for the API request</div>
+            <div><span class="text-arg">queryParams</span> (required): Query parameters for URL or empty string ""</div>
+            <div><span class="text-arg">body</span> (optional): String body, usually for POST requests. Use DOUBLE QUOTES for JSON fields</div>
+            <div><span class="text-arg">headers</span> (optional): Headers in format "header_name1=value1,header_name2=value2"</div>
+            <div><span class="text-arg">isJson</span> (required): TRUE or FALSE to return formatted JSON or plain text</div>
+
+            <span class="example-label">GET Example (Plain Text):</span>
+            <div class="code-example">
+                <code>=API("GET", "https://dogapi.dog/api/v2/breeds", "", "", "", false)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">POST Example with Headers:</span>
+            <div class="code-example">
+                <code>=API("POST", "https://google.serper.dev/search", "", "{""q"": ""apple inc""}", "X-API-KEY=YOUR_API_KEY", true)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">GET with Query Parameters:</span>
+            <div class="code-example">
+                <code>=API("GET", "https://cataas.com/api/cats", "tags=cute&limit=2", "", "", true)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">POST with JSON Body:</span>
+            <div class="code-example">
+                <code>=API("POST", "https://668e8e93bf9912d4c92eca5e.mockapi.io/test", "", "{""name"": ""dog name 1""}", "", true)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">psychology</span>
+            <div class="function-name">=MAILTO_LONG_TEXT(
+                <span class="text-arg">to</span>,
+                <span class="text-arg">subject</span>,
+                <span class="text-arg">body</span>,
+                [<span class="text-arg">isHtml</span>]
+                )</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>
+                This function generates a <code>mailto:</code> link that includes the email
+                recipient (<strong>to</strong>), a <strong>subject</strong>, and a <strong>body</strong>
+                which can contain multiple lines or even HTML markup. If you specify
+                <code>isHtml</code> as <code>TRUE</code>, it indicates that your content
+                is HTML-based. However, rendering of HTML is client-dependent and not
+                guaranteed by the <code>mailto:</code> standard.
+            </p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">to</span> (required): The email address of the recipient.</div>
+            <div><span class="text-arg">subject</span> (required): The subject line for the email.</div>
+            <div><span class="text-arg">body</span> (required): The main body of the email. Use <code>\n</code> for line breaks, or HTML tags.</div>
+            <div><span class="text-arg">isHtml</span> (optional, boolean): Indicates if the body is HTML content (<code>TRUE</code>) or plain text (<code>FALSE</code>). Behavior depends on the email client.</div>
+
+            <span class="example-label">Example: Plain Text</span>
+            <div class="code-example">
+                <code>=MAILTO_LONG_TEXT(
+                    "example@example.com",
+                    "Hello World!",
+                    "Line 1\\nLine 2 with a new line!",
+                    FALSE
+                    )</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>This constructs a mailto link that opens an email draft to <em>example@example.com</em> with the specified subject and body.
+                <strong>\n</strong> is replaced with a real line break.</p>
+
+            <span class="example-label">Example: Multi-Line HTML + Emojis</span>
+            <div class="code-example">
+                <code>=MAILTO_LONG_TEXT(
+                    "example@example.com",
+                    "Welcome 🚀",
+                    "&lt;h2&gt;Hello!&lt;/h2&gt;\\n&lt;p&gt;We&#39;re excited to have you.&lt;/p&gt;\\n&lt;p&gt;Check out our &lt;a href='https://example.com'&gt;website&lt;/a&gt; for more info.&lt;/p&gt;",
+                    TRUE
+                    )</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>
+                This example uses HTML tags and emojis in the body.
+                Notice the <strong>\n</strong> for line breaks and escaped HTML characters
+                (like <code>&lt;</code>, <code>&gt;</code>). Some email clients may interpret
+                this as HTML, while others might display it as plain text.
+            </p>
+
+            <span class="example-label">Using HYPERLINK to Make It Clickable</span>
+            <div class="code-example">
+                <code>=HYPERLINK(
+                    MAILTO_LONG_TEXT("test@example.com", "Test Email", "Hello from Sheets!", FALSE),
+                    "Send Email"
+                    )</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+            <p>Wrap the URL with <code>HYPERLINK</code> to create a clickable link labeled “Send Email.”</p>
+        </div>
+    </div>
+
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">place</span>
+            <div class="function-name">=GOOGLE_MAPS_GET_PLACES(<span class="text-arg">apiKey</span>, <span class="text-arg">location</span>, <span class="text-arg">radius</span>, <span class="text-arg">type</span>, <span class="text-arg">keyword</span>, <span class="text-arg">limit</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Gets a list of places near a specified location with all available data from the Places API.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apiKey</span> (required): Your Google Places API key.</div>
+            <div><span class="text-arg">location</span> (required): The location for the search (e.g., "Los Angeles, CA" or "34.0522,-118.2437").</div>
+            <div><span class="text-arg">radius</span> (required): The search radius in meters (e.g., 1000 for 1 km).</div>
+            <div><span class="text-arg">type</span> (required): The type of place (e.g., "restaurant", "cafe", etc.).</div>
+            <div><span class="text-arg">keyword</span> (optional): Additional keyword for refining the search.</div>
+            <div><span class="text-arg">limit</span> (optional): The maximum number of results to return (default is 20).</div>
+
+            <span class="example-label">Example (Basic Search):</span>
+            <div class="code-example">
+                <code>=GOOGLE_MAPS_GET_PLACES("API_KEY", "34.0522,-118.2437", 1000, "restaurant", "", 20)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example (Cafes in San Francisco):</span>
+            <div class="code-example">
+                <code>=GOOGLE_MAPS_GET_PLACES("API_KEY", "37.7749,-122.4194", 500, "cafe", "", 10)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <p><strong>Setup Instructions:</strong></p>
+            <ol>
+                <li>Visit the <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></li>
+                <li>Create/select a project</li>
+                <li>Enable Places API in Library</li>
+                <li>Generate API key in Credentials</li>
+            </ol>
+            <p>Google offers up to 100 free queries per day.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">search</span>
+            <div class="function-name">=GOOGLE_MAPS_PLACE_GOOGLE(<span class="text-arg">apiKey</span>, <span class="text-arg">placeId</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Retrieves detailed information about a specific place using Google Places API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Visit <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></li>
+                <li>Enable Places API</li>
+                <li>Create credentials (API key)</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apiKey</span> (required): Your Google Places API key.</div>
+            <div><span class="text-arg">placeId</span> (required): Google Place ID of the location.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_MAPS_PLACE_GOOGLE("your-api-key", "ChIJN1t_tDeuEmsRUsoyG83frY4")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">data_object</span>
+            <div class="function-name">=FLATTEN_JSON(<span class="text-arg">jsonString</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Converts nested JSON structure into a flat format suitable for spreadsheet cells.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">jsonString</span> (required): JSON string to flatten.</div>
+
+            <span class="example-label">Basic Example:</span>
+            <div class="code-example">
+                <code>=FLATTEN_JSON("{"user": {"name": "John", "age": 30}}")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">With Cell Reference:</span>
+            <div class="code-example">
+                <code>=FLATTEN_JSON(A1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">connect_without_contact</span>
+            <div class="function-name">=PROSPEO_GET_EMAIL_BY_LINKEDIN(<span class="text-arg">apikey</span>, <span class="text-arg">linkedinUrl</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Finds professional email address using LinkedIn profile URL via Prospeo API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Sign up at <a href="https://app.prospeo.io/register" target="_blank">Prospeo</a></li>
+                <li>Get your API key from <a href="https://app.prospeo.io/account/api" target="_blank">API Settings</a></li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apikey</span> (required): Your Prospeo API key.</div>
+            <div><span class="text-arg">linkedinUrl</span> (required): Full LinkedIn profile URL.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=PROSPEO_GET_EMAIL_BY_LINKEDIN("your-api-key", "https://linkedin.com/in/username")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">contact_mail</span>
+            <div class="function-name">=PROSPEO_GET_EMAILS(<span class="text-arg">apiKey</span>, <span class="text-arg">domain</span>, <span class="text-arg">limit</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Find business email addresses associated with a domain using Prospeo API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Sign up at <a href="https://app.prospeo.io/register" target="_blank">Prospeo</a></li>
+                <li>Get your API key from <a href="https://app.prospeo.io/account/api" target="_blank">API Settings</a></li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apiKey</span> (required): Your Prospeo API key.</div>
+            <div><span class="text-arg">domain</span> (required): Company domain to search.</div>
+            <div><span class="text-arg">limit</span> (optional): Maximum number of emails to return (default: 100).</div>
+
+            <span class="example-label">Basic Example:</span>
+            <div class="code-example">
+                <code>=PROSPEO_GET_EMAILS("your-api-key", "company.com")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">With Limit:</span>
+            <div class="code-example">
+                <code>=PROSPEO_GET_EMAILS("your-api-key", "company.com", 50)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">person_search</span>
+            <div class="function-name">=PROSPEO_GET_LINKEDIN(<span class="text-arg">apiKey</span>, <span class="text-arg">domain</span>, <span class="text-arg">limit</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Find LinkedIn profiles associated with a company domain using Prospeo API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Sign up at <a href="https://app.prospeo.io/register" target="_blank">Prospeo</a></li>
+                <li>Get your API key from <a href="https://app.prospeo.io/account/api" target="_blank">API Settings</a></li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apiKey</span> (required): Your Prospeo API key.</div>
+            <div><span class="text-arg">domain</span> (required): Company domain to search.</div>
+            <div><span class="text-arg">limit</span> (optional): Maximum number of profiles to return (default: 100).</div>
+
+            <span class="example-label">Basic Example:</span>
+            <div class="code-example">
+                <code>=PROSPEO_GET_LINKEDIN("your-api-key", "company.com")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">With Limit:</span>
+            <div class="code-example">
+                <code>=PROSPEO_GET_LINKEDIN("your-api-key", "company.com", 50)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">contacts</span>
+            <div class="function-name">=APOLLO_GET_CONTACTS(<span class="text-arg">apiKey</span>, <span class="text-arg">domain</span>, <span class="text-arg">limit</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Retrieve contact information from Apollo.io based on company domain.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Create account at <a href="https://app.apollo.io/" target="_blank">Apollo.io</a></li>
+                <li>Get API key from Settings → API Keys</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">apiKey</span> (required): Your Apollo API key.</div>
+            <div><span class="text-arg">domain</span> (required): Company domain to search.</div>
+            <div><span class="text-arg">limit</span> (optional): Maximum number of contacts (default: 100).</div>
+
+            <span class="example-label">Basic Example:</span>
+            <div class="code-example">
+                <code>=APOLLO_GET_CONTACTS("your-api-key", "company.com")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">With Limit:</span>
+            <div class="code-example">
+                <code>=APOLLO_GET_CONTACTS("your-api-key", "company.com", 50)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai-image api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">model_training</span>
+            <div class="function-name">=REPLICATE_USING_VERSION(<span class="text-arg">token</span>, <span class="text-arg">prompt</span>, <span class="text-arg">version</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Run AI models on Replicate using specific model versions.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Sign up at <a href="https://replicate.com/" target="_blank">Replicate</a></li>
+                <li>Get API token from Account Settings</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">token</span> (required): Your Replicate API token.</div>
+            <div><span class="text-arg">prompt</span> (required): Input prompt or parameters for the model.</div>
+            <div><span class="text-arg">version</span> (required): Specific model version ID.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=REPLICATE_USING_VERSION("your-token", "A scenic landscape", "stability-ai/sdxl/39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai-image api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">model_training</span>
+            <div class="function-name">=REPLICATE_USING_MODEL_URL(<span class="text-arg">token</span>, <span class="text-arg">prompt</span>, <span class="text-arg">modelUrl</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Run AI models on Replicate using model URLs.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Sign up at <a href="https://replicate.com/" target="_blank">Replicate</a></li>
+                <li>Get API token from Account Settings</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">token</span> (required): Your Replicate API token.</div>
+            <div><span class="text-arg">prompt</span> (required): Input prompt or parameters for the model.</div>
+            <div><span class="text-arg">modelUrl</span> (required): URL of the model on Replicate.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=REPLICATE_USING_MODEL_URL("your-token", "A scenic landscape", "https://api.replicate.com/v1/models/stability-ai/sdxl")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">cloud_upload</span>
+            <div class="function-name">=UPLOAD_TO_CLOUDINARY(<span class="text-arg">cloudName</span>, <span class="text-arg">uploadPreset</span>, <span class="text-arg">imageUrl</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Upload images to Cloudinary from URLs or cell references.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Create account at <a href="https://cloudinary.com/users/register/free" target="_blank">Cloudinary</a></li>
+                <li>Get your cloud name from Dashboard</li>
+                <li>Create an upload preset in Settings → Upload</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">cloudName</span> (required): Your Cloudinary cloud name.</div>
+            <div><span class="text-arg">uploadPreset</span> (required): Upload preset name from settings.</div>
+            <div><span class="text-arg">imageUrl</span> (required): URL of image to upload or cell reference.</div>
+
+            <span class="example-label">Example with URL:</span>
+            <div class="code-example">
+                <code>=UPLOAD_TO_CLOUDINARY("your-cloud-name", "preset-name", "https://example.com/image.jpg")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Example with Cell Reference:</span>
+            <div class="code-example">
+                <code>=UPLOAD_TO_CLOUDINARY("your-cloud-name", "preset-name", A1)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google data api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">search</span>
+            <div class="function-name">=GOOGLE_SEARCH_API(<span class="text-arg">query</span>, <span class="text-arg">apiKey</span>, <span class="text-arg">cx</span>, <span class="text-arg">num</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Search Google using the Custom Search JSON API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Create a Custom Search Engine at <a href="https://programmablesearchengine.google.com/create/new" target="_blank">Programmable Search</a></li>
+                <li>Get your Search Engine ID (cx)</li>
+                <li>Enable Custom Search API and get API key from <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">query</span> (required): Search query.</div>
+            <div><span class="text-arg">apiKey</span> (required): Your Google Custom Search API key.</div>
+            <div><span class="text-arg">cx</span> (required): Your Custom Search Engine ID.</div>
+            <div><span class="text-arg">num</span> (optional): Number of results to return (default: 10).</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_SEARCH_API("latest tech news", "your-api-key", "your-search-engine-id", 5)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">travel_explore</span>
+            <div class="function-name">=BRAVE_SEARCH_WEB(<span class="text-arg">query</span>, <span class="text-arg">subscriptionToken</span>, <span class="text-arg">resultFilter</span>, <span class="text-arg">count</span>, <span class="text-arg">country</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Search the web using Brave Search API.</p>
+
+            <p><strong>Setup:</strong></p>
+            <ol>
+                <li>Visit <a href="https://brave.com/search/api/" target="_blank">Brave Search API</a></li>
+                <li>Create an account and subscribe to an API plan</li>
+                <li>Get your API key from the dashboard</li>
+            </ol>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">query</span> (required): Search query.</div>
+            <div><span class="text-arg">subscriptionToken</span> (required): Your Brave Search API key.</div>
+            <div><span class="text-arg">resultFilter</span> (optional): Result types (web, news, etc.).</div>
+            <div><span class="text-arg">count</span> (optional): Number of results to return (default: 20).</div>
+            <div><span class="text-arg">country</span> (optional): Two-letter country code for localized results.</div>
+
+            <span class="example-label">Basic Example:</span>
+            <div class="code-example">
+                <code>=BRAVE_SEARCH_WEB("artificial intelligence news", "your-api-key")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">With Country:</span>
+            <div class="code-example">
+                <code>=BRAVE_SEARCH_WEB("local news", "your-api-key", "web", 10, "UK")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="api google utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">note_add</span>
+            <div class="function-name">=CREATE_FILE_ON_DRIVE(<span class="text-arg">fileName</span>, <span class="text-arg">content</span>, <span class="text-arg">mimeType</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Creates a new file in Google Drive with specified content and type.</p>
+
+            <p><strong>Authentication Required:</strong></p>
+            <div>Click on <a id="auth-drive-link" href="#" target="_blank">this link to Authorize Application</a>.</div>
+            <script>
+                // Update the link dynamically
+                google.script.run.withSuccessHandler(function(url) {
+                    document.getElementById('auth-drive-link').href = url;
+                }).getGDriveAuthorizationUrl();
+            </script>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">fileName</span> (required): Name for the new file (with extension).</div>
+            <div><span class="text-arg">content</span> (required): File content.</div>
+            <div><span class="text-arg">mimeType</span> (optional): MIME type (default: 'text/plain').</div>
+
+            <p><strong>Common MIME Types:</strong></p>
+            <ul>
+                <li>text/plain - Text files</li>
+                <li>text/html - HTML files</li>
+                <li>application/json - JSON files</li>
+                <li>application/pdf - PDF files</li>
+            </ul>
+
+            <span class="example-label">Create Text File:</span>
+            <div class="code-example">
+                <code>=CREATE_FILE_ON_DRIVE("notes.txt", "Meeting notes for today")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+
+            <span class="example-label">Create HTML File:</span>
+            <div class="code-example">
+                <code>=CREATE_FILE_ON_DRIVE("page.html", "<h1>Hello World</h1>", "text/html")</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <span class="material-icons">content_copy</span>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">article</span>
+            <div class="function-name">=SEO_BLOG(<span class="text-arg">blog title</span>, <span class="text-arg">writing Tone</span>, <span class="text-arg">language</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Generates an SEO-optimized blog post (1k+ words) based on the provided title, writing tone, and language.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">blogTitle</span> (required): The title of the blog post.</div>
+            <div><span class="text-arg">writingTone</span> (optional): The tone of the blog post. Default is 'Professional'.</div>
+            <div><span class="text-arg">language</span> (optional): The language of the blog post. Default is 'English'.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=SEO_BLOG(<span class="prompt-example">"How to Improve Your SEO Strategy"</span>, <span class="prompt-example">"Informative"</span>, <span class="prompt-example">"English"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function helps you create an SEO-optimized blog post tailored to your title, tone, and language preferences.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">trending_up</span>
+            <div class="function-name">=SEO_OUTRANK(<span class="text-arg">url outrank</span>, <span class="text-arg">writing tone</span>, <span class="text-arg">language</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Analyzes the given URL and provides content recommendations to outrank it in search engine results.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">urlOutrank</span> (required): The URL of the page you want to outrank.</div>
+            <div><span class="text-arg">writingTone</span> (optional): The tone of the content. Default is 'Professional'.</div>
+            <div><span class="text-arg">language</span> (optional): The language of the content. Default is 'English'.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=SEO_OUTRANK(<span class="prompt-example">"https://docgpt.ai"</span>, <span class="prompt-example">"Professional"</span>, <span class="prompt-example">"English"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function helps you create optimized content to potentially outrank the specified URL in search results.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">description</span>
+            <div class="function-name">=SEO_STRATEGY(<span class="text-arg">keywords</span>, <span class="text-arg">language</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Generates a comprehensive SEO strategy based on the provided keywords and language.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">keywords</span> (required): A list of keywords (comma separated) to target in your SEO strategy.</div>
+            <div><span class="text-arg">language</span> (optional): The language of the SEO strategy. Default is 'English'.</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=SEO_STRATEGY(<span class="prompt-example">"SEO, content marketing, keyword research"</span>, <span class="prompt-example">"English"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function helps you create a tailored SEO strategy based on your keywords and selected language.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">analytics</span>
+            <div class="function-name">=GOOGLE_RANKED_KEYWORDS(<span class="text-arg">domain</span>, <span class="text-arg">count</span>, <span class="text-arg">login</span>, <span class="text-arg">password</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the ranked keywords for a specified domain using the DataForSEO API. This function provides insights into the keywords for which a domain is ranking in Google search results.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">domain</span> (required): The domain for which you want to retrieve ranked keywords.</div>
+            <div><span class="text-arg">count</span> (optional): The number of ranked keywords to return. Default is 100.</div>
+            <div><span class="text-arg">login</span> (required): Your DataForSEO account login.</div>
+            <div><span class="text-arg">password</span> (required): Your DataForSEO account password.</div>
+
+            <p><strong>API Key Information:</strong></p>
+            <p>You can obtain a free API key from <a href="https://dataforseo.com/" target="_blank">DataForSEO</a>. The free plan allows for approximately <strong>40 queries</strong>.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_RANKED_KEYWORDS(<span class="prompt-example">"example.com"</span>, <span class="prompt-example">100</span>, <span class="prompt-example">"your_login"</span>, <span class="prompt-example">"your_password"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function retrieves the ranked keywords for the specified domain from Google's search results, based on your DataForSEO credentials.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">search</span>
+            <div class="function-name">=GOOGLE_KEYWORD_SUGGESTIONS(<span class="text-arg">seedKeyword</span>, <span class="text-arg">login</span>, <span class="text-arg">password</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Generates keyword suggestions based on a seed keyword using the DataForSEO API. This function helps you discover related keywords and phrases that are relevant to your seed keyword.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">seedKeyword</span> (required): The main keyword or phrase for which you want to generate suggestions.</div>
+            <div><span class="text-arg">login</span> (required): Your DataForSEO account login.</div>
+            <div><span class="text-arg">password</span> (required): Your DataForSEO account password.</div>
+
+            <p><strong>API Key Information:</strong></p>
+            <p>You can obtain a free API key from <a href="https://dataforseo.com/" target="_blank">DataForSEO</a>. The free plan allows for approximately <strong>40 queries</strong>.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_KEYWORD_SUGGESTIONS(<span class="prompt-example">"digital marketing"</span>, <span class="prompt-example">"your_login"</span>, <span class="prompt-example">"your_password"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function retrieves keyword suggestions based on the seed keyword you provide, helping you to identify additional relevant keywords for your SEO or marketing strategy.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">connect_without_contact</span>
+            <div class="function-name">=GOOGLE_RELATED_KEYWORDS(<span class="text-arg">keyword</span>, <span class="text-arg">login</span>, <span class="text-arg">password</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Retrieves related keywords based on a given keyword using the DataForSEO API. This function helps you find keywords that are contextually related to the keyword you provide, enhancing your keyword research and SEO strategy.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">keyword</span> (required): The main keyword for which you want to find related keywords.</div>
+            <div><span class="text-arg">login</span> (required): Your DataForSEO account login.</div>
+            <div><span class="text-arg">password</span> (required): Your DataForSEO account password.</div>
+
+            <p><strong>API Key Information:</strong></p>
+            <p>You can obtain a free API key from <a href="https://dataforseo.com/" target="_blank">DataForSEO</a>. The free plan allows for approximately <strong>40 queries</strong>.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_RELATED_KEYWORDS(<span class="prompt-example">"content marketing"</span>, <span class="prompt-example">"your_login"</span>, <span class="prompt-example">"your_password"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function helps you discover keywords related to your main keyword, aiding in comprehensive keyword research and optimization for better search engine visibility.</p>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="google api data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">lightbulb</span>
+            <div class="function-name">=GOOGLE_KEYWORD_IDEAS(<span class="text-arg">seedKeyword</span>, <span class="text-arg">login</span>, <span class="text-arg">password</span>)</div>
+            <div class="plan-badge business">Business</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Generates keyword ideas based on a seed keyword using the DataForSEO API. This function helps you discover new keyword opportunities related to your seed keyword, enhancing your SEO and content strategies.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">seedKeyword</span> (required): The main keyword from which you want to generate keyword ideas.</div>
+            <div><span class="text-arg">login</span> (required): Your DataForSEO account login.</div>
+            <div><span class="text-arg">password</span> (required): Your DataForSEO account password.</div>
+
+            <p><strong>API Key Information:</strong></p>
+            <p>You can obtain a free API key from <a href="https://dataforseo.com/" target="_blank">DataForSEO</a>. The free plan allows for approximately <strong>40 queries</strong>.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GOOGLE_KEYWORD_IDEAS(<span class="prompt-example">"digital marketing"</span>, <span class="prompt-example">"your_login"</span>, <span class="prompt-example">"your_password"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p>This function helps you generate a list of keyword ideas related to your seed keyword, providing valuable insights for expanding your keyword research and improving your SEO performance.</p>
+        </div>
+    </div>
+
+
+    <div class="function-card" data-category="utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">find_replace</span>
+            <div class="function-name">=REPLACE_TEMPLATES(<span class="text-arg">template</span>, <span class="text-arg">VAR_1</span>, <span class="text-arg">VAR_2</span>, <span class="text-arg">...</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Replaces templated variables in a string with values from specified cells or hardcoded strings. This function allows you to create dynamic text by replacing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc., with corresponding values provided in the cells or directly in the function call.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">template</span> (required): The template string containing placeholders like <code>{{VAR_1}}</code>, <code>{{VAR_2}}</code>, etc.</div>
+            <div><span class="text-arg">VAR_1</span>, <span class="text-arg">VAR_2</span>, <span class="text-arg">...</span> (required): The values that will replace the corresponding placeholders in the template. The first value replaces <code>{{VAR_1}}</code>, the second value replaces <code>{{VAR_2}}</code>, and so on.</div>
+
+            <p><strong>Example 1: Using Cell References</strong></p>
+            <div class="code-example">
+                <code>=REPLACE_TEMPLATES(<span class="prompt-example">A1</span>, <span class="prompt-example">B1</span>, <span class="prompt-example">C1</span>, <span class="prompt-example">D1</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+            <p>Where:</p>
+            <ul>
+                <li><strong>A1</strong>: Contains the template string, e.g., <code>"Buy a {{VAR_1}} for {{VAR_2}} at {{VAR_3}}"</code></li>
+                <li><strong>B1</strong>: Contains the value for <code>{{VAR_1}}</code>, e.g., <code>"Laptop"</code></li>
+                <li><strong>C1</strong>: Contains the value for <code>{{VAR_2}}</code>, e.g., <code>"$999"</code></li>
+                <li><strong>D1</strong>: Contains the value for <code>{{VAR_3}}</code>, e.g., <code>"Amazon"</code></li>
+            </ul>
+            <p><strong>Result:</strong> The function will return <code>"Buy a Laptop for $999 at Amazon"</code>.</p>
+
+            <p><strong>Example 2: Using Hardcoded Strings</strong></p>
+            <div class="code-example">
+                <code>=REPLACE_TEMPLATES(<span class="prompt-example">"Get your {{VAR_1}} for just {{VAR_2}} from {{VAR_3}}"</span>, <span class="prompt-example">"Smartphone"</span>, <span class="prompt-example">"$699"</span>, <span class="prompt-example">"Best Buy"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+            <p><strong>Result:</strong> The function will return <code>"Get your Smartphone for just $699 from Best Buy"</code>.</p>
+        </div>
+    </div>
+
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">smart_toy</span>
+            <div class="function-name">=GEMINI_CUSTOM(<span class="text-arg">apiKey</span>, <span class="text-arg">model</span>, <span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The custom GEMINI function allows you to use the GEMINI API in Google Sheets, with support for multiple models. Outputs the result in a single cell.</p>
+
+            <p><strong>API Key:</strong> You can obtain your API key from <a href="https://aistudio.google.com/app/apikey" target="_blank">here</a>.</p>
+
+            <p><strong>Supported Models:</strong></p>
+            <ul>
+                <li><strong>gemini-2.0-flash-exp:</strong> Next generation features, speed, and multimodal generation for a diverse variety of tasks</li>
+                <li><strong>gemini-1.5-flash:</strong> Fast and versatile performance across a diverse variety of tasks</li>
+                <li><strong>gemini-1.5-flash-8b:</strong> High volume and lower intelligence tasks</li>
+                <li><strong>gemini-1.5-pro:</strong> Complex reasoning tasks requiring more intelligence</li>
+                <li><strong>text-embedding-004:</strong> Measuring the relatedness of text strings</li>
+                <li><strong>aqa:</strong> Providing source-grounded answers to questions</li>
+            </ul>
+
+            <span class="example-label">Example 1:</span>
+            <div class="code-example">
+                <code>=GEMINI_CUSTOM(<span class="prompt-example">"your-api-key"</span>, <span class="prompt-example">"gemini-2.0-flash-exp"</span>, <span class="prompt-example">"Describe the benefits of AI." & " " & "Focus on healthcare applications."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <span class="example-label">Example 2:</span>
+            <div class="code-example">
+                <code>=GEMINI_CUSTOM(<span class="prompt-example">"your-api-key"</span>, <span class="prompt-example">"gemini-1.5-flash"</span>, <span class="prompt-example">"Describe the benefits of AI."</span>, <span class="prompt-example">"Focus on healthcare applications."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <span class="example-label">Example 3:</span>
+            <div class="code-example">
+                <code>=GEMINI_CUSTOM(<span class="prompt-example">"your-api-key"</span>, <span class="prompt-example">"gemini-1.5-flash-8b"</span>, <span class="prompt-example">"Explain the concept of quantum computing." & " " & "Provide a high-level overview."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <span class="example-label">Example 4:</span>
+            <div class="code-example">
+                <code>=GEMINI_CUSTOM(<span class="prompt-example">"your-api-key"</span>, <span class="prompt-example">"text-embedding-004"</span>, <span class="prompt-example">"How does a neural network work?"</span>, <span class="prompt-example">""</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">auto_awesome</span>
+            <div class="function-name">=MISTRAL(<span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The simplest function to start using MISTRAL in Sheets. Outputs the result in a single cell.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=MISTRAL(<span class="prompt-example">"write a tagline for coffee shop"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai api">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">router</span>
+            <div class="function-name">=OPEN_ROUTER(<span class="text-arg">model</span>, <span class="text-arg">apikey</span>, <span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>The custom function to call OpenRouter API in Sheets. Outputs the result in a single cell.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=OPEN_ROUTER(<span class="model-example">"openai/gpt-3.5-turbo"</span>, <span class="apikey-example">"your_openrouter_api_key"</span>, <span class="prompt-example">"What is the meaning of life?"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai-image">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">brush</span>
+            <div class="function-name">=GPT_CREATE_IMAGE(<span class="text-arg">image description</span>, <span class="text-arg">width x height</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Creating images from scratch based on a text prompt DALLE 3</p>
+
+            <p><strong>Example - get url to the created image:</strong></p>
+            <div class="code-example">
+                <code>=GPT_CREATE_IMAGE(<span class="prompt-example">"bananas"</span>, <span class="prompt-example">"1024x1024"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example - get url and display the created image:</strong></p>
+            <div class="code-example">
+                <code>=IMAGE(GPT_CREATE_IMAGE(<span class="prompt-example">"bananas"</span>, <span class="prompt-example">"1024x1024"</span>))</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai-image">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">visibility</span>
+            <div class="function-name">=GPT_VISION(<span class="text-arg">url</span>, <span class="text-arg">prompt</span>)</div>
+            <div class="plan-badge pro">User Pro</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>GPT-4 Turbo with Vision allows the model to take in images and answer questions about them.</p>
+
+            <p><strong>Example 1:</strong></p>
+            <div class="code-example">
+                <code>=GPT_VISION(<span class="prompt-example">"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-mens-shoes-jBrhbr.png"</span>, <span class="prompt-example">"Write a short description for this product"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example 2:</strong></p>
+            <div class="code-example">
+                <code>=GPT_VISION(<span class="prompt-example">A1</span>, <span class="prompt-example">A2</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <div class="img-container">
+                <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demo-request-image.gif?raw=true" alt="GPT Vision Demo">
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">language</span>
+            <div class="function-name">=WEB_URL(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the content of a URL, removing all css, script, SVG elements</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_URL(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">title</span>
+            <div class="function-name">=WEB_TITLE(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the meta title for a given URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_TITLE(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">description</span>
+            <div class="function-name">=WEB_DESCRIPTION(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the meta description for a given URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_DESCRIPTION(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">description</span>
+            <div class="function-name">=WEB_H1(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the content of the first H1 tag for a given URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_H1(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">description</span>
+            <div class="function-name">=WEB_H2(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches the content of the first H2 tag for a given URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_H2(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">table_chart</span>
+            <div class="function-name">=WEB_URLS_DATA(<span class="text-arg">A44:A47</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches page data for a list of URLs and puts it into an organized table</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_URLS_DATA(<span class="prompt-example">A44:A47</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">format_size</span>
+            <div class="function-name">=WEB_HEADINGS(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches all headings from a URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_HEADINGS(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="web-seo data">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">article</span>
+            <div class="function-name">=WEB_PARAGRAPHS(<span class="text-arg">url</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Fetches all paragraphs from a URL</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=WEB_PARAGRAPHS(<span class="prompt-example">"https://docgpt.ai"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">settings</span>
+            <div class="function-name">=GPT_CUSTOM(<span class="text-arg">prompt</span>, <span class="text-arg">apiKey</span>, [model], [max_tokens], [temperature], [top_p])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>This function calls the OpenAI GPT API to generate text completions directly in Google Sheets. You can customize the model, max_tokens, temperature, and top_p, or use the default values.</p>
+
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">prompt</span> (required): The input prompt to generate a response from GPT.</div>
+            <div><span class="text-arg">apiKey</span> (required): Your OpenAI API key.</div>
+            <div><span class="text-arg">model</span> (optional): The GPT model to use, default is 'gpt-4-turbo'.</div>
+            <div><span class="text-arg">max_tokens</span> (optional): The maximum number of tokens in the response, default is 2000.</div>
+            <div><span class="text-arg">temperature</span> (optional): Controls the randomness of the response, default is 0.7.</div>
+            <div><span class="text-arg">top_p</span> (optional): Controls the diversity of the response, default is 0.9.</div>
+
+            <p><strong>Basic Example:</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Write a blog post intro about AI."</span>, <span class="prompt-example">"your-api-key"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with specific parameters:</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Describe the benefits of AI."</span>, <span class="prompt-example">"your-api-key"</span>, <span class="prompt-example">"gpt-3.5-turbo"</span>, <span class="prompt-example">1500</span>, <span class="prompt-example">0.6</span>, <span class="prompt-example">0.8</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with concatenation:</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Describe the product: "</span> & <span class="prompt-example">A1</span> & <span class="prompt-example">" available at the price: "</span> & <span class="prompt-example">B1</span>, <span class="prompt-example">"your-api-key"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with multiple concatenations:</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Create an ad for "</span> & <span class="prompt-example">A1</span> & <span class="prompt-example">" and highlight its features: "</span> & <span class="prompt-example">B1</span> & <span class="prompt-example">", "</span> & <span class="prompt-example">C1</span>, <span class="prompt-example">"your-api-key"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with advanced concatenation (product description):</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Create a detailed description for "</span> & <span class="prompt-example">A1</span> & <span class="prompt-example">" available in the following sizes: "</span> & <span class="prompt-example">B1</span> & <span class="prompt-example">" and priced at: "</span> & <span class="prompt-example">C1</span> & <span class="prompt-example">". The color options are: "</span> & <span class="prompt-example">D1</span>, <span class="prompt-example">"your-api-key"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with advanced concatenation (blog post):</strong></p>
+            <div class="code-example">
+                <code>=GPT_CUSTOM(<span class="prompt-example">"Write a blog post titled: "</span> & <span class="prompt-example">A1</span> & <span class="prompt-example">". Include the following sections: "</span> & <span class="prompt-example">B1</span> & <span class="prompt-example">". End with a call to action focused on: "</span> & <span class="prompt-example">C1</span>, <span class="prompt-example">"your-api-key"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">local_offer</span>
+            <div class="function-name">=GPT_TAG(<span class="text-arg">text</span>, [tags])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Applies user-defined tags to a given text</p>
+
+            <p><strong>Example with custom tags:</strong></p>
+            <div class="code-example">
+                <code>=GPT_TAG(<span class="prompt-example">"I love chocolate"</span>, <span class="prompt-example">"food, positive, negative"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with default tags:</strong></p>
+            <div class="code-example">
+                <code>=GPT_TAG(<span class="prompt-example">"I love chocolate"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">data_object</span>
+            <div class="function-name">=GPT_EXTRACT(<span class="text-arg">text</span>, <span class="text-arg">to_extract</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Extracts data (like email addresses or company names) from a text. Outputs as comma-separated values.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_EXTRACT(<span class="prompt-example">"I worked 12 years at Amazon.com at Apple"</span>, <span class="prompt-example">"companies"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">translate</span>
+            <div class="function-name">=GPT_TRANSLATE(<span class="text-arg">text</span>, <span class="text-arg">target</span>, [source])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Translates input text into another language using GPT.</p>
+
+            <p><strong>Example with target language:</strong></p>
+            <div class="code-example">
+                <code>=GPT_TRANSLATE(<span class="prompt-example">"I love ice cream"</span>, <span class="prompt-example">"spanish"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Example with source and target:</strong></p>
+            <div class="code-example">
+                <code>=GPT_TRANSLATE(<span class="prompt-example">"I love ice cream"</span>, <span class="prompt-example">"spanish"</span>, <span class="prompt-example">"english"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">summarize</span>
+            <div class="function-name">=GPT_SUMMARIZE(<span class="text-arg">text</span>, [format])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Summarizes the input text using GPT and returns the summary.</p>
+
+            <p><strong>Default format example:</strong></p>
+            <div class="code-example">
+                <code>=GPT_SUMMARIZE(<span class="prompt-example">"This is a long text. It contains a lot of information. We need to summarize it."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <p><strong>Custom format example:</strong></p>
+            <div class="code-example">
+                <code>=GPT_SUMMARIZE(<span class="prompt-example">"This is a long text. It contains a lot of information. We need to summarize it."</span>, <span class="prompt-example">"two sentences"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">code</span>
+            <div class="function-name">=GPT_FORMAT(<span class="text-arg">text</span>, <span class="text-arg">source</span>, <span class="text-arg">target</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Converts between formats.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_FORMAT(<span class="prompt-example">"&lt;ul&gt;&lt;li&gt;&lt;p&gt;Name: Joe&lt;/p&gt;&lt;p&gt;Age: 27&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Name: Jane&lt;/p&gt;&lt;p&gt;Age: 28&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;"</span>, <span class="prompt-example">"json"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">category</span>
+            <div class="function-name">=GPT_CLASSIFY(<span class="text-arg">text</span>, <span class="text-arg">categories</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Classifies the input into one of the given categories.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_CLASSIFY(<span class="prompt-example">"banana"</span>, <span class="prompt-example">"fruit, vegetable"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">auto_fix_high</span>
+            <div class="function-name">=GPT_FILL(<span class="text-arg">examples</span>, <span class="text-arg">inputs</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Magically fills or cleans a range from a few examples. AI learns from provided examples and processes inputs with this knowledge</p>
+            <p><strong>Arguments:</strong></p>
+            <div><span class="text-arg">examples</span> - Range containing complete examples that the AI should learn from</div>
+            <div><span class="text-arg">inputs</span> - Range containing data to process</div>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_FILL(<span class="prompt-example">A1:C3</span>, <span class="prompt-example">A4:C8</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">format_list_bulleted</span>
+            <div class="function-name">=GPT_LIST(<span class="text-arg">prompt</span>, [value])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Like GPT, but outputs the results in a vertical column. Very practical when the output is a vertical list</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_LIST(<span class="prompt-example">"Give me 5 good short ads about spreadsheets."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <div class="img-container">
+                <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demoGptList.gif?raw=true" alt="GPT List Demo">
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai-list">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">view_week</span>
+            <div class="function-name">=GPT_HLIST(<span class="text-arg">prompt</span>, [value])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Like GPT, but outputs the results in a horizontal column. Very practical when the output is a horizontal list</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_HLIST(<span class="prompt-example">"Give me 5 good short ads about spreadsheets."</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">vertical_split</span>
+            <div class="function-name">=GPT_SPLIT(<span class="text-arg">text</span>, <span class="text-arg">split_by</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Splits text semantically, such as by section, paragraph, sentence, customer, etc... anything! Output is a vertical list</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_SPLIT(<span class="prompt-example">"The sky is blue. The cat purrs softly. The sun shines brightly."</span>, <span class="prompt-example">"sentences"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">horizontal_split</span>
+            <div class="function-name">=GPT_HSPLIT(<span class="text-arg">text</span>, <span class="text-arg">split_by</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Splits text semantically, such as by section, paragraph, sentence, customer, etc... anything! Output is a horizontal list</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_HSPLIT(<span class="prompt-example">"The sky is blue. The cat purrs softly. The sun shines brightly."</span>, <span class="prompt-example">"sentences"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">auto_fix_normal</span>
+            <div class="function-name">=GPT_APPLY(<span class="text-arg">text</span>, [task])</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Applies the given task to the given text. The default task is to fix grammar and spelling.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_APPLY(<span class="prompt-example">"He hav a book"</span>, <span class="prompt-example">"fix grammar and spelling"</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="ai">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">table_chart</span>
+            <div class="function-name">=GPT_TABLE(<span class="text-arg">prompt</span>, <span class="text-arg">headers</span>)</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>Generates a table from a prompt.</p>
+
+            <span class="example-label">Example:</span>
+            <div class="code-example">
+                <code>=GPT_TABLE(<span class="prompt-example">"top 10 most eaten fruits and their nutrition data"</span>, <span class="prompt-example">A1:D1</span>)</code>
+                <button class="copy-button" onclick="copyCode(this)">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+
+            <div class="img-container">
+                <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demoGptTable.gif?raw=true" alt="GPT Table Demo">
+            </div>
+        </div>
+    </div>
+
+    <div class="function-card" data-category="utility">
+        <div class="function-header" onclick="toggleFunction(this)">
+            <span class="material-icons">feedback</span>
+            <div class="function-name">REQUEST A NEW FEATURE</div>
+            <span class="material-icons" style="margin-left: auto">expand_more</span>
+        </div>
+        <div class="function-content hide">
+            <p>
+                Have a suggestion or feature request? I'd love to hear from you!
+                Please email me directly at <a href="mailto:yaroslav91@gmail.com">yaroslav91@gmail.com</a>.
+            </p>
+        </div>
+    </div>
+
+</div>
