@@ -14,10 +14,10 @@
   link: /ai-email-assistant/
   new_window: true
   highlight: false
-- name: 🤝 Linkedin Automation
-  link: /cold-message-on-linkedin/
-  new_window: true
-  highlight: false
+#- name: 🤝 Linkedin Automation
+#  link: /cold-message-on-linkedin/
+#  new_window: true
+#  highlight: false
 - name: 📄 GPT for Docs
   link: /google-doc-ai/
   new_window: true
