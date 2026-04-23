@@ -788,9 +788,8 @@
 	<script>
 
 		function getURLParameter_2(name) {
-			const urlParams = new URLSearchParams(window.location.href);
-			const [firstParam, firstValue] = urlParams.entries().next().value || [];
-			return firstValue;
+			const urlParams = new URLSearchParams(window.location.search);
+			return urlParams.get(name);
 		}
 
 		function shouldSendVisit(email, page) {
