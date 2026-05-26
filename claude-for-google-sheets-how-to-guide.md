@@ -7,7 +7,13 @@ description: Complete guide to using Claude AI in Google Sheets. Learn installat
 
 ## What is Claude for Google Sheets?
 
-Claude for Google Sheets is an innovative add-on that integrates Anthropic's Claude AI directly into your spreadsheets. Unlike traditional formulas, Claude can understand context, analyze data patterns, generate content, and perform complex reasoning tasks across thousands of cells simultaneously.
+Claude for Google Sheets lets you use Anthropic Claude formulas and bulk prompts directly inside your spreadsheets. With GPT for Sheets, you can run Claude across rows of customer feedback, product data, emails, keywords, or research tasks without copying and pasting between tools.
+
+## Use Grok, Claude, and GPT in Google Sheets
+
+Need AI formulas for hundreds or thousands of rows? [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use Grok, Claude, ChatGPT, and Gemini directly inside Google Sheets for bulk prompts, data cleanup, content generation, and analysis.
+
+**Start here:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) and run your first AI formula in minutes.
 
 ### Key Benefits:
 - **Intelligent Data Processing**: Handle complex text analysis, summarization, and transformation
@@ -61,6 +67,13 @@ The basic Claude formula syntax is:
 - Multiple cell references: `=CLAUDE("Create an ad for " & A1 & " highlighting " & B1)`
 - Using ranges: `=CLAUDE("analyze these reviews", A1:A10)`
 - Prompt in cell: `=CLAUDE(A1, B2)`
+
+
+## Run Claude Prompts Across Entire Columns
+
+The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/): install the add-on, choose Claude as your provider, then apply formulas like `=CLAUDE()` across entire columns.
+
+**CTA:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to run Claude, Grok, and GPT prompts in bulk inside Google Sheets.
 
 ## 5+ Practical Examples
 
@@ -258,6 +271,11 @@ A: Claude works best with static data analysis. For real-time applications, cons
 
 **Q: How do I handle errors in large datasets?**
 A: Use error handling in your formulas, process data in batches, and implement retry logic for failed requests. Monitor the add-on logs for debugging.
+
+
+## Ready to Use Claude in Google Sheets?
+
+[Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use Claude formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Claude, Grok, ChatGPT, and Gemini from the same add-on.
 
 ## Conclusion
 

@@ -1,13 +1,19 @@
 ---
 layout: page
-title: Grok for Google Sheets - Complete How-to Guide
+title: "Grok for Google Sheets: Use xAI Formulas, Bulk Prompts & Examples"
 permalink: /grok-for-google-sheets-how-to-guide/
-description: Complete guide to using Grok AI in Google Sheets. Learn installation, setup, and 5+ practical examples with witty, conversational AI capabilities.
+description: Learn how to use Grok in Google Sheets with xAI formulas, bulk prompts, setup steps, and practical spreadsheet examples for content, trends, and data analysis.
 ---
 
 ## What is Grok for Google Sheets?
 
-Grok for Google Sheets is an innovative add-on that integrates xAI's Grok AI directly into your spreadsheets. Known for its wit, conversational style, and real-time social media insights, Grok brings personality and engagement to data analysis while maintaining powerful analytical capabilities across thousands of cells simultaneously.
+Grok for Google Sheets lets you use xAI formulas and bulk prompts directly inside your spreadsheets. With GPT for Sheets, you can run Grok across rows of products, reviews, social posts, keywords, or customer data without copying and pasting between tools.
+
+## Use Grok, Claude, and GPT in Google Sheets
+
+Need AI formulas for hundreds or thousands of rows? [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use Grok, Claude, ChatGPT, and Gemini directly inside Google Sheets for bulk prompts, data cleanup, content generation, and analysis.
+
+**Start here:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) and run your first AI formula in minutes.
 
 ### Key Benefits:
 - **Witty and Engaging**: Get responses with personality and humor
@@ -62,6 +68,13 @@ The basic Grok formula syntax is:
 - Trend analysis: `=GROK("what's trending about " & C1)`
 - Cultural context: `=GROK("explain the cultural significance of " & D1)`
 - Prompt in cell: `=GROK(A1, B2)`
+
+
+## Try These Grok Formulas in Bulk
+
+The fastest way to use Grok in Google Sheets is with [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/): install the add-on, choose Grok/xAI as your provider, then apply formulas like `=GROK()` across entire columns.
+
+**CTA:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to run Grok, Claude, and GPT prompts in bulk inside Google Sheets.
 
 ## 5+ Practical Examples
 
@@ -265,6 +278,11 @@ A: Absolutely! Grok can make serious analysis more engaging and accessible witho
 
 **Q: How do I ensure Grok's humor is appropriate?**
 A: Provide clear brand guidelines in your prompts, specify your target audience, and review content before publishing. Ask Grok to explain humor choices if needed.
+
+
+## Ready to Use Grok in Google Sheets?
+
+[Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use xAI Grok formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Grok, Claude, ChatGPT, and Gemini from the same add-on.
 
 ## Conclusion
 
