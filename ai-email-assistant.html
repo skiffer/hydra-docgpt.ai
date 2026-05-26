@@ -1099,15 +1099,26 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
 
         return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
-    // Get the value of the 'email' and 'product' parameters
+    // Get the value of the attribution parameters we pass from add-ons.
     const emailParam = getURLParameter('email');
     const productParam = getURLParameter('product');
+    const utmSourceParam = getURLParameter('utm_source');
+    const utmMediumParam = getURLParameter('utm_medium');
+    const utmCampaignParam = getURLParameter('utm_campaign');
+    const passthroughParams = new URLSearchParams();
+    if (utmSourceParam) passthroughParams.set('utm_source', utmSourceParam);
+    if (utmMediumParam) passthroughParams.set('utm_medium', utmMediumParam);
+    if (utmCampaignParam) passthroughParams.set('utm_campaign', utmCampaignParam);
+    passthroughParams.set('page', window.location.pathname);
 
     // Fill the data-email attribute with the 'email' parameter value or an empty string if not available
     const getStartedLinks = document.querySelectorAll('.paddle_button[data-email=""]');
     if (getStartedLinks) {
         getStartedLinks.forEach(link => {
             link.setAttribute('data-email', emailParam || '');
+            if (passthroughParams.toString()) {
+                link.setAttribute('data-passthrough', passthroughParams.toString());
+            }
         });
     }
 
@@ -1129,7 +1140,12 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             email: emailParam || '',
             customData: {
                 tolt_referral: window.tolt_referral,
+                utm_source: utmSourceParam || '',
+                utm_medium: utmMediumParam || '',
+                utm_campaign: utmCampaignParam || '',
+                page: window.location.pathname,
             },
+            passthrough: passthroughParams.toString(),
         });
     } else {
         console.log('Paddle checkout not auto-opened. Email:', emailParam, 'Product:', productParam);
