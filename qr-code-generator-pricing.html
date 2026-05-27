@@ -3,15 +3,89 @@ title: QR Barcode Generator inside your Google Sheets, Docs, Forms™
 heading: QR Barcode Generator for Sheets™ Docs™ Forms™
 description: Empower your documents and forms with the ability to generate QR codes effortlessly, enhancing accessibility and interactivity. Whether you're creating dynamic spreadsheets, crafting professional documents, or designing interactive forms.
 ---
+<script src="/assets/js/checkout-attribution.js"></script>
 <!-- Stripe Integration - Replaced Paddle -->
 <script type="text/javascript">
-    // Stripe payment tracking
+    // Stripe payment tracking + safe attribution passthrough.
+    // If anything fails, the original Stripe href still opens unchanged.
+    var GA4_MEASUREMENT_ID = 'G-DV5BH9XVVS';
+
     function trackStripeCheckout(plan) {
         if (typeof dataLayer !== 'undefined') {
             dataLayer.push({
                 event: 'stripe_checkout_started',
                 plan_name: plan
             });
+        }
+    }
+
+    function readCookie(name) {
+        var match = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.$?*|{}()\[\]\\\/\+^]/g, '\\$&') + '=([^;]*)'));
+        return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    function getGaClientId() {
+        var gaCookie = readCookie('_ga');
+        if (!gaCookie) return null;
+        var parts = gaCookie.split('.');
+        if (parts.length >= 4) return parts[2] + '.' + parts[3];
+        return gaCookie;
+    }
+
+    function getGaSessionId() {
+        var streamCookieName = '_ga_' + GA4_MEASUREMENT_ID.replace('G-', '');
+        var streamCookie = readCookie(streamCookieName);
+        if (!streamCookie) return null;
+        var match = streamCookie.match(/(?:^|\.)s(\d+)/);
+        return match ? match[1] : null;
+    }
+
+    function buildCheckoutAttribution(plan) {
+        var params = new URLSearchParams(window.location.search);
+        return {
+            ga_client_id: getGaClientId(),
+            ga_session_id: getGaSessionId(),
+            utm_source: params.get('utm_source'),
+            utm_medium: params.get('utm_medium'),
+            utm_campaign: params.get('utm_campaign'),
+            utm_content: params.get('utm_content'),
+            utm_term: params.get('utm_term'),
+            gclid: params.get('gclid'),
+            gbraid: params.get('gbraid'),
+            wbraid: params.get('wbraid'),
+            landing_page: window.location.href,
+            referrer: document.referrer || null,
+            product: 'qr-generator',
+            plan: plan
+        };
+    }
+
+    function enhanceStripeCheckoutLink(event, link) {
+        try {
+            var plan = link.getAttribute('data-plan');
+            trackStripeCheckout(plan);
+
+            var attribution = buildCheckoutAttribution(plan);
+            var url = new URL(link.href);
+
+            if (attribution.ga_client_id) {
+                url.searchParams.set('client_reference_id', 'ga:' + attribution.ga_client_id);
+            }
+
+            Object.keys(attribution).forEach(function(key) {
+                var value = attribution[key];
+                if (value) url.searchParams.set(key, value);
+            });
+
+            event.preventDefault();
+            var target = link.target || '_self';
+            window.open(url.toString(), target);
+            return false;
+        } catch (error) {
+            if (window.console && console.warn) {
+                console.warn('Stripe attribution failed; using original checkout link', error);
+            }
+            return true;
         }
     }
 </script>
@@ -158,7 +232,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/cNi9AM3np5I8eEEczj8k80s" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="starter-monthly" onclick="trackStripeCheckout('starter-monthly')">Get Started</a>
+                <a href="https://buy.stripe.com/cNi9AM3np5I8eEEczj8k80s" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="starter-monthly" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -186,7 +260,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/dRmcMYcXZfiIgMM8j38k80t" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="professional-monthly" onclick="trackStripeCheckout('professional-monthly')">Get Started</a>
+                <a href="https://buy.stripe.com/dRmcMYcXZfiIgMM8j38k80t" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="professional-monthly" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -213,7 +287,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="trackStripeCheckout('lifetime')">Get Started</a>
+                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -239,7 +313,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/4gM9AM6zB9Yo2VW8j38k80u" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-monthly" onclick="trackStripeCheckout('organization-monthly')">Get Started</a>
+                <a href="https://buy.stripe.com/4gM9AM6zB9Yo2VW8j38k80u" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-monthly" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -265,7 +339,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/00w5kw6zB0nO2VW7eZ8k80v" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="business-annual" onclick="trackStripeCheckout('business-annual')">Get Started</a>
+                <a href="https://buy.stripe.com/00w5kw6zB0nO2VW7eZ8k80v" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="business-annual" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -297,7 +371,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/3cI6oAaPRb2s8gg42N8k80w" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="enterprise-annual" onclick="trackStripeCheckout('enterprise-annual')">Get Started</a>
+                <a href="https://buy.stripe.com/3cI6oAaPRb2s8gg42N8k80w" target="_blank" class="btn btn-primary mb-3 btn-lg stripe-payment-link" data-plan="enterprise-annual" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -327,7 +401,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="trackStripeCheckout('lifetime')">Get Started</a>
+                <a href="https://buy.stripe.com/cNifZabTV5I80NOarb8k80q" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="lifetime" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -356,7 +430,7 @@ description: Empower your documents and forms with the ability to generate QR co
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                 </ul>
-                <a href="https://buy.stripe.com/14AeV68HJ7Qg7ccbvf8k80x" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-annual" onclick="trackStripeCheckout('organization-annual')">Get Started</a>
+                <a href="https://buy.stripe.com/14AeV68HJ7Qg7ccbvf8k80x" target="_blank" class="btn btn-outline-secondary mb-3 btn-lg stripe-payment-link" data-plan="organization-annual" onclick="return enhanceStripeCheckoutLink(event, this)">Get Started</a>
             </div>
         </div>
     </div>
