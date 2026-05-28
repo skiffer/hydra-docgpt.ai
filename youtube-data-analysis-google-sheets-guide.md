@@ -1,8 +1,54 @@
 ---
-layout: page
-title: YouTube Data Analysis in Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "YouTube Data in Google Sheets: Channel & Video Analysis"
 permalink: /youtube-data-analysis-google-sheets-guide/
-description: Complete guide to YouTube data analysis in Google Sheets. Research channels, analyze videos, and track YouTube metrics with YOUTUBE_DATA functions for content strategy.
+description: "Install GPT for Sheets to analyze YouTube data in Google Sheets. Research channels, analyze videos, track metrics, and build content strategy reports from spreadsheet rows."
+hero_title: "YouTube Data in Google Sheets: Channel & Video Analysis"
+hero_subtitle: "Research YouTube channels, analyze videos, track metrics, and build content strategy workflows directly in Google Sheets."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View YouTube formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Analyze YouTube channels and videos in Google Sheets"
+inline_cta_text: "Install GPT for Sheets and use YouTube data formulas to enrich rows with channel, video, and content strategy metrics."
+guide_badges:
+  - "YouTube Data API"
+  - "Channel research"
+  - "Video analysis"
+  - "Content strategy"
+quick_start_title: "YouTube data quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =YOUTUBE_DATA() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste YouTube formulas for Google Sheets"
+formula_section_intro: "Use rows for keywords, regions, and dates to find channels or videos at scale."
+formula_cards:
+  - title: "Find channels by niche"
+    setup: "A: keyword · B: max results · C: region"
+    formula: |
+      =YOUTUBE_DATA_SEARCH_CHANNELS(A2, B2, C2)
+  - title: "Find recent videos"
+    setup: "A: topic · B: max results · C: after date"
+    formula: |
+      =YOUTUBE_DATA_SEARCH_VIDEO(A2, B2, "viewCount", C2)
+  - title: "Get channel details"
+    setup: "A: channel IDs comma-separated"
+    formula: |
+      =YOUTUBE_DATA_GET_CHANNEL(A2)
+
 ---
 
 ## What is YouTube Data Analysis in Google Sheets?

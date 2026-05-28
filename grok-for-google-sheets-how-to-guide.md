@@ -1,8 +1,56 @@
 ---
-layout: page
+layout: seo-guide
 title: "Grok for Google Sheets: Use xAI Formulas & Bulk Prompts"
 permalink: /grok-for-google-sheets-how-to-guide/
 description: Install GPT for Sheets to use Grok/xAI inside Google Sheets. Run Grok formulas, bulk prompts, trend analysis, copywriting, and spreadsheet workflows without Apps Script.
+hero_title: "Grok for Google Sheets: Use xAI Formulas & Bulk Prompts"
+hero_subtitle: "Run Grok/xAI prompts across spreadsheet rows for trend analysis, social content, campaign angles, copywriting, and marketing workflows."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Grok formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Grok/xAI prompts in bulk inside Google Sheets"
+inline_cta_text: "Install GPT for Sheets, choose Grok/xAI as your provider, and apply AI formulas to rows of products, reviews, social posts, keywords, or customer data."
+guide_badges:
+  - "Grok formulas"
+  - "xAI bulk prompts"
+  - "Social content workflows"
+  - "No Apps Script"
+quick_start_title: "Grok quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Choose Grok/xAI, add your API key, and run =GROK() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Bulk prompts"
+    href: "#try-these-grok-formulas-in-bulk"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Grok formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Humanize corporate copy"
+    setup: "A: draft text · B: channel · C: brand voice · D: goal"
+    formula: |
+      =GROK("Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice to achieve " & D2 & ". Make it: 1) Actually funny, 2) Memorable, 3) Shareable, 4) On-brand but not boring, 5) Conversation-starting")
+  - title: "Rewrite for a specific audience"
+    setup: "A: original copy · B: audience · C: desired tone"
+    formula: |
+      =GROK("Rewrite this for " & B2 & " in a " & C2 & " tone. Keep the meaning, remove jargon, and make it easy to skim: '" & A2 & "'")
+  - title: "Create 5 campaign angles"
+    setup: "A: product · B: audience · C: pain point · D: channel"
+    formula: |
+      =GROK("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
+
 ---
 
 ## What is Grok for Google Sheets?

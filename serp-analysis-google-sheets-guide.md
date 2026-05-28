@@ -1,8 +1,54 @@
 ---
-layout: page
-title: SERP Analysis in Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "SERP Analysis in Google Sheets: Track Rankings & Competitors"
 permalink: /serp-analysis-google-sheets-guide/
-description: Complete guide to SERP analysis in Google Sheets. Track keyword rankings, monitor competitors, and analyze search results with the SERP function for SEO optimization.
+description: "Install GPT for Sheets to run SERP analysis in Google Sheets. Track keyword rankings, monitor competitors, analyze search results, and build SEO reports from spreadsheet rows."
+hero_title: "SERP Analysis in Google Sheets: Track Rankings & Competitors"
+hero_subtitle: "Analyze search results, keyword rankings, competitors, snippets, and SEO opportunities directly from Google Sheets."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View SERP formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run SERP analysis across keyword lists in Google Sheets"
+inline_cta_text: "Install GPT for Sheets and turn rows of keywords into ranking checks, competitor snapshots, and SEO reporting workflows."
+guide_badges:
+  - "SERP tracking"
+  - "Keyword research"
+  - "Competitor analysis"
+  - "SEO reports"
+quick_start_title: "SERP analysis quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =SERP() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste AI formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Humanize corporate copy"
+    setup: "A: draft text · B: channel · C: brand voice · D: goal"
+    formula: |
+      =GPT("Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice to achieve " & D2 & ". Make it: 1) Actually funny, 2) Memorable, 3) Shareable, 4) On-brand but not boring, 5) Conversation-starting")
+  - title: "Extract a clean output from messy input"
+    setup: "A: messy source text · B: desired output format"
+    formula: |
+      =GPT("Extract the useful information from this text and return it as " & B2 & ": " & A2)
+  - title: "Generate row-specific recommendations"
+    setup: "A: item · B: audience · C: goal · D: constraints"
+    formula: |
+      =GPT("For " & A2 & ", recommend the best next action for " & B2 & " to achieve " & C2 & ". Respect these constraints: " & D2 & ". Return: recommendation, reason, and next step.")
+
 ---
 
 ## What is SERP Analysis in Google Sheets?

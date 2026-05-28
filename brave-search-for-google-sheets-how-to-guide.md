@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Brave Search for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Brave Search for Google Sheets: Web Search API & Bulk Research"
 permalink: /brave-search-for-google-sheets-how-to-guide/
-description: Complete guide to using Brave Search API in Google Sheets. Learn web search, data enrichment, and real-time information gathering with privacy-focused search.
+description: "Install GPT for Sheets to use Brave Search API in Google Sheets. Run privacy-focused web search, enrichment, SERP research, and real-time information gathering in bulk."
+hero_title: "Brave Search for Google Sheets: Web Search API & Bulk Research"
+hero_subtitle: "Run Brave Search across spreadsheet rows for web research, data enrichment, SERP checks, and real-time information gathering."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Brave Search formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Brave Search API queries in bulk inside Google Sheets"
+inline_cta_text: "Install GPT for Sheets and use Brave Search formulas to enrich rows with fresh web results, sources, and competitive research."
+guide_badges:
+  - "Web search API"
+  - "Bulk research"
+  - "Privacy-focused"
+  - "Data enrichment"
+quick_start_title: "Brave Search quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =BRAVE_SEARCH() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Brave Search formulas for Google Sheets"
+formula_section_intro: "Use these formulas to pull search results into rows before summarizing or enriching with AI."
+formula_cards:
+  - title: "Find fresh news for a company"
+    setup: "A: company · B: topic · C: country"
+    formula: |
+      =BRAVE_SEARCH_WEB(A2 & " " & B2 & " news updates press releases", "your-api-key", "web", 10, C2)
+  - title: "Find competitor pages"
+    setup: "A: keyword · B: niche · C: country"
+    formula: |
+      =BRAVE_SEARCH_WEB(A2 & " " & B2 & " alternatives competitors pricing", "your-api-key", "web", 10, C2)
+  - title: "Research local prospects"
+    setup: "A: business type · B: city · C: country"
+    formula: |
+      =BRAVE_SEARCH_WEB(A2 & " companies in " & B2 & " contact pricing services", "your-api-key", "web", 20, C2)
+
 ---
 
 ## What is Brave Search for Google Sheets?

@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Perplexity for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Perplexity for Google Sheets: Research Formulas & Bulk Prompts"
 permalink: /perplexity-for-google-sheets-how-to-guide/
-description: Complete guide to using Perplexity AI in Google Sheets. Learn installation, setup, and 5+ practical examples with real-time research capabilities.
+description: "Install GPT for Sheets to use Perplexity AI in Google Sheets. Run research prompts, answer questions with sources, enrich rows, and analyze real-time information in bulk."
+hero_title: "Perplexity for Google Sheets: Research Formulas & Bulk Prompts"
+hero_subtitle: "Run Perplexity research prompts across spreadsheet rows for sourced answers, market research, competitor checks, and data enrichment."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Perplexity formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Perplexity research prompts in bulk inside Google Sheets"
+inline_cta_text: "Install GPT for Sheets, choose Perplexity, and turn spreadsheet rows into sourced research answers without manually searching each item."
+guide_badges:
+  - "Research formulas"
+  - "Sourced answers"
+  - "Bulk enrichment"
+  - "Real-time research"
+quick_start_title: "Perplexity quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =PERPLEXITY() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Perplexity formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Research a company from a row"
+    setup: "A: company · B: market · C: angle"
+    formula: |
+      =PERPLEXITY("Research " & A2 & " in the " & B2 & " market. Focus on " & C2 & ". Return: latest news, positioning, competitors, risks, and useful sources.")
+  - title: "Fact-check a claim"
+    setup: "A: claim · B: context"
+    formula: |
+      =PERPLEXITY("Fact-check this claim: '" & A2 & "'. Context: " & B2 & ". Return verdict, evidence, caveats, and sources.")
+  - title: "Summarize current market signals"
+    setup: "A: keyword/topic · B: region · C: time window"
+    formula: |
+      =PERPLEXITY("Find current market signals for " & A2 & " in " & B2 & " over " & C2 & ". Return trends, notable companies, demand indicators, and citations.")
+
 ---
 
 ## What is Perplexity for Google Sheets?

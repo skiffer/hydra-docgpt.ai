@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Gemini for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Gemini for Google Sheets: Use Gemini AI Formulas & Bulk Prompts"
 permalink: /gemini-for-google-sheets-how-to-guide/
-description: Complete guide to using Google Gemini AI in Google Sheets. Learn installation, setup, and 5+ practical examples with step-by-step instructions.
+description: "Install GPT for Sheets to use Google Gemini AI formulas, bulk prompts, and spreadsheet examples for content, data cleanup, research, and analysis without Apps Script."
+hero_title: "Gemini for Google Sheets: Use Gemini AI Formulas & Bulk Prompts"
+hero_subtitle: "Run Gemini across spreadsheet rows for content, cleanup, research, extraction, and analysis — without copy/paste or Apps Script."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Gemini formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Gemini prompts across entire Google Sheets columns"
+inline_cta_text: "Install GPT for Sheets, choose Gemini as your provider, and apply AI formulas to rows of content, keywords, products, or research data."
+guide_badges:
+  - "Gemini formulas"
+  - "Bulk prompts"
+  - "No Apps Script"
+  - "Google Sheets workflows"
+quick_start_title: "Gemini quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =GEMINI() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Gemini formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Humanize corporate copy"
+    setup: "A: draft text · B: channel · C: brand voice · D: goal"
+    formula: |
+      =GEMINI("Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice to achieve " & D2 & ". Make it: 1) Actually funny, 2) Memorable, 3) Shareable, 4) On-brand but not boring, 5) Conversation-starting")
+  - title: "Rewrite for a specific audience"
+    setup: "A: original copy · B: audience · C: desired tone"
+    formula: |
+      =GEMINI("Rewrite this for " & B2 & " in a " & C2 & " tone. Keep the meaning, remove jargon, and make it easy to skim: '" & A2 & "'")
+  - title: "Create 5 campaign angles"
+    setup: "A: product · B: audience · C: pain point · D: channel"
+    formula: |
+      =GEMINI("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
+
 ---
 
 ## What is Gemini for Google Sheets?

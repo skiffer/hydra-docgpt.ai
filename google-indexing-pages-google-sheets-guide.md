@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Google Indexing Pages in Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Google Indexing API in Google Sheets: Submit URLs in Bulk"
 permalink: /google-indexing-pages-google-sheets-guide/
-description: Complete guide to using Google Indexing API in Google Sheets. Notify Google about new and updated pages directly from your spreadsheet with GOOGLE_INDEXING function.
+description: "Install GPT for Sheets to use Google Indexing API from Google Sheets. Notify Google about new or updated pages, submit URLs in bulk, and manage indexing workflows."
+hero_title: "Google Indexing API in Google Sheets: Submit URLs in Bulk"
+hero_subtitle: "Notify Google about new or updated URLs directly from spreadsheet rows and manage indexing workflows in bulk."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View indexing formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Submit URLs to Google Indexing API from Google Sheets"
+inline_cta_text: "Install GPT for Sheets and use indexing formulas to process URL lists without custom scripts or manual API calls."
+guide_badges:
+  - "Indexing API"
+  - "Bulk URL submit"
+  - "Programmatic SEO"
+  - "No Apps Script"
+quick_start_title: "Indexing API quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =GOOGLE_INDEXING() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Google Indexing formulas for Google Sheets"
+formula_section_intro: "Paste URLs in column A and submit them in bulk from Google Sheets."
+formula_cards:
+  - title: "Submit one URL"
+    setup: "A: URL"
+    formula: |
+      =GOOGLE_INDEXING(A2)
+  - title: "Submit generated programmatic page"
+    setup: "A: domain · B: slug"
+    formula: |
+      =GOOGLE_INDEXING("https://" & A2 & "/" & B2 & "/")
+  - title: "Submit canonical URL after publish"
+    setup: "A: canonical URL"
+    formula: |
+      =IF(A2="", "", GOOGLE_INDEXING(A2))
+
 ---
 
 ## What is Google Indexing in Google Sheets?

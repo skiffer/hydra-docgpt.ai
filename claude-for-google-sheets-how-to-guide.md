@@ -1,8 +1,56 @@
 ---
-layout: page
+layout: seo-guide
 title: "Claude for Google Sheets: Use Claude AI Formulas & Bulk Prompts"
 permalink: /claude-for-google-sheets-how-to-guide/
 description: Install GPT for Sheets to use Claude AI formulas, bulk prompts, and spreadsheet examples for reviews, products, emails, research, and data analysis without Apps Script.
+hero_title: "Claude for Google Sheets: Use Claude AI Formulas & Bulk Prompts"
+hero_subtitle: "Run Claude across spreadsheet rows for reviews, products, emails, research, and analysis — without copy/paste or Apps Script."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Claude formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Claude prompts across entire Google Sheets columns"
+inline_cta_text: "Install GPT for Sheets, choose Claude as your provider, and apply AI formulas to hundreds of rows for summaries, copywriting, research, and analysis."
+guide_badges:
+  - "Claude formulas"
+  - "Bulk prompts"
+  - "No Apps Script"
+  - "100+ AI models"
+quick_start_title: "Claude quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Choose Claude, add your API key, and run =CLAUDE() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Bulk prompts"
+    href: "#run-claude-prompts-across-entire-columns"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Claude formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Humanize corporate copy"
+    setup: "A: draft text · B: channel · C: brand voice · D: goal"
+    formula: |
+      =CLAUDE("Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice to achieve " & D2 & ". Make it: 1) Actually funny, 2) Memorable, 3) Shareable, 4) On-brand but not boring, 5) Conversation-starting")
+  - title: "Rewrite for a specific audience"
+    setup: "A: original copy · B: audience · C: desired tone"
+    formula: |
+      =CLAUDE("Rewrite this for " & B2 & " in a " & C2 & " tone. Keep the meaning, remove jargon, and make it easy to skim: '" & A2 & "'")
+  - title: "Create 5 campaign angles"
+    setup: "A: product · B: audience · C: pain point · D: channel"
+    formula: |
+      =CLAUDE("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
+
 ---
 
 ## What is Claude for Google Sheets?
@@ -12,6 +60,19 @@ Claude for Google Sheets lets you use Anthropic Claude formulas and bulk prompts
 **Best for:** long-form text analysis, customer review summaries, product descriptions, email personalization, research tables, and spreadsheet workflows where Claude's larger context window helps.
 
 **Fastest setup:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) → open the sidebar in Google Sheets → choose Claude as the provider → run `=CLAUDE()` formulas across entire columns.
+
+## How GPT for Sheets adds Claude to your spreadsheet
+
+GPT for Sheets acts as the Google Sheets add-on layer between your rows and Claude. Instead of copying each cell into Claude manually, you keep the source data in Sheets and use formulas to generate the output columns you need.
+
+Typical Claude workflow:
+
+- **Input columns:** reviews, product details, emails, company notes, keywords, or research snippets.
+- **Prompt column:** optional reusable prompt text for your team.
+- **Claude output columns:** summaries, classifications, rewritten copy, insights, or action items.
+- **QA columns:** checks for unsupported claims, missing context, tone, length, or formatting.
+
+This is useful when you need Claude's long-context writing and analysis, but your actual workflow lives in a spreadsheet.
 
 ## In this guide
 
@@ -80,6 +141,28 @@ The basic Claude formula syntax is:
 - Multiple cell references: `=CLAUDE("Create an ad for " & A1 & " highlighting " & B1)`
 - Using ranges: `=CLAUDE("analyze these reviews", A1:A10)`
 - Prompt in cell: `=CLAUDE(A1, B2)`
+
+**More practical Claude formulas for spreadsheet workflows**:
+
+```text
+=CLAUDE("Summarize this customer review in one sentence, then classify sentiment as Positive, Neutral, or Negative", A2)
+```
+
+```text
+=CLAUDE("Turn these product attributes into 5 ecommerce benefit bullets. Keep each bullet under 12 words", A2:D2)
+```
+
+```text
+=CLAUDE("Extract the buyer pain point, desired outcome, and suggested follow-up question from this sales note", A2:C2)
+```
+
+```text
+=CLAUDE("Rewrite this email to be clearer, shorter, and more helpful while preserving the original meaning", A2)
+```
+
+```text
+=CLAUDE("Check this AI output for unsupported claims. Return Pass or Needs review with one reason", E2)
+```
 
 
 ## Run Claude Prompts Across Entire Columns
@@ -241,22 +324,28 @@ The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://
 
 ## Claude vs ChatGPT vs Gemini in Google Sheets
 
-Claude is usually the best model for longer text, nuanced classification, and summarizing messy feedback. ChatGPT is strong for fast content generation, rewriting, and structured outputs. Gemini is useful when you want Google's model family inside the same spreadsheet workflow.
+Claude, ChatGPT, and Gemini can all help with spreadsheet work, but they are strongest in different jobs. GPT for Sheets lets you switch between them without installing a separate add-on for each model.
 
-With [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/), you do not need a separate add-on for each model. Install one Google Sheets add-on, then switch between Claude, ChatGPT, Gemini, Grok, and other providers depending on the task.
+**Claude is usually best for:**
+- long customer reviews, support threads, or research notes;
+- nuanced classification where context matters;
+- page briefs, product descriptions, and longer copy;
+- tone-preserving rewrites for sales or support emails;
+- summarizing messy text into structured fields.
 
-**Use Claude when you need:**
-- deeper customer review analysis;
-- long product descriptions or page briefs;
-- careful classification of messy text;
-- research summaries across many rows;
-- tone-preserving rewrites for email and marketing.
+**ChatGPT is usually best for:**
+- fast short-form copy and variations;
+- simple extraction or categorization;
+- quick rewrites and brainstorming;
+- structured JSON-like or table-like outputs.
 
-**Use ChatGPT or Gemini when you need:**
-- quick short-form copy;
-- formula explanations;
-- simple categorization;
-- lightweight transformations across many rows.
+**Gemini is usually best for:**
+- teams that prefer Google's model family;
+- lightweight spreadsheet transformations;
+- quick drafting and general-purpose analysis;
+- workflows where you want to compare Google-native AI output against Claude or ChatGPT.
+
+A practical setup is to use Claude for high-context analysis columns, ChatGPT for fast variations, and Gemini as a comparison model. Keep a QA column in the sheet so your team can review any row before publishing or sending the output.
 
 ## Frequently Asked Questions
 
@@ -307,15 +396,15 @@ A: Use error handling in your formulas, process data in batches, and implement r
 
 ## Ready to Use Claude in Google Sheets?
 
-[Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use Claude formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Claude, Grok, ChatGPT, and Gemini from the same add-on.
+[Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) to use Claude formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Claude, Grok, ChatGPT, Gemini, and OpenRouter providers from the same add-on.
 
 ## Conclusion
 
-Claude for Google Sheets revolutionizes how you work with data, offering AI-powered insights and automation that would typically require specialized software or coding skills. From content creation to data analysis, the possibilities are endless.
+Claude is especially useful when your spreadsheet contains long, messy, or nuanced text: reviews, product notes, research snippets, sales notes, support tickets, and email drafts. GPT for Sheets turns those rows into a repeatable Claude workflow with formulas, bulk prompts, and QA columns.
 
-Start with simple use cases, experiment with different prompt styles, and gradually tackle more complex workflows. The combination of Google Sheets' collaborative features and Claude's intelligence creates a powerful platform for productivity and innovation.
+Start with 10 sample rows, improve the prompt until the output is reliable, then fill the formula down your sheet. When the output matters — published copy, customer messages, or business research — add a review column before you use it.
 
-Ready to transform your spreadsheet workflow? Install the add-on today and discover what's possible when AI meets your data.
+Ready to run Claude across your spreadsheet? [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) and create your first Claude formula in minutes.
 
 ---
 

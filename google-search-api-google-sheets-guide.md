@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Google Search API in Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Google Search API in Google Sheets: Bulk Search & SERP Data"
 permalink: /google-search-api-google-sheets-guide/
-description: Complete guide to using Google Custom Search API in Google Sheets. Perform automated Google searches and analyze results directly in your spreadsheet with GOOGLE_SEARCH_API function.
+description: "Install GPT for Sheets to use Google Custom Search API in Google Sheets. Run automated Google searches, collect SERP data, and analyze results directly from spreadsheet rows."
+hero_title: "Google Search API in Google Sheets: Bulk Search & SERP Data"
+hero_subtitle: "Run Google Custom Search API queries across spreadsheet rows for SERP data, research, and competitive analysis."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Google Search formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run Google Search API queries in bulk inside Google Sheets"
+inline_cta_text: "Install GPT for Sheets and use Google Search formulas to collect search results, titles, URLs, and snippets for entire keyword lists."
+guide_badges:
+  - "Google Search API"
+  - "SERP data"
+  - "Bulk search"
+  - "Research workflows"
+quick_start_title: "Google Search API quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =GOOGLE_SEARCH_API() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Google Search formulas for Google Sheets"
+formula_section_intro: "Put your API key in C2 and search engine ID in D2, then run searches from each row."
+formula_cards:
+  - title: "Search each keyword"
+    setup: "A: keyword · C: API key · D: Search Engine ID"
+    formula: |
+      =GOOGLE_SEARCH_API(A2, C2, D2, 10)
+  - title: "Find competitor pricing pages"
+    setup: "A: competitor domain · C: API key · D: Search Engine ID"
+    formula: |
+      =GOOGLE_SEARCH_API("site:" & A2 & " pricing OR plans OR subscription", C2, D2, 10)
+  - title: "Find listicle opportunities"
+    setup: "A: product category · B: niche · C: API key · D: Search Engine ID"
+    formula: |
+      =GOOGLE_SEARCH_API("best " & A2 & " for " & B2 & " alternatives tools", C2, D2, 10)
+
 ---
 
 ## What is Google Search API in Google Sheets?

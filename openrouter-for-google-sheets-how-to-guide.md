@@ -1,8 +1,54 @@
 ---
-layout: page
-title: OpenRouter for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "OpenRouter for Google Sheets: Use 100+ AI Models & Bulk Prompts"
 permalink: /openrouter-for-google-sheets-how-to-guide/
-description: Complete guide to using OpenRouter in Google Sheets. Access multiple AI models including GPT-4, Claude, Gemini, and more through one unified API.
+description: "Install GPT for Sheets to use OpenRouter in Google Sheets. Access GPT, Claude, Gemini, Llama, and other models through one API for bulk spreadsheet workflows."
+hero_title: "OpenRouter for Google Sheets: Use 100+ AI Models & Bulk Prompts"
+hero_subtitle: "Run GPT, Claude, Gemini, Llama, and other OpenRouter models across spreadsheet rows through one unified API."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View OpenRouter formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run 100+ OpenRouter models in bulk inside Google Sheets"
+inline_cta_text: "Install GPT for Sheets, connect OpenRouter, and switch between models for spreadsheet content, classification, enrichment, and analysis."
+guide_badges:
+  - "100+ models"
+  - "One API key"
+  - "Bulk prompts"
+  - "Model switching"
+quick_start_title: "OpenRouter quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =OPENROUTER() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste OpenRouter formulas for Google Sheets"
+formula_section_intro: "Use one OpenRouter API key to test different models on the same row."
+formula_cards:
+  - title: "Compare humanized copy across models"
+    setup: "A: corporate copy · B: channel · C: voice"
+    formula: |
+      =OPEN_ROUTER("anthropic/claude-3.5-sonnet", "your-api-key", "Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice. Make it funny, memorable, shareable, and still on-brand.")
+  - title: "Low-cost bulk rewrite"
+    setup: "A: source text · B: audience"
+    formula: |
+      =OPEN_ROUTER("meta-llama/llama-3.1-8b-instruct", "your-api-key", "Rewrite this for " & B2 & ": " & A2 & ". Keep it clear, concise, and useful.")
+  - title: "Premium strategic analysis"
+    setup: "A: company/product · B: market · C: goal"
+    formula: |
+      =OPEN_ROUTER("openai/gpt-4-turbo", "your-api-key", "Analyze " & A2 & " in " & B2 & " for this goal: " & C2 & ". Return opportunities, risks, positioning, and 3 actions.")
+
 ---
 
 ## What is OpenRouter for Google Sheets?

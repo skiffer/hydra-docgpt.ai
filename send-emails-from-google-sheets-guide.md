@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Send Emails from Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Send Emails from Google Sheets: Bulk Outreach & Mail Merge"
 permalink: /send-emails-from-google-sheets-guide/
-description: Complete guide to sending emails directly from Google Sheets. Use SEND_EMAIL and MAILCHIMP_SEND_EMAIL functions for automated email campaigns, notifications, and outreach.
+description: "Install GPT for Sheets to send emails from Google Sheets. Use SEND_EMAIL and Mailchimp functions for bulk outreach, notifications, campaigns, and automated email workflows."
+hero_title: "Send Emails from Google Sheets: Bulk Outreach & Mail Merge"
+hero_subtitle: "Send personalized emails, outreach campaigns, notifications, and follow-ups directly from spreadsheet rows."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View email formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Send personalized emails from Google Sheets rows"
+inline_cta_text: "Install GPT for Sheets and use email formulas to turn spreadsheet rows into outreach, notifications, and campaign workflows."
+guide_badges:
+  - "Bulk email"
+  - "Mail merge"
+  - "Outreach workflows"
+  - "Spreadsheet automation"
+quick_start_title: "Email sending quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =SEND_EMAIL() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste email formulas for Google Sheets"
+formula_section_intro: "Use rows for recipients, subjects, and personalized message bodies."
+formula_cards:
+  - title: "Send a simple personalized email"
+    setup: "A: first name · B: company · C: email · D: custom line"
+    formula: |
+      =SEND_EMAIL(C2, "Quick idea for " & B2, "Hi " & A2 & ", " & D2 & " Would it make sense to compare notes this week?", false)
+  - title: "Send HTML email"
+    setup: "A: first name · B: company · C: email · D: CTA URL"
+    formula: |
+      =SEND_EMAIL(C2, "Useful resource for " & B2, "<p>Hi " & A2 & ",</p><p>I made this for teams like " & B2 & ": <a href="" & D2 & "">open it here</a>.</p>", true)
+  - title: "Send only when ready"
+    setup: "A: email · B: subject · C: body · D: status"
+    formula: |
+      =IF(D2="ready", SEND_EMAIL(A2, B2, C2, false), "Not ready")
+
 ---
 
 ## What is Email Sending in Google Sheets?

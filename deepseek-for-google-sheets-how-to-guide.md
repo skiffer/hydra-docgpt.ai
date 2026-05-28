@@ -1,8 +1,54 @@
 ---
-layout: page
-title: DeepSeek for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "DeepSeek for Google Sheets: Use DeepSeek AI Formulas & Bulk Prompts"
 permalink: /deepseek-for-google-sheets-how-to-guide/
-description: Complete guide to using DeepSeek AI in Google Sheets. Learn installation, setup, and 5+ practical examples with cost-effective analytical capabilities.
+description: "Install GPT for Sheets to use DeepSeek AI in Google Sheets. Run cost-effective formulas, bulk prompts, coding help, analysis, and spreadsheet automation without Apps Script."
+hero_title: "DeepSeek for Google Sheets: Use DeepSeek AI Formulas & Bulk Prompts"
+hero_subtitle: "Run DeepSeek prompts across spreadsheet rows for analysis, coding help, classification, and data workflows at lower AI cost."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View DeepSeek formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Run DeepSeek prompts across entire Google Sheets columns"
+inline_cta_text: "Install GPT for Sheets, choose DeepSeek as your provider, and apply cost-effective AI formulas to rows of spreadsheet data."
+guide_badges:
+  - "DeepSeek formulas"
+  - "Lower-cost AI"
+  - "Bulk prompts"
+  - "No Apps Script"
+quick_start_title: "DeepSeek quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =DEEPSEEK() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste DeepSeek formulas for Google Sheets"
+formula_section_intro: "Copy a formula into row 2, then drag it down to turn every spreadsheet row into output you can use."
+formula_cards:
+  - title: "Humanize corporate copy"
+    setup: "A: draft text · B: channel · C: brand voice · D: goal"
+    formula: |
+      =DEEPSEEK("Transform this corporate-speak into something humans actually want to read: '" & A2 & "' for " & B2 & " with " & C2 & " brand voice to achieve " & D2 & ". Make it: 1) Actually funny, 2) Memorable, 3) Shareable, 4) On-brand but not boring, 5) Conversation-starting")
+  - title: "Rewrite for a specific audience"
+    setup: "A: original copy · B: audience · C: desired tone"
+    formula: |
+      =DEEPSEEK("Rewrite this for " & B2 & " in a " & C2 & " tone. Keep the meaning, remove jargon, and make it easy to skim: '" & A2 & "'")
+  - title: "Create 5 campaign angles"
+    setup: "A: product · B: audience · C: pain point · D: channel"
+    formula: |
+      =DEEPSEEK("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
+
 ---
 
 ## What is DeepSeek for Google Sheets?

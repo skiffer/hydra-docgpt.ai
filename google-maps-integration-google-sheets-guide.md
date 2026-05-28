@@ -1,8 +1,54 @@
 ---
-layout: page
-title: Google Maps Integration for Google Sheets - Complete How-to Guide
+layout: seo-guide
+title: "Google Maps in Google Sheets: Places API & Business Data"
 permalink: /google-maps-integration-google-sheets-guide/
-description: Complete guide to using Google Maps API in Google Sheets. Find places, get business data, analyze locations with GOOGLE_MAPS_GET_PLACES and GOOGLE_MAPS_PLACE_GOOGLE functions.
+description: "Install GPT for Sheets to use Google Maps API in Google Sheets. Find places, enrich business lists, analyze locations, and pull Google Places data into spreadsheets."
+hero_title: "Google Maps in Google Sheets: Places API & Business Data"
+hero_subtitle: "Find places, enrich lead lists, pull business data, and analyze locations directly from Google Sheets."
+guide_product: "GPT for Sheets"
+primary_cta_text: "Install GPT for Sheets"
+primary_cta_url: "/gpt-for-sheets/"
+secondary_cta_text: "View Google Maps formulas"
+secondary_cta_url: "#quick-formula-reference"
+inline_cta_title: "Pull Google Maps business data into Google Sheets"
+inline_cta_text: "Install GPT for Sheets and use Google Maps formulas to find places, enrich rows, and build local business datasets."
+guide_badges:
+  - "Google Places data"
+  - "Lead enrichment"
+  - "Local SEO"
+  - "Bulk location research"
+quick_start_title: "Google Maps quick start"
+quick_start_steps:
+  - "Install GPT for Sheets from the product page."
+  - "Open the add-on sidebar in Google Sheets."
+  - "Configure the provider/API key and run =GOOGLE_MAPS_GET_PLACES() formulas."
+guide_nav:
+  - label: "Setup"
+    href: "#installation-guide"
+  - label: "Formulas"
+    href: "#quick-formula-reference"
+  - label: "Copy formulas"
+    href: "#copyable-formulas"
+  - label: "Examples"
+    href: "#5-practical-examples"
+  - label: "FAQ"
+    href: "#frequently-asked-questions"
+formula_section_title: "Copy-paste Google Maps formulas for Google Sheets"
+formula_section_intro: "Use rows for locations, categories, and keywords to build lead lists from Google Maps."
+formula_cards:
+  - title: "Find nearby businesses"
+    setup: "A: lat,lng · B: radius · C: type · D: API key"
+    formula: |
+      =GOOGLE_MAPS_GET_PLACES(D2, A2, B2, C2, "", 50)
+  - title: "Find niche businesses"
+    setup: "A: lat,lng · B: radius · C: type · D: API key · E: keyword"
+    formula: |
+      =GOOGLE_MAPS_GET_PLACES(D2, A2, B2, C2, E2, 30)
+  - title: "Get place details"
+    setup: "A: place ID · B: API key"
+    formula: |
+      =GOOGLE_MAPS_PLACE_GOOGLE(B2, A2)
+
 ---
 
 ## What is Google Maps Integration in Google Sheets?
