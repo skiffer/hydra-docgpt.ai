@@ -1,13 +1,26 @@
 ---
 layout: page
-title: "Grok for Google Sheets: Use xAI Formulas, Bulk Prompts & Examples"
+title: "Grok for Google Sheets: Use xAI Formulas & Bulk Prompts"
 permalink: /grok-for-google-sheets-how-to-guide/
-description: Learn how to use Grok in Google Sheets with xAI formulas, bulk prompts, setup steps, and practical spreadsheet examples for content, trends, and data analysis.
+description: Install GPT for Sheets to use Grok/xAI inside Google Sheets. Run Grok formulas, bulk prompts, trend analysis, copywriting, and spreadsheet workflows without Apps Script.
 ---
 
 ## What is Grok for Google Sheets?
 
 Grok for Google Sheets lets you use xAI formulas and bulk prompts directly inside your spreadsheets. With GPT for Sheets, you can run Grok across rows of products, reviews, social posts, keywords, or customer data without copying and pasting between tools.
+
+**Best for:** social content ideas, trend-aware copy, witty rewrites, campaign angles, cultural context, and turning spreadsheet rows into more engaging marketing output.
+
+**Fastest setup:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) → open the sidebar in Google Sheets → choose Grok/xAI as the provider → run `=GROK()` formulas across entire columns.
+
+## In this guide
+
+- Install Grok in Google Sheets with GPT for Sheets
+- Connect your xAI API key
+- Use `=GROK()` formulas with cells and ranges
+- Process entire columns of social posts, products, reviews, or keywords
+- Compare Grok vs Claude vs ChatGPT for spreadsheet work
+- Copy practical Grok prompts for trends, content, commentary, and analysis
 
 ## Use Grok, Claude, and GPT in Google Sheets
 
@@ -233,6 +246,24 @@ The fastest way to use Grok in Google Sheets is with [GPT for Sheets](https://do
 3. **Brand Alignment**: Verify humor aligns with brand values
 4. **Trend Relevance**: Check that cultural references remain current
 
+## Grok vs Claude vs ChatGPT in Google Sheets
+
+Use Grok when you want trend-aware, conversational, or social-first output. Use Claude when the spreadsheet task needs careful long-form analysis or nuanced classification. Use ChatGPT when you need fast general-purpose generation, rewriting, or structured responses.
+
+With [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/), you can use Grok, Claude, ChatGPT, Gemini, and other AI models from the same Google Sheets add-on instead of installing separate tools for each model.
+
+**Use Grok for:**
+- social media angles and campaign hooks;
+- culturally aware rewrites;
+- trend summaries from keyword or topic lists;
+- witty product copy variants;
+- turning dry spreadsheet notes into human-readable commentary.
+
+**Use another model when:**
+- you need very careful legal/financial tone;
+- you need long document summarization;
+- you need neutral classification without personality.
+
 ## Frequently Asked Questions
 
 ### General Questions
@@ -244,7 +275,7 @@ A: Grok brings personality, humor, and cultural awareness to your spreadsheets. 
 A: The add-on itself is free, but you need a Grok API key. xAI offers competitive pricing for Grok's unique capabilities in conversational AI and real-time social insights.
 
 **Q: How current is Grok's social media and cultural knowledge?**
-A: Grok has access to real-time information and social media trends, making it excellent for current events, trending topics, and cultural phenomena.
+A: Grok is designed for current, conversational, and trend-aware answers. For spreadsheet workflows, the safest approach is to include the source text, trend, URL, or context in your row and ask Grok to summarize, classify, or rewrite it.
 
 ### Technical Questions
 

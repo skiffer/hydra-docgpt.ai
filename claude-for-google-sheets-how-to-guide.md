@@ -1,13 +1,26 @@
 ---
 layout: page
-title: Claude for Google Sheets - Complete How-to Guide
+title: "Claude for Google Sheets: Use Claude AI Formulas & Bulk Prompts"
 permalink: /claude-for-google-sheets-how-to-guide/
-description: Complete guide to using Claude AI in Google Sheets. Learn installation, setup, and 5+ practical examples with step-by-step instructions.
+description: Install GPT for Sheets to use Claude AI formulas, bulk prompts, and spreadsheet examples for reviews, products, emails, research, and data analysis without Apps Script.
 ---
 
 ## What is Claude for Google Sheets?
 
 Claude for Google Sheets lets you use Anthropic Claude formulas and bulk prompts directly inside your spreadsheets. With GPT for Sheets, you can run Claude across rows of customer feedback, product data, emails, keywords, or research tasks without copying and pasting between tools.
+
+**Best for:** long-form text analysis, customer review summaries, product descriptions, email personalization, research tables, and spreadsheet workflows where Claude's larger context window helps.
+
+**Fastest setup:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) → open the sidebar in Google Sheets → choose Claude as the provider → run `=CLAUDE()` formulas across entire columns.
+
+## In this guide
+
+- Install Claude in Google Sheets with GPT for Sheets
+- Connect your Anthropic Claude API key
+- Use `=CLAUDE()` formulas with cells and ranges
+- Process entire columns without copy/paste
+- Compare Claude vs ChatGPT vs Gemini for spreadsheet tasks
+- Copy practical prompts for content, reviews, finance, translation, email, and research
 
 ## Use Grok, Claude, and GPT in Google Sheets
 
@@ -226,6 +239,25 @@ The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://
 3. **Large Datasets**: Process in smaller batches for better reliability
 4. **Network Issues**: Ensure stable internet connection for best results
 
+## Claude vs ChatGPT vs Gemini in Google Sheets
+
+Claude is usually the best model for longer text, nuanced classification, and summarizing messy feedback. ChatGPT is strong for fast content generation, rewriting, and structured outputs. Gemini is useful when you want Google's model family inside the same spreadsheet workflow.
+
+With [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/), you do not need a separate add-on for each model. Install one Google Sheets add-on, then switch between Claude, ChatGPT, Gemini, Grok, and other providers depending on the task.
+
+**Use Claude when you need:**
+- deeper customer review analysis;
+- long product descriptions or page briefs;
+- careful classification of messy text;
+- research summaries across many rows;
+- tone-preserving rewrites for email and marketing.
+
+**Use ChatGPT or Gemini when you need:**
+- quick short-form copy;
+- formula explanations;
+- simple categorization;
+- lightweight transformations across many rows.
+
 ## Frequently Asked Questions
 
 ### General Questions
@@ -234,7 +266,7 @@ The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://
 A: Claude excels at longer text analysis, maintains better context awareness, and provides more nuanced responses for complex tasks. ChatGPT is faster for simple tasks and creative content generation.
 
 **Q: Can I use Claude for Google Sheets for free?**
-A: The add-on itself is free, but you need a Claude API key. Anthropic offers free credits for new users, then charges based on usage. Pricing is typically $0.25-$8.00 per million tokens depending on the model.
+A: You can install GPT for Sheets for free. To run Claude specifically, you need an Anthropic Claude API key. If you do not want to use Claude billing yet, you can start with another supported model and switch providers later.
 
 **Q: How many cells can I process at once?**
 A: You can process thousands of cells simultaneously, but consider API rate limits and costs. Start with smaller batches (50-100 cells) and scale up based on your needs.
