@@ -19,6 +19,13 @@ window.onload = function() {
 
 # Puissance de l'IA pour Google Sheets : Guide complet d'installation d'OpenAI, Claude, Gemini, Perplexity et Mistral
 
+<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 12px; padding: 18px; margin: 22px 0;">
+  <strong>Besoin de GPT for Sheets pour un vrai workflow ?</strong><br>
+  Comparez les plans Starter, Pro, Business et Lifetime pour les formules IA, Claude/Gemini/OpenRouter, le SEO en masse et l'enrichissement de leads.
+  <br><a href="/gpt-for-sheets/#pricing"><strong>Voir les prix GPT for Sheets →</strong></a>
+</div>
+
+
 ## 🌐 Langues disponibles
 - [English (Anglais)](/docs/gpt-for-sheets/set-up-openai-api-keys)
 - [Русский (Russe)](/docs/gpt-for-sheets/set-up-openai-api-keys-ru)

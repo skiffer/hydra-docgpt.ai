@@ -9,6 +9,13 @@ description: Effortlessly enhance Google Sheets with GPT functions! Install the 
 
 # <a href="/gpt-for-sheets/">GPT functions for Google Sheets</a>
 
+<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 12px; padding: 18px; margin: 22px 0;">
+  <strong>Need GPT for Sheets for real work?</strong><br>
+  Compare Starter, Pro, Business and Lifetime plans for AI formulas, Claude/Gemini/OpenRouter, bulk SEO workflows and lead enrichment.
+  <br><a href="/gpt-for-sheets/#pricing"><strong>See GPT for Sheets pricing →</strong></a>
+</div>
+
+
 ### Links:
 - <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
 - <a href="/gpt-for-sheets/">Upgrade to Premium</a>

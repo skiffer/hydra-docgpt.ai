@@ -19,6 +19,11 @@ window.onload = function() {
 
 # How to set up OpenAI, Claude, Gemini, Perplexity and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
 
+<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 12px; padding: 18px; margin: 22px 0;">
+  <strong>Need GPT for Sheets for real work?</strong><br>
+  Compare Starter, Pro, Business and Lifetime plans for AI formulas, Claude/Gemini/OpenRouter, bulk SEO workflows and lead enrichment.
+  <br><a href="/gpt-for-sheets/#pricing"><strong>See GPT for Sheets pricing →</strong></a>
+</div>
 
 ### Before you have started
 1. Install <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
