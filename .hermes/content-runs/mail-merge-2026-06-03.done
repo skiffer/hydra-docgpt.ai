@@ -1,0 +1,22 @@
+date: 2026-06-03
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - gmass-alternative-gmail-google-sheets-mail-merge
+  - yamm-alternative-gmail-google-sheets-mail-merge
+  - gmail-mail-merge-from-google-sheets
+  - mail-merge-with-attachments-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/gmass-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/yamm-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/gmail-mail-merge-from-google-sheets/
+  - https://docgpt.ai/mail-merge-with-attachments-gmail-google-sheets/
+commit_hash: 5fbeb69986bff28cc375f24693832b4038d7126a
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+local_generated_verification: 4/4 title meta H1 CTA FAQ markers present
+live_check: 4/4 200
+bing_submission: success
+gsc_sitemap_submission: success
+notes: Generated exactly 4 Mail Merge acquisition pages from today's strategist plan. Existing unrelated _redirects modification was intentionally not staged. Jekyll build emitted pre-existing YAML warnings in unrelated privacy/how-to pages but exited 0.
