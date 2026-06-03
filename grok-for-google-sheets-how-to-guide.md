@@ -1,17 +1,17 @@
 ---
 layout: seo-guide
-title: "Grok for Google Sheets: Use xAI Formulas & Bulk Prompts"
+title: "Grok for Google Sheets: Use Grok AI Formulas in Sheets"
 permalink: /grok-for-google-sheets-how-to-guide/
-description: Install GPT for Sheets to use Grok/xAI inside Google Sheets. Run Grok formulas, bulk prompts, trend analysis, copywriting, and spreadsheet workflows without Apps Script.
-hero_title: "Grok for Google Sheets: Use xAI Formulas & Bulk Prompts"
-hero_subtitle: "Run Grok/xAI prompts across spreadsheet rows for trend analysis, social content, campaign angles, copywriting, and marketing workflows."
+description: "Use Grok in Google Sheets for lead research, SEO, summaries, social analysis, and bulk enrichment. Install GPT for Sheets to run Grok/xAI formulas without Apps Script."
+hero_title: "Grok for Google Sheets: Use Grok AI Formulas in Sheets"
+hero_subtitle: "Run Grok/xAI prompts across rows for lead research, SEO, summaries, campaign angles, social analysis, and bulk enrichment — no Apps Script."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
-secondary_cta_text: "View Grok formulas"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=grok_guide&utm_campaign=model_page_hero"
+secondary_cta_text: "See Grok formulas"
 secondary_cta_url: "#quick-formula-reference"
-inline_cta_title: "Run Grok/xAI prompts in bulk inside Google Sheets"
-inline_cta_text: "Install GPT for Sheets, choose Grok/xAI as your provider, and apply AI formulas to rows of products, reviews, social posts, keywords, or customer data."
+inline_cta_title: "Run Grok prompts across entire Google Sheets columns"
+inline_cta_text: "Install GPT for Sheets, choose Grok/xAI, and apply AI formulas to rows of leads, domains, keywords, reviews, products, or customer data."
 guide_badges:
   - "Grok formulas"
   - "xAI bulk prompts"
@@ -60,6 +60,16 @@ Grok for Google Sheets lets you use xAI formulas and bulk prompts directly insid
 **Best for:** social content ideas, trend-aware copy, witty rewrites, campaign angles, cultural context, and turning spreadsheet rows into more engaging marketing output.
 
 **Fastest setup:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/) → open the sidebar in Google Sheets → choose Grok/xAI as the provider → run `=GROK()` formulas across entire columns.
+
+
+<div class="seo-product-cta" style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
+  <strong>Use Grok in Google Sheets without Apps Script</strong><br>
+  Install GPT for Sheets and run Grok, Claude, Gemini, OpenAI, and Perplexity formulas directly in cells. Best for lead research, SEO tasks, summaries, and bulk enrichment workflows.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=grok_guide&utm_campaign=model_page_cta"><strong>Install free add-on →</strong></a>
+    <a href="/gpt-for-sheets/#pricing"><strong>See plans for bulk rows →</strong></a>
+  </div>
+</div>
 
 ## In this guide
 

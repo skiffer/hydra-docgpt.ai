@@ -1,10 +1,10 @@
 ---
 layout: docs_layouts/default
-title: Set Up OpenAI API Keys
+title: "OpenAI API Key for Google Sheets: Setup GPT for Sheets"
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/set-up-openai-api-keys
-description: How to set up OpenAI API keys
+description: "Create an OpenAI API key and use it inside Google Sheets with GPT for Sheets. Connect OpenAI, Claude, Gemini, Perplexity and Mistral for bulk AI formulas."
 ---
 
 <script>
@@ -17,12 +17,15 @@ window.onload = function() {
 
 </script>
 
-# How to set up OpenAI, Claude, Gemini, Perplexity and Mistral API keys - <a href="/gpt-for-sheets/" target="_blank">GPT for Google Sheets</a>
+# OpenAI API Key for Google Sheets: Set Up GPT for Sheets
 
-<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 12px; padding: 18px; margin: 22px 0;">
-  <strong>Need GPT for Sheets for real work?</strong><br>
-  Compare Starter, Pro, Business and Lifetime plans for AI formulas, Claude/Gemini/OpenRouter, bulk SEO workflows and lead enrichment.
-  <br><a href="/gpt-for-sheets/#pricing"><strong>See GPT for Sheets pricing →</strong></a>
+<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 22px 0;">
+  <strong>Setting up API keys for spreadsheet work?</strong><br>
+  Use the same OpenAI, Claude, Gemini, Perplexity, or Mistral key inside Google Sheets with GPT for Sheets. Run AI formulas across rows for lead enrichment, SEO, product descriptions, summaries, and data cleanup.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=api_key_docs&utm_campaign=docs_cta"><strong>Install GPT for Sheets →</strong></a>
+    <a href="/gpt-for-sheets/#pricing"><strong>Use API keys at scale →</strong></a>
+  </div>
 </div>
 
 ### Before you have started

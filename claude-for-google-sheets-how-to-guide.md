@@ -1,17 +1,17 @@
 ---
 layout: seo-guide
-title: "Claude for Google Sheets: Use Claude AI Formulas & Bulk Prompts"
+title: "Claude for Google Sheets: Use Claude AI Formulas in Sheets"
 permalink: /claude-for-google-sheets-how-to-guide/
-description: Install GPT for Sheets to use Claude AI formulas, bulk prompts, and spreadsheet examples for reviews, products, emails, research, and data analysis without Apps Script.
-hero_title: "Claude for Google Sheets: Use Claude AI Formulas & Bulk Prompts"
-hero_subtitle: "Run Claude across spreadsheet rows for reviews, products, emails, research, and analysis — without copy/paste or Apps Script."
+description: "Use Claude in Google Sheets for lead research, summaries, reviews, emails, and bulk analysis. Install GPT for Sheets to run Claude formulas without Apps Script."
+hero_title: "Claude for Google Sheets: Use Claude AI Formulas in Sheets"
+hero_subtitle: "Run Claude across spreadsheet rows for lead research, summaries, product data, emails, reviews, and analysis — without copy/paste or Apps Script."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=model_page_hero"
 secondary_cta_text: "View Claude formulas"
 secondary_cta_url: "#quick-formula-reference"
 inline_cta_title: "Run Claude prompts across entire Google Sheets columns"
-inline_cta_text: "Install GPT for Sheets, choose Claude as your provider, and apply AI formulas to hundreds of rows for summaries, copywriting, research, and analysis."
+inline_cta_text: "Install GPT for Sheets, choose Claude, and apply formulas to hundreds of rows for lead enrichment, account research, summaries, copywriting, and analysis."
 guide_badges:
   - "Claude formulas"
   - "Bulk prompts"
@@ -73,6 +73,16 @@ Typical Claude workflow:
 - **QA columns:** checks for unsupported claims, missing context, tone, length, or formatting.
 
 This is useful when you need Claude's long-context writing and analysis, but your actual workflow lives in a spreadsheet.
+
+
+<div class="seo-product-cta" style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
+  <strong>Use Claude in Google Sheets without copy/paste</strong><br>
+  Install GPT for Sheets to run Claude formulas across rows for lead enrichment, account research, long-form summaries, review analysis, and personalized outreach.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=model_page_cta"><strong>Install GPT for Sheets →</strong></a>
+    <a href="/gpt-for-sheets/#pricing"><strong>Use Claude formulas at scale →</strong></a>
+  </div>
+</div>
 
 ## In this guide
 

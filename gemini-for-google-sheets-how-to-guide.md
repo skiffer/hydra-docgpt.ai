@@ -1,13 +1,13 @@
 ---
 layout: seo-guide
-title: "Gemini for Google Sheets: Use Gemini AI Formulas & Bulk Prompts"
+title: "Gemini for Google Sheets: Use Gemini AI Formulas in Sheets"
 permalink: /gemini-for-google-sheets-how-to-guide/
-description: "Install GPT for Sheets to use Google Gemini AI formulas, bulk prompts, and spreadsheet examples for content, data cleanup, research, and analysis without Apps Script."
-hero_title: "Gemini for Google Sheets: Use Gemini AI Formulas & Bulk Prompts"
-hero_subtitle: "Run Gemini across spreadsheet rows for content, cleanup, research, extraction, and analysis — without copy/paste or Apps Script."
+description: "Use Gemini in Google Sheets for AI formulas, data cleanup, SEO, lead enrichment, content, and research. Install GPT for Sheets to run Gemini in bulk without Apps Script."
+hero_title: "Gemini for Google Sheets: Use Gemini AI Formulas in Sheets"
+hero_subtitle: "Run Gemini across spreadsheet rows for cleanup, SEO, lead enrichment, content, research, extraction, and analysis — without copy/paste or Apps Script."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=gemini_guide&utm_campaign=model_page_hero"
 secondary_cta_text: "View Gemini formulas"
 secondary_cta_url: "#quick-formula-reference"
 inline_cta_title: "Run Gemini prompts across entire Google Sheets columns"
@@ -50,6 +50,16 @@ formula_cards:
       =GEMINI("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
 
 ---
+
+
+<div class="seo-product-cta" style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
+  <strong>Use Gemini formulas inside Google Sheets</strong><br>
+  Install GPT for Sheets to run Gemini, Claude, Grok, OpenAI, and Perplexity formulas across spreadsheet rows for cleanup, SEO, lead enrichment, and content workflows.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=gemini_guide&utm_campaign=model_page_cta"><strong>Install GPT for Sheets →</strong></a>
+    <a href="/gpt-for-sheets/#pricing"><strong>Compare plans →</strong></a>
+  </div>
+</div>
 
 ## What is Gemini for Google Sheets?
 

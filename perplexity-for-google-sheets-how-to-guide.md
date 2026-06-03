@@ -1,13 +1,13 @@
 ---
 layout: seo-guide
-title: "Perplexity for Google Sheets: Research Formulas & Bulk Prompts"
+title: "Perplexity for Google Sheets: AI Research Formulas in Sheets"
 permalink: /perplexity-for-google-sheets-how-to-guide/
-description: "Install GPT for Sheets to use Perplexity AI in Google Sheets. Run research prompts, answer questions with sources, enrich rows, and analyze real-time information in bulk."
-hero_title: "Perplexity for Google Sheets: Research Formulas & Bulk Prompts"
-hero_subtitle: "Run Perplexity research prompts across spreadsheet rows for sourced answers, market research, competitor checks, and data enrichment."
+description: "Use Perplexity in Google Sheets for sourced research, competitor checks, company enrichment, and market analysis. Install GPT for Sheets to run AI research formulas in bulk."
+hero_title: "Perplexity for Google Sheets: AI Research Formulas in Sheets"
+hero_subtitle: "Run Perplexity research prompts across rows for sourced answers, competitor checks, company research, market signals, and lead enrichment."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=perplexity_guide&utm_campaign=model_page_hero"
 secondary_cta_text: "View Perplexity formulas"
 secondary_cta_url: "#quick-formula-reference"
 inline_cta_title: "Run Perplexity research prompts in bulk inside Google Sheets"
@@ -50,6 +50,16 @@ formula_cards:
       =PERPLEXITY("Find current market signals for " & A2 & " in " & B2 & " over " & C2 & ". Return trends, notable companies, demand indicators, and citations.")
 
 ---
+
+
+<div class="seo-product-cta" style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
+  <strong>Turn Google Sheets into a research and enrichment workflow</strong><br>
+  Install GPT for Sheets to run Perplexity-powered research formulas across companies, domains, keywords, competitors, and prospect lists — with sourced answers in bulk.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=perplexity_guide&utm_campaign=model_page_cta"><strong>Install free add-on →</strong></a>
+    <a href="/gpt-for-sheets/#pricing"><strong>Start research at scale →</strong></a>
+  </div>
+</div>
 
 ## What is Perplexity for Google Sheets?
 
