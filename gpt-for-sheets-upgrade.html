@@ -5,6 +5,7 @@ description: "Upgrade GPT for Sheets after installing the Google Sheets add-on. 
 custom_hero: true
 ---
 <script src="/assets/js/checkout-attribution.js"></script>
+<script src="/assets/js/pricing-posthog.js"></script>
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 
 <script>
@@ -44,6 +45,9 @@ custom_hero: true
   Paddle.Setup({
     vendor: 13096,
     eventCallback: function (data) {
+      if (window.DocGPTPostHog && typeof window.DocGPTPostHog.trackPaddleEvent === 'function') {
+        window.DocGPTPostHog.trackPaddleEvent(data);
+      }
       if (data.event === "Checkout.Complete") {
         if (window.dataLayer) {
           dataLayer.push({

@@ -33,6 +33,20 @@
     return match ? match[1] : null;
   }
 
+  function getPostHogDistinctId() {
+    try {
+      if (window.posthog && typeof window.posthog.get_distinct_id === 'function') return window.posthog.get_distinct_id();
+    } catch (error) {}
+    return null;
+  }
+
+  function getPostHogSessionId() {
+    try {
+      if (window.posthog && typeof window.posthog.get_session_id === 'function') return window.posthog.get_session_id();
+    } catch (error) {}
+    return null;
+  }
+
   function getParam(name) {
     try {
       return new URLSearchParams(window.location.search).get(name) || null;
@@ -167,6 +181,8 @@
     return compact({
       ga_client_id: getGAClientId(),
       ga_session_id: getGASessionId(),
+      posthog_distinct_id: getPostHogDistinctId(),
+      posthog_session_id: getPostHogSessionId(),
       utm_source: firstValue(getParam('utm_source'), extra.utm_source, emailAttribution.email_source),
       utm_medium: firstValue(getParam('utm_medium'), extra.utm_medium, emailAttribution.email_medium),
       utm_campaign: firstValue(getParam('utm_campaign'), extra.utm_campaign, emailAttribution.email_campaign),

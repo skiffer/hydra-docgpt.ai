@@ -4,7 +4,9 @@ heading: "GPT for Sheets: AI formulas and lead enrichment in Google Sheets"
 description: "Use GPT for Sheets as a lightweight Clay alternative: enrich leads, research companies, score prospects, create outreach, and run ChatGPT, Claude, Gemini, Grok and 100+ AI models in Google Sheets."
 custom_hero: true
 ---
+<script src="/assets/js/gpt-sheets-upgrade-redirect.js"></script>
 <script src="/assets/js/checkout-attribution.js"></script>
+<script src="/assets/js/pricing-posthog.js"></script>
 <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
 <!-- Event snippet for Begin checkout -1 conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
@@ -74,6 +76,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   Paddle.Setup({
     vendor: 13096,
     eventCallback: function (data) {
+      if (window.DocGPTPostHog && typeof window.DocGPTPostHog.trackPaddleEvent === 'function') {
+        window.DocGPTPostHog.trackPaddleEvent(data);
+      }
       if (data.event === "Checkout.Complete") {
         let dataLayerInfo = {
           event: "purchase",
