@@ -1,0 +1,23 @@
+date: 2026-06-04
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - email-marketing-from-google-sheets-gmail
+  - personalized-email-from-google-sheets
+  - recruiting-outreach-mail-merge-google-sheets
+  - sales-outreach-mail-merge-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/email-marketing-from-google-sheets-gmail/
+  - https://docgpt.ai/personalized-email-from-google-sheets/
+  - https://docgpt.ai/recruiting-outreach-mail-merge-google-sheets/
+  - https://docgpt.ai/sales-outreach-mail-merge-gmail-google-sheets/
+commit_hash: e37d0010271373237bfc79982424814f38539828
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+local_generated_verification: 4/4 title H1 CTA FAQ markers present
+live_check: 4/4 200
+googleapiclient_fix: installed google-api-python-client into pyenv python 3.11.8 used by python3; Search Console helper imports successfully
+bing_submission: success
+gsc_sitemap_submission: success
+notes: Generated and pushed exactly 4 Mail Merge acquisition pages from the 2026-06-04 manual recovery run. Jekyll build emitted pre-existing YAML warnings in unrelated privacy/how-to pages but exited 0.
