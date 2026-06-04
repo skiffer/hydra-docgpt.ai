@@ -607,6 +607,7 @@
 		function copyHolidayCode() {
 			const code = 'HOLIDAY40';
 			const btn = document.getElementById('copyCodeBtn');
+			if (!btn) return;
 
 			navigator.clipboard.writeText(code).then(function() {
 				// Success feedback
@@ -641,6 +642,7 @@
 		// Close banner and save to localStorage
 		function closeHolidayBanner() {
 			const banner = document.getElementById('holidayBanner');
+			if (!banner) return;
 			banner.style.animation = 'slideUp 0.3s ease-out';
 
 			setTimeout(function() {
@@ -653,6 +655,7 @@
 		// Toggle redemption instructions
 		function toggleHolidayInstructions() {
 			const instructions = document.getElementById('holidayInstructions');
+			if (!instructions) return;
 			instructions.classList.toggle('show');
 		}
 
@@ -675,21 +678,25 @@
 		// Check if banner was previously closed
 		document.addEventListener('DOMContentLoaded', function() {
 			const bannerClosed = localStorage.getItem('holidayBannerClosed');
-			if (bannerClosed === 'true') {
-				document.getElementById('holidayBanner').style.display = 'none';
+			const banner = document.getElementById('holidayBanner');
+			if (bannerClosed === 'true' && banner) {
+				banner.style.display = 'none';
 			}
 		});
 
 		// Smart Dynamic Countdown Timer with Progressive Urgency
 		function updateCountdown() {
+			const timeRemaining = document.getElementById('timeRemaining');
+			if (!timeRemaining) return false;
+
 			// Set end date to January 2, 2026 23:59:59
 			const endDate = new Date('2026-01-02T23:59:59').getTime();
 			const now = new Date().getTime();
 			const distance = endDate - now;
 
 			if (distance < 0) {
-				document.getElementById('timeRemaining').textContent = 'Expired';
-				return;
+				timeRemaining.textContent = 'Expired';
+				return true;
 			}
 
 			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -719,12 +726,14 @@
 				urgencyMessage = `FINAL MINUTES! ${minutes}m ⏰`;
 			}
 
-			document.getElementById('timeRemaining').textContent = urgencyMessage;
+			timeRemaining.textContent = urgencyMessage;
+			return true;
 		}
 
-		// Update countdown every minute
-		updateCountdown();
-		setInterval(updateCountdown, 60000);
+		// Update countdown every minute only when the banner markup exists
+		if (updateCountdown()) {
+			setInterval(updateCountdown, 60000);
+		}
 	</script>
 
 	<!-- Add this style for the banner -->
