@@ -78,9 +78,33 @@
 <!--		posthog-->
 		<script>
 			!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+			function sanitizePostHogUrl(url) {
+				try {
+					var parsed = new URL(url, window.location.origin);
+					['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function(key) {
+						parsed.searchParams.delete(key);
+					});
+					return parsed.origin + parsed.pathname + (parsed.search || '') + (parsed.hash || '');
+				} catch (error) {
+					return url;
+				}
+			}
 			posthog.init('phc_fJzEwjJQly1CblAdxuLYfgmNCVtgV17LwdeYHSJVPM3',{
 				api_host:'https://us.i.posthog.com',
-				ui_host:'https://app.posthog.com'
+				ui_host:'https://app.posthog.com',
+				before_send: function(event) {
+					try {
+						if (event && event.properties) {
+							['$current_url', '$referrer', '$referring_domain', 'current_url', 'url', 'referrer'].forEach(function(key) {
+								if (event.properties[key]) event.properties[key] = sanitizePostHogUrl(event.properties[key]);
+							});
+							['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function(key) {
+								delete event.properties[key];
+							});
+						}
+					} catch (error) {}
+					return event;
+				}
 			})
 		</script>
 
