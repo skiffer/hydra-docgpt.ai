@@ -1,5 +1,5 @@
 ---
-title: QR Barcode for Generator Sheets™ Docs™ Forms™: Privacy Policy
+title: "QR Barcode for Generator Sheets™ Docs™ Forms™: Privacy Policy"
 description: 
 permalink: /privacy_qr_codes/
 ---

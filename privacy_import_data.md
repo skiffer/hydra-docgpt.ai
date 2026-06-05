@@ -1,5 +1,5 @@
 ---
-title: Import data in Sheets™: Privacy Policy
+title: "Import data in Sheets™: Privacy Policy"
 description: 
 permalink: /privacy_import_data/
 ---

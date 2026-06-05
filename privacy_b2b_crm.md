@@ -1,5 +1,5 @@
 ---
-title: DocGPT.AI – B2B Email Finder, Lead Enrichment: Privacy Policy
+title: "DocGPT.AI – B2B Email Finder, Lead Enrichment: Privacy Policy"
 description: 
 permalink: /privacy_b2b_crm/
 ---

@@ -50,7 +50,9 @@
     var target = new URL('/gpt-for-sheets-upgrade/', window.location.origin);
     target.search = window.location.search;
     target.searchParams.set('page_variant', 'upgrade');
+    target.searchParams.set('redirected_from', window.location.pathname || '/gpt-for-sheets/');
     if (!target.searchParams.get('reason')) target.searchParams.set('reason', 'addon_upgrade');
+    target.hash = window.location.hash || '';
     window.location.replace(target.toString());
   }
 })();

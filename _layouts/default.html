@@ -795,39 +795,50 @@
 			};
 		</script>
 
-	<script>
-
-		function getURLParameter_2(name) {
-			const urlParams = new URLSearchParams(window.location.search);
-			return urlParams.get(name);
-		}
-
-		function shouldSendVisit(email, page) {
-			if (!email) return false;
-			
-			const currentHour = new Date().toISOString().slice(0, 13); // YYYY-MM-DDTHH format
-			const pageKey = btoa(page).slice(0, 20); // Create short hash of page URL
-			const visitKey = `visit_${email}_${pageKey}`;
-			const lastVisitHour = localStorage.getItem(visitKey);
-			
-			// If we haven't sent a visit for this page this hour, allow sending
-			if (lastVisitHour !== currentHour) {
-				localStorage.setItem(visitKey, currentHour);
-				return true;
+		<script>
+			function getURLParameter_2(name) {
+				const urlParams = new URLSearchParams(window.location.search);
+				return urlParams.get(name);
 			}
-			
-			return false;
-		}
 
-		document.addEventListener('DOMContentLoaded', function() {
-			const email = getURLParameter_2('email')
-			const currentPage = window.location.href;
-			console.log(email);
-			console.log(currentPage);
+			function shouldSendVisit(email, page) {
+				if (!email) return false;
 
-			// Send the email and current page to the server only if it's the first visit for this page this hour
-			if (email && shouldSendVisit(email, currentPage)) {
-				// You can add more fields as needed
+				try {
+					const currentHour = new Date().toISOString().slice(0, 13); // YYYY-MM-DDTHH format
+					const pageKey = btoa(page).slice(0, 20); // Create short hash of page URL
+					const visitKey = `visit_${email}_${pageKey}`;
+					const lastVisitHour = localStorage.getItem(visitKey);
+
+					// If we haven't sent a visit for this page this hour, allow sending
+					if (lastVisitHour !== currentHour) {
+						localStorage.setItem(visitKey, currentHour);
+						return true;
+					}
+				} catch (error) {
+					return true;
+				}
+
+				return false;
+			}
+
+			function shouldTrackVisitEndpoint() {
+				const hostname = window.location.hostname;
+				return !(
+					hostname === 'localhost' ||
+					hostname === '127.0.0.1' ||
+					hostname === '0.0.0.0' ||
+					hostname === '::1' ||
+					window.location.protocol === 'file:'
+				);
+			}
+
+			document.addEventListener('DOMContentLoaded', function() {
+				const email = getURLParameter_2('email');
+				if (!email || !shouldTrackVisitEndpoint()) return;
+
+				const currentPage = window.location.href;
+				if (!shouldSendVisit(email, currentPage)) return;
 
 				const requestData = {
 					email: email,
@@ -841,19 +852,18 @@
 					},
 					body: JSON.stringify(requestData),
 				})
-				.then(response => {
-					if (response.ok) {
-						console.log('Visit recorded successfully (first visit for this page this hour)');
-					} else {
-						console.error('Failed to record visit');
-					}
-				})
-				.catch(error => console.error('Error:', error));
-			} else if (email) {
-				console.log('Visit not sent - already recorded for this page this hour');
-			}
-		});
-	</script>
+					.then(response => {
+						if (response.ok) {
+							if (window.console && console.debug) console.debug('Visit recorded successfully');
+						} else if (window.console && console.warn) {
+							console.warn('Visit tracking returned a non-OK response');
+						}
+					})
+					.catch(error => {
+						if (window.console && console.warn) console.warn('Visit tracking request failed', error);
+					});
+			});
+		</script>
 
 <script>
 	function affiliateProgram() {

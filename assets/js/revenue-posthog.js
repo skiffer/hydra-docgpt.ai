@@ -3,12 +3,18 @@
 (function () {
   'use strict';
 
-  var VERSION = '2026-06-04';
+  var VERSION = '2026-06-05';
   var SCROLL_BUCKETS = [25, 50, 75, 100];
+  var QUEUE_FLUSH_INTERVAL_MS = 200;
+  var QUEUE_FLUSH_TIMEOUT_MS = 10000;
   var firedScrollBuckets = {};
+  var seenEventKeys = {};
   var PADDLE_WRAPPED_FLAG = '__docgptRevenueWrapped';
   var STRIPE_BOUND_FLAG = 'data-revenue-stripe-bound';
   var CLICK_BOUND_FLAG = 'data-revenue-posthog-bound';
+  var captureQueue = window.__docgptPosthogQueue = window.__docgptPosthogQueue || [];
+  var queueInterval = null;
+  var queueStartedAt = Date.now();
 
   var PRODUCT_CONFIGS = [
     { match: /^\/$/, product: 'home', surface: 'home', provider: null },
@@ -67,6 +73,20 @@
     }
   }
 
+  function getPostHogDistinctId() {
+    try {
+      if (window.posthog && typeof window.posthog.get_distinct_id === 'function') return window.posthog.get_distinct_id();
+    } catch (error) {}
+    return null;
+  }
+
+  function getPostHogSessionId() {
+    try {
+      if (window.posthog && typeof window.posthog.get_session_id === 'function') return window.posthog.get_session_id();
+    } catch (error) {}
+    return null;
+  }
+
   function getConfig() {
     var path = window.location.pathname || '/';
     for (var i = 0; i < PRODUCT_CONFIGS.length; i += 1) {
@@ -106,17 +126,51 @@
     return 'other';
   }
 
+  function inferPageVariant(cfg) {
+    cfg = cfg || getConfig();
+    if (cfg.product !== 'gpt_for_sheets') return null;
+    return cfg.surface === 'upgrade_page' ? 'upgrade' : 'main';
+  }
+
+  function experimentName(cfg) {
+    cfg = cfg || getConfig();
+    return cfg.product === 'gpt_for_sheets' ? 'gpt_sheets_addon_upgrade_page' : null;
+  }
+
+  function pageVersion(cfg, pageVariant) {
+    cfg = cfg || getConfig();
+    return [cfg.product, cfg.surface, pageVariant || 'default', VERSION].join('_');
+  }
+
+  function redirectedFrom(cfg) {
+    cfg = cfg || getConfig();
+    if (getParam('redirected_from')) return getParam('redirected_from');
+    if (cfg.product === 'gpt_for_sheets' && cfg.surface === 'upgrade_page' && getParam('reason') === 'addon_upgrade') return '/gpt-for-sheets/';
+    return null;
+  }
+
   function baseProps(extra) {
     var cfg = getConfig();
+    var pageVariant = inferPageVariant(cfg);
     return compact(Object.assign({
       revenue_tracking_version: VERSION,
+      release_version: VERSION,
       product: cfg.product,
       surface: cfg.surface,
       provider: cfg.provider,
       traffic_type: inferTrafficType(),
+      page_variant: pageVariant,
+      page_version: pageVersion(cfg, pageVariant),
+      experiment_name: experimentName(cfg),
+      experiment_variant: pageVariant,
+      redirected_from: redirectedFrom(cfg),
+      redirect_reason: getParam('reason') || null,
       page_path: window.location.pathname || null,
+      source_page: window.location.pathname || null,
       page_url_sanitized: sanitizeUrl(window.location.href),
       referrer_domain: referrerDomain(),
+      posthog_distinct_id: getPostHogDistinctId(),
+      posthog_session_id: getPostHogSessionId(),
       utm_source: getParam('utm_source'),
       utm_medium: getParam('utm_medium'),
       utm_campaign: getParam('utm_campaign'),
@@ -127,14 +181,84 @@
     }, extra || {}));
   }
 
-  function capture(eventName, props) {
-    try {
-      if (window.posthog && typeof window.posthog.capture === 'function') {
-        window.posthog.capture(eventName, baseProps(props));
-      }
-    } catch (error) {
-      if (window.console && console.warn) console.warn('Revenue PostHog capture failed: ' + eventName, error);
+  function posthogReady() {
+    return !!(window.posthog && typeof window.posthog.capture === 'function');
+  }
+
+  function runtimePostHogProps(props) {
+    return compact(Object.assign({}, props || {}, {
+      posthog_distinct_id: props && props.posthog_distinct_id ? props.posthog_distinct_id : getPostHogDistinctId(),
+      posthog_session_id: props && props.posthog_session_id ? props.posthog_session_id : getPostHogSessionId()
+    }));
+  }
+
+  function dedupeKey(eventName, props) {
+    if (!props || !props.checkout_id) return null;
+    if (eventName === 'checkout_loaded' || eventName === 'checkout_customer_created' || eventName === 'checkout_complete_frontend') {
+      return eventName + ':' + props.checkout_id;
     }
+    return null;
+  }
+
+  function shouldSkipDuplicate(eventName, props) {
+    var key = dedupeKey(eventName, props);
+    if (!key) return false;
+    if (seenEventKeys[key]) return true;
+    seenEventKeys[key] = true;
+    return false;
+  }
+
+  function sendCapture(item) {
+    try {
+      if (!posthogReady()) return false;
+      window.posthog.capture(item.eventName, runtimePostHogProps(item.props));
+      return true;
+    } catch (error) {
+      if (window.console && console.warn) console.warn('Revenue PostHog capture failed: ' + item.eventName, error);
+      return true;
+    }
+  }
+
+  function flushQueue() {
+    if (!posthogReady()) {
+      if (Date.now() - queueStartedAt > QUEUE_FLUSH_TIMEOUT_MS && queueInterval) {
+        window.clearInterval(queueInterval);
+        queueInterval = null;
+      }
+      return;
+    }
+    while (captureQueue.length) {
+      if (!sendCapture(captureQueue[0])) break;
+      captureQueue.shift();
+    }
+    if (!captureQueue.length && queueInterval) {
+      window.clearInterval(queueInterval);
+      queueInterval = null;
+    }
+  }
+
+  function scheduleFlush() {
+    if (queueInterval) return;
+    queueStartedAt = Date.now();
+    queueInterval = window.setInterval(flushQueue, QUEUE_FLUSH_INTERVAL_MS);
+  }
+
+  function capture(eventName, props) {
+    var fullProps = baseProps(props);
+    if (shouldSkipDuplicate(eventName, fullProps)) {
+      flushQueue();
+      return;
+    }
+    var item = { eventName: eventName, props: fullProps };
+    if (sendCapture(item)) return;
+    captureQueue.push(item);
+    if (captureQueue.length > 200) captureQueue.shift();
+    scheduleFlush();
+  }
+
+  function captureRevenueAndPricing(revenueEventName, pricingEventName, props) {
+    capture(revenueEventName, props);
+    capture(pricingEventName, props);
   }
 
   function parseMoney(text) {
@@ -193,6 +317,7 @@
     return compact({
       provider: inferredProvider,
       product_id: el ? el.getAttribute('data-product') : null,
+      plan_id: el ? (el.getAttribute('data-plan-id') || el.getAttribute('data-product') || el.getAttribute('data-plan')) : null,
       plan: plan,
       billing_period: inferBillingPeriod(el, planCard),
       price: parseMoney(priceText),
@@ -229,9 +354,9 @@
         el.setAttribute(CLICK_BOUND_FLAG, 'true');
         el.addEventListener('click', function () {
           var props = getPlanProps(el);
-          capture('revenue_cta_click', props);
+          captureRevenueAndPricing('revenue_cta_click', 'pricing_cta_click', props);
           if (install) capture('install_click', props);
-          if (checkout) capture('revenue_plan_click', props);
+          if (checkout) captureRevenueAndPricing('revenue_plan_click', 'pricing_plan_click', props);
           if (internalProductClick) capture('home_product_click', Object.assign({}, props, { target_path: props.href_path, target_product: productForPath(props.href_path) }));
           if (/buy\.stripe\.com/i.test(href)) {
             capture('checkout_loaded', Object.assign({}, props, { provider: 'stripe', checkout_open_method: 'stripe_link_click' }));
@@ -279,6 +404,7 @@
     return compact({
       checkout_id: checkout.id,
       product_id: product.id,
+      plan_id: product.id,
       plan: product.name || product.id,
       billing_period: product.billing_type || product.subscription_interval || null,
       price: prices.total,
@@ -293,6 +419,7 @@
     try {
       if (!data || !data.event) return;
       var props = paddlePropsFromEvent(data);
+      props.checkout_event_name = data.event;
       if (data.event === 'Checkout.Loaded') capture('checkout_loaded', props);
       if (data.event === 'Checkout.Customer.Created') capture('checkout_customer_created', props);
       if (data.event === 'Checkout.Complete') capture('checkout_complete_frontend', props);
@@ -360,10 +487,11 @@
   }
 
   function init() {
-    capture('revenue_page_view', {
+    var pageViewProps = {
       page_title: document.title,
       initial_scroll_pct: computeMaxScrollPct()
-    });
+    };
+    captureRevenueAndPricing('revenue_page_view', 'pricing_page_view', pageViewProps);
     bindClicks();
     bindScrollDepth();
   }
@@ -374,10 +502,13 @@
     capture: capture,
     baseProps: baseProps,
     trafficType: inferTrafficType,
+    pageVariant: inferPageVariant,
     trackPaddleEvent: trackPaddleEvent,
     bindClicks: bindClicks,
     bindStripeLinks: bindStripeLinks,
-    config: getConfig
+    config: getConfig,
+    flushQueue: flushQueue,
+    queue: captureQueue
   };
 
   // Backward compatibility for existing inline GPT for Sheets callbacks.
@@ -388,4 +519,5 @@
   } else {
     init();
   }
+  window.addEventListener('load', flushQueue);
 })();

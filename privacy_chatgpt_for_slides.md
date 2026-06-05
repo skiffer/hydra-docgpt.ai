@@ -1,5 +1,5 @@
 ---
-title: ChatGPT for Slides™: Privacy Policy
+title: "ChatGPT for Slides™: Privacy Policy"
 description: 
 permalink: /privacy_chatgpt_for_slides/
 ---

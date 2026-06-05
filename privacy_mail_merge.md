@@ -1,5 +1,5 @@
 ---
-title: Mail Merge for Sheets™ Gmail™: Privacy Policy
+title: "Mail Merge for Sheets™ Gmail™: Privacy Policy"
 description: 
 permalink: /privacy_mail_merge/
 ---

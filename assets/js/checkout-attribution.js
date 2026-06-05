@@ -4,9 +4,27 @@
   'use strict';
 
   var GA4_MEASUREMENT_ID = window.GA4_MEASUREMENT_ID || 'G-DV5BH9XVVS';
+  var ATTRIBUTION_VERSION = '2026-06-05';
   var WRAPPED_FLAG = '__checkoutAttributionWrapped';
   var EMAIL_ATTRIBUTION_KEY = 'docgpt_email_attribution_v1';
   var EMAIL_ATTRIBUTION_TTL_DAYS = 30;
+  var PADDLE_CLICK_BOUND_ATTR = 'data-checkout-attribution-paddle-bound';
+
+  var PRODUCT_CONFIGS = [
+    { match: /^\/$/, product: 'home', surface: 'home', provider: null },
+    { match: /gpt-for-sheets-upgrade/, product: 'gpt_for_sheets', surface: 'upgrade_page', provider: 'paddle' },
+    { match: /gpt-for-sheets/, product: 'gpt_for_sheets', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /mail-merge-for-gmail-and-sheets/, product: 'mail_merge', surface: 'seo_product_page', provider: 'stripe' },
+    { match: /ai-email-assistant/, product: 'ai_email_assistant', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /google-slide-ai/, product: 'slides_ai', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /quiz-maker-ai/, product: 'quiz_maker', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /form-timer-and-form-scheduler/, product: 'form_timer', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /translate-slides-with-ai-gpt/, product: 'slides_translator', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /slides-translator-ai-powered/, product: 'slides_translator', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /google-doc-ai/, product: 'google_doc_ai', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /cold-outreach-messages-linkedin/, product: 'linkedin_outreach', surface: 'seo_product_page', provider: 'paddle' },
+    { match: /qr-code-generator-pricing/, product: 'qr_code_generator', surface: 'pricing_page', provider: 'stripe' }
+  ];
 
   function readCookie(name) {
     try {
@@ -94,9 +112,74 @@
     return out;
   }
 
-  function inferProduct() {
+  function safeLower(value) {
+    return String(value || '').toLowerCase();
+  }
+
+  function sanitizeUrl(url) {
+    try {
+      var parsed = new URL(url || window.location.href, window.location.origin);
+      ['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function (key) {
+        parsed.searchParams.delete(key);
+      });
+      return parsed.origin + parsed.pathname + (parsed.search ? parsed.search : '') + (parsed.hash ? parsed.hash : '');
+    } catch (error) {
+      return window.location.pathname || null;
+    }
+  }
+
+  function getConfig() {
     var path = window.location.pathname || '';
-    return path.replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '') || 'docgpt';
+    for (var i = 0; i < PRODUCT_CONFIGS.length; i += 1) {
+      if (PRODUCT_CONFIGS[i].match.test(path || '/')) return PRODUCT_CONFIGS[i];
+    }
+    return {
+      product: path.replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '').replace(/[^a-z0-9]+/gi, '_').toLowerCase() || 'docgpt',
+      surface: 'seo_product_page',
+      provider: null
+    };
+  }
+
+  function inferTrafficType() {
+    var source = safeLower(getParam('utm_source'));
+    var medium = safeLower(getParam('utm_medium'));
+    var campaign = safeLower(getParam('utm_campaign'));
+    var content = safeLower(getParam('utm_content'));
+    var reason = safeLower(getParam('reason'));
+    var referrer = safeLower(document.referrer);
+    var path = safeLower(window.location.pathname);
+
+    if (source === 'sheets_addon' || source === 'addon' || source.indexOf('addon') !== -1 || medium.indexOf('addon') !== -1 || campaign.indexOf('addon') !== -1 || content.indexOf('addon') !== -1 || reason.indexOf('addon') !== -1 || referrer.indexOf('script.google.com') !== -1 || referrer.indexOf('script.googleusercontent.com') !== -1) return 'addon';
+    if (source === 'email' || source === 'ses' || medium === 'email' || campaign.indexOf('hello_') !== -1) return 'email';
+    if (medium === 'cpc' || medium === 'ppc' || source === 'adwords' || source === 'google_ads' || !!getParam('gclid') || !!getParam('gbraid') || !!getParam('wbraid') || !!getParam('fbclid') || !!getParam('msclkid')) return 'paid';
+    if (source === 'tolt' || !!getParam('via') || !!getParam('ref') || !!getParam('tolt_referral')) return 'referral';
+    if (referrer.indexOf('docgpt.ai') !== -1 && path !== '/') return 'home';
+    if (source === 'google' || referrer.indexOf('google.') !== -1 || referrer.indexOf('bing.com') !== -1 || referrer.indexOf('duckduckgo.com') !== -1 || referrer.indexOf('yandex.') !== -1) return 'seo';
+    if (!document.referrer && !source && !medium) return 'direct';
+    return 'other';
+  }
+
+  function inferPageVariant(cfg) {
+    cfg = cfg || getConfig();
+    if (cfg.product !== 'gpt_for_sheets') return null;
+    return cfg.surface === 'upgrade_page' ? 'upgrade' : 'main';
+  }
+
+  function experimentName(cfg) {
+    cfg = cfg || getConfig();
+    return cfg.product === 'gpt_for_sheets' ? 'gpt_sheets_addon_upgrade_page' : null;
+  }
+
+  function pageVersion(cfg, pageVariant) {
+    cfg = cfg || getConfig();
+    return [cfg.product, cfg.surface, pageVariant || 'default', ATTRIBUTION_VERSION].join('_');
+  }
+
+  function redirectedFrom(cfg) {
+    cfg = cfg || getConfig();
+    if (getParam('redirected_from')) return getParam('redirected_from');
+    if (cfg.product === 'gpt_for_sheets' && cfg.surface === 'upgrade_page' && getParam('reason') === 'addon_upgrade') return '/gpt-for-sheets/';
+    return null;
   }
 
   function normalizeEmailProduct(value) {
@@ -163,8 +246,8 @@
         email_term: getParam('utm_term'),
         email_product: inferEmailProduct(),
         email_step: inferEmailStepFromParams(),
-        email_landing_page: window.location.href,
-        email_referrer: document.referrer || null,
+        email_landing_page: sanitizeUrl(window.location.href),
+        email_referrer: document.referrer ? sanitizeUrl(document.referrer) : null,
         email_attributed_at: new Date(now).toISOString(),
         email_expires_at: now + EMAIL_ATTRIBUTION_TTL_DAYS * 24 * 60 * 60 * 1000
       });
@@ -177,8 +260,11 @@
 
   function buildAttribution(extra) {
     extra = extra || {};
+    var cfg = getConfig();
+    var pageVariant = inferPageVariant(cfg);
     var emailAttribution = readPersistedEmailAttribution();
     return compact({
+      attribution_version: ATTRIBUTION_VERSION,
       ga_client_id: getGAClientId(),
       ga_session_id: getGASessionId(),
       posthog_distinct_id: getPostHogDistinctId(),
@@ -200,14 +286,27 @@
       email_term: emailAttribution.email_term,
       email_product: emailAttribution.email_product,
       email_step: emailAttribution.email_step,
-      email_landing_page: emailAttribution.email_landing_page,
-      email_referrer: emailAttribution.email_referrer,
+      email_landing_page: emailAttribution.email_landing_page ? sanitizeUrl(emailAttribution.email_landing_page) : null,
+      email_referrer: emailAttribution.email_referrer ? sanitizeUrl(emailAttribution.email_referrer) : null,
       email_attributed_at: emailAttribution.email_attributed_at,
-      landing_page: window.location.href,
-      referrer: document.referrer || null,
+      page_url_sanitized: sanitizeUrl(window.location.href),
+      landing_page: sanitizeUrl(window.location.href),
+      referrer: document.referrer ? sanitizeUrl(document.referrer) : null,
       page: window.location.pathname,
-      product: firstValue(extra.product, inferProduct()),
+      source_page: window.location.pathname,
+      product: firstValue(extra.product, cfg.product),
+      surface: firstValue(extra.surface, cfg.surface),
+      provider: firstValue(extra.provider, cfg.provider),
+      traffic_type: firstValue(extra.traffic_type, inferTrafficType()),
+      page_variant: firstValue(extra.page_variant, pageVariant),
+      page_version: firstValue(extra.page_version, pageVersion(cfg, pageVariant)),
+      experiment_name: firstValue(extra.experiment_name, experimentName(cfg)),
+      experiment_variant: firstValue(extra.experiment_variant, pageVariant),
+      release_version: ATTRIBUTION_VERSION,
+      redirected_from: firstValue(extra.redirected_from, redirectedFrom(cfg)),
+      redirect_reason: firstValue(extra.redirect_reason, getParam('reason')),
       plan: firstValue(extra.plan, extra.product_id),
+      plan_id: firstValue(extra.plan_id, extra.product_id, extra.plan),
       tolt_referral: firstValue(window.tolt_referral, extra.tolt_referral)
     });
   }
@@ -232,7 +331,7 @@
   }
 
   function mergeAttribution(existing, extra) {
-    return compact(Object.assign({}, buildAttribution(extra), parseData(existing)));
+    return compact(Object.assign({}, parseData(existing), buildAttribution(extra)));
   }
 
   function augmentPaddleOptions(options) {
@@ -240,12 +339,14 @@
       if (!options || typeof options !== 'object') return options;
       var extra = {
         product_id: options.product,
+        plan_id: firstValue(options.plan_id, options.product),
         plan: options.product,
+        provider: 'paddle',
         coupon: options.coupon
       };
       var merged = mergeAttribution(options.customData || options.passthrough, extra);
-      options.customData = Object.assign({}, merged, parseData(options.customData));
-      options.passthrough = stringifyForPaddle(Object.assign({}, merged, parseData(options.passthrough)));
+      options.customData = merged;
+      options.passthrough = stringifyForPaddle(merged);
     } catch (error) {
       if (window.console && console.warn) console.warn('Paddle attribution merge failed; using original checkout options', error);
     }
@@ -295,17 +396,28 @@
   }
 
   function applyPaddleButtonAttribution() {
+    function refreshButton(button) {
+      var extra = {
+        product_id: button.getAttribute('data-product'),
+        plan_id: firstValue(button.getAttribute('data-plan-id'), button.getAttribute('data-product'), button.getAttribute('data-plan')),
+        plan: button.getAttribute('data-product'),
+        provider: 'paddle'
+      };
+      var customData = mergeAttribution(button.getAttribute('data-custom-data'), extra);
+      var passthrough = mergeAttribution(button.getAttribute('data-passthrough'), extra);
+      button.setAttribute('data-custom-data', stringifyForPaddle(customData));
+      button.setAttribute('data-passthrough', stringifyForPaddle(passthrough));
+    }
+
     try {
       var buttons = document.querySelectorAll('.paddle_button');
       buttons.forEach(function (button) {
-        var extra = {
-          product_id: button.getAttribute('data-product'),
-          plan: button.getAttribute('data-product')
-        };
-        var customData = mergeAttribution(button.getAttribute('data-custom-data'), extra);
-        var passthrough = mergeAttribution(button.getAttribute('data-passthrough'), extra);
-        button.setAttribute('data-custom-data', stringifyForPaddle(customData));
-        button.setAttribute('data-passthrough', stringifyForPaddle(passthrough));
+        refreshButton(button);
+        if (button.getAttribute(PADDLE_CLICK_BOUND_ATTR) === 'true') return;
+        button.setAttribute(PADDLE_CLICK_BOUND_ATTR, 'true');
+        button.addEventListener('click', function () {
+          refreshButton(button);
+        }, true);
       });
     } catch (error) {
       if (window.console && console.warn) console.warn('Paddle button attribution failed; buttons left unchanged', error);

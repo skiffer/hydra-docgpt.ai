@@ -1,5 +1,5 @@
 ---
-title: LinkedIn™ Automation Tool - Lead Generation, Email Finder: Privacy Policy
+title: "LinkedIn™ Automation Tool - Lead Generation, Email Finder: Privacy Policy"
 description: 
 permalink: /privacy_linkedin_crm/
 ---

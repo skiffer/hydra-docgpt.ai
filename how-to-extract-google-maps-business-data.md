@@ -1,5 +1,5 @@
 ---
-title: Step-by-Step: How to Extract Google Maps Business Data into Google Sheets
+title: "Step-by-Step: How to Extract Google Maps Business Data into Google Sheets"
 permalink: /how-to-extract-google-maps-business-data
 description: Learn how to efficiently extract business data from Google Maps into Google Sheets using AI-powered functions. Get location details, contact information, and business metrics automatically.
 ---
@@ -382,4 +382,4 @@ After extraction, use these formulas to clean your data:
 
 ## 🤝 Need Help?
 
-If you encounter any issues or need assistance, click the "Talk to Human" button in the add-on sidebar for support. 
+If you encounter any issues or need assistance, click the "Talk to Human" button in the add-on sidebar for support.
