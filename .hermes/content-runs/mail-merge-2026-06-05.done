@@ -1,0 +1,22 @@
+date: 2026-06-05
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - mailmeteor-alternative-google-sheets-mail-merge
+  - mail-merge-follow-up-emails-google-sheets
+  - csv-mail-merge-gmail-google-sheets
+  - mail-merge-tracking-gmail-campaigns
+created_page_urls:
+  - https://docgpt.ai/mailmeteor-alternative-google-sheets-mail-merge/
+  - https://docgpt.ai/mail-merge-follow-up-emails-google-sheets/
+  - https://docgpt.ai/csv-mail-merge-gmail-google-sheets/
+  - https://docgpt.ai/mail-merge-tracking-gmail-campaigns/
+commit_hash: de803d353da521e12f8331a2d00dee109e8bf7c4
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_output_verification: 4/4 h1_cta_faq_ok
+live_check: 4/4 200
+bing_submission: success
+gsc_sitemap_submission: success
+notes: "Build emitted pre-existing YAML warnings on unrelated privacy/how-to pages; exit code was 0. Live verification passed after Netlify propagation."
