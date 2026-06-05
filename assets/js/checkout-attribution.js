@@ -116,10 +116,17 @@
     return String(value || '').toLowerCase();
   }
 
+  var SENSITIVE_QUERY_KEYS = ['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'];
+
+  function isSensitiveKey(key) {
+    key = String(key || '').toLowerCase();
+    return SENSITIVE_QUERY_KEYS.indexOf(key) !== -1;
+  }
+
   function sanitizeUrl(url) {
     try {
       var parsed = new URL(url || window.location.href, window.location.origin);
-      ['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function (key) {
+      SENSITIVE_QUERY_KEYS.forEach(function (key) {
         parsed.searchParams.delete(key);
       });
       return parsed.origin + parsed.pathname + (parsed.search ? parsed.search : '') + (parsed.hash ? parsed.hash : '');
@@ -330,8 +337,30 @@
     return JSON.stringify(compact(value || {}));
   }
 
+  function sanitizeAttributionData(value) {
+    if (!value || typeof value !== 'object') return value;
+    if (Array.isArray(value)) {
+      return value.map(function (item) { return sanitizeAttributionData(item); });
+    }
+    var out = {};
+    Object.keys(value).forEach(function (key) {
+      if (isSensitiveKey(key)) return;
+      var item = value[key];
+      if ((key === 'ref' || key === 'page' || key === 'landing_page' || key === 'email_landing_page' || key === 'referrer' || key === 'email_referrer' || /url/i.test(key)) && typeof item === 'string') {
+        out[key] = sanitizeUrl(item);
+        return;
+      }
+      if (key === 'params' && item && typeof item === 'object') {
+        out[key] = sanitizeAttributionData(item);
+        return;
+      }
+      out[key] = sanitizeAttributionData(item);
+    });
+    return out;
+  }
+
   function mergeAttribution(existing, extra) {
-    return compact(Object.assign({}, parseData(existing), buildAttribution(extra)));
+    return compact(Object.assign({}, sanitizeAttributionData(parseData(existing)), buildAttribution(extra)));
   }
 
   function augmentPaddleOptions(options) {

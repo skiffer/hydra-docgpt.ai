@@ -151,11 +151,18 @@ custom_hero: true
     return null;
   }
 
+  const sensitiveAttributionParams = ['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'];
+
+  function isSafeAttributionParam(key) {
+    const normalizedKey = String(key || '').toLowerCase();
+    return sensitiveAttributionParams.indexOf(normalizedKey) === -1 && !normalizedKey.includes('clid');
+  }
+
   function getAllQueryParams() {
     const urlParams = new URLSearchParams(window.location.search);
     const params = {};
     for (const [key, value] of urlParams) {
-      if (key !== 'email' && !key.includes('clid')) {
+      if (isSafeAttributionParam(key)) {
         params[key] = value;
       }
     }
