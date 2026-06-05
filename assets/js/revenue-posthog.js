@@ -261,6 +261,16 @@
     capture(pricingEventName, props);
   }
 
+  function isLandingSurface(cfg) {
+    cfg = cfg || getConfig();
+    return cfg.surface === 'home' || cfg.surface === 'seo_product_page';
+  }
+
+  function isPricingSurface(cfg) {
+    cfg = cfg || getConfig();
+    return cfg.surface === 'pricing_page' || cfg.surface === 'upgrade_page';
+  }
+
   function parseMoney(text) {
     var match = String(text || '').replace(',', '.').match(/(?:[$€£]\s*)?([0-9]+(?:\.[0-9]+)?)/);
     return match ? Number(match[1]) : null;
@@ -355,6 +365,8 @@
         el.addEventListener('click', function () {
           var props = getPlanProps(el);
           captureRevenueAndPricing('revenue_cta_click', 'pricing_cta_click', props);
+          if (isLandingSurface(cfg)) capture('landing_cta_click', props);
+          if (isPricingSurface(cfg)) capture('pricing_surface_cta_click', props);
           if (install) capture('install_click', props);
           if (checkout) captureRevenueAndPricing('revenue_plan_click', 'pricing_plan_click', props);
           if (internalProductClick) capture('home_product_click', Object.assign({}, props, { target_path: props.href_path, target_product: productForPath(props.href_path) }));
@@ -487,11 +499,14 @@
   }
 
   function init() {
+    var cfg = getConfig();
     var pageViewProps = {
       page_title: document.title,
       initial_scroll_pct: computeMaxScrollPct()
     };
     captureRevenueAndPricing('revenue_page_view', 'pricing_page_view', pageViewProps);
+    if (isLandingSurface(cfg)) capture('landing_page_view', pageViewProps);
+    if (isPricingSurface(cfg)) capture('pricing_surface_view', pageViewProps);
     bindClicks();
     bindScrollDepth();
   }
