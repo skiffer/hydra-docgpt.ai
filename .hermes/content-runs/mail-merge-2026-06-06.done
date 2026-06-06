@@ -1,0 +1,22 @@
+date: 2026-06-06
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - small-business-email-campaign-mail-merge-gmail
+  - event-invite-mail-merge-google-sheets
+  - nonprofit-donor-outreach-mail-merge-google-sheets
+  - real-estate-lead-follow-up-mail-merge-google-sheets
+created_page_urls:
+  - https://docgpt.ai/small-business-email-campaign-mail-merge-gmail/
+  - https://docgpt.ai/event-invite-mail-merge-google-sheets/
+  - https://docgpt.ai/nonprofit-donor-outreach-mail-merge-google-sheets/
+  - https://docgpt.ai/real-estate-lead-follow-up-mail-merge-google-sheets/
+commit_hash: a4f76a68ec6d9b23151c78e4e2cc0537a7c9f068
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_output_verification: 4/4 h1_cta_faq_ok
+live_check: 4/4 200
+bing_submission: success
+gsc_sitemap_submission: success
+notes: "Fallback plan created locally because no strategist plan existed for 2026-06-06. Build emitted pre-existing RubyGems/native extension warnings; exit code was 0. Live verification passed after Netlify propagation."
