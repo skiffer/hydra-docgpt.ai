@@ -1,0 +1,23 @@
+date: 2026-06-07
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - customer-onboarding-email-mail-merge-google-sheets
+  - invoice-payment-reminder-mail-merge-gmail-sheets
+  - pr-pitch-mail-merge-google-sheets-gmail
+  - school-parent-update-mail-merge-gmail-sheets
+created_page_urls:
+  - https://docgpt.ai/customer-onboarding-email-mail-merge-google-sheets/
+  - https://docgpt.ai/invoice-payment-reminder-mail-merge-gmail-sheets/
+  - https://docgpt.ai/pr-pitch-mail-merge-google-sheets-gmail/
+  - https://docgpt.ai/school-parent-update-mail-merge-gmail-sheets/
+commit_hash: 3f46f16152e39ce22ac5006c8e9dbb535e6325fb
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_output_verification: 4/4 h1_cta_faq_ok
+live_check: 4/4 200
+bing_submission: success
+bing_details: "SubmitFeed sitemap OK; SubmitUrlBatch 4 URLs OK"
+gsc_sitemap_submission: success
+notes: "No same-day strategist plan existed, so builder used a minimal non-duplicate fallback backlog after prior Mail Merge pages already covered the first-run priority themes. Build emitted pre-existing RubyGems/native extension warnings; exit code was 0."
