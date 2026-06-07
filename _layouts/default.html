@@ -101,6 +101,10 @@
 				request_batching:false,
 				before_send: function(event) {
 					try {
+						// PostHog JS 1.380.1 can submit /e payloads without a top-level api_key
+						// when decide/remote config is disabled, causing 401s. Inject it here;
+						// this is the public project token already present in posthog.init.
+						if (event) event.api_key = 'phc_fJzEwjJQly1CblAdxuLYfgmNCVtgV17LwdeYHSJVPM3';
 						if (event && event.properties) {
 							['$current_url', '$referrer', '$referring_domain', 'current_url', 'url', 'referrer'].forEach(function(key) {
 								if (event.properties[key]) event.properties[key] = sanitizePostHogUrl(event.properties[key]);
