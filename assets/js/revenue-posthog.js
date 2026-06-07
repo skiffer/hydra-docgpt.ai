@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  var VERSION = '2026-06-05';
+  var VERSION = '2026-06-07';
   var SCROLL_BUCKETS = [25, 50, 75, 100];
   var QUEUE_FLUSH_INTERVAL_MS = 200;
   var QUEUE_FLUSH_TIMEOUT_MS = 10000;
@@ -43,7 +43,10 @@
 
   function getParam(name) {
     try {
-      return new URLSearchParams(window.location.search).get(name) || null;
+      var params = new URLSearchParams(window.location.search);
+      var value = params.get(name);
+      if (!value && name === 'utm_source') value = params.get('utm_souce');
+      return value || null;
     } catch (error) {
       return null;
     }

@@ -4,7 +4,7 @@
   'use strict';
 
   var GA4_MEASUREMENT_ID = window.GA4_MEASUREMENT_ID || 'G-DV5BH9XVVS';
-  var ATTRIBUTION_VERSION = '2026-06-05';
+  var ATTRIBUTION_VERSION = '2026-06-07';
   var WRAPPED_FLAG = '__checkoutAttributionWrapped';
   var EMAIL_ATTRIBUTION_KEY = 'docgpt_email_attribution_v1';
   var EMAIL_ATTRIBUTION_TTL_DAYS = 30;
@@ -67,7 +67,10 @@
 
   function getParam(name) {
     try {
-      return new URLSearchParams(window.location.search).get(name) || null;
+      var params = new URLSearchParams(window.location.search);
+      var value = params.get(name);
+      if (!value && name === 'utm_source') value = params.get('utm_souce');
+      return value || null;
     } catch (error) {
       return null;
     }
