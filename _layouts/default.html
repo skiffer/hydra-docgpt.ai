@@ -92,6 +92,11 @@
 			posthog.init('phc_fJzEwjJQly1CblAdxuLYfgmNCVtgV17LwdeYHSJVPM3',{
 				api_host:'https://us.i.posthog.com',
 				ui_host:'https://app.posthog.com',
+				// 2026-06-07: browser SDK compressed /i/v0/e payloads were accepted with 200
+				// but not visible in HogQL. Force plain /e payloads so anonymous page/checkout
+				// events are ingested while server-side purchase_completed keeps working.
+				disable_compression:true,
+				request_batching:false,
 				before_send: function(event) {
 					try {
 						if (event && event.properties) {
