@@ -46,14 +46,23 @@
         referrer.indexOf('script.google.com') !== -1 ||
         referrer.indexOf('script.googleusercontent.com') !== -1;
 
-      var isWelcomeEmailUpgrade =
-        source === 'email' ||
-        source === 'ses' ||
-        medium === 'email' ||
-        campaign.indexOf('hello_sheets') !== -1 ||
-        content.indexOf('welcome') !== -1;
+      var isEmail = source === 'email' || source === 'ses' || medium === 'email';
+      var isEmailUpgradeIntent = isEmail && (
+        medium.indexOf('reactivate') !== -1 ||
+        medium.indexOf('promo') !== -1 ||
+        medium.indexOf('feedback_sheets') !== -1 ||
+        campaign.indexOf('comeback') !== -1 ||
+        campaign.indexOf('coupon') !== -1 ||
+        campaign.indexOf('holiday_sale') !== -1 ||
+        campaign.indexOf('promo') !== -1 ||
+        content.indexOf('upgrade') !== -1 ||
+        content.indexOf('discount') !== -1 ||
+        content.indexOf('promo') !== -1 ||
+        reason.indexOf('upgrade') !== -1
+      );
+      var isAddonEmailFallback = hasEmail && !source && !medium && !campaign;
 
-      return isAddon || hasEmail || (isWelcomeEmailUpgrade && campaign.indexOf('sheets') !== -1);
+      return isAddon || isAddonEmailFallback || isEmailUpgradeIntent;
     } catch (error) {
       return false;
     }
