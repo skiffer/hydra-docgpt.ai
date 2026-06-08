@@ -1,0 +1,23 @@
+date: 2026-06-08
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - webinar-attendee-follow-up-mail-merge-google-sheets
+  - client-update-email-mail-merge-agencies
+  - alumni-outreach-mail-merge-google-sheets
+  - volunteer-coordination-mail-merge-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/webinar-attendee-follow-up-mail-merge-google-sheets/
+  - https://docgpt.ai/client-update-email-mail-merge-agencies/
+  - https://docgpt.ai/alumni-outreach-mail-merge-google-sheets/
+  - https://docgpt.ai/volunteer-coordination-mail-merge-gmail-google-sheets/
+commit_hash: da147c6a6354355d7c185e82eb3ee2f0e9a6ea88
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_output_verification: 4/4 h1_cta_faq_ok
+live_check: 4/4 200
+bing_submission: success
+bing_details: "SubmitFeed sitemap OK; SubmitUrlBatch 4 URLs OK"
+gsc_sitemap_submission: success
+notes: "No same-day strategist plan existed, so builder created a local minimal fallback plan and selected four non-duplicate Mail Merge acquisition pages from the remaining backlog. Build emitted pre-existing RubyGems/native extension warnings; exit code was 0. Content pages were pushed first; this marker records the pushed content commit."
