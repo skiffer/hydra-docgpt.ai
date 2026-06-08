@@ -946,7 +946,7 @@ custom_hero: true
         <h3>Unlock AI Chat + advanced models</h3>
         <div class="upgrade-plan-subtitle">Best for users who hit the free Chat limit and want Claude, GPT, Gemini, image, and vision tools in Sheets.</div>
         <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">29.99</span><span class="h6 text-muted ml-2">/ mo</span></div>
-        <div class="billed-annually">&nbsp;</div>
+        <div class="billed-annually"><strong>Best value:</strong> annual saves $240/year</div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mt-3" data-theme="none" data-product="875279" data-email="" data-custom-data="" data-passthrough="" data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Pro User</a>
         <ul class="upgrade-feature-list">
           <li class="upgrade-feature-limit">15,000 queries / month</li>
@@ -965,7 +965,7 @@ custom_hero: true
         <h3>Unlock AI Chat + advanced models</h3>
         <div class="upgrade-plan-subtitle">Best for users who hit the free Chat limit and want Claude, GPT, Gemini, image, and vision tools in Sheets.</div>
         <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ mo</span></div>
-        <div class="billed-annually"><strong>Save $240/year</strong> - pay $119.99 annually</div>
+        <div class="billed-annually"><strong>Best value for AI Chat:</strong> save $240/year - pay $119.99 annually</div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mt-3" data-theme="none" data-product="875278" data-email="" data-custom-data="" data-passthrough="" data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Pro User</a>
         <ul class="upgrade-feature-list">
           <li class="upgrade-feature-limit">17,000 queries / month</li>
@@ -1183,15 +1183,17 @@ custom_hero: true
     const normalizedReason = (reason || '').toLowerCase();
     if (normalizedReason.indexOf('chat_basic_premium_notice') !== -1) {
       return {
-        title: 'You hit the free AI Chat limit. Unlock more chat in Google Sheets.',
-        subtitle: 'Upgrade to Pro User to keep asking questions about your spreadsheet, clean data, summarize rows, and edit cells in plain English.',
+        title: 'Unlock AI Chat in Google Sheets',
+        subtitle: 'Upgrade to Pro User to keep asking questions about your spreadsheet, summarize rows, clean messy data, and edit cells in plain English.',
         reasonTitle: 'Recommended for AI Chat:',
-        reasonCopy: 'Choose Pro User for AI Chat and advanced models. Choose Business if you also need bulk enrichment, automation, and unlimited/high-volume workflows.',
+        reasonCopy: 'Choose Pro User for AI Chat and advanced models. Choose Business if you also need bulk enrichment, automation, and unlimited/high-volume workflows. Starter is for basic GPT formulas only.',
         recommendedPlan: 'pro',
-        primaryCta: 'Unlock AI Chat',
+        primaryCta: 'Unlock AI Chat with Pro',
         secondaryCta: 'Compare plans',
         secondaryHref: '#pricing',
-        showChatLimitCard: true
+        showChatLimitCard: true,
+        prioritizePlans: true,
+        proButtonCta: 'Unlock AI Chat with Pro'
       };
     }
     if (normalizedReason.indexOf('chat') !== -1) {
@@ -1240,6 +1242,20 @@ custom_hero: true
     };
   }
 
+  function prioritizePricingCardsForChat(shouldPrioritize) {
+    const orderByPlan = shouldPrioritize ? { pro: 1, business: 2, starter: 3, lifetime: 4 } : {};
+    document.querySelectorAll('.upgrade-plan-card').forEach(function(card) {
+      const plan = card.getAttribute('data-plan');
+      card.style.order = orderByPlan[plan] || '';
+    });
+  }
+
+  function updateProButtonCta(text) {
+    document.querySelectorAll('.upgrade-plan-card[data-plan="pro"] .paddle_button').forEach(function(button) {
+      button.textContent = text || 'Get Pro User';
+    });
+  }
+
   function applyReasonPersonalization() {
     const content = getReasonContent(reasonParam);
     document.getElementById('upgrade-title').textContent = content.title;
@@ -1268,6 +1284,9 @@ custom_hero: true
       document.getElementById('upgrade-email-label').textContent = 'Use the same Google email during purchase:';
       document.getElementById('upgrade-email').textContent = emailParam;
     }
+
+    prioritizePricingCardsForChat(!!content.prioritizePlans);
+    updateProButtonCta(content.proButtonCta);
 
     document.querySelectorAll('.upgrade-plan-card').forEach(function(card) {
       if (card.getAttribute('data-plan') === content.recommendedPlan) {
