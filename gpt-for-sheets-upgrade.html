@@ -732,6 +732,23 @@ custom_hero: true
     line-height: 1.5;
   }
 
+  .upgrade-chat-limit-card {
+    margin: 18px auto 0;
+    max-width: 820px;
+    padding: 14px 16px;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    background: #eff6ff;
+    color: #1e3a8a;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .upgrade-chat-limit-card strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
   .upgrade-steps {
     background: #f8fafc;
     padding: 48px 0;
@@ -828,8 +845,8 @@ custom_hero: true
         <strong id="upgrade-email"></strong>
       </div>
       <div class="upgrade-hero-actions">
-        <a href="#pricing" class="btn btn-primary btn-lg">Compare Plans</a>
-        <a href="#how-it-works" class="btn btn-outline-primary btn-lg">How upgrade works</a>
+        <a href="#pricing" id="upgrade-primary-cta" class="btn btn-primary btn-lg">Compare Plans</a>
+        <a href="#how-it-works" id="upgrade-secondary-cta" class="btn btn-outline-primary btn-lg">How upgrade works</a>
       </div>
       <div class="upgrade-social-proof" aria-label="GPT for Sheets social proof">
         <div class="upgrade-proof-pill">⭐⭐⭐⭐⭐ 4.8/5 Rating</div>
@@ -861,6 +878,11 @@ custom_hero: true
       <div class="upgrade-reason-card" id="upgrade-reason-card">
         <strong id="upgrade-reason-title">Recommended next step:</strong>
         <span id="upgrade-reason-copy">Choose the plan that fits how much you want to automate inside Google Sheets.</span>
+      </div>
+
+      <div class="upgrade-chat-limit-card" id="upgrade-chat-limit-card" hidden>
+        <strong>What Pro unlocks for AI Chat:</strong>
+        <span>Ask questions about your sheet, summarize rows, clean messy data, rewrite cells, and use Claude/GPT/Gemini models from the same sidebar.</span>
       </div>
     </div>
   </section>
@@ -919,14 +941,15 @@ custom_hero: true
       <div class="upgrade-plan-card text-center text1" data-plan="pro">
         <div class="upgrade-plan-badge">Most popular</div>
         <span class="h6 px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro User</span>
-        <h3>Unlock all AI providers</h3>
-        <div class="upgrade-plan-subtitle">For AI Chat, advanced models, image generation, and vision tools.</div>
+        <h3>Unlock AI Chat + advanced models</h3>
+        <div class="upgrade-plan-subtitle">Best for users who hit the free Chat limit and want Claude, GPT, Gemini, image, and vision tools in Sheets.</div>
         <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">29.99</span><span class="h6 text-muted ml-2">/ mo</span></div>
         <div class="billed-annually">&nbsp;</div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mt-3" data-theme="none" data-product="875279" data-email="" data-custom-data="" data-passthrough="" data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Pro User</a>
         <ul class="upgrade-feature-list">
           <li class="upgrade-feature-limit">15,000 queries / month</li>
           <li>Unlock AI Chat for spreadsheet data</li>
+          <li>Ask questions, summarize rows, clean data, and edit cells in plain English</li>
           <li>GPT-5, Claude, Gemini, Mistral, Perplexity, OpenRouter</li>
           <li>Image generation and vision tools</li>
           <li>Time-based automation triggers</li>
@@ -937,14 +960,15 @@ custom_hero: true
       <div class="upgrade-plan-card text-center text2" data-plan="pro">
         <div class="upgrade-plan-badge">Most popular</div>
         <span class="h6 px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Pro User</span>
-        <h3>Unlock all AI providers</h3>
-        <div class="upgrade-plan-subtitle">For AI Chat, advanced models, image generation, and vision tools.</div>
+        <h3>Unlock AI Chat + advanced models</h3>
+        <div class="upgrade-plan-subtitle">Best for users who hit the free Chat limit and want Claude, GPT, Gemini, image, and vision tools in Sheets.</div>
         <div class="h1 font-weight-normal text-primary text-center mb-0">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ mo</span></div>
         <div class="billed-annually"><strong>Save $240/year</strong> - pay $119.99 annually</div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mt-3" data-theme="none" data-product="875278" data-email="" data-custom-data="" data-passthrough="" data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Pro User</a>
         <ul class="upgrade-feature-list">
           <li class="upgrade-feature-limit">17,000 queries / month</li>
           <li>Unlock AI Chat for spreadsheet data</li>
+          <li>Ask questions, summarize rows, clean data, and edit cells in plain English</li>
           <li>GPT-5, Claude, Gemini, Mistral, Perplexity, OpenRouter</li>
           <li>Image generation and vision tools</li>
           <li>Time-based automation triggers</li>
@@ -964,6 +988,7 @@ custom_hero: true
           <li class="upgrade-feature-limit">Unlimited queries</li>
           <li>Everything in Pro User</li>
           <li>Google Maps, YouTube, SEO, and indexing tools</li>
+          <li>Clay-style lead enrichment inside Google Sheets</li>
           <li>Email sending and bulk workflow tools</li>
           <li>Apollo, Hunter, Prospeo, LeadMagic enrichment</li>
           <li>Priority support and faster response time</li>
@@ -982,6 +1007,7 @@ custom_hero: true
           <li class="upgrade-feature-limit">Unlimited queries</li>
           <li>Everything in Pro User</li>
           <li>Google Maps, YouTube, SEO, and indexing tools</li>
+          <li>Clay-style lead enrichment inside Google Sheets</li>
           <li>Email sending and bulk workflow tools</li>
           <li>Apollo, Hunter, Prospeo, LeadMagic enrichment</li>
           <li>Priority support and faster response time</li>
@@ -1141,6 +1167,19 @@ custom_hero: true
 
   function getReasonContent(reason) {
     const normalizedReason = (reason || '').toLowerCase();
+    if (normalizedReason.indexOf('chat_basic_premium_notice') !== -1) {
+      return {
+        title: 'You hit the free AI Chat limit. Unlock more chat in Google Sheets.',
+        subtitle: 'Upgrade to Pro User to keep asking questions about your spreadsheet, clean data, summarize rows, and edit cells in plain English.',
+        reasonTitle: 'Recommended for AI Chat:',
+        reasonCopy: 'Choose Pro User for AI Chat and advanced models. Choose Business if you also need bulk enrichment, automation, and unlimited/high-volume workflows.',
+        recommendedPlan: 'pro',
+        primaryCta: 'Unlock AI Chat',
+        secondaryCta: 'Compare plans',
+        secondaryHref: '#pricing',
+        showChatLimitCard: true
+      };
+    }
     if (normalizedReason.indexOf('chat') !== -1) {
       return {
         title: 'Unlock AI Chat for your spreadsheet',
@@ -1157,6 +1196,16 @@ custom_hero: true
         reasonTitle: 'Recommended for more requests:',
         reasonCopy: 'Choose Pro User for more monthly requests, AI Chat, advanced models, and image tools.',
         recommendedPlan: 'pro'
+      };
+    }
+    if (normalizedReason.indexOf('claude') !== -1) {
+      return {
+        title: 'Use Claude formulas at scale in Google Sheets',
+        subtitle: 'Choose Pro User to unlock Claude, GPT, Gemini, AI Chat, and advanced spreadsheet workflows after installing GPT for Sheets.',
+        reasonTitle: 'Recommended for Claude formulas:',
+        reasonCopy: 'Install GPT for Sheets first, then choose Pro User when you need Claude plus AI Chat and advanced models. Choose Business for bulk enrichment and automation.',
+        recommendedPlan: 'pro',
+        primaryCta: 'Compare Pro plans'
       };
     }
     if (normalizedReason.indexOf('business') !== -1 || normalizedReason.indexOf('enrich') !== -1 || normalizedReason.indexOf('automation') !== -1) {
@@ -1183,6 +1232,23 @@ custom_hero: true
     document.getElementById('upgrade-subtitle').textContent = content.subtitle;
     document.getElementById('upgrade-reason-title').textContent = content.reasonTitle;
     document.getElementById('upgrade-reason-copy').textContent = content.reasonCopy;
+
+    const primaryCta = document.getElementById('upgrade-primary-cta');
+    const secondaryCta = document.getElementById('upgrade-secondary-cta');
+    const chatLimitCard = document.getElementById('upgrade-chat-limit-card');
+
+    if (primaryCta && content.primaryCta) {
+      primaryCta.textContent = content.primaryCta;
+    }
+    if (secondaryCta && content.secondaryCta) {
+      secondaryCta.textContent = content.secondaryCta;
+    }
+    if (secondaryCta && content.secondaryHref) {
+      secondaryCta.setAttribute('href', content.secondaryHref);
+    }
+    if (chatLimitCard) {
+      chatLimitCard.hidden = !content.showChatLimitCard;
+    }
 
     if (emailParam && emailParam.trim() !== '') {
       document.getElementById('upgrade-email-label').textContent = 'Use the same Google email during purchase:';
