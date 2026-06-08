@@ -7,7 +7,7 @@ hero_title: "Claude Formulas for Lead Scoring in Google Sheets"
 hero_subtitle: "Copy Claude-style lead scoring formulas for Google Sheets and use GPT for Sheets to score fit, urgency, and personalization opportunities across prospect rows."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_hero&utm_content=install"
 secondary_cta_text: "Copy formulas"
 secondary_cta_url: "#copyable-formulas"
 inline_cta_title: "Run this workflow across every spreadsheet row"
@@ -57,7 +57,7 @@ formula_cards:
 
 Claude Formulas for Lead Scoring in Google Sheets is a spreadsheet-native workflow for B2B sales teams, recruiters, agencies, ecommerce sellers, and revenue operations teams. Instead of researching one row at a time or copying notes between tools, GPT for Sheets lets you run AI formulas across a full table of lead, company, role, source notes, ICP criteria, urgency signal, and offer and produce fit scores, urgency reasons, segment labels, personalization ideas, and QA flags in adjacent columns.
 
-**Fastest path:** [Install GPT for Sheets](/gpt-for-sheets/) → add your source columns → paste a formula from the formula section → review 10 rows → fill down the sheet. For pricing and plan details, go directly to [GPT for Sheets pricing](/gpt-for-sheets/#pricing).
+**Fastest path:** [Install GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=fastest_path) → add your source columns → paste a formula from the formula section → review 10 rows → fill down the sheet. For pricing and plan details, go directly to [GPT for Sheets pricing](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=pricing#pricing).
 
 This page is built for purchase-intent users who already know the value of spreadsheet workflows but need a faster way to research, score, clean, summarize, and personalize rows at scale.
 
@@ -90,7 +90,7 @@ A practical sheet for this workflow usually has these columns:
     <strong>Use AI formulas instead of one-off prompting</strong>
     <span>GPT for Sheets helps B2B sales teams, recruiters, agencies, ecommerce sellers, and revenue operations teams run this workflow across many rows while keeping source data, outputs, and QA labels in one spreadsheet.</span>
   </div>
-  <a class="seo-guide-btn seo-guide-btn-primary" href="/gpt-for-sheets/#pricing">See GPT for Sheets plans</a>
+  <a class="seo-guide-btn seo-guide-btn-primary" href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_inline_cta&utm_content=pricing#pricing">See GPT for Sheets plans</a>
 </div>
 
 ### Why run this in a spreadsheet?
@@ -120,8 +120,8 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 Use these related GPT for Sheets guides to connect this workflow with lead enrichment, research, SEO, CRM cleanup, and personalization:
 
-- [GPT for Sheets](/gpt-for-sheets/)
-- [pricing](/gpt-for-sheets/#pricing)
+- [GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links)
+- [pricing](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links_pricing#pricing)
 - [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
 - [OpenAI sales prospecting formulas](/openai-formulas-google-sheets-sales-prospecting/)
 - [enrichment formulas for founders](/google-sheets-enrichment-formulas-founders/)
@@ -148,7 +148,7 @@ No. Treat AI output as a draft. Keep source columns visible and use QA formulas 
 
 If your team already lives in spreadsheets, the fastest way to operationalize this workflow is to install GPT for Sheets and run the formulas directly where your rows already live.
 
-[Install GPT for Sheets](/gpt-for-sheets/) or [compare plans](/gpt-for-sheets/#pricing) to start turning rows into reviewed research, scores, summaries, drafts, and next actions.
+[Install GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=final_install) or [compare plans](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=final_pricing#pricing) to start turning rows into reviewed research, scores, summaries, drafts, and next actions.
 
 <script type="application/ld+json">
 {

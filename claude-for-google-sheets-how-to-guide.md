@@ -7,7 +7,7 @@ hero_title: "Claude for Google Sheets: Use Claude AI Formulas in Sheets"
 hero_subtitle: "Run Claude across spreadsheet rows for lead research, summaries, product data, emails, reviews, and analysis — without copy/paste or Apps Script."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Use Claude in Google Sheets"
-primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=hero_use_claude"
+primary_cta_url: "https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=hero_use_claude_install"
 secondary_cta_text: "Compare Pro plans"
 secondary_cta_url: "/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=hero_compare_pro&reason=claude"
 inline_cta_title: "Run Claude formulas across rows — without Apps Script"
@@ -59,7 +59,7 @@ Claude for Google Sheets lets you use Anthropic Claude formulas and bulk prompts
 
 **Best for:** long-form text analysis, customer review summaries, product descriptions, email personalization, research tables, and spreadsheet workflows where Claude's larger context window helps.
 
-**Fastest setup:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=fastest_setup) → open the sidebar in Google Sheets → choose Claude as the provider → run `=CLAUDE()` formulas across entire columns.
+**Fastest setup:** [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=fastest_setup_install) → open the sidebar in Google Sheets → choose Claude as the provider → run `=CLAUDE()` formulas across entire columns.
 
 ## How GPT for Sheets adds Claude to your spreadsheet
 
@@ -78,7 +78,7 @@ This is useful when you need Claude's long-context writing and analysis, but you
   <strong>Use Claude in Google Sheets without copy/paste</strong><br>
   Install GPT for Sheets to run Claude formulas across rows for lead enrichment, account research, long-form summaries, review analysis, and personalized outreach.
   <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=top_install"><strong>Install GPT for Sheets →</strong></a>
+    <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=top_install"><strong>Install GPT for Sheets →</strong></a>
     <a href="/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=top_compare_pro&reason=claude"><strong>Compare Pro plans for Claude →</strong></a>
   </div>
 </div>
@@ -102,9 +102,9 @@ This is useful when you need Claude's long-context writing and analysis, but you
 
 ## Use Grok, Claude, and GPT in Google Sheets
 
-Need AI formulas for hundreds or thousands of rows? [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=multi_model_section) to use Grok, Claude, ChatGPT, and Gemini directly inside Google Sheets for bulk prompts, data cleanup, content generation, and analysis.
+Need AI formulas for hundreds or thousands of rows? [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=multi_model_install) to use Grok, Claude, ChatGPT, and Gemini directly inside Google Sheets for bulk prompts, data cleanup, content generation, and analysis.
 
-**Start here:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=start_here) and run your first AI formula in minutes.
+**Start here:** [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=start_here_install) and run your first AI formula in minutes.
 
 ### Key Benefits:
 - **Intelligent Data Processing**: Handle complex text analysis, summarization, and transformation
@@ -120,7 +120,7 @@ Need AI formulas for hundreds or thousands of rows? [Install GPT for Sheets](htt
 1. **Open Google Sheets** in your web browser
 2. **Navigate to Extensions** → **Add-ons** → **Get add-ons**
 3. **Search for "GPT for Sheets"** in the Google Workspace Marketplace
-4. **Click Install** on the [GPT for Sheets Add-on](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=install_step)
+4. **Click Install** on the [GPT for Sheets Add-on](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=install_step)
 5. **Grant necessary permissions** when prompted
 6. **Complete installation** - the add-on will appear in your Extensions menu
 
@@ -184,9 +184,9 @@ The basic Claude formula syntax is:
 
 ## Run Claude Prompts Across Entire Columns
 
-The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=bulk_formula_section): install the add-on, choose Claude as your provider, then apply formulas like `=CLAUDE()` across entire columns.
+The fastest way to use Claude in Google Sheets is with [GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=bulk_formula_install): install the add-on, choose Claude as your provider, then apply formulas like `=CLAUDE()` across entire columns.
 
-**CTA:** [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=bulk_formula_cta) to run Claude, Grok, and GPT prompts in bulk inside Google Sheets.
+**CTA:** [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=bulk_formula_cta_install) to run Claude, Grok, and GPT prompts in bulk inside Google Sheets.
 
 ## 5+ Practical Examples
 
@@ -413,7 +413,7 @@ A: Use error handling in your formulas, process data in batches, and implement r
 
 ## Ready to Use Claude in Google Sheets?
 
-[Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=ready_section) to use Claude formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Claude, Grok, ChatGPT, Gemini, and OpenRouter providers from the same add-on.
+[Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=ready_section_install) to use Claude formulas, bulk prompts, and practical spreadsheet examples without writing Apps Script. You can also switch between Claude, Grok, ChatGPT, Gemini, and OpenRouter providers from the same add-on.
 
 ## Conclusion
 
@@ -421,7 +421,7 @@ Claude is especially useful when your spreadsheet contains long, messy, or nuanc
 
 Start with 10 sample rows, improve the prompt until the output is reliable, then fill the formula down your sheet. When the output matters — published copy, customer messages, or business research — add a review column before you use it.
 
-Ready to run Claude across your spreadsheet? [Install GPT for Sheets](https://docgpt.ai/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=conclusion) and create your first Claude formula in minutes.
+Ready to run Claude across your spreadsheet? [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=conclusion_install) and create your first Claude formula in minutes.
 
 ---
 

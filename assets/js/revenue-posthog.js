@@ -15,6 +15,19 @@
   var captureQueue = window.__docgptPosthogQueue = window.__docgptPosthogQueue || [];
   var queueInterval = null;
   var queueStartedAt = Date.now();
+  var lastPlanClickProps = null;
+  var lastPlanClickAt = 0;
+
+  var PRODUCT_PLAN_PROPS = {
+    // GPT for Sheets Paddle Classic product IDs.
+    '841733': { plan: 'Starter', plan_slug: 'starter', billing_period: 'monthly', price: 19.99, currency: 'USD' },
+    '841734': { plan: 'Starter', plan_slug: 'starter', billing_period: 'annual', price: 133.99, currency: 'USD' },
+    '875279': { plan: 'Pro User', plan_slug: 'pro', billing_period: 'monthly', price: 29.99, currency: 'USD' },
+    '875278': { plan: 'Pro User', plan_slug: 'pro', billing_period: 'annual', price: 119.99, currency: 'USD' },
+    '890230': { plan: 'Business', plan_slug: 'business', billing_period: 'monthly', price: 39.99, currency: 'USD' },
+    '862410': { plan: 'Business', plan_slug: 'business', billing_period: 'annual', price: 199.99, currency: 'USD' },
+    '875610': { plan: 'Lifetime', plan_slug: 'lifetime', billing_period: 'lifetime', price: 299, currency: 'USD' }
+  };
 
   var PRODUCT_CONFIGS = [
     { match: /^\/$/, product: 'home', surface: 'home', provider: null },
@@ -279,6 +292,11 @@
     return match ? Number(match[1]) : null;
   }
 
+  function lookupPlanProps(productId) {
+    productId = productId ? String(productId) : '';
+    return PRODUCT_PLAN_PROPS[productId] ? Object.assign({}, PRODUCT_PLAN_PROPS[productId]) : {};
+  }
+
   function inferBillingPeriod(button, planCard) {
     var value = button && (button.getAttribute('data-billing-period') || button.getAttribute('data-period'));
     if (value) return value;
@@ -315,9 +333,12 @@
 
   function getPlanProps(el) {
     var planCard = el && el.closest ? el.closest('.upgrade-plan-card, .pricing-card, .card, .price-card, .pricing-box, .box, [class*="plan"]') : null;
-    var plan = el ? (el.getAttribute('data-plan') || el.getAttribute('data-plan-name') || el.getAttribute('data-product')) : null;
+    var productId = el ? el.getAttribute('data-product') : null;
+    var lookup = lookupPlanProps(productId);
+    var planSlug = el ? (el.getAttribute('data-plan-slug') || (planCard ? planCard.getAttribute('data-plan') : null)) : null;
+    var plan = el ? (el.getAttribute('data-plan-name') || el.getAttribute('data-plan') || lookup.plan) : lookup.plan;
     if (!plan && planCard) {
-      var heading = planCard.querySelector('h2, h3, h4, .h5, .h6, .plan-name, .title, [class*="title"]');
+      var heading = planCard.querySelector('.plan-name, .h6, h2, h3, h4, .h5, .title, [class*="title"]');
       plan = heading ? heading.textContent.trim().replace(/\s+/g, ' ') : null;
     }
     var priceText = el ? (el.getAttribute('data-price') || '') : '';
@@ -327,21 +348,36 @@
     }
     var href = el && el.href ? el.href : (el ? el.getAttribute('href') : null);
     var inferredProvider = href && /buy\.stripe\.com/i.test(href) ? 'stripe' : (el && el.classList && el.classList.contains('paddle_button') ? 'paddle' : null);
-    return compact({
+    return compact(Object.assign({}, lookup, {
       provider: inferredProvider,
-      product_id: el ? el.getAttribute('data-product') : null,
-      plan_id: el ? (el.getAttribute('data-plan-id') || el.getAttribute('data-product') || el.getAttribute('data-plan')) : null,
+      product_id: productId,
+      plan_id: el ? (el.getAttribute('data-plan-id') || productId || el.getAttribute('data-plan')) : null,
+      plan_slug: planSlug || lookup.plan_slug,
       plan: plan,
-      billing_period: inferBillingPeriod(el, planCard),
-      price: parseMoney(priceText),
-      currency: priceText && priceText.indexOf('€') !== -1 ? 'EUR' : (priceText && priceText.indexOf('£') !== -1 ? 'GBP' : (priceText && priceText.indexOf('$') !== -1 ? 'USD' : null)),
+      plan_name: plan,
+      billing_period: inferBillingPeriod(el, planCard) || lookup.billing_period,
+      price: parseMoney(priceText) || lookup.price,
+      currency: priceText && priceText.indexOf('€') !== -1 ? 'EUR' : (priceText && priceText.indexOf('£') !== -1 ? 'GBP' : (priceText && priceText.indexOf('$') !== -1 ? 'USD' : lookup.currency)),
       coupon: getParam('coupon') || (el ? el.getAttribute('data-coupon') : null),
       cta_text: el ? (el.textContent || '').trim().replace(/\s+/g, ' ') : null,
       cta_location: inferCtaLocation(el, planCard),
       is_recommended: !!(planCard && planCard.classList && (planCard.classList.contains('is-recommended') || planCard.classList.contains('popular') || planCard.classList.contains('recommended'))),
       href_domain: href ? (function () { try { return new URL(href, window.location.origin).hostname.replace(/^www\./, ''); } catch (error) { return null; } })() : null,
       href_path: href ? (function () { try { return new URL(href, window.location.origin).pathname; } catch (error) { return href; } })() : null
-    });
+    }));
+  }
+
+  function rememberPlanClick(props) {
+    if (!props || (!props.plan && !props.product_id && !props.plan_id)) return;
+    lastPlanClickProps = Object.assign({}, props);
+    lastPlanClickAt = Date.now();
+  }
+
+  function recentPlanClickProps(productId) {
+    if (!lastPlanClickProps) return {};
+    if (Date.now() - lastPlanClickAt > 10 * 60 * 1000) return {};
+    if (productId && lastPlanClickProps.product_id && String(productId) !== String(lastPlanClickProps.product_id)) return {};
+    return Object.assign({}, lastPlanClickProps);
   }
 
   function isInstallLink(el, href, text) {
@@ -371,7 +407,10 @@
           if (isLandingSurface(cfg)) capture('landing_cta_click', props);
           if (isPricingSurface(cfg)) capture('pricing_surface_cta_click', props);
           if (install) capture('install_click', props);
-          if (checkout) captureRevenueAndPricing('revenue_plan_click', 'pricing_plan_click', props);
+          if (checkout) {
+            rememberPlanClick(props);
+            captureRevenueAndPricing('revenue_plan_click', 'pricing_plan_click', props);
+          }
           if (internalProductClick) capture('home_product_click', Object.assign({}, props, { target_path: props.href_path, target_product: productForPath(props.href_path) }));
           if (/buy\.stripe\.com/i.test(href)) {
             capture('checkout_loaded', Object.assign({}, props, { provider: 'stripe', checkout_open_method: 'stripe_link_click' }));
@@ -416,18 +455,22 @@
     var prices = checkout.prices && checkout.prices.customer ? checkout.prices.customer : {};
     var product = checkout.product || {};
     var coupon = checkout.coupon || {};
-    return compact({
+    var productId = product.id;
+    var fallbackPlanProps = Object.assign({}, lookupPlanProps(productId), recentPlanClickProps(productId));
+    return compact(Object.assign({}, fallbackPlanProps, {
       checkout_id: checkout.id,
-      product_id: product.id,
-      plan_id: product.id,
-      plan: product.name || product.id,
-      billing_period: product.billing_type || product.subscription_interval || null,
-      price: prices.total,
-      currency: prices.currency,
+      product_id: productId || fallbackPlanProps.product_id,
+      plan_id: productId || fallbackPlanProps.plan_id,
+      plan: product.name || fallbackPlanProps.plan || productId,
+      plan_name: product.name || fallbackPlanProps.plan_name || fallbackPlanProps.plan || productId,
+      plan_slug: fallbackPlanProps.plan_slug,
+      billing_period: product.billing_type || product.subscription_interval || fallbackPlanProps.billing_period || null,
+      price: prices.total || fallbackPlanProps.price,
+      currency: prices.currency || fallbackPlanProps.currency,
       coupon: coupon.coupon_code,
       has_email: !!(customer.email || getParam('email')),
       provider: 'paddle'
-    });
+    }));
   }
 
   function trackPaddleEvent(data) {

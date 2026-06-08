@@ -13,9 +13,18 @@ description: How to use Claude in Google Sheets in 2024
 
 Integrating Claude with Google Sheets enables you to handle thousands of cells simultaneously. By prompting Claude with your instructions, the Sheets add-on executes them, neatly organizing the output in rows and columns. Additionally, using the familiar Google Sheets interface eliminates the need to switch between different apps. Google Sheets is already excellent for teamwork, allowing real-time collaboration. With the Claude for Sheets add-on, this collaboration becomes even more productive.
 
+<div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
+  <strong>Use Claude directly in Google Sheets</strong><br>
+  Install GPT for Sheets to run Claude prompts across spreadsheet rows for summaries, translations, lead research, review analysis, and long-form text workflows without Apps Script.
+  <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_docs_guide&utm_campaign=docs_page_cta&utm_content=how_to_use_install"><strong>Install GPT for Sheets →</strong></a>
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_docs_guide&utm_campaign=docs_page_cta&utm_content=how_to_use_pricing#pricing"><strong>See plans for bulk rows →</strong></a>
+  </div>
+</div>
+
 ### How to Install Claude for Google Sheets Add-On
 
-1. Go to the [Claude for Sheets Add-On](https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252){:target="_blank"} on the Google Workspace Marketplace.
+1. Go to the [Claude for Sheets Add-On](https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252){:target="_blank"} on the Google Workspace Marketplace, or start from the [GPT for Sheets setup page](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_docs_guide&utm_campaign=docs_page_text_cta&utm_content=install_step).
 2. Click **Install**.
 
 ### Demo Claude for Google Sheets

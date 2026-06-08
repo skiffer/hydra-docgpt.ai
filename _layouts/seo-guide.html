@@ -3,10 +3,20 @@ layout: default
 ---
 {% assign hero_title = page.hero_title | default: page.heading | default: page.title %}
 {% assign hero_subtitle = page.hero_subtitle | default: page.description %}
+{% assign workspace_install_url = "https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=guide_cta&utm_campaign=install_gpt_sheets" %}
 {% assign primary_cta_text = page.primary_cta_text | default: "Install GPT for Sheets" %}
-{% assign primary_cta_url = page.primary_cta_url | default: "/gpt-for-sheets/" %}
-{% assign secondary_cta_text = page.secondary_cta_text | default: "See examples" %}
-{% assign secondary_cta_url = page.secondary_cta_url | default: "#practical-examples" %}
+{% assign primary_cta_url = page.primary_cta_url | default: workspace_install_url %}
+{% if primary_cta_text == "Install GPT for Sheets" and primary_cta_url contains "/gpt-for-sheets" %}
+	{% assign primary_cta_url = workspace_install_url %}
+{% endif %}
+{% assign secondary_cta_text = page.secondary_cta_text | default: "Compare paid plans" %}
+{% assign secondary_cta_url = page.secondary_cta_url | default: "/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=guide_cta&utm_campaign=paid_ready_traffic" %}
+{% assign paid_cta_text = page.paid_cta_text | default: "Compare paid plans" %}
+{% assign paid_cta_url = page.paid_cta_url | default: "/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=guide_cta&utm_campaign=paid_ready_traffic" %}
+{% assign secondary_is_paid = false %}
+{% if secondary_cta_url contains "/gpt-for-sheets-upgrade" or secondary_cta_url contains "#pricing" %}
+	{% assign secondary_is_paid = true %}
+{% endif %}
 {% assign guide_label = page.guide_product | default: "GPT for Sheets" %}
 
 <style>
@@ -352,6 +362,7 @@ layout: default
 					<div class="seo-guide-actions">
 						<a class="seo-guide-btn seo-guide-btn-primary" href="{{ primary_cta_url }}">{{ primary_cta_text }}</a>
 						<a class="seo-guide-btn seo-guide-btn-secondary" href="{{ secondary_cta_url }}">{{ secondary_cta_text }}</a>
+						{% unless secondary_is_paid %}<a class="seo-guide-btn seo-guide-btn-secondary" href="{{ paid_cta_url }}">{{ paid_cta_text }}</a>{% endunless %}
 					</div>
 					{% if page.guide_badges %}
 					<ul class="seo-guide-badges">
@@ -391,6 +402,11 @@ layout: default
 					<span>{{ page.inline_cta_text | default: "Install GPT for Sheets to run Claude, Grok, ChatGPT, Gemini, and 100+ models across spreadsheet rows without copy/paste." }}</span>
 				</div>
 				<a class="seo-guide-btn seo-guide-btn-primary" href="{{ primary_cta_url }}">{{ primary_cta_text }}</a>
+				{% if secondary_is_paid %}
+				<a class="seo-guide-btn seo-guide-btn-secondary" href="{{ secondary_cta_url }}">{{ secondary_cta_text }}</a>
+				{% else %}
+				<a class="seo-guide-btn seo-guide-btn-secondary" href="{{ paid_cta_url }}">{{ paid_cta_text }}</a>
+				{% endif %}
 			</div>
 			{% if page.formula_cards %}
 			<section class="seo-guide-formula-showcase" id="copyable-formulas">

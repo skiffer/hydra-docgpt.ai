@@ -7,7 +7,7 @@ hero_title: "Claude Formulas for Account Research in Google Sheets"
 hero_subtitle: "Claude Formulas for Account Research in Google Sheets is a spreadsheet-native workflow for B2B sales teams, account researchers, and agencies testing Claude-style prompts. GPT for Sheets lets you run AI prompts across rows of company, website notes, persona, trigger, competitor, and offer so each record produces account brief, pain hypothesis, talking points, risk flag without copying data into separate AI chats."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
-primary_cta_url: "/gpt-for-sheets/"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_hero&utm_content=install"
 secondary_cta_text: "Copy formulas"
 secondary_cta_url: "#copyable-formulas"
 inline_cta_title: "Run this workflow across every spreadsheet row"
@@ -61,7 +61,7 @@ formula_cards:
 
 Claude Formulas for Account Research in Google Sheets is a spreadsheet-native workflow for B2B sales teams, account researchers, and agencies testing Claude-style prompts. GPT for Sheets lets you run AI prompts across rows of company, website notes, persona, trigger, competitor, and offer so each record produces account brief, pain hypothesis, talking points, risk flag without copying data into separate AI chats.
 
-**Fastest path:** [Install GPT for Sheets](/gpt-for-sheets/) → add source columns → paste a formula from the formula section → review 10 sample rows → fill down the sheet.
+**Fastest path:** [Install GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=fastest_path) → add source columns → paste a formula from the formula section → review 10 sample rows → fill down the sheet.
 
 GPT for Sheets is useful here because use Claude-style row prompts for nuanced account research while keeping source data reviewable. You keep the original spreadsheet as the system of record, use formulas for repeatable prompts, and add a QA column before anything moves to a CRM, ecommerce platform, ad account, or outreach tool.
 
@@ -94,7 +94,7 @@ Build the sheet so every output can be traced back to source data. A practical t
     <strong>Use AI formulas instead of one-off prompting</strong>
     <span>GPT for Sheets helps B2B sales teams, account researchers, and agencies testing Claude-style prompts run Claude formula account research workflow prompts across many rows while keeping source data, outputs, and QA labels in one spreadsheet.</span>
   </div>
-  <a class="seo-guide-btn seo-guide-btn-primary" href="/gpt-for-sheets/#pricing">See GPT for Sheets plans</a>
+  <a class="seo-guide-btn seo-guide-btn-primary" href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_inline_cta&utm_content=pricing#pricing">See GPT for Sheets plans</a>
 </div>
 
 ## Copyable formula notes
@@ -127,8 +127,8 @@ This workflow uses Claude-style prompts as examples. GPT for Sheets is designed 
 
 Use these related GPT for Sheets resources to connect this workflow with lead enrichment, research, SEO, CRM cleanup, and personalization:
 
-- [GPT for Sheets product page](/gpt-for-sheets/)
-- [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
+- [GPT for Sheets product page](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links)
+- [GPT for Sheets pricing](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links_pricing#pricing)
 - [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
 - [/account-based-marketing-research-google-sheets-ai/](/account-based-marketing-research-google-sheets-ai/)
 - [/docs/translate-content-using-claude-from-google-sheets-in-2024/](/docs/translate-content-using-claude-from-google-sheets-in-2024/)
@@ -159,7 +159,7 @@ No. Treat AI output as a structured draft. Keep source columns, confidence notes
 
 If your team already lives in spreadsheets, the fastest way to operationalize this workflow is to install GPT for Sheets and run the formulas directly where your rows already live.
 
-[Install GPT for Sheets](/gpt-for-sheets/) or [compare plans](/gpt-for-sheets/#pricing) to start turning rows into reviewed research, scores, summaries, drafts, and next actions.
+[Install GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=final_install) or [compare plans](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=final_pricing#pricing) to start turning rows into reviewed research, scores, summaries, drafts, and next actions.
 
 <script type="application/ld+json">
 {
