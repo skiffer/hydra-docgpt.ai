@@ -246,19 +246,74 @@ layout: default
 		line-height: 1.55;
 		margin: 0 0 10px;
 	}
-	.seo-guide-formula-card pre {
+	.seo-guide-formula-card pre,
+	.seo-guide-content pre {
 		background: #0b1020;
+		border: 1px solid rgba(255,255,255,.10);
 		border-radius: 14px;
 		padding: 14px;
 		margin: 10px 0;
 		overflow-x: auto;
-		white-space: pre-wrap;
-		word-break: break-word;
+		white-space: pre;
+		word-break: normal;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: thin;
 	}
-	.seo-guide-formula-card code {
+	.seo-guide-formula-card pre code,
+	.seo-guide-content pre code {
 		color: #f7f7ff;
 		font-size: 13px;
-		line-height: 1.5;
+		line-height: 1.55;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+	}
+	.seo-guide-formula-block,
+	.seo-guide-copyable-code {
+		position: relative;
+		margin: 10px 0 12px;
+	}
+	.seo-guide-formula-toolbar,
+	.seo-guide-code-toolbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		margin-bottom: 7px;
+	}
+	.seo-guide-formula-label,
+	.seo-guide-code-label {
+		color: #6b7280;
+		font-size: 12px;
+		font-weight: 800;
+		letter-spacing: .02em;
+		text-transform: uppercase;
+	}
+	.seo-guide-formula-block pre,
+	.seo-guide-copyable-code pre {
+		margin: 0;
+	}
+	.seo-guide-inline-formula {
+		display: flex;
+		align-items: stretch;
+		gap: 8px;
+		max-width: 100%;
+		margin: 10px 0;
+	}
+	.seo-guide-inline-formula code {
+		display: block;
+		flex: 1 1 auto;
+		min-width: 0;
+		max-width: 100%;
+		background: #0b1020;
+		color: #f7f7ff;
+		border: 1px solid #202947;
+		border-radius: 12px;
+		padding: 10px 12px;
+		overflow-x: auto;
+		white-space: pre;
+		font-size: 13px;
+		line-height: 1.45;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+		-webkit-overflow-scrolling: touch;
 	}
 	.seo-guide-copy-formula {
 		border: 0;
@@ -266,11 +321,27 @@ layout: default
 		background: #5d3fd3;
 		color: #fff;
 		font-weight: 800;
-		padding: 9px 12px;
+		padding: 9px 13px;
 		cursor: pointer;
+		box-shadow: 0 8px 18px rgba(93, 63, 211, .22);
+		transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+		white-space: nowrap;
+	}
+	.seo-guide-copy-formula::before {
+		content: "📋";
+		margin-right: 6px;
 	}
 	.seo-guide-copy-formula:hover {
 		background: #4c2fc3;
+		box-shadow: 0 10px 22px rgba(93, 63, 211, .28);
+		transform: translateY(-1px);
+	}
+	.seo-guide-copy-formula.is-copied {
+		background: #059669;
+		box-shadow: 0 8px 18px rgba(5, 150, 105, .22);
+	}
+	.seo-guide-copy-formula.is-copied::before {
+		content: "✓";
 	}
 	.seo-guide-mobile-cta {
 		display: none;
@@ -298,6 +369,22 @@ layout: default
 		.seo-guide-content { padding: 26px 20px; margin-bottom: 92px; }
 		.seo-guide-inline-cta { display: block; }
 		.seo-guide-inline-cta .seo-guide-btn { margin-top: 14px; width: 100%; }
+		.seo-guide-inline-formula {
+			display: block;
+		}
+		.seo-guide-inline-formula .seo-guide-copy-formula {
+			width: 100%;
+			margin-top: 8px;
+		}
+		.seo-guide-formula-toolbar,
+		.seo-guide-code-toolbar {
+			align-items: stretch;
+			flex-direction: column;
+		}
+		.seo-guide-formula-toolbar .seo-guide-copy-formula,
+		.seo-guide-code-toolbar .seo-guide-copy-formula {
+			width: 100%;
+		}
 		.seo-guide-mobile-cta { display: block; }
 	}
 </style>
@@ -417,8 +504,13 @@ layout: default
 					<article class="seo-guide-formula-card">
 						<h3>{{ card.title }}</h3>
 						{% if card.setup %}<p>{{ card.setup }}</p>{% endif %}
-						<pre><code>{{ card.formula | escape }}</code></pre>
-						<button class="seo-guide-copy-formula" type="button">Copy formula</button>
+						<div class="seo-guide-formula-block">
+							<div class="seo-guide-formula-toolbar">
+								<span class="seo-guide-formula-label">Formula</span>
+								<button class="seo-guide-copy-formula" type="button">Copy formula</button>
+							</div>
+							<pre><code>{{ card.formula | escape }}</code></pre>
+						</div>
 						{% if card.note %}<p>{{ card.note }}</p>{% endif %}
 					</article>
 					{% endfor %}
@@ -434,19 +526,33 @@ layout: default
 
 <script>
 (function () {
-	function copyFormula(button) {
-		var card = button.closest('.seo-guide-formula-card');
-		var code = card && card.querySelector('code');
-		if (!code) return;
-		var formula = code.textContent.trim();
-		var original = button.innerText;
-		function done(label) {
-			button.innerText = label || 'Copied';
-			setTimeout(function () { button.innerText = original; }, 1400);
+	function setButtonState(button, label, copied) {
+		var original = button.getAttribute('data-copy-label') || button.innerText || 'Copy formula';
+		button.setAttribute('data-copy-label', original);
+		button.innerText = label;
+		button.classList.toggle('is-copied', !!copied);
+		setTimeout(function () {
+			button.innerText = original;
+			button.classList.remove('is-copied');
+		}, 1600);
+	}
+
+	function textFromCopyButton(button) {
+		var targetId = button.getAttribute('data-copy-target');
+		var target = targetId && document.getElementById(targetId);
+		if (!target) {
+			var block = button.closest('.seo-guide-formula-block, .seo-guide-copyable-code, .seo-guide-inline-formula, .seo-guide-formula-card');
+			target = block && block.querySelector('code');
 		}
+		return target ? target.textContent.trim() : '';
+	}
+
+	function copyText(button, text) {
+		if (!text) return;
+		function done(label, copied) { setButtonState(button, label, copied); }
 		function fallbackCopy() {
 			var textarea = document.createElement('textarea');
-			textarea.value = formula;
+			textarea.value = text;
 			textarea.setAttribute('readonly', '');
 			textarea.style.position = 'fixed';
 			textarea.style.left = '-9999px';
@@ -454,21 +560,78 @@ layout: default
 			textarea.select();
 			try {
 				document.execCommand('copy');
-				done('Copied');
+				done('Copied', true);
 			} catch (error) {
-				done('Select & copy');
+				done('Press Ctrl/Cmd+C', false);
 			}
 			document.body.removeChild(textarea);
 		}
-		done('Copied');
 		if (navigator.clipboard && navigator.clipboard.writeText) {
-			navigator.clipboard.writeText(formula).catch(fallbackCopy);
+			navigator.clipboard.writeText(text).then(function () {
+				done('Copied', true);
+			}).catch(fallbackCopy);
 		} else {
 			fallbackCopy();
 		}
 	}
+
+	function enhanceInlineFormula(code, index) {
+		if (code.closest('pre') || code.closest('.seo-guide-inline-formula')) return;
+		var text = code.textContent.trim();
+		var looksLikeFormula = text.charAt(0) === '=' || /^=(CLAUDE|GPT|GEMINI|GROK|OPENROUTER|AI|WEB|HUNTER|APOLLO|PROSPEO|LEADMAGIC)\s*\(/i.test(text);
+		if (text.length < 48) return;
+		if (!looksLikeFormula && !/[A-Z]+\d/.test(text)) return;
+
+		var wrapper = document.createElement('span');
+		wrapper.className = 'seo-guide-inline-formula';
+		var copy = document.createElement('button');
+		copy.className = 'seo-guide-copy-formula';
+		copy.type = 'button';
+		copy.innerText = 'Copy formula';
+		copy.setAttribute('aria-label', 'Copy formula to clipboard');
+		var id = 'seo-guide-inline-formula-' + index;
+		code.id = code.id || id;
+		copy.setAttribute('data-copy-target', code.id);
+		code.parentNode.insertBefore(wrapper, code);
+		wrapper.appendChild(code);
+		wrapper.appendChild(copy);
+	}
+
+	function enhanceCodeBlock(pre, index) {
+		if (pre.closest('.seo-guide-formula-block, .seo-guide-copyable-code')) return;
+		var code = pre.querySelector('code');
+		if (!code) return;
+		var wrapper = document.createElement('div');
+		wrapper.className = 'seo-guide-copyable-code';
+		var toolbar = document.createElement('div');
+		toolbar.className = 'seo-guide-code-toolbar';
+		var label = document.createElement('span');
+		label.className = 'seo-guide-code-label';
+		label.innerText = code.textContent.trim().charAt(0) === '=' ? 'Formula' : 'Code';
+		var copy = document.createElement('button');
+		copy.className = 'seo-guide-copy-formula';
+		copy.type = 'button';
+		copy.innerText = label.innerText === 'Formula' ? 'Copy formula' : 'Copy code';
+		copy.setAttribute('aria-label', copy.innerText + ' to clipboard');
+		var id = 'seo-guide-code-block-' + index;
+		code.id = code.id || id;
+		copy.setAttribute('data-copy-target', code.id);
+		toolbar.appendChild(label);
+		toolbar.appendChild(copy);
+		pre.parentNode.insertBefore(wrapper, pre);
+		wrapper.appendChild(toolbar);
+		wrapper.appendChild(pre);
+	}
+
 	document.addEventListener('click', function (event) {
-		if (event.target.matches('.seo-guide-copy-formula')) copyFormula(event.target);
+		var button = event.target.closest('.seo-guide-copy-formula');
+		if (!button) return;
+		copyText(button, textFromCopyButton(button));
+	});
+
+	document.addEventListener('DOMContentLoaded', function () {
+		document.querySelectorAll('.seo-guide-content :not(pre) > code').forEach(enhanceInlineFormula);
+		document.querySelectorAll('.seo-guide-content pre').forEach(enhanceCodeBlock);
 	});
 })();
 </script>
