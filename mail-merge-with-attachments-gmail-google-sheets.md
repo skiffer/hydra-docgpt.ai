@@ -1,12 +1,12 @@
 ---
 title: "Mail Merge with Attachments in Gmail and Google Sheets"
 permalink: /mail-merge-with-attachments-gmail-google-sheets/
-description: "Learn how to plan a Gmail and Google Sheets mail merge with attachments: prepare files, match recipients, test delivery, avoid wrong-file mistakes, and send responsibly."
+description: "Send personalized Gmail mail merge campaigns with attachments from Google Sheets: ebook PDFs, meal plans, invoices, certificates, proposals, client resources, tracking, and careful recipient-file testing."
 ---
 
 # Mail Merge with Attachments in Gmail and Google Sheets
 
-A **mail merge with attachments** is useful when each recipient needs a personalized email plus a file: proposals, invoices, certificates, recruiting packets, event documents, customer notices, or segmented resources.
+A **mail merge with attachments** is useful when each recipient needs a personalized email plus a file: ebook PDFs, meal plans, client handouts, proposals, invoices, certificates, recruiting packets, event documents, customer notices, or segmented resources.
 
 **Mail Merge for Gmail and Google Sheets** helps teams run personalized Gmail campaigns from Sheets, including attachment-based workflows where supported. Because attachments can include sensitive or recipient-specific files, this workflow needs extra testing before bulk sending.
 
@@ -16,6 +16,7 @@ A **mail merge with attachments** is useful when each recipient needs a personal
 
 Attachment campaigns are common when the file is part of the message value:
 
+- creators, nutritionists, psychologists, and coaches sending ebook PDFs, meal plans, worksheets, or client handouts;
 - sales teams sending proposals or one-pagers;
 - recruiters sending role details or candidate packets;
 - finance/admin teams sending notices or invoice-related documents;
@@ -107,6 +108,36 @@ Attached is the information for {{event_name}}. Please review {{specific_note}} 
 See you soon,
 {{sender_name}}
 
+## Ebook, nutrition, and client-resource examples
+
+Attachment campaigns are often tied to revenue because the file is the thing the audience wants. Examples:
+
+### Ebook launch
+
+Subject: `Your {{ebook_title}} guide`
+
+Hi {{first_name}},
+
+Here is the {{ebook_title}} guide we talked about. I included the section on {{topic_interest}} because it is most relevant to your goal.
+
+If you want the next checklist or workshop invite, just reply and I will send it.
+
+### Nutrition or coaching handout
+
+Subject: `Your {{program_name}} resource`
+
+Hi {{first_name}},
+
+Attached is the {{resource_name}} for {{goal_or_segment}}. Start with {{first_step}} and let me know if you want the follow-up worksheet.
+
+### Invoice or client update
+
+Subject: `{{document_type}} for {{account}}`
+
+Hi {{first_name}},
+
+Attached is the {{document_type}} for {{account}}. Please review {{specific_note}} before {{deadline}}.
+
 ## Compliance and deliverability cautions
 
 Attachment campaigns deserve extra care:
@@ -124,6 +155,8 @@ Attachment campaigns deserve extra care:
 
 - [Mail Merge for Gmail and Google Sheets](/mail-merge-for-gmail-and-sheets/)
 - [How to run a Gmail mail merge from Google Sheets](/gmail-mail-merge-from-google-sheets/)
+- [Promote an ebook with Gmail mail merge](/promote-ebook-gmail-mail-merge-google-sheets/)
+- [Email marketing for nutritionists with Gmail and Google Sheets](/email-marketing-for-nutritionists-google-sheets-gmail/)
 - [How to send emails from Google Sheets](/send-emails-from-google-sheets-guide/)
 - [Mail Merge privacy information](/privacy_mail_merge/)
 
