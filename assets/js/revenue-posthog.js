@@ -473,11 +473,18 @@
     }));
   }
 
+  function currentOpenMethod() {
+    if (window.__checkoutOpenMethod) return window.__checkoutOpenMethod;
+    if (lastPlanClickAt && (Date.now() - lastPlanClickAt < 8000)) return 'plan_click';
+    return 'auto_landing';
+  }
+
   function trackPaddleEvent(data) {
     try {
       if (!data || !data.event) return;
       var props = paddlePropsFromEvent(data);
       props.checkout_event_name = data.event;
+      props.checkout_open_method = currentOpenMethod();
       if (data.event === 'Checkout.Loaded') capture('checkout_loaded', props);
       if (data.event === 'Checkout.Customer.Created') capture('checkout_customer_created', props);
       if (data.event === 'Checkout.Complete') capture('checkout_complete_frontend', props);

@@ -346,6 +346,10 @@ custom_hero: true
         coupon_code: couponParam || null
       });
     }
+    window.__checkoutOpenMethod = 'auto_landing';
+    if (window.posthog && posthog.capture) {
+      posthog.capture('checkout_auto_opened', { plan_id: productId, has_email: !!emailParam, reason: reasonParam });
+    }
     Paddle.Checkout.open({
       product: productId,
       email: emailParam || '',
@@ -1319,6 +1323,7 @@ custom_hero: true
 
     document.querySelectorAll('.paddle_button').forEach(function(button) {
       button.addEventListener('click', function() {
+        window.__checkoutOpenMethod = 'plan_click';
         const product = this.getAttribute('data-product');
         const planCard = this.closest('.upgrade-plan-card');
         const planName = planCard ? planCard.querySelector('.h6').textContent : 'GPT for Sheets Plan';
@@ -1333,13 +1338,11 @@ custom_hero: true
             reason: reasonParam
           });
         }
-        if (typeof posthog !== 'undefined' && posthog.capture) {
-          posthog.capture('installed_upgrade_plan_click', {
-            plan: planName,
-            product: product,
-            reason: reasonParam,
-            has_email: !!emailParam
-          });
+        var planClickProps = { plan: planName, plan_id: product, reason: reasonParam, has_email: !!emailParam };
+        if (window.DocGPTRevenue && DocGPTRevenue.capture) {
+          DocGPTRevenue.capture('installed_upgrade_plan_click', planClickProps);
+        } else if (typeof posthog !== 'undefined' && posthog.capture) {
+          posthog.capture('installed_upgrade_plan_click', planClickProps);
         }
       });
     });
