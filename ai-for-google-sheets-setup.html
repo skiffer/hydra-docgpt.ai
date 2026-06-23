@@ -1,0 +1,1091 @@
+---
+title: "GPT for Sheets Setup: AI API Keys + Formula Examples (GPT-5.5, Claude, Gemini, Grok)"
+description: "Set up GPT for Sheets in Google Sheets: connect OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral & Perplexity API keys, plus 50+ ready-to-copy AI formulas for data cleanup, web research, images, lead enrichment and SEO."
+custom_hero: true
+---
+
+<style>
+  .sak {
+    --sak-primary: #017BFE;
+    --sak-primary-dark: #005fc4;
+    --sak-green: #188038;
+    --sak-green-soft: #e7f4ec;
+    --sak-ink: #1f2937;
+    --sak-muted: #5f6368;
+    --sak-soft: #f5f9ff;
+    --sak-border: #dbe7ff;
+    --sak-amber-bg: #fff8e6;
+    --sak-amber-border: #ffe3a3;
+    --sak-amber-ink: #7a5200;
+    color: var(--sak-ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .sak * { box-sizing: border-box; }
+  .sak .sak-container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- HERO ---------- */
+  .sak-hero {
+    text-align: center;
+    padding: 52px 0 30px;
+    background: linear-gradient(180deg, #eef6ff 0%, #ffffff 92%);
+    border-bottom: 1px solid #eef2f7;
+  }
+  .sak-confirm-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 7px 14px; border-radius: 999px;
+    background: #fff; color: var(--sak-primary-dark);
+    font-weight: 700; font-size: 14px; margin-bottom: 18px;
+    border: 1px solid var(--sak-border);
+  }
+  .sak-confirm-pill.is-paid { background: var(--sak-green-soft); color: var(--sak-green); border-color: #cfe9d8; }
+  .sak-confirm-pill .sak-check-circle { display: none; }
+  .sak-confirm-pill.is-paid .sak-check-circle { display: inline-flex; }
+  .sak-check-circle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--sak-green); color: #fff; font-size: 12px; flex: 0 0 auto;
+  }
+  .sak-hero h1 {
+    max-width: 820px; margin: 0 auto 14px;
+    font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.08; font-weight: 800; letter-spacing: -0.01em;
+  }
+  .sak-hero-sub {
+    max-width: 680px; margin: 0 auto 22px; color: var(--sak-muted); font-size: 1.15rem;
+  }
+  .sak-hero-sub strong { color: var(--sak-ink); }
+  .sak-pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-top: 6px; }
+  .sak-pill {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 7px 13px; border-radius: 999px; background: #fff; border: 1px solid var(--sak-border);
+    font-size: 13.5px; font-weight: 700; color: #3c4043; box-shadow: 0 4px 14px rgba(1,123,254,.07);
+  }
+
+  /* ---------- SECTIONS ---------- */
+  .sak-section { padding: 40px 0; }
+  .sak-section.alt { background: #f8fafc; }
+  .sak-eyebrow {
+    display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--sak-primary-dark); margin-bottom: 8px;
+  }
+  .sak-section h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); font-weight: 800; margin: 0 0 8px; }
+  .sak-section-lead { color: var(--sak-muted); max-width: 720px; margin: 0 0 24px; }
+
+  /* ---------- ACTIVATE CARD ---------- */
+  .sak-activate {
+    background: #fff; border: 1px solid var(--sak-border); border-radius: 18px;
+    padding: 28px; box-shadow: 0 18px 50px rgba(1,123,254,.10);
+  }
+  .sak-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: step; }
+  .sak-step { position: relative; padding-left: 4px; }
+  .sak-step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--sak-primary); color: #fff; font-weight: 800; font-size: 17px; margin-bottom: 12px;
+  }
+  .sak-step h3 { font-size: 1.05rem; font-weight: 800; margin: 0 0 6px; }
+  .sak-step p { margin: 0; color: var(--sak-muted); font-size: .95rem; }
+  .sak-step code, .sak code {
+    background: #0f172a0d; padding: 2px 7px; border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; color: #0b3d91;
+  }
+  .sak-menu-path { font-weight: 700; color: var(--sak-ink); }
+
+  .sak-shot {
+    display: block; width: 100%; max-width: 560px; margin: 22px auto 0;
+    border: 1px solid #e6eaf0; border-radius: 12px; box-shadow: 0 10px 30px rgba(15,23,42,.08);
+  }
+  .sak-email-note {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-top: 22px; padding: 13px 16px; border-radius: 12px;
+    background: var(--sak-amber-bg); border: 1px solid var(--sak-amber-border); color: var(--sak-amber-ink);
+    font-weight: 600; font-size: .95rem;
+  }
+
+  .sak-cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .sak-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 13px 22px; border-radius: 10px; font-weight: 800; font-size: 1rem;
+    text-decoration: none; cursor: pointer; border: 2px solid transparent; transition: transform .08s ease, box-shadow .2s ease;
+  }
+  .sak-btn:hover { transform: translateY(-1px); text-decoration: none; }
+  .sak-btn-primary { background: var(--sak-primary); color: #fff !important; box-shadow: 0 10px 24px rgba(1,123,254,.28); }
+  .sak-btn-primary:hover { background: var(--sak-primary-dark); color: #fff !important; }
+  .sak-btn-ghost { background: #fff; color: var(--sak-primary-dark) !important; border-color: var(--sak-border); }
+
+  /* ---------- KEY CLARITY ---------- */
+  .sak-clarity {
+    display: flex; gap: 16px; align-items: flex-start;
+    background: var(--sak-soft); border: 1px solid var(--sak-border); border-radius: 16px; padding: 22px 24px;
+  }
+  .sak-clarity.is-required { background: #fff7ed; border-color: #fed7aa; }
+  .sak-clarity-icon {
+    flex: 0 0 auto; width: 44px; height: 44px; border-radius: 12px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #fff; border: 1px solid var(--sak-border); font-size: 22px;
+  }
+  .sak-clarity h3 { margin: 0 0 6px; font-size: 1.15rem; font-weight: 800; }
+  .sak-clarity p { margin: 0; color: var(--sak-muted); }
+
+  /* ---------- PROVIDER TABS ---------- */
+  .sak-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .sak-tab {
+    padding: 9px 16px; border-radius: 999px; border: 1px solid var(--sak-border);
+    background: #fff; color: #3c4043; font-weight: 700; font-size: .92rem; cursor: pointer; transition: all .15s ease;
+  }
+  .sak-tab:hover { border-color: var(--sak-primary); }
+  .sak-tab.is-active { background: var(--sak-primary); color: #fff; border-color: var(--sak-primary); }
+  .sak-panel { display: none; }
+  .sak-panel.is-active { display: block; animation: sak-fade .2s ease; }
+  @keyframes sak-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+  .sak-provider-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 26px; align-items: start; }
+  .sak-ol { margin: 0; padding-left: 0; list-style: none; counter-reset: pstep; }
+  .sak-ol li {
+    position: relative; padding: 0 0 14px 40px; counter-increment: pstep;
+  }
+  .sak-ol li:before {
+    content: counter(pstep); position: absolute; left: 0; top: 0;
+    width: 26px; height: 26px; border-radius: 50%; background: #e8f1ff; color: var(--sak-primary-dark);
+    font-weight: 800; font-size: 13px; display: inline-flex; align-items: center; justify-content: center;
+  }
+  .sak-ol li:not(:last-child):after {
+    content: ""; position: absolute; left: 12.5px; top: 28px; bottom: 4px; width: 2px; background: #e8f1ff;
+  }
+  .sak-provider-side .sak-shot { margin-top: 0; }
+  .sak-key-link { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px; font-weight: 700; }
+  .sak-models { font-size: .85rem; color: var(--sak-muted); margin: 0 0 14px; }
+  .sak-models b { color: var(--sak-ink); font-weight: 700; }
+  .sak-test {
+    margin-top: 16px; padding: 12px 14px; border-radius: 10px;
+    background: #0b1220; color: #e6edf3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9rem;
+  }
+  .sak-test-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #7ee787; flex: 0 0 auto;
+  }
+  .sak-test code { flex: 1 1 200px; word-break: break-word; background: rgba(255,255,255,.10); color: #e6edf3; padding: 3px 8px; border-radius: 6px; }
+  .sak-copy {
+    flex: 0 0 auto; margin-left: auto; cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 12px; font-weight: 700; color: #e6edf3;
+    background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.20);
+    border-radius: 7px; padding: 5px 12px; transition: background .15s ease, color .15s ease;
+  }
+  .sak-copy:hover { background: rgba(255,255,255,.20); }
+  .sak-copy.copied { background: #7ee787; color: #08210f; border-color: #7ee787; }
+
+  .sak-enrich-note {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--sak-soft); border: 1px solid var(--sak-border); border-radius: 14px;
+    padding: 16px 18px; margin-bottom: 22px; color: var(--sak-muted); font-size: .95rem; line-height: 1.55;
+  }
+  .sak-enrich-note b { color: var(--sak-ink); }
+  .sak-enrich-note code { background: #0f172a0d; padding: 1px 6px; border-radius: 5px; font-size: .85em; color: #0b3d91; }
+  .sak-enrich-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .sak-enrich-card {
+    border: 1px solid var(--sak-border); border-radius: 14px; background: #fff;
+    padding: 18px 20px; box-shadow: 0 8px 26px rgba(15, 23, 42, .05);
+  }
+  .sak-enrich-card h3 { font-size: 1.02rem; font-weight: 800; margin: 0 0 2px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .sak-enrich-badge { font-weight: 700; color: var(--sak-green); font-size: .72rem; background: var(--sak-green-soft); border-radius: 999px; padding: 2px 9px; }
+  .sak-enrich-card .sak-test { margin-top: 10px; font-size: .82rem; }
+  @media (max-width: 860px) { .sak-enrich-grid { grid-template-columns: 1fr; } }
+
+  .sak-install {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    padding: 15px 18px; border: 1px solid var(--sak-border); border-radius: 14px; background: var(--sak-soft);
+  }
+  .sak-install-icon {
+    flex: 0 0 auto; width: 42px; height: 42px; border-radius: 11px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #fff; border: 1px solid var(--sak-border); font-size: 20px;
+  }
+  .sak-install-text { flex: 1 1 280px; display: flex; flex-direction: column; gap: 2px; }
+  .sak-install-text strong { font-size: 1.02rem; color: var(--sak-ink); }
+  .sak-install-text span { color: var(--sak-muted); font-size: .94rem; }
+  .sak-install .sak-btn { flex: 0 0 auto; }
+  @media (max-width: 600px) { .sak-install { align-items: flex-start; } .sak-install .sak-btn { width: 100%; } }
+
+  /* ---------- PRO TIP ---------- */
+  .sak-tip {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--sak-amber-bg); border: 1px solid var(--sak-amber-border); border-radius: 14px; padding: 18px 20px;
+  }
+  .sak-tip .sak-clarity-icon { background: #fff; border-color: var(--sak-amber-border); }
+  .sak-tip h3 { margin: 0 0 5px; font-size: 1.05rem; font-weight: 800; color: var(--sak-amber-ink); }
+  .sak-tip p { margin: 0; color: #6b5119; font-size: .95rem; }
+
+  /* ---------- FAQ / TROUBLESHOOT ---------- */
+  .sak-faq details {
+    background: #fff; border: 1px solid #e6eaf0; border-radius: 12px; padding: 16px 18px; margin-bottom: 12px;
+  }
+  .sak-faq summary {
+    cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  .sak-faq summary::-webkit-details-marker { display: none; }
+  .sak-faq summary:after { content: "+"; font-size: 1.4rem; color: var(--sak-primary); font-weight: 400; }
+  .sak-faq details[open] summary:after { content: "\2013"; }
+  .sak-faq details p { margin: 12px 0 0; color: var(--sak-muted); }
+  .sak-faq a { font-weight: 600; }
+  .sak-faq-cat { font-size: .8rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--sak-primary-dark); margin: 26px 0 10px; }
+  .sak-faq-cat:first-of-type { margin-top: 4px; }
+  .sak-faq code { background: #0f172a0d; padding: 1px 6px; border-radius: 5px; font-size: .88em; color: #0b3d91; }
+
+  @media (max-width: 860px) {
+    .sak-provider-grid { grid-template-columns: 1fr; }
+    .sak-provider-side { order: -1; }
+  }
+  @media (max-width: 680px) {
+    .sak-steps { grid-template-columns: 1fr; gap: 22px; }
+    .sak-clarity, .sak-tip { flex-direction: column; }
+    .sak-hero { padding-top: 36px; }
+  }
+</style>
+
+<main class="sak">
+
+  <!-- HERO -->
+  <section class="sak-hero">
+    <div class="sak-container">
+      <div class="sak-confirm-pill" id="sak-confirm-pill">
+        <span class="sak-check-circle">&#10003;</span>
+        <span id="sak-confirm-label">GPT for Sheets &middot; Google Workspace add-on</span>
+      </div>
+      <h1 id="sak-title">Set up AI keys &amp; formulas in GPT for Sheets</h1>
+      <p class="sak-hero-sub" id="sak-subtitle">
+        Connect OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral &amp; Perplexity inside Google Sheets &mdash; then run ready-to-copy AI formulas for data cleanup, web research, images, lead enrichment and SEO. Activation takes about 30 seconds.
+      </p>
+      <div class="sak-pills" id="sak-pills">
+        <span class="sak-pill">&#129302; GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3, DeepSeek V4, Mistral, Perplexity &amp; OpenRouter</span>
+        <span class="sak-pill">&#127912; Image generation &amp; vision tools</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOT INSTALLED YET? -->
+  <section style="padding: 26px 0 0;">
+    <div class="sak-container">
+      <div class="sak-install">
+        <div class="sak-install-icon">&#129513;</div>
+        <div class="sak-install-text">
+          <strong>Don&rsquo;t see the add-on in Google Sheets yet?</strong>
+          <span>Install GPT for Sheets from Google Workspace, then come back here to activate your plan.</span>
+        </div>
+        <a class="sak-btn sak-btn-primary" href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank" rel="noopener">Install from Google Workspace &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 1: ACTIVATE -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Step 1 &middot; Required</span>
+      <h2>Activate your plan in 30 seconds</h2>
+      <p class="sak-section-lead">
+        Your subscription is already on our side. The only thing left is to tell the add-on to sync it &mdash;
+        a single click inside Google Sheets.
+      </p>
+
+      <div class="sak-activate">
+        <div class="sak-steps">
+          <div class="sak-step">
+            <div class="sak-step-num">1</div>
+            <h3>Open a Google Sheet</h3>
+            <p>Use a spreadsheet you own (or create a new one). Sign in with the same Google account.</p>
+          </div>
+          <div class="sak-step">
+            <div class="sak-step-num">2</div>
+            <h3>Click Refresh Account</h3>
+            <p><span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account.</span> This pulls in your new paid plan.</p>
+          </div>
+          <div class="sak-step">
+            <div class="sak-step-num">3</div>
+            <h3>Start using AI</h3>
+            <p>Type <code>=GPT("Write a tagline for a coffee shop")</code> in any cell &mdash; you&rsquo;re live.</p>
+          </div>
+        </div>
+
+        <img class="sak-shot" src="/images/setup-api-keys-1.png" alt="Refresh Account button location under Extensions, GPT for Sheets" loading="lazy">
+
+        <div class="sak-email-note">
+          <span>&#128231;</span>
+          <span id="sak-email-note">Tip: use the <strong>same Google email you subscribe with</strong>, so the add-on recognises your plan.</span>
+        </div>
+
+        <div class="sak-cta-row">
+          <a class="sak-btn sak-btn-primary" href="https://sheets.google.com/" target="_blank" rel="noopener">Open Google Sheets &rarr;</a>
+          <a class="sak-btn sak-btn-ghost" href="#troubleshooting">Account not updating?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY CLARITY -->
+  <section class="sak-section alt">
+    <div class="sak-container">
+      <div class="sak-clarity" id="sak-clarity">
+        <div class="sak-clarity-icon" id="sak-clarity-icon">&#128161;</div>
+        <div>
+          <h3 id="sak-clarity-title">Do I need my own API key? No &mdash; not to get started.</h3>
+          <p id="sak-clarity-copy">
+            Your plan comes with AI credits, so GPT formulas work right away. Connecting your own
+            OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity, or OpenRouter key is <strong>optional</strong> &mdash;
+            useful if you want unlimited model choice or to run on your own provider billing. The steps below are there when you want them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEP 2: OPTIONAL KEYS -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow" id="sak-keys-eyebrow">Step 2 &middot; Optional</span>
+      <h2>Connect your own AI key</h2>
+      <p class="sak-section-lead">
+        Want to use your own provider account or unlock every model? Pick a provider and follow the steps.
+        Each one takes about two minutes.
+      </p>
+
+      <div class="sak-tabs" role="tablist">
+        <button class="sak-tab is-active" data-tab="openai" role="tab">OpenAI (GPT)</button>
+        <button class="sak-tab" data-tab="claude" role="tab">Claude</button>
+        <button class="sak-tab" data-tab="gemini" role="tab">Gemini</button>
+        <button class="sak-tab" data-tab="grok" role="tab">Grok</button>
+        <button class="sak-tab" data-tab="deepseek" role="tab">DeepSeek</button>
+        <button class="sak-tab" data-tab="mistral" role="tab">Mistral</button>
+        <button class="sak-tab" data-tab="perplexity" role="tab">Perplexity</button>
+        <button class="sak-tab" data-tab="openrouter" role="tab">OpenRouter</button>
+      </div>
+
+      <!-- OpenAI -->
+      <div class="sak-panel is-active" data-panel="openai">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener nofollow">Create an OpenAI key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> GPT-5.5, GPT-5.5 Pro / Thinking, GPT-5.4 mini / nano, plus o-series reasoning (o3, o4-mini).</p>
+            <ul class="sak-ol">
+              <li>Sign in to the OpenAI platform and click <strong>Create new secret key</strong>.</li>
+              <li>Make sure your OpenAI billing has at least <strong>$1</strong> (add ~$5 to reach Tier&nbsp;1 and unlock the latest GPT-5 models). This is billed by OpenAI, separate from your DocGPT plan, and usage cost is typically very low.</li>
+              <li>Copy the key to your clipboard.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up OpenAI Key</strong>.</li>
+              <li>Paste the key, click <strong>Check</strong> to validate, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>GPT-5.4 mini / nano</strong> (fast &amp; cheap, ideal for bulk rows) or <strong>GPT-5.5</strong> (top quality &amp; reasoning, slower &amp; pricier).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=GPT("Write a catchy title for a coffee shop")</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/check-and-save-api-key.png" alt="Paste your API key and click Check to validate" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Claude -->
+      <div class="sak-panel" data-panel="claude">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener nofollow">Create a Claude (Anthropic) key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> Claude Opus 4.8, Claude Sonnet 4.6, Claude Haiku 4.5.</p>
+            <ul class="sak-ol">
+              <li>Sign in to the Anthropic console and generate an API key (<a href="https://docs.anthropic.com/claude/reference/getting-started-with-the-api" target="_blank" rel="noopener nofollow">getting-started guide</a>).</li>
+              <li>Copy the key.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the Claude section.</li>
+              <li>Paste the Claude key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>Claude Sonnet 4.6</strong> (faster &amp; cheaper, great for spreadsheet work) or <strong>Claude Opus 4.8</strong> (deep analysis, but slower &amp; more expensive).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=CLAUDE("Summarize this in one sentence: " &amp; A1)</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Gemini -->
+      <div class="sak-panel" data-panel="gemini">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener nofollow">Create a Gemini key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> Gemini 3.5 Pro, Gemini 3.5 Flash, Gemini 3.1 Pro, Gemini 3 Flash.</p>
+            <ul class="sak-ol">
+              <li>Open Google AI Studio and create an API key.</li>
+              <li>Copy the key.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the Gemini section.</li>
+              <li>Paste the Gemini key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>Gemini 3.5 Flash</strong> (fast &amp; cheap, great for bulk) or <strong>Gemini 3.5 Pro</strong> (most capable, deeper reasoning).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=GEMINI("List 3 blog title ideas about " &amp; A1)</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Grok -->
+      <div class="sak-panel" data-panel="grok">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://console.x.ai/" target="_blank" rel="noopener nofollow">Create a Grok (xAI) key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> Grok 4.3, Grok 4.2, Grok 4 Heavy.</p>
+            <ul class="sak-ol">
+              <li>Sign in to the xAI console and create an API key (add a little credit to your xAI account if prompted).</li>
+              <li>Copy the key.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the Grok section.</li>
+              <li>Paste the Grok key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>Grok 4.3</strong> (best all-round, fast &mdash; recommended) or <strong>Grok 4 Heavy</strong> (deepest reasoning, slower &amp; pricier).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=GROK("Write a witty product description for " &amp; A1)</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- DeepSeek -->
+      <div class="sak-panel" data-panel="deepseek">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://platform.deepseek.com/" target="_blank" rel="noopener nofollow">Create a DeepSeek key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> DeepSeek-V4-Pro and DeepSeek-V4-Flash &mdash; with Chat &amp; Reasoner (thinking) modes.</p>
+            <ul class="sak-ol">
+              <li>Sign in to the DeepSeek platform and create an API key (top up a small balance if prompted).</li>
+              <li>Copy the key.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the DeepSeek section.</li>
+              <li>Paste the DeepSeek key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown and pick your model &mdash; <strong>DeepSeek-V4-Flash</strong> (fast &amp; cheap) or <strong>DeepSeek-V4-Pro</strong> (most capable); use <strong>Reasoner</strong> mode for hard reasoning.</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=DEEPSEEK("Translate to French: " &amp; A1)</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Mistral -->
+      <div class="sak-panel" data-panel="mistral">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://console.mistral.ai/api-keys/" target="_blank" rel="noopener nofollow">Create a Mistral key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> Mistral Medium 3.5, Mistral Large 3, Mistral Small 4, Magistral.</p>
+            <ul class="sak-ol">
+              <li>Create an account at <a href="https://console.mistral.ai/" target="_blank" rel="noopener nofollow">console.mistral.ai</a>.</li>
+              <li>Open the API keys page and create a key, then copy it.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the Mistral section.</li>
+              <li>Paste the Mistral key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>Mistral Small 4</strong> (fast &amp; cheap) or <strong>Mistral Medium 3.5</strong> (flagship quality).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=MISTRAL("Classify the sentiment of: " &amp; A1)</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- Perplexity -->
+      <div class="sak-panel" data-panel="perplexity">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://www.perplexity.ai/settings/api" target="_blank" rel="noopener nofollow">Create a Perplexity key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> Sonar Pro, Sonar Reasoning Pro, Sonar Deep Research, Sonar.</p>
+            <ul class="sak-ol">
+              <li>Generate an API key on the Perplexity API settings page (<a href="https://docs.perplexity.ai/docs/getting-started" target="_blank" rel="noopener nofollow">getting-started</a>), then copy it.</li>
+              <li>In Sheets: <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span>, then click <strong>Set Up API Key</strong> and open the Perplexity section.</li>
+              <li>Paste the key, click <strong>Check</strong>, then <strong>Save</strong>.</li>
+              <li>Open the model dropdown in the same section and pick your model &mdash; <strong>Sonar</strong> (fast &amp; cheap web answers) or <strong>Sonar Pro</strong> / <strong>Reasoning Pro</strong> (deeper research).</li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=PERPLEXITY("What are the top YouTube videos today?")</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Set Up API Key dialog in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <!-- OpenRouter -->
+      <div class="sak-panel" data-panel="openrouter">
+        <div class="sak-provider-grid">
+          <div>
+            <a class="sak-key-link" href="https://openrouter.ai/keys" target="_blank" rel="noopener nofollow">Create an OpenRouter key &rarr;</a>
+            <p class="sak-models"><b>Models:</b> one key for 300+ models &mdash; GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3, Llama, DeepSeek V4 &amp; more.</p>
+            <ul class="sak-ol">
+              <li>Create an API key at <a href="https://openrouter.ai/keys" target="_blank" rel="noopener nofollow">openrouter.ai/keys</a> and add a little credit.</li>
+              <li>Browse <a href="https://openrouter.ai/models" target="_blank" rel="noopener nofollow">openrouter.ai/models</a> and copy the model slug you want (e.g. <code>openai/gpt-5.5</code>).</li>
+              <li>OpenRouter runs straight from a formula &mdash; no Set Up dialog needed. Pass the model, your key, and the prompt. <em>(Requires an active Pro or higher plan.)</em></li>
+            </ul>
+            <div class="sak-test"><span class="sak-test-label">Try it</span> <code>=OPEN_ROUTER("openai/gpt-5.5", "your_openrouter_key", "Write a tagline for a coffee shop")</code></div>
+          </div>
+          <div class="sak-provider-side">
+            <img class="sak-shot" src="/images/setup-api-keys-2.png" alt="Use any model via OpenRouter in GPT for Sheets" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEB SEARCH & SCRAPE -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Web</span>
+      <h2>Search &amp; scrape the web from a cell</h2>
+      <p class="sak-section-lead">
+        Pull live web data, run searches, and read any page &mdash; straight into your spreadsheet.
+      </p>
+
+      <div class="sak-enrich-note">
+        <span style="font-size: 20px; flex: 0 0 auto;">&#127760;</span>
+        <span>
+          <code>GPT_WEB_*</code>, <code>SERP</code> and <code>WEB_*</code> run on your included plan &mdash; <b>no extra key</b>. <code>BRAVE_SEARCH_WEB</code> and <code>GOOGLE_SEARCH_API</code> take that provider&rsquo;s key directly in the formula.
+        </span>
+      </div>
+
+      <div class="sak-enrich-grid">
+        <div class="sak-enrich-card">
+          <h3>&#129302; Ask the live web <span class="sak-enrich-badge">no extra key</span></h3>
+          <div class="sak-test"><code>=GPT_WEB_SEARCH("What are the top news headlines today?")</code></div>
+          <div class="sak-test"><code>=GPT_WEB_ACCESS("Find the latest news about " &amp; A1)</code></div>
+          <div class="sak-test"><code>=GPT_WEB_SEARCH_TABLE("Top 5 cryptocurrencies with current price and market cap")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128269; Search results (SERP)</h3>
+          <div class="sak-test"><code>=SERP("site:instagram.com Yoga gmail.com", 40)</code></div>
+          <div class="sak-test"><code>=BRAVE_SEARCH_WEB("artificial intelligence news", "your-api-key")</code></div>
+          <div class="sak-test"><code>=GOOGLE_SEARCH_API("latest tech news", "your-api-key", "your-search-engine-id", 5)</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128196; Scrape a page <span class="sak-enrich-badge">no extra key</span></h3>
+          <div class="sak-test"><code>=WEB_TITLE("https://stripe.com")</code></div>
+          <div class="sak-test"><code>=WEB_DESCRIPTION("https://stripe.com")</code></div>
+          <div class="sak-test"><code>=WEB_HEADINGS("https://stripe.com")</code></div>
+          <div class="sak-test"><code>=WEB_URLS_DATA(A2:A20)</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGES & VISION -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Images &amp; vision</span>
+      <h2>Generate &amp; read images</h2>
+      <p class="sak-section-lead">
+        Create images from a prompt, or have AI describe and read any image &mdash; right in your cells.
+      </p>
+
+      <div class="sak-enrich-note">
+        <span style="font-size: 20px; flex: 0 0 auto;">&#127912;</span>
+        <span>
+          Image &amp; vision tools are available on <b>Pro &amp; Business</b>. Some image models may require provider account verification (e.g. OpenAI organization verification).
+        </span>
+      </div>
+
+      <div class="sak-enrich-grid">
+        <div class="sak-enrich-card">
+          <h3>&#127912; Generate images</h3>
+          <div class="sak-test"><code>=GPT_CREATE_IMAGE("a minimalist coffee shop logo, flat vector", "1024x1024")</code></div>
+          <div class="sak-test"><code>=GEMINI_CREATE_IMAGE("a cozy cafe interior, watercolor", "16:9")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128065; Read an image (vision)</h3>
+          <div class="sak-test"><code>=GPT_VISION("https://example.com/photo.jpg", "What is in this image?")</code></div>
+          <div class="sak-test"><code>=GPT_VISION(A2, "Extract any text you see")</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVERYDAY AI FORMULAS -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Everyday AI</span>
+      <h2>Clean, classify &amp; transform data with a formula</h2>
+      <p class="sak-section-lead">
+        The bread-and-butter functions for spreadsheet work &mdash; translate, summarize, extract and classify, applied across rows.
+      </p>
+
+      <div class="sak-enrich-grid">
+        <div class="sak-enrich-card">
+          <h3>&#127760; Translate &amp; rewrite</h3>
+          <div class="sak-test"><code>=GPT_TRANSLATE(A2, "Spanish")</code></div>
+          <div class="sak-test"><code>=GPT_APPLY(A2, "fix grammar and spelling")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#9986;&#65039; Summarize &amp; extract</h3>
+          <div class="sak-test"><code>=GPT_SUMMARIZE(A2, "one sentence")</code></div>
+          <div class="sak-test"><code>=GPT_EXTRACT(A2, "email address")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#127991;&#65039; Classify &amp; tag</h3>
+          <div class="sak-test"><code>=GPT_CLASSIFY(A2, "Positive, Neutral, Negative")</code></div>
+          <div class="sak-test"><code>=GPT_TAG(A2, "bug, feature request, question")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128221; Generate lists &amp; tables</h3>
+          <div class="sak-test"><code>=GPT_LIST("5 blog ideas about " &amp; A2)</code></div>
+          <div class="sak-test"><code>=GPT_TABLE("Top 5 EU capitals", "City, Country, Population")</code></div>
+          <div class="sak-test"><code>=GPT_FILL(A2:B4, A5:A20)</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENRICH & RESEARCH (BUSINESS) -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Business plan &middot; Optional</span>
+      <h2>Enrich &amp; research leads &mdash; without leaving Sheets</h2>
+      <p class="sak-section-lead">
+        A Clay-style workflow right in your spreadsheet: find and verify emails, pull contacts, and research companies with a single formula.
+      </p>
+
+      <div class="sak-enrich-note">
+        <span style="font-size: 20px; flex: 0 0 auto;">&#9889;</span>
+        <span>
+          These are <b>Business-plan</b> functions. For data providers (Apollo, Hunter, Prospeo, LeadMagic, Google Maps) you pass <b>that provider&rsquo;s own API key</b> directly in the formula. The <code>WEB_*</code> and <code>GPT_WEB_*</code> functions run on your included plan &mdash; no extra key needed.
+        </span>
+      </div>
+
+      <div class="sak-enrich-grid">
+        <div class="sak-enrich-card">
+          <h3>&#128231; Find emails</h3>
+          <div class="sak-test"><code>=HUNTER_GET_EMAIL_BY_DOMAIN("your-api-key", "reddit.com", "Alexis", "Ohanian")</code></div>
+          <div class="sak-test"><code>=LEADMAGIC_FIND_EMAIL("your-api-key", "Bill", "Gates", "microsoft.com")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#9989; Verify emails</h3>
+          <div class="sak-test"><code>=HUNTER_EMAIL_VERIFIER("your-api-key", "patrick@stripe.com")</code></div>
+          <div class="sak-test"><code>=LEADMAGIC_VALIDATE_EMAIL("your-api-key", "user@example.com")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#127970; Contacts from a domain</h3>
+          <div class="sak-test"><code>=APOLLO_GET_CONTACTS("your-api-key", "company.com")</code></div>
+          <div class="sak-test"><code>=PROSPEO_GET_EMAILS("your-api-key", "company.com")</code></div>
+          <div class="sak-test"><code>=HUNTER_DOMAIN_SEARCH("your-api-key", "stripe.com")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128100; Enrich from LinkedIn</h3>
+          <div class="sak-test"><code>=PROSPEO_GET_EMAIL_BY_LINKEDIN("your-api-key", "https://linkedin.com/in/username")</code></div>
+          <div class="sak-test"><code>=LEADMAGIC_PERSONAL_EMAIL("your-api-key", "https://www.linkedin.com/in/williamhgates")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128202; Company intel</h3>
+          <div class="sak-test"><code>=LEADMAGIC_COMPANY_FUNDING("your-api-key", "gong", "gong.io")</code></div>
+          <div class="sak-test"><code>=LEADMAGIC_COMPETITORS("your-api-key", "gong.io", "https://www.linkedin.com/company/gong-io", "Gong")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128205; Local business data (Google Maps)</h3>
+          <div class="sak-test"><code>=GOOGLE_MAPS_GET_PLACES("API_KEY", "34.0522,-118.2437", 1000, "restaurant", "", 20)</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO & CONTENT (BUSINESS) -->
+  <section class="sak-section">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Business plan &middot; Optional</span>
+      <h2>SEO &amp; content production</h2>
+      <p class="sak-section-lead">
+        Draft SEO content, plan strategy, and research keywords &mdash; at spreadsheet scale.
+      </p>
+
+      <div class="sak-enrich-note">
+        <span style="font-size: 20px; flex: 0 0 auto;">&#128202;</span>
+        <span>
+          Content functions (<code>SEO_BLOG</code>, <code>SEO_OUTRANK</code>, <code>SEO_STRATEGY</code>) run on your included plan. Keyword-research functions use a <b>DataForSEO login &amp; password</b> passed in the formula.
+        </span>
+      </div>
+
+      <div class="sak-enrich-grid">
+        <div class="sak-enrich-card">
+          <h3>&#9997;&#65039; Write SEO content</h3>
+          <div class="sak-test"><code>=SEO_BLOG("Best espresso machines 2026", "Professional", "English")</code></div>
+          <div class="sak-test"><code>=SEO_OUTRANK("https://competitor.com/post", "Friendly", "English")</code></div>
+          <div class="sak-test"><code>=SEO_STRATEGY("espresso machine, coffee grinder", "English")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128270; Keyword research</h3>
+          <div class="sak-test"><code>=GOOGLE_KEYWORD_IDEAS("espresso machine", "login", "password")</code></div>
+          <div class="sak-test"><code>=GOOGLE_RANKED_KEYWORDS("competitor.com", 100, "login", "password")</code></div>
+          <div class="sak-test"><code>=GOOGLE_RELATED_KEYWORDS("espresso machine", "login", "password")</code></div>
+        </div>
+
+        <div class="sak-enrich-card">
+          <h3>&#128279; Index in Google</h3>
+          <div class="sak-test"><code>=GOOGLE_INDEXING("https://docgpt.ai/docs/")</code></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRO TIP -->
+  <section class="sak-section alt">
+    <div class="sak-container">
+      <div class="sak-tip">
+        <div class="sak-clarity-icon">&#128161;</div>
+        <div>
+          <h3>Pro tip: lock in your results to save credits</h3>
+          <p>
+            Google Sheets re-runs formulas when you refresh or every minute or two. Once you&rsquo;re happy with an output,
+            select the cells and click <strong>Replace All GPTs</strong> (or <strong>Replace Selected</strong>) in the sidebar.
+            This turns the formula into plain text so it won&rsquo;t keep recalculating &mdash; and won&rsquo;t keep spending credits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROUBLESHOOTING -->
+  <section class="sak-section" id="troubleshooting">
+    <div class="sak-container">
+      <span class="sak-eyebrow">Help</span>
+      <h2>Troubleshooting</h2>
+      <p class="sak-section-lead">Find your issue by topic &mdash; most fixes take under a minute. Still stuck? Live chat (bottom-right) is one message away.</p>
+
+      <div class="sak-faq">
+
+        <h3 class="sak-faq-cat">Activation &amp; plan</h3>
+        <details open>
+          <summary>I subscribed but my plan isn&rsquo;t recognized (it still asks me to upgrade)</summary>
+          <p>
+            Click <strong>Refresh Account</strong> under <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Refresh Account</span> &mdash; this syncs your plan after any subscribe or plan change.
+            Make sure you&rsquo;re signed into Google with the <strong>same email you paid with</strong>. If you use several Google accounts, Google may attribute the add-on to the wrong one &mdash; open a <strong>separate Chrome profile</strong> with just the paid account and refresh.
+          </p>
+        </details>
+        <details>
+          <summary>I paid with the wrong email / need to move my subscription</summary>
+          <p>
+            Use a <strong>personal Gmail</strong> with the add-on (company/Workspace emails often block add-ons). To transfer a subscription to another account, contact support via live chat or email and we&rsquo;ll move it for you.
+          </p>
+        </details>
+
+        <h3 class="sak-faq-cat">Out of requests &amp; limits</h3>
+        <details>
+          <summary>&ldquo;You&rsquo;re out of requests this month&rdquo; / free trial used up</summary>
+          <p>
+            Your monthly allowance resets at the start of each billing period. To keep going now, <strong>upgrade your plan</strong> for a higher quota, or connect your <strong>own API key</strong> (Set Up API Key) to bypass the bundled limit.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;Limit per minute has reached&rdquo; / rate-limited when filling many rows</summary>
+          <p>
+            Recalculating hundreds of GPT cells at once trips the per-minute limit. Wait about a minute and let cells recalculate in <strong>smaller batches</strong> instead of dragging the formula down hundreds of rows at once.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;Exceeded maximum execution time&rdquo; / the function times out</summary>
+          <p>
+            Google Sheets caps each custom function at <strong>30 seconds</strong>. Use a faster model (Mini / Nano / Flash) and split long prompts into smaller cells so each call finishes in time. Editing the cell (add a space) re-triggers the call.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;Service invoked too many times for one day&rdquo;</summary>
+          <p>
+            A Google account limit (≈20k calls/day for gmail.com, 100k/day for Workspace), not ours. Wait for the 24-hour reset or use a different Google account.
+          </p>
+        </details>
+        <details>
+          <summary>SERP, SEO or Maps functions stop returning data</summary>
+          <p>
+            <code>SERP()</code> is throttled to one call every <strong>20 seconds</strong> &mdash; space them out. DataForSEO keyword functions stop after ~40 calls on the free plan, and Google Maps allows ~100 free queries/day &mdash; top up those provider accounts to continue.
+          </p>
+        </details>
+
+        <h3 class="sak-faq-cat">Your own API key</h3>
+        <details>
+          <summary>&ldquo;Please set up your API key&rdquo; / &ldquo;API key is required&rdquo;</summary>
+          <p>
+            Open <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Set Up API Key</span>, paste the key into the matching provider section, click <strong>Check</strong>, then <strong>Save</strong>. Each provider (OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity) has its own field.
+          </p>
+        </details>
+        <details>
+          <summary>My key won&rsquo;t validate / &ldquo;Invalid API key&rdquo;</summary>
+          <p>
+            Re-copy the key from the provider console with <strong>no extra spaces</strong>, confirm it&rsquo;s active and the provider account has billing/credits, and pick a model your account can access. Re-run <strong>Check</strong>, and only <strong>Save</strong> once it reports the key is valid.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;You exceeded your current quota&rdquo; / &ldquo;model does not exist or you do not have access&rdquo; (own OpenAI key)</summary>
+          <p>
+            An OpenAI tier/billing limit on <strong>your own key</strong>. Add at least $1 (ideally $5) to your <a href="https://platform.openai.com/account/billing/overview" target="_blank" rel="noopener nofollow">OpenAI billing</a> to reach Tier&nbsp;1, then recreate the key and retry. On an included-credits plan you can ignore this entirely.
+          </p>
+        </details>
+        <details>
+          <summary>Where do I get each provider&rsquo;s API key?</summary>
+          <p>
+            OpenAI: <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener nofollow">platform.openai.com/api-keys</a> &middot; Claude: <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener nofollow">console.anthropic.com</a> &middot; Gemini: <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener nofollow">aistudio.google.com</a> &middot; Grok: <a href="https://console.x.ai/" target="_blank" rel="noopener nofollow">console.x.ai</a> &middot; DeepSeek: <a href="https://platform.deepseek.com/" target="_blank" rel="noopener nofollow">platform.deepseek.com</a> &middot; Mistral: <a href="https://console.mistral.ai/" target="_blank" rel="noopener nofollow">console.mistral.ai</a> &middot; Perplexity: <a href="https://www.perplexity.ai/settings/api" target="_blank" rel="noopener nofollow">perplexity.ai/settings/api</a>.
+          </p>
+        </details>
+
+        <h3 class="sak-faq-cat">Models</h3>
+        <details>
+          <summary>A yellow &ldquo;deprecated model&rdquo; warning appears</summary>
+          <p>
+            The selected model is kept only for backward compatibility. For new work pick a current model from the dropdown (e.g. <strong>GPT-5.5</strong>, <strong>Claude Opus 4.8</strong>, <strong>Gemini 3.5</strong>, <strong>Grok 4.3</strong>). Leave the old one only if an existing sheet depends on it.
+          </p>
+        </details>
+
+        <h3 class="sak-faq-cat">Authorization &amp; access</h3>
+        <details>
+          <summary>&ldquo;Authorization is required&rdquo; / &ldquo;you do not have access to this add-on&rdquo;</summary>
+          <p>
+            Usually a Google account restriction. Use a <strong>personal Gmail</strong> (Workspace admins often block add-ons &mdash; or ask your admin to allow it). If you&rsquo;re already on a personal account, reinstall the add-on, or open a <strong>separate Chrome profile</strong> with just that one account and a fresh sheet.
+          </p>
+          <p><img class="sak-shot" style="max-width:320px;margin-top:4px;" src="/images/create-profile.png" alt="Create a separate Chrome profile" loading="lazy"></p>
+        </details>
+        <details>
+          <summary>I&rsquo;m signed into multiple Google accounts</summary>
+          <p>
+            Google&rsquo;s API can confuse accounts in one Chrome profile. Create a <strong>dedicated Chrome profile</strong> for the single Gmail you use with the add-on. Clearing cookies and re-logging in also helps.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;You must be the owner of the sheet&rdquo;</summary>
+          <p>
+            Custom functions can&rsquo;t read a non-owner editor&rsquo;s identity. Make a <strong>copy of the sheet</strong> so you own it, set up your key there, then anyone with Editor access can use the functions with that key.
+          </p>
+        </details>
+        <details>
+          <summary>SEND_EMAIL, GOOGLE_INDEXING or YouTube returns an authorization link</summary>
+          <p>
+            These features need a one-time Google permission. Click the <strong>Authorize</strong> link shown in the cell/dialog, grant access, then re-run the function. (For indexing, the active email must be an Owner of the property in Google Search Console.)
+          </p>
+        </details>
+
+        <h3 class="sak-faq-cat">Formulas, results &amp; loading</h3>
+        <details>
+          <summary>Results change or disappear on refresh / credits get used when I&rsquo;m not working</summary>
+          <p>
+            Google Sheets re-runs formulas on refresh and periodically. Once you&rsquo;re happy with an output, select the cells and click <strong>Replace All GPTs</strong> / <strong>Replace Selected</strong> in the sidebar to freeze results as static text &mdash; no more recalculation or credit spend.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;#NAME? Unknown function GPT&rdquo; or every cell shows #ERROR</summary>
+          <p>
+            Usually another installed add-on registers the same <code>GPT()</code> name. Remove other AI/GPT add-ons, refresh the page, then re-launch via <span class="sak-menu-path">Extensions &rarr; GPT for Sheets &rarr; Launch</span>.
+          </p>
+        </details>
+        <details>
+          <summary>&ldquo;Formula parse error&rdquo;</summary>
+          <p>
+            Wrap text in quotes (<code>=GPT("hi")</code> or <code>=GPT(A1)</code>, not <code>=GPT(hi)</code>), check argument order, and use your locale&rsquo;s separator (<code>,</code> vs <code>;</code>) and decimal format.
+          </p>
+        </details>
+        <details>
+          <summary>Functions stuck on &ldquo;Loading&rdquo;, blank sidebar, or Extensions shows only &ldquo;Help&rdquo;</summary>
+          <p>
+            Give the add-on ~30 seconds to load after opening the sheet, then reopen the menu. If it persists: clear cache/cookies (or use a fresh Chrome profile), remove conflicting GPT add-ons, and re-launch the sidebar.
+          </p>
+        </details>
+        <details>
+          <summary>Empty result, &ldquo;Prompt is required&rdquo;, or a timeout / network error</summary>
+          <p>
+            Make sure the prompt and any referenced cells aren&rsquo;t blank. Empty completions and timeouts are usually transient &mdash; re-run the formula. For &ldquo;Unable to verify subscription&rdquo;, refresh the page so the add-on re-checks your plan.
+          </p>
+        </details>
+      </div>
+
+      <p style="margin-top: 22px; color: var(--sak-muted); font-size: .95rem;">
+        Still stuck? See the <a href="/docs/support-gpt-sheets-docs-slides-forms-gmail/">full troubleshooting guide</a> or open the live chat at the bottom-right of the page.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docgpt.ai/" },
+      { "@type": "ListItem", "position": 2, "name": "GPT for Sheets", "item": "https://docgpt.ai/gpt-for-sheets/" },
+      { "@type": "ListItem", "position": 3, "name": "Set up AI keys & formulas", "item": "https://docgpt.ai/ai-for-google-sheets-setup/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Set up GPT for Sheets and connect an AI API key",
+    "description": "Install GPT for Sheets, activate your plan in Google Sheets, and optionally connect your own OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral or Perplexity API key.",
+    "step": [
+      { "@type": "HowToStep", "name": "Install the add-on", "text": "Install GPT for Sheets from the Google Workspace Marketplace.", "url": "https://docgpt.ai/ai-for-google-sheets-setup/" },
+      { "@type": "HowToStep", "name": "Activate your plan", "text": "In Google Sheets, click Extensions > GPT for Sheets > Refresh Account to sync your plan.", "url": "https://docgpt.ai/ai-for-google-sheets-setup/" },
+      { "@type": "HowToStep", "name": "Connect an AI key (optional)", "text": "Open Set Up API Key, paste your provider key, click Check then Save, and pick your model.", "url": "https://docgpt.ai/ai-for-google-sheets-setup/" },
+      { "@type": "HowToStep", "name": "Run a formula", "text": "Type =GPT(\"Write a tagline for a coffee shop\") in any cell.", "url": "https://docgpt.ai/ai-for-google-sheets-setup/" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do I need my own API key to use GPT for Sheets?", "acceptedAnswer": { "@type": "Answer", "text": "No. Paid plans include AI credits, so GPT formulas work right away. Connecting your own OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral or Perplexity key is optional - useful for unlimited model choice or your own provider billing. The Lifetime plan does run on your own key." } },
+      { "@type": "Question", "name": "Which AI models can I use in Google Sheets?", "acceptedAnswer": { "@type": "Answer", "text": "GPT-5.5, Claude Opus 4.8, Gemini 3.5, Grok 4.3, DeepSeek V4, Mistral Medium 3.5 and Perplexity Sonar - plus any model through OpenRouter." } },
+      { "@type": "Question", "name": "My plan is not recognized after I subscribed. How do I fix it?", "acceptedAnswer": { "@type": "Answer", "text": "Click Refresh Account under Extensions > GPT for Sheets > Refresh Account, and make sure you are signed in with the same Google email you subscribed with." } },
+      { "@type": "Question", "name": "Why do my results recalculate and use credits?", "acceptedAnswer": { "@type": "Answer", "text": "Google Sheets re-runs formulas on refresh. Once you are happy with an output, click Replace All GPTs or Replace Selected in the sidebar to freeze results as static text so they stop recalculating." } },
+      { "@type": "Question", "name": "How do I fix 'Authorization is required to perform this action'?", "acceptedAnswer": { "@type": "Answer", "text": "Use a personal Gmail rather than a company or Workspace account (admins often block add-ons), reinstall the add-on, or use a separate Chrome profile signed into just that one Google account." } },
+      { "@type": "Question", "name": "What does 'You exceeded your current quota' mean?", "acceptedAnswer": { "@type": "Answer", "text": "On your own OpenAI key it is a billing or tier limit - add at least $1 (ideally $5) to your OpenAI billing to reach Tier 1, then recreate the key. On an included-credits plan, upgrade your plan or wait for the monthly reset." } }
+    ]
+  }
+]
+</script>
+
+<script>
+  (function () {
+    // ---- Provider tabs ----
+    var tabs = document.querySelectorAll('.sak-tab');
+    var panels = document.querySelectorAll('.sak-panel');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var key = tab.getAttribute('data-tab');
+        tabs.forEach(function (t) { t.classList.toggle('is-active', t === tab); });
+        panels.forEach(function (p) { p.classList.toggle('is-active', p.getAttribute('data-panel') === key); });
+      });
+    });
+
+    // ---- Plan-aware personalization (reads ?plan= and optional ?email=) ----
+    function getParam(name) {
+      try { return new URLSearchParams(window.location.search).get(name); } catch (e) { return null; }
+    }
+
+    var PLAN_INFO = {
+      pro: {
+        label: 'Pro',
+        credits: '15,000 AI queries every month',
+        pills: ['&#9889; 15,000 queries / month', '&#129302; GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3 &amp; more', '&#128172; AI Chat unlocked'],
+        clarityTitle: 'Do I need my own API key? No &mdash; your Pro plan includes credits.',
+        clarityCopy: 'Your Pro plan comes with thousands of AI queries, so formulas and AI Chat work immediately. Connecting your own OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity, or OpenRouter key is <strong>optional</strong> &mdash; only if you want unlimited model choice or your own provider billing.',
+        mode: 'optional'
+      },
+      business: {
+        label: 'Business',
+        credits: 'unlimited AI usage',
+        pills: ['&#9889; Unlimited queries', '&#129302; All advanced models', '&#128640; Enrichment, SEO &amp; automation tools'],
+        clarityTitle: 'Do I need my own API key? No &mdash; your Business plan includes unlimited usage.',
+        clarityCopy: 'Your Business plan runs out of the box with unlimited queries and all advanced tools. Connecting your own AI key is <strong>optional</strong> &mdash; only if you prefer to run on your own provider billing or want full model control.',
+        mode: 'optional'
+      },
+      lifetime: {
+        label: 'Lifetime',
+        credits: 'lifetime access on your own AI keys',
+        pills: ['&#9854; Lifetime access', '&#129302; All advanced models', '&#128273; Runs on your own API keys'],
+        clarityTitle: 'One quick step: connect an AI key to power your Lifetime plan.',
+        clarityCopy: 'Lifetime access runs on your own AI keys (that&rsquo;s how it stays unlimited with no subscription). Adding one takes about two minutes &mdash; follow the steps below and you&rsquo;re set for good.',
+        mode: 'required'
+      },
+      starter: {
+        label: 'Starter',
+        credits: '1,000+ AI queries every month',
+        pills: ['&#9889; 1,000+ queries / month', '&#129302; Built-in GPT model', '&#128274; No API key needed'],
+        clarityTitle: 'Do I need my own API key? No &mdash; Starter includes everything you need.',
+        clarityCopy: 'Your Starter plan includes AI credits with the built-in GPT model, so you can start right away. No API key required.',
+        mode: 'none'
+      }
+    };
+
+    var plan = (getParam('plan') || '').toLowerCase().replace(/[^a-z]/g, '');
+    var info = PLAN_INFO[plan];
+
+    if (info) {
+      var confirmPill = document.getElementById('sak-confirm-pill');
+      var confirmLabel = document.getElementById('sak-confirm-label');
+      if (confirmPill) confirmPill.classList.add('is-paid');
+      if (confirmLabel) confirmLabel.textContent = 'Payment confirmed';
+
+      var titleEl = document.getElementById('sak-title');
+      if (titleEl) titleEl.innerHTML = 'Welcome to GPT for Sheets ' + info.label + ' &#127881;';
+
+      var subEl = document.getElementById('sak-subtitle');
+      if (subEl) {
+        subEl.innerHTML = (info.mode === 'required')
+          ? 'Your <strong>' + info.label + '</strong> purchase is confirmed &mdash; ' + info.credits + '. One quick setup step and you&rsquo;re ready.'
+          : 'Your <strong>' + info.label + '</strong> plan is active with ' + info.credits + '. <strong>No technical setup needed</strong> &mdash; just activate the add-on below.';
+      }
+
+      var pillsEl = document.getElementById('sak-pills');
+      if (pillsEl && info.pills) {
+        pillsEl.innerHTML = info.pills.map(function (p) { return '<span class="sak-pill">' + p + '</span>'; }).join('');
+      }
+
+      var clarity = document.getElementById('sak-clarity');
+      var clarityTitle = document.getElementById('sak-clarity-title');
+      var clarityCopy = document.getElementById('sak-clarity-copy');
+      var clarityIcon = document.getElementById('sak-clarity-icon');
+      var keysEyebrow = document.getElementById('sak-keys-eyebrow');
+      if (clarityTitle) clarityTitle.innerHTML = info.clarityTitle;
+      if (clarityCopy) clarityCopy.innerHTML = info.clarityCopy;
+      if (info.mode === 'required') {
+        if (clarity) clarity.classList.add('is-required');
+        if (clarityIcon) clarityIcon.innerHTML = '&#128273;';
+        if (keysEyebrow) keysEyebrow.innerHTML = 'Step 2 &middot; Required for Lifetime';
+      }
+    }
+
+    var emailParam = getParam('email');
+    if (emailParam) {
+      var note = document.getElementById('sak-email-note');
+      if (note) {
+        note.innerHTML = 'Important: activate with <strong>' + emailParam.replace(/</g, '&lt;') + '</strong> &mdash; the email you paid with.';
+      }
+    }
+
+    // ---- Lightweight analytics (optional) ----
+    try {
+      if (window.posthog && typeof window.posthog.capture === 'function') {
+        window.posthog.capture('setup_ai_keys_view', { plan: plan || 'unknown' });
+      }
+    } catch (e) {}
+
+    // ---- Copy-to-clipboard for the "Try it" formulas ----
+    function fallbackCopy(text, done) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.top = '-9999px'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta); done();
+      } catch (e) {}
+    }
+    document.querySelectorAll('.sak-test').forEach(function (box) {
+      var code = box.querySelector('code');
+      if (!code) return;
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'sak-copy';
+      btn.textContent = 'Copy';
+      btn.setAttribute('aria-label', 'Copy formula');
+      btn.addEventListener('click', function () {
+        var text = code.textContent;
+        var done = function () {
+          btn.textContent = 'Copied!';
+          btn.classList.add('copied');
+          setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function () { fallbackCopy(text, done); });
+        } else {
+          fallbackCopy(text, done);
+        }
+      });
+      box.appendChild(btn);
+    });
+  })();
+</script>

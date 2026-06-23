@@ -579,7 +579,7 @@ Clean and format your data:
 
 ## 🔗 Additional Resources
 
-- [How to Set up OpenAI key in GPT for Sheets](/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [How to Set up OpenAI key in GPT for Sheets](/ai-for-google-sheets-setup/)
 - [Troubleshooting Workspace Add-Ons](/docs/support-gpt-sheets-docs-slides-forms-gmail)
 
 ---

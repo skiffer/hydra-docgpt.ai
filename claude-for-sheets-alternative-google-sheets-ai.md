@@ -114,7 +114,7 @@ Different tasks suit different models. Short classification and labeling jobs ca
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets get started](/docs/gpt-for-sheets/get-started)
-- [Set up AI provider keys](/gpt-for-sheets-setup-ai-keys/)
+- [Set up AI provider keys](/ai-for-google-sheets-setup/)
 - [GPT for Sheets vs Claude for Sheets](/gpt-for-sheets-vs-claude-for-sheets/)
 - [AI lead enrichment in Google Sheets guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)

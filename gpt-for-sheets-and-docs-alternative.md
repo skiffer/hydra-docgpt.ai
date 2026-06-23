@@ -123,7 +123,7 @@ No. This page mentions third-party product names only for comparison and search 
 - [Install DocGPT.AI GPT for Sheets](/gpt-for-sheets/)
 - [See DocGPT.AI GPT for Sheets plans](/gpt-for-sheets/#pricing)
 - [See GPT functions](/docs/gpt-for-sheets/gpt-functions)
-- [Set up OpenAI, Claude, Gemini and other API keys](/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [Set up OpenAI, Claude, Gemini and other API keys](/ai-for-google-sheets-setup/)
 
 <script type="application/ld+json">
 {

@@ -21,7 +21,7 @@ window.onload = function() {
 ### Links: 
 - <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign">Install the GPT for Sheets, Docs, Slides, Forms</a> add-on
 - <a href="/gpt-for-sheets/">Upgrade to Premium</a>
-- <a href="/docs/gpt-for-sheets/set-up-openai-api-keys">How to set up your API KEY</a>
+- <a href="/ai-for-google-sheets-setup/">How to set up your API KEY</a>
 - RECOMMENDATION: It is preferable to use a personal Google account. If you use a company Workspace account, you may need to request your company’s admin to allow the execution of the add-on in the Workspace configuration.
 - RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
 - RECOMMENDATION: If you use multiple Google accounts, it is recommended that you create a Chrome profile for each account.

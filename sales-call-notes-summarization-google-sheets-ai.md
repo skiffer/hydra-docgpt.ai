@@ -116,7 +116,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [outbound personalization formulas](/outbound-personalization-formulas-google-sheets-ai/)
 - [personalized email from Sheets](/personalized-email-from-google-sheets/)
-- [set up OpenAI API keys](/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [set up OpenAI API keys](/ai-for-google-sheets-setup/)
 
 ## Safety, compliance, and data quality
 

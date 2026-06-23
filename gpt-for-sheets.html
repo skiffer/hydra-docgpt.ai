@@ -225,7 +225,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       coupon: couponParam,
       passthrough: passthroughData,
       customData: customData,
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+      success: '/ai-for-google-sheets-setup/?plan=' + (planIdParam === '875279' || planIdParam === '875278' ? 'pro' : (planIdParam === '890230' || planIdParam === '862410' ? 'business' : 'lifetime'))
     });
   } else if (emailParam) {
     console.log(`applying email: [${couponParam}], [${emailParam}], [${planIdParam}]`);
@@ -264,7 +264,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       email: emailParam || '',
       customData: customData,
       passthrough: passthroughData,
-      success: '/docs/gpt-for-sheets/set-up-openai-api-keys/'
+      success: '/ai-for-google-sheets-setup/?plan=pro'
     });
   } else {
     console.log(`no handler: [${couponParam}], [${emailParam}], [${planIdParam}]`);
@@ -1640,7 +1640,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
            data-product="875279" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+           data-success="/ai-for-google-sheets-setup/?plan=pro">Get Started</a>
       </div>
         <div class="card-body pt-0">
             <ul class="list-unstyled text-feature mb-4">
@@ -1667,7 +1667,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
               <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
 <!--              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>-->
-              <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+              <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
 <!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>-->
 <!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email support</li>-->
 <!--                <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Online support</li>-->
@@ -1704,7 +1704,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
            data-product="890230" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+           data-success="/ai-for-google-sheets-setup/?plan=business">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -1731,7 +1731,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword ideas by a keyword</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get related keywords</b></li>
-          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CLOUDINARY() - Upload images to file hosting</b></li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
@@ -1854,7 +1854,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               <div>
                 <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
                    data-product="875278" data-email="" data-custom-data="" data-passthrough=""
-                   data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+                   data-success="/ai-for-google-sheets-setup/?plan=pro">Get Started</a>
               </div>
                 <div class="card-body pt-0">
                     <ul class="list-unstyled text-feature mb-4">
@@ -1882,7 +1882,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                       <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
                       <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
                       <!--              <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>-->
-                      <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+                      <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
 <!--                        <li style="color: white"> .</li>-->
 <!--                        <li style="color: white"> .</li>-->
 <!--                        <li style="color: white"> .</li>-->
@@ -1920,7 +1920,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div>
         <a href="#!" class="paddle_button btn btn-primary btn-block mb-3"  data-theme="none"
            data-product="862410" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+           data-success="/ai-for-google-sheets-setup/?plan=business">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -1949,7 +1949,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword suggestions, search volume, keyword difficulty</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get keyword ideas by a keyword</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Get related keywords</b></li>
-          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">CLOUDINARY() - Upload images to file hosting</b></li>
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
@@ -1996,7 +1996,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
            data-product="875610" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+           data-success="/ai-for-google-sheets-setup/?plan=lifetime">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -2006,7 +2006,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
-          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
 <!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green;"><a target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your OpenAI, GEMINI, CLAUDE, or MISTRAL API key</a></b></li>-->
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
@@ -2028,7 +2028,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div>
         <a href="#!" class="paddle_button btn btn-outline-primary btn-block mb-3"  data-theme="none"
            data-product="875610" data-email="" data-custom-data="" data-passthrough=""
-           data-success="/docs/gpt-for-sheets/set-up-openai-api-keys/">Get Started</a>
+           data-success="/ai-for-google-sheets-setup/?plan=lifetime">Get Started</a>
       </div>
       <div class="card-body pt-0">
         <ul class="list-unstyled text-feature mb-4">
@@ -2039,7 +2039,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for programmatic SEO</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Great fit for Lean SEO</b></li>
           <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green">Lead and Data Enrichment (Clay Alternative)</b></li>
-          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your API Key</a></b></li>
+          <li><i class="bi-check-lg icon-pricing"></i> <b style=""><a style="color: blue !important;" target="_blank" href="/ai-for-google-sheets-setup/"> You need to set up your API Key</a></b></li>
 <!--          <li><i class="bi-check-lg icon-pricing"></i> <b style="color: green;"><a target="_blank" href="/docs/gpt-for-sheets/set-up-openai-api-keys/"> You need to set up your OpenAI, GEMINI, CLAUDE, or MISTRAL API key</a></b></li>-->
           <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
           <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
@@ -2072,7 +2072,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <!--</div>-->
 
 <div class="container d-flex justify-content-center pt-2">
-  <a href="/docs/gpt-for-sheets/set-up-openai-api-keys" target="_blank">💡️️️️ How to set up your API Key</a>
+  <a href="/ai-for-google-sheets-setup/" target="_blank">💡️️️️ How to set up your API Key</a>
 </div>
 
 
@@ -3277,7 +3277,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </ul>
           <p><strong>Why Pro/Business require API keys:</strong> You get direct access to latest models (GPT-5, Claude-4, Gemini 2.0) at cost price, plus advanced features like vision, image generation, and custom models.</p>
           <p><strong>Starter plan is perfect</strong> if you want to start immediately without any setup!</p>
-          <p><a href="/docs/gpt-for-sheets/set-up-openai-api-keys" target="_blank">How to Set Up API Keys →</a></p>
+          <p><a href="/ai-for-google-sheets-setup/" target="_blank">How to Set Up API Keys →</a></p>
         </div>
       </div>
 
@@ -3778,7 +3778,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <li>🚀 <strong>Integration</strong> - Combine with other spreadsheet data seamlessly</li>
             <li>🚀 <strong>100+ models</strong> - Access Claude, Gemini, GPT-4, and more in one place</li>
           </ul>
-          <p><a href="/docs/gpt-for-sheets/set-up-openai-api-keys" target="_blank">Detailed Setup Guide →</a></p>
+          <p><a href="/ai-for-google-sheets-setup/" target="_blank">Detailed Setup Guide →</a></p>
         </div>
       </div>
 

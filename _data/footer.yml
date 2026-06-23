@@ -175,7 +175,7 @@
 #    new_window: true
 #    social_icon: Facebook
     - name: How to Set up OpenAI key in GPT for Sheets
-      link: /docs/gpt-for-sheets/set-up-openai-api-keys
+      link: /ai-for-google-sheets-setup/
       new_window: true
       nofollow: true
     - name: How to use AI Email Assistant (GPT for Gmail)

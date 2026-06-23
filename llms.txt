@@ -143,7 +143,7 @@ Revolutionary AI email assistant with thousands of 5-star reviews:
 
 ### Getting Started
 - [GPT for Sheets Setup](https://docgpt.ai/docs/gpt-for-sheets/get-started)
-- [API Key Configuration](https://docgpt.ai/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [AI Keys & Formulas Setup (OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity)](https://docgpt.ai/ai-for-google-sheets-setup/)
 - [AI Email Assistant Guide](https://docgpt.ai/docs/gpt-for-gmail)
 
 ### AI Model Guides
@@ -252,7 +252,7 @@ Revolutionary AI email assistant with thousands of 5-star reviews:
 ### Documentation & Learning
 - [Complete Setup Guide](https://docgpt.ai/docs/gpt-for-sheets/get-started)
 - [Video Tutorial Library](https://www.youtube.com/watch?v=eKm5tgDaOmY)
-- [API Documentation](https://docgpt.ai/docs/gpt-for-sheets/set-up-openai-api-keys)
+- [AI Keys & Formulas Setup](https://docgpt.ai/ai-for-google-sheets-setup/)
 - [Best Practices Guide](https://docgpt.ai/docs/create-1000-product-descriptions-with-chatgpt-and-google-sheets)
 
 ### Support Channels
