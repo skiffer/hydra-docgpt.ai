@@ -2,9 +2,9 @@
 layout: seo-guide
 title: "Claude Mythos in Google Sheets: Status & How to Use Claude in Sheets Today"
 permalink: /mythos-in-google-sheets/
-description: "Looking to use Claude Mythos in Google Sheets? Mythos access is currently restricted — but you can run Anthropic's most powerful available model, Claude Opus 4.8, plus GPT-5.5, Gemini 3 and Grok 4.3, directly in Sheets with GPT for Sheets and =CLAUDE() formulas."
+description: "Use Claude Mythos in Google Sheets (currently disabled worldwide) — and run Claude Opus 4.8 today in the same =CLAUDE() formula via GPT for Sheets, plus GPT-5.5, Gemini 3 and Grok 4.3."
 hero_title: "Claude Mythos in Google Sheets"
-hero_subtitle: "Mythos is Anthropic's limited frontier model — access is currently restricted, but you can run Claude's most powerful available model (Opus 4.8) across spreadsheet rows today with =CLAUDE() in GPT for Sheets."
+hero_subtitle: "Use Claude Mythos in Google Sheets (currently disabled worldwide) — and run Claude Opus 4.8 today across spreadsheet rows with the same =CLAUDE() formula in GPT for Sheets."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
 primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=mythos_guide&utm_campaign=model_page_hero"
@@ -50,7 +50,7 @@ formula_cards:
 
 ## Is Claude Mythos available in Google Sheets?
 
-**Short answer: not yet.** Claude Mythos 5 is Anthropic's limited-availability frontier model (the "Project Glasswing" sibling of Fable 5). Like Fable 5, its access was **suspended worldwide** in June 2026 under a US export-control directive — so it isn't usable in any product today, including Google Sheets.
+**You can use Claude Mythos in Google Sheets with a `=CLAUDE()` formula (once access is restored).** Mythos 5 is Anthropic's limited-availability frontier model (the "Project Glasswing" sibling of Fable 5). Right now its **access is disabled worldwide** (a June 2026 US export-control directive), so it isn't usable in any product yet, including Google Sheets. **Meanwhile, use Claude Opus 4.8** — the most powerful Claude you *can* run today — in the exact same formula.
 
 **The practical alternative:** **GPT for Sheets** already runs **Claude Opus 4.8** — Anthropic's most powerful *generally available* model — plus GPT-5.5, Gemini 3, Grok 4.3, DeepSeek V4 and 100+ others, directly in spreadsheet cells. When Mythos/Fable reopen, you'll run them the same way with a `=CLAUDE()` formula.
 

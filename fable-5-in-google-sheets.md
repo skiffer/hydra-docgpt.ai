@@ -2,9 +2,9 @@
 layout: seo-guide
 title: "Claude Fable 5 in Google Sheets: Status & How to Use Claude in Sheets Today"
 permalink: /fable-5-in-google-sheets/
-description: "Want Claude Fable 5 in Google Sheets? Fable 5 access is currently restricted — but you can run Anthropic's most powerful available model, Claude Opus 4.8, plus GPT-5.5, Gemini 3 and Grok 4.3, directly in Sheets with GPT for Sheets and =CLAUDE() formulas."
+description: "Use Claude Fable 5 in Google Sheets (currently disabled worldwide) — and run Claude Opus 4.8 today in the same =CLAUDE() formula via GPT for Sheets, plus GPT-5.5, Gemini 3 and Grok 4.3."
 hero_title: "Claude Fable 5 in Google Sheets"
-hero_subtitle: "Fable 5 is Anthropic's newest model — access is currently restricted, but you can run Claude's most powerful available model (Opus 4.8) across spreadsheet rows today with =CLAUDE() in GPT for Sheets."
+hero_subtitle: "Use Claude Fable 5 in Google Sheets (currently disabled worldwide) — and run Claude Opus 4.8 today across spreadsheet rows with the same =CLAUDE() formula in GPT for Sheets."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
 primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=fable5_guide&utm_campaign=model_page_hero"
@@ -50,7 +50,7 @@ formula_cards:
 
 ## Is Claude Fable 5 available in Google Sheets?
 
-**Short answer: not yet.** Claude Fable 5 is Anthropic's newest, most capable model (released June 2026), but worldwide access was **suspended shortly after launch** under a US export-control directive. As of now it isn't usable in any product — including Google Sheets.
+**You can use Claude Fable 5 in Google Sheets with a `=CLAUDE()` formula (once access is restored).** Fable 5 is Anthropic's newest, most capable model (released June 2026), but **access is currently disabled worldwide** (a US export-control directive shortly after launch), so it isn't usable in any product yet — including Google Sheets. **Meanwhile, use Claude Opus 4.8** — the most powerful Claude you *can* run today — in the exact same formula.
 
 **The good news:** you don't have to wait to put Claude to work in your spreadsheet. **GPT for Sheets** already runs **Claude Opus 4.8** — Anthropic's most powerful *available* model — plus GPT-5.5, Gemini 3, Grok 4.3, DeepSeek V4 and 100+ others, directly in cells. And the moment Fable 5 reopens, you'll use it exactly the same way: a simple `=CLAUDE()` formula.
 
