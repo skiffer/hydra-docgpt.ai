@@ -1,0 +1,39 @@
+date: 2026-06-23
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - saleshandy-alternative-gmail-google-sheets-mail-merge
+  - mail-merge-from-excel-gmail-google-sheets
+  - mail-merge-multiple-gmail-accounts-google-sheets
+  - appointment-reminder-mail-merge-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/saleshandy-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mail-merge-from-excel-gmail-google-sheets/
+  - https://docgpt.ai/mail-merge-multiple-gmail-accounts-google-sheets/
+  - https://docgpt.ai/appointment-reminder-mail-merge-gmail-google-sheets/
+commit_hash: b5323a46b9bbc31b0a2018c28fa10557a1cb3425
+pushed_branch: main
+build_result: success (bundle exec jekyll build, all 4 pages generated in _site with correct single H1, 6x top+bottom CTA to /mail-merge-for-gmail-and-sheets/, and FAQPage JSON-LD)
+live_check: 4/4 200
+bing_submission: 4/4 submitted OK (SubmitUrl returned HTTP 200 {"d":null})
+gsc_sitemap_submission: not_available (search_console.py helper only supports sites/query; no sitemap submit command; GSC will re-crawl sitemap on normal schedule)
+notes: >
+  Source of truth was the existing strategist plan .hermes/content-plans/mail-merge-2026-06-23.md
+  (the 4 selected wedges used as-is; all 4 primary slugs + 3 fallbacks confirmed non-duplicate via
+  `ls <slug>.*` before authoring, so no fallback needed). Pages follow the existing root-level .md
+  convention (quoted title/description frontmatter, permalink: /slug/ trailing slash, single H1,
+  top+bottom CTA to /mail-merge-for-gmail-and-sheets/, internal links to existing pages). No GPT-for-Sheets
+  CTA leakage in page bodies (0 references in source; the 9 matches in generated HTML are the shared
+  site nav/footer only). Saleshandy comparison page is independent/unaffiliated, factual workflow-fit
+  framing ("if you want a Sheets-native workflow", no "better than"), no hard-coded competitor pricing
+  ("as of 2026, check vendor"). Excel-migration page accurately states Gmail can't read .xlsx directly and
+  that Workspace native mail merge is plan-gated. Multi-account page frames splitting as legitimate
+  organization within per-account limits (explicitly not quota evasion) with consent/CAN-SPAM/GDPR and
+  warm-up cautions. Appointment-reminder page adds opt-out + HIPAA-type privacy caution and avoids
+  exact no-show-reduction claims. Only the 4 new files were staged/committed (explicit git add); unrelated
+  dirty files left UNTOUCHED: claude-for-sheets-alternative-google-sheets-ai.md (modified),
+  grok-for-google-sheets-how-to-guide.md (modified), and ~20 untracked clay-alternative-*/gpt-for-sheets-*/
+  enrichment .md+.html files from a concurrent builder. Plan file is gitignored (not committed, per repo
+  convention); .done markers are force-tracked (git add -f), matching prior days. Site deploys via
+  Cloudflare (s-maxage=300); live URLs went from 404 to 200 after ~5-6 min propagation. Bing module import
+  triggered its built-in legacy URL list (3 older live pages) as a harmless side effect.
