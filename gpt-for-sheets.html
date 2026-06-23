@@ -2358,12 +2358,167 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
 <!-- Start ROW -->
 <div class="row pt-5">
+<style>
+  code.ex { background:#f4f6f9; color:#1f3050; border:1px solid #e3e8ef; padding:6px 11px; border-radius:8px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:13.5px; line-height:1.5; display:inline-block; word-break:break-word; }
+  .ex-copy { cursor:pointer; margin-left:8px; vertical-align:middle; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:11px; font-weight:800; letter-spacing:.03em; text-transform:uppercase; color:#0b5fff; background:#eaf2ff; border:1px solid #b9d4ff; border-radius:6px; padding:4px 11px; transition:background .15s ease,color .15s ease; }
+  .ex-copy:hover { background:#d8e8ff; color:#0747c4; }
+  .ex-copy.copied { background:#e7f4ec; color:#188038; border-color:#bfe3cb; }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function fb(text, done){ try{ var ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.top='-9999px'; ta.style.opacity='0'; document.body.appendChild(ta); ta.focus(); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); done(); }catch(e){} }
+    document.querySelectorAll('code').forEach(function (c) {
+      var t = (c.textContent || '').trim();
+      if (t.charAt(0) !== '=' || c.classList.contains('ex')) return;
+      c.classList.add('ex');
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'ex-copy'; b.textContent = 'Copy'; b.setAttribute('aria-label', 'Copy formula');
+      b.addEventListener('click', function () {
+        var text = c.textContent;
+        var done = function () { b.textContent='Copied!'; b.classList.add('copied'); setTimeout(function(){ b.textContent='Copy'; b.classList.remove('copied'); }, 1500); };
+        if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done).catch(function(){ fb(text, done); }); } else { fb(text, done); }
+      });
+      c.parentNode.insertBefore(b, c.nextSibling);
+    });
+  });
+</script>
   <h2 class="help-header container">How to Extract Emails From Instagram, LinkedIn, Twitter (X.com), Facebook with ChatGPT in Google Sheets</h2>
   <div class="container center-img">
     <a target="_blank" href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign"> <img style="width: 800px !important;" src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/extract-emails-template.png?raw=true" alt="gpt for sheets"></a>
   </div>
+  <div class="center-table">
+    <table class="table table-bordered">
+      <thead><tr><th>Goal</th><th>Copy / paste formula</th></tr></thead>
+      <tbody>
+        <tr><td>Find public profiles &amp; contacts in search results</td><td><code>=SERP("site:instagram.com fitness coach gmail.com", 40)</code></td></tr>
+        <tr><td>Scrape a page&rsquo;s text to mine for emails</td><td><code>=WEB_PARAGRAPHS("https://example.com/contact")</code></td></tr>
+        <tr><td>Extract the email out of any text / cell</td><td><code>=GPT_EXTRACT(A2, "email address")</code></td></tr>
+        <tr><td>Email behind a LinkedIn profile <em>(Business)</em></td><td><code>=PROSPEO_GET_EMAIL_BY_LINKEDIN("your-api-key", "https://linkedin.com/in/username")</code></td></tr>
+        <tr><td>Emails by company domain <em>(Business)</em></td><td><code>=HUNTER_DOMAIN_SEARCH("your-api-key", "stripe.com")</code></td></tr>
+        <tr><td>A person&rsquo;s email by name + domain <em>(Business)</em></td><td><code>=LEADMAGIC_FIND_EMAIL("your-api-key", "Bill", "Gates", "microsoft.com")</code></td></tr>
+      </tbody>
+    </table>
+    <p class="text-muted" style="font-size:13px;">Social networks don&rsquo;t expose emails directly &mdash; these formulas extract emails from public/web data and enrich via provider APIs. Enrichment functions (Prospeo, Hunter, LeadMagic) need a Business plan and that provider&rsquo;s API key.</p>
+  </div>
 </div>
 <!-- END ROW -->
+
+<!-- FORMULA LIBRARY BY CATEGORY -->
+<style>
+  .fx-lib { max-width:1080px; margin:10px auto 0; padding:0 16px; }
+  .fx-lib .fx-intro { color:#5f6368; max-width:780px; margin:0 0 6px; font-size:15px; line-height:1.6; }
+  .fx-group { margin-top:42px; }
+  .fx-group h3.fx-h { font-size:20px; font-weight:800; margin:0; padding-bottom:10px; border-bottom:2px solid #eef1f5; color:#1f2937; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .fx-group .fx-sub { color:#5f6368; font-size:14px; margin:11px 0 18px; line-height:1.5; }
+  .fx-grid { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:14px; }
+  .fx-card { border:1px solid #e8ecf2; border-radius:14px; background:#fff; padding:16px 18px; box-shadow:0 4px 16px rgba(15,23,42,.04); transition:box-shadow .15s ease, transform .08s ease; }
+  .fx-card:hover { box-shadow:0 10px 28px rgba(15,23,42,.09); transform:translateY(-1px); }
+  .fx-card h4 { font-size:14px; font-weight:800; margin:0 0 10px; color:#334155; }
+  .fx-card .fx-out { margin-top:9px; font-size:12.5px; color:#64748b; line-height:1.45; }
+  .fx-card .fx-out:before { content:""; }
+  .fx-badge { font-size:10.5px; font-weight:700; color:#188038; background:#e7f4ec; border-radius:999px; padding:2px 8px; margin-left:4px; white-space:nowrap; }
+  @media (max-width:820px){ .fx-grid { grid-template-columns:1fr; } }
+</style>
+
+<div class="fx-lib">
+  <h2 class="help-header container" style="padding-left:0;">The GPT for Sheets formula library &mdash; by use case</h2>
+  <p class="fx-intro">Every example below is copy-paste ready. Click <strong>Copy</strong>, paste into any cell, swap in your own text or a cell reference (like <code>A2</code>), and drag it down to run across rows.</p>
+
+  <div class="fx-group">
+    <h3 class="fx-h">🤖 AI models &mdash; write, analyze, ask</h3>
+    <p class="fx-sub">Same simple syntax for every model &mdash; just change the function name. Included on paid plans (your own API key optional).</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>OpenAI GPT</h4><code>=GPT("Write a tagline for a coffee shop")</code></div>
+      <div class="fx-card"><h4>Claude (Anthropic)</h4><code>=CLAUDE("Summarize this review in one line: " &amp; A2)</code></div>
+      <div class="fx-card"><h4>Google Gemini</h4><code>=GEMINI("List 3 blog title ideas about " &amp; A2)</code></div>
+      <div class="fx-card"><h4>Grok (xAI)</h4><code>=GROK("Write a witty product description for " &amp; A2)</code></div>
+      <div class="fx-card"><h4>DeepSeek</h4><code>=DEEPSEEK("Translate to French: " &amp; A2)</code></div>
+      <div class="fx-card"><h4>Mistral</h4><code>=MISTRAL("Classify the sentiment of: " &amp; A2)</code></div>
+      <div class="fx-card"><h4>Perplexity</h4><code>=PERPLEXITY("What are today&rsquo;s top AI news?")</code></div>
+      <div class="fx-card"><h4>OpenRouter &mdash; any model</h4><code>=OPEN_ROUTER("openai/gpt-5.5", "your-key", "Write a tagline for " &amp; A2)</code></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">✨ Everyday data tasks</h3>
+    <p class="fx-sub">Clean, classify and transform a whole column with one formula.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Translate</h4><code>=GPT_TRANSLATE(A2, "Spanish")</code><div class="fx-out">&rarr; Hola, &iquest;c&oacute;mo est&aacute;s?</div></div>
+      <div class="fx-card"><h4>Summarize</h4><code>=GPT_SUMMARIZE(A2, "one sentence")</code><div class="fx-out">&rarr; a one-line recap of the text in A2</div></div>
+      <div class="fx-card"><h4>Extract data</h4><code>=GPT_EXTRACT(A2, "email address")</code><div class="fx-out">&rarr; jane@acme.com</div></div>
+      <div class="fx-card"><h4>Classify / sentiment</h4><code>=GPT_CLASSIFY(A2, "Positive, Neutral, Negative")</code><div class="fx-out">&rarr; Positive</div></div>
+      <div class="fx-card"><h4>Tag / categorize</h4><code>=GPT_TAG(A2, "bug, feature, question")</code><div class="fx-out">&rarr; feature</div></div>
+      <div class="fx-card"><h4>Fix grammar &amp; spelling</h4><code>=GPT_APPLY(A2, "fix grammar and spelling")</code><div class="fx-out">&rarr; &ldquo;He has a book.&rdquo;</div></div>
+      <div class="fx-card"><h4>Generate a list</h4><code>=GPT_LIST("5 blog ideas about " &amp; A2)</code><div class="fx-out">&rarr; 5 ideas, one per row</div></div>
+      <div class="fx-card"><h4>Generate a table</h4><code>=GPT_TABLE("Top 5 EU capitals", "City, Country, Population")</code><div class="fx-out">&rarr; 5 rows &times; City, Country, Population</div></div>
+      <div class="fx-card"><h4>Fill by example</h4><code>=GPT_FILL(A2:B4, A5:A20)</code><div class="fx-out">&rarr; predicted values for A5:A20</div></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">🌐 Web search &amp; scraping</h3>
+    <p class="fx-sub">Pull live web data, run searches and read any page into your sheet.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Ask the live web</h4><code>=GPT_WEB_SEARCH("What are the top news headlines today?")</code><div class="fx-out">&rarr; a short, up-to-date answer</div></div>
+      <div class="fx-card"><h4>Web answer as a table</h4><code>=GPT_WEB_SEARCH_TABLE("Top 5 cryptocurrencies with price and market cap")</code><div class="fx-out">&rarr; a table: name, price, market cap</div></div>
+      <div class="fx-card"><h4>Search results (SERP)</h4><code>=SERP("best coffee shops in Austin", 20)</code><div class="fx-out">&rarr; top 20 results: URL, title, snippet</div></div>
+      <div class="fx-card"><h4>Brave search <span class="fx-badge">own key</span></h4><code>=BRAVE_SEARCH_WEB("AI news", "your-api-key")</code><div class="fx-out">&rarr; web results for the query</div></div>
+      <div class="fx-card"><h4>Scrape page text</h4><code>=WEB_PARAGRAPHS("https://stripe.com")</code><div class="fx-out">&rarr; the page&rsquo;s body text</div></div>
+      <div class="fx-card"><h4>Scrape many URLs (bulk)</h4><code>=WEB_URLS_DATA(A2:A50)</code><div class="fx-out">&rarr; scraped data for every URL in the range</div></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">📈 SEO &amp; content</h3>
+    <p class="fx-sub">Draft content, plan strategy and research keywords at scale.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Write an SEO blog draft</h4><code>=SEO_BLOG("Best espresso machines 2026", "Professional", "English")</code><div class="fx-out">&rarr; a 1,000+ word SEO draft</div></div>
+      <div class="fx-card"><h4>Outrank a competitor page</h4><code>=SEO_OUTRANK("https://competitor.com/post", "Friendly", "English")</code><div class="fx-out">&rarr; an article built to beat that page</div></div>
+      <div class="fx-card"><h4>Build an SEO strategy</h4><code>=SEO_STRATEGY("espresso machine, coffee grinder", "English")</code><div class="fx-out">&rarr; a keyword &amp; content plan</div></div>
+      <div class="fx-card"><h4>Keyword ideas <span class="fx-badge">DataForSEO</span></h4><code>=GOOGLE_KEYWORD_IDEAS("espresso machine", "login", "password")</code><div class="fx-out">&rarr; related keywords with search volume</div></div>
+      <div class="fx-card"><h4>Competitor&rsquo;s ranked keywords</h4><code>=GOOGLE_RANKED_KEYWORDS("competitor.com", 100, "login", "password")</code><div class="fx-out">&rarr; keywords the domain ranks for</div></div>
+      <div class="fx-card"><h4>Push a URL to Google index</h4><code>=GOOGLE_INDEXING("https://docgpt.ai/docs/")</code><div class="fx-out">&rarr; submits the URL to Google for indexing</div></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">🪄 Lead enrichment &mdash; a Clay alternative in Sheets <span class="fx-badge">Business</span></h3>
+    <p class="fx-sub">Find &amp; verify emails and research companies. Each data provider&rsquo;s API key goes right in the formula.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Find emails by company domain</h4><code>=HUNTER_DOMAIN_SEARCH("your-api-key", "stripe.com")</code><div class="fx-out">&rarr; emails found at stripe.com</div></div>
+      <div class="fx-card"><h4>Find a person&rsquo;s email</h4><code>=LEADMAGIC_FIND_EMAIL("your-api-key", "Bill", "Gates", "microsoft.com")</code><div class="fx-out">&rarr; bill.gates@microsoft.com</div></div>
+      <div class="fx-card"><h4>Verify an email</h4><code>=HUNTER_EMAIL_VERIFIER("your-api-key", "patrick@stripe.com")</code><div class="fx-out">&rarr; valid / risky / invalid</div></div>
+      <div class="fx-card"><h4>Contacts from a company</h4><code>=APOLLO_GET_CONTACTS("your-api-key", "company.com")</code><div class="fx-out">&rarr; matching contacts at the company</div></div>
+      <div class="fx-card"><h4>Email behind a LinkedIn profile</h4><code>=PROSPEO_GET_EMAIL_BY_LINKEDIN("your-api-key", "https://linkedin.com/in/username")</code><div class="fx-out">&rarr; the person&rsquo;s work email</div></div>
+      <div class="fx-card"><h4>Company funding &amp; intel</h4><code>=LEADMAGIC_COMPANY_FUNDING("your-api-key", "gong", "gong.io")</code><div class="fx-out">&rarr; funding rounds &amp; amounts</div></div>
+      <div class="fx-card"><h4>Local businesses (Google Maps)</h4><code>=GOOGLE_MAPS_GET_PLACES("API_KEY", "34.0522,-118.2437", 1000, "restaurant", "", 20)</code><div class="fx-out">&rarr; a table of places: name, address, rating</div></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">🎨 Images &amp; vision</h3>
+    <p class="fx-sub">Generate images from a prompt, or have AI read and describe any image.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Generate an image (OpenAI)</h4><code>=GPT_CREATE_IMAGE("a minimalist coffee shop logo, flat vector", "1024x1024")</code><div class="fx-out">&rarr; a generated image URL</div></div>
+      <div class="fx-card"><h4>Generate an image (Gemini)</h4><code>=GEMINI_CREATE_IMAGE("a cozy cafe interior, watercolor", "16:9")</code><div class="fx-out">&rarr; a generated image URL</div></div>
+      <div class="fx-card"><h4>Read / describe an image</h4><code>=GPT_VISION("https://example.com/photo.jpg", "What is in this image?")</code><div class="fx-out">&rarr; a description of the image</div></div>
+    </div>
+  </div>
+
+  <div class="fx-group">
+    <h3 class="fx-h">⚙️ Automation &amp; integrations</h3>
+    <p class="fx-sub">Connect anything &mdash; call APIs, send email, post to socials, reshape data.</p>
+    <div class="fx-grid">
+      <div class="fx-card"><h4>Call any REST API</h4><code>=API("GET", "https://dogapi.dog/api/v2/breeds", "", "", "", false)</code><div class="fx-out">&rarr; the JSON / text response</div></div>
+      <div class="fx-card"><h4>Send an email</h4><code>=SEND_EMAIL("jane@acme.com", "Quick question", "Hi Jane, ...", false)</code><div class="fx-out">&rarr; sends it &mdash; returns &ldquo;Sent&rdquo;</div></div>
+      <div class="fx-card"><h4>Post to LinkedIn</h4><code>=LINKEDIN_POST("Check out our launch 🚀")</code><div class="fx-out">&rarr; posts &amp; returns the post link</div></div>
+      <div class="fx-card"><h4>Post to X (Twitter)</h4><code>=TWITTER_POST("Hello World 🚀")</code><div class="fx-out">&rarr; posts &amp; returns the post link</div></div>
+      <div class="fx-card"><h4>Flatten JSON into columns</h4><code>=FLATTEN_JSON(A2)</code><div class="fx-out">&rarr; flattened key / value columns</div></div>
+      <div class="fx-card"><h4>Markdown &rarr; table</h4><code>=MARKDOWN_TO_TABLE(A2)</code><div class="fx-out">&rarr; a real spreadsheet table</div></div>
+    </div>
+  </div>
+</div>
+<!-- END FORMULA LIBRARY -->
 
 <!--&lt;!&ndash;Embded code&ndash;&gt;-->
 <!--<a href="https://theresanaiforthat.com/ai/docgpt-ai-writer-for-docs/?ref=featured&v=1071512" target="_blank" rel="nofollow"><img width="300" src="https://media.theresanaiforthat.com/featured-on-taaft.png?width=600"></a>-->
@@ -2545,25 +2700,79 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <div class="container center-img">
     <a target="_blank" href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=pricing_section&utm_medium=landing_page&utm_campaign=email_assistant_gpt_campaign"> <img style="width: 800px !important;" src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demo-scrapping-functions.gif?raw=true" alt="gpt for sheets"></a>
   </div>
+  <div class="center-table">
+    <table class="table table-bordered">
+      <thead><tr><th>Goal</th><th>Copy / paste formula</th></tr></thead>
+      <tbody>
+        <tr><td>Get a page title</td><td><code>=WEB_TITLE("https://stripe.com")</code></td></tr>
+        <tr><td>Get the meta description</td><td><code>=WEB_DESCRIPTION("https://stripe.com")</code></td></tr>
+        <tr><td>Pull all body text from a page</td><td><code>=WEB_PARAGRAPHS("https://stripe.com")</code></td></tr>
+        <tr><td>Scrape many URLs at once (bulk)</td><td><code>=WEB_URLS_DATA(A2:A50)</code></td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <style>
   .help-header {
-    padding-bottom: 15px;
-    font-size: 22px;
+    padding-bottom: 12px;
+    font-size: clamp(20px, 2.6vw, 26px);
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
   }
 
   .help-image {
-    border-radius: 15px;
+    display: block;
+    width: 100%;
+    max-width: 840px;
+    height: auto;
+    margin: 8px auto 0;
+    border: 1px solid #e8ecf2;
+    border-radius: 14px;
+    box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
   }
 
   .center-table {
-    margin: 0 auto;
-    width: 70%;
-    padding-top: 15px;
+    margin: 20px auto 0;
+    max-width: 860px;
+    width: 100%;
+    padding-top: 0;
+  }
+  .center-table table.table-bordered {
+    width: 100%;
+    border: 1px solid #e8ecf2 !important;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+  }
+  .center-table table.table-bordered thead th {
+    background: #f7f9fc;
+    color: #1f2937;
+    font-weight: 800;
+    font-size: 13px;
+    border: none !important;
+    border-bottom: 1px solid #e8ecf2 !important;
+    padding: 12px 16px;
+    text-align: left;
+  }
+  .center-table table.table-bordered td {
+    border: none !important;
+    border-bottom: 1px solid #eef2f7 !important;
+    padding: 12px 16px;
+    color: #3c4043;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .center-table table.table-bordered tr:last-child td {
+    border-bottom: none !important;
   }
   .help-row {
-    padding-top: 25px;
+    padding-top: 28px;
   }
 </style>
 <div class="content">
@@ -2612,7 +2821,16 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <div class="row pt-5">
     <h2 class="help-header container">=SERP() functions return the top 20 search results from the Search Engine with the URL, meta title, and meta description.</h2>
     <div class="container center-img col-md-8">
-      <img alt="Chat GPT in Google Sheets - retry functions with errors" class="help-image" src="/images/demo-serp.png">
+      <img alt="SERP function in Google Sheets - top search results" class="help-image" src="/images/demo-serp.png">
+    </div>
+    <div class="center-table">
+      <table class="table table-bordered">
+        <thead><tr><th>Goal</th><th>Copy / paste formula</th></tr></thead>
+        <tbody>
+          <tr><td>Top 20 results for a query</td><td><code>=SERP("best coffee shops in Austin", 20)</code></td></tr>
+          <tr><td>Find LinkedIn profiles via search operators</td><td><code>=SERP("site:linkedin.com/in marketing director SaaS", 40)</code></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <!-- END ROW -->
