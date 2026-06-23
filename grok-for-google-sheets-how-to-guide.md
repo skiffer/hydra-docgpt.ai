@@ -1,10 +1,10 @@
 ---
 layout: seo-guide
-title: "Grok for Google Sheets: Use Grok AI Formulas in Sheets"
+title: "Connect Grok (xAI) to Google Sheets — No Zapier or Apps Script"
 permalink: /grok-for-google-sheets-how-to-guide/
-description: "Use Grok in Google Sheets for lead research, SEO, summaries, social analysis, and bulk enrichment. Install GPT for Sheets to run Grok/xAI formulas without Apps Script."
-hero_title: "Grok for Google Sheets: Use Grok AI Formulas in Sheets"
-hero_subtitle: "Run Grok/xAI prompts across rows for lead research, SEO, summaries, campaign angles, social analysis, and bulk enrichment — no Apps Script."
+description: "Yes — you can connect Grok (xAI) to Google Sheets and run =GROK() formulas across rows for research, SEO, and bulk enrichment. Set it up in 2 minutes with GPT for Sheets — no Zapier or Apps Script."
+hero_title: "How to Connect Grok (xAI) to Google Sheets"
+hero_subtitle: "Run Grok/xAI prompts directly in your spreadsheet with =GROK() formulas — lead research, SEO, summaries, campaign angles, and bulk enrichment. No Zapier, no Apps Script."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
 primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=grok_guide&utm_campaign=model_page_hero"
@@ -52,6 +52,14 @@ formula_cards:
       =GROK("Create 5 distinct campaign angles for " & A2 & " targeting " & B2 & " who struggle with " & C2 & ". Format for " & D2 & ". Include hook, promise, and CTA for each angle.")
 
 ---
+
+## Can Grok access Google Sheets directly?
+
+**Short answer: not on its own.** Grok (xAI) can't read or edit your spreadsheet from a shared link, and there's no native Grok connector for Google Workspace. The reliable way to use Grok inside a sheet is **GPT for Sheets**: install the add-on, choose xAI/Grok as the model, add your API key, and run `=GROK()` in any cell. No Zapier, no Apps Script, no copy-pasting between tabs.
+
+- **Can Grok edit Google Sheets directly?** Through GPT for Sheets, yes — write a `=GROK()` formula and drag it down to fill a whole column.
+- **Do I need Zapier or Apps Script?** No. GPT for Sheets connects Grok/xAI to Google Sheets natively from the add-on sidebar.
+- **How do I connect Grok (xAI) to Google Sheets?** Install GPT for Sheets, open the sidebar, select Grok/xAI, paste your xAI API key — see the step-by-step setup below.
 
 ## What is Grok for Google Sheets?
 
