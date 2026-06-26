@@ -1,0 +1,23 @@
+date: 2026-06-26
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - gmass-vs-yamm-gmail-google-sheets-mail-merge
+  - snovio-alternative-gmail-google-sheets-mail-merge
+  - mail-merge-from-google-form-responses-gmail-google-sheets
+  - mail-merge-individual-attachments-per-recipient-google-sheets
+commit_hash: 0c0490e7443275c7dff2be37c832265450ac0593
+pushed_branch: main
+build_result: success (jekyll build done in 38.6s; 0 Liquid warnings after wrapping merge-field examples in raw tags)
+live_check: 4/4 200
+bing_submission: 4/4 OK (SubmitUrl returned {"d":null})
+gsc_sitemap_submission: OK (sitemaps.submit https://docgpt.ai/sitemap.xml for sc-domain:docgpt.ai)
+notes: >
+  Pages built as root-level Jekyll .md with permalink:/slug/, matching existing SEO-page
+  convention. Merge-field examples ({{First name}} etc.) on the Forms-responses and
+  per-recipient-attachments pages were wrapped in Liquid raw tags so they render literally.
+  Comparison/alternative pages (GMass vs YAMM, Snov.io) include non-affiliation disclaimers,
+  dated/factual claims, FAQ + FAQPage JSON-LD. All CTAs route to /mail-merge-for-gmail-and-sheets/.
+  Only the 4 intended page files were staged/committed; unrelated untracked files from a
+  concurrent builder (claude-api-key-google-sheets-setup.md, openai-api-key-google-sheets-setup.md,
+  bettercontact-*, clay-alternative-*, and other gpt-sheets pages) were left untouched.
