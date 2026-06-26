@@ -1,0 +1,161 @@
+---
+title: "Clay Cost Calculator: Real Cost Per Enriched Contact (2026) vs a Cheaper Alternative"
+description: "Free Clay cost calculator. See Clay's real monthly cost — subscription plus credit burn per enriched contact — and compare it to doing the same lead enrichment in Google Sheets with GPT for Sheets."
+custom_hero: true
+---
+
+<style>
+  .calc { --c-primary:#017BFE; --c-primary-dark:#005fc4; --c-green:#188038; --c-ink:#1f2937; --c-muted:#5f6368; --c-soft:#f5f9ff; --c-border:#dbe7ff; color:var(--c-ink); }
+  .calc * { box-sizing:border-box; }
+  .calc-wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  .calc-hero { text-align:center; padding:48px 0 18px; background:linear-gradient(180deg,#eef6ff 0%,#fff 92%); border-bottom:1px solid #eef2f7; }
+  .calc-eyebrow { display:inline-block; font-size:12.5px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--c-primary-dark); margin-bottom:10px; }
+  .calc-hero h1 { max-width:820px; margin:0 auto 12px; font-size:clamp(1.9rem,4.6vw,3rem); line-height:1.08; font-weight:800; letter-spacing:-.01em; }
+  .calc-hero p { max-width:680px; margin:0 auto; color:var(--c-muted); font-size:1.12rem; line-height:1.55; }
+  .calc-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:22px; margin:30px 0; align-items:start; }
+  .calc-card { background:#fff; border:1px solid var(--c-border); border-radius:18px; padding:24px; box-shadow:0 14px 40px rgba(1,123,254,.10); }
+  .calc-card h2 { font-size:1.15rem; font-weight:800; margin:0 0 16px; }
+  .calc-field { margin-bottom:18px; }
+  .calc-field label { display:flex; justify-content:space-between; align-items:baseline; font-weight:700; font-size:.92rem; margin-bottom:7px; }
+  .calc-field label .val { color:var(--c-primary-dark); font-weight:800; }
+  .calc-field input[type=range] { width:100%; accent-color:var(--c-primary); }
+  .calc-field input[type=number] { width:120px; padding:8px 10px; border:1px solid var(--c-border); border-radius:8px; font-size:.95rem; }
+  .calc-seg { display:flex; gap:8px; flex-wrap:wrap; }
+  .calc-seg button { flex:1 1 auto; padding:9px 10px; border:1px solid var(--c-border); background:#fff; border-radius:9px; font-weight:700; font-size:.86rem; cursor:pointer; color:#3c4043; }
+  .calc-seg button.on { background:var(--c-primary); color:#fff; border-color:var(--c-primary); }
+  .calc-note { font-size:12px; color:var(--c-muted); margin-top:4px; }
+  .res-row { display:flex; justify-content:space-between; align-items:center; padding:13px 0; border-bottom:1px solid #eef2f7; }
+  .res-row:last-of-type { border-bottom:none; }
+  .res-row .lab { color:var(--c-muted); font-size:.92rem; }
+  .res-row .num { font-weight:800; font-size:1.15rem; }
+  .res-clay .num { color:#c0392b; }
+  .res-gfs .num { color:var(--c-green); }
+  .res-save { margin-top:14px; background:var(--c-green); color:#fff; border-radius:14px; padding:18px 20px; text-align:center; }
+  .res-save .big { font-size:2rem; font-weight:800; line-height:1; }
+  .res-save .sub { font-size:.92rem; opacity:.95; margin-top:6px; }
+  .calc-cta { display:block; text-align:center; margin-top:16px; background:var(--c-primary); color:#fff !important; font-weight:800; padding:14px; border-radius:11px; text-decoration:none; box-shadow:0 10px 24px rgba(1,123,254,.28); }
+  .calc-cta:hover { background:var(--c-primary-dark); text-decoration:none; }
+  .calc-section { padding:34px 0; }
+  .calc-section h2 { font-size:clamp(1.5rem,3.4vw,2rem); font-weight:800; margin:0 0 14px; }
+  .calc-section p { color:var(--c-muted); line-height:1.6; }
+  .calc-faq details { background:#fff; border:1px solid #e6eaf0; border-radius:12px; padding:15px 18px; margin-bottom:11px; }
+  .calc-faq summary { cursor:pointer; font-weight:700; }
+  .calc-faq p { margin:10px 0 0; }
+  @media (max-width:780px){ .calc-grid{ grid-template-columns:1fr; } }
+</style>
+
+<main class="calc">
+  <section class="calc-hero">
+    <div class="calc-wrap">
+      <span class="calc-eyebrow">Free tool &middot; Lead enrichment</span>
+      <h1>Clay Cost Calculator: the real cost per enriched contact</h1>
+      <p>Clay's headline price hides the credit burn. Estimate Clay's true monthly cost &mdash; subscription <em>plus</em> per-contact credits &mdash; and compare it to running the same enrichment in Google Sheets with GPT for Sheets.</p>
+    </div>
+  </section>
+
+  <div class="calc-wrap">
+    <div class="calc-grid">
+      <!-- INPUTS -->
+      <div class="calc-card">
+        <h2>Your enrichment volume</h2>
+        <div class="calc-field">
+          <label>Contacts to enrich / month <span class="val" id="v-contacts">1,000</span></label>
+          <input type="range" id="i-contacts" min="100" max="20000" step="100" value="1000">
+        </div>
+        <div class="calc-field">
+          <label>Enrichment depth</label>
+          <div class="calc-seg" id="i-depth">
+            <button data-depth="basic">Basic<br><small>email</small></button>
+            <button data-depth="standard" class="on">Standard<br><small>email + title + company</small></button>
+            <button data-depth="full">Full<br><small>+ phone + firmographics</small></button>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label>Clay plan base <span class="val">$<input type="number" id="i-claybase" value="349" min="0" step="1" style="width:90px;"></span></label>
+          <div class="calc-note">Clay 2026 plans run ~$149&ndash;$800/mo. Edit to match yours.</div>
+        </div>
+        <div class="calc-field">
+          <label>Clay cost per contact <span class="val">$<input type="number" id="i-claycpc" value="0.60" min="0" step="0.01" style="width:90px;"></span></label>
+          <div class="calc-note">Auto-set by depth (basic ~$0.30, full ~$1.20). Credit "waterfalls" can push this higher.</div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="calc-card">
+        <h2>Estimated monthly cost</h2>
+        <div class="res-row res-clay"><span class="lab">Clay (subscription + credits)</span><span class="num" id="r-clay">$949</span></div>
+        <div class="res-row res-gfs"><span class="lab">GPT for Sheets + your provider keys</span><span class="num" id="r-gfs">$100</span></div>
+        <div class="res-row"><span class="lab">Clay cost per year</span><span class="num" id="r-clayyr">$11,388</span></div>
+        <div class="res-save">
+          <div class="big" id="r-save">$10,188</div>
+          <div class="sub">saved per year &mdash; <span id="r-pct">89%</span> cheaper than Clay</div>
+        </div>
+        <a class="calc-cta" href="/gpt-for-sheets/?utm_source=seo&utm_medium=clay_calculator&utm_campaign=cta">Run this in your own Google Sheet &rarr;</a>
+        <div class="calc-note" style="text-align:center;margin-top:8px;">GPT for Sheets = flat Business plan + cheap direct keys (Hunter, Prospeo, LeadMagic, Apollo) — no Clay credit markup.</div>
+      </div>
+    </div>
+
+    <section class="calc-section">
+      <h2>Why Clay gets expensive — and how Sheets is cheaper</h2>
+      <p>Clay's monthly fee is only the entry ticket. Real enrichment spends <strong>credits per action</strong> — find email, verify it, find phone, pull firmographics — and a "waterfall" can hit several paid providers per contact. That's why a 500-contact full-enrichment run can cost hundreds in credits <em>on top of</em> a $495/mo plan.</p>
+      <p><strong>GPT for Sheets</strong> is a lightweight Clay alternative inside Google Sheets: you connect the same data providers (Hunter, Prospeo, LeadMagic, Apollo) with your own API keys and call them with formulas like <code>=HUNTER_DOMAIN_SEARCH()</code> or <code>=LEADMAGIC_FIND_EMAIL()</code>. You pay each provider directly at their rate — no platform markup — on a flat add-on subscription.</p>
+    </section>
+
+    <section class="calc-section calc-faq">
+      <h2>FAQ</h2>
+      <details open><summary>How much does Clay really cost per contact?</summary><p>Beyond the subscription, basic enrichment is ~14 credits (about $0.22–$1.05 depending on plan) and full enrichment ~34 credits (about $0.54–$2.55). Multi-provider waterfalls increase this further — which is why the per-contact cost dominates the bill at scale.</p></details>
+      <details><summary>Is GPT for Sheets a Clay alternative?</summary><p>Yes — it runs lead enrichment, company research, and email finding/verification directly in Google Sheets using the same providers, at a flat subscription plus your own (cheaper) provider keys.</p></details>
+      <details><summary>Do I need my own API keys?</summary><p>For enrichment functions (Business plan), yes — you add each provider's key, which is what keeps the per-contact cost low. AI formulas (=GPT, =CLAUDE…) include credits and don't require a key.</p></details>
+      <details><summary>Are these numbers exact?</summary><p>They're editable estimates. Adjust the plan base and per-contact cost to match your real Clay usage; the comparison updates live.</p></details>
+    </section>
+  </div>
+</main>
+
+<script>
+(function(){
+  var depthCpc = { basic:0.30, standard:0.60, full:1.20 };
+  var depthProv = { basic:0.04, standard:0.08, full:0.15 }; // direct provider cost in Sheets
+  var GFS_BASE = 19.99; // Business plan, billed annually
+  var state = { contacts:1000, depth:'standard', clayBase:349, clayCpc:0.60 };
+  var $ = function(id){ return document.getElementById(id); };
+  function fmt(n){ return '$' + Math.round(n).toLocaleString('en-US'); }
+  function render(){
+    var clayMo = state.clayBase + state.contacts * state.clayCpc;
+    var gfsMo = GFS_BASE + state.contacts * depthProv[state.depth];
+    var saveMo = Math.max(0, clayMo - gfsMo);
+    var pct = clayMo > 0 ? Math.round(saveMo / clayMo * 100) : 0;
+    $('v-contacts').textContent = state.contacts.toLocaleString('en-US');
+    $('r-clay').textContent = fmt(clayMo);
+    $('r-gfs').textContent = fmt(gfsMo);
+    $('r-clayyr').textContent = fmt(clayMo*12);
+    $('r-save').textContent = fmt(saveMo*12);
+    $('r-pct').textContent = pct + '%';
+  }
+  $('i-contacts').addEventListener('input', function(e){ state.contacts = +e.target.value; render(); });
+  $('i-claybase').addEventListener('input', function(e){ state.clayBase = +e.target.value||0; render(); });
+  $('i-claycpc').addEventListener('input', function(e){ state.clayCpc = +e.target.value||0; render(); });
+  document.querySelectorAll('#i-depth button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('#i-depth button').forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      state.depth = b.getAttribute('data-depth');
+      state.clayCpc = depthCpc[state.depth];
+      $('i-claycpc').value = state.clayCpc.toFixed(2);
+      render();
+    });
+  });
+  render();
+})();
+</script>
+
+<script type="application/ld+json">
+[
+  { "@context":"https://schema.org", "@type":"WebApplication", "name":"Clay Cost Calculator", "applicationCategory":"BusinessApplication", "operatingSystem":"Web", "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}, "url":"https://docgpt.ai/clay-cost-calculator/", "description":"Estimate Clay's real cost per enriched contact and compare it to lead enrichment in Google Sheets with GPT for Sheets." },
+  { "@context":"https://schema.org", "@type":"BreadcrumbList", "itemListElement":[ {"@type":"ListItem","position":1,"name":"Home","item":"https://docgpt.ai/"}, {"@type":"ListItem","position":2,"name":"GPT for Sheets","item":"https://docgpt.ai/gpt-for-sheets/"}, {"@type":"ListItem","position":3,"name":"Clay Cost Calculator","item":"https://docgpt.ai/clay-cost-calculator/"} ] },
+  { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity":[
+    {"@type":"Question","name":"How much does Clay really cost per contact?","acceptedAnswer":{"@type":"Answer","text":"Beyond the subscription, basic enrichment is about 14 credits (~$0.22–$1.05) and full enrichment about 34 credits (~$0.54–$2.55); multi-provider waterfalls increase it further, so per-contact cost dominates the bill at scale."}},
+    {"@type":"Question","name":"Is GPT for Sheets a Clay alternative?","acceptedAnswer":{"@type":"Answer","text":"Yes — it runs lead enrichment, company research, and email finding/verification directly in Google Sheets using the same providers, at a flat subscription plus your own provider keys."}},
+    {"@type":"Question","name":"Do I need my own API keys?","acceptedAnswer":{"@type":"Answer","text":"For enrichment functions (Business plan) you add each provider's key, which keeps per-contact cost low. AI formulas include credits and need no key."}}
+  ]}
+]
+</script>

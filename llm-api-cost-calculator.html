@@ -1,0 +1,148 @@
+---
+title: "LLM API Cost Calculator (2026): GPT-5.5, Claude Opus 4.8, Gemini, Grok Token Pricing"
+description: "Free LLM API cost calculator. Estimate monthly and yearly token costs for GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3 and DeepSeek V4 — then run any of them in Google Sheets with GPT for Sheets."
+custom_hero: true
+---
+
+<style>
+  .calc { --c-primary:#017BFE; --c-primary-dark:#005fc4; --c-green:#188038; --c-ink:#1f2937; --c-muted:#5f6368; --c-soft:#f5f9ff; --c-border:#dbe7ff; color:var(--c-ink); }
+  .calc * { box-sizing:border-box; }
+  .calc-wrap { max-width:1000px; margin:0 auto; padding:0 20px; }
+  .calc-hero { text-align:center; padding:48px 0 18px; background:linear-gradient(180deg,#eef6ff 0%,#fff 92%); border-bottom:1px solid #eef2f7; }
+  .calc-eyebrow { display:inline-block; font-size:12.5px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--c-primary-dark); margin-bottom:10px; }
+  .calc-hero h1 { max-width:840px; margin:0 auto 12px; font-size:clamp(1.8rem,4.4vw,2.9rem); line-height:1.1; font-weight:800; letter-spacing:-.01em; }
+  .calc-hero p { max-width:680px; margin:0 auto; color:var(--c-muted); font-size:1.12rem; line-height:1.55; }
+  .calc-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:22px; margin:30px 0; align-items:start; }
+  .calc-card { background:#fff; border:1px solid var(--c-border); border-radius:18px; padding:24px; box-shadow:0 14px 40px rgba(1,123,254,.10); }
+  .calc-card h2 { font-size:1.15rem; font-weight:800; margin:0 0 16px; }
+  .calc-field { margin-bottom:18px; }
+  .calc-field label { display:flex; justify-content:space-between; align-items:baseline; font-weight:700; font-size:.92rem; margin-bottom:7px; }
+  .calc-field label .val { color:var(--c-primary-dark); font-weight:800; }
+  .calc-field input[type=range] { width:100%; accent-color:var(--c-primary); }
+  .calc-field input[type=number] { width:90px; padding:8px 10px; border:1px solid var(--c-border); border-radius:8px; font-size:.95rem; }
+  .calc-field select { width:100%; padding:10px 12px; border:1px solid var(--c-border); border-radius:9px; font-size:.95rem; font-weight:600; }
+  .calc-two { display:flex; gap:12px; }
+  .calc-two > div { flex:1; }
+  .calc-note { font-size:12px; color:var(--c-muted); margin-top:4px; }
+  .res-row { display:flex; justify-content:space-between; align-items:center; padding:13px 0; border-bottom:1px solid #eef2f7; }
+  .res-row:last-of-type { border-bottom:none; }
+  .res-row .lab { color:var(--c-muted); font-size:.92rem; }
+  .res-row .num { font-weight:800; font-size:1.15rem; }
+  .res-big { margin-top:14px; background:#0b1220; color:#fff; border-radius:14px; padding:18px 20px; text-align:center; }
+  .res-big .big { font-size:2rem; font-weight:800; line-height:1; }
+  .res-big .sub { font-size:.92rem; opacity:.85; margin-top:6px; }
+  .calc-cta { display:block; text-align:center; margin-top:16px; background:var(--c-primary); color:#fff !important; font-weight:800; padding:14px; border-radius:11px; text-decoration:none; box-shadow:0 10px 24px rgba(1,123,254,.28); }
+  .calc-cta:hover { background:var(--c-primary-dark); text-decoration:none; }
+  .calc-section { padding:34px 0; }
+  .calc-section h2 { font-size:clamp(1.5rem,3.4vw,2rem); font-weight:800; margin:0 0 14px; }
+  .calc-section p { color:var(--c-muted); line-height:1.6; }
+  .calc-faq details { background:#fff; border:1px solid #e6eaf0; border-radius:12px; padding:15px 18px; margin-bottom:11px; }
+  .calc-faq summary { cursor:pointer; font-weight:700; }
+  .calc-faq p { margin:10px 0 0; }
+  @media (max-width:780px){ .calc-grid{ grid-template-columns:1fr; } }
+</style>
+
+<main class="calc">
+  <section class="calc-hero">
+    <div class="calc-wrap">
+      <span class="calc-eyebrow">Free tool &middot; AI / LLM</span>
+      <h1>LLM API Cost Calculator (2026)</h1>
+      <p>Estimate monthly and yearly token costs for GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3 and DeepSeek V4 &mdash; then run any of them, no code, in Google Sheets with GPT for Sheets.</p>
+    </div>
+  </section>
+
+  <div class="calc-wrap">
+    <div class="calc-grid">
+      <div class="calc-card">
+        <h2>Your usage</h2>
+        <div class="calc-field">
+          <label>Model</label>
+          <select id="i-model"></select>
+          <div class="calc-note">Prices below are approximate (June 2026) per 1M tokens — edit to match your provider.</div>
+        </div>
+        <div class="calc-two">
+          <div class="calc-field"><label>Input $/1M <span class="val">$<input type="number" id="i-pin" value="5" min="0" step="0.01"></span></label></div>
+          <div class="calc-field"><label>Output $/1M <span class="val">$<input type="number" id="i-pout" value="30" min="0" step="0.01"></span></label></div>
+        </div>
+        <div class="calc-field">
+          <label>Requests / month <span class="val" id="v-req">10,000</span></label>
+          <input type="range" id="i-req" min="100" max="1000000" step="100" value="10000">
+        </div>
+        <div class="calc-two">
+          <div class="calc-field"><label>Avg input tokens <span class="val"><input type="number" id="i-tin" value="800" min="0" step="50"></span></label></div>
+          <div class="calc-field"><label>Avg output tokens <span class="val"><input type="number" id="i-tout" value="400" min="0" step="50"></span></label></div>
+        </div>
+      </div>
+
+      <div class="calc-card">
+        <h2>Estimated API cost</h2>
+        <div class="res-row"><span class="lab">Cost per request</span><span class="num" id="r-per">$0.016</span></div>
+        <div class="res-row"><span class="lab">Per month</span><span class="num" id="r-mo">$160</span></div>
+        <div class="res-big">
+          <div class="big" id="r-yr">$1,920</div>
+          <div class="sub">estimated API spend per year</div>
+        </div>
+        <a class="calc-cta" href="/gpt-for-sheets/?utm_source=seo&utm_medium=llm_calculator&utm_campaign=cta">Run this model in Google Sheets &rarr;</a>
+        <div class="calc-note" style="text-align:center;margin-top:8px;">Or skip token math entirely — GPT for Sheets plans include AI credits at a flat price (no API key needed).</div>
+      </div>
+    </div>
+
+    <section class="calc-section">
+      <h2>How LLM API pricing works</h2>
+      <p>Most providers bill per <strong>token</strong> (~¾ of a word), with separate input and output rates. Monthly cost = requests × (avg input tokens × input price + avg output tokens × output price). Reasoning and "Pro" models cost far more per token, while small models (GPT-4o-mini, Gemini Flash, DeepSeek V4) are a fraction of the price.</p>
+      <p>With <strong>GPT for Sheets</strong> you can run all of them — <code>=GPT()</code>, <code>=CLAUDE()</code>, <code>=GEMINI()</code>, <code>=GROK()</code>, <code>=DEEPSEEK()</code> — directly in cells. Bring your own key and pay these token rates, or use an included-credits plan and skip token accounting entirely.</p>
+    </section>
+
+    <section class="calc-section calc-faq">
+      <h2>FAQ</h2>
+      <details open><summary>How do I calculate LLM API cost?</summary><p>Multiply requests by (average input tokens × input price + average output tokens × output price), using each model's per-1M-token rates. This calculator does it live as you adjust the inputs.</p></details>
+      <details><summary>Which model is cheapest?</summary><p>Small/efficient models like GPT-4o-mini, Gemini 3 Flash, and DeepSeek V4 are typically 10–50× cheaper per token than flagship "Pro" reasoning models — pick the smallest model that meets your quality bar.</p></details>
+      <details><summary>Can I use these models in Google Sheets?</summary><p>Yes — GPT for Sheets runs GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3, DeepSeek V4, Mistral, Perplexity, and any model via OpenRouter, with simple formulas.</p></details>
+      <details><summary>Can I avoid managing API keys and tokens?</summary><p>Yes. GPT for Sheets paid plans include AI credits, so you can run formulas at a flat monthly price with no API key or token math.</p></details>
+    </section>
+  </div>
+</main>
+
+<script>
+(function(){
+  // approximate June 2026 pricing, $ per 1M tokens [input, output]
+  var MODELS = [
+    ["GPT-5.5", 5, 30], ["GPT-5.5 Pro", 30, 180], ["GPT-4o mini", 0.15, 0.60],
+    ["Claude Opus 4.8", 5, 25], ["Claude Sonnet 4.6", 3, 15], ["Claude Haiku 4.5", 0.80, 4],
+    ["Gemini 3 Pro", 2, 12], ["Gemini 3 Flash", 0.30, 2.50],
+    ["Grok 4.3", 3, 15], ["DeepSeek V4", 0.30, 1.20], ["Perplexity Sonar Pro", 3, 15]
+  ];
+  var state = { pin:5, pout:30, req:10000, tin:800, tout:400 };
+  var $ = function(id){ return document.getElementById(id); };
+  var sel = $('i-model');
+  MODELS.forEach(function(m,i){ var o=document.createElement('option'); o.value=i; o.textContent=m[0]; sel.appendChild(o); });
+  function money(n){ if(n>=1000) return '$'+Math.round(n).toLocaleString('en-US'); if(n>=1) return '$'+n.toFixed(2); return '$'+n.toFixed(4); }
+  function render(){
+    var perReq = state.tin/1e6*state.pin + state.tout/1e6*state.pout;
+    var mo = perReq * state.req;
+    $('v-req').textContent = state.req.toLocaleString('en-US');
+    $('r-per').textContent = money(perReq);
+    $('r-mo').textContent = money(mo);
+    $('r-yr').textContent = money(mo*12);
+  }
+  sel.addEventListener('change', function(e){ var m=MODELS[+e.target.value]; state.pin=m[1]; state.pout=m[2]; $('i-pin').value=m[1]; $('i-pout').value=m[2]; render(); });
+  $('i-pin').addEventListener('input', function(e){ state.pin=+e.target.value||0; render(); });
+  $('i-pout').addEventListener('input', function(e){ state.pout=+e.target.value||0; render(); });
+  $('i-req').addEventListener('input', function(e){ state.req=+e.target.value; render(); });
+  $('i-tin').addEventListener('input', function(e){ state.tin=+e.target.value||0; render(); });
+  $('i-tout').addEventListener('input', function(e){ state.tout=+e.target.value||0; render(); });
+  render();
+})();
+</script>
+
+<script type="application/ld+json">
+[
+  { "@context":"https://schema.org", "@type":"WebApplication", "name":"LLM API Cost Calculator", "applicationCategory":"DeveloperApplication", "operatingSystem":"Web", "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}, "url":"https://docgpt.ai/llm-api-cost-calculator/", "description":"Estimate monthly and yearly token costs for GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3 and DeepSeek V4, and run them in Google Sheets with GPT for Sheets." },
+  { "@context":"https://schema.org", "@type":"BreadcrumbList", "itemListElement":[ {"@type":"ListItem","position":1,"name":"Home","item":"https://docgpt.ai/"}, {"@type":"ListItem","position":2,"name":"GPT for Sheets","item":"https://docgpt.ai/gpt-for-sheets/"}, {"@type":"ListItem","position":3,"name":"LLM API Cost Calculator","item":"https://docgpt.ai/llm-api-cost-calculator/"} ] },
+  { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity":[
+    {"@type":"Question","name":"How do I calculate LLM API cost?","acceptedAnswer":{"@type":"Answer","text":"Multiply requests by (average input tokens × input price + average output tokens × output price), using each model's per-1M-token rates."}},
+    {"@type":"Question","name":"Which model is cheapest?","acceptedAnswer":{"@type":"Answer","text":"Small models like GPT-4o-mini, Gemini 3 Flash, and DeepSeek V4 are typically 10–50x cheaper per token than flagship Pro reasoning models."}},
+    {"@type":"Question","name":"Can I use these models in Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"Yes — GPT for Sheets runs GPT-5.5, Claude Opus 4.8, Gemini 3, Grok 4.3, DeepSeek V4, Mistral, Perplexity, and any model via OpenRouter with simple formulas."}}
+  ]}
+]
+</script>
