@@ -45,6 +45,15 @@
     - name: Translate Slides with AI GPT
       link: /translate-slides-with-ai-gpt/
       new_window: true
+    - name: Clay Cost Calculator
+      link: /clay-cost-calculator/
+      new_window: true
+    - name: AI Content Cost Calculator
+      link: /ai-content-cost-calculator/
+      new_window: true
+    - name: LLM API Cost Calculator
+      link: /llm-api-cost-calculator/
+      new_window: true
 
 #      /ai-social-media-post-generator/
   #    nofollow: true

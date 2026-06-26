@@ -146,6 +146,11 @@ Revolutionary AI email assistant with thousands of 5-star reviews:
 - [AI Keys & Formulas Setup (OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity)](https://docgpt.ai/ai-for-google-sheets-setup/)
 - [AI Email Assistant Guide](https://docgpt.ai/docs/gpt-for-gmail)
 
+### Free Calculators & Tools
+- [Clay Cost Calculator — real cost per enriched contact](https://docgpt.ai/clay-cost-calculator/)
+- [AI Content Cost Calculator — AI vs human writer](https://docgpt.ai/ai-content-cost-calculator/)
+- [LLM API Cost Calculator — GPT-5.5, Claude Opus 4.8, Gemini, Grok token pricing](https://docgpt.ai/llm-api-cost-calculator/)
+
 ### AI Model Guides
 - [Claude for Google Sheets](https://docgpt.ai/claude-for-google-sheets-how-to-guide/)
 - [Gemini for Google Sheets](https://docgpt.ai/gemini-for-google-sheets-how-to-guide/)
