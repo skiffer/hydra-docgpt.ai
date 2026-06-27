@@ -64,9 +64,11 @@ The single most important rule of a good sequence is to stop messaging people wh
 
 ## Example: a 3-step cold-outreach sequence
 
+{% raw %}
 - **Step 1 (Day 0) — Introduction.** "Hi {{first_name}}, I noticed {{company}} is doing X. We help teams like yours with Y — worth a quick look?"
 - **Step 2 (Day 3) — Value add.** A short follow-up with one concrete resource or proof point relevant to {{company}}.
 - **Step 3 (Day 7) — Brief last touch.** "Should I close the loop on this, {{first_name}}? Happy to send details if it's useful." Anyone who replied earlier is already marked "stop" and excluded.
+{% endraw %}
 
 [Build your sequence from a Google Sheet — start free →](/mail-merge-for-gmail-and-sheets/)
 
