@@ -1,0 +1,21 @@
+date: 2026-06-29
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - salesloft-alternative-gmail-google-sheets-mail-merge
+  - smartlead-alternative-gmail-google-sheets-mail-merge
+  - quickmail-alternative-gmail-google-sheets-mail-merge
+  - email-marketing-for-financial-advisors-google-sheets-gmail
+created_page_urls:
+  - https://docgpt.ai/salesloft-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/smartlead-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/quickmail-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/email-marketing-for-financial-advisors-google-sheets-gmail/
+commit_hash: 57b4849e9e2c34e70db15fa975770c6f168a72e9
+pushed_branch: main
+build_result: success (bundle exec jekyll build; all 4 pages present in _site with H1 + product CTA + FAQPage JSON-LD)
+live_check: unverified — HTTP 200 live check could not be run in this autonomous session (web_fetch is provenance-restricted and curl/wget are disallowed by environment policy); push to origin/main confirmed (local HEAD == origin/main)
+bing_submission: 4/4 accepted (SubmitUrl HTTP 200 for all four URLs)
+gsc_sitemap_submission: not_available — search_console.py exposes only sites/query subcommands, no sitemap-submit; skipped per "do not fail batch on missing indexing helper"
+notes: >
+  Plan picks taken from mail-merge-2026-06-29.md SERP framing (SalesLoft, Smartlead, QuickMail alternatives + financial-advisor use case); all 4 slugs verified free on disk and against _redirects. Comparison pages are factual, unaffiliated, non-defamatory with dated disclaimers and "if you want a Sheets-native workflow" framing; sending/use-case pages include deliverability + compliance cautions (advisor page notes recordkeeping/supervision is not replaced). No CTA links to GPT for Sheets (the /gpt-for-sheets/ refs in built HTML are the shared site nav/footer, identical to existing template pages). 3 internal links corrected to real slugs before build. Unrelated untracked file .claude/launch.json left untouched (not staged).
