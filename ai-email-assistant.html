@@ -1,7 +1,7 @@
 ---
-title: "AI Email Assistant - GPT, Claude, Gemini, Perplexity for Gmail™"
-heading: "Supercharge Your Email Routine with AI Email Assistant – GPT, Claude, Gemini, Perplexity for Gmail"
-description: "AI Email Assistant for Gmail is an AI-driven email writing add-on. It generates emails and replies by analyzing the context of your emails and the prompts you provide, saving you hundreds of hours on email composition. Translation, rephrasing, templates, 100+ languages and dialects, simplify and enhance your text."
+title: "AI Email Assistant for Gmail — GPT, Claude, Gemini & Perplexity"
+heading: "Write and reply in Gmail faster with AI"
+description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexity directly to Gmail. Generate replies, rewrite tone, translate messages, use reusable templates and unlock unlimited AI email writing with Premium."
 ---
 <script src="/assets/js/checkout-attribution.js"></script>
 <script src="/assets/js/revenue-posthog.js"></script>
@@ -186,8 +186,124 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
     /*    !*font-weight: bold;*!*/
     /*}*/
 </style>
+<style>
+    .gmail-upgrade-hero {
+        max-width: 1080px;
+        margin: 18px auto 10px;
+        padding: 34px 24px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 52%, #fff7ed 100%);
+        border: 1px solid #dbeafe;
+        box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+        text-align: center;
+    }
+    .gmail-upgrade-eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 7px 12px;
+        border-radius: 999px;
+        background: #e8f0fe;
+        color: #174ea6;
+        font-weight: 700;
+        font-size: 13px;
+        margin-bottom: 14px;
+    }
+    .gmail-upgrade-hero h2 {
+        font-size: clamp(30px, 5vw, 54px);
+        line-height: 1.05;
+        font-weight: 800;
+        color: #111827;
+        margin-bottom: 14px;
+    }
+    .gmail-upgrade-hero .lead-copy {
+        font-size: 1.15rem;
+        max-width: 780px;
+        margin: 0 auto 22px;
+        color: #374151;
+    }
+    .gmail-upgrade-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 22px 0 18px;
+    }
+    .gmail-primary-cta,
+    .gmail-secondary-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 12px 20px;
+        border-radius: 12px;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    .gmail-primary-cta {
+        background: #0b57d0;
+        color: #fff !important;
+        box-shadow: 0 12px 24px rgba(11, 87, 208, 0.2);
+    }
+    .gmail-secondary-cta {
+        color: #0b57d0 !important;
+        background: #fff;
+        border: 1px solid #bfdbfe;
+    }
+    .gmail-proof-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 12px;
+        max-width: 860px;
+        margin: 20px auto 0;
+        text-align: left;
+    }
+    .gmail-proof-card {
+        background: rgba(255, 255, 255, 0.86);
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 14px;
+        color: #374151;
+        font-size: 14px;
+    }
+    .gmail-proof-card strong { color: #111827; }
+    .gmail-plan-helper {
+        max-width: 960px;
+        margin: 0 auto 22px;
+        padding: 16px;
+        border-radius: 16px;
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        text-align: center;
+        color: #7c2d12;
+    }
+    .annual-focus-note {
+        font-size: 13px;
+        color: #14532d;
+        background: #dcfce7;
+        border: 1px solid #bbf7d0;
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin: 8px 0 12px;
+        font-weight: 700;
+    }
+</style>
+<section class="gmail-upgrade-hero" id="gmail-upgrade">
+    <div class="gmail-upgrade-eyebrow">⚡ Built for Gmail power users</div>
+    <h2>Stop rewriting emails manually.</h2>
+    <p class="lead-copy">Use GPT, Claude, Gemini and Perplexity inside Gmail to draft replies, improve tone, translate messages, create templates and answer customers faster — without switching tabs.</p>
+    <div class="gmail-upgrade-actions">
+        <a href="#pricing" class="gmail-primary-cta" data-cta-location="gmail_hero" data-plan-slug="premium" data-billing-period="annual">Unlock unlimited Gmail replies</a>
+        <a href="https://workspace.google.com/marketplace/app/ai_email_assistant_gpt_claude_gemini_per/785855842489" target="_blank" class="gmail-secondary-cta" data-cta-location="gmail_hero_install">Install free add-on</a>
+    </div>
+    <div class="gmail-proof-grid">
+        <div class="gmail-proof-card"><strong>For daily email work</strong><br>Customer support, sales replies, recruiting, operations and personal inbox cleanup.</div>
+        <div class="gmail-proof-card"><strong>Unlimited Premium</strong><br>Best for users who write or improve emails every week and do not want request limits.</div>
+        <div class="gmail-proof-card"><strong>Privacy-aware</strong><br>You choose what to send to AI. No email content is stored by DocGPT.AI.</div>
+    </div>
+</section>
 <div class="top" style="padding-top: 10px;">
-        <div class="h5" style="color: #999999;">Find perfect plan</div>
+        <div class="h5" style="color: #111827; font-weight: 800;">Choose your Gmail AI plan</div>
     <div class="toggle-btn">
         <span style="margin: 0.8em;" id="monthly-text">Monthly</span>
         <label class="switch">
@@ -198,7 +314,8 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
 </div>
 <div class="container text-center">
     <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
-    <p class="lead"><span class="badge bg-warning text-dark"> I'm actively adding new features to make this app even better. The price is going up every 30 sales, but if you buy now I will lock in your rate! </span></p>
+    <p class="lead"><span class="badge bg-warning text-dark">Best value: Premium Unlimited annual — save 50% and keep AI replies running all year.</span></p>
+    <div class="gmail-plan-helper"><strong>Recommended:</strong> choose <strong>Premium Unlimited</strong> if you use Gmail AI weekly. Choose Hobby only for occasional replies.</div>
 </div>
 <div id="pricing" class="container mb-5 mt-2 pt-5">
     <div id="old-design" class="pricing card-deck flex-column flex-md-row mb-3">
@@ -210,10 +327,11 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             <p></p>
             <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                     data-theme="none" data-product="843276"
+                    data-plan-slug="hobby" data-plan-name="Gmail Hobby" data-billing-period="monthly" data-price="15.99"
                     data-email=""
                     data-passthrough=""
                     data-success="/docs/gpt-for-gmail/"
-                    data-custom-data="">Get Started</button>
+                    data-custom-data="">Start Hobby monthly</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-muted text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> 700 queries per month</li>
@@ -243,9 +361,10 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             <p></p>
             <a href="#!" class="paddle_button btn btn-primary mb-3 btn-block"
                data-theme="none" data-product="843278" data-email=""
+               data-plan-slug="premium" data-plan-name="Gmail Premium Unlimited" data-billing-period="monthly" data-price="19.99"
                data-passthrough=""
                data-success="/docs/gpt-for-gmail/"
-               data-custom-data="">Get Started</a>
+               data-custom-data="">Unlock Premium monthly</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green;">Unlimited</b></li>
@@ -313,9 +432,10 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="869545" data-email=""
+               data-plan-slug="organization" data-plan-name="Gmail Organization" data-billing-period="monthly" data-price="49.99"
                data-success="/docs/gpt-for-sheets/ai-email-assistant-organization-subscription-licenses"
                data-passthrough=""
-               data-custom-data="">Get Started</a>
+               data-custom-data="">Start team plan</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Professional features</b></li>
@@ -345,9 +465,10 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             </div>
             <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                     data-theme="none" data-product="843277"
+                    data-plan-slug="hobby" data-plan-name="Gmail Hobby" data-billing-period="annual" data-price="82.99"
                     data-success="/docs/gpt-for-gmail/"
                     data-passthrough=""
-                    data-email="" data-custom-data="">Get Started</button>
+                    data-email="" data-custom-data="">Start Hobby annual</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature" >
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i><b> Save 60%</b></li>
@@ -376,7 +497,7 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             }
         </style>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2 box-selected">
-            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Enterprise</span>
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium Unlimited</span>
             <div class="bg-transparent card-header pt-4 border-0">
                 <div class="ribbon">BEST VALUE</div>
                 <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">11.17</span><span class="h6 text-muted ml-2">/ month</span></div>
@@ -384,19 +505,20 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             </div>
             <a href="#!" class="paddle_button btn btn-primary mb-3 btn-block"
                data-theme="none" data-product="843279"
+               data-plan-slug="premium" data-plan-name="Gmail Premium Unlimited" data-billing-period="annual" data-price="133.99"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Started</a>
+               data-email="" data-custom-data="">Unlock unlimited Gmail replies</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
-                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 50%</b></li>
-                    <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green;">Unlimited</b></li>
-                    <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Hobby features</b></li>
-                    <li style="color: green;"><b><i class="bi-check-lg icon-pricing"></i> Best Fit for Customer Support </b></li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No request limits during high-traffic periods</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
+                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 50% vs monthly</b></li>
+                    <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> AI requests:</span> <b style="color: green;">Unlimited</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Best for daily Gmail replies</b></li>
+                    <li style="color: green;"><b><i class="bi-check-lg icon-pricing"></i> GPT, Claude, Gemini & Perplexity in Gmail</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Rewrite tone, summarize and translate messages</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Reusable email templates</b><span class="text-muted"> for support, sales, recruiting and ops</span></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
+                    <li class="annual-focus-note">Most users should choose this plan if they use Gmail AI weekly.</li>
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
                     <li style="color: white"> .</li>
@@ -460,9 +582,10 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
             </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="869540" data-email=""
+               data-plan-slug="organization" data-plan-name="Gmail Organization" data-billing-period="annual" data-price="479"
                data-success="/docs/gpt-for-sheets/ai-email-assistant-organization-subscription-licenses"
                data-passthrough=""
-               data-custom-data="">Get Started</a>
+               data-custom-data="">Upgrade team annually</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Enterprise features</b></li>
@@ -1462,14 +1585,14 @@ description: "AI Email Assistant for Gmail is an AI-driven email writing add-on.
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <p><strong>AI Email Assistant</strong> offers flexible pricing plans:</p>
+          <p><strong>AI Email Assistant</strong> offers flexible monthly, annual and lifetime plans:</p>
           <ul>
-            <li>💰 <strong>Hobby Plan</strong> - $3.99/month - 100 emails/month - Perfect for personal use</li>
-            <li>💼 <strong>Professional Plan</strong> - $7.99/month - 500 emails/month - For professionals</li>
-            <li>🏢 <strong>Business Plan</strong> - $13.99/month - 1,500 emails/month - For teams</li>
-            <li>🚀 <strong>Enterprise Plan</strong> - $29.99/month - 5,000 emails/month - For power users</li>
+            <li>💰 <strong>Hobby</strong> - for occasional Gmail replies and rewrites</li>
+            <li>💼 <strong>Premium Unlimited</strong> - best for daily Gmail users who want unlimited AI replies</li>
+            <li>🏢 <strong>Organization</strong> - for teams that need multiple seats and domain-wide access</li>
+            <li>🚀 <strong>Lifetime</strong> - one-time access for users who do not want a subscription</li>
           </ul>
-          <p><strong>All plans include:</strong> Access to GPT-4, Claude, Gemini, translation, templates, and 100+ languages!</p>
+          <p><strong>Best value:</strong> Premium Unlimited annual saves 50% vs monthly and is the recommended plan for weekly Gmail AI use.</p>
           <p><a href="#pricing" class="faq-cta">See Full Pricing →</a></p>
         </div>
       </div>

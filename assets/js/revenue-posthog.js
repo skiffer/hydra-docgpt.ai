@@ -19,6 +19,15 @@
   var lastPlanClickAt = 0;
 
   var PRODUCT_PLAN_PROPS = {
+    // AI Email Assistant for Gmail Paddle Classic product IDs.
+    '843276': { plan: 'Gmail Hobby', plan_slug: 'hobby', billing_period: 'monthly', price: 15.99, currency: 'USD' },
+    '843277': { plan: 'Gmail Hobby', plan_slug: 'hobby', billing_period: 'annual', price: 82.99, currency: 'USD' },
+    '843278': { plan: 'Gmail Premium Unlimited', plan_slug: 'premium', billing_period: 'monthly', price: 19.99, currency: 'USD' },
+    '843279': { plan: 'Gmail Premium Unlimited', plan_slug: 'premium', billing_period: 'annual', price: 133.99, currency: 'USD' },
+    '853901': { plan: 'Gmail Lifetime', plan_slug: 'lifetime', billing_period: 'lifetime', price: 249, currency: 'USD' },
+    '869545': { plan: 'Gmail Organization', plan_slug: 'organization', billing_period: 'monthly', price: 49.99, currency: 'USD' },
+    '869540': { plan: 'Gmail Organization', plan_slug: 'organization', billing_period: 'annual', price: 479, currency: 'USD' },
+
     // GPT for Sheets Paddle Classic product IDs.
     '841733': { plan: 'Starter', plan_slug: 'starter', billing_period: 'monthly', price: 19.99, currency: 'USD' },
     '841734': { plan: 'Starter', plan_slug: 'starter', billing_period: 'annual', price: 133.99, currency: 'USD' },
