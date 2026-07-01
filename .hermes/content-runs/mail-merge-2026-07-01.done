@@ -1,0 +1,21 @@
+date: 2026-07-01
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - best-mail-merge-for-gmail-google-sheets
+  - gmail-multi-send-alternative-google-sheets-mail-merge
+  - google-contacts-mail-merge-gmail-google-sheets
+  - crm-export-mail-merge-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/best-mail-merge-for-gmail-google-sheets/
+  - https://docgpt.ai/gmail-multi-send-alternative-google-sheets-mail-merge/
+  - https://docgpt.ai/google-contacts-mail-merge-gmail-google-sheets/
+  - https://docgpt.ai/crm-export-mail-merge-gmail-google-sheets/
+commit_hash: 14f6ce0b831ae2679e4fdadd45f4b844e984730f
+pushed_branch: main
+build_result: success (bundle exec jekyll build; all 4 pages present in _site with H1 + product CTA + FAQPage JSON-LD)
+live_check: 4/4 200 (all pages verified with H1 + product CTA + FAQPage JSON-LD after Netlify propagation)
+bing_submission: success (SubmitFeed sitemap HTTP 200; SubmitUrlBatch 4 URLs HTTP 200)
+gsc_sitemap_submission: success (Search Console sitemap submit for https://docgpt.ai/sitemap.xml returned OK)
+notes: >
+  Used today's refreshed strategist plan after verifying selected slugs were not present on origin/main. Published exactly the 4 selected Mail Merge acquisition pages and left the older untracked local pages from a prior/obsolete plan unstaged. All primary CTAs point to /mail-merge-for-gmail-and-sheets/; source files contain no GPT for Sheets CTAs. Pages include practical workflows, examples/templates, internal links, responsible-sending cautions, FAQ sections, and FAQPage JSON-LD.
