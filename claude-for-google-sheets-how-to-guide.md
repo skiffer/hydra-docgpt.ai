@@ -1,17 +1,19 @@
 ---
 layout: seo-guide
-title: "Claude for Google Sheets: Use Claude AI Formulas in Sheets"
+title: "Claude for Google Sheets Extension + =CLAUDE Formula Setup"
 permalink: /claude-for-google-sheets-how-to-guide/
-description: "Use Claude in Google Sheets for lead research, summaries, reviews, emails, and bulk analysis. Install GPT for Sheets to run Claude formulas without Apps Script."
-hero_title: "Claude for Google Sheets: Use Claude AI Formulas in Sheets"
-hero_subtitle: "Run Claude across spreadsheet rows for lead research, summaries, product data, emails, reviews, and analysis — without copy/paste or Apps Script."
+description: "Set up Claude in Google Sheets with the GPT for Sheets extension: add your Anthropic API key, choose Claude, and run =CLAUDE() formulas across rows."
+hero_title: "Claude for Google Sheets Extension + =CLAUDE Formula Setup"
+hero_subtitle: "Install the Google Sheets extension, connect your Claude API key, and use =CLAUDE formulas for lead research, summaries, outreach, reviews, and bulk analysis."
 guide_product: "GPT for Sheets"
-primary_cta_text: "Use Claude in Google Sheets"
-primary_cta_url: "https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=hero_use_claude_install"
-secondary_cta_text: "Compare Pro plans"
-secondary_cta_url: "/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=hero_compare_pro&reason=claude"
-inline_cta_title: "Run Claude formulas across rows — without Apps Script"
-inline_cta_text: "GPT for Sheets lets you use Claude, GPT, Gemini, and other models inside Google Sheets for lead research, summaries, cleanup, review analysis, and bulk spreadsheet workflows."
+primary_cta_text: "See GPT for Sheets pricing"
+primary_cta_url: "/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=seo_claude_guide&utm_content=hero_pricing#pricing"
+secondary_cta_text: "Install the extension"
+secondary_cta_url: "https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=seo_claude_guide&utm_content=hero_install_extension"
+paid_cta_text: "Copy =CLAUDE formulas"
+paid_cta_url: "#copyable-formulas"
+inline_cta_title: "Set up =CLAUDE formulas, then scale the workflow"
+inline_cta_text: "GPT for Sheets lets you connect Claude to Google Sheets, test =CLAUDE() on sample rows, and upgrade when you are ready to run lead enrichment, summaries, cleanup, review analysis, and bulk prompts at volume."
 guide_badges:
   - "Claude formulas"
   - "Bulk prompts"
@@ -75,11 +77,11 @@ Typical Claude workflow:
 This is useful when you need Claude's long-context writing and analysis, but your actual workflow lives in a spreadsheet.
 
 <div class="seo-product-cta" style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 16px; padding: 20px; margin: 24px 0;">
-  <strong>Use Claude in Google Sheets without copy/paste</strong><br>
-  Install GPT for Sheets to run Claude formulas across rows for lead enrichment, account research, long-form summaries, review analysis, and personalized outreach.
+  <strong>Claude for Google Sheets pricing and setup</strong><br>
+  Use GPT for Sheets to connect Claude, test <code>=CLAUDE()</code> formulas on sample rows, then choose the right plan when lead enrichment, account research, summaries, review analysis, or personalized outreach becomes a repeatable workflow.
   <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
-    <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=top_install"><strong>Install GPT for Sheets →</strong></a>
-    <a href="/gpt-for-sheets-upgrade/?utm_source=seo&utm_medium=claude_guide&utm_campaign=claude_sheets_bridge&utm_content=top_compare_pro&reason=claude"><strong>Compare Pro plans for Claude →</strong></a>
+    <a href="/gpt-for-sheets/?utm_source=seo&utm_medium=claude_guide&utm_campaign=seo_claude_guide&utm_content=top_pricing_box#pricing"><strong>See GPT for Sheets pricing →</strong></a>
+    <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252?utm_source=seo&utm_medium=claude_guide&utm_campaign=seo_claude_guide&utm_content=top_install_extension"><strong>Install the extension →</strong></a>
   </div>
 </div>
 
