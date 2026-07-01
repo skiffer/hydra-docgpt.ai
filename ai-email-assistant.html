@@ -287,6 +287,133 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
         margin: 8px 0 12px;
         font-weight: 700;
     }
+
+    /* Professional pricing card polish: cleaner cards, readable buttons, no clipped copy. */
+    #pricing { max-width: 1180px; }
+    #pricing .pricing.card-deck {
+        gap: 20px;
+        align-items: stretch;
+        justify-content: center;
+    }
+    #pricing .card-pricing {
+        position: relative;
+        min-width: 0;
+        padding: 0 20px 24px !important;
+        border: 1px solid #e5edf5;
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: rgba(50,50,93,0.16) 0 24px 44px -28px, rgba(15,23,42,0.10) 0 16px 32px -24px;
+        overflow: hidden;
+    }
+    #pricing .card-pricing.box-selected {
+        border: 2px solid #0b57d0 !important;
+        box-shadow: rgba(11,87,208,0.22) 0 30px 55px -32px, rgba(15,23,42,0.14) 0 18px 34px -24px;
+        transform: translateY(-6px);
+    }
+    #pricing .card-pricing > .h6 {
+        min-width: 112px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 26px;
+        padding: 6px 14px !important;
+        border-radius: 0 0 10px 10px !important;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: .01em;
+        background: linear-gradient(135deg, #0b57d0, #2563eb) !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+    #pricing .ribbon {
+        width: auto;
+        height: auto;
+        transform: none;
+        top: 18px;
+        right: 18px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #16a34a;
+        box-shadow: none;
+        font-size: 10px;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: .04em;
+    }
+    #pricing .card-header { padding-top: 30px !important; padding-bottom: 8px !important; }
+    #pricing .h2 {
+        color: #0f172a !important;
+        font-weight: 800 !important;
+        line-height: 1.05;
+        font-feature-settings: "tnum";
+    }
+    #pricing .h2 .price { font-size: 34px; letter-spacing: -0.03em; }
+    #pricing .h2 .h6 { font-size: 13px; color: #64748b !important; }
+    #pricing .billed-annually {
+        max-width: 190px;
+        min-height: 30px;
+        margin: 6px auto 12px;
+        font-size: 11px;
+        line-height: 1.35;
+        color: #64748b;
+    }
+    #pricing .paddle_button {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 46px;
+        padding: 12px 12px !important;
+        border-radius: 10px !important;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.15;
+        white-space: normal !important;
+        overflow: visible;
+        text-align: center;
+        letter-spacing: -0.01em;
+        box-shadow: none;
+    }
+    #pricing .btn-primary {
+        background: linear-gradient(135deg, #0b57d0, #2563eb) !important;
+        border-color: #0b57d0 !important;
+        color: #fff !important;
+        box-shadow: 0 12px 22px rgba(11,87,208,0.20);
+    }
+    #pricing .btn-primary:hover { filter: brightness(.95); }
+    #pricing .btn-outline-secondary {
+        background: #fff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #0f172a !important;
+    }
+    #pricing .text-feature {
+        max-width: 210px;
+        margin: 8px auto 0 !important;
+        font-size: 12px;
+        line-height: 1.45;
+        text-align: left;
+    }
+    #pricing .text-feature li {
+        margin-bottom: 7px;
+        color: #475569;
+    }
+    #pricing .text-feature b { color: #0f172a; }
+    #pricing .text-feature li[style*="color: white"],
+    #pricing .text-feature li[style*="color:white"] { display: none !important; }
+    #pricing .annual-focus-note {
+        list-style: none;
+        text-align: center;
+        color: #14532d;
+        background: #dcfce7;
+        border: 1px solid #bbf7d0;
+        border-radius: 12px;
+        padding: 10px;
+        margin: 12px 0 4px;
+    }
+    @media (max-width: 991px) {
+        #pricing .pricing.card-deck { gap: 16px; }
+        #pricing .card-pricing.box-selected { transform: none; }
+    }
 </style>
 <section class="gmail-upgrade-hero" id="gmail-upgrade">
     <div class="gmail-upgrade-eyebrow">⚡ Built for Gmail power users</div>
@@ -334,18 +461,12 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     data-custom-data="">Start Hobby monthly</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-muted text-feature">
-                    <li><i class="bi-check-lg icon-pricing"></i> 700 queries per month</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> 700 AI requests per month</li>
                     <li><i class="bi-check-lg icon-pricing"></i> No API keys required</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> One-click email responses</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Custom AI instructions for every command</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Personalized cold emails</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Grammar and tone corrections</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Support for 100+ languages</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Dialect support</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Improve and rephrase emails</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Generate email subjects</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Make an Email Longer or Shorter</li>
-                    <li><i class="bi-check-lg icon-pricing"></i> Email Templates for HR, CVs, Tech, Cold sales, Personalized emails and sales</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> One-click Gmail replies</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> Tone, grammar and rewrite tools</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> Templates for sales, HR and support</li>
+                    <li><i class="bi-check-lg icon-pricing"></i> 100+ languages</li>
 <!--                    <li class=""><i class="bi-check-lg icon-pricing"></i> Email Support</li>-->
 <!--                    <li><i class="bi-check-lg icon-pricing"></i> Weekly feature updates</li>-->
 <!--                    <li><i class="bi-check-lg icon-pricing"></i> No need API keys</li>-->
@@ -374,18 +495,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                                                                                                                                                                                                                                            </ul>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -397,9 +507,10 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
             <p></p>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="853901"
+               data-plan-slug="lifetime" data-plan-name="Gmail Lifetime" data-billing-period="lifetime" data-price="249"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Started</a>
+               data-email="" data-custom-data="">Get Lifetime</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Hobby features</b></li>
@@ -409,18 +520,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                                                                                                                                                                                                                                            </ul>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
@@ -446,15 +546,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                                        <li style="color: white"> .</li>
-                </ul>
+                                                                                                                                                                                                    </ul>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -468,25 +560,17 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     data-plan-slug="hobby" data-plan-name="Gmail Hobby" data-billing-period="annual" data-price="82.99"
                     data-success="/docs/gpt-for-gmail/"
                     data-passthrough=""
-                    data-email="" data-custom-data="">Start Hobby annual</button>
+                    data-email="" data-custom-data="">Start Hobby</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature" >
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i><b> Save 60%</b></li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 1000 queries per month</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 1000 AI requests per month</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> No API keys required</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> One-click email responses</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Custom AI instructions for every command</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Personalized cold emails</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Grammar and tone corrections</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Support for 100+ languages</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Dialect support</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Improve and rephrase emails</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Generate email subjects</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Make an Email Longer or Shorter</li>
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email Templates for HR, CVs, Tech, Cold sales, Personalized emails and sales</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> One-click Gmail replies</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Tone, grammar and rewrite tools</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Templates for sales, HR and support</li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 100+ languages</li>
+                                                        </ul>
             </div>
         </div>
         <style>
@@ -508,7 +592,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                data-plan-slug="premium" data-plan-name="Gmail Premium Unlimited" data-billing-period="annual" data-price="133.99"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Unlock unlimited Gmail replies</a>
+               data-email="" data-custom-data="">Get Premium Annual</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i><b> Save 50% vs monthly</b></li>
@@ -518,21 +602,8 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Rewrite tone, summarize and translate messages</li>
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Reusable email templates</b><span class="text-muted"> for support, sales, recruiting and ops</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority support</li>
-                    <li class="annual-focus-note">Most users should choose this plan if they use Gmail AI weekly.</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                    <li class="annual-focus-note">Recommended for weekly Gmail AI use.</li>
+                                                                                                                                                                                                                                                                                    </ul>
             </div>
         </div>
         <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
@@ -544,9 +615,10 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
             <p></p>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="853901"
+               data-plan-slug="lifetime" data-plan-name="Gmail Lifetime" data-billing-period="lifetime" data-price="249"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Started</a>
+               data-email="" data-custom-data="">Get Lifetime</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Hobby features</b></li>
@@ -556,21 +628,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                                                                                                                                                                                                                                                                                                        </ul>
             </div>
         </div>
         <div class="card card-pricing text-center px-3 mb-4 text2">
@@ -585,10 +643,10 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                data-plan-slug="organization" data-plan-name="Gmail Organization" data-billing-period="annual" data-price="479"
                data-success="/docs/gpt-for-sheets/ai-email-assistant-organization-subscription-licenses"
                data-passthrough=""
-               data-custom-data="">Upgrade team annually</a>
+               data-custom-data="">Team Annual</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
-                    <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Enterprise features</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i> <b>Access to all Premium features</b></li>
                     <li><i class="bi-check-lg icon-pricing"></i> <b>5 Licenses for everyone on your domain</b></li>
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Dedicated support & onboarding</b></li>
                     <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> More queries:</span> <b style="color: green;">Unlimited</b></li>
@@ -596,18 +654,7 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
                     <li><i class="bi-check-lg icon-pricing"></i> <b>2X faster</b><span class="text-muted"> response time</span></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority email support</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Priority online support</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                    <li style="color: white"> .</li>
-                </ul>
+                                                                                                                                                                                                                                            </ul>
             </div>
         </div>
     </div>
@@ -685,14 +732,14 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> <b>2X</b> faster response time</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> No request limits during high-traffic periods</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
@@ -727,14 +774,14 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> <b>5 Licenses</b> for everyone on your domain</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i>  Dedicated support & onboarding</li>-->
-<!--&lt;!&ndash;                    <li style="color: white"> .</li>&ndash;&gt;-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--&lt;!&ndash;                    &ndash;&gt;-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
@@ -770,15 +817,15 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> Lifetime access</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> Dedicated support & onboarding</li>-->
-<!--&lt;!&ndash;                    <li style="color: white"> .</li>&ndash;&gt;-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--&lt;!&ndash;                    &ndash;&gt;-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
@@ -863,14 +910,14 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> <b>2X</b> faster response time</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> No request limits during high-traffic periods</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
@@ -905,14 +952,14 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> <b>5 Licenses</b> for everyone on your domain</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> Dedicated support & onboarding</li>-->
-<!--&lt;!&ndash;                    <li style="color: white"> .</li>&ndash;&gt;-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--&lt;!&ndash;                    &ndash;&gt;-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
@@ -948,15 +995,15 @@ description: "AI Email Assistant for Gmail adds GPT, Claude, Gemini and Perplexi
 <!--                <ul class="list-unstyled mb-4 text-feature custom-list">-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> Lifetime access</li>-->
 <!--                    <li><i class="bi bi-check-square-fill icon-pricing"></i> Dedicated support & onboarding</li>-->
-<!--&lt;!&ndash;                    <li style="color: white"> .</li>&ndash;&gt;-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
-<!--                    <li style="color: white"> .</li>-->
+<!--&lt;!&ndash;                    &ndash;&gt;-->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
+<!--                    -->
 <!--                </ul>-->
 <!--                <div class="text-center w-auto">-->
 <!--                    <button type="button" class="paddle_button btn btn-primary w-100 mb-3" data-theme="none"-->
