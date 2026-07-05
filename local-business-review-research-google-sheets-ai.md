@@ -100,6 +100,8 @@ A practical review-research sheet starts with business review notes and ends wit
 
 Reputation and local agencies sometimes evaluate heavier tools, but review-based prospecting fits a spreadsheet well. GPT for Sheets keeps business rows, extracted pain points, opportunity scores, and outreach drafts in one Google Sheet, a lighter, Sheets-native option for review research.
 
+If a prospect becomes a client and the agency needs to manage reviews every day, [ReputeMap for agency review management](https://reputemap.com/) is a natural next layer: it centralizes Google review monitoring, AI-assisted replies, review requests, alerts, and client reporting while the spreadsheet remains useful for research and sales prep.
+
 DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases

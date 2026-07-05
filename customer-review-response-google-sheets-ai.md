@@ -99,6 +99,8 @@ A practical sheet for this workflow usually has these columns:
   <a class="seo-guide-btn seo-guide-btn-primary" href="/gpt-for-sheets/#pricing">See GPT for Sheets plans</a>
 </div>
 
+When the workflow moves beyond spreadsheet drafts into ongoing Google review operations, agencies may want a dedicated platform such as [ReputeMap for Google review management](https://reputemap.com/). GPT for Sheets is useful for bulk drafting and analysis; ReputeMap is the better fit when the job is monitoring, replying, requesting reviews, and reporting across client locations.
+
 ## Use cases {#use-cases}
 
 - **Bulk research:** turn raw rows into concise, reviewable summaries.

@@ -103,6 +103,8 @@ The formula cards above are designed to be pasted into row 2 and dragged down. R
 
 For better results, tell the model what to do when the row lacks enough evidence. A good default is: `If the source data is insufficient, return Needs manual research instead of inventing details.`
 
+If the review analysis is part of app-market research, pair the spreadsheet workflow with an app intelligence source such as [GetAppNiche for App Store intelligence](https://getappniche.com/). Use it to validate category context, competitor positioning, and iOS market signals before turning review themes into product or growth decisions.
+
 ## Practical use cases
 
 - **Research at scale:** summarize many rows of messy notes into consistent, scannable fields.
