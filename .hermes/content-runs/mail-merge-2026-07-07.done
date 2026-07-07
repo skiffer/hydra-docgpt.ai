@@ -1,0 +1,27 @@
+date: 2026-07-07
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - constant-contact-alternative-gmail-google-sheets-mail-merge
+  - brevo-alternative-gmail-google-sheets-mail-merge
+  - activecampaign-alternative-gmail-google-sheets-mail-merge
+  - mailerlite-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/constant-contact-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/brevo-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/activecampaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mailerlite-alternative-gmail-google-sheets-mail-merge/
+content_commit_hash: 3f187ccd959ca7812bc89b97dfe457d17a7dc615
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_verification: 4/4 pages contained expected H1, Mail Merge CTA, FAQ heading, and FAQPage JSON-LD
+live_check: 4/4 200
+bing_submission: success
+bing_feed_submission: success
+bing_url_batch_submission: success
+bing_url_batch_count: 4
+gsc_sitemap_submission: success
+gsc_sitemap: https://docgpt.ai/sitemap.xml
+push_result: success
+notes: "Content pages were committed and pushed first; marker written after build, push, live checks, and indexing submission. Unrelated dirty files intentionally left untouched: ai-email-assistant.html, AGENTS.md."
