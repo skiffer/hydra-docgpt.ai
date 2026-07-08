@@ -1,0 +1,23 @@
+date: 2026-07-08
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - getresponse-alternative-gmail-google-sheets-mail-merge
+  - aweber-alternative-gmail-google-sheets-mail-merge
+  - mailjet-alternative-gmail-google-sheets-mail-merge
+  - sendgrid-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/getresponse-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/aweber-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mailjet-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/sendgrid-alternative-gmail-google-sheets-mail-merge/
+commit_hash: 56298909377cb83524a6886be7561dbcb3abf9b6
+content_commit_hash: 56298909377cb83524a6886be7561dbcb3abf9b6
+pushed_branch: main
+build_result: success
+generated_verification: "4/4 pages contained expected H1, Mail Merge CTA, FAQ, and valid FAQPage JSON-LD"
+live_check: "4/4 200 with expected page markers"
+bing_submission: success
+gsc_sitemap_submission: success
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html (modified), AGENTS.md (untracked)."
