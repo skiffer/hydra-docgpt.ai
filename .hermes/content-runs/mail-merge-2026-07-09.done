@@ -1,0 +1,22 @@
+date: 2026-07-09
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - klaviyo-alternative-gmail-google-sheets-mail-merge
+  - omnisend-alternative-gmail-google-sheets-mail-merge
+  - moosend-alternative-gmail-google-sheets-mail-merge
+  - benchmark-email-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/klaviyo-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/omnisend-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/moosend-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/benchmark-email-alternative-gmail-google-sheets-mail-merge/
+content_commit_hash: 2628eee2d2af5f2c1ebb348caedecbf4636351ca
+pushed_branch: main
+build_result: success
+generated_verification: "4/4 generated pages contained expected H1, Mail Merge CTA, FAQ, and FAQPage JSON-LD"
+live_check: "4/4 200 with expected markers after Netlify propagation attempt 11"
+bing_submission: success
+gsc_sitemap_submission: success
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html (modified), AGENTS.md (untracked)."
