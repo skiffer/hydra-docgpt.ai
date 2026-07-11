@@ -1,92 +1,115 @@
 <div class="sidebar-overlay toggle-nav"></div>
 
 <div class="sidebar-heading">
-  <a href="{{ "/" | absolute_url }}">
-    {% if site.logo %}<div class="sidebar-logo">Back to DocGPT.AI</div>
-    {% else %}{{ site.title }}{% endif %}
+  <a class="sidebar-brand" href="{{ "/" | absolute_url }}">
+    <img class="sidebar-brand-logo" src="{{ "/favicon.png" | relative_url }}" alt="DocGPT.ai logo" width="28" height="28"/>
+    <span class="sidebar-brand-name">DocGPT<span class="sidebar-brand-accent">.ai</span></span>
+    <span class="sidebar-brand-tag">Docs</span>
   </a>
-  <button class="toggle-nav mobile-only">Menu</button>
+  <button class="toggle-nav mobile-only sidebar-menu-btn" aria-label="Toggle navigation">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
 </div>
 
-<nav class="sidebar-nav" role="navigation" style="overflow-y: auto; height: 100vh;">
+<nav class="sidebar-nav" role="navigation">
   <div class="sidebar-heading-mobile mobile-only">
     <div class="sidebar-close toggle-nav">
-      <img src="{{ "/assets/imgs/back.svg?v=1" | relative_url }}" />
+      <img src="{{ "/assets/imgs/back.svg?v=1" | relative_url }}" alt="Close navigation"/>
     </div>
   </div>
-  <ul class="navigation-list">
-    {%- assign pages_list = site.html_pages | where_exp:"page", "page.url contains '/docs/'" | sort:"nav_order" -%}
-    {%- for node in pages_list -%}
-      {%- unless node.nav_exclude -%}
-        {%- if node.parent == nil -%}
-          <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
-            {%- if page.parent == node.title or page.grand_parent == node.title -%}
-              {%- assign first_level_url = node.url | absolute_url -%}
-            {%- endif -%}
-            <div class="nav-item-wrapper">
+  <div class="sidebar-search">
+    <svg class="sidebar-search-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.6"/>
+      <path d="M11.5 11.5L15 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+    <input type="search" id="docs-nav-filter" placeholder="Filter docs&hellip;" autocomplete="off" spellcheck="false" aria-label="Filter documentation pages"/>
+    <kbd class="sidebar-search-kbd" aria-hidden="true">/</kbd>
+  </div>
+  <div class="sidebar-filter-count" id="docs-nav-filter-count" hidden></div>
+  <div class="sidebar-nav-scroll">
+    <ul class="navigation-list">
+      {%- assign pages_list = site.html_pages | where_exp:"page", "page.url contains '/docs/'" | sort:"nav_order" -%}
+      {%- for node in pages_list -%}
+        {%- unless node.nav_exclude -%}
+          {%- if node.parent == nil -%}
+            {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
+            <li class="navigation-list-item{% if page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
+              {%- if page.parent == node.title or page.grand_parent == node.title -%}
+                {%- assign first_level_url = node.url | absolute_url -%}
+              {%- endif -%}
+              <div class="nav-item-wrapper">
+                <a href="{{ node.url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}{% if node.has_children %} has-children{% endif %}">{{ node.title }}</a>
+                {%- if node.has_children -%}
+                  <span class="nav-count" aria-hidden="true">{{ children_list | size }}</span>
+                  <button class="nav-collapse-btn" aria-label="Toggle {{ node.title }} submenu" data-nav-id="nav-{{ node.title | slugify }}">
+                    <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                {%- endif -%}
+              </div>
               {%- if node.has_children -%}
-                <button class="nav-collapse-btn" aria-label="Toggle {{ node.title }} submenu" data-nav-id="nav-{{ node.title | slugify }}">
-                  <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              {%- endif -%}
-              <a href="{{ node.url }}" class="navigation-list-link{% if page.url == node.url %} active{% endif %}{% if node.has_children %} has-children{% endif %}">{{ node.title }}</a>
-            </div>
-            {%- if node.has_children -%}
-              {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
-              {%- assign is_section_active = false -%}
-              {%- if page.url == node.url or page.parent == node.title or page.grand_parent == node.title -%}
-                {%- assign is_section_active = true -%}
-              {%- endif -%}
-              <ul class="navigation-list-child-list{% unless is_section_active %} collapsed{% endunless %}" id="nav-{{ node.title | slugify }}" aria-expanded="{% if is_section_active %}true{% else %}false{% endif %}">
-                {%- for child in children_list -%}
-                  <li class="navigation-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
-                    {%- if page.url == child.url or page.parent == child.title -%}
-                      {%- assign second_level_url = child.url | absolute_url -%}
-                    {%- endif -%}
-                    <div class="nav-item-wrapper">
-                      {%- if child.has_children -%}
-                        <button class="nav-collapse-btn" aria-label="Toggle {{ child.title }} submenu" data-nav-id="nav-{{ child.title | slugify }}">
-                          <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        </button>
-                      {%- endif -%}
-                      <a href="{{ child.url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}{% if child.has_children %} has-children{% endif %}">{{ child.title }}</a>
-                    </div>
+                {%- assign is_section_active = false -%}
+                {%- if page.url == node.url or page.parent == node.title or page.grand_parent == node.title -%}
+                  {%- assign is_section_active = true -%}
+                {%- endif -%}
+                <ul class="navigation-list-child-list{% unless is_section_active %} collapsed{% endunless %}" id="nav-{{ node.title | slugify }}" aria-expanded="{% if is_section_active %}true{% else %}false{% endif %}">
+                  {%- for child in children_list -%}
                     {%- if child.has_children -%}
                       {%- assign grand_children_list = site.html_pages | where: "parent", child.title | sort:"nav_order" -%}
-                      {%- assign is_child_active = false -%}
-                      {%- if page.url == child.url or page.parent == child.title -%}
-                        {%- assign is_child_active = true -%}
-                      {%- endif -%}
-                      <ul class="navigation-list-child-list{% unless is_child_active %} collapsed{% endunless %}" id="nav-{{ child.title | slugify }}" aria-expanded="{% if is_child_active %}true{% else %}false{% endif %}">
-                        {%- for grand_child in grand_children_list -%}
-                          <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
-                            <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
                     {%- endif -%}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            {%- endif -%}
-          </li>
-        {%- endif -%}
-      {%- endunless -%}
-    {%- endfor -%}
-  </ul>
-  {% if site.aux_links != nil %}
-    <ul class="navigation-list navigation-list-aux">
-      {% for link in site.aux_links %}
-        <li class="navigation-list-item">
-          <a class="navigation-list-link" href="{{ link.last }}">
-            {{ link.first }}
-          </a>
-        </li>
-      {% endfor %}
+                    <li class="navigation-list-item {% if page.url == child.url or page.parent == child.title %} active{% endif %}">
+                      {%- if page.url == child.url or page.parent == child.title -%}
+                        {%- assign second_level_url = child.url | absolute_url -%}
+                      {%- endif -%}
+                      <div class="nav-item-wrapper">
+                        <a href="{{ child.url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}{% if child.has_children %} has-children{% endif %}">{{ child.title }}</a>
+                        {%- if child.has_children -%}
+                          <span class="nav-count" aria-hidden="true">{{ grand_children_list | size }}</span>
+                          <button class="nav-collapse-btn" aria-label="Toggle {{ child.title }} submenu" data-nav-id="nav-{{ child.title | slugify }}">
+                            <svg class="collapse-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.5 2L8.5 6L4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </button>
+                        {%- endif -%}
+                      </div>
+                      {%- if child.has_children -%}
+                        {%- assign is_child_active = false -%}
+                        {%- if page.url == child.url or page.parent == child.title -%}
+                          {%- assign is_child_active = true -%}
+                        {%- endif -%}
+                        <ul class="navigation-list-child-list{% unless is_child_active %} collapsed{% endunless %}" id="nav-{{ child.title | slugify }}" aria-expanded="{% if is_child_active %}true{% else %}false{% endif %}">
+                          {%- for grand_child in grand_children_list -%}
+                            <li class="navigation-list-item {% if page.url == grand_child.url %} active{% endif %}">
+                              <div class="nav-item-wrapper">
+                                <a href="{{ grand_child.url | absolute_url }}" class="navigation-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
+                              </div>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endfor -%}
     </ul>
-   {% endif %}
+    <div class="sidebar-nav-empty" hidden>No pages match your search.</div>
+    {% if site.aux_links != nil %}
+      <ul class="navigation-list navigation-list-aux">
+        {% for link in site.aux_links %}
+          <li class="navigation-list-item">
+            <a class="navigation-list-link" href="{{ link.last }}">
+              {{ link.first }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
 </nav>

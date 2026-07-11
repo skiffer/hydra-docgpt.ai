@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "/assets/css/index.css?v=1" | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/css/index.css?v=3" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DV5BH9XVVS"></script>
@@ -22,8 +24,6 @@
     <!--Crisp Chat-->
     <script type="text/javascript" async>window.$crisp=[];window.CRISP_WEBSITE_ID="9893165b-b7ab-477d-b92e-8b474277e9e2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
-
-
   </head>
   <body>
     <div class="docs">
@@ -34,76 +34,128 @@
 
       <!-- Content -->
       <div class="main">
-        <div class="main-body markdown-body">
-          <div id="promo-sheets" style="
-  position: fixed;
-  right: 0;
-  top: 100px; /* Adjust the top value as needed */
-  width: 283px; /* Adjust the width as needed */
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f8f9fa;
-  text-align: center;
-  z-index: 9999;
-">
-            <h3>🤔️ Need to execute tasks in bulk?</h3>
-            <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demo-sheets2.gif?raw=true" alt="GIF Demo" style="width: 100%; border-radius: 10px; margin-bottom: 15px;"/>
-            <p style="font-size: 18px; margin-top: 10px;"><b>👍️️️️️️ Try <a href="https://docgpt.ai/gpt-for-sheets/" style="color: #007bff; text-decoration: none;" target="_blank">GPT for Sheets!</a></b></p>
-            <ul style="list-style-type: none; padding: 0; font-size: 16px;">
-              <li>📄 Create product descriptions at once</li>
-              <li>💼 Generate leads and enrich data</li>
-              <li>🔗️️️️️️ Scrapping sites</li>
-              <li>🌎 Google Search</li>
-              <li>🔍 Programmatic SEO & bulk page generation</li>
-              <li>📣 AI-powered social media post generator</li>
-              <li>📈 Extract top-ranked competitor keywords</li>
-              <li>🤖 Support Perplexity, Claude, Mistral, Gemini, OpenRoute</li>
-            </ul>
-          </div>
-          <!-- Edit button -->
-          {% if site.github_url != nil and site.github_url != "" %}
-            <a href="{{ site.github_url }}/edit/master/{% if site.basedir %}{{ site.basedir }}/{% endif %}{{ page.path }}"
-              class="main-edit-pencil">
-              <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16">
-                <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
-              </svg>
-            </a>
-          {% endif %}
-          <!-- Main content -->
-          {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
-          <!-- Footer naviagtion -->
-          {% if page.has_children == true and page.has_toc != false %}
-            <hr>
-            <h2 class="text-delta">Table of contents</h2>
-            {% assign children_list = site.pages | sort:"nav_order" %}
-            <ul>
-              {% for child in children_list %}
-                {% if child.parent == page.title and child.title != page.title %}
-                  <li>
-                    <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
-                    {% if child.summary %} - {{ child.summary }}{% endif %}
-                  </li>
+        <div class="main-columns">
+          <article class="main-body markdown-body">
+            {% if page.parent %}
+              {% assign parent_page = site.html_pages | where: "title", page.parent | first %}
+              <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <span class="breadcrumbs-item">Docs</span>
+                <span class="breadcrumbs-sep">/</span>
+                {% if parent_page %}
+                  <a class="breadcrumbs-item" href="{{ parent_page.url }}">{{ page.parent }}</a>
+                {% else %}
+                  <span class="breadcrumbs-item">{{ page.parent }}</span>
+                {% endif %}
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-item breadcrumbs-current">{{ page.title }}</span>
+              </nav>
+            {% else %}
+              <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <span class="breadcrumbs-item">Docs</span>
+                <span class="breadcrumbs-sep">/</span>
+                <span class="breadcrumbs-item breadcrumbs-current">{{ page.title }}</span>
+              </nav>
+            {% endif %}
+            <!-- Edit button -->
+            {% if site.github_url != nil and site.github_url != "" %}
+              <a href="{{ site.github_url }}/edit/master/{% if site.basedir %}{{ site.basedir }}/{% endif %}{{ page.path }}"
+                class="main-edit-pencil">
+                <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" height="16" width="16">
+                  <path fill-rule="evenodd" d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z"></path>
+                </svg>
+              </a>
+            {% endif %}
+            <!-- Main content -->
+            {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
+            <!-- Children navigation -->
+            {% if page.has_children == true and page.has_toc != false %}
+              <hr>
+              <h2 class="text-delta">Table of contents</h2>
+              {% assign children_list = site.pages | sort:"nav_order" %}
+              <ul class="children-list">
+                {% for child in children_list %}
+                  {% if child.parent == page.title and child.title != page.title %}
+                    <li>
+                      <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+                      {% if child.summary %} - {{ child.summary }}{% endif %}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if page.parent %}
+              {% assign siblings = site.html_pages | where: "parent", page.parent | sort: "nav_order" %}
+              {% assign prev_page = nil %}
+              {% assign next_page = nil %}
+              {% for sibling in siblings %}
+                {% if sibling.url == page.url %}
+                  {% unless forloop.first %}
+                    {% assign prev_index = forloop.index0 | minus: 1 %}
+                    {% assign prev_page = siblings[prev_index] %}
+                  {% endunless %}
+                  {% unless forloop.last %}
+                    {% assign next_index = forloop.index0 | plus: 1 %}
+                    {% assign next_page = siblings[next_index] %}
+                  {% endunless %}
                 {% endif %}
               {% endfor %}
-            </ul>
-          {% endif %}
+              {% if prev_page or next_page %}
+                <nav class="pager" aria-label="Docs pages">
+                  {% if prev_page %}
+                    <a class="pager-link pager-prev" href="{{ prev_page.url }}">
+                      <span class="pager-label">&larr; Previous</span>
+                      <span class="pager-title">{{ prev_page.title }}</span>
+                    </a>
+                  {% else %}
+                    <span class="pager-spacer"></span>
+                  {% endif %}
+                  {% if next_page %}
+                    <a class="pager-link pager-next" href="{{ next_page.url }}">
+                      <span class="pager-label">Next &rarr;</span>
+                      <span class="pager-title">{{ next_page.title }}</span>
+                    </a>
+                  {% endif %}
+                </nav>
+              {% endif %}
+            {% endif %}
+            <footer class="docs-footer">
+              <span>&copy; DocGPT.ai</span>
+              <span class="docs-footer-links">
+                <a href="/">DocGPT.ai</a>
+                <a href="/gpt-for-sheets/">GPT for Sheets</a>
+                <a href="/contact/">Contact</a>
+              </span>
+            </footer>
+          </article>
+
+          <!-- Right rail: on-this-page TOC + promo -->
+          <aside class="toc-rail">
+            <nav class="page-toc" id="page-toc" aria-label="On this page" hidden>
+              <div class="toc-rail-title">On this page</div>
+              <ul class="page-toc-list"></ul>
+            </nav>
+            <div class="promo-card">
+              <div class="promo-card-title">🤔 Need to execute tasks in bulk?</div>
+              <img src="https://github.com/skiffer/hydra-docgpt.ai/blob/main/images/demo-sheets2.gif?raw=true" alt="GPT for Sheets demo" loading="lazy"/>
+              <ul class="promo-card-list">
+                <li>📄 Create product descriptions at once</li>
+                <li>💼 Generate leads and enrich data</li>
+                <li>🔗 Scrape websites</li>
+                <li>🌎 Google Search</li>
+                <li>🔍 Programmatic SEO &amp; bulk pages</li>
+                <li>📣 AI social media post generator</li>
+                <li>📈 Extract competitor keywords</li>
+                <li>🤖 Perplexity, Claude, Mistral, Gemini</li>
+              </ul>
+              <a class="promo-card-cta" href="https://docgpt.ai/gpt-for-sheets/" target="_blank">Try GPT for Sheets</a>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
 
     <script src="{{ "/assets/js/anchor.min.js?1" | relative_url }}"></script>
-    <script src="{{ "/assets/js/index.js?1" | relative_url }}"></script>
+    <script src="{{ "/assets/js/index.js?v=3" | relative_url }}"></script>
     <script>anchors.add();</script>
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview')
-      ;</script>
-    {% endif %}
   </body>
 </html>
