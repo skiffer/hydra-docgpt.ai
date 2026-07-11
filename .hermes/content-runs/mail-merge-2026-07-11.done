@@ -1,0 +1,22 @@
+date: 2026-07-11
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - monday-sales-crm-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - attio-crm-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - folk-crm-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - insightly-email-campaign-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/monday-sales-crm-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/attio-crm-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/folk-crm-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/insightly-email-campaign-alternative-gmail-google-sheets-mail-merge/
+content_commit_hash: 72872cded4d909c91f6c84c951f2bfab2a966263
+pushed_branch: main
+build_result: success
+generated_verification: 4/4 pages contained expected H1, Mail Merge CTA, FAQ, and valid FAQPage JSON-LD
+live_check: 4/4 200 with expected markers
+bing_submission: success (SubmitFeed sitemap + SubmitUrlBatch 4 URLs returned 200 {"d":null})
+gsc_sitemap_submission: success (Search Console sitemap submit returned {})
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html; AGENTS.md. Initial live polling returned 404 until Netlify propagation completed on attempt 10."
