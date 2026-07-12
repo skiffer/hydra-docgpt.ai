@@ -35,6 +35,15 @@ AI writing assistant for Google Docs: drafting, rewriting, summarizing, translat
 ### Google Slide AI
 Presentation generation and slide translation for Google Slides.
 - Product page: https://docgpt.ai/google-slide-ai/
+- Docs: https://docgpt.ai/docs/slides-ai
+- Get started: https://docgpt.ai/docs/slides-ai/get-started
+- Create a presentation from a topic: https://docgpt.ai/docs/slides-ai/create-presentation-from-topic
+- Create slides from your text: https://docgpt.ai/docs/slides-ai/create-slides-from-text
+- Translate a presentation: https://docgpt.ai/docs/slides-ai/translate-presentation
+- AI pitch deck generator: https://docgpt.ai/ai-pitch-deck-generator/
+- AI sales deck generator: https://docgpt.ai/ai-sales-deck-generator/
+- AI presentations for teachers: https://docgpt.ai/ai-presentation-for-teachers/
+- Turn a blog post into a presentation: https://docgpt.ai/blog-post-to-presentation/
 
 ### Quiz Maker AI
 Automated quiz, form and assessment generation for Google Forms.
@@ -94,6 +103,9 @@ Automated quiz, form and assessment generation for Google Forms.
 - Flowshot vs GPT for Sheets: https://docgpt.ai/flowshot-vs-gpt-for-sheets/
 - PromptLoop vs GPT for Sheets: https://docgpt.ai/promptloop-vs-gpt-for-sheets/
 - Clay vs GPT for Sheets: https://docgpt.ai/clay-vs-gpt-for-sheets/
+- Best AI presentation maker for Google Slides (roundup): https://docgpt.ai/best-ai-presentation-maker-google-slides/
+- Plus AI vs Slides by DocGPT.ai: https://docgpt.ai/plus-ai-vs-slides-ai-docgpt/
+- MagicSlides vs Slides by DocGPT.ai: https://docgpt.ai/magicslides-vs-slides-ai-docgpt/
 
 ## Localized pages
 
