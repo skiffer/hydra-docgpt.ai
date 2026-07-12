@@ -18,6 +18,8 @@ layout: default
 	{% assign secondary_is_paid = true %}
 {% endif %}
 {% assign guide_label = page.guide_product | default: "GPT for Sheets" %}
+{% assign guide_kicker = page.guide_kicker | default: "AI formulas for Google Sheets" %}
+{% assign guide_breadcrumb_url = page.guide_breadcrumb_url | default: primary_cta_url %}
 
 <style>
 	.seo-guide-page {
@@ -404,7 +406,7 @@ layout: default
 			"@type": "ListItem",
 			"position": 2,
 			"name": {{ guide_label | jsonify }},
-			"item": "{{ site.url }}{{ primary_cta_url }}"
+			"item": "{{ site.url }}{{ guide_breadcrumb_url }}"
 		},
 		{
 			"@type": "ListItem",
@@ -440,10 +442,10 @@ layout: default
 <div class="seo-guide-page">
 	<section class="seo-guide-hero">
 		<div class="seo-guide-container">
-			<div class="seo-guide-breadcrumb"><a href="/">Home</a> / <a href="{{ primary_cta_url }}">{{ guide_label }}</a> / Guide</div>
+			<div class="seo-guide-breadcrumb"><a href="/">Home</a> / <a href="{{ guide_breadcrumb_url }}">{{ guide_label }}</a> / Guide</div>
 			<div class="seo-guide-hero-grid">
 				<div>
-					<div class="seo-guide-kicker">AI formulas for Google Sheets</div>
+					<div class="seo-guide-kicker">{{ guide_kicker }}</div>
 					<h1>{{ hero_title }}</h1>
 					{% if hero_subtitle %}<p class="seo-guide-subtitle">{{ hero_subtitle }}</p>{% endif %}
 					<div class="seo-guide-actions">
