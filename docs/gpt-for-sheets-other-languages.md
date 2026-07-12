@@ -1,7 +1,7 @@
 ---
 layout: docs_layouts/default
 title: GPT for Sheets - other languages
-nav_order: 5
+nav_order: 6
 has_children: true
 permalink: /docs/gpt-for-sheets-other-languages
 description: Multilingual documentation for GPT for Sheets. Setup guides and tutorials available in Chinese, German, Spanish, French, Japanese, Dutch, Polish, Portuguese, Russian, Swedish, Turkish, and Ukrainian.
