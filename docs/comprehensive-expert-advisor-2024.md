@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Expert Advisor 2024
+title: Comprehensive Expert Advisor
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-expert-advisor-2024
-description: Unlock the future of trading with the Comprehensive Expert Advisor 2024. This cutting-edge tool offers unparalleled precision, real-time analysis, and adaptive strategies. Maximize your profits and simplify your trading journey. Perfect for both beginners and seasoned traders!
+description: Unlock the future of trading with the Comprehensive Expert Advisor. This cutting-edge tool offers unparalleled precision, real-time analysis, and adaptive strategies. Maximize your profits and simplify your trading journey. Perfect for both beginners and seasoned traders!
 ---
 
-# Comprehensive Expert Advisor 2024
+# Comprehensive Expert Advisor
 
 ### Case of usage:
 > ChatGPT will advice you on any topic you specify.

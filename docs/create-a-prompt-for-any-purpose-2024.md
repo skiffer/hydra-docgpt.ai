@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create a Prompt for Any Purpose 2024
+title: Create a Prompt for Any Purpose
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-a-prompt-for-any-purpose-2024
-description: Unlock your potential with our 2024 guide on creating prompts for any purpose. Whether for AI, marketing, or creative writing, this resource provides actionable insights and detailed techniques to inspire, engage, and achieve your goals. Start mastering prompt creation today!
+description: Unlock your potential with our guide on creating prompts for any purpose. Whether for AI, marketing, or creative writing, this resource provides actionable insights and detailed techniques to inspire, engage, and achieve your goals. Start mastering prompt creation today!
 ---
 
-# Create a Prompt for Any Purpose 2024
+# Create a Prompt for Any Purpose
 
 ### Case of usage:
 > Create any prompt that you need. ChatGPT will engineer a prompt for itself.

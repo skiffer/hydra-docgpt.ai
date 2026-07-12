@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: AI Course Development in 2024
+title: AI Course Development
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ai-course-development-in-2024
-description: "Master the future with our AI Course Development in 2024! Learn cutting-edge techniques, practical applications, and industry insights to create top-tier AI courses. Stay ahead in the rapidly evolving field of artificial intelligence. Enroll now!"
+description: "Master the future with our AI Course Development! Learn cutting-edge techniques, practical applications, and industry insights to create top-tier AI courses. Stay ahead in the rapidly evolving field of artificial intelligence. Enroll now!"
 ---
 
-# AI Course Development in 2024
+# AI Course Development
 
 ### Case of usage:
 > AI Course Creation. The No 1 prompt for creating any course from start to finish. Can be used for testing and training

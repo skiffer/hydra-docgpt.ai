@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Craft an Essay in 2024
+title: Craft an Essay
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/craft-an-essay-in-2024
-description: Unlock the secrets to effective essay writing in 2024 with our comprehensive guide. Discover practical tips, innovative techniques, and essential tools to craft compelling essays that captivate readers and achieve academic excellence. Perfect for students and writers alike!
+description: Unlock the secrets to effective essay writing with our comprehensive guide. Discover practical tips, innovative techniques, and essential tools to craft compelling essays that captivate readers and achieve academic excellence. Perfect for students and writers alike!
 ---
 
-# Craft an Essay in 2024
+# Craft an Essay
 
 ### Case of usage:
 > Write an essay on any topic in your favourite language. Just write the Topic and hit enter.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Write an essay on [PROMPT] in [TARGETLANGUAGE] using DocGPT.AI. For more assistance, visit https://docgpt.ai/gpt-for-sheets/.
+Write an essay on [PROMPT] in [TARGETLANGUAGE] using DocGPT.ai. For more assistance, visit https://docgpt.ai/gpt-for-sheets/.
 ```
 
 Use following formula inside GPT for Sheets

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Craft High-Converting Facebook Ad Copy in 2024
+title: Craft High-Converting Facebook Ad Copy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/craft-high-converting-facebook-ad-copy-in-2024
-description: Discover how to craft high-converting Facebook ad copy in 2024 with our expert guide. Master the latest strategies to boost engagement, maximize ROI, and turn potential leads into loyal customers. Stay ahead in the competitive digital landscape!
+description: Discover how to craft high-converting Facebook ad copy with our expert guide. Master the latest strategies to boost engagement, maximize ROI, and turn potential leads into loyal customers. Stay ahead in the competitive digital landscape!
 ---
 
-# Craft High-Converting Facebook Ad Copy in 2024
+# Craft High-Converting Facebook Ad Copy
 
 ### Case of usage:
 > Get a custom-written Facebook ad copy that grabs attention, highlights the benefits, and drives conversions. Don't forget to like the prompt if you're satisfied with the results!

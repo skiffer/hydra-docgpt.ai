@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Catchy Product Sales Pitch for Email and Social in 2024
+title: Catchy Product Sales Pitch for Email and Social
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/catchy-product-sales-pitch-for-email-and-social-in-2024
-description: Unleash 2024's ultimate sales success with our catchy product sales pitch! Perfectly crafted for email and social media, engage your audience, boost conversions, and watch your sales soar. Elevate your marketing strategy today and stand out in the digital crowd!
+description: Unleash's ultimate sales success with our catchy product sales pitch! Perfectly crafted for email and social media, engage your audience, boost conversions, and watch your sales soar. Elevate your marketing strategy today and stand out in the digital crowd!
 ---
 
-# Catchy Product Sales Pitch for Email and Social in 2024
+# Catchy Product Sales Pitch for Email and Social
 
 ### Case of usage:
 > Stop sending dry sales pitches for email and social media campaigns! Use this tool for enticing, personable, and humorous sales pitches.

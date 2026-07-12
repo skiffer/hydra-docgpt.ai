@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting a Literature Review for Your Thesis 2024
+title: Crafting a Literature Review for Your Thesis
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-a-literature-review-for-your-thesis-2024
-description: Master the art of crafting a compelling literature review for your 2024 thesis. Learn essential strategies, research techniques, and critical analysis to enhance academic impact. Perfect for students aiming to elevate their scholarly work with a strong foundation.
+description: Master the art of crafting a compelling literature review for your thesis. Learn essential strategies, research techniques, and critical analysis to enhance academic impact. Perfect for students aiming to elevate their scholarly work with a strong foundation.
 ---
 
-# Crafting a Literature Review for Your Thesis 2024
+# Crafting a Literature Review for Your Thesis
 
 ### Case of usage:
 > Write Review of literature for your thesis with references

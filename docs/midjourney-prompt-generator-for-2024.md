@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Midjourney Prompt Generator for 2024
+title: Midjourney Prompt Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/midjourney-prompt-generator-for-2024
-description: Boost your creative projects with the Midjourney Prompt Generator for 2024. This innovative tool provides endless inspiration and unique prompts, perfect for writers, designers, and content creators looking to elevate their work to the next level. Get inspired today!
+description: Boost your creative projects with the Midjourney Prompt Generator. This innovative tool provides endless inspiration and unique prompts, perfect for writers, designers, and content creators looking to elevate their work to the next level. Get inspired today!
 ---
 
-# Midjourney Prompt Generator for 2024
+# Midjourney Prompt Generator
 
 ### Case of usage:
 > Outputs four extremely detailed midjourney prompts for your keyword.

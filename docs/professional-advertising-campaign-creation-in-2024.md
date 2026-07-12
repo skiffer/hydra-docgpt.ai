@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Professional Advertising Campaign Creation in 2024
+title: Professional Advertising Campaign Creation
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/professional-advertising-campaign-creation-in-2024
-description: Boost your brand with expert professional advertising campaign creation in 2024! Drive engagement, increase conversions, and elevate your market presence with customized strategies tailored to your business needs. Achieve unparalleled results and stay ahead of the competition.
+description: Boost your brand with expert professional advertising campaign creation! Drive engagement, increase conversions, and elevate your market presence with customized strategies tailored to your business needs. Achieve unparalleled results and stay ahead of the competition.
 ---
 
-# Professional Advertising Campaign Creation in 2024
+# Professional Advertising Campaign Creation
 
 ### Case of usage:
 > ChatGPT will choose a target audience, develop key messages and slogans, select the media channels for promotion, and decide on any additional activities needed to reach your goals.

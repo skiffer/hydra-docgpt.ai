@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Domain Name Creator Tool in 2024
+title: Domain Name Creator Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/domain-name-creator-tool-in-2024
-description: Discover the ultimate Domain Name Creator Tool in 2024, designed to simplify your brand's online identity. Generate unique, catchy domain names effortlessly to boost your SEO and online visibility. Stay ahead of the competition with this innovative tool, perfect for entrepreneurs and businesses alike.
+description: Discover the ultimate Domain Name Creator Tool, designed to simplify your brand's online identity. Generate unique, catchy domain names effortlessly to boost your SEO and online visibility. Stay ahead of the competition with this innovative tool, perfect for entrepreneurs and businesses alike.
 ---
 
-# Domain Name Creator Tool in 2024
+# Domain Name Creator Tool
 
 ### Case of usage:
 > Generate 100 domain name ideas for my niche having some search volume and available with .com

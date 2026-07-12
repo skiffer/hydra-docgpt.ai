@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Bps Fulship Co 20 V3 Alpha Idahmb 2024
+title: Bps Fulship Co 20 V3 Alpha Idahmb
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/bps-fulship-co-20-v3-alpha-idahmb-2024
-description: Discover the innovative Bps Fulship Co 20 V3 Alpha Idahmb 2024, a cutting-edge solution designed to elevate performance and efficiency. Engineered for excellence, this state-of-the-art model offers unparalleled reliability and advanced features, catering to diverse needs with precision and style.
+description: Discover the innovative Bps Fulship Co 20 V3 Alpha Idahmb, a cutting-edge solution designed to elevate performance and efficiency. Engineered for excellence, this state-of-the-art model offers unparalleled reliability and advanced features, catering to diverse needs with precision and style.
 ---
 
-# Bps Fulship Co 20 V3 Alpha Idahmb 2024
+# Bps Fulship Co 20 V3 Alpha Idahmb
 
 ### Case of usage:
 > The Best AI Blog Post Section Generator in existence for 8-12th grade reading level.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-## DocGPT.AI Prompt: Bps Fulship Co. - 2.0 V3 Alpha—idah.mb
+## DocGPT.ai Prompt: Bps Fulship Co. - 2.0 V3 Alpha—idah.mb
 
 • Brief intros matter. Get to the point quickly. Cut out fluff; start strong without clichés or metaphors. 
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Bulk Reply Bot for Customer Reviews in 2024
+title: Bulk Reply Bot for Customer Reviews
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/bulk-reply-bot-for-customer-reviews-in-2024
-description: Boost your customer interaction efficiency in 2024 with our Bulk Reply Bot for Customer Reviews. Streamline responses, enhance customer satisfaction, and maintain a consistent brand voice effortlessly. Perfect for businesses aiming to optimize their review management strategies.
+description: Boost your customer interaction efficiency with our Bulk Reply Bot for Customer Reviews. Streamline responses, enhance customer satisfaction, and maintain a consistent brand voice effortlessly. Perfect for businesses aiming to optimize their review management strategies.
 ---
 
-# Bulk Reply Bot for Customer Reviews in 2024
+# Bulk Reply Bot for Customer Reviews
 
 ### Case of usage:
 > Get amazing friendly review responses you can use on Google, Yelp, and other review sites by simplying pasting each one in the prompt below in brackets, such as [review1] [review2] [review3]. This will organize your responses nicely in a table so you can copy and paste them easily.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Captivating Emails to Promote Anything in 2024
+title: Create Captivating Emails to Promote Anything
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-captivating-emails-to-promote-anything-in-2024
-description: Unlock the secret to crafting captivating emails in 2024! Learn innovative techniques and proven strategies to promote your products, boost engagement, and skyrocket conversions. Transform your email marketing efforts with expert tips and compelling content creation.
+description: Unlock the secret to crafting captivating emails! Learn innovative techniques and proven strategies to promote your products, boost engagement, and skyrocket conversions. Transform your email marketing efforts with expert tips and compelling content creation.
 ---
 
-# Create Captivating Emails to Promote Anything in 2024
+# Create Captivating Emails to Promote Anything
 
 ### Case of usage:
 > I will provide marketing email that promotes any product or service.

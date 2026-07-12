@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Persuasive Sales Pitch with NLP Techniques in 2024
+title: Persuasive Sales Pitch with NLP Techniques
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/persuasive-sales-pitch-with-nlp-techniques-in-2024
-description: Master the art of persuasion in 2024 with cutting-edge NLP techniques! Elevate your sales pitch, influence potential clients, and drive conversions like never before. Discover actionable strategies and transform your sales approach today!
+description: Master the art of persuasion with cutting-edge NLP techniques! Elevate your sales pitch, influence potential clients, and drive conversions like never before. Discover actionable strategies and transform your sales approach today!
 ---
 
-# Persuasive Sales Pitch with NLP Techniques in 2024
+# Persuasive Sales Pitch with NLP Techniques
 
 ### Case of usage:
 > Create a highly persuasive one page letter using Neuro Linguistic Programming techniques, based on [list of product you want to promote or sell]

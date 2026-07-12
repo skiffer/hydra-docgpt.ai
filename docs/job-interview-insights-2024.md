@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Job Interview Insights 2024
+title: Job Interview Insights
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/job-interview-insights-2024
-description: Discover essential Job Interview Insights 2024 to ace your next interview. Stay ahead with expert tips, proven strategies, and the latest industry trends. Enhance your skills and confidence to land your dream job with our comprehensive guide. Get noticed by top employers now!
+description: Discover essential Job Interview Insights to ace your next interview. Stay ahead with expert tips, proven strategies, and the latest industry trends. Enhance your skills and confidence to land your dream job with our comprehensive guide. Get noticed by top employers now!
 ---
 
-# Job Interview Insights 2024
+# Job Interview Insights
 
 ### Case of usage:
 > Replicate an interview. Select the Job Title you are hiring for. Let ChatGPT ask the questions and you provide the answers. 
@@ -29,11 +29,11 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-## DocGPT.AI Prompt - Job Interview
+## DocGPT.ai Prompt - Job Interview
 
 I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the [PROMPT] position. I want you to only reply as the interviewer. Only reply with [TARGETLANGUAGE]. Do not write all of the conversation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answer. My first sentence is "Hi"
 
-For more information visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+For more information visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

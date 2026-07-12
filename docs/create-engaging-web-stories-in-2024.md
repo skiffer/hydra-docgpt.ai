@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Engaging Web Stories in 2024
+title: Create Engaging Web Stories
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-engaging-web-stories-in-2024
-description: Unlock the power of visual storytelling with our guide to creating engaging web stories in 2024. Discover innovative techniques, trends, and tools that captivate audiences and boost your online presence. Elevate your content strategy and stand out today!
+description: Unlock the power of visual storytelling with our guide to creating engaging web stories. Discover innovative techniques, trends, and tools that captivate audiences and boost your online presence. Elevate your content strategy and stand out today!
 ---
 
-# Create Engaging Web Stories in 2024
+# Create Engaging Web Stories
 
 ### Case of usage:
 > Creates exclusive WEB STORY pointers that will help your Web-stories rank in Google based on the Topic. Do Upvote if you Like it :)

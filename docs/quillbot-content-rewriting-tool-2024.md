@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Quillbot Content Rewriting Tool 2024
+title: Quillbot Content Rewriting Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/quillbot-content-rewriting-tool-2024
-description: Discover the power of Quillbot Content Rewriting Tool 2024! Enhance your writing with advanced AI-driven paraphrasing, ensuring clarity and uniqueness. Perfect for students, writers, and professionals seeking polished, plagiarism-free content. Boost your productivity today!
+description: Discover the power of Quillbot Content Rewriting Tool! Enhance your writing with advanced AI-driven paraphrasing, ensuring clarity and uniqueness. Perfect for students, writers, and professionals seeking polished, plagiarism-free content. Boost your productivity today!
 ---
 
-# Quillbot Content Rewriting Tool 2024
+# Quillbot Content Rewriting Tool
 
 ### Case of usage:
 > Quillbot | Content Rewrite | Rephrase | Spelling corrector and improver translate it and answer in the corrected and improved version of my text,

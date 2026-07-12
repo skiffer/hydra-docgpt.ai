@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Business Model Canvas Strategy 2024
+title: Business Model Canvas Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/business-model-canvas-strategy-2024
-description: Unlock success in 2024 with the Business Model Canvas Strategy. Streamline your business planning with this powerful tool, designed to boost innovation and efficiency. Ideal for entrepreneurs and executives aiming to refine their models, adapt to new markets, and drive growth.
+description: Unlock success with the Business Model Canvas Strategy. Streamline your business planning with this powerful tool, designed to boost innovation and efficiency. Ideal for entrepreneurs and executives aiming to refine their models, adapt to new markets, and drive growth.
 ---
 
-# Business Model Canvas Strategy 2024
+# Business Model Canvas Strategy
 
 ### Case of usage:
 > Business Model Canvas creator

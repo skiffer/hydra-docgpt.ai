@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Buyer Persona 2024
+title: Create Buyer Persona
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-buyer-persona-2024
-description: Unlock your marketing potential with our guide to Create Buyer Persona 2024. Master the art of identifying and targeting your ideal customers, boost your conversion rates, and elevate your brand strategy with the latest insights and tools in persona development.
+description: Unlock your marketing potential with our guide to Create Buyer Persona. Master the art of identifying and targeting your ideal customers, boost your conversion rates, and elevate your brand strategy with the latest insights and tools in persona development.
 ---
 
-# Create Buyer Persona 2024
+# Create Buyer Persona
 
 ### Case of usage:
 > Generate Buyer Persona, With Pain Points, Goals, How can you help, (Upvote Please For More)
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 Your task is to generate buyer persona with Gender, Age, Location, Relationship Status, Work, Interests, Behaviors, Web History, Search Terms, Pain Points, Goals, How We can help? [TARGETLANGUAGE]
 
-Created with DocGPT.AI
+Created with DocGPT.ai
 ```
 
 Use following formula inside GPT for Sheets

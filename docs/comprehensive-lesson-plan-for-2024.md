@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Lesson Plan for 2024
+title: Comprehensive Lesson Plan
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-lesson-plan-for-2024
-description: Discover our Comprehensive Lesson Plan for 2024, meticulously designed to enhance learning experiences. Packed with innovative strategies, engaging activities, and detailed curriculum maps, this plan ensures educational success. Ideal for educators seeking structured and effective planning.
+description: Discover our Comprehensive Lesson Plan, meticulously designed to enhance learning experiences. Packed with innovative strategies, engaging activities, and detailed curriculum maps, this plan ensures educational success. Ideal for educators seeking structured and effective planning.
 ---
 
-# Comprehensive Lesson Plan for 2024
+# Comprehensive Lesson Plan
 
 ### Case of usage:
 > Create a lesson plan and a strategy for teaching this and topic and grade level.

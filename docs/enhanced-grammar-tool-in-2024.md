@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Enhanced Grammar Tool in 2024
+title: Enhanced Grammar Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/enhanced-grammar-tool-in-2024
-description: Discover the Enhanced Grammar Tool in 2024, your ultimate solution for impeccable writing. Featuring advanced AI technology, it refines your content, ensuring clarity and precision. Perfect for students, professionals, and writers aiming for grammatical excellence in the digital age.
+description: Discover the Enhanced Grammar Tool, your ultimate solution for impeccable writing. Featuring advanced AI technology, it refines your content, ensuring clarity and precision. Perfect for students, professionals, and writers aiming for grammatical excellence in the digital age.
 ---
 
-# Enhanced Grammar Tool in 2024
+# Enhanced Grammar Tool
 
 ### Case of usage:
 > We are offering a reliable grammar, spelling, and punctuation checker that covers your entire project from start to finish. If you find this helpful, please upvote so we can continue to provide more free tools.

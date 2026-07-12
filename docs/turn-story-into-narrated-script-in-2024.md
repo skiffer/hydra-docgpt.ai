@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Turn Story into Narrated Script in 2024
+title: Turn Story into Narrated Script
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/turn-story-into-narrated-script-in-2024
-description: Transform your story into a captivating narrated script in 2024 with our expert services. Elevate your narrative, engage your audience, and bring your vision to life. Perfect for authors, filmmakers, and content creators seeking professional script narration.
+description: Transform your story into a captivating narrated script with our expert services. Elevate your narrative, engage your audience, and bring your vision to life. Perfect for authors, filmmakers, and content creators seeking professional script narration.
 ---
 
-# Turn Story into Narrated Script in 2024
+# Turn Story into Narrated Script
 
 ### Case of usage:
 > Takes a story and turns it into a full on Action Script, or Scene. 

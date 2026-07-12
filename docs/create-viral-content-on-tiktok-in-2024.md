@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Viral Content on TikTok in 2024
+title: Create Viral Content on TikTok
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-viral-content-on-tiktok-in-2024
-description: Discover the ultimate guide to creating viral content on TikTok in 2024! Master trends, enhance engagement, and boost your follower count with innovative strategies. Stay ahead of the competition and make your TikTok content go viral effortlessly.
+description: Discover the ultimate guide to creating viral content on TikTok! Master trends, enhance engagement, and boost your follower count with innovative strategies. Stay ahead of the competition and make your TikTok content go viral effortlessly.
 ---
 
-# Create Viral Content on TikTok in 2024
+# Create Viral Content on TikTok
 
 ### Case of usage:
 > Become a TikTok Star! Create Viral Content with This Prompt

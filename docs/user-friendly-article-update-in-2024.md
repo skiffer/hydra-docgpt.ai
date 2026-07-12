@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: User Friendly Article Update in 2024
+title: User Friendly Article Update
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/user-friendly-article-update-in-2024
-description: Stay ahead in 2024 with our User-Friendly Article Update guide. Enhance readability, boost engagement, and improve SEO rankings effortlessly. Discover innovative strategies for crafting content that captivates audiences and meets evolving digital trends. Make your articles more impactful today!
+description: Stay ahead with our User-Friendly Article Update guide. Enhance readability, boost engagement, and improve SEO rankings effortlessly. Discover innovative strategies for crafting content that captivates audiences and meets evolving digital trends. Make your articles more impactful today!
 ---
 
-# User Friendly Article Update in 2024
+# User Friendly Article Update
 
 ### Case of usage:
 > Rewrite provided content on best way in human readability

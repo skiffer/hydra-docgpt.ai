@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Project Marketing Inbound Strategy 2024
+title: Project Marketing Inbound Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/project-marketing-inbound-strategy-2024
-description: Discover the cutting-edge strategies of Project Marketing Inbound Strategy 2024. Elevate your brand's presence, attract high-quality leads, and boost conversions with innovative inbound techniques designed for sustainable growth and success in the modern market.
+description: Discover the cutting-edge strategies of Project Marketing Inbound Strategy. Elevate your brand's presence, attract high-quality leads, and boost conversions with innovative inbound techniques designed for sustainable growth and success in the modern market.
 ---
 
-# Project Marketing Inbound Strategy 2024
+# Project Marketing Inbound Strategy
 
 ### Case of usage:
 > Genesi - Create a Digital Marketing Project

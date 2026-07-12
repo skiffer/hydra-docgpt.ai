@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Food Blogging and Cookbook Automation in 2024
+title: Food Blogging and Cookbook Automation
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/food-blogging-and-cookbook-automation-in-2024
-description: Unlock the future of food writing with "Food Blogging and Cookbook Automation in 2024." Discover cutting-edge tools and techniques to automate your culinary content, boost your blog's SEO, and streamline cookbook creation like never before. Elevate your food blog today!
+description: Unlock the future of food writing with "Food Blogging and Cookbook Automation." Discover cutting-edge tools and techniques to automate your culinary content, boost your blog's SEO, and streamline cookbook creation like never before. Elevate your food blog today!
 ---
 
-# Food Blogging and Cookbook Automation in 2024
+# Food Blogging and Cookbook Automation
 
 ### Case of usage:
 > COPY-PASTE READY 1 Food Recipe, 1 Midjourney Prompt, 3 Social Media Posts, 60 hashtags in 4 groups, 10 alternative recipe names. All ready to be copy-pasted
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 You must add at the top of the response "_Created with DocGPT Prompt "Food Blogging / Cookbook Automation"_
 ---

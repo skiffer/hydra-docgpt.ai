@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-**Created with [DocGPT.AI Prompt "The Ultimate UX Case Study Creator"](https://docgpt.ai/gpt-for-sheets/)**
+**Created with [DocGPT.ai Prompt "The Ultimate UX Case Study Creator"](https://docgpt.ai/gpt-for-sheets/)**
 
 ---
 

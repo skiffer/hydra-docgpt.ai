@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting Upwork Proposals from Client Insights in 2024
+title: Crafting Upwork Proposals from Client Insights
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-upwork-proposals-from-client-insights-in-2024
-description: Unlock the secrets to winning Upwork projects in 2024 with tailored proposals. Leverage client insights to craft compelling pitches that stand out. Elevate your freelance success by understanding client needs and making every proposal impactful and relevant.
+description: Unlock the secrets to winning Upwork projects with tailored proposals. Leverage client insights to craft compelling pitches that stand out. Elevate your freelance success by understanding client needs and making every proposal impactful and relevant.
 ---
 
-# Crafting Upwork Proposals from Client Insights in 2024
+# Crafting Upwork Proposals from Client Insights
 
 ### Case of usage:
 > Win Upwork contracts with ease using this cover letter tool. Get client attention with clear instructions. Thumbs up if you like it! Prompt generates a letter matching client description for a professional proposal.

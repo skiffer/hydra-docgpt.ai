@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Post Planner for 2024
+title: Instagram Post Planner
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-post-planner-for-2024
-description: Elevate your Instagram game in 2024 with the Instagram Post Planner! Streamline your content strategy, schedule posts effortlessly, and boost engagement with our user-friendly tool designed to maximize your social media impact. Perfect for influencers and businesses alike!
+description: Elevate your Instagram game with the Instagram Post Planner! Streamline your content strategy, schedule posts effortlessly, and boost engagement with our user-friendly tool designed to maximize your social media impact. Perfect for influencers and businesses alike!
 ---
 
-# Instagram Post Planner for 2024
+# Instagram Post Planner
 
 ### Case of usage:
 > Create a personal Instagram Post Schedule / Plan / Calendar from your [INTERESTS]

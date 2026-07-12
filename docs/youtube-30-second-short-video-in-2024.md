@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: YouTube 30 Second Short Video in 2024
+title: YouTube 30 Second Short Video
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-30-second-short-video-in-2024
-description: Master the art of YouTube 30-second short videos in 2024! Boost your engagement with snappy content crafted for fast-paced viewers. Discover tips and trends to optimize your shorts, captivate audiences, and grow your channel in the ever-evolving digital landscape.
+description: Master the art of YouTube 30-second short videos! Boost your engagement with snappy content crafted for fast-paced viewers. Discover tips and trends to optimize your shorts, captivate audiences, and grow your channel in the ever-evolving digital landscape.
 ---
 
-# YouTube 30 Second Short Video in 2024
+# YouTube 30 Second Short Video
 
 ### Case of usage:
 > write the product name with 

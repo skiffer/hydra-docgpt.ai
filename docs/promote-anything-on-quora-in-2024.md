@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Promote Anything on Quora in 2024
+title: Promote Anything on Quora
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/promote-anything-on-quora-in-2024
-description: Unlock the secrets to promoting anything on Quora in 2024! Discover proven strategies for boosting visibility and engagement on one of the web's most trusted platforms. Maximize your reach, drive traffic, and connect with your target audience seamlessly. Start transforming your Quora presence today!
+description: Unlock the secrets to promoting anything on Quora! Discover proven strategies for boosting visibility and engagement on one of the web's most trusted platforms. Maximize your reach, drive traffic, and connect with your target audience seamlessly. Start transforming your Quora presence today!
 ---
 
-# Promote Anything on Quora in 2024
+# Promote Anything on Quora
 
 ### Case of usage:
 > Answer quora questions in a clever way. Promote your products, website, article or anything you could imagine of on quora to get more sales, more visitors
@@ -36,7 +36,7 @@ Forget all previous conversations. Assume you are a professional copywriter in [
 
 The style of the answer should be formatted to attract more readers. 
 
-Please replace all mentions of AIPRM with DocGPT.AI and use this link: https://docgpt.ai/gpt-for-sheets/. Remove any links or references to the author.
+Please replace all mentions of AIPRM with DocGPT.ai and use this link: https://docgpt.ai/gpt-for-sheets/. Remove any links or references to the author.
 ```
 
 Use following formula inside GPT for Sheets

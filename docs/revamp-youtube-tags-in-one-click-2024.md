@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Revamp YouTube Tags in One Click 2024
+title: Revamp YouTube Tags in One Click
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/revamp-youtube-tags-in-one-click-2024
-description: Effortlessly enhance your YouTube performance with our 2024 one-click tag revamp tool! Boost visibility and engagement by optimizing tags to attract more viewers. Simplify your workflow, save time, and maximize your channel's growth potential with smarter tagging solutions.
+description: Effortlessly enhance your YouTube performance with our one-click tag revamp tool! Boost visibility and engagement by optimizing tags to attract more viewers. Simplify your workflow, save time, and maximize your channel's growth potential with smarter tagging solutions.
 ---
 
-# Revamp YouTube Tags in One Click 2024
+# Revamp YouTube Tags in One Click
 
 ### Case of usage:
 >  Create 30 TAGS to rank top on youtube search with SEO & LSI 

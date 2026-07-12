@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost Your Fiverr Gig Ranking 2024
+title: Boost Your Fiverr Gig Ranking
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-your-fiverr-gig-ranking-2024
-description: Discover the ultimate strategies to boost your Fiverr gig ranking in 2024. Learn expert tips to enhance visibility, attract more clients, and drive sales. Elevate your freelancer game with proven techniques tailored for success in the competitive Fiverr marketplace.
+description: Discover the ultimate strategies to boost your Fiverr gig ranking. Learn expert tips to enhance visibility, attract more clients, and drive sales. Elevate your freelancer game with proven techniques tailored for success in the competitive Fiverr marketplace.
 ---
 
-# Boost Your Fiverr Gig Ranking 2024
+# Boost Your Fiverr Gig Ranking
 
 ### Case of usage:
 > You will get Optimized Title, Category and subcategory, Optimized Tags, 3 Great Gig Package, Optimized Gig description and FAQ, Gig requirement and Gig image Idea 

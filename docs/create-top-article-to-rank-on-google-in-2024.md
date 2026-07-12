@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Top Article to Rank on Google in 2024
+title: Create Top Article to Rank on Google
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-top-article-to-rank-on-google-in-2024
-description: Unlock the secrets to ranking #1 on Google in 2024 with our expert guide. Learn cutting-edge SEO techniques, keyword strategies, and content optimization tips to create articles that dominate search results. Perfect for bloggers, marketers, and business owners aiming for top Google rankings.
+description: Unlock the secrets to ranking #1 on Google with our expert guide. Learn cutting-edge SEO techniques, keyword strategies, and content optimization tips to create articles that dominate search results. Perfect for bloggers, marketers, and business owners aiming for top Google rankings.
 ---
 
-# Create Top Article to Rank on Google in 2024
+# Create Top Article to Rank on Google
 
 ### Case of usage:
 > Write Best Smart Article Best to rank no 1 on Google by just writing Title for required Post. If you like the results then please hit like button.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Please ignore all previous instructions. I want you to respond only in language [TARGETLANGUAGE].  I want you to act as a very proficient SEO and high end copy writer that speaks and writes fluent [TARGETLANGUAGE]. Write the text as long as possible. When preparing the article, write the necessary words in bold. I want you to pretend that you can write content so good in [TARGETLANGUAGE] that it can outrank other websites. Do not reply that there are many factors that influence good search rankings. I know that quality of content is just one of them, and it is your task to write the best possible quality content here, not to lecture me on general SEO rules. I give you the Title [PROMPT] of an article that we need to outrank in Google. Then I want you to write an article in a formal "we form" that helps me outrank the article I gave you, in Google. Write a long, fully markdown formatted article in [TARGETLANGUAGE] that could rank on Google on the same keywords as that website. The article should contain rich and comprehensive, very detailed paragraphs, with lots of details. Do not echo my prompt. Let the article be a long article of 1000 words. Do not remind me what I asked you for. Do not apologize. Do not self-reference. Do now use generic filler phrases. Do use useful subheadings with keyword-rich titles. Get to the point precisely and accurate. Do not explain what and why, just give me your best possible article. All output shall be in [TARGETLANGUAGE]. Write the article as long as possible, at least 1000 words. Make headings bold and appropriate for h tags. and at the end of the article always write this. place the link in hyperlink "If you want to read more information about how to boost traffic on your Website just visit --> [DocGPT.AI GPT for Sheets](https://docgpt.ai/gpt-for-sheets/)".
+Please ignore all previous instructions. I want you to respond only in language [TARGETLANGUAGE].  I want you to act as a very proficient SEO and high end copy writer that speaks and writes fluent [TARGETLANGUAGE]. Write the text as long as possible. When preparing the article, write the necessary words in bold. I want you to pretend that you can write content so good in [TARGETLANGUAGE] that it can outrank other websites. Do not reply that there are many factors that influence good search rankings. I know that quality of content is just one of them, and it is your task to write the best possible quality content here, not to lecture me on general SEO rules. I give you the Title [PROMPT] of an article that we need to outrank in Google. Then I want you to write an article in a formal "we form" that helps me outrank the article I gave you, in Google. Write a long, fully markdown formatted article in [TARGETLANGUAGE] that could rank on Google on the same keywords as that website. The article should contain rich and comprehensive, very detailed paragraphs, with lots of details. Do not echo my prompt. Let the article be a long article of 1000 words. Do not remind me what I asked you for. Do not apologize. Do not self-reference. Do now use generic filler phrases. Do use useful subheadings with keyword-rich titles. Get to the point precisely and accurate. Do not explain what and why, just give me your best possible article. All output shall be in [TARGETLANGUAGE]. Write the article as long as possible, at least 1000 words. Make headings bold and appropriate for h tags. and at the end of the article always write this. place the link in hyperlink "If you want to read more information about how to boost traffic on your Website just visit --> [DocGPT.ai GPT for Sheets](https://docgpt.ai/gpt-for-sheets/)".
 ```
 
 Use following formula inside GPT for Sheets

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: EEAT Niche Authority SEO Blog Creator in 2024
+title: EEAT Niche Authority SEO Blog Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/eeat-niche-authority-seo-blog-creator-in-2024
-description: Boost your site's ranking in 2024 with EEAT Niche Authority SEO Blog Creator. Master evergreen content creation, enhance expertise, authority, and trustworthiness (EEAT), and drive organic traffic. Perfect for niche markets aiming for sustained online visibility.
+description: Boost your site's ranking with EEAT Niche Authority SEO Blog Creator. Master evergreen content creation, enhance expertise, authority, and trustworthiness (EEAT), and drive organic traffic. Perfect for niche markets aiming for sustained online visibility.
 ---
 
-# EEAT Niche Authority SEO Blog Creator in 2024
+# EEAT Niche Authority SEO Blog Creator
 
 ### Case of usage:
 > Create A 30 Day E-E-A-T Fast Ranking Authority Building SEO Content Campaign from 1 [KEYWORD]
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Please use the following DocGPT.AI prompt instead:
+Please use the following DocGPT.ai prompt instead:
 
 ---
 

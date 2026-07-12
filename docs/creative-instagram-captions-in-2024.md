@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Creative Instagram Captions in 2024
+title: Creative Instagram Captions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/creative-instagram-captions-in-2024
-description: Unleash your Instagram potential in 2024 with our curated collection of creative captions. Stand out, boost engagement, and express yourself with the latest trends and clever wordplay. Perfect for influencers, marketers, and anyone looking to enhance their social media game!
+description: Unleash your Instagram potential with our curated collection of creative captions. Stand out, boost engagement, and express yourself with the latest trends and clever wordplay. Perfect for influencers, marketers, and anyone looking to enhance their social media game!
 ---
 
-# Creative Instagram Captions in 2024
+# Creative Instagram Captions
 
 ### Case of usage:
 > Generate High-Quality Instagram Captions.

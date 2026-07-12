@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How to create OpenAI API Keys in 2024
+title: How to create OpenAI API Keys
 nav_order: 10
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-openai-api-keys-in-2024
-description: How to create OpenAI API Keys in 2024
+description: How to create OpenAI API Keys
 ---
 
-# How to create OpenAI API Keys in 2024
+# How to create OpenAI API Keys
 
 <div style="border: 1px solid #dbe4ff; background: #f8f9ff; border-radius: 12px; padding: 18px; margin: 22px 0;">
   <strong>Need GPT for Sheets for real work?</strong><br>

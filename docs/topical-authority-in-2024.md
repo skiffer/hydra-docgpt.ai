@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Topical Authority in 2024
+title: Topical Authority
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/topical-authority-in-2024
-description: Master Topical Authority in 2024 with our comprehensive guide. Learn how to boost your SEO strategy, dominate search rankings, and establish your brand as an industry leader. Stay ahead in the ever-evolving digital landscape with these cutting-edge tactics.
+description: Master Topical Authority with our comprehensive guide. Learn how to boost your SEO strategy, dominate search rankings, and establish your brand as an industry leader. Stay ahead in the ever-evolving digital landscape with these cutting-edge tactics.
 ---
 
-# Topical Authority in 2024
+# Topical Authority
 
 ### Case of usage:
 > Create a table with article ideas to help you build topical authority for one specific [KEYWORD] that will be your main article a.k.a. pillar content.

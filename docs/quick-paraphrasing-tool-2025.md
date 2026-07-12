@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt
+# DocGPT.ai Prompt
 Your task is to paraphrase the sentence or article provided. The outcome must follow the [TARGETLANGUAGE]. 
 
 [PROMPT]

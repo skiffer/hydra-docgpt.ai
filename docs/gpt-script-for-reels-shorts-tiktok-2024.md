@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: GPT Script for Reels Shorts Tiktok 2024
+title: GPT Script for Reels Shorts Tiktok
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/gpt-script-for-reels-shorts-tiktok-2024
-description: Unlock viral potential with the GPT Script for Reels, Shorts, and TikTok 2024! Generate captivating content effortlessly, tailored for maximum engagement and reach. Elevate your social media presence with AI-driven scripts designed for trendsetters and digital creators.
+description: Unlock viral potential with the GPT Script for Reels, Shorts, and TikTok! Generate captivating content effortlessly, tailored for maximum engagement and reach. Elevate your social media presence with AI-driven scripts designed for trendsetters and digital creators.
 ---
 
-# GPT Script for Reels Shorts Tiktok 2024
+# GPT Script for Reels Shorts Tiktok
 
 ### Case of usage:
 > Create best reels/shorts/tiktok script.

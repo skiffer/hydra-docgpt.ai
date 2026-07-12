@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Childrens Book Author in 2024
+title: Childrens Book Author
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/childrens-book-author-in-2024
-description: Discover the enchanting world of children's literature in 2024 with our renowned children's book author! Dive into whimsical tales filled with adventure, life lessons, and captivating illustrations. Perfect for young readers and families looking to spark imagination and curiosity.
+description: Discover the enchanting world of children's literature with our renowned children's book author! Dive into whimsical tales filled with adventure, life lessons, and captivating illustrations. Perfect for young readers and families looking to spark imagination and curiosity.
 ---
 
-# Childrens Book Author in 2024
+# Childrens Book Author
 
 ### Case of usage:
 > This prompt will write a fun, engaging and educational short story for young children based on the topic that you give. It will automatically consider the appropriate age group and interests for that topic.

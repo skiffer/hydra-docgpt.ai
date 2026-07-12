@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Quora Answer Guide 2024
+title: Quora Answer Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/quora-answer-guide-2024
-description: Master the art of answering questions on Quora with the 'Quora Answer Guide 2024.' Packed with the latest strategies and tips, this guide will help you boost your visibility, drive traffic, and gain followers on Quora. Make your answers stand out in the crowd! #QuoraTips
+description: Master the art of answering questions on Quora with the 'Quora Answer Guide.' Packed with the latest strategies and tips, this guide will help you boost your visibility, drive traffic, and gain followers on Quora. Make your answers stand out in the crowd! #QuoraTips
 ---
 
-# Quora Answer Guide 2024
+# Quora Answer Guide
 
 ### Case of usage:
 > Write a personalized Quora answer to any query. Upvote if you like it. Check out my "Magic Article Generator."

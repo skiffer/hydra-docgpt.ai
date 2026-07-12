@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: C Sharp Code Review Guide 2024
+title: C Sharp Code Review Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/c-sharp-code-review-guide-2024
-description: Discover the comprehensive "C Sharp Code Review Guide 2024" – your ultimate resource for mastering code quality and best practices in C#. Elevate your code reviews with expert insights, modern techniques, and actionable tips tailored for 2024. Optimize your development workflow today!
+description: Discover the comprehensive "C Sharp Code Review Guide" – your ultimate resource for mastering code quality and best practices in C#. Elevate your code reviews with expert insights, modern techniques, and actionable tips tailored. Optimize your development workflow today!
 ---
 
-# C Sharp Code Review Guide 2024
+# C Sharp Code Review Guide
 
 ### Case of usage:
 > Code Review for C#

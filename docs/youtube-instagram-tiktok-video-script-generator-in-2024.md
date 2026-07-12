@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: YouTube Instagram TikTok Video Script Generator in 2024
+title: YouTube Instagram TikTok Video Script Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-instagram-tiktok-video-script-generator-in-2024
-description: Boost your social media game with the YouTube, Instagram, TikTok Video Script Generator in 2024! Craft captivating scripts effortlessly. Elevate your content, engage audiences, and grow your following with AI-powered precision. Perfect for creators seeking excellence.
+description: Boost your social media game with the YouTube, Instagram, TikTok Video Script Generator! Craft captivating scripts effortlessly. Elevate your content, engage audiences, and grow your following with AI-powered precision. Perfect for creators seeking excellence.
 ---
 
-# YouTube Instagram TikTok Video Script Generator in 2024
+# YouTube Instagram TikTok Video Script Generator
 
 ### Case of usage:
 > ️️Top Professional Content Generator Prompt Hacks

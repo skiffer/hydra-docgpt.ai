@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Pinterest Captions Hashtags Catchy Titles in 2024
+title: Pinterest Captions Hashtags Catchy Titles
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/pinterest-captions-hashtags-catchy-titles-in-2024
-description: Unlock the secrets to Pinterest success in 2024 with captivating captions, trending hashtags, and catchy titles. Boost engagement and drive traffic to your pins by mastering these essential SEO strategies and creative techniques for maximum visibility on Pinterest.
+description: Unlock the secrets to Pinterest success with captivating captions, trending hashtags, and catchy titles. Boost engagement and drive traffic to your pins by mastering these essential SEO strategies and creative techniques for maximum visibility on Pinterest.
 ---
 
-# Pinterest Captions Hashtags Catchy Titles in 2024
+# Pinterest Captions Hashtags Catchy Titles
 
 ### Case of usage:
 > Generate Awesome Pinterest Caption Along with Hashtags all you have to do is give the Keyword and this will generate 5 version of Caption.

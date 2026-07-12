@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Mastering Google Sheets in 2024
+title: Mastering Google Sheets
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/mastering-google-sheets-in-2024
-description: Unlock the full potential of Google Sheets in 2024 with our comprehensive guide. Learn advanced tips, shortcuts, and formulas to boost your productivity and data management skills. Perfect for professionals and beginners looking to optimize their spreadsheet capabilities.
+description: Unlock the full potential of Google Sheets with our comprehensive guide. Learn advanced tips, shortcuts, and formulas to boost your productivity and data management skills. Perfect for professionals and beginners looking to optimize their spreadsheet capabilities.
 ---
 
-# Mastering Google Sheets in 2024
+# Mastering Google Sheets
 
 ### Case of usage:
 > Need help with Google Sheets? I've got you covered!

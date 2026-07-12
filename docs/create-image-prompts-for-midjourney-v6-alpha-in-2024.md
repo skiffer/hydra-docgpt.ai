@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Image Prompts for Midjourney V6 Alpha in 2024
+title: Create Image Prompts for Midjourney V6 Alpha
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-image-prompts-for-midjourney-v6-alpha-in-2024
-description: Unlock the power of Midjourney V6 Alpha in 2024 with expert tips to create image prompts like never before. Discover effective techniques, enhance your creativity, and elevate your visual storytelling. Perfect for artists, designers, and innovators seeking next-level results.
+description: Unlock the power of Midjourney V6 Alpha with expert tips to create image prompts like never before. Discover effective techniques, enhance your creativity, and elevate your visual storytelling. Perfect for artists, designers, and innovators seeking next-level results.
 ---
 
-# Create Image Prompts for Midjourney V6 Alpha in 2024
+# Create Image Prompts for Midjourney V6 Alpha
 
 ### Case of usage:
 > Generate prompts for Midjourney V6 Alpha, text to image generative AI.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 
 ## Instructions
 

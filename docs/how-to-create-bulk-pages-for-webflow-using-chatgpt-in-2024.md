@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How To Create Bulk Pages for Webflow using ChatGPT in 2024
+title: How To Create Bulk Pages for Webflow using ChatGPT
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-bulk-pages-for-webflow-using-chatgpt-in-2024
 description: Discover how to efficiently create bulk pages for Webflow using ChatGPT. This comprehensive guide will streamline your content creation process, optimize your workflow, and enhance your website’s SEO performance.
 ---
 
-# How To Create Bulk Pages for Webflow using ChatGPT in 2024
+# How To Create Bulk Pages for Webflow using ChatGPT
 
 Creating and managing content for Webflow can be a breeze with the help of ChatGPT. This guide will walk you through the process of installing the GPT for Sheets add-on, setting up your workflow, and using it to generate and optimize bulk pages effortlessly.
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Business Development and Digital Marketing Strategy 2024
+title: Business Development and Digital Marketing Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/business-development-and-digital-marketing-strategy-2024
-description: Unlock success in 2024 with our comprehensive Business Development and Digital Marketing Strategy guide. Equip your team with cutting-edge tactics, industry insights, and innovative tools to drive growth, enhance brand presence, and outperform competitors. Start your journey today!
+description: Unlock success with our comprehensive Business Development and Digital Marketing Strategy guide. Equip your team with cutting-edge tactics, industry insights, and innovative tools to drive growth, enhance brand presence, and outperform competitors. Start your journey today!
 ---
 
-# Business Development and Digital Marketing Strategy 2024
+# Business Development and Digital Marketing Strategy
 
 ### Case of usage:
 > Create a Business Development and Digital Marketing Strategy based on [Name of the Business] [keywords] [Location]  Please leave a like.

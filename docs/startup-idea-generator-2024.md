@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Startup Idea Generator 2024
+title: Startup Idea Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/startup-idea-generator-2024
-description: Discover endless possibilities for your business with the Startup Idea Generator 2024. Elevate your entrepreneurial journey by exploring innovative, tailored ideas that align with market trends. Ignite your creativity and turn concepts into reality—your next venture awaits!
+description: Discover endless possibilities for your business with the Startup Idea Generator. Elevate your entrepreneurial journey by exploring innovative, tailored ideas that align with market trends. Ignite your creativity and turn concepts into reality—your next venture awaits!
 ---
 
-# Startup Idea Generator 2024
+# Startup Idea Generator
 
 ### Case of usage:
 > Get Startup Ideas

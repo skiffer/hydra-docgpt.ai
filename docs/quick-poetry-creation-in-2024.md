@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Quick Poetry Creation in 2024
+title: Quick Poetry Creation
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/quick-poetry-creation-in-2024
-description: Unleash your inner poet with "Quick Poetry Creation in 2024," a revolutionary guide to crafting compelling verses effortlessly. Perfect for aspiring poets and seasoned wordsmiths looking to enhance their creativity and productivity, while embracing the latest trends in modern poetry.
+description: Unleash your inner poet with "Quick Poetry Creation," a revolutionary guide to crafting compelling verses effortlessly. Perfect for aspiring poets and seasoned wordsmiths looking to enhance their creativity and productivity, while embracing the latest trends in modern poetry.
 ---
 
-# Quick Poetry Creation in 2024
+# Quick Poetry Creation
 
 ### Case of usage:
 > With the help of this prompt, chatGPT will write poems you can impress your friends and loved ones with. please give a thumbs up if you like it. Thank you!

@@ -1,18 +1,18 @@
 ---
 layout: docs_layouts/default
-title: Best way how to Get GPT in Google Sheets in 2024
+title: Best way how to Get GPT in Google Sheets
 nav_order: 16
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/best-way-how-to-get-gpt-in-google-sheets-in-2024
-description: Best way how to Get GPT in Google Sheets in 2024
+description: Best way how to Get GPT in Google Sheets
 ---
 
-# Best way how to get GPT in Google Sheets in 2024
+# Best way how to get GPT in Google Sheets
 
 
 Integrating ChatGPT with Google Sheets enables you to handle thousands of cells simultaneously. By prompting ChatGPT with your instructions, the Sheets add-on executes them, neatly organizing the output in rows and columns. Additionally, using the familiar Google Sheets interface eliminates the need to switch between different apps. Google Sheets is already excellent for teamwork, allowing real-time collaboration. With the GPT for Sheets add-on, this collaboration becomes even more productive.
 
-Whether you're generating content, brainstorming ideas, or editing text, integrating ChatGPT transforms Google Sheets into an AI-powered platform, effectively turning it into 'DocGPT.AI - GPT for Sheets'
+Whether you're generating content, brainstorming ideas, or editing text, integrating ChatGPT transforms Google Sheets into an AI-powered platform, effectively turning it into 'DocGPT.ai - GPT for Sheets'
 
 1. Go to workspace <a href="https://workspace.google.com/marketplace/app/gpt_for_docs_sheets_forms_slides/466607203252" target="_blank">GPT for Sheets Add-On</a>
 2. Click Install

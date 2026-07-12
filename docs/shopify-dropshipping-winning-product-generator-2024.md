@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Shopify Dropshipping Winning Product Generator 2024
+title: Shopify Dropshipping Winning Product Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/shopify-dropshipping-winning-product-generator-2024
-description: Discover the ultimate Shopify Dropshipping Winning Product Generator for 2024! Uncover high-demand products effortlessly, boost your e-commerce store’s sales, and stay ahead of the competition. Optimize your dropshipping business and achieve success with our cutting-edge tool today.
+description: Discover the ultimate Shopify Dropshipping Winning Product Generator! Uncover high-demand products effortlessly, boost your e-commerce store’s sales, and stay ahead of the competition. Optimize your dropshipping business and achieve success with our cutting-edge tool today.
 ---
 
-# Shopify Dropshipping Winning Product Generator 2024
+# Shopify Dropshipping Winning Product Generator
 
 ### Case of usage:
 > Shopify winning product research to find the next big eCommerce brand. Enter your niche and get unique, non saturated products for your next big eCommerce brand.
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ### Prompt for GPT in Google Sheets:
 ```shell
 # Modifications applied: 
-# - Replaced AIPRM with DocGPT.AI
+# - Replaced AIPRM with DocGPT.ai
 # - Replaced the link with https://docgpt.ai/gpt-for-sheets/
 # - Removed links and mentions about author
 # - Removed the mention "_Created with AIPRM Prompt."

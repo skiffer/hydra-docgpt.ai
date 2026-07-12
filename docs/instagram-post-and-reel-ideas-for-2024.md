@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Post and Reel Ideas for 2024
+title: Instagram Post and Reel Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-post-and-reel-ideas-for-2024
-description: Explore top Instagram post and reel ideas for 2024 that boost engagement and followers. Stay ahead in social trends with creative content strategies to enhance your brand's visibility and captivate your audience. Perfect for content creators and marketers seeking fresh inspiration!
+description: Explore top Instagram post and reel ideas that boost engagement and followers. Stay ahead in social trends with creative content strategies to enhance your brand's visibility and captivate your audience. Perfect for content creators and marketers seeking fresh inspiration!
 ---
 
-# Instagram Post and Reel Ideas for 2024
+# Instagram Post and Reel Ideas
 
 ### Case of usage:
 > Get a beautiful organized, and fully personalized for your business 25 posts, reels and carousel ideas just in one click! Just write What's your business about, e.g. Coaching for business owners, or Hairdresser in US. (Please upvote for more!)

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Stable Diffusion Prompt Generator in 2024
+title: Stable Diffusion Prompt Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/stable-diffusion-prompt-generator-in-2024
-description: Discover the cutting-edge Stable Diffusion Prompt Generator of 2024, designed to elevate your creative projects. Effortlessly create engaging prompts with advanced AI technology, ensuring high-quality, unique content generation. Maximize productivity and creativity today!
+description: Discover the cutting-edge Stable Diffusion Prompt Generator of, designed to elevate your creative projects. Effortlessly create engaging prompts with advanced AI technology, ensuring high-quality, unique content generation. Maximize productivity and creativity today!
 ---
 
-# Stable Diffusion Prompt Generator in 2024
+# Stable Diffusion Prompt Generator
 
 ### Case of usage:
 > Turn your Concept/Ideas into Beautiful Images with these amazing generated prompts for Stable Diffusion!

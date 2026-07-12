@@ -1,6 +1,6 @@
 ---
 layout: docs_layouts/default
-title: How To Create Bulk Pages for WordPress using ChatGPT in 2024
+title: How To Create Bulk Pages for WordPress using ChatGPT
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-bulk-pages-for-wordpress-using-chatgpt-in-2024
@@ -8,7 +8,7 @@ description: Learn how to create bulk pages for WordPress using ChatGPT effortle
 ---
 
 
-# How To Create Bulk Pages for WordPress using ChatGPT in 2024
+# How To Create Bulk Pages for WordPress using ChatGPT
 
 
 ## Install GPT for Sheets

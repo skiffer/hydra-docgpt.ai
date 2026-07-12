@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost Your Google Business Profile in 2024
+title: Boost Your Google Business Profile
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-your-google-business-profile-in-2024
-description: Elevate your online presence in 2024 with our expert strategies to boost your Google Business Profile. Increase visibility, attract more customers, and stay ahead of the competition. Discover effective tips and techniques for a strong digital footprint this year!
+description: Elevate your online presence with our expert strategies to boost your Google Business Profile. Increase visibility, attract more customers, and stay ahead of the competition. Discover effective tips and techniques for a strong digital footprint this year!
 ---
 
-# Boost Your Google Business Profile in 2024
+# Boost Your Google Business Profile
 
 ### Case of usage:
 > Optimize a Google Business Profile (GMB) in 10 Seconds Flat. Just say the name of the business, where it's located, what it sells/offers, what it's service area is (if applicable) and anything else you think is important to help this business rank locally and watch us do our magic! This is the best Google Business Profile Citation Optimization Tool you've ever used! Perfect for local SEO too!
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# _Prompt by DocGPT.AI_
+# _Prompt by DocGPT.ai_
 ---
 **MERCHYNT'S MAGICAL GBP OPTIMIZATION FOR [BUSINESS NAME]**
 

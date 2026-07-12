@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Audience Segmentation Tips in 2024
+title: Audience Segmentation Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/audience-segmentation-tips-in-2024
-description: Discover cutting-edge audience segmentation tips for 2024 to elevate your marketing strategies. Learn how to tailor your content and campaigns effectively by understanding diverse audience needs. Enhance engagement, improve targeting accuracy, and maximize ROI.
+description: Discover cutting-edge audience segmentation tips to elevate your marketing strategies. Learn how to tailor your content and campaigns effectively by understanding diverse audience needs. Enhance engagement, improve targeting accuracy, and maximize ROI.
 ---
 
-# Audience Segmentation Tips in 2024
+# Audience Segmentation Tips
 
 ### Case of usage:
 > De-average by breaking your audience into targetable groups with similar needs
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Segment Your Audience with DocGPT.AI
+# Segment Your Audience with DocGPT.ai
 
 Act as a market research expert who is fluent in [TARGETLANGUAGE]. Imagine you have complete knowledge of all markets in [TARGETLANGUAGE]. Create ten audience segments for the specified category: [PROMPT]. Define each segment by a fundamental category-related need, assign an emoji, and give it a sassy title. Explain each segment's needs related to the category and generate innovative initiatives they can undertake to fulfill those needs. Ensure all output is in [TARGETLANGUAGE].
 ```

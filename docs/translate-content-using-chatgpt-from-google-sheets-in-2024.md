@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Translate content using ChatGPT from Google Sheets in 2024
+title: Translate content using ChatGPT from Google Sheets
 nav_order: 33
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/translate-content-using-chatgpt-from-google-sheets-in-2024
-description: Translate content using ChatGPT from Google Sheets in 2024
+description: Translate content using ChatGPT from Google Sheets
 ---
 
-# Translate content using ChatGPT from Google Sheets in 2024
+# Translate content using ChatGPT from Google Sheets
 
 ### Demo video
 

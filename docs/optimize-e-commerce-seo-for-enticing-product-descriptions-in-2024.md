@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimize E-Commerce SEO for Enticing Product Descriptions in 2024
+title: Optimize E-Commerce SEO for Enticing Product Descriptions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimize-e-commerce-seo-for-enticing-product-descriptions-in-2024
-description: Boost your 2024 e-commerce success with our expert tips on optimizing product descriptions for SEO. Attract more customers with enticing, keyword-rich content that enhances your search engine ranking and drives sales. Don't miss out on these essential strategies!
+description: Boost your e-commerce success with our expert tips on optimizing product descriptions for SEO. Attract more customers with enticing, keyword-rich content that enhances your search engine ranking and drives sales. Don't miss out on these essential strategies!
 ---
 
-# Optimize E-Commerce SEO for Enticing Product Descriptions in 2024
+# Optimize E-Commerce SEO for Enticing Product Descriptions
 
 ### Case of usage:
 > Creating a rich and meaningful product description for your e-commerce product & find the best H1's & Meta information.

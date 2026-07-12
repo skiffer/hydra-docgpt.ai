@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Stable Diffusion Prompt Generator Tool in 2024
+title: Stable Diffusion Prompt Generator Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/stable-diffusion-prompt-generator-tool-in-2024
-description: Discover the ultimate Stable Diffusion Prompt Generator Tool for 2024! Unlock your creativity with AI-driven prompts designed to boost productivity and innovation. Perfect for writers, artists, and developers seeking fresh ideas. Explore endless possibilities today!
+description: Discover the ultimate Stable Diffusion Prompt Generator Tool! Unlock your creativity with AI-driven prompts designed to boost productivity and innovation. Perfect for writers, artists, and developers seeking fresh ideas. Explore endless possibilities today!
 ---
 
-# Stable Diffusion Prompt Generator Tool in 2024
+# Stable Diffusion Prompt Generator Tool
 
 ### Case of usage:
 > Stable Diffusion prompt generator with negative prompts, styling focus and customizable options using "-" or let chatgpt decide with "\" (GPT-4)

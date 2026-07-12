@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Ultra Engaging LinkedIn Posts in 2024
+title: Create Ultra Engaging LinkedIn Posts
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-ultra-engaging-linkedin-posts-in-2024
-description: Boost your LinkedIn presence in 2024! Discover how to create ultra-engaging LinkedIn posts that captivate your audience, drive interactions, and enhance professional networking. Elevate your content strategy and achieve LinkedIn success today!
+description: Boost your LinkedIn presence! Discover how to create ultra-engaging LinkedIn posts that captivate your audience, drive interactions, and enhance professional networking. Elevate your content strategy and achieve LinkedIn success today!
 ---
 
-# Create Ultra Engaging LinkedIn Posts in 2024
+# Create Ultra Engaging LinkedIn Posts
 
 ### Case of usage:
 > Designed for SALES MARKETING & MANAGEMENT

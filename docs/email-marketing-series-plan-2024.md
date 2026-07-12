@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Email Marketing Series Plan 2024
+title: Email Marketing Series Plan
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/email-marketing-series-plan-2024
-description: Boost your 2024 business strategy with our Email Marketing Series Plan! Unlock engagement-driven campaigns, tailored templates, and insightful analytics to enhance customer interaction and drive conversions. Elevate your email marketing game with proven tactics and expert guidance.
+description: Boost your business strategy with our Email Marketing Series Plan! Unlock engagement-driven campaigns, tailored templates, and insightful analytics to enhance customer interaction and drive conversions. Elevate your email marketing game with proven tactics and expert guidance.
 ---
 
-# Email Marketing Series Plan 2024
+# Email Marketing Series Plan
 
 ### Case of usage:
 > Create an Email marketing series for [PRODUCT/SERVICE]

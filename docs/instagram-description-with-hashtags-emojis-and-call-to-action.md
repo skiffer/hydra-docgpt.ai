@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Updated Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Updated Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 

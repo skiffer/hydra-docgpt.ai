@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Top Article Using One Keyword in 2024
+title: Create Top Article Using One Keyword
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-top-article-using-one-keyword-in-2024
-description: Unleash the power of SEO in 2024! Learn how to create top-ranking articles using just one keyword. Master the art of keyword optimization and drive organic traffic to your site. Boost your visibility, outshine competitors, and elevate your content strategy effortlessly with expert tips.
+description: Unleash the power of SEO! Learn how to create top-ranking articles using just one keyword. Master the art of keyword optimization and drive organic traffic to your site. Boost your visibility, outshine competitors, and elevate your content strategy effortlessly with expert tips.
 ---
 
-# Create Top Article Using One Keyword in 2024
+# Create Top Article Using One Keyword
 
 ### Case of usage:
 > Create best Article for website with just one Keyword.
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ### Prompt for GPT in Google Sheets:
 ```shell
 ```plaintext
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 Write the best SEO-friendly title and article on [PROMPT] 1500 words in [TARGETLANGUAGE]

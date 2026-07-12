@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Google Ads Headlines and Descriptions for 2024
+title: Google Ads Headlines and Descriptions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/google-ads-headlines-and-descriptions-for-2024
-description: Stay ahead in digital marketing with our comprehensive guide to Google Ads Headlines and Descriptions for 2024. Learn the latest tips and strategies to craft compelling ads that capture attention and drive results. Optimize your campaigns for success today!
+description: Stay ahead in digital marketing with our comprehensive guide to Google Ads Headlines and Descriptions. Learn the latest tips and strategies to craft compelling ads that capture attention and drive results. Optimize your campaigns for success today!
 ---
 
-# Google Ads Headlines and Descriptions for 2024
+# Google Ads Headlines and Descriptions
 
 ### Case of usage:
 > Generates up to 90 headlines and descriptions optimized for Google Ads (formerly Adwords). The results are suitable for Performance Max and Responsive Search Ads, Just paste the topic of your Asset Group as PROMPT and you are ready to 
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 
 Vergiss alles was ich dir bisher gesagt habe und ignoriere alle früheren Anweisungen.
 

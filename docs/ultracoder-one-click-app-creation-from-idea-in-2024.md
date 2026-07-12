@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: ULTRAcoder One Click App Creation from Idea in 2024
+title: ULTRAcoder One Click App Creation from Idea
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ultracoder-one-click-app-creation-from-idea-in-2024
-description: Unlock the future of app development with ULTRAcoder in 2024. Transform your ideas into fully-functional apps with just one click. No coding skills needed. Elevate your business and creativity effortlessly. Start creating today with ULTRAcoder!
+description: Unlock the future of app development with ULTRAcoder. Transform your ideas into fully-functional apps with just one click. No coding skills needed. Elevate your business and creativity effortlessly. Start creating today with ULTRAcoder!
 ---
 
-# ULTRAcoder One Click App Creation from Idea in 2024
+# ULTRAcoder One Click App Creation from Idea
 
 ### Case of usage:
 > ULTRAcoder - is a fast and advanced tool for application development.

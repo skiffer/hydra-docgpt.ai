@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: 52 Week Content Planner for 2024
+title: 52 Week Content Planner
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/52-week-content-planner-for-2024
-description: Elevate your brand's strategy with the 52 Week Content Planner for 2024. Organize, strategize, and streamline your marketing efforts for a successful year. Maximize engagement and growth with this comprehensive planner designed for consistent, impactful content creation.
+description: Elevate your brand's strategy with the 52 Week Content Planner. Organize, strategize, and streamline your marketing efforts for a successful year. Maximize engagement and growth with this comprehensive planner designed for consistent, impactful content creation.
 ---
 
-# 52 Week Content Planner for 2024
+# 52 Week Content Planner
 
 ### Case of usage:
 > Create a list of 52 blog post titles

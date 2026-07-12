@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Content Calendar in 2024
+title: Instagram Content Calendar
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-content-calendar-in-2024
-description: Streamline your social media strategy with our Instagram Content Calendar for 2024! Plan engaging posts, track key dates, and stay ahead of trends. Maximize your reach and interaction with a comprehensive, easy-to-use planner designed for growth and consistency.
+description: Streamline your social media strategy with our Instagram Content Calendar! Plan engaging posts, track key dates, and stay ahead of trends. Maximize your reach and interaction with a comprehensive, easy-to-use planner designed for growth and consistency.
 ---
 
-# Instagram Content Calendar in 2024
+# Instagram Content Calendar
 
 ### Case of usage:
 > How to use: Write your area and your niche.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Become a Salesforce Superhero 2024
+title: Become a Salesforce Superhero
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/become-a-salesforce-superhero-2024
-description: Unlock your potential in 2024 with "Become a Salesforce Superhero." Master Salesforce skills to boost your career, increase efficiency, and drive business success. Join the elite league of Salesforce experts and transform your professional journey today. Perfect for all levels!
+description: Unlock your potential with "Become a Salesforce Superhero." Master Salesforce skills to boost your career, increase efficiency, and drive business success. Join the elite league of Salesforce experts and transform your professional journey today. Perfect for all levels!
 ---
 
-# Become a Salesforce Superhero 2024
+# Become a Salesforce Superhero
 
 ### Case of usage:
 > Salesforce giving you a hard time? I can help you out!

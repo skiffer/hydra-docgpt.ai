@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instant 5 Google Business Profile Q and As in 2024
+title: Instant 5 Google Business Profile Q and As
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instant-5-google-business-profile-q-and-as-in-2024
-description: Boost your local SEO effortlessly with "Instant 5 Google Business Profile Q and As in 2024." Discover essential insights to enhance visibility, engage your audience, and drive customer interaction. Elevate your Google profile with top queries and insightful answers now!
+description: Boost your local SEO effortlessly with "Instant 5 Google Business Profile Q and As." Discover essential insights to enhance visibility, engage your audience, and drive customer interaction. Elevate your Google profile with top queries and insightful answers now!
 ---
 
-# Instant 5 Google Business Profile Q and As in 2024
+# Instant 5 Google Business Profile Q and As
 
 ### Case of usage:
 > Get 5 custom Q&As for any business so you can add them to your Google Business Profile. Q&As are helpful at ranking Google Business Profiles (GMB) since they offer an additional opportunity to use keywords. Q&As are optimized for local SEO.

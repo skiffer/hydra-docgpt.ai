@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Photography-Style Midjourney Prompt Maker in 2024
+title: Photography-Style Midjourney Prompt Maker
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/photography-style-midjourney-prompt-maker-in-2024
-description: Discover the ultimate Photography-Style Midjourney Prompt Maker in 2024! Enhance your creative process and capture stunning visuals effortlessly. Perfect for photographers of all skill levels. Boost your storytelling and take your craft to new heights with ease!
+description: Discover the ultimate Photography-Style Midjourney Prompt Maker! Enhance your creative process and capture stunning visuals effortlessly. Perfect for photographers of all skill levels. Boost your storytelling and take your craft to new heights with ease!
 ---
 
-# Photography-Style Midjourney Prompt Maker in 2024
+# Photography-Style Midjourney Prompt Maker
 
 ### Case of usage:
 > The recent version (v5 updated!!) of Photography-like Midjourney prompt maker! GPT-4 and MJ v5 works well! (2023-06-22)

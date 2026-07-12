@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Midjourney 6 Tips for Stunning Images in 2024
+title: Midjourney 6 Tips for Stunning Images
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/midjourney-6-tips-for-stunning-images-in-2024
-description: Discover essential Midjourney 6 tips to create stunning images in 2024. Elevate your photography skills with expert advice on composition, lighting, and creativity. Perfect for photographers eager to enhance visual storytelling and capture breathtaking shots. 
+description: Discover essential Midjourney 6 tips to create stunning images. Elevate your photography skills with expert advice on composition, lighting, and creativity. Perfect for photographers eager to enhance visual storytelling and capture breathtaking shots.
 ---
 
-# Midjourney 6 Tips for Stunning Images in 2024
+# Midjourney 6 Tips for Stunning Images
 
 ### Case of usage:
 > Five Midjourney 6 prompts for improved and more realistic, highly detailed images – also with in-image text.

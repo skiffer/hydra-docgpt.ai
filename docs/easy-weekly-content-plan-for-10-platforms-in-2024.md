@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Easy Weekly Content Plan for 10 Platforms in 2024
+title: Easy Weekly Content Plan for 10 Platforms
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/easy-weekly-content-plan-for-10-platforms-in-2024
-description: Unlock your brand's potential with our Easy Weekly Content Plan for 10 Platforms in 2024! This comprehensive guide simplifies your social media strategy, boosting engagement and growth across all major channels. Start optimizing your content today for maximum reach and impact!
+description: Unlock your brand's potential with our Easy Weekly Content Plan for 10 Platforms! This comprehensive guide simplifies your social media strategy, boosting engagement and growth across all major channels. Start optimizing your content today for maximum reach and impact!
 ---
 
-# Easy Weekly Content Plan for 10 Platforms in 2024
+# Easy Weekly Content Plan for 10 Platforms
 
 ### Case of usage:
 > Create Social Media Content for your top 10 sites

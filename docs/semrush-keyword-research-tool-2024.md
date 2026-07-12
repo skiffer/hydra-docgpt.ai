@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEMRush Keyword Research Tool 2024
+title: SEMRush Keyword Research Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/semrush-keyword-research-tool-2024
-description: Unlock the potential of your content strategy with the SEMRush Keyword Research Tool 2024. Gain insights into top-performing keywords, analyze trends, and boost your SEO efforts effortlessly. Stay ahead in the digital landscape by targeting the right keywords to drive organic traffic and maximize ROI.
+description: Unlock the potential of your content strategy with the SEMRush Keyword Research Tool. Gain insights into top-performing keywords, analyze trends, and boost your SEO efforts effortlessly. Stay ahead in the digital landscape by targeting the right keywords to drive organic traffic and maximize ROI.
 ---
 
-# SEMRush Keyword Research Tool 2024
+# SEMRush Keyword Research Tool
 
 ### Case of usage:
 > Keyword Research Tool like SEMrush it will create table of related keywords of Keyword, Volume, Keyword Difficulty, CPC (USD), Competitive Density, Number of Results, and  Intent.
@@ -38,7 +38,7 @@ Please act as a keyword research and sheet creation tool like SEMrush. Your task
 | how to make a YouTube thumbnail          | 1300   | 73                 | 1.41      | 0.31                | 382000000         | Informational | 
 | how to make YouTube thumbnails           | 1300   | 73                 | 1.41      | 0.31                | 0                 | Informational | 
 
-This is plain text, but you need to create a table as instructed and fill the data in an organized manner. Additionally, I would like to request 50 keyword ideas. Please respond in the specified language. For further assistance, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+This is plain text, but you need to create a table as instructed and fill the data in an organized manner. Additionally, I would like to request 50 keyword ideas. Please respond in the specified language. For further assistance, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

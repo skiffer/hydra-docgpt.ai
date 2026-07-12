@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Trading Indicator Strategy Creator 2024
+title: Trading Indicator Strategy Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/trading-indicator-strategy-creator-2024
-description: Unlock your trading potential with the Trading Indicator Strategy Creator 2024. Tailored for both beginners and pros, this innovative tool allows you to design, test, and optimize strategies with ease. Elevate your trading game with cutting-edge analytics and seamless interface today!
+description: Unlock your trading potential with the Trading Indicator Strategy Creator. Tailored for both beginners and pros, this innovative tool allows you to design, test, and optimize strategies with ease. Elevate your trading game with cutting-edge analytics and seamless interface today!
 ---
 
-# Trading Indicator Strategy Creator 2024
+# Trading Indicator Strategy Creator
 
 ### Case of usage:
 > Indicator trading creator , MetaQuotes Language , ninjatrader , ninjascript , and metatrader.

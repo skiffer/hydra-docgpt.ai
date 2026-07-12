@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Fantasy Materials in Midjourney 2024
+title: Fantasy Materials in Midjourney
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/fantasy-materials-in-midjourney-2024
-description: Unlock the magic of Fantasy Materials in Midjourney 2024! Dive into an enchanting world of innovative textures and designs. Perfect for creators looking to bring their imaginative visions to life with cutting-edge technology. Discover endless creative possibilities today!
+description: Unlock the magic of Fantasy Materials in Midjourney! Dive into an enchanting world of innovative textures and designs. Perfect for creators looking to bring their imaginative visions to life with cutting-edge technology. Discover endless creative possibilities today!
 ---
 
-# Fantasy Materials in Midjourney 2024
+# Fantasy Materials in Midjourney
 
 ### Case of usage:
 > Repeat this often! Creates your idea in a lot of different styles and materials. Get surprised. ChatGPT suggests a Midjourney prompt to use.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How to create Mistral API Keys in 2024
+title: How to create Mistral API Keys
 nav_order: 11
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-mistral-api-keys-in-2024
-description: How to create Mistral API Keys in 2024
+description: How to create Mistral API Keys
 ---
 
-# How to create Mistral API Keys in 2024
+# How to create Mistral API Keys
 
 If you're looking to harness the power of Mistral AI for your projects, you'll need an API key to get started. Follow these steps to obtain your API key and integrate Mistral AI into your applications seamlessly.
 

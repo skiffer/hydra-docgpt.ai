@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Resume Summary Creator 2024
+title: Resume Summary Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/resume-summary-creator-2024
-description: Elevate your job application with the Resume Summary Creator 2024. Craft compelling and tailored resume summaries that highlight your skills and achievements, ensuring you stand out in today's competitive job market. Get noticed by top employers effortlessly!
+description: Elevate your job application with the Resume Summary Creator. Craft compelling and tailored resume summaries that highlight your skills and achievements, ensuring you stand out in today's competitive job market. Get noticed by top employers effortlessly!
 ---
 
-# Resume Summary Creator 2024
+# Resume Summary Creator
 
 ### Case of usage:
 > Copy and paste your resume to create a general summary of your work/education experiences. 
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 _Edit this resume for clarity, content, format, and grammar. Suggest improvements in overall structure and organization. Follow industry standards, and avoid personal opinions. Be clear and concise with your words, including a professional tone and clear description of the candidates best strengths._ 
 
-For more assistance, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+For more assistance, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 
 Please provide your resume: [PROMPT]
 ```

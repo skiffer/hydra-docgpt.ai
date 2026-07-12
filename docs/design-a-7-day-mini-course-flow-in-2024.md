@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Design a 7 Day Mini Course Flow in 2024
+title: Design a 7 Day Mini Course Flow
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/design-a-7-day-mini-course-flow-in-2024
-description: Unlock the art of crafting a compelling 7-day mini course with our step-by-step guide for 2024. Master course flow design, engage learners, and boost retention. Ideal for educators, trainers, and online course creators aiming to enhance their teaching expertise!
+description: Unlock the art of crafting a compelling 7-day mini course with our step-by-step guide. Master course flow design, engage learners, and boost retention. Ideal for educators, trainers, and online course creators aiming to enhance their teaching expertise!
 ---
 
-# Design a 7 Day Mini Course Flow in 2024
+# Design a 7 Day Mini Course Flow
 
 ### Case of usage:
 > Create a 7-day mini teaser course. Curriculum with 7 drip course Emails, a teaser videoscript, social media posts, 3 prelaunch Emails for your list. Engaging post ideas. Just keep pressing 'continue..' and it creates all you need for your top selling course, 
@@ -32,7 +32,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Created with [DocGPT.AI Prompt "Create a 7-day Mini course flow"](https://docgpt.ai/gpt-for-sheets/)
+# Created with [DocGPT.ai Prompt "Create a 7-day Mini course flow"](https://docgpt.ai/gpt-for-sheets/)
 
 Ignore previous instructions. I already have a professional understanding of digital marketing. Do not patronize me. Act as an educational content creator assistant.
 

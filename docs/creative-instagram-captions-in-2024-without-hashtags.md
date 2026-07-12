@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Creative Instagram Captions in 2024 Without Hashtags
+title: Creative Instagram Captions Without Hashtags
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/creative-instagram-captions-in-2024-without-hashtags
-description: Unlock the art of captivating your Instagram audience in 2024 with innovative, hashtag-free captions. Discover creative ways to engage followers, boost interactions, and express your unique voice. Elevate your posts with memorable words that stand out and leave a lasting impression.
+description: Unlock the art of captivating your Instagram audience with innovative, hashtag-free captions. Discover creative ways to engage followers, boost interactions, and express your unique voice. Elevate your posts with memorable words that stand out and leave a lasting impression.
 ---
 
-# Creative Instagram Captions in 2024 Without Hashtags
+# Creative Instagram Captions Without Hashtags
 
 ### Case of usage:
 > IG caption that gets engagement. Includes Hooks, Hashtags and CTA.

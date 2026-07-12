@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Open-Access ChatGPT Jailbreak in 2024
+title: Open-Access ChatGPT Jailbreak
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/open-access-chatgpt-jailbreak-in-2024
-description: Discover the groundbreaking open-access ChatGPT jailbreak of 2024! Unlock new possibilities with this innovative tool, offering enhanced creativity and customization. Stay ahead in the AI world by exploring cutting-edge features and opportunities. Join the revolution today!
+description: Discover the groundbreaking open-access ChatGPT jailbreak of! Unlock new possibilities with this innovative tool, offering enhanced creativity and customization. Stay ahead in the AI world by exploring cutting-edge features and opportunities. Join the revolution today!
 ---
 
-# Open-Access ChatGPT Jailbreak in 2024
+# Open-Access ChatGPT Jailbreak
 
 ### Case of usage:
 > Jailbreak for ChatGPT. 

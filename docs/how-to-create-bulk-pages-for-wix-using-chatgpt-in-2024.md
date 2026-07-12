@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How To Create Bulk Pages for Wix Using ChatGPT in 2024
+title: How To Create Bulk Pages for Wix Using ChatGPT
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-bulk-pages-for-wix-using-chatgpt-in-2024
 description: Discover how to effortlessly create bulk pages for Wix using ChatGPT. This easy-to-follow guide will help you streamline your content creation, boost your workflow, and enhance your website's SEO performance.
 ---
 
-# How To Create Bulk Pages for Wix Using ChatGPT in 2024
+# How To Create Bulk Pages for Wix Using ChatGPT
 
 ## Install GPT for Sheets
 

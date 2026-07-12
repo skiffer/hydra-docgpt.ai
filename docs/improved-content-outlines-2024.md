@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Improved Content Outlines 2024
+title: Improved Content Outlines
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/improved-content-outlines-2024
-description: Discover the latest trends with "Improved Content Outlines 2024." Enhance your content strategy with innovative outlines designed for maximum engagement and SEO performance. Stay ahead in digital marketing with expert techniques tailored for 2024's competitive landscape.
+description: Discover the latest trends with "Improved Content Outlines." Enhance your content strategy with innovative outlines designed for maximum engagement and SEO performance. Stay ahead in digital marketing with expert techniques tailored's competitive landscape.
 ---
 
-# Improved Content Outlines 2024
+# Improved Content Outlines
 
 ### Case of usage:
 > Supercharge your content production! Generate very detailed content outlines for your human writers. Includes FAQs and attention-grabbing headings.

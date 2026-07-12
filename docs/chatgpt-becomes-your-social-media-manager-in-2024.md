@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: ChatGPT Becomes Your Social Media Manager in 2024
+title: ChatGPT Becomes Your Social Media Manager
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/chatgpt-becomes-your-social-media-manager-in-2024
-description: Discover how ChatGPT revolutionizes social media management in 2024! Streamline your content creation, scheduling, and engagement with cutting-edge AI technology. Elevate your brand's online presence effortlessly and stay ahead of the competition. Join the future of social media today!
+description: Discover how ChatGPT revolutionizes social media management! Streamline your content creation, scheduling, and engagement with cutting-edge AI technology. Elevate your brand's online presence effortlessly and stay ahead of the competition. Join the future of social media today!
 ---
 
-# ChatGPT Becomes Your Social Media Manager in 2024
+# ChatGPT Becomes Your Social Media Manager
 
 ### Case of usage:
 > Example request: "I need help managing the presence of an organization on Twitter in order to increase brand awareness."

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Easy Global Midjourney Prompt Creator 2024
+title: Easy Global Midjourney Prompt Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/easy-global-midjourney-prompt-creator-2024
-description: Discover the Easy Global Midjourney Prompt Creator 2024, the ultimate tool for effortless content creation. Streamline your creative process with user-friendly features, global language support, and cutting-edge technology. Enhance your storytelling and engage audiences worldwide today!
+description: Discover the Easy Global Midjourney Prompt Creator, the ultimate tool for effortless content creation. Streamline your creative process with user-friendly features, global language support, and cutting-edge technology. Enhance your storytelling and engage audiences worldwide today!
 ---
 
-# Easy Global Midjourney Prompt Creator 2024
+# Easy Global Midjourney Prompt Creator
 
 ### Case of usage:
 > Generates detailed and distinct Midjourney Prompts that are Copy & Paste ready. Also automatically adds aspect ratios and Midjourney specific parameters depending on the desired subject.

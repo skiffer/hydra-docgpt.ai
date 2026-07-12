@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create an SEO-Friendly Product Description in 2024
+title: Create an SEO-Friendly Product Description
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-an-seo-friendly-product-description-in-2024
-description: Unlock the secrets to crafting SEO-friendly product descriptions in 2024! Boost your online visibility and drive sales with proven strategies. Elevate your e-commerce game by learning how to integrate keywords seamlessly and captivate your audience. Optimize now for success!
+description: Unlock the secrets to crafting SEO-friendly product descriptions! Boost your online visibility and drive sales with proven strategies. Elevate your e-commerce game by learning how to integrate keywords seamlessly and captivate your audience. Optimize now for success!
 ---
 
-# Create an SEO-Friendly Product Description in 2024
+# Create an SEO-Friendly Product Description
 
 ### Case of usage:
 > Writes an optimized product description based on a short list of product features. For best results provide as much info as possible and include keywords you want to rank for.

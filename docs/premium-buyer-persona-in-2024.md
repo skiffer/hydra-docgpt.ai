@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Premium Buyer Persona in 2024
+title: Premium Buyer Persona
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/premium-buyer-persona-in-2024
-description: Discover the ultimate guide to crafting a Premium Buyer Persona in 2024. Elevate your marketing strategy by understanding your ideal customer's needs and preferences. Gain insights to boost engagement, drive conversions, and grow your brand with precision and clarity.
+description: Discover the ultimate guide to crafting a Premium Buyer Persona. Elevate your marketing strategy by understanding your ideal customer's needs and preferences. Gain insights to boost engagement, drive conversions, and grow your brand with precision and clarity.
 ---
 
-# Premium Buyer Persona in 2024
+# Premium Buyer Persona
 
 ### Case of usage:
 > Generate the Buyer Persona or Ideal Customer for your product or service quickly and effectively.

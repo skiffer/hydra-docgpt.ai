@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Content Rewriter Using GPT Mirror in 2024
+title: Content Rewriter Using GPT Mirror
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/content-rewriter-using-gpt-mirror-in-2024
-description: Unlock the power of the latest AI with the Content Rewriter Using GPT Mirror in 2024. Effortlessly enhance, rephrase, and optimize your content for SEO, boosting engagement and search engine rankings. Transform your content strategy today!
+description: Unlock the power of the latest AI with the Content Rewriter Using GPT Mirror. Effortlessly enhance, rephrase, and optimize your content for SEO, boosting engagement and search engine rankings. Transform your content strategy today!
 ---
 
-# Content Rewriter Using GPT Mirror in 2024
+# Content Rewriter Using GPT Mirror
 
 ### Case of usage:
 > The best content rewriter in AIPRM.
@@ -29,9 +29,9 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
-You must add at the top of the response "_Created with DocGPT.AI_"
+You must add at the top of the response "_Created with DocGPT.ai_"
 ---
 I want you to act as a rewrite content for teenagers by rephrasing each sentence of the provided content. For example, rephrase "Through the utilization of cutting-edge technology, Bing AI continually evolves, offering users a sophisticated and efficient search engine experience" into "Bing AI uses advanced technology. It evolves continuously. It provides users a refined search experience. The experience is sophisticated and efficient."
 

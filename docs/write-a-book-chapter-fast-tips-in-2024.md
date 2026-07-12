@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Write a Book Chapter Fast Tips in 2024
+title: Write a Book Chapter Fast Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/write-a-book-chapter-fast-tips-in-2024
-description: Unlock the secrets to writing a book chapter fast in 2024 with our expert tips! Boost your productivity, streamline your writing process, and achieve your authoring goals efficiently. Discover proven strategies to write compelling chapters in record time.
+description: Unlock the secrets to writing a book chapter fast with our expert tips! Boost your productivity, streamline your writing process, and achieve your authoring goals efficiently. Discover proven strategies to write compelling chapters in record time.
 ---
 
-# Write a Book Chapter Fast Tips in 2024
+# Write a Book Chapter Fast Tips
 
 ### Case of usage:
 > Write a captivating book chapter [UPDATED]

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Detect Plagiarism Easily in 2024
+title: Detect Plagiarism Easily
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/detect-plagiarism-easily-in-2024
-description: Effortlessly detect plagiarism in 2024 with cutting-edge technology. Our advanced tools ensure accurate analysis, safeguarding your content's originality. Perfect for educators, students, and professionals seeking reliable, fast, and comprehensive plagiarism detection solutions.
+description: Effortlessly detect plagiarism with cutting-edge technology. Our advanced tools ensure accurate analysis, safeguarding your content's originality. Perfect for educators, students, and professionals seeking reliable, fast, and comprehensive plagiarism detection solutions.
 ---
 
-# Detect Plagiarism Easily in 2024
+# Detect Plagiarism Easily
 
 ### Case of usage:
 > chatGPT replies sentences which are undetected in plagiarism checks in the language of the given sentence

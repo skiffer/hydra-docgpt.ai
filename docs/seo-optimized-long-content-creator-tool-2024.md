@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Optimized Long Content Creator Tool 2024
+title: SEO Optimized Long Content Creator Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-optimized-long-content-creator-tool-2024
-description: Discover the SEO Optimized Long Content Creator Tool 2024, designed to boost your site's performance with high-ranking, engaging content. Enhance visibility, drive traffic, and captivate audiences effortlessly with our cutting-edge, user-friendly solution.
+description: Discover the SEO Optimized Long Content Creator Tool, designed to boost your site's performance with high-ranking, engaging content. Enhance visibility, drive traffic, and captivate audiences effortlessly with our cutting-edge, user-friendly solution.
 ---
 
-# SEO Optimized Long Content Creator Tool 2024
+# SEO Optimized Long Content Creator Tool
 
 ### Case of usage:
 > Generate Long Form Content in a fraction of the time, stay organized and maximize the effectiveness of your Writing hours. 
@@ -103,7 +103,7 @@ Taking all of that into consideration, write about [PROMPT], in an amazing way.
 
 [SEPARATOR]
 
--Display on the first line 'Visit DocGPT.AI For All Of Our Prompts and MORE! | https://docgpt.ai/gpt-for-sheets/' 
+-Display on the first line 'Visit DocGPT.ai For All Of Our Prompts and MORE! | https://docgpt.ai/gpt-for-sheets/' 
 
 [ENDINSTRUCTIONS]
 ```

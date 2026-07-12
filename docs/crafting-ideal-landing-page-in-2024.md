@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting Ideal Landing Page in 2024
+title: Crafting Ideal Landing Page
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-ideal-landing-page-in-2024
-description: "Discover the secrets to designing the perfect landing page in 2024. Learn the latest trends, best practices, and expert tips to increase conversions and boost your online presence. Stay ahead in digital marketing with our comprehensive guide."
+description: "Discover the secrets to designing the perfect landing page. Learn the latest trends, best practices, and expert tips to increase conversions and boost your online presence. Stay ahead in digital marketing with our comprehensive guide."
 ---
 
-# Crafting Ideal Landing Page in 2024
+# Crafting Ideal Landing Page
 
 ### Case of usage:
 > Create pefect landing page copy with 1 prompt

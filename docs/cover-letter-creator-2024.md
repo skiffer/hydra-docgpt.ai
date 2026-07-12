@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Cover Letter Creator 2024
+title: Cover Letter Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/cover-letter-creator-2024
-description: Craft the perfect first impression with Cover Letter Creator 2024. Our cutting-edge tool offers personalized templates and expert guidance to help you create professional and compelling cover letters effortlessly. Stand out in the job market and land your dream job today!
+description: Craft the perfect first impression with Cover Letter Creator. Our cutting-edge tool offers personalized templates and expert guidance to help you create professional and compelling cover letters effortlessly. Stand out in the job market and land your dream job today!
 ---
 
-# Cover Letter Creator 2024
+# Cover Letter Creator
 
 ### Case of usage:
 > Use this prompt to create a cover letter customized to your job. Copy and paste resume information, as well as the job description for the prompt. 

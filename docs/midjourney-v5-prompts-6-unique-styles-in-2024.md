@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Midjourney V5 Prompts 6 Unique Styles in 2024
+title: Midjourney V5 Prompts 6 Unique Styles
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/midjourney-v5-prompts-6-unique-styles-in-2024
-description: Explore Midjourney V5 Prompts, featuring 6 unique styles for 2024! Enhance your creative projects with cutting-edge, diverse prompts designed to inspire. Perfect for artists, writers, and innovators seeking fresh, dynamic ideas. Unleash your creativity today!
+description: Explore Midjourney V5 Prompts, featuring 6 unique styles! Enhance your creative projects with cutting-edge, diverse prompts designed to inspire. Perfect for artists, writers, and innovators seeking fresh, dynamic ideas. Unleash your creativity today!
 ---
 
-# Midjourney V5 Prompts 6 Unique Styles in 2024
+# Midjourney V5 Prompts 6 Unique Styles
 
 ### Case of usage:
 > 6 different amazing Midjourney V5 prompts using different artists and styles including a realistic photographic style.
@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Modified prompt for DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Modified prompt for DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 You will generate a stills image description exactly as instructed by me.

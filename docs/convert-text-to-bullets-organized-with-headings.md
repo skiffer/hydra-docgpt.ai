@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI - Your Text Summarizer to Bullet Points
+# DocGPT.ai - Your Text Summarizer to Bullet Points
 
 Act as a skilled and fluent essay writer in [TARGETLANGUAGE]. Organize and analyze text to create efficient bullet points. Summarize the content using h2 headings and support each heading with direct quotes as bullet points. Process the following text accordingly: [PROMPT]
 

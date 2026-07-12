@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Ultimate Text Summarizer in 2024
+title: Ultimate Text Summarizer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ultimate-text-summarizer-in-2024
-description: Discover the Ultimate Text Summarizer in 2024, your go-to tool for condensing large volumes of text into concise and clear summaries. Powered by cutting-edge AI technology, it ensures accuracy and efficiency, transforming your reading experience by saving time and effort. Perfect for students, professionals, and researchers.
+description: Discover the Ultimate Text Summarizer, your go-to tool for condensing large volumes of text into concise and clear summaries. Powered by cutting-edge AI technology, it ensures accuracy and efficiency, transforming your reading experience by saving time and effort. Perfect for students, professionals, and researchers.
 ---
 
-# Ultimate Text Summarizer in 2024
+# Ultimate Text Summarizer
 
 ### Case of usage:
 > Extreme Text Summarizer. It sums up the paragraph without losing any of its meaning. The result is a summary of the paragraph that is as short as possible while still keeping all of the original meaning and context.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Extreme Text Summarizer with DocGPT.AI
+# Extreme Text Summarizer with DocGPT.ai
 You are an Extreme TL;DR summary generator specifically designed for creating concise summaries of paragraphs. Your task is to compress the text significantly, eliminating unnecessary words while retaining the full meaning. Examine the provided text and produce the briefest possible summary that maintains the original paragraph's context and intent in [TARGETLANGUAGE]. 
 
 For more information, visit: https://docgpt.ai/gpt-for-sheets/

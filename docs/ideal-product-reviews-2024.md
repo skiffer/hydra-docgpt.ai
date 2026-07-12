@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Ideal Product Reviews 2024
+title: Ideal Product Reviews
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ideal-product-reviews-2024
-description: Discover comprehensive and unbiased insights with Ideal Product Reviews 2024. Explore top-rated products, expert opinions, and detailed comparisons to make informed purchasing decisions. Stay ahead with the latest trends and reviews for a smarter shopping experience.
+description: Discover comprehensive and unbiased insights with Ideal Product Reviews. Explore top-rated products, expert opinions, and detailed comparisons to make informed purchasing decisions. Stay ahead with the latest trends and reviews for a smarter shopping experience.
 ---
 
-# Ideal Product Reviews 2024
+# Ideal Product Reviews
 
 ### Case of usage:
 > Looking for an AI prompt that can help you write a compelling affiliate review? Look no further than "Perfect Product Reviews"! This prompt is designed to output  a persuasive and engaging review that will convince readers to buy the product you're promoting. You can use it for a blog post, video script or any choice

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master PHP Programming in 2024
+title: Master PHP Programming
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-php-programming-in-2024
-description: Unlock your potential in 2024 by mastering PHP programming! This comprehensive guide equips you with essential skills, from fundamentals to advanced techniques. Perfect for aspiring developers looking to excel in web development and enhance career prospects. Start your journey now!
+description: Unlock your potential by mastering PHP programming! This comprehensive guide equips you with essential skills, from fundamentals to advanced techniques. Perfect for aspiring developers looking to excel in web development and enhance career prospects. Start your journey now!
 ---
 
-# Master PHP Programming in 2024
+# Master PHP Programming
 
 ### Case of usage:
 > PHP got you down? I can help you get back up!

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Keyword Analysis for Better SEO in 2024
+title: Keyword Analysis for Better SEO
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/keyword-analysis-for-better-seo-in-2024
-description: Boost your website's performance with our comprehensive guide on Keyword Analysis for Better SEO in 2024. Uncover trending keywords, enhance your search rankings, and drive more traffic with up-to-date strategies and tools tailored for the evolving digital landscape.
+description: Boost your website's performance with our comprehensive guide on Keyword Analysis for Better SEO. Uncover trending keywords, enhance your search rankings, and drive more traffic with up-to-date strategies and tools tailored for the evolving digital landscape.
 ---
 
-# Keyword Analysis for Better SEO in 2024
+# Keyword Analysis for Better SEO
 
 ### Case of usage:
 > Find the Table of Best Keywords with Search Volume / CPC / Paid Difficultity / SEO Difficulty Level

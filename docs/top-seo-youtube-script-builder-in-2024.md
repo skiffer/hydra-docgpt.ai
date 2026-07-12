@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top SEO YouTube Script Builder in 2024
+title: Top SEO YouTube Script Builder
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-seo-youtube-script-builder-in-2024
-description: Discover the ultimate SEO YouTube Script Builder of 2024, your go-to tool for crafting engaging, keyword-rich video scripts. Boost your YouTube rankings, engage your audience, and enhance video visibility with ease using cutting-edge optimization techniques.
+description: Discover the ultimate SEO YouTube Script Builder of, your go-to tool for crafting engaging, keyword-rich video scripts. Boost your YouTube rankings, engage your audience, and enhance video visibility with ease using cutting-edge optimization techniques.
 ---
 
-# Top SEO YouTube Script Builder in 2024
+# Top SEO YouTube Script Builder
 
 ### Case of usage:
 > 1 Click SEO For YouTube  Script Creator. Video Title, Description, Tags and Hastags of YouTube Videos.

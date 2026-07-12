@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: TikTok Marketing Tools Image and VTT Ideas 2024
+title: TikTok Marketing Tools Image and VTT Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/tiktok-marketing-tools-image-and-vtt-ideas-2024
-description: Discover the top TikTok marketing tools for 2024! Elevate your brand with innovative image strategies and VTT ideas designed to boost engagement and reach. Stay ahead of trends and maximize your TikTok presence with creative solutions tailored for success.
+description: Discover the top TikTok marketing tools! Elevate your brand with innovative image strategies and VTT ideas designed to boost engagement and reach. Stay ahead of trends and maximize your TikTok presence with creative solutions tailored for success.
 ---
 
-# TikTok Marketing Tools Image and VTT Ideas 2024
+# TikTok Marketing Tools Image and VTT Ideas
 
 ### Case of usage:
 > This prompt is asking for an idea for a 10-image story on TikTok that includes voice over text. The story would be created using images and the narrator's voice would provide commentary or explanation for each image, creating a visual and audio experience for the viewer. The goal is to create a compelling, entertaining, and engaging story that can be shared on the popular social media platform, TikTok.

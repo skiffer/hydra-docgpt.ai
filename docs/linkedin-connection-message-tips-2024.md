@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: LinkedIn Connection Message Tips 2024
+title: LinkedIn Connection Message Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/linkedin-connection-message-tips-2024
-description: Unlock effective networking with our 2024 LinkedIn Connection Message Tips. Master the art of crafting personalized, engaging messages that prompt meaningful connections. Enhance your professional network and boost your career opportunities with strategies tailored for success.
+description: Unlock effective networking with our LinkedIn Connection Message Tips. Master the art of crafting personalized, engaging messages that prompt meaningful connections. Enhance your professional network and boost your career opportunities with strategies tailored for success.
 ---
 
-# LinkedIn Connection Message Tips 2024
+# LinkedIn Connection Message Tips
 
 ### Case of usage:
 > Create Best LinkedIn Connection Note from AI, If you Like using it Please hit the Like Button
@@ -32,7 +32,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
 
 ---

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Discover Questions in 2024
+title: Discover Questions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/discover-questions-in-2024
-description: Uncover the answers you've been searching for in 2024! Dive deep with "Discover Questions in 2024," your go-to resource for the latest insights, trends, and knowledge. Perfect for curious minds, this guide will help you stay ahead and informed in the ever-evolving landscape of next year.
+description: Uncover the answers you've been searching for! Dive deep with "Discover Questions," your go-to resource for the latest insights, trends, and knowledge. Perfect for curious minds, this guide will help you stay ahead and informed in the ever-evolving landscape of next year.
 ---
 
-# Discover Questions in 2024
+# Discover Questions
 
 ### Case of usage:
 > Discover the top 10 questions about [keyword] that [target audience] needs answered.

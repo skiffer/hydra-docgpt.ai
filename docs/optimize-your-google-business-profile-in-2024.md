@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimize Your Google Business Profile in 2024
+title: Optimize Your Google Business Profile
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimize-your-google-business-profile-in-2024
-description: Unlock your business's potential by optimizing your Google Business Profile in 2024. Boost visibility, attract more customers, and stay ahead of competitors with our expert tips and strategies. Drive growth and enhance your online presence today.
+description: Unlock your business's potential by optimizing your Google Business Profile. Boost visibility, attract more customers, and stay ahead of competitors with our expert tips and strategies. Drive growth and enhance your online presence today.
 ---
 
-# Optimize Your Google Business Profile in 2024
+# Optimize Your Google Business Profile
 
 ### Case of usage:
 > Optimize a Google Business Profile (GMB) in 10 Seconds Flat. Just say the name of the business, where it's located, what it sells/offers, what it's service area is (if applicable) and anything else you think is important to help this business rank locally and watch us do our magic! This is the best Google Business Profile Citation Optimization Tool you've ever used! Perfect for local SEO too!

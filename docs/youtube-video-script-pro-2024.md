@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Youtube Video Script Pro 2024
+title: Youtube Video Script Pro
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-video-script-pro-2024
-description: Boost your video content with "YouTube Video Script Pro 2024" – the ultimate tool for crafting compelling, SEO-friendly scripts. Perfect for creators aiming to increase engagement and views. Transform your storytelling with cutting-edge features designed for 2024.
+description: Boost your video content with "YouTube Video Script Pro" – the ultimate tool for crafting compelling, SEO-friendly scripts. Perfect for creators aiming to increase engagement and views. Transform your storytelling with cutting-edge features designed.
 ---
 
-# Youtube Video Script Pro 2024
+# Youtube Video Script Pro
 
 ### Case of usage:
 > Pro Youtube Long Video Script Writer:  Just a Click Write Professional Long Video Script for Your Youtube Video! Video description generator, Video title generator, Video ranking, Amazon Article Writer, Product Description Writing, Informational Article Writer, Facebook Add video, tiktok, twitter, linkdin, fiverr, seo, backlink 

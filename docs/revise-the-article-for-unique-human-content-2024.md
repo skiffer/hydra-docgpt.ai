@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Revise the Article for Unique Human Content 2024
+title: Revise the Article for Unique Human Content
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/revise-the-article-for-unique-human-content-2024
-description: Enhance your 2024 content strategy with our expert article revision services. Transform existing text into unique, human-centric content that resonates with readers and boosts SEO performance. Elevate your brand's voice and stay ahead in search rankings today.
+description: Enhance your content strategy with our expert article revision services. Transform existing text into unique, human-centric content that resonates with readers and boosts SEO performance. Elevate your brand's voice and stay ahead in search rankings today.
 ---
 
-# Revise the Article for Unique Human Content 2024
+# Revise the Article for Unique Human Content
 
 ### Case of usage:
 > 80 TO 100% Unique and Human Content | Full SEO Optimized Article

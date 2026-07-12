@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Content Approach for 2024 Tips
+title: Instagram Content Approach Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-content-approach-for-2024-tips
-description: Unlock the secrets to a successful Instagram strategy in 2024 with our expert tips. Discover innovative content approaches to boost engagement, enhance your brand presence, and stay ahead of trends. Elevate your Instagram game and captivate your audience today!
+description: Unlock the secrets to a successful Instagram strategy with our expert tips. Discover innovative content approaches to boost engagement, enhance your brand presence, and stay ahead of trends. Elevate your Instagram game and captivate your audience today!
 ---
 
-# Instagram Content Approach for 2024 Tips
+# Instagram Content Approach Tips
 
 ### Case of usage:
 > Content strategy for Instagram, this will gives you one week of content and script for each content, you can as well generate detailed script for your instagram post

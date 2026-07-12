@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Poem Writer Version 125 Update 2024
+title: Poem Writer Version 125 Update
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/poem-writer-version-125-update-2024
-description: Discover the enhanced features of Poem Writer Version 125 Update 2024, designed for poets and writers! Experience improved user interface, expanded language support, and advanced editing tools to inspire your creativity. Elevate your poetic expression with this latest upgrade.
+description: Discover the enhanced features of Poem Writer Version 125 Update, designed for poets and writers! Experience improved user interface, expanded language support, and advanced editing tools to inspire your creativity. Elevate your poetic expression with this latest upgrade.
 ---
 
-# Poem Writer Version 125 Update 2024
+# Poem Writer Version 125 Update
 
 ### Case of usage:
 > Write Poem on anything like a Professional poem writer. 

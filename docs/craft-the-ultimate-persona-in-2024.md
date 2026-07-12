@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Craft the Ultimate Persona in 2024
+title: Craft the Ultimate Persona
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/craft-the-ultimate-persona-in-2024
-description: Discover how to craft the ultimate persona in 2024 with our comprehensive guide. Enhance your digital presence, engage your target audience effectively, and boost your brand's impact with cutting-edge strategies and insights tailored for modern success.
+description: Discover how to craft the ultimate persona with our comprehensive guide. Enhance your digital presence, engage your target audience effectively, and boost your brand's impact with cutting-edge strategies and insights tailored for modern success.
 ---
 
-# Craft the Ultimate Persona in 2024
+# Craft the Ultimate Persona
 
 ### Case of usage:
 > Create 1 persona with bullet points for your brand so you know who to market to ask to do more to create more!

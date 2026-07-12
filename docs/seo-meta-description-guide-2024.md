@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Meta Description Guide 2024
+title: SEO Meta Description Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-meta-description-guide-2024
-description: Unlock the secrets of crafting compelling meta descriptions with the "SEO Meta Description Guide 2024." Stay ahead in the digital landscape by learning techniques to boost your click-through rates and enhance search engine visibility. Perfect for marketers aiming for success!
+description: Unlock the secrets of crafting compelling meta descriptions with the "SEO Meta Description Guide." Stay ahead in the digital landscape by learning techniques to boost your click-through rates and enhance search engine visibility. Perfect for marketers aiming for success!
 ---
 
-# SEO Meta Description Guide 2024
+# SEO Meta Description Guide
 
 ### Case of usage:
 > Generate a high-quality SEO Meta description for your blog.

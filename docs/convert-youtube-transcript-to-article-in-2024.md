@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Convert Youtube Transcript to Article in 2024
+title: Convert Youtube Transcript to Article
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/convert-youtube-transcript-to-article-in-2024
-description: Effortlessly convert YouTube transcripts to engaging articles in 2024! Our advanced tool ensures precise and quality conversion, optimizing your content for SEO. Perfect for bloggers, educators, and marketers looking to maximize their video content’s reach. Try it today!
+description: Effortlessly convert YouTube transcripts to engaging articles! Our advanced tool ensures precise and quality conversion, optimizing your content for SEO. Perfect for bloggers, educators, and marketers looking to maximize their video content’s reach. Try it today!
 ---
 
-# Convert Youtube Transcript to Article in 2024
+# Convert Youtube Transcript to Article
 
 ### Case of usage:
 > Convert any Youtube video to an article. Upvote if you like it. Check out my "Magic Article Generator."

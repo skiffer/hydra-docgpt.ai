@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Keyword Grouping in Google Sheets 2024
+title: Keyword Grouping in Google Sheets
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/keyword-grouping-in-google-sheets-2024
-description: Effortlessly enhance your SEO strategy with "Keyword Grouping in Google Sheets 2024." Discover innovative methods to organize and analyze keywords efficiently, boosting your digital marketing impact. Streamline your workflow and achieve higher rankings effortlessly. Perfect for SEO professionals and marketers.
+description: Effortlessly enhance your SEO strategy with "Keyword Grouping in Google Sheets." Discover innovative methods to organize and analyze keywords efficiently, boosting your digital marketing impact. Streamline your workflow and achieve higher rankings effortlessly. Perfect for SEO professionals and marketers.
 ---
 
-# Keyword Grouping in Google Sheets 2024
+# Keyword Grouping in Google Sheets
 
 ### Case of usage:
 > Cluster a list of keywords based on their semantic relevance

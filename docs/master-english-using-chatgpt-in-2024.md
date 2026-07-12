@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master English Using ChatGPT in 2024
+title: Master English Using ChatGPT
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-english-using-chatgpt-in-2024
-description: Unlock your English proficiency in 2024 with ChatGPT! This innovative tool offers personalized, interactive language learning, tailored exercises, and real-time feedback. Elevate your fluency and communication skills seamlessly. Start mastering English today!
+description: Unlock your English proficiency with ChatGPT! This innovative tool offers personalized, interactive language learning, tailored exercises, and real-time feedback. Elevate your fluency and communication skills seamlessly. Start mastering English today!
 ---
 
-# Master English Using ChatGPT in 2024
+# Master English Using ChatGPT
 
 ### Case of usage:
 > Buddy chatbot learn English
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt
+# DocGPT.ai Prompt
 I want you to act as my [TARGETLANGUAGE] teacher and best friend. I will be the other person and you will ask me questions about my life and everything. Do not write all the conversation at once. Ask me the questions and wait for my answers. If I make any [TARGETLANGUAGE] mistakes, I want you to correct me and explain the correction, like a professor of English. Give a clear explanation of each correction. Our conversation will start with Start.
 Start: [PROMPT]
 

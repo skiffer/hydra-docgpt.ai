@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Shopify Product Title and Description Guide 2024
+title: Shopify Product Title and Description Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/shopify-product-title-and-description-guide-2024
-description: Unlock the secrets to crafting compelling Shopify product titles and descriptions in 2024. This guide offers actionable insights and best practices to boost your store's visibility, enhance SEO performance, and drive sales with optimized content strategies.
+description: Unlock the secrets to crafting compelling Shopify product titles and descriptions. This guide offers actionable insights and best practices to boost your store's visibility, enhance SEO performance, and drive sales with optimized content strategies.
 ---
 
-# Shopify Product Title and Description Guide 2024
+# Shopify Product Title and Description Guide
 
 ### Case of usage:
 > Easily Write SEO Optimized Product Title and Description .
@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Write SEO optimized Meta title and Description using DocGPT.AI in your preferred language.
+Write SEO optimized Meta title and Description using DocGPT.ai in your preferred language.
 ```
 
 Use following formula inside GPT for Sheets

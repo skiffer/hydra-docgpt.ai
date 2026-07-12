@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Midjourney v5 Wallpaper in 2024
+title: Create Midjourney v5 Wallpaper
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-midjourney-v5-wallpaper-in-2024
-description: Unlock your creativity in 2024 with our guide to crafting stunning Midjourney v5 wallpapers. Dive into cutting-edge design techniques and elevate your digital space. Perfect for those seeking fresh, vibrant, and visually appealing desktop backgrounds.
+description: Unlock your creativity with our guide to crafting stunning Midjourney v5 wallpapers. Dive into cutting-edge design techniques and elevate your digital space. Perfect for those seeking fresh, vibrant, and visually appealing desktop backgrounds.
 ---
 
-# Create Midjourney v5 Wallpaper in 2024
+# Create Midjourney v5 Wallpaper
 
 ### Case of usage:
 > Two highly detailed Midjourney version 5 prompts in separate code blocks. Input a topic (character, vehicle or any object from any Movie or Game) Thanks for upvote
@@ -52,7 +52,7 @@ into a world that resonates with [describe emotional undertone] --ar 16:9 --v 5 
 
 👍 Make sure to apply this prompt template to create more inspiring images. 
 
-To utilize these prompts with the DocGPT.AI image generator, visit [https://docgpt.ai/gpt-for-sheets/](https://docgpt.ai/gpt-for-sheets/).
+To utilize these prompts with the DocGPT.ai image generator, visit [https://docgpt.ai/gpt-for-sheets/](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

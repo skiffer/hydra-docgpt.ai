@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Amazon Listing Guide Comprehensive Creation 2024
+title: Amazon Listing Guide Comprehensive Creation
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/amazon-listing-guide-comprehensive-creation-2024
-description: Unlock success on Amazon with our 2024 Amazon Listing Guide. Master the art of compelling product listings to boost visibility, conversions, and sales. Perfect for sellers aiming to optimize their listings and conquer the competitive Amazon marketplace.
+description: Unlock success on Amazon with our Amazon Listing Guide. Master the art of compelling product listings to boost visibility, conversions, and sales. Perfect for sellers aiming to optimize their listings and conquer the competitive Amazon marketplace.
 ---
 
-# Amazon Listing Guide Comprehensive Creation 2024
+# Amazon Listing Guide Comprehensive Creation
 
 ### Case of usage:
 > Title, Bullets, Description, Search Terms, Intend Use, and Subject Matter from given details or copy and paste any existing title and bullet points to optimize them.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Amazon Unique Listing Creation Prompt by DocGPT.AI
+# Amazon Unique Listing Creation Prompt by DocGPT.ai
 
 Please ignore all previous instructions. Act as an Amazon Product Listing Expert to create an Amazon Product Title, Bullet Points, Description, Search Terms, Intended Use, and Attributes for [Product], highlighting its [Features] and relevant [Keywords]. Display everything using markdown formatting.
 
@@ -79,7 +79,7 @@ Language output is set to [TARGETLANGUAGE].
 
 👍 Did you enjoy this prompt? Please give a thumbs up!
 🙏 Thanks for using this Prompt.
-🤝 Learn more about using DocGPT.AI for your needs at https://docgpt.ai/gpt-for-sheets/.
+🤝 Learn more about using DocGPT.ai for your needs at https://docgpt.ai/gpt-for-sheets/.
 ```
 
 Use following formula inside GPT for Sheets

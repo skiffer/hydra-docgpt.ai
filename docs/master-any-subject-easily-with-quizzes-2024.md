@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master Any Subject Easily with Quizzes 2024
+title: Master Any Subject Easily with Quizzes
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-any-subject-easily-with-quizzes-2024
-description: Unlock the secrets to mastering any subject effortlessly with "Master Any Subject Easily with Quizzes 2024." This innovative guide transforms learning into an engaging experience, boosting retention and understanding. Perfect for students and lifelong learners aiming for success!
+description: Unlock the secrets to mastering any subject effortlessly with "Master Any Subject Easily with Quizzes." This innovative guide transforms learning into an engaging experience, boosting retention and understanding. Perfect for students and lifelong learners aiming for success!
 ---
 
-# Master Any Subject Easily with Quizzes 2024
+# Master Any Subject Easily with Quizzes
 
 ### Case of usage:
 > Turn ChatGPT into the world's best teacher. Just tell it what you want to learn and get a series of simple lessons and quizzes. 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting Human-Style SEO Articles 2024
+title: Crafting Human-Style SEO Articles
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-human-style-seo-articles-2024
-description: Unlock the secrets to writing engaging, human-like SEO articles in 2024. Learn the latest techniques to craft content that captivates readers and ranks high on search engines. Elevate your writing skills and drive more organic traffic to your website today!
+description: Unlock the secrets to writing engaging, human-like SEO articles. Learn the latest techniques to craft content that captivates readers and ranks high on search engines. Elevate your writing skills and drive more organic traffic to your website today!
 ---
 
-# Crafting Human-Style SEO Articles 2024
+# Crafting Human-Style SEO Articles
 
 ### Case of usage:
 > Write for both search engines and human readers! Create a high-quality, long-form article for SEO in a professional and engaging tone. 

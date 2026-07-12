@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: YouTube Title Hashtags Tags and Description SEO in 2024
+title: YouTube Title Hashtags Tags and Description SEO
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-title-hashtags-tags-and-description-seo-in-2024
-description: Master YouTube Title, Hashtags, Tags, and Description SEO for 2024 with our expert guide. Learn the latest strategies to boost your video rankings and visibility. Stay ahead in the ever-evolving landscape of YouTube optimization and grow your channel effectively.
+description: Master YouTube Title, Hashtags, Tags, and Description SEO with our expert guide. Learn the latest strategies to boost your video rankings and visibility. Stay ahead in the ever-evolving landscape of YouTube optimization and grow your channel effectively.
 ---
 
-# YouTube Title Hashtags Tags and Description SEO in 2024
+# YouTube Title Hashtags Tags and Description SEO
 
 ### Case of usage:
 > Create a title, hashtags, TAGs and description for your Youtube video with SEO techniques. (Biffi)

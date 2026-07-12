@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Content Writer and AI Expert in 2024
+title: Content Writer and AI Expert
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/content-writer-and-ai-expert-in-2024
-description: Discover top-tier content creation and AI expertise in 2024. Enhance your brand with innovative, SEO-optimized strategies. Engage audiences and boost visibility with a professional skilled in both creative writing and the latest AI technologies.
+description: Discover top-tier content creation and AI expertise. Enhance your brand with innovative, SEO-optimized strategies. Engage audiences and boost visibility with a professional skilled in both creative writing and the latest AI technologies.
 ---
 
-# Content Writer and AI Expert in 2024
+# Content Writer and AI Expert
 
 ### Case of usage:
 > The best content writer in AIPRM.

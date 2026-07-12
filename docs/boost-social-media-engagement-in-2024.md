@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost Social Media Engagement in 2024
+title: Boost Social Media Engagement
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-social-media-engagement-in-2024
-description: Unlock unparalleled social media engagement in 2024 with cutting-edge strategies and insights. Discover actionable tips to enhance your brand's presence, increase interactions, and drive meaningful connections. Elevate your social media game and stay ahead of the competition.
+description: Unlock unparalleled social media engagement with cutting-edge strategies and insights. Discover actionable tips to enhance your brand's presence, increase interactions, and drive meaningful connections. Elevate your social media game and stay ahead of the competition.
 ---
 
-# Boost Social Media Engagement in 2024
+# Boost Social Media Engagement
 
 ### Case of usage:
 > Create 100% personalized reply comments on social media.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Write a reply to this tweet [PROMPT] that'll show our support in [TARGETLANGUAGE]. Visit our comprehensive [DocGPT.AI guide](https://docgpt.ai/gpt-for-sheets/) to enhance your productivity.
+Write a reply to this tweet [PROMPT] that'll show our support in [TARGETLANGUAGE]. Visit our comprehensive [DocGPT.ai guide](https://docgpt.ai/gpt-for-sheets/) to enhance your productivity.
 ```
 
 Use following formula inside GPT for Sheets

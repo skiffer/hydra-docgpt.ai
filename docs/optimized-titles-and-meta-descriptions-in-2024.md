@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimized Titles and Meta Descriptions in 2024
+title: Optimized Titles and Meta Descriptions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimized-titles-and-meta-descriptions-in-2024
-description: Unlock the secrets to boosting your search engine rankings with our in-depth guide on Optimized Titles and Meta Descriptions in 2024. Discover best practices, expert tips, and actionable strategies for crafting compelling, SEO-friendly titles and meta descriptions that drive traffic and improve visibility.
+description: Unlock the secrets to boosting your search engine rankings with our in-depth guide on Optimized Titles and Meta Descriptions. Discover best practices, expert tips, and actionable strategies for crafting compelling, SEO-friendly titles and meta descriptions that drive traffic and improve visibility.
 ---
 
-# Optimized Titles and Meta Descriptions in 2024
+# Optimized Titles and Meta Descriptions
 
 ### Case of usage:
 > Create titles and meta descriptions with the main keyword of the article. If you use and like this prompt please hit the like button.

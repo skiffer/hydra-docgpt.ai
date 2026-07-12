@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: AI Image Prompt Creator in 2024
+title: AI Image Prompt Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ai-image-prompt-creator-in-2024
-description: Unlock the future of visual creativity with the AI Image Prompt Creator in 2024. Generate unique and captivating image prompts effortlessly, streamline your content creation process, and let AI elevate your creative projects to the next level. Perfect for artists and marketers alike!
+description: Unlock the future of visual creativity with the AI Image Prompt Creator. Generate unique and captivating image prompts effortlessly, streamline your content creation process, and let AI elevate your creative projects to the next level. Perfect for artists and marketers alike!
 ---
 
-# AI Image Prompt Creator in 2024
+# AI Image Prompt Creator
 
 ### Case of usage:
 > Image prompt generator for AIs like Midjourney, LeonardoAI, PromptHunt, InstantArt.io, and others

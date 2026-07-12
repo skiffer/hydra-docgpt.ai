@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Keyword Research Guide for Articles in 2024
+title: Keyword Research Guide for Articles
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/keyword-research-guide-for-articles-in-2024
-description: Master keyword research for articles in 2024 with our comprehensive guide. Unlock advanced strategies, discover top tools, and learn actionable tips to boost your content's visibility and organic traffic. Start optimizing today for better rankings tomorrow!
+description: Master keyword research for articles with our comprehensive guide. Unlock advanced strategies, discover top tools, and learn actionable tips to boost your content's visibility and organic traffic. Start optimizing today for better rankings tomorrow!
 ---
 
-# Keyword Research Guide for Articles in 2024
+# Keyword Research Guide for Articles
 
 ### Case of usage:
 > Keyword research from competitor's article. Find keyword density, LSI keywords, outline and sub-headings generator. Upvote if you like it. 
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 ---
 Pretend to be a keyword research expert.
 

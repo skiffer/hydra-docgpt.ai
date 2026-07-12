@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Midjourney for Coloring Pages Guide in 2024
+title: Midjourney for Coloring Pages Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/midjourney-for-coloring-pages-guide-in-2024
-description: Explore the ultimate 2024 guide to Midjourney for Coloring Pages. Discover expert tips and creative techniques to elevate your coloring experience. Perfect for artists and hobbyists, this guide ensures vibrant and engaging outcomes for all your coloring projects.
+description: Explore the ultimate guide to Midjourney for Coloring Pages. Discover expert tips and creative techniques to elevate your coloring experience. Perfect for artists and hobbyists, this guide ensures vibrant and engaging outcomes for all your coloring projects.
 ---
 
-# Midjourney for Coloring Pages Guide in 2024
+# Midjourney for Coloring Pages Guide
 
 ### Case of usage:
 > Midjourney High Resolution Coloring Book Pages

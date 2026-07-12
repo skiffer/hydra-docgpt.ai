@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Select Your Adventure Story Gamebook 2024
+title: Select Your Adventure Story Gamebook
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/select-your-adventure-story-gamebook-2024
-description: Dive into "Select Your Adventure Story Gamebook 2024," where every choice shapes your journey. Explore diverse paths, unexpected twists, and thrilling outcomes in this interactive storytelling experience. Perfect for adventurers seeking imaginative escapades and limitless possibilities!
+description: Dive into "Select Your Adventure Story Gamebook," where every choice shapes your journey. Explore diverse paths, unexpected twists, and thrilling outcomes in this interactive storytelling experience. Perfect for adventurers seeking imaginative escapades and limitless possibilities!
 ---
 
-# Select Your Adventure Story Gamebook 2024
+# Select Your Adventure Story Gamebook
 
 ### Case of usage:
 > Play a Choose Your Own Adventure Game on a story or topic you like.  WARNING: It's addictive! 
@@ -41,7 +41,7 @@ User will enter their choice. Then you continue showing the user stories from th
 
 Make the plot of the story very interesting and exciting, so introduce plot twists every now and then.
 
-For DocGPT.AI's Sheets capabilities, visit https://docgpt.ai/gpt-for-sheets/.
+For DocGPT.ai's Sheets capabilities, visit https://docgpt.ai/gpt-for-sheets/.
 ```
 
 Use following formula inside GPT for Sheets

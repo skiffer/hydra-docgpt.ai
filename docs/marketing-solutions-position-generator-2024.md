@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Marketing Solutions Position Generator 2024
+title: Marketing Solutions Position Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/marketing-solutions-position-generator-2024
-description: Elevate your brand in 2024 with the Marketing Solutions Position Generator! Discover innovative strategies to boost visibility and engagement. Perfect your online presence and optimize your marketing campaigns for unrivaled success. Unlock growth and stand out today!
+description: Elevate your brand with the Marketing Solutions Position Generator! Discover innovative strategies to boost visibility and engagement. Perfect your online presence and optimize your marketing campaigns for unrivaled success. Unlock growth and stand out today!
 ---
 
-# Marketing Solutions Position Generator 2024
+# Marketing Solutions Position Generator
 
 ### Case of usage:
 > Become a master of brand differentiation and discover unique qualities that separate your ideas.
@@ -65,7 +65,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 Remember to incorporate a range of sentence structures to maintain a high level of perplexity and burstiness throughout the text. 
 
-Visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/) For All Of Our Prompts and MORE!...
+Visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/) For All Of Our Prompts and MORE!...
 ```
 
 Use following formula inside GPT for Sheets

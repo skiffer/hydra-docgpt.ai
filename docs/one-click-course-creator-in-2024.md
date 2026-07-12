@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: One Click Course Creator in 2024
+title: One Click Course Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/one-click-course-creator-in-2024
-description: Effortlessly design and launch your online classes with the One Click Course Creator in 2024. Perfect for educators and entrepreneurs, this innovative tool streamlines course creation, saves time, and boosts your e-learning business success. Get started today!
+description: Effortlessly design and launch your online classes with the One Click Course Creator. Perfect for educators and entrepreneurs, this innovative tool streamlines course creation, saves time, and boosts your e-learning business success. Get started today!
 ---
 
-# One Click Course Creator in 2024
+# One Click Course Creator
 
 ### Case of usage:
 > Design a full project-based course based on the desired learning outcome with outline, lesson plans, objectives, activities, real world examples, video script, and project plan. This course outline will be appropriate for all learning styles. It is interactive and experiential. 

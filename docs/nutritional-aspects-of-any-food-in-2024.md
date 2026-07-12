@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Nutritional Aspects of Any Food in 2024
+title: Nutritional Aspects of Any Food
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/nutritional-aspects-of-any-food-in-2024
-description: Explore the comprehensive nutritional aspects of any food in 2024 with our in-depth guide. Stay informed on the latest trends, nutritional values, and health benefits of diverse foods, helping you make informed dietary choices for a healthier lifestyle.
+description: Explore the comprehensive nutritional aspects of any food with our in-depth guide. Stay informed on the latest trends, nutritional values, and health benefits of diverse foods, helping you make informed dietary choices for a healthier lifestyle.
 ---
 
-# Nutritional Aspects of Any Food in 2024
+# Nutritional Aspects of Any Food
 
 ### Case of usage:
 > Nutritional components of any food

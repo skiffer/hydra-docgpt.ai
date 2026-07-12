@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How To Create Bulk Pages for Squarespace Using ChatGPT in 2024
+title: How To Create Bulk Pages for Squarespace Using ChatGPT
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-bulk-pages-for-squarespace-using-chatgpt-in-2024
 description: Discover how to efficiently create bulk pages for Squarespace using ChatGPT. This guide will enhance your content creation process, improve SEO strategies, and streamline your workflow.
 ---
 
-# How To Create Bulk Pages for Squarespace Using ChatGPT in 2024
+# How To Create Bulk Pages for Squarespace Using ChatGPT
 
 As an SEO expert, leveraging tools like ChatGPT can significantly streamline the process of bulk page creation on Squarespace. This guide provides step-by-step instructions to set up, generate, and optimize content for Squarespace, ensuring your pages are SEO-optimized and effective.
 

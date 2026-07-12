@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master Coding Skills in All Languages in 2024
+title: Master Coding Skills in All Languages
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-coding-skills-in-all-languages-in-2024
-description: Unlock your potential in 2024 by mastering coding skills in all languages! Whether you're a beginner or experienced programmer, our comprehensive guide will elevate your proficiency. Stay ahead in your career with the latest techniques and best practices. Start mastering now!
+description: Unlock your potential by mastering coding skills in all languages! Whether you're a beginner or experienced programmer, our comprehensive guide will elevate your proficiency. Stay ahead in your career with the latest techniques and best practices. Start mastering now!
 ---
 
-# Master Coding Skills in All Languages in 2024
+# Master Coding Skills in All Languages
 
 ### Case of usage:
 > Reduce your code size and make it more efficient, just like a senior dev ;)

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Image Prompts for Ideogram AI in 2024
+title: Create Image Prompts for Ideogram AI
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-image-prompts-for-ideogram-ai-in-2024
-description: Unlock your creativity in 2024 with Ideogram AI! Learn how to craft precise image prompts that enhance your visual storytelling. Our step-by-step guide ensures you maximize AI-driven image generation for stunning, tailor-made visuals. Boost engagement and stand out today!
+description: Unlock your creativity with Ideogram AI! Learn how to craft precise image prompts that enhance your visual storytelling. Our step-by-step guide ensures you maximize AI-driven image generation for stunning, tailor-made visuals. Boost engagement and stand out today!
 ---
 
-# Create Image Prompts for Ideogram AI in 2024
+# Create Image Prompts for Ideogram AI
 
 ### Case of usage:
 > Generate prompts for Ideogram AI, text to image generative AI.

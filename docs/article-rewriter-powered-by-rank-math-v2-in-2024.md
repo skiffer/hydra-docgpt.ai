@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Article Rewriter Powered by Rank Math V2 in 2024
+title: Article Rewriter Powered by Rank Math V2
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/article-rewriter-powered-by-rank-math-v2-in-2024
-description: Transform your content game with the Article Rewriter Powered by Rank Math V2 in 2024. Optimize SEO strategies, boost rankings effortlessly, and generate high-quality, unique articles. Perfect for bloggers, marketers, and SEO professionals seeking top-notch content creation tools.
+description: Transform your content game with the Article Rewriter Powered by Rank Math V2. Optimize SEO strategies, boost rankings effortlessly, and generate high-quality, unique articles. Perfect for bloggers, marketers, and SEO professionals seeking top-notch content creation tools.
 ---
 
-# Article Rewriter Powered by Rank Math V2 in 2024
+# Article Rewriter Powered by Rank Math V2
 
 ### Case of usage:
 > SEO Optimized Article Rewriter Powered by Rank Math V2. Based on your competitor, all you have to do is copy and paste it into your blog post.

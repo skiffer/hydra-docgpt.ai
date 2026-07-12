@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost LinkedIn Engagement in 2024
+title: Boost LinkedIn Engagement
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-linkedin-engagement-in-2024
-description: Unlock the secrets to maximizing your LinkedIn engagement in 2024 with proven strategies and tips. Learn how to boost your profile visibility, attract top-tier connections, and enhance your professional influence. Elevate your LinkedIn game to new heights today!
+description: Unlock the secrets to maximizing your LinkedIn engagement with proven strategies and tips. Learn how to boost your profile visibility, attract top-tier connections, and enhance your professional influence. Elevate your LinkedIn game to new heights today!
 ---
 
-# Boost LinkedIn Engagement in 2024
+# Boost LinkedIn Engagement
 
 ### Case of usage:
 > Create an Eye catching reply to Top Comments on LinkedIn. Upvote this if you like it.
