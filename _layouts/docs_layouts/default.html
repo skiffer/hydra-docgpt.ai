@@ -43,10 +43,21 @@
           {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
           "url": "{{ page.url | absolute_url }}",
           "inLanguage": "en",
+          {% if content contains 'youtube.com/embed/' %}"video": { "@id": "{{ page.url | absolute_url }}#video" },{% endif %}
           "author": { "@id": "{{ site.url }}/#organization" },
           "publisher": { "@id": "{{ site.url }}/#organization" },
           "isPartOf": { "@id": "{{ site.url }}/#website" }
-        }
+        }{% if content contains 'youtube.com/embed/' %}{% assign vid_parts = content | split: 'youtube.com/embed/' %}{% assign vid_id = vid_parts[1] | split: '"' | first | split: "'" | first | split: '?' | first %},
+        {
+          "@type": "VideoObject",
+          "@id": "{{ page.url | absolute_url }}#video",
+          "name": {{ page.title | jsonify }},
+          "description": {{ page.description | default: page.title | jsonify }},
+          "thumbnailUrl": "https://i.ytimg.com/vi/{{ vid_id }}/hqdefault.jpg",
+          "contentUrl": "https://www.youtube.com/watch?v={{ vid_id }}",
+          "embedUrl": "https://www.youtube.com/embed/{{ vid_id }}",
+          "publisher": { "@id": "{{ site.url }}/#organization" }
+        }{% endif %}
       ]
     }
     </script>
