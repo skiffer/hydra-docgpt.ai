@@ -46,6 +46,8 @@ Every function has its own reference page with syntax, parameters and copy-paste
 | `=MISTRAL()` | Use Mistral for fast, low-cost bulk processing | <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL() reference</a> |
 | `=PERPLEXITY()` | Web-aware answers for research and enrichment | <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY() reference</a> |
 | `=SERP()` | Fetch live search results into your sheet | <a href="/docs/gpt-for-sheets/serp-function">=SERP() reference</a> |
+| `=GROK()` | Use xAI Grok on your own API key (Pro/Business plans) | <a href="/docs/gpt-for-sheets/grok-function">=GROK() reference</a> |
+| `=DEEPSEEK()` | Use DeepSeek on your own API key for low-cost bulk runs | <a href="/docs/gpt-for-sheets/deepseek-function">=DEEPSEEK() reference</a> |
 
 ### Example of use
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
