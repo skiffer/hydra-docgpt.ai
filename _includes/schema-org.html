@@ -1,0 +1,46 @@
+<!-- Canonical brand entity graph. Single source of truth for Organization/WebSite.
+     Page-specific types (SoftwareApplication, FAQPage, BreadcrumbList, TechArticle)
+     reference these via "@id" and must NOT redeclare Organization/WebSite. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "DocGPT.ai",
+      "alternateName": ["DocGPT", "DocGPT.AI", "DocGPT AI"],
+      "url": "{{ site.url }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "{{ site.url }}/#logo",
+        "url": "{{ site.url }}/favicon.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "DocGPT.ai builds AI add-ons for Google Workspace: GPT for Sheets, Mail Merge for Gmail, AI Email Assistant, GPT for Docs, Google Slide AI and Quiz Maker AI. GPT, Claude and Gemini models built in.",
+      "foundingDate": "2023",
+      "sameAs": [
+        "https://twitter.com/ski0xFF",
+        "https://www.linkedin.com/company/docgpt-ai",
+        "https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "{{ site.author.email }}",
+        "url": "{{ site.url }}/contact/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "name": "DocGPT.ai",
+      "alternateName": ["DocGPT", "docgpt.ai"],
+      "url": "{{ site.url }}/",
+      "publisher": { "@id": "{{ site.url }}/#organization" },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
