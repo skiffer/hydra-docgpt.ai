@@ -2,7 +2,7 @@
 layout: seo-guide
 title: "Connect Grok (xAI) to Google Sheets — No Zapier or Apps Script"
 permalink: /grok-for-google-sheets-how-to-guide/
-description: "Yes — you can connect Grok (xAI) to Google Sheets and run =GROK() formulas across rows for research, SEO, and bulk enrichment. Set it up in 2 minutes with GPT for Sheets — no Zapier or Apps Script."
+description: "Connect Grok (xAI) to Google Sheets in 2 minutes: add your API key to GPT for Sheets and run =GROK() formulas across rows. No Zapier, no Apps Script."
 hero_title: "How to Connect Grok (xAI) to Google Sheets"
 hero_subtitle: "Run Grok/xAI prompts directly in your spreadsheet with =GROK() formulas — lead research, SEO, summaries, campaign angles, and bulk enrichment. No Zapier, no Apps Script."
 guide_product: "GPT for Sheets"

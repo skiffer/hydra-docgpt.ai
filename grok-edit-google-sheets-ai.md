@@ -2,7 +2,7 @@
 layout: seo-guide
 title: "Can Grok Edit Google Sheets?"
 permalink: /grok-edit-google-sheets-ai/
-description: "Yes, Grok can write into Google Sheets cells through the GPT for Sheets add-on. Here is how Grok updates cell values, how to set it up with your xAI key, and copyable formulas to clean, classify, and score."
+description: "Yes — Grok writes into Google Sheets cells via the GPT for Sheets add-on. Setup with your xAI key plus copyable formulas to clean, classify and score."
 hero_title: "Can Grok Edit Google Sheets?"
 hero_subtitle: "Grok runs inside Google Sheets through the GPT for Sheets add-on. It writes results into cells from a formula, so you can clean, classify, draft, and score across rows without leaving the spreadsheet."
 guide_product: "GPT for Sheets"

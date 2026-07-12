@@ -2,7 +2,7 @@
 layout: seo-guide
 title: "How to Get a Grok (xAI) API Key for Google Sheets"
 permalink: /grok-api-key-google-sheets-setup/
-description: "Step-by-step guide to create a Grok (xAI) API key and connect it to GPT for Sheets, then run Grok AI formulas across every row in Google Sheets. Unaffiliated, factual."
+description: "Create an xAI API key and connect it to GPT for Sheets in 2 minutes, then run =GROK() formulas across every row in Google Sheets. Step-by-step guide."
 hero_title: "How to Get a Grok (xAI) API Key for Google Sheets"
 hero_subtitle: "Create an xAI API key, paste it into GPT for Sheets, and put Grok to work on every row - enrich, classify, and summarize lists without leaving the spreadsheet."
 guide_product: "GPT for Sheets"

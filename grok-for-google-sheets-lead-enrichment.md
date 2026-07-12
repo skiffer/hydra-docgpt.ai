@@ -2,7 +2,7 @@
 layout: seo-guide
 title: "Grok for Google Sheets: Lead Enrichment Formulas"
 permalink: /grok-for-google-sheets-lead-enrichment/
-description: "Use Grok inside Google Sheets with GPT for Sheets to enrich leads, tag industries, score fit, and draft outreach across rows. Copyable Grok enrichment formulas and a reviewable workflow."
+description: "Enrich leads with Grok inside Google Sheets: research companies, tag industries, score ICP fit and draft outreach with copyable =GROK() formulas."
 hero_title: "Grok for Google Sheets: Lead Enrichment Formulas"
 hero_subtitle: "Run Grok across a whole list with GPT for Sheets, turning raw rows of companies and contacts into research summaries, industry tags, fit scores, and outreach openers in adjacent columns instead of pasting prompts one at a time."
 guide_product: "GPT for Sheets"

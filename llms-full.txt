@@ -72,6 +72,17 @@ Automated quiz, form and assessment generation for Google Forms.
 - =GPT_VISION() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-vision
 - =GPT_WEB_SEARCH() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-web-search
 - =GPT_CREATE_IMAGE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-create-image
+- =GROK() function (xAI, your API key): https://docgpt.ai/docs/gpt-for-sheets/grok-function
+- =DEEPSEEK() function (your API key): https://docgpt.ai/docs/gpt-for-sheets/deepseek-function
+
+## Grok (xAI) in Google Sheets and Workspace
+
+GPT for Sheets includes a =GROK() formula that runs xAI Grok models on your own API key — the practical way to use Grok on spreadsheet data, since xAI has no native Google Workspace integration.
+- Grok for Google Workspace overview: https://docgpt.ai/grok-for-google-workspace/
+- Connect Grok to Google Sheets: https://docgpt.ai/grok-for-google-sheets-how-to-guide/
+- Get a Grok API key for Sheets: https://docgpt.ai/grok-api-key-google-sheets-setup/
+- Can Grok edit Google Sheets: https://docgpt.ai/grok-edit-google-sheets-ai/
+- Grok lead-enrichment formulas: https://docgpt.ai/grok-for-google-sheets-lead-enrichment/
 - Troubleshooting: https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/
 - AI prompt library (400+ guides): https://docgpt.ai/docs/ai-prompts
 
@@ -2450,3 +2461,211 @@ No. Gamma, Beautiful.ai, Tome (now discontinued), and Presentations.ai are stand
 ### Is there a free AI presentation maker for Google Slides?
 
 Yes. Slides by DocGPT.ai includes 10 free presentations per month as a Google Slides add-on. SlidesAI's free plan allows 12 presentations per year, and MagicSlides is free to start (check its site for current limits). Gamma and Presentations.ai also have free tiers, but they work outside Google Slides.
+
+## Grok (xAI) in Google Sheets
+
+
+### GROK function in Google Sheets — =GROK() reference (https://docgpt.ai/docs/gpt-for-sheets/grok-function)
+
+# =GROK() — use Grok (xAI) in Google Sheets
+
+`=GROK()` runs xAI's Grok models from a cell in Google Sheets. Type a prompt, reference your data, drag the formula down — Grok fills the column. There is no native Grok integration for Google Workspace, so the add-on formula is the practical way to use Grok on spreadsheet data.
+
+## Syntax
+
+```
+=GROK(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for Grok. |
+| `value` | no | Extra input appended to the prompt, usually a cell reference. |
+
+## Requirements
+
+Unlike `=GPT()`, `=CLAUDE()` and `=GEMINI()` (built in, no keys), `=GROK()` uses **your own xAI API key**:
+
+1. A **User Pro or Business plan** of GPT for Sheets — bring-your-own-key functions are a paid feature.
+2. An **xAI API key** — see [how to get a Grok API key](/grok-api-key-google-sheets-setup/).
+
+Add the key via **Extensions → GPT for Sheets → Set Up API Key → Grok (xAI)**. Requests then go to xAI on your key, billed by xAI at their API rates.
+
+## Model options
+
+Pick the model in the same Set Up API Key dialog:
+
+| Model | When to use |
+|---|---|
+| `grok-4.3` | Newest flagship — hardest reasoning and writing tasks. |
+| `grok-4-latest` | Best current general option. |
+| `grok-3` (default) | Legacy default; stable for everyday tasks. |
+| `grok-3-mini` / `grok-3-fast` / `grok-3-mini-fast` | Cheaper and faster legacy options for simple bulk transformations. |
+
+## Examples
+
+Research a company in `A2`:
+
+```
+=GROK("In 20 words, what does this company do and who are its customers?", A2)
+```
+
+Classify support tickets in `A2`:
+
+```
+=GROK("Classify as Billing, Bug, Feature request or Other. Return one word.", A2)
+```
+
+Draft a reply to a review in `A2`:
+
+```
+=GROK("Write a two-sentence reply to this customer review, friendly and specific", A2)
+```
+
+Score a lead row (company in `A2`, title in `B2`):
+
+```
+=GROK("Score 1-10 how well this fits an ICP of B2B SaaS marketing teams. Return the number, then a 10-word reason.", A2&" — "&B2)
+```
+
+## Tips
+
+- Grok error in the cell usually means the key is missing or invalid — re-check **Set Up API Key**; the formula tells you which step failed.
+- Costs are controlled by xAI's API pricing on your key, so `grok-3-mini` variants can make large bulk runs significantly cheaper.
+- Drag down for bulk runs, then use **Replace all GPT formulas with results** in the sidebar to freeze the output and stop re-computation.
+- Prefer no API keys at all? `=GPT()`, `=CLAUDE()`, `=GEMINI()`, `=MISTRAL()` and `=PERPLEXITY()` run without any key on all plans.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/deepseek-function">=DEEPSEEK()</a> — another bring-your-own-key model function
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — built-in default, no key required
+- <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY()</a> — built-in web-aware research
+
+## Try it
+
+<a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a>. Guides: <a href="/grok-for-google-sheets-how-to-guide/">connect Grok to Google Sheets</a>, <a href="/grok-for-google-sheets-lead-enrichment/">Grok lead-enrichment formulas</a>, <a href="/grok-edit-google-sheets-ai/">can Grok edit Google Sheets?</a>
+
+
+### DEEPSEEK function in Google Sheets — =DEEPSEEK() reference (https://docgpt.ai/docs/gpt-for-sheets/deepseek-function)
+
+# =DEEPSEEK() — use DeepSeek in Google Sheets
+
+`=DEEPSEEK()` runs DeepSeek models from a cell in Google Sheets. DeepSeek's API pricing is among the lowest of any capable model, which makes it attractive for very large bulk runs on your own key.
+
+## Syntax
+
+```
+=DEEPSEEK(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for DeepSeek. |
+| `value` | no | Extra input appended to the prompt, usually a cell reference. |
+
+## Requirements
+
+Like `=GROK()`, this is a bring-your-own-key function:
+
+1. A **User Pro or Business plan** of GPT for Sheets.
+2. A **DeepSeek API key** from platform.deepseek.com.
+
+Add it via **Extensions → GPT for Sheets → Set Up API Key → DeepSeek**. Requests are billed by DeepSeek on your key.
+
+## Model options
+
+| Model | When to use |
+|---|---|
+| `deepseek-chat` (default) | Writing, extraction, classification and everyday spreadsheet text tasks. |
+| `deepseek-reasoner` | Logic, math, planning and multi-step prompts — slower but more careful. |
+
+## Examples
+
+Summarize feedback in `A2`:
+
+```
+=DEEPSEEK("Summarize in one sentence, keep the customer's main complaint", A2)
+```
+
+Extract fields from messy text in `A2`:
+
+```
+=DEEPSEEK("Extract the email address. Return only the email or 'none'.", A2)
+```
+
+Bulk-translate descriptions in `A2`:
+
+```
+=DEEPSEEK("Translate to German, return only the translation", A2)
+```
+
+## Tips
+
+- `deepseek-chat` covers most spreadsheet tasks; switch to `deepseek-reasoner` only when rows need multi-step logic — it is slower.
+- For bulk runs, freeze results with **Replace all GPT formulas with results** when done.
+- No key and no paid plan? The built-in `=GPT()`, `=CLAUDE()`, `=GEMINI()` and `=MISTRAL()` need no configuration.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/grok-function">=GROK()</a> — the other bring-your-own-key model function
+- <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL()</a> — built-in fast, low-cost option
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — built-in default
+
+## Try it
+
+<a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a>. See also: <a href="/can-deepseek-edit-google-sheets-ai/">can DeepSeek edit Google Sheets?</a>
+
+
+### Grok for Google Workspace — What Works Today (https://docgpt.ai/grok-for-google-workspace/)
+
+**Short answer:** xAI ships no Grok connector for Google Workspace. If you searched for one, what you actually can do today is run Grok **inside Google Sheets** with the [GPT for Sheets](/gpt-for-sheets/) add-on: a `=GROK()` formula that calls xAI on your own API key, row by row, at bulk speed.
+
+## What works today
+
+| Where | Grok support | What to use |
+|---|---|---|
+| **Google Sheets** | ✅ `=GROK()` formula via GPT for Sheets (your xAI key) | [=GROK() reference](/docs/gpt-for-sheets/grok-function) |
+| **Google Docs** | ❌ no Grok; ChatGPT/Claude/Gemini available | <a href="/google-doc-ai/">GPT for Docs</a> |
+| **Gmail** | ❌ no Grok; AI drafting available | <a href="/ai-email-assistant/">AI Email Assistant</a> |
+| **Google Slides** | ❌ no Grok; AI deck generation available | <a href="/google-slide-ai/">Slides by DocGPT.ai</a> |
+
+## Set up Grok in Google Sheets (3 steps)
+
+1. Install <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">GPT for Sheets</a> from the Google Workspace Marketplace.
+2. Open **Extensions → GPT for Sheets → Set Up API Key**, choose **Grok (xAI)**, paste your key and pick a model (`grok-4-latest` for quality, `grok-3-mini` for cheap bulk runs). Getting a key takes ~2 minutes: [step-by-step guide](/grok-api-key-google-sheets-setup/).
+3. In any cell:
+
+```
+=GROK("In 15 words, what does this company do?", A2)
+```
+
+Drag down — every row gets its own Grok answer. When the run finishes, use **Replace all GPT formulas with results** to freeze the output.
+
+Bring-your-own-key functions (`=GROK()`, `=DEEPSEEK()`) require the **User Pro or Business plan** — see <a href="/gpt-for-sheets/#pricing">pricing</a>. API usage is billed separately by xAI on your key.
+
+## What people use Grok in Sheets for
+
+- **Lead research and enrichment** — company summaries, industry tags, ICP fit scores: [Grok lead-enrichment formulas](/grok-for-google-sheets-lead-enrichment/)
+- **Bulk classification** — tickets, reviews, keywords into fixed categories
+- **Content drafting** — outreach openers, replies, short descriptions across hundreds of rows
+- **Data cleanup** — extract fields, normalize names and categories without regex
+
+## Honest limits
+
+- `=GROK()` covers Google Sheets only. No add-on currently puts Grok itself into Docs, Gmail or Slides — those apps get ChatGPT, Claude and Gemini through the other DocGPT.ai add-ons.
+- Grok answers come from the model, not from a live crawl of your Workspace — it sees exactly the cell data you pass it.
+- Large runs cost money on your xAI key; test on 10 rows first and prefer the mini models for simple transformations.
+
+## FAQ
+
+### Does Grok integrate with Google Workspace?
+
+No — xAI offers no native Workspace integration. The practical route is the `=GROK()` formula in Google Sheets via GPT for Sheets, on your own xAI API key.
+
+### How do I connect Grok to Google Sheets?
+
+Install GPT for Sheets, add your xAI key under **Set Up API Key**, pick a model, then use `=GROK("prompt", A2)` and drag down. Requires the User Pro or Business plan.
+
+### Can Grok read or edit Google Docs and Gmail?
+
+Not natively. For AI inside Docs and Gmail, use GPT for Docs and AI Email Assistant (ChatGPT, Claude, Gemini). In Sheets, `=GROK()` gives you Grok itself.

@@ -72,6 +72,17 @@ Automated quiz, form and assessment generation for Google Forms.
 - =GPT_VISION() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-vision
 - =GPT_WEB_SEARCH() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-web-search
 - =GPT_CREATE_IMAGE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-create-image
+- =GROK() function (xAI, your API key): https://docgpt.ai/docs/gpt-for-sheets/grok-function
+- =DEEPSEEK() function (your API key): https://docgpt.ai/docs/gpt-for-sheets/deepseek-function
+
+## Grok (xAI) in Google Sheets and Workspace
+
+GPT for Sheets includes a =GROK() formula that runs xAI Grok models on your own API key — the practical way to use Grok on spreadsheet data, since xAI has no native Google Workspace integration.
+- Grok for Google Workspace overview: https://docgpt.ai/grok-for-google-workspace/
+- Connect Grok to Google Sheets: https://docgpt.ai/grok-for-google-sheets-how-to-guide/
+- Get a Grok API key for Sheets: https://docgpt.ai/grok-api-key-google-sheets-setup/
+- Can Grok edit Google Sheets: https://docgpt.ai/grok-edit-google-sheets-ai/
+- Grok lead-enrichment formulas: https://docgpt.ai/grok-for-google-sheets-lead-enrichment/
 - Troubleshooting: https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/
 - AI prompt library (400+ guides): https://docgpt.ai/docs/ai-prompts
 
