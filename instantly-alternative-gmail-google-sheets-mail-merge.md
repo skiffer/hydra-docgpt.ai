@@ -9,7 +9,7 @@ description: "Looking for an Instantly alternative? Compare a Sheets-native Gmai
 
 If your prospect list already lives in Google Sheets, a full cold-email stack can be more than your outreach actually needs. **Mail Merge for Gmail and Google Sheets** lets you send personalized Gmail campaigns straight from a spreadsheet — a focused, Workspace-native option for people searching for an **Instantly alternative** built around mail merge.
 
-This page compares the two approaches factually so you can decide what fits. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Instantly; all trademarks belong to their respective owners.
+This page compares the two approaches factually so you can decide what fits. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Instantly; all trademarks belong to their respective owners.
 
 [Try Mail Merge for Gmail and Sheets →](/mail-merge-for-gmail-and-sheets/)
 
@@ -96,7 +96,7 @@ No tool can guarantee inbox placement. Genuine personalization, a clean list, se
 
 ### Is this affiliated with Instantly?
 
-No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Instantly. Trademarks belong to their respective owners.
+No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Instantly. Trademarks belong to their respective owners.
 
 ## Choose the workflow that fits
 
@@ -121,7 +121,7 @@ If you want a complete cold-email platform with sourcing and warm-up, a dedicate
     {"@type": "Question", "name": "Does Instantly send directly from a Google Sheet?", "acceptedAnswer": {"@type": "Answer", "text": "Publicly available information indicates Instantly manages contacts and sending inside its own platform rather than sending from a live Google Sheet. Check Instantly's current documentation to confirm, since features change."}},
     {"@type": "Question", "name": "Can I keep using my own Gmail address?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mail Merge for Gmail and Sheets sends from your own Gmail or Google Workspace mailbox, so replies come back to you."}},
     {"@type": "Question", "name": "Will my outreach reach the inbox?", "acceptedAnswer": {"@type": "Answer", "text": "No tool can guarantee inbox placement. Genuine personalization, a clean list, sensible pacing, and test sends all improve your odds."}},
-    {"@type": "Question", "name": "Is this affiliated with Instantly?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Instantly. Trademarks belong to their respective owners."}}
+    {"@type": "Question", "name": "Is this affiliated with Instantly?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Instantly. Trademarks belong to their respective owners."}}
   ]
 }
 </script>

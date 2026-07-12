@@ -102,7 +102,7 @@ Reputation and local agencies sometimes evaluate heavier tools, but review-based
 
 If a prospect becomes a client and the agency needs to manage reviews every day, [ReputeMap for agency review management](https://reputemap.com/) is a natural next layer: it centralizes Google review monitoring, AI-assisted replies, review requests, alerts, and client reporting while the spreadsheet remains useful for research and sales prep.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

@@ -100,7 +100,7 @@ A practical open-house sheet starts with sign-in notes and ends with prioritized
 
 Some agents look at heavier enrichment tools, but an open-house sheet is already tabular and personal. GPT for Sheets keeps visitor notes, intent labels, priority scores, and drafts in one Google Sheet, a lighter alternative for agent follow-up that hands off cleanly to mail merge.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

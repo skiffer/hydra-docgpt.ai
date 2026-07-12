@@ -108,7 +108,7 @@ A practical sheet for this use case starts with one row per consulting prospect 
 
 ### Clay-style workflow note
 
-Many buyers describe this as a lightweight "Clay in Sheets" workflow: keep the list in Google Sheets, use formulas to create row-level research outputs, then add QA and review columns before outreach. It is not a one-for-one replacement for every enrichment platform feature; it is strongest when your team wants spreadsheet-native control, flexible prompts, and quick iteration. Clay is a trademark of its owner. DocGPT.AI and GPT for Sheets are not affiliated with or endorsed by Clay.
+Many buyers describe this as a lightweight "Clay in Sheets" workflow: keep the list in Google Sheets, use formulas to create row-level research outputs, then add QA and review columns before outreach. It is not a one-for-one replacement for every enrichment platform feature; it is strongest when your team wants spreadsheet-native control, flexible prompts, and quick iteration. Clay is a trademark of its owner. DocGPT.ai and GPT for Sheets are not affiliated with or endorsed by Clay.
 
 ## Best for / not best for
 
@@ -128,7 +128,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 
 ## Safety, compliance, and data quality
 
-Clay is a trademark of its owner. DocGPT.AI is not affiliated with Clay. Verify claims and avoid harsh or speculative diagnoses in outreach.
+Clay is a trademark of its owner. DocGPT.ai is not affiliated with Clay. Verify claims and avoid harsh or speculative diagnoses in outreach.
 
 AI output should be treated as a structured draft, not a verified database. Keep source columns visible, store source URLs or dates when relevant, and review important rows before outreach, CRM import, publishing, or decisions.
 

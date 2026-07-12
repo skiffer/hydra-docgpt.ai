@@ -63,7 +63,7 @@ Clay Alternative for Recruiters: AI Candidate and Client Research in Google Shee
 
 Install [GPT for Sheets](/gpt-for-sheets/) when you want bulk prompts, formulas across columns, model/provider flexibility, and less copy-paste between a spreadsheet and separate AI chats. If budget or workflow fit is the next question, compare options on [GPT for Sheets pricing](/gpt-for-sheets/#pricing).
 
-This is a Clay alternative angle for spreadsheet-first teams: keep the comparison about workflow fit, not unsupported feature parity. Clay is a third-party trademark of its owner; DocGPT.AI and GPT for Sheets are unaffiliated with Clay.
+This is a Clay alternative angle for spreadsheet-first teams: keep the comparison about workflow fit, not unsupported feature parity. Clay is a third-party trademark of its owner; DocGPT.ai and GPT for Sheets are unaffiliated with Clay.
 
 ## Why this workflow converts spreadsheet chaos into action
 

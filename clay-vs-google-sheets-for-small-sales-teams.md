@@ -60,7 +60,7 @@ Small teams are often choosing between a dedicated enrichment platform and the s
 Use it when your source of truth is already a spreadsheet: exports from a CRM, event list, directory, marketplace, ATS, service system, or hand-built prospect list. The workflow is simple: keep raw source columns intact, add AI output columns, add confidence and review fields, then export only approved rows.
 
 
-**Trademark note:** Clay is a third-party trademark. DocGPT.AI and GPT for Sheets are not affiliated with, endorsed by, or sponsored by Clay. This page compares workflow fit without claiming feature or price parity.
+**Trademark note:** Clay is a third-party trademark. DocGPT.ai and GPT for Sheets are not affiliated with, endorsed by, or sponsored by Clay. This page compares workflow fit without claiming feature or price parity.
 
 ## Workflow
 A practical sheet for this use case usually starts with these source columns:

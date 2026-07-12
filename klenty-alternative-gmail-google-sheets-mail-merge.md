@@ -9,7 +9,7 @@ description: "Looking for a Klenty alternative? Compare a Sheets-native Gmail ma
 
 If your prospect list already lives in Google Sheets, a full sales-engagement platform can be more than your outreach actually needs. **Mail Merge for Gmail and Google Sheets** lets you send personalized Gmail campaigns straight from a spreadsheet — a focused, Workspace-native option for people searching for a **Klenty alternative** built around mail merge.
 
-This page compares the two approaches factually so you can decide what fits. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Klenty; all trademarks belong to their respective owners.
+This page compares the two approaches factually so you can decide what fits. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Klenty; all trademarks belong to their respective owners.
 
 [Try Mail Merge for Gmail and Sheets →](/mail-merge-for-gmail-and-sheets/)
 
@@ -92,7 +92,7 @@ No tool can guarantee inbox placement. Genuine personalization, a clean list, se
 
 ### Is this affiliated with Klenty?
 
-No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Klenty. Trademarks belong to their respective owners.
+No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Klenty. Trademarks belong to their respective owners.
 
 ## Choose the workflow that fits
 
@@ -109,7 +109,7 @@ If you want a complete sales-engagement platform with multichannel cadences, a d
     {"@type": "Question", "name": "Does Klenty work directly from a Google Sheet?", "acceptedAnswer": {"@type": "Answer", "text": "Publicly available information indicates Klenty manages prospects inside its own platform rather than sending from a live Google Sheet. Check Klenty's current documentation to confirm, since features change."}},
     {"@type": "Question", "name": "Can I keep using my own Gmail address?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mail Merge for Gmail and Sheets sends from your own Gmail or Google Workspace mailbox, so replies come back to you."}},
     {"@type": "Question", "name": "Will my outreach reach the inbox?", "acceptedAnswer": {"@type": "Answer", "text": "No tool can guarantee inbox placement. Genuine personalization, a clean list, sensible pacing, and test sends all improve your odds."}},
-    {"@type": "Question", "name": "Is this affiliated with Klenty?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Klenty. Trademarks belong to their respective owners."}}
+    {"@type": "Question", "name": "Is this affiliated with Klenty?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Klenty. Trademarks belong to their respective owners."}}
   ]
 }
 </script>

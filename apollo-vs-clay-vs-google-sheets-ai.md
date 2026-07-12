@@ -100,7 +100,7 @@ Rather than rank tools universally, match the workflow to your situation. The ex
 
 Apollo tends to fit teams that want a built-in contact database plus sequencing in one place. Clay tends to fit teams that want a dedicated, highly flexible enrichment and GTM workspace and are comfortable maintaining it. GPT for Sheets tends to fit teams whose lists already live in CSVs and Google Sheets and who want an AI research, scoring, cleanup, and personalization layer without adopting a separate platform. Many teams combine them: export from a database or workspace, then use GPT for Sheets as the review-and-personalization layer.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains. Capabilities and pricing for Apollo and Clay change over time; check each vendor's current site for accurate, up-to-date details before deciding.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains. Capabilities and pricing for Apollo and Clay change over time; check each vendor's current site for accurate, up-to-date details before deciding.
 
 ## Use cases
 

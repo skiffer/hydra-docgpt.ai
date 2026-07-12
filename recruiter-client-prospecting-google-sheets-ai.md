@@ -100,7 +100,7 @@ A practical client-prospecting sheet starts with hiring evidence and ends with r
 
 Staffing teams sometimes evaluate enrichment platforms, but client lists usually already live in spreadsheets. GPT for Sheets keeps account notes, hiring signals, scores, and outreach drafts in one Google Sheet, a lighter alternative for recruiters who want research and personalization without a separate platform.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

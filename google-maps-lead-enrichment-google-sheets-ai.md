@@ -100,7 +100,7 @@ A practical local-enrichment sheet starts with imported business rows and ends w
 
 Teams sometimes route local lists through heavier enrichment tools, but a Google Maps export is already tabular. GPT for Sheets keeps the imported rows, AI output, clean categories, and review labels in one Google Sheet, which is a lighter, Sheets-native alternative for local prospecting.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

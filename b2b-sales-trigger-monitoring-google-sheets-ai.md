@@ -100,7 +100,7 @@ A practical sheet for this workflow usually starts with raw evidence and ends wi
 
 Sales teams may compare this to Clay-style trigger workflows; GPT for Sheets is aimed at spreadsheet-first teams that want reviewable formulas. Clay and similar tools can be powerful for teams that need a dedicated GTM workspace. GPT for Sheets is different: it keeps source columns, formulas, AI outputs, and human review labels in Google Sheets so operators can improve one workflow without migrating the whole process.
 
-DocGPT.AI is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
+DocGPT.ai is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
 
 ## Use cases
 
