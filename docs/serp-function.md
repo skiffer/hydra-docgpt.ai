@@ -4,7 +4,7 @@ title: "SERP function in Google Sheets \u2014 =SERP() reference"
 parent: GPT for Sheets
 nav_order: 55
 permalink: /docs/gpt-for-sheets/serp-function
-description: "Get Google search results directly in Google Sheets with =SERP(). Syntax, examples for SEO research, competitor analysis and lead lists."
+description: "Get search results directly in Google Sheets with =SERP(). Syntax, default limits and examples for SEO research, competitor analysis and lead lists."
 ---
 
 # =SERP() — Google search results in Google Sheets
@@ -19,8 +19,8 @@ description: "Get Google search results directly in Google Sheets with =SERP(). 
 
 | Parameter | Required | Description |
 |---|---|---|
-| `query` | yes | The search query, string or cell reference. |
-| `limit` | no | How many results to return. |
+| `query` | yes | The search query, string or cell reference. At least 3 characters. |
+| `limit` | no | How many results to return. Default: 20. |
 
 ## Examples
 
@@ -37,6 +37,18 @@ Who ranks for your money keyword, then summarize angles with GPT:
 =GPT("Based on these titles, what content angle is missing?", B2:B11)
 ```
 
+Monitor brand mentions — search your brand name from `A2`:
+
+```
+=SERP(A2&" review", 20)
+```
+
+## Common errors
+
+- `Query not provided or too short.` — the query must be at least 3 characters.
+- `Function can only be called once every 20 seconds.` — SERP is rate-limited; wait between calls instead of recalculating the whole sheet at once.
+- Results spill into multiple cells — keep the area below the formula empty or Sheets shows `#REF!`.
+
 ## Related
 
 ```
@@ -44,6 +56,12 @@ Who ranks for your money keyword, then summarize angles with GPT:
 ```
 
 The same idea through the **official Google Custom Search API** with your own key — for higher volumes and stable quotas.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH()</a> — a synthesized answer instead of raw results
+- <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY()</a> — web-aware research answers
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — process the results you fetched
 
 ## Try it
 

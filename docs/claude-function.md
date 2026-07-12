@@ -4,7 +4,7 @@ title: "CLAUDE function in Google Sheets \u2014 =CLAUDE() reference"
 parent: GPT for Sheets
 nav_order: 51
 permalink: /docs/gpt-for-sheets/claude-function
-description: "Use Anthropic Claude in Google Sheets with the =CLAUDE() formula. Syntax, parameters, examples and when to pick Claude over GPT."
+description: "Use Anthropic Claude in Google Sheets with the =CLAUDE() formula — summarize feedback and rewrite copy in bulk. Syntax, examples, no API key needed."
 ---
 
 # =CLAUDE() — use Anthropic Claude in Google Sheets
@@ -36,11 +36,30 @@ Rewrite marketing copy in a specific tone:
 =CLAUDE("Rewrite in a friendly, non-salesy tone, keep under 30 words", A2)
 ```
 
+Digest long call transcripts pasted in `A2` (Claude handles long inputs well):
+
+```
+=CLAUDE("List the action items from this transcript as short bullet points", A2)
+```
+
+Localize marketing copy with tone preserved:
+
+```
+=CLAUDE("Translate to German, keep the playful tone and brand names in English", A2)
+```
+
 ## When to pick Claude
 
 - Long inputs: Claude handles large text fragments (reports, transcripts) well.
 - Careful rewriting and summarization where tone and nuance matter.
 - Cross-checking: run `=GPT()` and `=CLAUDE()` on the same rows and compare answers side by side — switching models is just a different formula name.
+- Drag the formula down for bulk runs, then use **Replace all GPT formulas with results** in the sidebar to freeze the answers.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — the default model function, same arguments
+- <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a> — Google's Gemini models
+- <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL()</a> — fast, low-cost bulk tasks
 
 ## Try it
 

@@ -4,7 +4,7 @@ title: "MISTRAL function in Google Sheets \u2014 =MISTRAL() reference"
 parent: GPT for Sheets
 nav_order: 53
 permalink: /docs/gpt-for-sheets/mistral-function
-description: "Use Mistral AI in Google Sheets with the =MISTRAL() formula. Syntax, parameters and examples for fast, low-cost bulk text tasks."
+description: "Use Mistral AI in Google Sheets with the =MISTRAL() formula. Syntax, parameters and copy-paste examples for fast, low-cost bulk tasks like feed cleanup."
 ---
 
 # =MISTRAL() — use Mistral AI in Google Sheets
@@ -35,6 +35,30 @@ Translate French product feedback to English:
 ```
 =MISTRAL("Translate to English, return only the translation", A2)
 ```
+
+Normalize category labels in a product feed:
+
+```
+=MISTRAL("Map this category to one of: Apparel, Footwear, Accessories. Return one word.", A2)
+```
+
+Draft short LinkedIn comment replies from post text in `A2`:
+
+```
+=MISTRAL("Write a friendly one-sentence reply agreeing with this post", A2)
+```
+
+## Tips
+
+- Mistral is a good default for simple, repetitive transformations where speed matters more than nuance — save GPT or Claude for the hard rows.
+- No Mistral API key is needed — the model is built into the add-on.
+- Drag down for bulk runs — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar to freeze the output.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — the default model function, same arguments
+- <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a> — another fast option for bulk work
+- <a href="/docs/gpt-for-sheets/claude-function">=CLAUDE()</a> — for tone-sensitive rewriting
 
 ## Try it
 

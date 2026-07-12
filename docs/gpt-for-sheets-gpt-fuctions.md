@@ -21,6 +21,32 @@ description: Effortlessly enhance Google Sheets with GPT functions! Install the 
 - <a href="/gpt-for-sheets/">Upgrade to Premium</a>
 - Optional -> RECOMMENDATION: The best way to ensure optimal performance with Google Add-Ons is by using the Google Chrome browser. This helps bypass any potential issues that may arise from compatibility with other browsers.
 
+## All functions — full reference
+
+Every function has its own reference page with syntax, parameters and copy-paste examples:
+
+| Function | What it does | Reference |
+|----------|--------------|-----------|
+| `=GPT()` | Generate text from a prompt in one cell | <a href="/docs/gpt-for-sheets/gpt-function">=GPT() reference</a> |
+| `=GPT_TABLE()` | Generate a whole table that spills into rows and columns | <a href="/docs/gpt-for-sheets/gpt-table">=GPT_TABLE() reference</a> |
+| `=GPT_LIST()` | Generate a vertical list, one item per cell | <a href="/docs/gpt-for-sheets/gpt-list">=GPT_LIST() reference</a> |
+| `=GPT_FILL()` | Autofill a range by learning from example rows | <a href="/docs/gpt-for-sheets/gpt-fill">=GPT_FILL() reference</a> |
+| `=GPT_EXTRACT()` | Pull emails, names, prices out of messy text | <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT() reference</a> |
+| `=GPT_CLASSIFY()` | Put each row into one of your categories | <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY() reference</a> |
+| `=GPT_TAG()` | Apply all relevant labels to a text | <a href="/docs/gpt-for-sheets/gpt-tag">=GPT_TAG() reference</a> |
+| `=GPT_SUMMARIZE()` | Condense long text into a summary of any length | <a href="/docs/gpt-for-sheets/gpt-summarize">=GPT_SUMMARIZE() reference</a> |
+| `=GPT_FORMAT()` | Convert between formats: HTML, JSON, Markdown, table… | <a href="/docs/gpt-for-sheets/gpt-format">=GPT_FORMAT() reference</a> |
+| `=GPT_APPLY()` | Apply an instruction to text (default: fix grammar) | <a href="/docs/gpt-for-sheets/gpt-apply">=GPT_APPLY() reference</a> |
+| `=GPT_TRANSLATE()` | Translate cells between languages | <a href="/docs/gpt-for-sheets/gpt-translate-function">=GPT_TRANSLATE() reference</a> |
+| `=GPT_VISION()` | Ask questions about an image by URL | <a href="/docs/gpt-for-sheets/gpt-vision">=GPT_VISION() reference</a> |
+| `=GPT_WEB_SEARCH()` | Answers grounded in a live web search | <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH() reference</a> |
+| `=GPT_CREATE_IMAGE()` | Generate images with DALL·E / GPT image models | <a href="/docs/gpt-for-sheets/gpt-create-image">=GPT_CREATE_IMAGE() reference</a> |
+| `=CLAUDE()` | Use Anthropic Claude with the same arguments as GPT | <a href="/docs/gpt-for-sheets/claude-function">=CLAUDE() reference</a> |
+| `=GEMINI()` | Use Google Gemini for fast, high-volume tasks | <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI() reference</a> |
+| `=MISTRAL()` | Use Mistral for fast, low-cost bulk processing | <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL() reference</a> |
+| `=PERPLEXITY()` | Web-aware answers for research and enrichment | <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY() reference</a> |
+| `=SERP()` | Fetch live search results into your sheet | <a href="/docs/gpt-for-sheets/serp-function">=SERP() reference</a> |
+
 ### Example of use
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -36,11 +36,30 @@ Find the latest funding round:
 =PERPLEXITY("Latest funding round and amount for "&A2&". Answer in the form: Round, Amount, Year")
 ```
 
+Check employee count for lead scoring:
+
+```
+=PERPLEXITY("Approximate employee count for "&A2&". Return only a number or range.")
+```
+
+Verify a prospect's current job title before outreach:
+
+```
+=PERPLEXITY("Current job title of "&A2&" at "&B2&". Return only the title.")
+```
+
 ## Tips
 
 - Ask for a fixed answer format — it keeps columns consistent and easy to split.
 - Combine with <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a> when you need raw Google results instead of a synthesized answer.
 - For emails and contacts, see the <a href="/templates/lead-enrichment/">lead enrichment template</a>.
+- Drag the formula down to enrich a whole list, then use **Replace all GPT formulas with results** in the sidebar so lookups are not re-run on refresh.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH()</a> — web-grounded answers via search-enabled GPT models
+- <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a> — raw search results with titles and links
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — pure model knowledge, no web access
 
 ## Try it
 
