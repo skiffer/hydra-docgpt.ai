@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimize Your Site with SILO Structure in 2024
+title: Optimize Your Site with SILO Structure
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimize-your-site-with-silo-structure-in-2024
-description: Boost your website rankings and user experience in 2024 by implementing SILO structure. Group related content, enhance navigation, and improve your SEO strategy. Stay ahead of the competition with a well-organized, search-engine-friendly site architecture.
+description: Boost your website rankings and user experience by implementing SILO structure. Group related content, enhance navigation, and improve your SEO strategy. Stay ahead of the competition with a well-organized, search-engine-friendly site architecture.
 ---
 
-# Optimize Your Site with SILO Structure in 2024
+# Optimize Your Site with SILO Structure
 
 ### Case of usage:
 > Create a SILO structure for an website using a [KEYWORD].

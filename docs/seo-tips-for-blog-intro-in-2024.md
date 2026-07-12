@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Tips for Blog Intro in 2024
+title: SEO Tips for Blog Intro
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-tips-for-blog-intro-in-2024
-description: Discover the latest SEO tips for crafting engaging blog intros in 2024. Learn how to capture readers' attention while boosting your search engine rankings. Stay ahead with cutting-edge strategies that enhance your content's visibility and attract organic traffic effortlessly.
+description: Discover the latest SEO tips for crafting engaging blog intros. Learn how to capture readers' attention while boosting your search engine rankings. Stay ahead with cutting-edge strategies that enhance your content's visibility and attract organic traffic effortlessly.
 ---
 
-# SEO Tips for Blog Intro in 2024
+# SEO Tips for Blog Intro
 
 ### Case of usage:
 > Create a best, SEO Optimised and Engaging Introduction part for your blog posts by pasting your main keyword or blog title.

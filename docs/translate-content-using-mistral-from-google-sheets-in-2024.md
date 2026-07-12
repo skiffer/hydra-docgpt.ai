@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Translate content using Mistral from Google Sheets in 2024
+title: Translate content using Mistral from Google Sheets
 nav_order: 35
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/translate-content-using-mistral-from-google-sheets-in-2024
-description: Translate content using Mistral from Google Sheets in 2024
+description: Translate content using Mistral from Google Sheets
 ---
 
-# Translate content using Mistral from Google Sheets in 2024
+# Translate content using Mistral from Google Sheets
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V4IRVKBHJy4?si=3qoBVoXAddHTg7qR" title="How to use GPT for Sheets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -65,7 +65,7 @@ formula_cards:
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) → add source columns → paste one formula → QA a 10–25 row sample → fill down once the output is reliable → review [GPT for Sheets pricing](/gpt-for-sheets/#pricing) before scaling the workflow.
 
-> G2, Capterra, and other product names are trademarks of their respective owners. DocGPT.AI and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by those platforms. This guide compares workflow fit, not universal superiority; verify current third-party features, terms, and pricing in official sources.
+> G2, Capterra, and other product names are trademarks of their respective owners. DocGPT.ai and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by those platforms. This guide compares workflow fit, not universal superiority; verify current third-party features, terms, and pricing in official sources.
 
 ## Workflow {#workflow}
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Unique SEO Optimized AI Free Article in 2024
+title: Unique SEO Optimized AI Free Article
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/unique-seo-optimized-ai-free-article-in-2024
-description: Discover the future of content creation with our unique, SEO-optimized, AI-free articles in 2024. Crafted by experts for maximum search engine reach, our content ensures originality and quality. Ideal for blogs, websites, and marketing strategies wanting a competitive edge.
+description: Discover the future of content creation with our unique, SEO-optimized, AI-free articles. Crafted by experts for maximum search engine reach, our content ensures originality and quality. Ideal for blogs, websites, and marketing strategies wanting a competitive edge.
 ---
 
-# Unique SEO Optimized AI Free Article in 2024
+# Unique SEO Optimized AI Free Article
 
 ### Case of usage:
 > SEO-friendly, unique, plagiarism & AI Detection free article.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
 You must add at the top of the response: 
 ---

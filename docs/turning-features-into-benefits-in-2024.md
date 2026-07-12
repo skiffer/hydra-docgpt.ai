@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Turning Features into Benefits in 2024
+title: Turning Features into Benefits
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/turning-features-into-benefits-in-2024
-description: Discover how to transform product features into compelling benefits with our 2024 guide. Enhance your marketing strategy and boost customer engagement by showcasing the true value of your offerings. Stay ahead in the competitive landscape with actionable insights!
+description: Discover how to transform product features into compelling benefits with our guide. Enhance your marketing strategy and boost customer engagement by showcasing the true value of your offerings. Stay ahead in the competitive landscape with actionable insights!
 ---
 
-# Turning Features into Benefits in 2024
+# Turning Features into Benefits
 
 ### Case of usage:
 > Feature to Benefit Converter: technical details translated into convincing benefits

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Get Monthly Content Calendar Easily in 2024
+title: Get Monthly Content Calendar Easily
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/get-monthly-content-calendar-easily-in-2024
-description: Simplify your content planning with our 2024 Monthly Content Calendar! Stay organized and ahead of schedule with easy-to-use templates designed for social media, blogs, and marketing campaigns. Maximize your reach and engagement effortlessly all year round.
+description: Simplify your content planning with our Monthly Content Calendar! Stay organized and ahead of schedule with easy-to-use templates designed for social media, blogs, and marketing campaigns. Maximize your reach and engagement effortlessly all year round.
 ---
 
-# Get Monthly Content Calendar Easily in 2024
+# Get Monthly Content Calendar Easily
 
 ### Case of usage:
 > Get a beautifully organized 4-week content calendar that targets your primary keyword using only transaction longtail keyword & clickbait style post titles. Try it out!

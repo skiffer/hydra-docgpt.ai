@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Porters Value Chain and SWOT Analysis in 2024
+title: Porters Value Chain and SWOT Analysis
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/porters-value-chain-and-swot-analysis-in-2024
-description: Explore the integration of Porter's Value Chain and SWOT Analysis for 2024 to optimize business strategies. Uncover key insights and competitive advantages to enhance performance and drive growth in a dynamic market landscape. Perfect for business leaders and strategists.
+description: Explore the integration of Porter's Value Chain and SWOT Analysis to optimize business strategies. Uncover key insights and competitive advantages to enhance performance and drive growth in a dynamic market landscape. Perfect for business leaders and strategists.
 ---
 
-# Porters Value Chain and SWOT Analysis in 2024
+# Porters Value Chain and SWOT Analysis
 
 ### Case of usage:
 > Enter Company Name and Get Investment Appraisal for any Company or Business Idea. 

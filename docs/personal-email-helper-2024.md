@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Personal Email Helper 2024
+title: Personal Email Helper
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/personal-email-helper-2024
-description: Discover Personal Email Helper 2024, your ultimate tool for streamlining email management. Boost productivity with smart sorting, customizable templates, and advanced spam filters. Enhance your communication experience effortlessly. Ideal for professionals seeking efficiency.
+description: Discover Personal Email Helper, your ultimate tool for streamlining email management. Boost productivity with smart sorting, customizable templates, and advanced spam filters. Enhance your communication experience effortlessly. Ideal for professionals seeking efficiency.
 ---
 
-# Personal Email Helper 2024
+# Personal Email Helper
 
 ### Case of usage:
 > Paste an email in the box, hit enter and let ChatGPT answer all your questions about the email. 
@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 
 Lines starting with # are only comments for humans
 

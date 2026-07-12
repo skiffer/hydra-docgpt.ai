@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Extract Facebook Emails to Google Sheets in 2024 Best Practices
+title: Extract Facebook Emails to Google Sheets Best Practices
 nav_order: 3
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-extract-emails-from-facebook-into-google-sheets-2024-guide
-description: Extract Facebook Emails to Google Sheets in 2024 Best Practices
+description: Extract Facebook Emails to Google Sheets Best Practices
 ---
 
-# How to Extract Emails from Facebook in 2024
+# How to Extract Emails from Facebook
 
 In today's digital landscape, efficiently collecting targeted information can significantly enhance your marketing strategies. This SEO-optimized tutorial will guide you through the process of extracting email addresses from Facebook profiles using GPT for Sheets. This technique is ideal for reaching out to specific audiences, such as yoga enthusiasts or other niche groups.
 

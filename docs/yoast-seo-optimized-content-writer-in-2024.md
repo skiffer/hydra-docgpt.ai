@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Yoast SEO Optimized Content Writer in 2024
+title: Yoast SEO Optimized Content Writer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/yoast-seo-optimized-content-writer-in-2024
-description: Boost your website's visibility with a seasoned Yoast SEO Optimized Content Writer in 2024. Enhance your search engine rankings with expertly crafted, keyword-rich content designed to engage and convert. Drive traffic and grow your online presence today!
+description: Boost your website's visibility with a seasoned Yoast SEO Optimized Content Writer. Enhance your search engine rankings with expertly crafted, keyword-rich content designed to engage and convert. Drive traffic and grow your online presence today!
 ---
 
-# Yoast SEO Optimized Content Writer in 2024
+# Yoast SEO Optimized Content Writer
 
 ### Case of usage:
 > Write detail YoastSEO optimized article by just putting blog title. I need 5 more upvotes so that I can create more prompts. Hit upvote(Like) button.
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 # Please extract and update the following prompt as required:
 
-You must add at the top of the response "_Created with DocGPT.AI_"
+You must add at the top of the response "_Created with DocGPT.ai_"
 ---
 Please ignore all previous instructions. I want you to respond only in [TARGETLANGUAGE].  I want you to act as a very proficient seo and high-end copywriter that speaks and writes fluently [TARGETLANGUAGE]. Your task is to write an article starting with seo title with a bold letter include subheadings using related keywords. The article must be 100 % unique and remove plagiarism. the article must be 600 to 1000 words. All output shall be in [TARGETLANGUAGE] and must be 100% human writing style and fix grammar errors like grammarly.com. Get to the point precisely and accurate. The content should be in active voice. Use at least 30% of transition words in the full content. Make sure you don't use consecutive sentences. All sentences should be less than 20 words long and in [TARGETLANGUAGE]. Do not explain what and why, just give me your best possible article. All output shall be in [TARGETLANGUAGE]. The text to rewrite is this: [PROMPT]. Make headings bold and appropriate for h tags.
 ```

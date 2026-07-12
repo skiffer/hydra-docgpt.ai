@@ -100,7 +100,7 @@ A practical clinic-prospecting sheet starts with practice notes and ends with re
 
 Agencies and vendors sometimes evaluate heavier enrichment tools, but a clinic prospect list is already tabular. GPT for Sheets keeps practice rows, AI summaries, profile labels, and outreach drafts in one Google Sheet, a lighter, Sheets-native option for this niche vertical.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

@@ -100,7 +100,7 @@ A budget-conscious enrichment sheet focuses on the jobs you actually run, each a
 
 A Sheets-native workflow fits teams that want to keep enrichment lightweight, run it where lists already live, and avoid maintaining a separate platform. A dedicated enrichment platform can be worth it when you need large built-in data sources, many integrations, or a team-wide GTM workspace. Estimate your real volume (rows times formulas per row) before scaling, and pick the lighter option if it covers your jobs.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains. This page does not quote Clay pricing; pricing changes frequently, so check Clay's official pricing page for current details.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains. This page does not quote Clay pricing; pricing changes frequently, so check Clay's official pricing page for current details.
 
 ## Use cases
 

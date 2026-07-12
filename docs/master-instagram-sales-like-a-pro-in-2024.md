@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master Instagram Sales Like a Pro in 2024
+title: Master Instagram Sales Like a Pro
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-instagram-sales-like-a-pro-in-2024
-description: Boost your sales with our 2024 Instagram mastery guide! Unlock pro strategies to skyrocket your brand's visibility and engagement. Transform your Instagram into a powerful sales engine and stay ahead of the competition with cutting-edge techniques.
+description: Boost your sales with our Instagram mastery guide! Unlock pro strategies to skyrocket your brand's visibility and engagement. Transform your Instagram into a powerful sales engine and stay ahead of the competition with cutting-edge techniques.
 ---
 
-# Master Instagram Sales Like a Pro in 2024
+# Master Instagram Sales Like a Pro
 
 ### Case of usage:
 > SELL your product or service on Instagram. Create an Ultimate strategy using Jeff Walker's proven Product Launch Formula with one click!  - Please Upvote for more! -

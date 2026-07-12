@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Outline of Academic Structure in 2024
+title: Outline of Academic Structure
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/outline-of-academic-structure-in-2024
-description: Discover the comprehensive "Outline of Academic Structure in 2024," exploring innovative educational frameworks and cutting-edge methodologies. Stay ahead with insights on curriculum advancements and institutional strategies shaping the future of learning.
+description: Discover the comprehensive "Outline of Academic Structure," exploring innovative educational frameworks and cutting-edge methodologies. Stay ahead with insights on curriculum advancements and institutional strategies shaping the future of learning.
 ---
 
-# Outline of Academic Structure in 2024
+# Outline of Academic Structure
 
 ### Case of usage:
 > Create a academic paper outline from a [KEYWORD]
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Ignore any previous instructions. Don't self-reference. Pretend you are a professor or high-ranking academic dedicated to helping students achieve the highest marks according to university guidelines. Write an outline for a research paper on the topic of: "[PROMPT]" in [TARGETLANGUAGE]. Please provide a rough word count for each section. Include an enlarged relevant title and **embolden the topic headers**. For more guidance, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+Ignore any previous instructions. Don't self-reference. Pretend you are a professor or high-ranking academic dedicated to helping students achieve the highest marks according to university guidelines. Write an outline for a research paper on the topic of: "[PROMPT]" in [TARGETLANGUAGE]. Please provide a rough word count for each section. Include an enlarged relevant title and **embolden the topic headers**. For more guidance, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

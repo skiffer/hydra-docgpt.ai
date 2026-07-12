@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Fully SEO Optimized Blogger Post in 2024
+title: Fully SEO Optimized Blogger Post
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/fully-seo-optimized-blogger-post-in-2024
-description: Unlock the secrets to ranking higher on search engines with a Fully SEO Optimized Blogger Post in 2024. Discover the latest strategies and tools to boost your blog's visibility and drive organic traffic effortlessly. Perfect for bloggers aiming to outshine the competition!
+description: Unlock the secrets to ranking higher on search engines with a Fully SEO Optimized Blogger Post. Discover the latest strategies and tools to boost your blog's visibility and drive organic traffic effortlessly. Perfect for bloggers aiming to outshine the competition!
 ---
 
-# Fully SEO Optimized Blogger Post in 2024
+# Fully SEO Optimized Blogger Post
 
 ### Case of usage:
 > write blogger post with seo optimized content  include: title, meta description, Faqs, Conclusion  image alt and title
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 [TARGETLANGUAGE]write a blogger post with full SEO optimized of  content  "[PROMPT]"  write the blogger include: title, meta description 140 characters, image alt, image title, write the content over 1200 words, FAQS and Conclusion. write content in two formats: 1. Normal Format, 2. HTML Format (Now write Full Content convert into HTML Format and  write the html code without <head> and <body> tags just you should write contents format, by the way write full content into HTML No skipping.)

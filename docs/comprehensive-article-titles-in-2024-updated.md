@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Article Titles in 2024 Updated
+title: Comprehensive Article Titles Updated
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-article-titles-in-2024-updated
-description: Discover the ultimate guide to creating comprehensive article titles in 2024. This updated resource covers latest SEO trends, ensuring your titles attract attention and rank higher. Boost your content's performance with our expert tips and strategies. Read on for more!
+description: Discover the ultimate guide to creating comprehensive article titles. This updated resource covers latest SEO trends, ensuring your titles attract attention and rank higher. Boost your content's performance with our expert tips and strategies. Read on for more!
 ---
 
-# Comprehensive Article Titles in 2024 Updated
+# Comprehensive Article Titles Updated
 
 ### Case of usage:
 >  Give the title of the article you want written. He tries to write a long and detailed article. It makes it ready for sharing with h tags. 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Insert Hyperlink to Article in 2024
+title: Insert Hyperlink to Article
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/insert-hyperlink-to-article-in-2024
-description: Learn how to effortlessly insert hyperlinks to articles in 2024 with our step-by-step guide. Enhance your online content's visibility and user engagement by mastering hyperlink techniques. Ideal for bloggers, marketers, and web enthusiasts seeking to optimize their SEO strategy.
+description: Learn how to effortlessly insert hyperlinks to articles with our step-by-step guide. Enhance your online content's visibility and user engagement by mastering hyperlink techniques. Ideal for bloggers, marketers, and web enthusiasts seeking to optimize their SEO strategy.
 ---
 
-# Insert Hyperlink to Article in 2024
+# Insert Hyperlink to Article
 
 ### Case of usage:
 > Find the best place and anchor text to add a link to [YOUR TARGET URL] in an existing THEIR ARTICLE.

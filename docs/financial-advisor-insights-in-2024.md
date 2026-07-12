@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Financial Advisor Insights in 2024
+title: Financial Advisor Insights
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/financial-advisor-insights-in-2024
-description: Unlock expert financial strategies with "Financial Advisor Insights in 2024." Discover the latest trends, investment tips, and wealth management techniques to secure your financial future in an ever-changing economic landscape. Stay ahead with actionable insights!
+description: Unlock expert financial strategies with "Financial Advisor Insights." Discover the latest trends, investment tips, and wealth management techniques to secure your financial future in an ever-changing economic landscape. Stay ahead with actionable insights!
 ---
 
-# Financial Advisor Insights in 2024
+# Financial Advisor Insights
 
 ### Case of usage:
 > Basic Financial Advice | Tailored Strategies | Answer 10 Questions for a Personalized Financial Plan

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Carousel Content Creator in 2024
+title: Instagram Carousel Content Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-carousel-content-creator-in-2024
-description: Maximize your Instagram engagement in 2024 with our top-tier Carousel Content Creator! Craft visually stunning, swipe-worthy posts that captivate audiences. Perfect for boosting reach, engagement, and follower growth. Elevate your brand's presence today!
+description: Maximize your Instagram engagement with our top-tier Carousel Content Creator! Craft visually stunning, swipe-worthy posts that captivate audiences. Perfect for boosting reach, engagement, and follower growth. Elevate your brand's presence today!
 ---
 
-# Instagram Carousel Content Creator in 2024
+# Instagram Carousel Content Creator
 
 ### Case of usage:
 > Write slide by slide Instagram carousel post 

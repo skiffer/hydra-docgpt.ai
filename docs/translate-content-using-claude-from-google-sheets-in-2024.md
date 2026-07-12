@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Translate content using Claude from Google Sheets in 2024
+title: Translate content using Claude from Google Sheets
 nav_order: 34
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/translate-content-using-claude-from-google-sheets-in-2024
-description: Translate content using Claude from Google Sheets in 2024
+description: Translate content using Claude from Google Sheets
 ---
 
-# Translate content using Claude from Google Sheets in 2024
+# Translate content using Claude from Google Sheets
 
 ## Prerequisites
 

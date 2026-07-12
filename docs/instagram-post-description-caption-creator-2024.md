@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Post Description Caption Creator 2024
+title: Instagram Post Description Caption Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-post-description-caption-creator-2024
-description: Elevate your social media game with Instagram Post Description Caption Creator 2024! Craft engaging, trendy captions effortlessly to boost engagement and followers. Stay ahead with the latest trends and make every post a hit. Perfect for influencers and businesses! Try it now!
+description: Elevate your social media game with Instagram Post Description Caption Creator! Craft engaging, trendy captions effortlessly to boost engagement and followers. Stay ahead with the latest trends and make every post a hit. Perfect for influencers and businesses! Try it now!
 ---
 
-# Instagram Post Description Caption Creator 2024
+# Instagram Post Description Caption Creator
 
 ### Case of usage:
 > Write an Instagram post caption/description 

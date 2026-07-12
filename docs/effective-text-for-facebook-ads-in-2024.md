@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Effective Text for Facebook Ads in 2024
+title: Effective Text for Facebook Ads
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/effective-text-for-facebook-ads-in-2024
-description: Discover the secrets to crafting compelling Facebook ads in 2024! Boost engagement and drive conversions with proven strategies for effective text. Stay ahead of the competition by mastering techniques that captivate your audience and enhance ad performance.
+description: Discover the secrets to crafting compelling Facebook ads! Boost engagement and drive conversions with proven strategies for effective text. Stay ahead of the competition by mastering techniques that captivate your audience and enhance ad performance.
 ---
 
-# Effective Text for Facebook Ads in 2024
+# Effective Text for Facebook Ads
 
 ### Case of usage:
 > Create the best ads for your advertising campaigns

@@ -1,24 +1,29 @@
 # ----
 # Site
 
-title: "DocGPT.AI - AI Productivity Tools for Google Workspace | ChatGPT, Claude & Gemini"
+# Brand constant: canonical spelling is "DocGPT.ai" — use it in all copy.
+# Spelling variants (DocGPT, "DocGPT.AI", DocGPT AI) live only in schema alternateName.
+title: "DocGPT.ai"
+tagline: "GPT for Sheets & AI Add-ons for Google Workspace"
 url: "https://docgpt.ai"
 baseurl:
+locale: en_US
 google_analytics_key: G-DV5BH9XVVS
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /favicon.png
-description: "DocGPT.AI is the ultimate AI productivity platform for Google Workspace. Access ChatGPT, Claude, Gemini & 100+ AI models in Google Sheets, Docs, Slides & Gmail. Automate content creation, data enrichment, SEO, email writing & more. Trusted by 500K+ users worldwide."
+description: "DocGPT.ai builds AI add-ons for Google Workspace: GPT for Sheets, Mail Merge for Gmail, AI Email Assistant and more. GPT, Claude & Gemini built in — no API keys needed."
 author:
   name: Yaro
   email: yaroslav91@gmail.com
   twitter: ski0xFF
 social:
-  name: Yaro
+  name: DocGPT.ai
   links:
     - https://twitter.com/ski0xFF
+    - https://www.linkedin.com/company/docgpt-ai
 
 twitter:
   username: ski0xFF
@@ -60,6 +65,13 @@ defaults:
       path: ""
     values:
       layout: "page"
+      # Default social-share image (square brand logo); pages with their own
+      # `image` front matter override it. Dimensions let jekyll-seo-tag emit
+      # og:image:width/height.
+      image:
+        path: /siteicon.png
+        width: 480
+        height: 480
   - scope:
       path: "index.html"
     values:
@@ -86,6 +98,10 @@ defaults:
       sitemap: false
   - scope:
       path: "contact-success"
+    values:
+      sitemap: false
+  - scope:
+      path: "knoledgebase.html"
     values:
       sitemap: false
   - scope:

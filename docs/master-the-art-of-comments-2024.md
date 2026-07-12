@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master the Art of Comments 2024
+title: Master the Art of Comments
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-the-art-of-comments-2024
-description: Enhance your communication with "Master the Art of Comments 2024." Unlock strategies to craft impactful, engaging comments across platforms, boosting interaction and visibility. Elevate your digital footprint and become an influential voice online.
+description: Enhance your communication with "Master the Art of Comments." Unlock strategies to craft impactful, engaging comments across platforms, boosting interaction and visibility. Elevate your digital footprint and become an influential voice online.
 ---
 
-# Master the Art of Comments 2024
+# Master the Art of Comments
 
 ### Case of usage:
 > You gotta try this! Just copy paste the post!

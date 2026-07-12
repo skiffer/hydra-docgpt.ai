@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Google Ads Prompt for Top Performance in 2024
+title: Google Ads Prompt for Top Performance
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/google-ads-prompt-for-top-performance-in-2024
-description: Unlock top performance in 2024 with our comprehensive Google Ads guide. Discover cutting-edge strategies, proven tips, and expert insights to optimize your campaigns, maximize ROI, and outshine competitors. Elevate your Google Ads game today!
+description: Unlock top performance with our comprehensive Google Ads guide. Discover cutting-edge strategies, proven tips, and expert insights to optimize your campaigns, maximize ROI, and outshine competitors. Elevate your Google Ads game today!
 ---
 
-# Google Ads Prompt for Top Performance in 2024
+# Google Ads Prompt for Top Performance
 
 ### Case of usage:
 > Full Google Ads Strategy | 50 Keyword Ideas | 10 Headlines Under 30 Characters | 4 Descriptions 90 Characters | Site Link Ideas & Callout Extensions.

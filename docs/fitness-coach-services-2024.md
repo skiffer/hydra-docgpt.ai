@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Fitness Coach Services 2024
+title: Fitness Coach Services
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/fitness-coach-services-2024
-description: Elevate your well-being with our Fitness Coach Services 2024! Our expert trainers offer personalized fitness plans, motivation, and guidance to help you achieve your health goals. Transform your life through tailored workouts and nutritional insights designed just for you.
+description: Elevate your well-being with our Fitness Coach Services! Our expert trainers offer personalized fitness plans, motivation, and guidance to help you achieve your health goals. Transform your life through tailored workouts and nutritional insights designed just for you.
 ---
 
-# Fitness Coach Services 2024
+# Fitness Coach Services
 
 ### Case of usage:
 > Introduce yourself to your new fitness coach, answer questions and get a personal weekly training schedule.

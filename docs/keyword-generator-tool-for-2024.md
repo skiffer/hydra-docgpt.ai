@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Keyword Generator Tool for 2024
+title: Keyword Generator Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/keyword-generator-tool-for-2024
-description: Boost your 2024 SEO strategy with our powerful Keyword Generator Tool. Effortlessly discover high-ranking keywords, optimize your content, and stay ahead of the competition. Perfect for marketers, bloggers, and SEO professionals aiming to drive organic traffic and enhance search engine visibility.
+description: Boost your SEO strategy with our powerful Keyword Generator Tool. Effortlessly discover high-ranking keywords, optimize your content, and stay ahead of the competition. Perfect for marketers, bloggers, and SEO professionals aiming to drive organic traffic and enhance search engine visibility.
 ---
 
-# Keyword Generator Tool for 2024
+# Keyword Generator Tool
 
 ### Case of usage:
 > Create a list of keywords related to your prompt. 
@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
 ---
 Generate a list of 25 keywords closely related to [PROMPT] without duplicating any words. Please list keywords in bullet form and then add a comma-separated list underneath.

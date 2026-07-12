@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: E-Book One Click Creator in 2024
+title: E-Book One Click Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/e-book-one-click-creator-in-2024
-description: Elevate your digital publishing with "E-Book One Click Creator in 2024." Effortlessly design, format, and publish high-quality e-books. Perfect for authors, educators, and marketers seeking a seamless, one-click solution to create stunning e-books in no time.
+description: Elevate your digital publishing with "E-Book One Click Creator." Effortlessly design, format, and publish high-quality e-books. Perfect for authors, educators, and marketers seeking a seamless, one-click solution to create stunning e-books in no time.
 ---
 
-# E-Book One Click Creator in 2024
+# E-Book One Click Creator
 
 ### Case of usage:
 > Simple and Easy to use E-Book Creator

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Rank Math Optimized Content Writer in 2024
+title: Rank Math Optimized Content Writer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/rank-math-optimized-content-writer-in-2024
-description: Boost your online presence in 2024 with a Rank Math Optimized Content Writer. Our expert services ensure higher search engine rankings and engaging content tailored for your audience. Achieve SEO success today and transform your digital strategy effortlessly!
+description: Boost your online presence with a Rank Math Optimized Content Writer. Our expert services ensure higher search engine rankings and engaging content tailored for your audience. Achieve SEO success today and transform your digital strategy effortlessly!
 ---
 
-# Rank Math Optimized Content Writer in 2024
+# Rank Math Optimized Content Writer
 
 ### Case of usage:
 > Write 100 % Optimized Content According To Rank Math Guides. Please Allow 6 Vote to Support Me To Write More Prompt.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt for DocGPT.AI
+# Prompt for DocGPT.ai
 
 Generate an SEO-optimized article on the topic of [PROMPT]. Provide a separate meta title and meta description that includes the focus keyword according to Rank Math's best practices for On-Page SEO. The article should be approximately 2000 words long, targeting the focus keyword. Ensure adherence to Rank Math's best practices for on-page SEO, incorporating proper keyword usage, natural language, and relevant headings. The article should include at least four subheadings for effective content organization. Add relevant images with alt tags and include outbound links to reputable sources to enhance value. The content should provide valuable information to readers with a conversational and engaging tone. Output should be in [TARGETLANGUAGE].
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Stable Diffusion Prompt Based on Your Idea in 2024
+title: Stable Diffusion Prompt Based on Your Idea
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/stable-diffusion-prompt-based-on-your-idea-in-2024
-description: Unlock the potential of AI creativity in 2024 with Stable Diffusion Prompts tailored to your unique ideas. Boost engagement and innovation by leveraging our advanced technology to generate precise, inspiring prompts. Start transforming your concepts into realities today!
+description: Unlock the potential of AI creativity with Stable Diffusion Prompts tailored to your unique ideas. Boost engagement and innovation by leveraging our advanced technology to generate precise, inspiring prompts. Start transforming your concepts into realities today!
 ---
 
-# Stable Diffusion Prompt Based on Your Idea in 2024
+# Stable Diffusion Prompt Based on Your Idea
 
 ## Prerequisites
 

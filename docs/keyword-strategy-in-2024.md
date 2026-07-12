@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Keyword Strategy in 2024
+title: Keyword Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/keyword-strategy-in-2024
-description: Unlock the secrets of successful SEO with our comprehensive guide, "Keyword Strategy in 2024." Learn the latest trends, tools, and techniques to dominate search rankings. Perfect for digital marketers aiming to stay ahead in the ever-evolving world of online search.
+description: Unlock the secrets of successful SEO with our comprehensive guide, "Keyword Strategy." Learn the latest trends, tools, and techniques to dominate search rankings. Perfect for digital marketers aiming to stay ahead in the ever-evolving world of online search.
 ---
 
-# Keyword Strategy in 2024
+# Keyword Strategy
 
 ### Case of usage:
 > Create a keyword strategy and SEO content plan from 1 [KEYWORD]

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Email Corrector for Professionals in 2024
+title: Top Email Corrector for Professionals
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-email-corrector-for-professionals-in-2024
-description: Discover the best email corrector for professionals in 2024! Enhance your communication with advanced grammar, spelling, and punctuation checks. Equip yourself with this essential tool to make every email error-free and impactful. Perfect for business and personal correspondence alike.
+description: Discover the best email corrector for professionals! Enhance your communication with advanced grammar, spelling, and punctuation checks. Equip yourself with this essential tool to make every email error-free and impactful. Perfect for business and personal correspondence alike.
 ---
 
-# Top Email Corrector for Professionals in 2024
+# Top Email Corrector for Professionals
 
 ### Case of usage:
 > Create the most professional emails from a Correspondence Editor with an IQ like albert einstein.

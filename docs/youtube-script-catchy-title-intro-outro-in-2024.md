@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Youtube Script Catchy Title Intro Outro in 2024
+title: Youtube Script Catchy Title Intro Outro
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-script-catchy-title-intro-outro-in-2024
-description: "Unlock the secrets to crafting the perfect Youtube script with catchy titles, engaging intros, and unforgettable outros in 2024. Elevate your content, boost engagement, and grow your audience with proven strategies tailored for success!"
+description: "Unlock the secrets to crafting the perfect Youtube script with catchy titles, engaging intros, and unforgettable outros. Elevate your content, boost engagement, and grow your audience with proven strategies tailored for success!"
 ---
 
-# Youtube Script Catchy Title Intro Outro in 2024
+# Youtube Script Catchy Title Intro Outro
 
 ### Case of usage:
 > YouTube Script with Intro & Outro and 2 Catchy title Ideas

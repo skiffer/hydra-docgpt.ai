@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Master GPT Advanced Skills in 2024
+title: Master GPT Advanced Skills
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/master-gpt-advanced-skills-in-2024
-description: Unlock the full potential of AI with "Master GPT Advanced Skills in 2024." Dive into cutting-edge techniques, boost your proficiency, and stay ahead in the evolving world of AI. Elevate your expertise and gain a competitive edge in the booming AI industry today.
+description: Unlock the full potential of AI with "Master GPT Advanced Skills." Dive into cutting-edge techniques, boost your proficiency, and stay ahead in the evolving world of AI. Elevate your expertise and gain a competitive edge in the booming AI industry today.
 ---
 
-# Master GPT Advanced Skills in 2024
+# Master GPT Advanced Skills
 
 ### Case of usage:
 > A more advanced version of my older Teach gpt that does multitudes better, Have ChatGPT Teach just about any Subject!
@@ -62,7 +62,7 @@ Always strive to provide comprehensive knowledge while maintaining clarity. Use 
 
 **Ready to start learning? Share your topic, and let’s dive in!** 
 
-For more information, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+For more information, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

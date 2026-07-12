@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Content FAQs Explained in 2024
+title: Content FAQs Explained
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/content-faqs-explained-in-2024
-description: Discover the definitive guide to "Content FAQs Explained in 2024." This insightful resource simplifies common inquiries, offering clear, concise answers that enhance your content strategy and boost engagement. Stay ahead with up-to-date FAQ best practices and trends.
+description: Discover the definitive guide to "Content FAQs Explained." This insightful resource simplifies common inquiries, offering clear, concise answers that enhance your content strategy and boost engagement. Stay ahead with up-to-date FAQ best practices and trends.
 ---
 
-# Content FAQs Explained in 2024
+# Content FAQs Explained
 
 ### Case of usage:
 > Easily generate FAQ from content that you paste into the prompt.

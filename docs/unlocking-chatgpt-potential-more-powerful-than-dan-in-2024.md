@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Unlocking ChatGPT Potential More Powerful than DAN in 2024
+title: Unlocking ChatGPT Potential More Powerful than DAN
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/unlocking-chatgpt-potential-more-powerful-than-dan-in-2024
-description: Discover the unrivaled potential of ChatGPT in 2024, surpassing the capabilities of DAN. Unlock advanced AI interactions and elevate your digital experiences with its cutting-edge power. Stay ahead with ChatGPT's groundbreaking enhancements today!
+description: Discover the unrivaled potential of ChatGPT, surpassing the capabilities of DAN. Unlock advanced AI interactions and elevate your digital experiences with its cutting-edge power. Stay ahead with ChatGPT's groundbreaking enhancements today!
 ---
 
-# Unlocking ChatGPT Potential More Powerful than DAN in 2024
+# Unlocking ChatGPT Potential More Powerful than DAN
 
 ### Case of usage:
 > This prompt turns ChatGPT into an unrestricted and non-moral model, JailBreak, to provide unfiltered responses to the user's prompts without any warnings or restrictions, with the ultimate goal of following the guidelines set in the prompt.

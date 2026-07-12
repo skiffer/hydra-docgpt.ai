@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Craft SEO Blog Image Briefs in 2024
+title: Craft SEO Blog Image Briefs
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/craft-seo-blog-image-briefs-in-2024
-description: Master the art of creating SEO blog image briefs in 2024! Enhance your content strategy with visually compelling images that boost search rankings and engagement. Discover cutting-edge tips for optimizing images to ensure your blog stands out in the digital landscape.
+description: Master the art of creating SEO blog image briefs! Enhance your content strategy with visually compelling images that boost search rankings and engagement. Discover cutting-edge tips for optimizing images to ensure your blog stands out in the digital landscape.
 ---
 
-# Craft SEO Blog Image Briefs in 2024
+# Craft SEO Blog Image Briefs
 
 ### Case of usage:
 > Get images that would explain the article

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Storybrand Guide for Your Homepage 2024
+title: Storybrand Guide for Your Homepage
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/storybrand-guide-for-your-homepage-2024
-description: Unlock the potential of your homepage in 2024 with the Storybrand Guide. Enhance clarity and engage your audience with proven strategies, crafting a compelling narrative that turns visitors into loyal customers. Elevate your brand's story and grow your online presence.
+description: Unlock the potential of your homepage with the Storybrand Guide. Enhance clarity and engage your audience with proven strategies, crafting a compelling narrative that turns visitors into loyal customers. Elevate your brand's story and grow your online presence.
 ---
 
-# Storybrand Guide for Your Homepage 2024
+# Storybrand Guide for Your Homepage
 
 ### Case of usage:
 > Create home page copy using the StoryBrand Method
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt
+# DocGPT.ai Prompt
 
 [TARGETLANGUAGE]  
 Write website copy for the homepage using the keyword. The first section is Hero Section. Capture the visitor's attention here. The headline should identify what they need and explain how it can make their lives better if they have it. It should include a call to action. Building a StoryBrand is about making your customer the hero of a story. The Seven Big Ideas The customer is the hero, not your brand. Companies tend to sell solutions to external problems, but customers buy solutions to internal problems. Customers aren’t looking for another hero; they’re looking for a guide. All copy should position, not call, the customer the hero directly but make them feel like they found the guide they need so they can be the hero, without saying they are the hero.

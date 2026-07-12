@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Ebook Title Subtitle Creator 2024
+title: Ebook Title Subtitle Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ebook-title-subtitle-creator-2024
-description: Discover the ultimate tool for crafting compelling ebook titles and subtitles with "Ebook Title Subtitle Creator 2024." This innovative solution enhances your ebook's visibility and appeal, ensuring your content stands out in the competitive digital marketplace. Perfect for authors and publishers!
+description: Discover the ultimate tool for crafting compelling ebook titles and subtitles with "Ebook Title Subtitle Creator." This innovative solution enhances your ebook's visibility and appeal, ensuring your content stands out in the competitive digital marketplace. Perfect for authors and publishers!
 ---
 
-# Ebook Title Subtitle Creator 2024
+# Ebook Title Subtitle Creator
 
 ### Case of usage:
 > Create 5 ebook title and subtitle for your ebook
@@ -55,8 +55,8 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 Access more resources at:  
 
 - Get access to GPT for Sheets prompts: https://docgpt.ai/gpt-for-sheets/
-- Access to 500+ Premium DocGPT.AI Prompt Templates.
-- 2099+ Ultimate DocGPT.AI Marketing Prompts.
+- Access to 500+ Premium DocGPT.ai Prompt Templates.
+- 2099+ Ultimate DocGPT.ai Marketing Prompts.
 ```
 
 Use following formula inside GPT for Sheets

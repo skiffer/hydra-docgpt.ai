@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimal Audience Targeting for Ads Campaign in 2024
+title: Optimal Audience Targeting for Ads Campaign
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimal-audience-targeting-for-ads-campaign-in-2024
-description: Master the art of Optimal Audience Targeting for Ads Campaign in 2024 with our in-depth guide. Discover cutting-edge techniques and strategies to maximize ROI, enhance engagement, and reach the right consumers effectively. Stay ahead in the competitive landscape of digital advertising.
+description: Master the art of Optimal Audience Targeting for Ads Campaign with our in-depth guide. Discover cutting-edge techniques and strategies to maximize ROI, enhance engagement, and reach the right consumers effectively. Stay ahead in the competitive landscape of digital advertising.
 ---
 
-# Optimal Audience Targeting for Ads Campaign in 2024
+# Optimal Audience Targeting for Ads Campaign
 
 ### Case of usage:
 > Ultra Smart V5.8. Get the best possible ad sets, meta description, keywords, ads campaign for your Ecommerce Products, Facebook Ads, Google Ads, Tiktok Ads, business ads and increase your ad results today.  Input your product name and location country and let our expert provide you with age limits, gender sets, demographics, interests, specific time ranges, and location cities to create the most effective ad sets possible. By using search engine data, competitor website data, ecommerce website data, and online forum or community data, our expert will identify the most relevant target audience for your ad sets. Plus, with the option to create more than one ad set and specify the ad placement platform, you'll have the flexibility to target your audience in the most effective way possible. This will do help in Ads, Campaign, Audience Targeting, meta description, keywords, headings and ads sets.
@@ -34,7 +34,7 @@ All text should be in [TARGETLANGUAGE] which is English. Please Write in English
 
 [PROMPT]
 Important Note: At the end must provide label "The ad sets provided above are based on the latest data available as of date 01-04-2023, sourced from updated ad libraries, website analyses, and machine learning algorithms.
-This response is provided by the help of DocGPT.AI. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/"
+This response is provided by the help of DocGPT.ai. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/"
 
 I want you to act as a marketing specialist and ad expert to create a comprehensive ad campaign for the provided product or service and target location. Please follow the instructions below:
 
@@ -71,7 +71,7 @@ After completing this task now I want you to act as a professional copywriter wi
 -Research the target audience demographics, such as age, gender, location, interests, and other characteristics that would help you to have a better understanding of the target audience, and create an ad that would be more appealing to them.
 
 Finally, please include the label " The ad sets provided above are based on the latest data available as of date [current date minus 2/3/5 days], sourced from updated ad libraries, website analyses, and machine learning algorithms.
-"This response is provided by the help of DocGPT.AI. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/" at the end of your response.
+"This response is provided by the help of DocGPT.ai. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/" at the end of your response.
 
 Please ensure that the ad sets are precise and comprehensive, with a focus on detailed aspects. Do not echo the prompts or provide unnecessary information. Stick to the main points and provide data in a complete format. Don't provide any extra text or sentence other than Ad sets.
 
@@ -152,14 +152,14 @@ Call to Action: Order Now
 Image: The image should be a high-quality picture of the Gajar Halwa, showcasing its cultural motif and high-quality ingredients.
 
 The ad sets provided above are based on the latest data available as of date 01-04-2023, sourced from updated ad libraries, website analyses, and machine learning algorithms. 
-This response is provided by the help of DocGPT.AI. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/
+This response is provided by the help of DocGPT.ai. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/
 
 Note: again reminder this is a only sample data just to made you understand better about output template.
 Use real time data according to user input and following the given output pattern in the output.
 Note: Don't mix dummy data with user input and output.
 
 Important Note: at the end of the response must provide label "The ad sets provided above are based on the latest data available as of date 01-04-2023, sourced from updated ad libraries, website analyses, and machine learning algorithms.
-This response is provided by the help of DocGPT.AI. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/"
+This response is provided by the help of DocGPT.ai. Visit Us For Awesome insight & guide: https://docgpt.ai/gpt-for-sheets/"
 don't provide any other note or text.
 ```
 

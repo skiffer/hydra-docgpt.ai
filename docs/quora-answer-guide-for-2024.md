@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Quora Answer Guide for 2024
+title: Quora Answer Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/quora-answer-guide-for-2024
-description: Unlock the secrets of Quora with our Quora Answer Guide for 2024! Learn how to craft compelling answers, boost your visibility, and drive traffic to your site. Perfect for marketers, bloggers, and businesses looking to leverage Quora for growth and engagement.
+description: Unlock the secrets of Quora with our Quora Answer Guide! Learn how to craft compelling answers, boost your visibility, and drive traffic to your site. Perfect for marketers, bloggers, and businesses looking to leverage Quora for growth and engagement.
 ---
 
-# Quora Answer Guide for 2024
+# Quora Answer Guide
 
 ### Case of usage:
 > Write a personalized Quora answer to any query. Upvote if you like it. Check out my "Magic Article Generator."
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 
 Read the below-mentioned Quora Question. Pretend to be an expert on the subject. Write 2 paragraphs of 300 words long answer. Be informal and greet the author. Write it in [TARGETLANGUAGE]. Personalize the comment to sound as if you are talking to the author. Write a fictional story from your own life.
 

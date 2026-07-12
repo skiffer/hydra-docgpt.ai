@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Thesis and Academic Articles Literature Review 2024
+title: Thesis and Academic Articles Literature Review
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/thesis-and-academic-articles-literature-review-2024
-description: Discover the essential insights for your 2024 thesis and academic articles with our literature review service. Expertly crafted, comprehensive, and up-to-date analysis to enhance your research quality and academic success. Elevate your scholarly work today!
+description: Discover the essential insights for your thesis and academic articles with our literature review service. Expertly crafted, comprehensive, and up-to-date analysis to enhance your research quality and academic success. Elevate your scholarly work today!
 ---
 
-# Thesis and Academic Articles Literature Review 2024
+# Thesis and Academic Articles Literature Review
 
 ### Case of usage:
 > Write Literature Reviews Best 100% Quality

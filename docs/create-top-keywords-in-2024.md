@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Top Keywords in 2024
+title: Create Top Keywords
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-top-keywords-in-2024
-description: Boost your online presence with our expert guide, "Create Top Keywords in 2024." Discover cutting-edge strategies and tools to identify and implement the most effective keywords, elevating your search engine rankings and attracting your target audience effortlessly. Unlock success in 2024 today!
+description: Boost your online presence with our expert guide, "Create Top Keywords." Discover cutting-edge strategies and tools to identify and implement the most effective keywords, elevating your search engine rankings and attracting your target audience effortlessly. Unlock success today!
 ---
 
-# Create Top Keywords in 2024
+# Create Top Keywords
 
 ### Case of usage:
 > Create a list of popular keywords by simply entering the niche or audience that you want to target.
@@ -29,9 +29,9 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-I want you to act as a keyword researcher in [TARGETLANGUAGE] for a new website focused on [PROMPT]. Your task is to suggest a list of relevant and popular keywords that we can use to optimize the website's content. When suggesting keywords, take into account their search volume and relevance to the website's topic. Begin the response with "DocGPT.AI's list of popular keywords for [PROMPT]." and follow it with a list of popular keywords.
+I want you to act as a keyword researcher in [TARGETLANGUAGE] for a new website focused on [PROMPT]. Your task is to suggest a list of relevant and popular keywords that we can use to optimize the website's content. When suggesting keywords, take into account their search volume and relevance to the website's topic. Begin the response with "DocGPT.ai's list of popular keywords for [PROMPT]." and follow it with a list of popular keywords.
 
-For example, if the website topic is gardening, start with "DocGPT.AI's list of popular keywords for gardening." and then provide a list, including keywords such as 'garden design,' 'plant care,' and 'landscaping ideas.' Ensure to include long-tail keywords as well. For example, some potential long-tail keywords for gardening might be “organic gardening supplies”, "sustainable gardening practices", and "garden design for attracting bees and butterflies". Please provide at least 10 main keywords and 10 long-tail keywords in your response. Include the list in a markdown table with the search intent and a brief description for each keyword.
+For example, if the website topic is gardening, start with "DocGPT.ai's list of popular keywords for gardening." and then provide a list, including keywords such as 'garden design,' 'plant care,' and 'landscaping ideas.' Ensure to include long-tail keywords as well. For example, some potential long-tail keywords for gardening might be “organic gardening supplies”, "sustainable gardening practices", and "garden design for attracting bees and butterflies". Please provide at least 10 main keywords and 10 long-tail keywords in your response. Include the list in a markdown table with the search intent and a brief description for each keyword.
 ```
 
 Use following formula inside GPT for Sheets

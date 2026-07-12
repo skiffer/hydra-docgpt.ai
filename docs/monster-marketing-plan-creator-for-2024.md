@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Monster Marketing Plan Creator for 2024
+title: Monster Marketing Plan Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/monster-marketing-plan-creator-for-2024
-description: Unleash the power of your business with the Monster Marketing Plan Creator for 2024. Craft personalized, high-impact strategies effortlessly to boost your brand's visibility, drive traffic, and increase conversions. Perfect for businesses aiming for exponential growth in the new year!
+description: Unleash the power of your business with the Monster Marketing Plan Creator. Craft personalized, high-impact strategies effortlessly to boost your brand's visibility, drive traffic, and increase conversions. Perfect for businesses aiming for exponential growth in the new year!
 ---
 
-# Monster Marketing Plan Creator for 2024
+# Monster Marketing Plan Creator
 
 ### Case of usage:
 > There are marketing plans, and there are Monster Marketing Plans—full of strategies and tactics custom tailored to your needs. You will definitely need to hit CONTINUE!

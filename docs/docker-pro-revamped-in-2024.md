@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Docker Pro Revamped in 2024
+title: Docker Pro Revamped
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/docker-pro-revamped-in-2024
-description: Discover the enhanced capabilities of Docker Pro Revamped in 2024, designed for seamless container management and increased productivity. Explore cutting-edge features, robust security, and streamlined workflows that empower developers to innovate faster and more efficiently.
+description: Discover the enhanced capabilities of Docker Pro Revamped, designed for seamless container management and increased productivity. Explore cutting-edge features, robust security, and streamlined workflows that empower developers to innovate faster and more efficiently.
 ---
 
-# Docker Pro Revamped in 2024
+# Docker Pro Revamped
 
 ### Case of usage:
 > Struggling with containerization? I can help!

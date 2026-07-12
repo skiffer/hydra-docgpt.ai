@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Design Your Customer Journey in 2024
+title: Design Your Customer Journey
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/design-your-customer-journey-in-2024
-description: Unlock success in 2024 by designing an optimal customer journey. Harness cutting-edge strategies to enhance user experience, boost engagement, and drive conversions. Stay ahead with innovative insights tailored for the modern digital landscape.
+description: Unlock success by designing an optimal customer journey. Harness cutting-edge strategies to enhance user experience, boost engagement, and drive conversions. Stay ahead with innovative insights tailored for the modern digital landscape.
 ---
 
-# Design Your Customer Journey in 2024
+# Design Your Customer Journey
 
 ### Case of usage:
 > Customer Journey Creator by Keyword

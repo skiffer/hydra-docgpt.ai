@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Headline and Article Rewriter Tips for SEO in 2024
+title: Headline and Article Rewriter Tips for SEO
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/headline-and-article-rewriter-tips-for-seo-in-2024
-description: Enhance your content strategy with our Headline and Article Rewriter Tips for SEO in 2024. Discover cutting-edge techniques to boost rankings, engage readers, and outperform competitors. Stay ahead in the SEO game with expert advice tailored for optimal online visibility.
+description: Enhance your content strategy with our Headline and Article Rewriter Tips for SEO. Discover cutting-edge techniques to boost rankings, engage readers, and outperform competitors. Stay ahead in the SEO game with expert advice tailored for optimal online visibility.
 ---
 
-# Headline and Article Rewriter Tips for SEO in 2024
+# Headline and Article Rewriter Tips for SEO
 
 ### Case of usage:
 > Write detail optimized headline and article by just putting the blog headline and article. I need 5 more upvotes so that I can create more prompts. Hit upvote(Like) button. Comfirm [by typing "write the complete article"] to get results.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI - Writing Template
+# DocGPT.ai - Writing Template
 
 ## Introduction:
 Use this template to create engaging content effortlessly. Whether you're writing articles, advertisements, or social media posts, this template will guide you through the process.

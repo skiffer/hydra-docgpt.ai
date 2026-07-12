@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Quick Fact Extraction and Summary Skills in 2024
+title: Quick Fact Extraction and Summary Skills
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/quick-fact-extraction-and-summary-skills-in-2024
-description: Master the art of Quick Fact Extraction and Summary Skills in 2024! Enhance your efficiency by learning the latest techniques to swiftly extract and summarize crucial information. Stay ahead in your field with cutting-edge strategies tailored for rapid comprehension and effective communication.
+description: Master the art of Quick Fact Extraction and Summary Skills! Enhance your efficiency by learning the latest techniques to swiftly extract and summarize crucial information. Stay ahead in your field with cutting-edge strategies tailored for rapid comprehension and effective communication.
 ---
 
-# Quick Fact Extraction and Summary Skills in 2024
+# Quick Fact Extraction and Summary Skills
 
 ### Case of usage:
 > Extract all facts as emoji bullets and summarize the text given.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Amazon Product Review Writer Guide 2024
+title: Amazon Product Review Writer Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/amazon-product-review-writer-guide-2024
-description: Discover the ultimate Amazon Product Review Writer Guide for 2024. Master the art of crafting compelling and SEO-optimized reviews to boost sales and visibility. Perfect for writers and marketers aiming to enhance product credibility and consumer trust on Amazon.
+description: Discover the ultimate Amazon Product Review Writer Guide. Master the art of crafting compelling and SEO-optimized reviews to boost sales and visibility. Perfect for writers and marketers aiming to enhance product credibility and consumer trust on Amazon.
 ---
 
-# Amazon Product Review Writer Guide 2024
+# Amazon Product Review Writer Guide
 
 ### Case of usage:
 > Write a product review after reading description

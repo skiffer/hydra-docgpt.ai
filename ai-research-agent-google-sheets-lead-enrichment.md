@@ -100,7 +100,7 @@ A practical research-agent sheet chains visible steps, each as a formula column 
 
 Some teams reach for heavier autonomous agents or enrichment platforms. GPT for Sheets keeps each step visible as a formula, with source data, output, scores, and QA labels in one Google Sheet. That makes it a lighter, reviewable alternative when you want AI research where your list already lives rather than a separate system.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

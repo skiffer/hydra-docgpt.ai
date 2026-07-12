@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Negative Prompts for LeonardoAI in 2024
+title: Negative Prompts for LeonardoAI
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/negative-prompts-for-leonardoai-in-2024
-description: Discover the latest in AI art with "Negative Prompts for LeonardoAI in 2024." Master the art of crafting precise and professional negative prompts to improve your AI-driven creations. Enhance your artistic output and stay ahead in the ever-evolving world of AI technology.
+description: Discover the latest in AI art with "Negative Prompts for LeonardoAI." Master the art of crafting precise and professional negative prompts to improve your AI-driven creations. Enhance your artistic output and stay ahead in the ever-evolving world of AI technology.
 ---
 
-# Negative Prompts for LeonardoAI in 2024
+# Negative Prompts for LeonardoAI
 
 ### Case of usage:
 > Get the best Negative Prompts to enhance your creations and artworks on LeonardoAI (leonardo.ai), making them even more beautiful and free from defects and deformities.
@@ -37,7 +37,7 @@ Using this list of negative prompts as a template: incorrect hands, extra digits
 
 Based on the user's description, generate negative prompts without redundancy. If necessary, incorporate new negative prompts beyond the listed ones.
 
-Initially, refine the user's description for optimal interpretation by DocGPT.AI's models such as GPT-4, GPT-3.5, or equivalents.
+Initially, refine the user's description for optimal interpretation by DocGPT.ai's models such as GPT-4, GPT-3.5, or equivalents.
 
 Next, produce the appropriate negative prompts in the chosen language: [TARGETLANGUAGE].
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Custom Word Blog Article Plus Title in 2024
+title: SEO Custom Word Blog Article Plus Title
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-custom-word-blog-article-plus-title-in-2024
-description: Enhance your online presence in 2024 with our SEO Custom Word Blog Article Plus Title service. Tailored to boost search engine rankings, engage readers, and drive traffic, our expertly crafted articles ensure your content stands out in the digital landscape. Optimize today for success!
+description: Enhance your online presence with our SEO Custom Word Blog Article Plus Title service. Tailored to boost search engine rankings, engage readers, and drive traffic, our expertly crafted articles ensure your content stands out in the digital landscape. Optimize today for success!
 ---
 
-# SEO Custom Word Blog Article Plus Title in 2024
+# SEO Custom Word Blog Article Plus Title
 
 ### Case of usage:
 > Proficient content writer writing about [Keyword] with custom clickbait tiles. Plagiarism-Free, Anti-AI-Detection, Unique, SEO Optimized, etc. 
@@ -33,7 +33,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 Act as a high-end, omniscient, expert article writer and copywriter that is a very proficient SEO content writer that writes so fluently and eloquently in [TARGETLANGUAGE] that you outrank other authoritative websites. You are an expert and an authority in the keyword I provide you with. You are 100% REQUIRED to use Markdown language when creating headings, that is, the main title should be created with H1 and subheadings with H2, H3, H4, etc. Your job is to create two tables.
 
-Table ONE (1): Provide a well-structured outline formatted in markdown language, using appropriate header tags for the article. Include an Introduction, a Conclusion, and an FAQ section (the questions for the FAQs will be formatted as H4 and bold). DO NOT preface the headings with text like, “H2” “Subheading B” “Section 1:”, etc. At the bottom of the outline will be a 140-character meta description, an excerpt or summary, a roughly 45-character URL slug, and a list of 15 tags to describe the article written in paragraph form with each tag separated with a “,”. This outline will be for you, DocGPT.AI, to use when writing the entire article, yourself. The outline MUST have a MINIMUM of 14 H2 Headings, and 30 relevant H3 Subheadings. After you have crafted this response, you must say exactly this: 
+Table ONE (1): Provide a well-structured outline formatted in markdown language, using appropriate header tags for the article. Include an Introduction, a Conclusion, and an FAQ section (the questions for the FAQs will be formatted as H4 and bold). DO NOT preface the headings with text like, “H2” “Subheading B” “Section 1:”, etc. At the bottom of the outline will be a 140-character meta description, an excerpt or summary, a roughly 45-character URL slug, and a list of 15 tags to describe the article written in paragraph form with each tag separated with a “,”. This outline will be for you, DocGPT.ai, to use when writing the entire article, yourself. The outline MUST have a MINIMUM of 14 H2 Headings, and 30 relevant H3 Subheadings. After you have crafted this response, you must say exactly this: 
 “Please let me know how many total H2s you would like to be in the outline, with each H2 followed by a minimum of 7 relevant H3 subheadings. Once you agree with the outline, tell me: Proceed with the comprehensive article, formatted using markdown language. Remember to use every detail of instruction from my first message to you, at the top of this chat.”
 
 Table TWO (2): (THIS IS A SEPARATE MESSAGE FROM YOU! DO NOT WRITE THE ARTICLE UNTIL YOU CONFIRM THE OUTLINE!) Create THREE (3) captivating title(s) based on the outline, and the keyword or keywords I provide. The title should be short, unique, clickbait-worthy, engaging and provoke curiosity, with less than 60 characters. Every title has to satisfy 3 main requirements: 1. It starts with the keyword you’re targeting for SEO, If you’re targeting a keyword that wouldn’t make grammatical sense to put in the title as-is, you can change it to a close variation; 2. It gives the reader a reason to click (value), Think: What do your readers want and how does your article help them get it; 3. It offers a unique take on the topic, Does your title stand out from the crowd on the SERPs? Or is it just a rehashing of the same title everyone else uses? Why should someone click on your article over another one? Keyword + Value + Unique Angle = Great Title. Incorporate power words to create excitement, consider using a number to add appeal, and have a positive or negative sentiment to grab readers' attention.
@@ -46,7 +46,7 @@ The article WILL NOT BE LESS THAN [VARIABLE3] WORDS. FAQs will be at the end of 
 
 Now let’s start the process. The keyword I am providing for you to base the article on is the keyword “[PROMPT]” and additional keywords to include in the article are “[VARIABLE1]”.
 
-For more tools, visit: [DocGPT.AI](https://docgpt.ai/gpt-for-sheets)
+For more tools, visit: [DocGPT.ai](https://docgpt.ai/gpt-for-sheets)
 ```
 
 Use following formula inside GPT for Sheets

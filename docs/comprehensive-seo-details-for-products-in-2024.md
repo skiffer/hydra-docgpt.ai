@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive SEO Details for Products in 2024
+title: Comprehensive SEO Details for Products
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-seo-details-for-products-in-2024
-description: Unlock the potential of your online store with cutting-edge SEO strategies tailored for 2024. Dive deep into product-specific techniques to boost visibility, enhance rankings, and drive sales. Stay ahead in the digital race with our comprehensive SEO insights.
+description: Unlock the potential of your online store with cutting-edge SEO strategies tailored. Dive deep into product-specific techniques to boost visibility, enhance rankings, and drive sales. Stay ahead in the digital race with our comprehensive SEO insights.
 ---
 
-# Comprehensive SEO Details for Products in 2024
+# Comprehensive SEO Details for Products
 
 ### Case of usage:
 > Description, Details, FAQ, Genre, Themes, Conclusion,11 SEO Keyphrases, Meta Description, SEO Title, 25 tags. Attempts to fit all content into a single response. If a section is too short simply ask it to add more. Ex. "Add more product tags". The more Info you give the better info you get!

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: UX UI Design Ideas for Midjourney V5 in 2024
+title: UX UI Design Ideas for Midjourney V5
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ux-ui-design-ideas-for-midjourney-v5-in-2024
-description: Explore cutting-edge UX/UI design ideas for Midjourney V5 in 2024. Discover innovative trends, techniques, and best practices to enhance user experience and interface design. Stay ahead in the digital landscape with our expert insights and creative inspiration.
+description: Explore cutting-edge UX/UI design ideas for Midjourney V5. Discover innovative trends, techniques, and best practices to enhance user experience and interface design. Stay ahead in the digital landscape with our expert insights and creative inspiration.
 ---
 
-# UX UI Design Ideas for Midjourney V5 in 2024
+# UX UI Design Ideas for Midjourney V5
 
 ### Case of usage:
 > Write a basic short concept of your website or specific page, let ChatGPT do its magic, and generate 6 amazing prompts for Midjourney.

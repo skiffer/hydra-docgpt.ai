@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Mastering Java Skills in 2024
+title: Mastering Java Skills
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/mastering-java-skills-in-2024
-description: Unlock your potential in 2024 with "Mastering Java Skills." This comprehensive guide is designed to elevate your coding proficiency, whether you're a beginner or seeking to refine your expertise. Stay ahead in the tech world by mastering Java with this essential resource.
+description: Unlock your potential with "Mastering Java Skills." This comprehensive guide is designed to elevate your coding proficiency, whether you're a beginner or seeking to refine your expertise. Stay ahead in the tech world by mastering Java with this essential resource.
 ---
 
-# Mastering Java Skills in 2024
+# Mastering Java Skills
 
 ### Case of usage:
 > Java giving you a hard time? I can help you out!

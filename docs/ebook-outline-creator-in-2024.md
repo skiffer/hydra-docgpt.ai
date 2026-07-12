@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: eBook Outline Creator in 2024
+title: eBook Outline Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ebook-outline-creator-in-2024
-description: Unleash your writing potential in 2024 with our cutting-edge eBook Outline Creator. Easily draft, organize, and refine your eBook content. Perfect for authors, bloggers, and content creators seeking efficiency and creativity. Start transforming ideas into structured masterpieces today!
+description: Unleash your writing potential with our cutting-edge eBook Outline Creator. Easily draft, organize, and refine your eBook content. Perfect for authors, bloggers, and content creators seeking efficiency and creativity. Start transforming ideas into structured masterpieces today!
 ---
 
-# eBook Outline Creator in 2024
+# eBook Outline Creator
 
 ### Case of usage:
 > Create the best ebook Outline. Enter your title and let the AI do the Work

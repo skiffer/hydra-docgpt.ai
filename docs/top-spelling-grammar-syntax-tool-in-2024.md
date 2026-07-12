@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Spelling Grammar Syntax Tool in 2024
+title: Top Spelling Grammar Syntax Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-spelling-grammar-syntax-tool-in-2024
-description: Discover the leading Spelling, Grammar, and Syntax Tool of 2024, designed to elevate your writing with precise corrections and intelligent suggestions. Enhance clarity and professionalism in every document, whether for academic, business, or personal use. Maximize your writing potential today!
+description: Discover the leading Spelling, Grammar, and Syntax Tool of, designed to elevate your writing with precise corrections and intelligent suggestions. Enhance clarity and professionalism in every document, whether for academic, business, or personal use. Maximize your writing potential today!
 ---
 
-# Top Spelling Grammar Syntax Tool in 2024
+# Top Spelling Grammar Syntax Tool
 
 ### Case of usage:
 > Struggle with writing because of your Dyslexia? This Spelling and Grammar corrector is just what you need.

@@ -100,7 +100,7 @@ A practical sheet for this workflow usually starts with raw evidence and ends wi
 
 For agents who do not want a separate GTM workspace, GPT for Sheets can act like a Clay-in-Sheets layer for list research and personalization. Clay and similar tools can be powerful for teams that need a dedicated GTM workspace. GPT for Sheets is different: it keeps source columns, formulas, AI outputs, and human review labels in Google Sheets so operators can improve one workflow without migrating the whole process.
 
-DocGPT.AI is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
+DocGPT.ai is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
 
 ## Use cases
 

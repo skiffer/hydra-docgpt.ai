@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How To Create Bulk Pages for Weebly using ChatGPT in 2024
+title: How To Create Bulk Pages for Weebly using ChatGPT
 nav_order: 1
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-bulk-pages-for-weebly-using-chatgpt-in-2024
 description: Learn how to efficiently create bulk pages for Weebly with ChatGPT. This comprehensive guide will streamline your content creation process, optimize your workflow, and enhance your website's SEO performance.
 ---
 
-# How To Create Bulk Pages for Weebly using ChatGPT in 2024
+# How To Create Bulk Pages for Weebly using ChatGPT
 
 Creating bulk pages for Weebly can be a time-consuming task, but with ChatGPT and GPT for Sheets, you can streamline this process and enhance your website's SEO performance. This guide will walk you through the steps to set up your workflow, generate and optimize bulk pages, and ensure your content stands out.
 

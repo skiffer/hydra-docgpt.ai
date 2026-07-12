@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Rank Math Powered Article Writer in 2024
+title: Rank Math Powered Article Writer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/rank-math-powered-article-writer-in-2024
-description: Unlock the potential of your content with our Rank Math Powered Article Writer in 2024. Seamlessly boost SEO rankings and drive traffic with AI-optimized articles tailored for maximum visibility and engagement. Transform your online presence and stay ahead of the competition.
+description: Unlock the potential of your content with our Rank Math Powered Article Writer. Seamlessly boost SEO rankings and drive traffic with AI-optimized articles tailored for maximum visibility and engagement. Transform your online presence and stay ahead of the competition.
 ---
 
-# Rank Math Powered Article Writer in 2024
+# Rank Math Powered Article Writer
 
 ### Case of usage:
 > SEO Optimized Article Powered by Rank Math, all you have to do is copy and paste it into your blog post.
@@ -36,7 +36,7 @@ Please ignore all previous instructions. Following the guidelines provided by [R
 4) Meta Description: SEO Friendly meta description within 155 characters including Above Focus Keywords.
 5) Alt text image: represents the contents, mood, or theme of an article.
 
-For more information on AI tools, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+For more information on AI tools, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

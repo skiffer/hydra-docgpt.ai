@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Humanlike SEO Page with Meta in 2024
+title: Create Humanlike SEO Page with Meta
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-humanlike-seo-page-with-meta-in-2024
-description: Unlock the secrets to crafting a humanlike SEO page with Meta in 2024. Master cutting-edge strategies to enhance engagement, boost rankings, and elevate user experience. Turn your content into an intuitive and authoritative resource that search engines and users love.
+description: Unlock the secrets to crafting a humanlike SEO page with Meta. Master cutting-edge strategies to enhance engagement, boost rankings, and elevate user experience. Turn your content into an intuitive and authoritative resource that search engines and users love.
 ---
 
-# Create Humanlike SEO Page with Meta in 2024
+# Create Humanlike SEO Page with Meta
 
 ### Case of usage:
 > Generate SEO optimized page from ANY content (a page title, an existing post, or a long article). Drop an optional keyword list at the end.

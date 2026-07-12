@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting Effective Keyword Strategy 2024
+title: Crafting Effective Keyword Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-effective-keyword-strategy-2024
-description: Unlock the potential of your digital presence with our comprehensive guide on "Crafting Effective Keyword Strategy 2024." Discover advanced techniques and insights to enhance your search engine rankings, boost organic traffic, and stay ahead in the ever-evolving SEO landscape.
+description: Unlock the potential of your digital presence with our comprehensive guide on "Crafting Effective Keyword Strategy." Discover advanced techniques and insights to enhance your search engine rankings, boost organic traffic, and stay ahead in the ever-evolving SEO landscape.
 ---
 
-# Crafting Effective Keyword Strategy 2024
+# Crafting Effective Keyword Strategy
 
 ### Case of usage:
 > Create keyword strategy and SEO plan from 1 keyword

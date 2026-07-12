@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Ultimate Copywriter Resource 2024
+title: Ultimate Copywriter Resource
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ultimate-copywriter-resource-2024
-description: Discover the "Ultimate Copywriter Resource 2024," your go-to guide for mastering the art of persuasive writing. Packed with the latest tools, techniques, and insights, elevate your copywriting skills and boost your creative potential to new heights in 2024!
+description: Discover the "Ultimate Copywriter Resource," your go-to guide for mastering the art of persuasive writing. Packed with the latest tools, techniques, and insights, elevate your copywriting skills and boost your creative potential to new heights!
 ---
 
-# Ultimate Copywriter Resource 2024
+# Ultimate Copywriter Resource
 
 ### Case of usage:
 > The Ultimate Time Saver for ChatGPT: Introducing 1-Click Prompts for SEO, Marketing, Copywriting, and More

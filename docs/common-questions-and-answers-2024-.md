@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Common Questions and Answers 2024 
+title: Common Questions and Answers
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/common-questions-and-answers-2024-
-description: Discover the most frequently asked questions and insightful answers of 2024 in our comprehensive guide. Stay informed with up-to-date information across various topics, offering clear and concise solutions to your queries. Perfect for curious minds seeking clarity and knowledge.
+description: Discover the most frequently asked questions and insightful answers of in our comprehensive guide. Stay informed with up-to-date information across various topics, offering clear and concise solutions to your queries. Perfect for curious minds seeking clarity and knowledge.
 ---
 
-# Common Questions and Answers 2024 
+# Common Questions and Answers
 
 ### Case of usage:
 > Get clean FAQ  & answers from one keyword

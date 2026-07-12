@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instantly Rewrite Persuasive Paragraphs in 2024
+title: Instantly Rewrite Persuasive Paragraphs
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instantly-rewrite-persuasive-paragraphs-in-2024
-description: Effortlessly craft compelling content with "Instantly Rewrite Persuasive Paragraphs in 2024." Elevate your writing, enhance clarity, and captivate your audience. Transform ordinary text into persuasive masterpieces quickly and efficiently. Perfect for professionals and creatives alike.
+description: Effortlessly craft compelling content with "Instantly Rewrite Persuasive Paragraphs." Elevate your writing, enhance clarity, and captivate your audience. Transform ordinary text into persuasive masterpieces quickly and efficiently. Perfect for professionals and creatives alike.
 ---
 
-# Instantly Rewrite Persuasive Paragraphs in 2024
+# Instantly Rewrite Persuasive Paragraphs
 
 ### Case of usage:
 > I will rewrite any paragraph to make it more persuasive on any topic.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO YouTube Type Beat Title Description Tags Tips 2024
+title: SEO YouTube Type Beat Title Description Tags Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-youtube-type-beat-title-description-tags-tips-2024
-description: Enhance your 2024 YouTube SEO strategy with our guide on crafting impactful type beat titles, descriptions, and tags. Discover expert tips to boost visibility, optimize algorithms, and grow your audience effectively. Perfect for musicians and content creators aiming for success.
+description: Enhance your YouTube SEO strategy with our guide on crafting impactful type beat titles, descriptions, and tags. Discover expert tips to boost visibility, optimize algorithms, and grow your audience effectively. Perfect for musicians and content creators aiming for success.
 ---
 
-# SEO YouTube Type Beat Title Description Tags Tips 2024
+# SEO YouTube Type Beat Title Description Tags Tips
 
 ### Case of usage:
 > Create SEO optimized Type Beat Videos in Seconds!

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Engaging LinkedIn Post Ideas in 2024
+title: Engaging LinkedIn Post Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/engaging-linkedin-post-ideas-in-2024
-description: Discover the top engaging LinkedIn post ideas for 2024! From interactive polls to insightful industry trends, boost your professional presence and drive engagement with these creative content strategies. Stay ahead of the curve and captivate your audience today!
+description: Discover the top engaging LinkedIn post ideas! From interactive polls to insightful industry trends, boost your professional presence and drive engagement with these creative content strategies. Stay ahead of the curve and captivate your audience today!
 ---
 
-# Engaging LinkedIn Post Ideas in 2024
+# Engaging LinkedIn Post Ideas
 
 ### Case of usage:
 > Create a 100% original and plagiarism-free LinkedIn post that's engaging and SEO-friendly. Also gives you 10 related hashtags and emojis. If you like this, upvote it! 

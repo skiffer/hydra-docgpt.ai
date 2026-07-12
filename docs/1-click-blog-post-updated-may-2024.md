@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: 1 Click Blog Post Updated May 2024
+title: 1 Click Blog Post
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/1-click-blog-post-updated-may-2024
-description: Effortlessly refresh your content with "1 Click Blog Post Updated May 2024." Our intuitive tool ensures your blog stays current, relevant, and SEO-optimized, driving more traffic to your website. Boost engagement and enhance your online presence with just one click!
+description: Effortlessly refresh your content with "1 Click Blog Post " Our intuitive tool ensures your blog stays current, relevant, and SEO-optimized, driving more traffic to your website. Boost engagement and enhance your online presence with just one click!
 ---
 
-# 1 Click Blog Post Updated May 2024
+# 1 Click Blog Post
 
 ### Case of usage:
 > Create a blog post in 1 click

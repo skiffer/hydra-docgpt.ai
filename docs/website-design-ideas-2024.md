@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Website Design Ideas 2024
+title: Website Design Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/website-design-ideas-2024
-description: Discover the latest trends in website design for 2024 with our insightful guide! Explore innovative ideas, modern aesthetics, and user-friendly features that will elevate your online presence. Stay ahead of the curve and create a stunning, future-proof website today!
+description: Discover the latest trends in website design with our insightful guide! Explore innovative ideas, modern aesthetics, and user-friendly features that will elevate your online presence. Stay ahead of the curve and create a stunning, future-proof website today!
 ---
 
-# Website Design Ideas 2024
+# Website Design Ideas
 
 ### Case of usage:
 > Create a website layout (Sitemap) from just 1 or 2 keywords. 

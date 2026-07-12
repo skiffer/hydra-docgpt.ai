@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Yoast Pro Article Ranking Master in 2024
+title: Yoast Pro Article Ranking Master
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/yoast-pro-article-ranking-master-in-2024
-description: Discover the ultimate guide to mastering article ranking with Yoast Pro in 2024. Boost your SEO skills, enhance visibility, and drive traffic with expert tips and tools. Stay ahead in the digital landscape and transform your content strategy today!
+description: Discover the ultimate guide to mastering article ranking with Yoast Pro. Boost your SEO skills, enhance visibility, and drive traffic with expert tips and tools. Stay ahead in the digital landscape and transform your content strategy today!
 ---
 
-# Yoast Pro Article Ranking Master in 2024
+# Yoast Pro Article Ranking Master
 
 ### Case of usage:
 > Attention website owners and content creators! Want to take your website's visibility to the next level? Look no further! This complete guide will unlock the power of SEO and teach you how to craft focus keyphrases, SEO titles, slugs, and meta descriptions that will skyrocket your website's visibility. [TARGETLANGUAGE]

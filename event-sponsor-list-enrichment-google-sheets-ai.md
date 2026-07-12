@@ -100,7 +100,7 @@ A practical sponsor-prospecting sheet starts with prospect notes and ends with r
 
 Sponsorship sellers sometimes evaluate enrichment platforms, but prospect lists are already tabular. GPT for Sheets keeps sponsor rows, fit scores, inferred goals, and pitch drafts in one Google Sheet, a lighter, Sheets-native option for sponsorship prospecting.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

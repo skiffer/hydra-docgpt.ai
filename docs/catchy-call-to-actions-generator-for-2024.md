@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Catchy Call to Actions Generator for 2024
+title: Catchy Call to Actions Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/catchy-call-to-actions-generator-for-2024
-description: Unlock the power of persuasive marketing with our Catchy Call to Actions Generator for 2024! Elevate your engagement and drive conversions with tailor-made calls to action that captivate your audience. Stay ahead of the competition and boost your ROI effortlessly!
+description: Unlock the power of persuasive marketing with our Catchy Call to Actions Generator! Elevate your engagement and drive conversions with tailor-made calls to action that captivate your audience. Stay ahead of the competition and boost your ROI effortlessly!
 ---
 
-# Catchy Call to Actions Generator for 2024
+# Catchy Call to Actions Generator
 
 ### Case of usage:
 > This Free CTA generator provides 20+ compelling and high-converting call to action sentences that will entice readers to click. Upvote and Support if You like it.

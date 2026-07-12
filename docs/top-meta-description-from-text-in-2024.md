@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Meta Description from Text in 2024
+title: Top Meta Description from Text
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-meta-description-from-text-in-2024
-description: Unlock the best tips for crafting compelling meta descriptions in 2024. Learn how to boost your click-through rates and SEO rankings with our expert guidelines. Stay ahead in the digital game with actionable insights for effective meta descriptions.
+description: Unlock the best tips for crafting compelling meta descriptions. Learn how to boost your click-through rates and SEO rankings with our expert guidelines. Stay ahead in the digital game with actionable insights for effective meta descriptions.
 ---
 
-# Top Meta Description from Text in 2024
+# Top Meta Description from Text
 
 ### Case of usage:
 > Write the best meta description from text provided.

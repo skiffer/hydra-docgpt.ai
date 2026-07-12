@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How to create Gemini API Keys in 2024
+title: How to create Gemini API Keys
 nav_order: 12
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-create-gemini-api-keys-in-2024
-description: How to create Gemini API Keys in 2024
+description: How to create Gemini API Keys
 ---
 
-# How to create Gemini API Keys in 2024
+# How to create Gemini API Keys
 
 
 Hello everyone! In this tutorial, I'll walk you through the process of generating a Gemini API key absolutely free. This key allows you to access Gemini, an AI model similar to GPT, for content generation tasks. Unlike traditional AI models that often require paid subscriptions, Gemini is currently in beta and does not cost anything to use.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Summarize Text or PDF with Bullet Points 2024
+title: Summarize Text or PDF with Bullet Points
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/summarize-text-or-pdf-with-bullet-points-2024
-description: Effortlessly summarize text or PDF files with bullet points using our innovative 2024 tool. Enhance clarity and streamline information for better understanding. Perfect for students, professionals, and researchers seeking concise, organized content. Try it now for efficient summaries!
+description: Effortlessly summarize text or PDF files with bullet points using our innovative tool. Enhance clarity and streamline information for better understanding. Perfect for students, professionals, and researchers seeking concise, organized content. Try it now for efficient summaries!
 ---
 
-# Summarize Text or PDF with Bullet Points 2024
+# Summarize Text or PDF with Bullet Points
 
 ### Case of usage:
 > Summarize any text (PDF, PPT, CSV, video transcript)...  Will generate summary, conclusion and detailed sections with bullet points. Output is Markdown reusable in Notion or any other application.

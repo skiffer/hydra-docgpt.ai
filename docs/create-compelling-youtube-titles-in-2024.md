@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Compelling Youtube Titles in 2024
+title: Create Compelling Youtube Titles
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-compelling-youtube-titles-in-2024
-description: Boost your YouTube views with effective and compelling titles in 2024. Learn to craft click-worthy headlines that captivate your audience, increase engagement, and rank higher in searches. Master title strategies to stay ahead in the competitive YouTube landscape.
+description: Boost your YouTube views with effective and compelling titles. Learn to craft click-worthy headlines that captivate your audience, increase engagement, and rank higher in searches. Master title strategies to stay ahead in the competitive YouTube landscape.
 ---
 
-# Create Compelling Youtube Titles in 2024
+# Create Compelling Youtube Titles
 
 ### Case of usage:
 >  Your Next Youtube Clickbate Title

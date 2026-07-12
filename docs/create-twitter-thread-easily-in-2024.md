@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Twitter Thread Easily in 2024
+title: Create Twitter Thread Easily
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-twitter-thread-easily-in-2024
-description: Effortlessly craft captivating Twitter threads in 2024 with our intuitive tool. Boost your online presence, engage audiences, and streamline your content creation process. Perfect for creators, influencers, and marketers aiming for maximum impact and interaction on Twitter.
+description: Effortlessly craft captivating Twitter threads with our intuitive tool. Boost your online presence, engage audiences, and streamline your content creation process. Perfect for creators, influencers, and marketers aiming for maximum impact and interaction on Twitter.
 ---
 
-# Create Twitter Thread Easily in 2024
+# Create Twitter Thread Easily
 
 ### Case of usage:
 > Create Twitter Threads. + Includes: Keywords,Catchy Title,Emojis. (Efficiency Matters Youtube.)

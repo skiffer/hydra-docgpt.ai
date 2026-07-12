@@ -8,7 +8,7 @@ description: "Looking for a Mailtrack (Mailsuite) alternative? See how a Sheets-
 
 Many people start with email tracking and later realize they also need to send personalized campaigns at scale. If that is you, **Mail Merge for Gmail and Google Sheets** is worth comparing as a **Mailtrack alternative** focused on spreadsheet-driven sending.
 
-This page is a factual, workflow-fit comparison. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google; trademarks belong to their respective owners.
+This page is a factual, workflow-fit comparison. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google; trademarks belong to their respective owners.
 
 [Try Mail Merge for Gmail and Sheets →](/mail-merge-for-gmail-and-sheets/)
 
@@ -111,7 +111,7 @@ Yes, follow-up sends from your Google Sheet are part of the mail merge workflow.
 
 ### Is this affiliated with Mailtrack or Mailsuite?
 
-No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google. Trademarks belong to their respective owners.
+No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google. Trademarks belong to their respective owners.
 
 ## Choose based on the job you do most
 
@@ -128,7 +128,7 @@ If tracking individual emails is your main job, a tracking-first tool may be the
     {"@type": "Question", "name": "Is Mail Merge for Gmail and Sheets a Mailtrack alternative?", "acceptedAnswer": {"@type": "Answer", "text": "It can be, if your main need is personalized campaigns from a Google Sheet rather than tracking individual emails. For tracking-only use, a tracking-first tool may be enough."}},
     {"@type": "Question", "name": "Does it include email tracking?", "acceptedAnswer": {"@type": "Answer", "text": "Tracking is available where supported. If tracking is essential to your workflow, confirm the current capabilities before switching."}},
     {"@type": "Question", "name": "Can I send follow-ups from my Sheet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, follow-up sends from your Google Sheet are part of the mail merge workflow."}},
-    {"@type": "Question", "name": "Is this affiliated with Mailtrack or Mailsuite?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google. Trademarks belong to their respective owners."}}
+    {"@type": "Question", "name": "Is this affiliated with Mailtrack or Mailsuite?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Mailtrack, Mailsuite, or Google. Trademarks belong to their respective owners."}}
   ]
 }
 </script>

@@ -8,7 +8,7 @@ description: "Looking for a Saleshandy alternative? Compare a Sheets-native Gmai
 
 If your outreach list already lives in Google Sheets, a full cold-email and sequencing platform can be more than your workflow needs. **Mail Merge for Gmail and Google Sheets** lets you send personalized Gmail campaigns straight from a spreadsheet — a focused, Workspace-native option for people searching for a **Saleshandy alternative** built around mail merge.
 
-This page compares the two approaches factually so you can decide what fits. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Saleshandy; all trademarks belong to their respective owners.
+This page compares the two approaches factually so you can decide what fits. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Saleshandy; all trademarks belong to their respective owners.
 
 [Try Mail Merge for Gmail and Sheets →](/mail-merge-for-gmail-and-sheets/)
 
@@ -101,7 +101,7 @@ No tool can guarantee inbox placement. Genuine personalization, a clean list, se
 
 ### Is this affiliated with Saleshandy?
 
-No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Saleshandy. Trademarks belong to their respective owners.
+No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Saleshandy. Trademarks belong to their respective owners.
 
 ## Choose the workflow that fits
 
@@ -118,7 +118,7 @@ If you want a complete cold-email platform with sequencing and warm-up, a dedica
     {"@type": "Question", "name": "Does Saleshandy work directly with Google Sheets?", "acceptedAnswer": {"@type": "Answer", "text": "Publicly available information indicates Saleshandy typically works from imported contacts rather than a live Google Sheet. Check Saleshandy's current documentation to confirm, since features change."}},
     {"@type": "Question", "name": "Can I keep using my own Gmail address?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mail Merge for Gmail and Sheets sends from your own Gmail or Google Workspace mailbox, so replies come back to you."}},
     {"@type": "Question", "name": "Will my outreach reach the inbox?", "acceptedAnswer": {"@type": "Answer", "text": "No tool can guarantee inbox placement. Genuine personalization, a clean list, sensible pacing, and test sends all improve your odds."}},
-    {"@type": "Question", "name": "Is this affiliated with Saleshandy?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.AI and Mail Merge are independent and not affiliated with or endorsed by Saleshandy. Trademarks belong to their respective owners."}}
+    {"@type": "Question", "name": "Is this affiliated with Saleshandy?", "acceptedAnswer": {"@type": "Answer", "text": "No. DocGPT.ai and Mail Merge are independent and not affiliated with or endorsed by Saleshandy. Trademarks belong to their respective owners."}}
   ]
 }
 </script>

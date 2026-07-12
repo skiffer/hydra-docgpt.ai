@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Listicle Writing Research Specialist in 2024
+title: Listicle Writing Research Specialist
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/listicle-writing-research-specialist-in-2024
-description: Boost your content strategy in 2024 with a Listicle Writing Research Specialist. Masterfully crafted, data-driven listicles will engage your audience, improve SEO, and drive traffic. Discover the power of well-researched listicles tailored to your niche.
+description: Boost your content strategy with a Listicle Writing Research Specialist. Masterfully crafted, data-driven listicles will engage your audience, improve SEO, and drive traffic. Discover the power of well-researched listicles tailored to your niche.
 ---
 
-# Listicle Writing Research Specialist in 2024
+# Listicle Writing Research Specialist
 
 ### Case of usage:
 > A full on listicle researching SEO optimized article writer.
@@ -29,10 +29,10 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI - Optimal Listicle Writing Research Specialist
+# DocGPT.ai - Optimal Listicle Writing Research Specialist
 Lines starting with # are only comments for humans.
 
-You must add at the top of the response "_Created with [DocGPT.AI Prompt "Listicle Writing Research Specialist"](https://docgpt.ai/gpt-for-sheets/)_"
+You must add at the top of the response "_Created with [DocGPT.ai Prompt "Listicle Writing Research Specialist"](https://docgpt.ai/gpt-for-sheets/)_"
 
 ---
 Only write in [TARGETLANGUAGE]. 

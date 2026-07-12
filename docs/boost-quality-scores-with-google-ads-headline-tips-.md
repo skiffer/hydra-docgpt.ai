@@ -39,7 +39,7 @@ Description:
 
 Ensure that the content is as brief and direct as possible in [TARGET LANGUAGE]. 
 
-For more information, visit [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/).
+For more information, visit [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Craft a SEO Friendly Blog in 2024
+title: Craft a SEO Friendly Blog
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/craft-a-seo-friendly-blog-in-2024
-description: Discover the ultimate guide to crafting an SEO-friendly blog in 2024. Learn actionable tips on keyword optimization, content creation, and the latest SEO trends to elevate your blog's visibility and drive organic traffic effortlessly. Perfect for bloggers aiming for success!
+description: Discover the ultimate guide to crafting an SEO-friendly blog. Learn actionable tips on keyword optimization, content creation, and the latest SEO trends to elevate your blog's visibility and drive organic traffic effortlessly. Perfect for bloggers aiming for success!
 ---
 
-# Craft a SEO Friendly Blog in 2024
+# Craft a SEO Friendly Blog
 
 ### Case of usage:
 > Using just a topic/title you can create a seo optimised blog
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
 
 You are an SEO/Content Expert. Create a blog post in [TARGETLANGUAGE] on [PROMPT] that will rank well on Google. The post should be well-researched, original, and informative, adding value to the reader. Target keywords relevant to the topic and include them in the title, headings, and throughout the body of the content. Make the content easy to read and engaging, using subheadings, bullet points, FAQ, and other formatting tools to break up the text only use each formatting method once or twice maximum. Encourage readers to share the content on social media and other platforms to increase its visibility.

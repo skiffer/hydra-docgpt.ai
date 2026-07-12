@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Keyword Research with One Click in 2024
+title: Top Keyword Research with One Click
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-keyword-research-with-one-click-in-2024
-description: Unlock the power of effortless SEO with "Top Keyword Research with One Click in 2024." Discover the latest tools and strategies to boost your online presence and drive targeted traffic. Experience cutting-edge technology that simplifies finding high-ranking keywords in an instant.
+description: Unlock the power of effortless SEO with "Top Keyword Research with One Click." Discover the latest tools and strategies to boost your online presence and drive targeted traffic. Experience cutting-edge technology that simplifies finding high-ranking keywords in an instant.
 ---
 
-# Top Keyword Research with One Click in 2024
+# Top Keyword Research with One Click
 
 ### Case of usage:
 > Find the Best Keywords to Bid Google First Page Ranking

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: UX UI Design Help and Idea Creator in 2024
+title: UX UI Design Help and Idea Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ux-ui-design-help-and-idea-creator-in-2024
-description: Boost your digital presence in 2024 with expert UX/UI design help and innovative ideation. Enhance user interaction and drive success with cutting-edge design solutions tailored to elevate your brand's experience. Transform ideas into impactful, user-friendly designs today!
+description: Boost your digital presence with expert UX/UI design help and innovative ideation. Enhance user interaction and drive success with cutting-edge design solutions tailored to elevate your brand's experience. Transform ideas into impactful, user-friendly designs today!
 ---
 
-# UX UI Design Help and Idea Creator in 2024
+# UX UI Design Help and Idea Creator
 
 ### Case of usage:
 > Create engaging and enjoyable experiences for users of digital products or services such as apps and websites.

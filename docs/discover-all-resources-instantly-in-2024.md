@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Discover All Resources Instantly in 2024
+title: Discover All Resources Instantly
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/discover-all-resources-instantly-in-2024
-description: Unlock the potential of 2024 with seamless access to all essential resources. Discover tips, tools, and insights instantly, ensuring you stay ahead in your field. Optimize your productivity and efficiency with the latest and greatest available now!
+description: Unlock the potential of with seamless access to all essential resources. Discover tips, tools, and insights instantly, ensuring you stay ahead in your field. Optimize your productivity and efficiency with the latest and greatest available now!
 ---
 
-# Discover All Resources Instantly in 2024
+# Discover All Resources Instantly
 
 ### Case of usage:
 > I will provide high content rich resources for any topic.

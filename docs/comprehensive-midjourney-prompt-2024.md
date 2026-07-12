@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Midjourney Prompt 2024
+title: Comprehensive Midjourney Prompt
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-midjourney-prompt-2024
-description: Unlock your team's potential in 2024 with our Comprehensive Midjourney Prompt! Expertly designed to boost productivity, enhance creativity, and guide you through successful project milestones. Ideal for professionals seeking to elevate their mid-project performance.
+description: Unlock your team's potential with our Comprehensive Midjourney Prompt! Expertly designed to boost productivity, enhance creativity, and guide you through successful project milestones. Ideal for professionals seeking to elevate their mid-project performance.
 ---
 
-# Comprehensive Midjourney Prompt 2024
+# Comprehensive Midjourney Prompt
 
 ### Case of usage:
 > Get a highly detailed Midjourney Prompt (complete with lightning and atmosphere) from just YOUR [KEYWORD]. Upvote this prompt if you like it, so I can make more in the near future!

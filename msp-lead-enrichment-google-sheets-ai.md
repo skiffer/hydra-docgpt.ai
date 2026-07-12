@@ -108,7 +108,7 @@ A practical sheet for this use case starts with one row per company/domain and s
 
 ### Clay-style workflow note
 
-Many buyers describe this as a lightweight "Clay in Sheets" workflow: keep the list in Google Sheets, use formulas to create row-level research outputs, then add QA and review columns before outreach. It is not a one-for-one replacement for every enrichment platform feature; it is strongest when your team wants spreadsheet-native control, flexible prompts, and quick iteration. Clay is a trademark of its owner. DocGPT.AI and GPT for Sheets are not affiliated with or endorsed by Clay.
+Many buyers describe this as a lightweight "Clay in Sheets" workflow: keep the list in Google Sheets, use formulas to create row-level research outputs, then add QA and review columns before outreach. It is not a one-for-one replacement for every enrichment platform feature; it is strongest when your team wants spreadsheet-native control, flexible prompts, and quick iteration. Clay is a trademark of its owner. DocGPT.ai and GPT for Sheets are not affiliated with or endorsed by Clay.
 
 ## Best for / not best for
 

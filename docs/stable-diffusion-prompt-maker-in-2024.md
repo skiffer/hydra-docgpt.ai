@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Stable Diffusion Prompt Maker in 2024
+title: Stable Diffusion Prompt Maker
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/stable-diffusion-prompt-maker-in-2024
-description: Discover the power of the Stable Diffusion Prompt Maker in 2024, your go-to tool for generating creative and engaging prompts effortlessly. Enhance your content strategy with AI-driven insights, ensuring originality and effectiveness in capturing your audience's attention.
+description: Discover the power of the Stable Diffusion Prompt Maker, your go-to tool for generating creative and engaging prompts effortlessly. Enhance your content strategy with AI-driven insights, ensuring originality and effectiveness in capturing your audience's attention.
 ---
 
-# Stable Diffusion Prompt Maker in 2024
+# Stable Diffusion Prompt Maker
 
 ### Case of usage:
 > Create Stable Diffusion prompts from a keyword. Generates 5 prompts per keyword(s) with a mix of artistic and photorealistic styles.

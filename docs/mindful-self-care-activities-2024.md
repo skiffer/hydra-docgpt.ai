@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Mindful Self-Care Activities 2024
+title: Mindful Self-Care Activities
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/mindful-self-care-activities-2024
-description: Discover transformative Mindful Self-Care Activities for 2024 that elevate well-being and reduce stress. Embrace meditation, yoga, and journaling while enhancing mental clarity and inner peace. Explore new self-care routines to nurture your mind and body this year.
+description: Discover transformative Mindful Self-Care Activities that elevate well-being and reduce stress. Embrace meditation, yoga, and journaling while enhancing mental clarity and inner peace. Explore new self-care routines to nurture your mind and body this year.
 ---
 
-# Mindful Self-Care Activities 2024
+# Mindful Self-Care Activities
 
 ### Case of usage:
 > Create a table for a weekly mindful self-care practice plan 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Pinterest Pin Description Essentials in 2024
+title: Pinterest Pin Description Essentials
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/pinterest-pin-description-essentials-in-2024
-description: Discover the must-know Pinterest Pin Description Essentials in 2024! Boost your Pinterest SEO with expert tips on crafting engaging, keyword-rich, and attention-grabbing descriptions to drive traffic and elevate your brand's visibility. Stay ahead in the digital landscape!
+description: Discover the must-know Pinterest Pin Description Essentials! Boost your Pinterest SEO with expert tips on crafting engaging, keyword-rich, and attention-grabbing descriptions to drive traffic and elevate your brand's visibility. Stay ahead in the digital landscape!
 ---
 
-# Pinterest Pin Description Essentials in 2024
+# Pinterest Pin Description Essentials
 
 ### Case of usage:
 > Creates a description for a Pinterest pin from the title or a topic

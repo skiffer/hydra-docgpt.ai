@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Crafting Upwork Proposal with Engaging Hook 2024
+title: Crafting Upwork Proposal with Engaging Hook
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/crafting-upwork-proposal-with-engaging-hook-2024
-description: Elevate your Upwork proposals in 2024 with captivating hooks that grab attention and win clients. Discover expert tips on crafting proposals that stand out, showcasing your skills and increasing your chances of securing jobs in a competitive marketplace.
+description: Elevate your Upwork proposals with captivating hooks that grab attention and win clients. Discover expert tips on crafting proposals that stand out, showcasing your skills and increasing your chances of securing jobs in a competitive marketplace.
 ---
 
-# Crafting Upwork Proposal with Engaging Hook 2024
+# Crafting Upwork Proposal with Engaging Hook
 
 ### Case of usage:
 > Crafting a Winning Upwork Proposal: Strategies for Highly Converting Clients. Just Submit the Job Description and see the Magic

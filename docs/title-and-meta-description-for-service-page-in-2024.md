@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Title and Meta Description for Service Page in 2024
+title: Title and Meta Description for Service Page
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/title-and-meta-description-for-service-page-in-2024
-description: Boost your business in 2024 with our expert service page guidance! Craft compelling titles and meta descriptions that enhance search visibility, drive traffic, and increase conversions. Optimize your online presence with strategies tailored to keep you ahead in the digital landscape.
+description: Boost your business with our expert service page guidance! Craft compelling titles and meta descriptions that enhance search visibility, drive traffic, and increase conversions. Optimize your online presence with strategies tailored to keep you ahead in the digital landscape.
 ---
 
-# Title and Meta Description for Service Page in 2024
+# Title and Meta Description for Service Page
 
 ### Case of usage:
 > Create 100% SEO-friendly title & meta descriptions for service pages

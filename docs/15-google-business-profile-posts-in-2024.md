@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: 15 Google Business Profile Posts in 2024
+title: 15 Google Business Profile Posts
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/15-google-business-profile-posts-in-2024
-description: Discover 15 impactful Google Business Profile posts you should create in 2024 to boost online visibility, engage customers, and drive growth. Stay ahead with these expert tips designed for maximum exposure and engagement with your audience. Don't miss out!
+description: Discover 15 impactful Google Business Profile posts you should create to boost online visibility, engage customers, and drive growth. Stay ahead with these expert tips designed for maximum exposure and engagement with your audience. Don't miss out!
 ---
 
-# 15 Google Business Profile Posts in 2024
+# 15 Google Business Profile Posts
 
 ### Case of usage:
 > Get 15 SEO optimized Google Business Updates / Posts for your Google Business Profile (GMB). Just type in the business name, type, and target keywords if you have any. Posts are optimized for local SEO!

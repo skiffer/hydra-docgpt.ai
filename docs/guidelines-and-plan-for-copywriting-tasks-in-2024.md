@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Guidelines and Plan for Copywriting Tasks in 2024
+title: Guidelines and Plan for Copywriting Tasks
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/guidelines-and-plan-for-copywriting-tasks-in-2024
-description: Discover the ultimate 2024 copywriting guide! Streamline tasks with cutting-edge strategies, detailed guidelines, and a robust plan designed to enhance your content creation, boost engagement, and drive results. Stay ahead in the dynamic world of copywriting!
+description: Discover the ultimate copywriting guide! Streamline tasks with cutting-edge strategies, detailed guidelines, and a robust plan designed to enhance your content creation, boost engagement, and drive results. Stay ahead in the dynamic world of copywriting!
 ---
 
-# Guidelines and Plan for Copywriting Tasks in 2024
+# Guidelines and Plan for Copywriting Tasks
 
 ### Case of usage:
 > Detailed BRIEFING + OUTLINE for 100% SEO-friendly articles to be assigned (length, images, tone of voice, search intent, goals, target, long tail keywords, semantically related keyword and entities, title h1, subheadings h2 and h3, meta description with max length, engaging Title tag with max length, best anchor texts for internal linking, FAQ, quotes)

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Meta Title and Description in 2024
+title: Meta Title and Description
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/meta-title-and-description-in-2024
-description: Unlock the secrets of crafting the perfect Meta Title and Description in 2024. Discover the latest tips, strategies, and best practices to boost your website's search engine ranking and click-through rates. Stay ahead in SEO with our comprehensive guide!
+description: Unlock the secrets of crafting the perfect Meta Title and Description. Discover the latest tips, strategies, and best practices to boost your website's search engine ranking and click-through rates. Stay ahead in SEO with our comprehensive guide!
 ---
 
-# Meta Title and Description in 2024
+# Meta Title and Description
 
 ### Case of usage:
 > The only true Meta Tag compiler with result in table. Just put [KEYWORD] and get the result. Updates every week.

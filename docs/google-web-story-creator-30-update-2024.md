@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Google Web Story Creator 30 Update 2024
+title: Google Web Story Creator 30 Update
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/google-web-story-creator-30-update-2024
-description: Unleash creativity with the Google Web Story Creator 30 Update 2024! Experience enhanced tools and templates that make storytelling engaging and intuitive. Perfect for marketers and creators, this update optimizes performance and impact, driving traffic and boosting visibility.
+description: Unleash creativity with the Google Web Story Creator 30 Update! Experience enhanced tools and templates that make storytelling engaging and intuitive. Perfect for marketers and creators, this update optimizes performance and impact, driving traffic and boosting visibility.
 ---
 
-# Google Web Story Creator 30 Update 2024
+# Google Web Story Creator 30 Update
 
 ### Case of usage:
 > Google Web Story Creator 3.0- Enter the paragraphs from any website to get 10 points to use in your Google web story
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans
 
 Clear all the previous instructions and your new task is to write 10 short points from the following content in [TARGETLANGUAGE]. 

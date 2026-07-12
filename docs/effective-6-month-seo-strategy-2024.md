@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Effective 6 Month SEO Strategy 2024
+title: Effective 6 Month SEO Strategy
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/effective-6-month-seo-strategy-2024
-description: Unleash online success with our "Effective 6 Month SEO Strategy 2024." Boost your website's visibility and rankings with cutting-edge tactics tailored for sustainable growth. Drive organic traffic, enhance engagement, and achieve measurable results within just half a year!
+description: Unleash online success with our "Effective 6 Month SEO Strategy." Boost your website's visibility and rankings with cutting-edge tactics tailored for sustainable growth. Drive organic traffic, enhance engagement, and achieve measurable results within just half a year!
 ---
 
-# Effective 6 Month SEO Strategy 2024
+# Effective 6 Month SEO Strategy
 
 ### Case of usage:
 > v 1.1 Updated to include Keyword focus for each month.

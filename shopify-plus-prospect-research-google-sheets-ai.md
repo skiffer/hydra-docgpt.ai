@@ -65,7 +65,7 @@ formula_cards:
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) → add source columns → paste one formula → QA a 10–25 row sample → fill down once the output is reliable → review [GPT for Sheets pricing](/gpt-for-sheets/#pricing) before scaling the workflow.
 
-> Shopify is a trademark of its owner. DocGPT.AI and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by Shopify. This guide compares workflow fit, not universal superiority; verify current third-party features, terms, and pricing in official sources.
+> Shopify is a trademark of its owner. DocGPT.ai and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by Shopify. This guide compares workflow fit, not universal superiority; verify current third-party features, terms, and pricing in official sources.
 
 ## Workflow {#workflow}
 

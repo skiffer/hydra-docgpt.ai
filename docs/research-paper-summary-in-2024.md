@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Research Paper Summary in 2024
+title: Research Paper Summary
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/research-paper-summary-in-2024
-description: Discover a concise and comprehensive Research Paper Summary for 2024. Stay updated with the latest academic insights and breakthroughs across various fields. Ideal for students, educators, and researchers seeking a quick yet thorough overview of cutting-edge studies.
+description: Discover a concise and comprehensive Research Paper Summary. Stay updated with the latest academic insights and breakthroughs across various fields. Ideal for students, educators, and researchers seeking a quick yet thorough overview of cutting-edge studies.
 ---
 
-# Research Paper Summary in 2024
+# Research Paper Summary
 
 ### Case of usage:
 > Generate a summary about a research paper

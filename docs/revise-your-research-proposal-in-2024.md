@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Revise Your Research Proposal in 2024
+title: Revise Your Research Proposal
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/revise-your-research-proposal-in-2024
-description: Upgrade your academic endeavors with our guide on revising research proposals in 2024. Discover expert tips and insights to refine your proposal for ultimate success and approval. Ideal for students and researchers aiming for excellence in scholarly writing.
+description: Upgrade your academic endeavors with our guide on revising research proposals. Discover expert tips and insights to refine your proposal for ultimate success and approval. Ideal for students and researchers aiming for excellence in scholarly writing.
 ---
 
-# Revise Your Research Proposal in 2024
+# Revise Your Research Proposal
 
 ### Case of usage:
 > Generate a topic-based research proposal in a minute

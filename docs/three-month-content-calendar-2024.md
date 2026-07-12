@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Three Month Content Calendar 2024
+title: Three Month Content Calendar
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/three-month-content-calendar-2024
-description: Boost your 2024 content strategy with our Three Month Content Calendar. Designed to enhance planning, it offers timely posts tailored for SEO success. Streamline workflow, engage your audience, and ensure consistency with this essential tool for marketers and creators.
+description: Boost your content strategy with our Three Month Content Calendar. Designed to enhance planning, it offers timely posts tailored for SEO success. Streamline workflow, engage your audience, and ensure consistency with this essential tool for marketers and creators.
 ---
 
-# Three Month Content Calendar 2024
+# Three Month Content Calendar
 
 ### Case of usage:
 > Get a meticulously arranged content schedule for 3 months that focuses on your primary keyword by utilizing only transactional long-tail keywords and clickbait techniques.

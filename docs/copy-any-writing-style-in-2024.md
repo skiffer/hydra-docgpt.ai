@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Copy Any Writing Style in 2024
+title: Copy Any Writing Style
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/copy-any-writing-style-in-2024
-description: Unlock the secrets to mastering any writing style in 2024! Discover cutting-edge techniques and tools that will elevate your writing skills, allowing you to effortlessly adapt and impress with any genre or voice. Perfect for writers, bloggers, and content creators.
+description: Unlock the secrets to mastering any writing style! Discover cutting-edge techniques and tools that will elevate your writing skills, allowing you to effortlessly adapt and impress with any genre or voice. Perfect for writers, bloggers, and content creators.
 ---
 
-# Copy Any Writing Style in 2024
+# Copy Any Writing Style
 
 ### Case of usage:
 > Copy Any writing style with the help of prompt it will generate for your favourite writing style and tone, Edit the prompt for your required task and get your personal blogger/writer of your choice

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create AI Images with Leonardo AI Version 2 in 2024
+title: Create AI Images with Leonardo AI Version 2
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-ai-images-with-leonardo-ai-version-2-in-2024
-description: Unlock your creativity in 2024 with Leonardo AI Version 2! Effortlessly create stunning AI images with cutting-edge technology. Perfect for artists, designers, and enthusiasts looking to elevate their digital art and design projects. Try Leonardo AI today and transform your vision into reality!
+description: Unlock your creativity with Leonardo AI Version 2! Effortlessly create stunning AI images with cutting-edge technology. Perfect for artists, designers, and enthusiasts looking to elevate their digital art and design projects. Try Leonardo AI today and transform your vision into reality!
 ---
 
-# Create AI Images with Leonardo AI Version 2 in 2024
+# Create AI Images with Leonardo AI Version 2
 
 ### Case of usage:
 > Make a astonishing ai images with help of Leonardo AI with master prompt Engineering. (After receiving prompts you can say "add more context and creative with beauty in [any Prompt you want] so the AI will enhance that specific prompt you want )

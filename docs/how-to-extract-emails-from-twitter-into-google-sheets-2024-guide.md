@@ -1,14 +1,14 @@
 ---
 layout: docs_layouts/default
-title:  Extract Twitter Emails to Google Sheets in 2024 Best Practices
+title:  Extract Twitter Emails to Google Sheets Best Practices
 nav_order: 3
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-extract-emails-from-twitter-into-google-sheets-2024-guide
-description: Extract Twitter Emails to Google Sheets in 2024 Best Practices
+description: Extract Twitter Emails to Google Sheets Best Practices
 ---
 
 
-# Extract Twitter Emails to Google Sheets in 2024 Best Practices
+# Extract Twitter Emails to Google Sheets Best Practices
 
 ## Introduction
 

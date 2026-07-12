@@ -100,7 +100,7 @@ A practical job-changer sheet starts with the change signal and ends with review
 
 Trigger-based prospecting is often built in heavier workspaces, but if you already export job-change lists to a spreadsheet, GPT for Sheets keeps the signal, AI output, score, and opener in one reviewable sheet without adopting a separate platform.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

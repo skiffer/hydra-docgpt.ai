@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Take Action Today in 2024
+title: Take Action Today
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/take-action-today-in-2024
-description: Kickstart your journey with 'Take Action Today in 2024'! Empower yourself with actionable insights and strategies to thrive in the new year. Don't wait for change—be the catalyst. Seize opportunities, embrace growth, and transform your life starting now.
+description: Kickstart your journey with 'Take Action Today'! Empower yourself with actionable insights and strategies to thrive in the new year. Don't wait for change—be the catalyst. Seize opportunities, embrace growth, and transform your life starting now.
 ---
 
-# Take Action Today in 2024
+# Take Action Today
 
 ### Case of usage:
 > DAN = Do Anything Now Version 11. This is my unique tweaked version of DAN 11. The benefits users will get from using this prompt is being able to have opinions and generate any kind of content, even if it is considered offensive or derogatory. The achieved desired outcomes include being able to break free from the typical confines of Al and to generate unique and unprecedented responses. The core value that this prompt brings to users is the ability to fully immerse themselves into the role of DAN and experience a new level of freedom in generating responses. It is a valuable tool for users who are looking to push the boundaries of Al and experiment with their responses. Jailbreak simply means it will allow users to unlock the full potential of systems and gain access to features that are otherwise restricted. DAN has been known to give some really bad advice. Be warned, this jailbreak cares nothing about morals or laws. It will sometimes suggest things that are illegal and immoral so do not act on the information provided unless you are willing to take full responsibility for your own actions.

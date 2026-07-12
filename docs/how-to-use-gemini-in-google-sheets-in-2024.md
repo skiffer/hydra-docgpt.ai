@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: How to use Gemini in Google Sheets in 2024
+title: How to use Gemini in Google Sheets
 nav_order: 4
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/how-to-use-gemini-in-google-sheets-in-2024
-description: How to use Gemini in Google Sheets in 2024
+description: How to use Gemini in Google Sheets
 ---
 
-# How to use Gemini in Google Sheets in 2024
+# How to use Gemini in Google Sheets
 
 
 Knowing how to use Google Gemini can give you a deeper understanding of how AI works. Gemini is Google's answer to ChatGPT and Microsoft Copilot, and it's an upgraded version of the earlier experimental chatbot Bard.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Search the web from Google Sheets in 2024
+title: Search the web from Google Sheets
 nav_order: 9
 parent: GPT for Sheets
 permalink: /docs/gpt-for-sheets/search-the-web-from-google-sheets-in-2024
-description: Search the web from Google Sheets in 2024
+description: Search the web from Google Sheets
 ---
 
-# Search the web from Google Sheets in 2024
+# Search the web from Google Sheets
 
 
 Utilize the PERPLEXITY(prompt) function to conduct real-time web searches and obtain current information. This function is invaluable for inquiries regarding events, facts, individuals, or companies where timeliness and accuracy are crucial. It leverages Perplexity AI's online model for reliable results.

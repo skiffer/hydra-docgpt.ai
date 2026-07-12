@@ -99,7 +99,7 @@ AI output should be treated as a draft, not a verified database. Add checks befo
 - Review outreach copy for consent, deliverability, and local compliance.
 - Save the final approved version separately from raw AI output.
 
-**Important:** State DocGPT.AI is not affiliated with Clay; avoid claims about Clay pricing/performance unless sourced; phrase as workflow fit, not superiority in all cases; no competitor outbound links.
+**Important:** State DocGPT.ai is not affiliated with Clay; avoid claims about Clay pricing/performance unless sourced; phrase as workflow fit, not superiority in all cases; no competitor outbound links.
 
 ## Related guides
 Continue with these GPT for Sheets resources:

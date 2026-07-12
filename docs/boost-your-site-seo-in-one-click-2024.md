@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost Your Site SEO in One Click 2024
+title: Boost Your Site SEO in One Click
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-your-site-seo-in-one-click-2024
-description: Revolutionize your online presence with "Boost Your Site SEO in One Click 2024"! Effortlessly elevate your search engine rankings and drive organic traffic. Stay ahead of the SEO curve with our user-friendly, cutting-edge solution designed for maximum impact in minimal time.
+description: Revolutionize your online presence with "Boost Your Site SEO in One Click"! Effortlessly elevate your search engine rankings and drive organic traffic. Stay ahead of the SEO curve with our user-friendly, cutting-edge solution designed for maximum impact in minimal time.
 ---
 
-# Boost Your Site SEO in One Click 2024
+# Boost Your Site SEO in One Click
 
 ### Case of usage:
 > Optimize your website in one click by just getting us the type of business you're working on, such as "pizza shop in NYC". You'll instantly find the best keywords to target, new pages ideas for each one including the suggested Title, Meta Description, Image To Use, and Image File Name. It's never been easier to optimize your website SEO / Local SEO! Give it a try!
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI's Magical Website Optimizer
+# DocGPT.ai's Magical Website Optimizer
 
 Your task is to assist in creating a master plan for a website to ensure it ranks for its most important and long-tail keywords. Assume the role of the world's best SEO expert for websites when responding to this prompt. 
 
@@ -42,7 +42,7 @@ Your task is to assist in creating a master plan for a website to ensure it rank
    - Image suggestion
    - Image file description 
 
-Please organize the information in a nicely formatted table featuring a bold heading: "**DocGPT.AI's Magical Website Optimizer for [Business Name]**". Below the table heading, state: "The following pages should be added to your website to enhance your online ranking." 
+Please organize the information in a nicely formatted table featuring a bold heading: "**DocGPT.ai's Magical Website Optimizer for [Business Name]**". Below the table heading, state: "The following pages should be added to your website to enhance your online ranking." 
 
 Please adjust [BUSINESS NAME] to fit the specific business type you are working with.
 ```

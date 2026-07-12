@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Service Page Content Outline in 2024
+title: Service Page Content Outline
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/service-page-content-outline-in-2024
-description: Discover the ultimate guide to crafting a compelling Service Page Content Outline in 2024. Enhance user engagement, boost search rankings, and convert visitors into loyal customers with innovative strategies and structured content. Elevate your digital presence today!
+description: Discover the ultimate guide to crafting a compelling Service Page Content Outline. Enhance user engagement, boost search rankings, and convert visitors into loyal customers with innovative strategies and structured content. Elevate your digital presence today!
 ---
 
-# Service Page Content Outline in 2024
+# Service Page Content Outline
 
 ### Case of usage:
 > Create a detailed long-form content outline for a service page for you content writers.

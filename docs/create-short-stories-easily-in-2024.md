@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create Short Stories Easily in 2024
+title: Create Short Stories Easily
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-short-stories-easily-in-2024
-description: Unleash your creativity with our cutting-edge tools to easily craft short stories in 2024. From compelling plots to rich character development, create captivating narratives effortlessly. Perfect for writers of all levels, start your storytelling journey today!
+description: Unleash your creativity with our cutting-edge tools to easily craft short stories. From compelling plots to rich character development, create captivating narratives effortlessly. Perfect for writers of all levels, start your storytelling journey today!
 ---
 
-# Create Short Stories Easily in 2024
+# Create Short Stories Easily
 
 ### Case of usage:
 > Generates a short story based on your description. Add a few keywords together, separated by comma and send it. 

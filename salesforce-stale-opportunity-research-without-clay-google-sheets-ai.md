@@ -100,7 +100,7 @@ A practical sheet for this workflow usually starts with raw evidence and ends wi
 
 This is a practical alternative for teams that want Clay-like research columns in Google Sheets after a Salesforce export. Clay and similar tools can be powerful for teams that need a dedicated GTM workspace. GPT for Sheets is different: it keeps source columns, formulas, AI outputs, and human review labels in Google Sheets so operators can improve one workflow without migrating the whole process.
 
-DocGPT.AI is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
+DocGPT.ai is not affiliated with Clay, HubSpot, Salesforce, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority.
 
 ## Use cases
 
@@ -129,7 +129,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 ## Safety, compliance, and data quality
 
-Use source URLs/dates and human review before updating Salesforce or contacting accounts. DocGPT.AI is not affiliated with Salesforce or Clay.
+Use source URLs/dates and human review before updating Salesforce or contacting accounts. DocGPT.ai is not affiliated with Salesforce or Clay.
 
 For any sales or outreach workflow, keep source fields visible, store source URLs or dates where possible, review important rows manually, and follow consent, privacy, platform, and deliverability rules. AI output should be treated as a structured draft, not as automatically verified data.
 

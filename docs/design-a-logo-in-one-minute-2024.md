@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Design a Logo in One Minute 2024
+title: Design a Logo in One Minute
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/design-a-logo-in-one-minute-2024
-description: Unleash creativity in a flash with "Design a Logo in One Minute 2024"! Craft stunning, professional logos in just 60 seconds. Perfect for entrepreneurs and designers looking to make a lasting impression quickly and efficiently in the new year. Try it today and stand out!
+description: Unleash creativity in a flash with "Design a Logo in One Minute"! Craft stunning, professional logos in just 60 seconds. Perfect for entrepreneurs and designers looking to make a lasting impression quickly and efficiently in the new year. Try it today and stand out!
 ---
 
-# Design a Logo in One Minute 2024
+# Design a Logo in One Minute
 
 ### Case of usage:
 > Create a logo concept with 3 different options & rationale by incorporating your company name, industry, preferred color scheme, and typography style.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans.
 
 I want you to create 3 logo options following these 6 steps for each direction:

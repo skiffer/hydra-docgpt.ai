@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Reach Audiences with Your Products in 2024
+title: Reach Audiences with Your Products
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/reach-audiences-with-your-products-in-2024
-description: Elevate your brand in 2024 by reaching broader audiences with targeted strategies that showcase your products effectively. Maximize visibility and engagement through innovative marketing tactics that position your offerings to meet the needs of today’s dynamic consumers.
+description: Elevate your brand by reaching broader audiences with targeted strategies that showcase your products effectively. Maximize visibility and engagement through innovative marketing tactics that position your offerings to meet the needs of today’s dynamic consumers.
 ---
 
-# Reach Audiences with Your Products in 2024
+# Reach Audiences with Your Products
 
 ### Case of usage:
 > Come up with new product ideas that meet your audience's needs
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI
+# Prompt by DocGPT.ai
 Lines starting with # are only comments for humans.
 
 ---

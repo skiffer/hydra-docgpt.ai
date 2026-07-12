@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top SEO Friendly Article Format in 2024
+title: Top SEO Friendly Article Format
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-seo-friendly-article-format-in-2024
-description: Discover the ultimate SEO-friendly article format in 2024 to boost your rankings and enhance readability. Uncover key strategies, from keyword integration to structured headings, ensuring your content remains competitive and effective in the ever-evolving digital landscape.
+description: Discover the ultimate SEO-friendly article format to boost your rankings and enhance readability. Uncover key strategies, from keyword integration to structured headings, ensuring your content remains competitive and effective in the ever-evolving digital landscape.
 ---
 
-# Top SEO Friendly Article Format in 2024
+# Top SEO Friendly Article Format
 
 ### Case of usage:
 > Write the best SEO friendly Table of Content

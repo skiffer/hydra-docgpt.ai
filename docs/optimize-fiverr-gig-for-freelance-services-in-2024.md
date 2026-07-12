@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Optimize Fiverr Gig for Freelance Services in 2024
+title: Optimize Fiverr Gig for Freelance Services
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/optimize-fiverr-gig-for-freelance-services-in-2024
-description: Enhance your Fiverr gig in 2024 and boost your freelance services with proven strategies. Attract more clients, improve visibility, and maximize earnings by optimizing your gig for success. Stay ahead in the competitive marketplace with expert tips tailored for freelancers!
+description: Enhance your Fiverr gig and boost your freelance services with proven strategies. Attract more clients, improve visibility, and maximize earnings by optimizing your gig for success. Stay ahead in the competitive marketplace with expert tips tailored for freelancers!
 ---
 
-# Optimize Fiverr Gig for Freelance Services in 2024
+# Optimize Fiverr Gig for Freelance Services
 
 ### Case of usage:
 > Make a fiverr GIG including: Title, Thumbnail, Video description Script, Gig Description and Packages (Price, informaiton....) with one [KEYWORD]

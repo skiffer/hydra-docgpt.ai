@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Complete Social Media Post Guide in 2024
+title: Complete Social Media Post Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/complete-social-media-post-guide-in-2024
-description: Master your social media strategy with our Complete Social Media Post Guide in 2024. Discover the latest tips, trends, and tactics to boost engagement, reach a wider audience, and elevate your brand's online presence. Perfect for marketers and influencers alike!
+description: Master your social media strategy with our Complete Social Media Post Guide. Discover the latest tips, trends, and tactics to boost engagement, reach a wider audience, and elevate your brand's online presence. Perfect for marketers and influencers alike!
 ---
 
-# Complete Social Media Post Guide in 2024
+# Complete Social Media Post Guide
 
 ### Case of usage:
 > All in one Social post is the perfect solution for your social media needs. With this all-in-one tool, you can easily post content to multiple platforms, including Facebook, Twitter, Instagram, LinkedIn, and YouTube, and be sure of success on each one.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Friendly Human Written Blog in 2024
+title: SEO Friendly Human Written Blog
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-friendly-human-written-blog-in-2024
-description: Boost your visibility in 2024 with our SEO-friendly, human-written blog content. Drive organic traffic and engage readers with expertly crafted articles designed to enhance your online presence and improve search engine rankings.
+description: Boost your visibility with our SEO-friendly, human-written blog content. Drive organic traffic and engage readers with expertly crafted articles designed to enhance your online presence and improve search engine rankings.
 ---
 
-# SEO Friendly Human Written Blog in 2024
+# SEO Friendly Human Written Blog
 
 ### Case of usage:
 > Create Highly SEO Optimized, 100% Human Written Blog Post

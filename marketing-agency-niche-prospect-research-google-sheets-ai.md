@@ -59,7 +59,7 @@ formula_cards:
 
 The fastest path is: [explore GPT for Sheets](/gpt-for-sheets/) → add source and QA columns → paste one formula → test 10 rows → fill down → [compare pricing](/gpt-for-sheets/#pricing) when the workflow saves time.
 
-> Clay is a trademark of its owner. DocGPT.AI and GPT for Sheets are independent and unaffiliated; compare workflows factually.
+> Clay is a trademark of its owner. DocGPT.ai and GPT for Sheets are independent and unaffiliated; compare workflows factually.
 
 ## Workflow {#workflow}
 

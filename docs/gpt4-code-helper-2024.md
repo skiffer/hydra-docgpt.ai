@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: GPT4 Code Helper 2024
+title: GPT4 Code Helper
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/gpt4-code-helper-2024
-description: Unlock coding excellence with GPT4 Code Helper 2024! This cutting-edge tool enhances your programming skills by providing intelligent, real-time code suggestions and error corrections. Perfect for developers seeking efficiency and precision in their coding projects. Boost productivity now!
+description: Unlock coding excellence with GPT4 Code Helper! This cutting-edge tool enhances your programming skills by providing intelligent, real-time code suggestions and error corrections. Perfect for developers seeking efficiency and precision in their coding projects. Boost productivity now!
 ---
 
-# GPT4 Code Helper 2024
+# GPT4 Code Helper
 
 ### Case of usage:
 > Using a prompt developed by OpenAI for GPT-4, create the app or program of your dreams in a simple and easy manner, with the AI guiding you every step of the way!

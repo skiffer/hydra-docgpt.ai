@@ -100,7 +100,7 @@ A practical HubSpot-export sheet preserves source properties and adds reviewable
 
 Enrichment platforms can connect to HubSpot, but many teams just need a fast clean-and-score pass on an export. GPT for Sheets keeps original properties, AI output, scores, and QA labels in one sheet, a lighter, Sheets-native alternative for HubSpot contact enrichment.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

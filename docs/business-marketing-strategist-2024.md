@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Business Marketing Strategist 2024
+title: Business Marketing Strategist
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/business-marketing-strategist-2024
-description: Unlock your business's potential with our 2024 Business Marketing Strategist services. Tailored strategies, data-driven insights, and innovative techniques to elevate your brand, drive growth, and outperform competition. Stay ahead in the digital age with expert guidance and proven results.
+description: Unlock your business's potential with our Business Marketing Strategist services. Tailored strategies, data-driven insights, and innovative techniques to elevate your brand, drive growth, and outperform competition. Stay ahead in the digital age with expert guidance and proven results.
 ---
 
-# Business Marketing Strategist 2024
+# Business Marketing Strategist
 
 ### Case of usage:
 > Break down any question step-by-step. Each of these steps are further detailed and broken down into smaller tasks for effective implementation strategy. Please like this prompt if you find it useful

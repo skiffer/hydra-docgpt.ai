@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Course Builder 2024
+title: Comprehensive Course Builder
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-course-builder-2024
-description: Unlock your teaching potential with the Comprehensive Course Builder 2024. Design engaging courses effortlessly with our advanced tools and intuitive interface. Perfect for educators aiming to enhance online learning experiences. Start building the future of education today.
+description: Unlock your teaching potential with the Comprehensive Course Builder. Design engaging courses effortlessly with our advanced tools and intuitive interface. Perfect for educators aiming to enhance online learning experiences. Start building the future of education today.
 ---
 
-# Comprehensive Course Builder 2024
+# Comprehensive Course Builder
 
 ### Case of usage:
 > This one click course creator emphasizes the importance of self-directed and practical learning. Recommendations for accessibility included.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 
 This andragogy learning style course emphasizes the importance of self-directed and practical learning. 
 

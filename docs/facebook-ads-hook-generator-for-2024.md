@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Facebook Ads Hook Generator for 2024
+title: Facebook Ads Hook Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/facebook-ads-hook-generator-for-2024
-description: Revolutionize your ad strategy with our 2024 Facebook Ads Hook Generator. Craft compelling, high-converting hooks that captivate your audience and boost engagement. Stay ahead of the competition with AI-driven, tailored ad copy that resonates and converts.
+description: Revolutionize your ad strategy with our Facebook Ads Hook Generator. Craft compelling, high-converting hooks that captivate your audience and boost engagement. Stay ahead of the competition with AI-driven, tailored ad copy that resonates and converts.
 ---
 
-# Facebook Ads Hook Generator for 2024
+# Facebook Ads Hook Generator
 
 ### Case of usage:
 > Generate endless ad hooks/angles for anything you're promoting with Facebook or Instagram ads. 

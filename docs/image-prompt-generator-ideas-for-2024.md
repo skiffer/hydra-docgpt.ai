@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Image Prompt Generator Ideas for 2024
+title: Image Prompt Generator Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/image-prompt-generator-ideas-for-2024
-description: Discover innovative image prompt generator ideas for 2024 to ignite your creativity and streamline your content creation process. Explore cutting-edge trends and unique concepts to enhance your visual storytelling and boost engagement across all digital platforms. Unleash your imagination today!
+description: Discover innovative image prompt generator ideas to ignite your creativity and streamline your content creation process. Explore cutting-edge trends and unique concepts to enhance your visual storytelling and boost engagement across all digital platforms. Unleash your imagination today!
 ---
 
-# Image Prompt Generator Ideas for 2024
+# Image Prompt Generator Ideas
 
 ### Case of usage:
 > Image Generation Prompts for Stable Diffusion, DALLE-3, MidJourney and much more.

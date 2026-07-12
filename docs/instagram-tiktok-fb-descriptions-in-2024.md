@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Instagram Tiktok FB Descriptions in 2024
+title: Instagram Tiktok FB Descriptions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/instagram-tiktok-fb-descriptions-in-2024
-description: Unlock the power of social media with our 2024 guide to crafting compelling Instagram, TikTok, and Facebook descriptions. Boost engagement, reach, and brand loyalty by mastering the art of captivating content that resonates with your audience across platforms.
+description: Unlock the power of social media with our guide to crafting compelling Instagram, TikTok, and Facebook descriptions. Boost engagement, reach, and brand loyalty by mastering the art of captivating content that resonates with your audience across platforms.
 ---
 
-# Instagram Tiktok FB Descriptions in 2024
+# Instagram Tiktok FB Descriptions
 
 ### Case of usage:
 > Write a Instagram, TikTok & Facebook Reel description (Funny, Catchy, With Emoji and with 20 related hashtags at the end)

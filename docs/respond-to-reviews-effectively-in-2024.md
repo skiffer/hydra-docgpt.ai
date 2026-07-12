@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Respond to Reviews Effectively in 2024
+title: Respond to Reviews Effectively
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/respond-to-reviews-effectively-in-2024
-description: Boost your online reputation with our 2024 guide on responding to reviews effectively. Learn tactics to engage positively with customers, enhance trust, and drive more business by mastering the art of impactful review responses. Elevate your brand today!
+description: Boost your online reputation with our guide on responding to reviews effectively. Learn tactics to engage positively with customers, enhance trust, and drive more business by mastering the art of impactful review responses. Elevate your brand today!
 ---
 
-# Respond to Reviews Effectively in 2024
+# Respond to Reviews Effectively
 
 ### Case of usage:
 > Get 3 customer review responses by simply pasting in your customer's review. These responses are written in casual English with an appreciative and apologetic tone. It can address multiple complaints, as well as mixed reviews. Just simply paste your customer review into the prompt and let us do our thing! Responses are optimized for local SEO.

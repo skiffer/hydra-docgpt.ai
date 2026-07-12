@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Engaging Cold Emails for Prospects 2024
+title: Engaging Cold Emails for Prospects
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/engaging-cold-emails-for-prospects-2024
-description: Unlock the potential of your outreach strategies with "Engaging Cold Emails for Prospects 2024." Discover innovative techniques and proven templates to captivate prospects, boost response rates, and drive conversions. Elevate your email campaigns and achieve sales success.
+description: Unlock the potential of your outreach strategies with "Engaging Cold Emails for Prospects." Discover innovative techniques and proven templates to captivate prospects, boost response rates, and drive conversions. Elevate your email campaigns and achieve sales success.
 ---
 
-# Engaging Cold Emails for Prospects 2024
+# Engaging Cold Emails for Prospects
 
 ### Case of usage:
 > Create a persuasive cold email for your business

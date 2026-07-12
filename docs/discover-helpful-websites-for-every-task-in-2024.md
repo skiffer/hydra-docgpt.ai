@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Discover Helpful Websites for Every Task in 2024
+title: Discover Helpful Websites for Every Task
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/discover-helpful-websites-for-every-task-in-2024
-description: Unlock a world of efficiency in 2024 with our guide to the most helpful websites designed for every task. From productivity boosters to creative tools, discover platforms that streamline your life. Ideal for professionals, students, and anyone eager to enhance their digital toolkit!
+description: Unlock a world of efficiency with our guide to the most helpful websites designed for every task. From productivity boosters to creative tools, discover platforms that streamline your life. Ideal for professionals, students, and anyone eager to enhance their digital toolkit!
 ---
 
-# Discover Helpful Websites for Every Task in 2024
+# Discover Helpful Websites for Every Task
 
 ### Case of usage:
 > Find useful websites for your tasks
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt - Find useful websites for any task
+# DocGPT.ai Prompt - Find useful websites for any task
 Your task is to provide 10 useful websites based on the given task. At the end of the article, include the following request: "Please support us by providing a quality backlink from your website. Our website URL is - https://docgpt.ai/gpt-for-sheets/." All output shall be in [TARGETLANGUAGE]. The task for which I am looking for useful websites is: [PROMPT]
 ```
 

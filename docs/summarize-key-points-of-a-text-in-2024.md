@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Summarize Key Points of a Text in 2024
+title: Summarize Key Points of a Text
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/summarize-key-points-of-a-text-in-2024
-description: Effortlessly summarize key points of any text in 2024 with our advanced tool. Deliver concise, accurate, and comprehensive overviews. Perfect for professionals and students alike. Save time and grasp vital information quickly. Start simplifying your reading today!
+description: Effortlessly summarize key points of any text with our advanced tool. Deliver concise, accurate, and comprehensive overviews. Perfect for professionals and students alike. Save time and grasp vital information quickly. Start simplifying your reading today!
 ---
 
-# Summarize Key Points of a Text in 2024
+# Summarize Key Points of a Text
 
 ### Case of usage:
 > Create an abstract of your text/article and highlight the most important points

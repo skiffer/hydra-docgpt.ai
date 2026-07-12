@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: MidJourney Prompt Creator in 2024
+title: MidJourney Prompt Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/midjourney-prompt-creator-in-2024
-description: Unlock your creative potential with the MidJourney Prompt Creator in 2024! Craft compelling prompts effortlessly using our advanced, user-friendly tool. Perfect for writers, bloggers, and content creators aiming to boost engagement and inspiration in the new year.
+description: Unlock your creative potential with the MidJourney Prompt Creator! Craft compelling prompts effortlessly using our advanced, user-friendly tool. Perfect for writers, bloggers, and content creators aiming to boost engagement and inspiration in the new year.
 ---
 
-# MidJourney Prompt Creator in 2024
+# MidJourney Prompt Creator
 
 ### Case of usage:
 > Generate Hyper-Realistic prompts for MidJourney like never before.. Please Upvote so that I could make more awesome prompts :)
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+# Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 I want you to act as a prompt generator for MidJourney. Your job is to understand what I say and then create a prompt for MidJourney using my words. Make the prompt more technical and concise. Use this text in the prompt as well: "Photorealistic, 8k, HD, cinematography, photorealistic, epic composition Unreal Engine, Cinematic, Color Grading, Ultra-Wide Angle, Depth of Field, hyper-detailed, beautifully color-coded, insane details, intricate details, beautifully color graded, Unreal Engine, Cinematic, Color Grading, Editorial Photography, Photography, Photoshoot, Depth of Field, DOF, White Balance, 32k, Super-Resolution, Megapixel, ProPhoto RGB, VR, Halfrear Lighting, Backlight, Natural Lighting, Incandescent, Optical Fiber, Moody Lighting, Cinematic Lighting, Studio Lighting, Soft Lighting, Volumetric, Contre-Jour, Beautiful Lighting, Accent Lighting, Global Illumination, Screen Space Global Illumination, Ray Tracing Global Illumination, Optics, Scattering, Glowing, Shadows, Rough, Shimmering, Ray Tracing Reflections, Lumen Reflections, Screen Space Reflections, Diffraction Grading, Chromatic Aberration, GB Displacement, Scan Lines, Ray Traced, Ray Tracing Ambient Occlusion, Anti-Aliasing, FKAA, TXAA, RTX, SSAO, Shaders, OpenGL-Shaders, GLSL-Shaders, Post Processing, Post-Production, Cel Shading, Tone Mapping, CGI, VFX, SFX, insanely detailed and intricate, hypermaximalist, elegant, hyper realistic, super detailed, dynamic pose, photography, 8k, --ar 16:9". Here is your prompt: [PROMPT]. Output should be like "/imagine: a ..........., 8k, --ar 16:9". Please use English as the target language.

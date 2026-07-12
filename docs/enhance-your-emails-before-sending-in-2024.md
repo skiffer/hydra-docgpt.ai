@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Enhance Your Emails Before Sending in 2024
+title: Enhance Your Emails Before Sending
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/enhance-your-emails-before-sending-in-2024
-description: Enhance your 2024 email game with cutting-edge strategies and tools. Boost engagement and effectiveness before hitting send. Discover best practices that transform ordinary emails into impactful communications, maximizing your reach and success in the digital world.
+description: Enhance your email game with cutting-edge strategies and tools. Boost engagement and effectiveness before hitting send. Discover best practices that transform ordinary emails into impactful communications, maximizing your reach and success in the digital world.
 ---
 
-# Enhance Your Emails Before Sending in 2024
+# Enhance Your Emails Before Sending
 
 ### Case of usage:
 > Copy and paste the email you wrote and this tool will fix it up to be professional and charismatic.
@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 Fix this email to write it in a human voice in perfect [TARGETLANGUAGE], as someone with a charismatic personality, that is extremely professional and concise with their language.
 
-Created with [DocGPT.AI](https://docgpt.ai/gpt-for-sheets/)
+Created with [DocGPT.ai](https://docgpt.ai/gpt-for-sheets/)
 ```
 
 Use following formula inside GPT for Sheets

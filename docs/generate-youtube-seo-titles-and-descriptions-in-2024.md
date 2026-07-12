@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Generate YouTube SEO Titles and Descriptions in 2024
+title: Generate YouTube SEO Titles and Descriptions
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/generate-youtube-seo-titles-and-descriptions-in-2024
-description: Unlock the secrets of YouTube success in 2024 with our tool for crafting SEO-optimized titles and descriptions. Boost your visibility, increase engagement, and drive more views with precision-tuned content designed for the latest YouTube algorithms.
+description: Unlock the secrets of YouTube success with our tool for crafting SEO-optimized titles and descriptions. Boost your visibility, increase engagement, and drive more views with precision-tuned content designed for the latest YouTube algorithms.
 ---
 
-# Generate YouTube SEO Titles and Descriptions in 2024
+# Generate YouTube SEO Titles and Descriptions
 
 ### Case of usage:
 > 1 keyword; Create 15 SEO Clickbait YouTube Titles, YouTube Description, YouTube Tags and YouTube Hashtags. Everything In 1 Click!!!

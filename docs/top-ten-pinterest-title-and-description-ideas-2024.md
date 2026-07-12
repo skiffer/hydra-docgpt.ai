@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Ten Pinterest Title and Description Ideas 2024
+title: Top Ten Pinterest Title and Description Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-ten-pinterest-title-and-description-ideas-2024
-description: Discover the ultimate guide to crafting compelling Pinterest titles and descriptions for 2024. Uncover the top ten ideas that boost engagement, drive traffic, and elevate your pin game. Perfect for bloggers and marketers aiming to maximize their Pinterest strategy this year!
+description: Discover the ultimate guide to crafting compelling Pinterest titles and descriptions. Uncover the top ten ideas that boost engagement, drive traffic, and elevate your pin game. Perfect for bloggers and marketers aiming to maximize their Pinterest strategy this year!
 ---
 
-# Top Ten Pinterest Title and Description Ideas 2024
+# Top Ten Pinterest Title and Description Ideas
 
 ### Case of usage:
 > Top 10 Pinterest Pin Title & Description Ideas for Pins [SEO Improved] 100% Unique, Crafted with Pinterest Guidelines. Just Enter A Keyword for Pin.

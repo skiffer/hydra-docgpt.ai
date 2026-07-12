@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Comprehensive Programming Tools for 2024
+title: Comprehensive Programming Tools
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/comprehensive-programming-tools-for-2024
-description: Unlock your coding potential with the latest Comprehensive Programming Tools for 2024. Boost productivity with cutting-edge software, featuring enhanced debugging, code optimization, and seamless integrations for a streamlined development experience. Stay ahead in tech!
+description: Unlock your coding potential with the latest Comprehensive Programming Tools. Boost productivity with cutting-edge software, featuring enhanced debugging, code optimization, and seamless integrations for a streamlined development experience. Stay ahead in tech!
 ---
 
-# Comprehensive Programming Tools for 2024
+# Comprehensive Programming Tools
 
 ### Case of usage:
 > Get Full Code of Your Project All Programming Languages with ChatGPT AI With This Prompt. Please LIKE if you Love it.
@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-## Prompt by DocGPT.AI - https://docgpt.ai/gpt-for-sheets/
+## Prompt by DocGPT.ai - https://docgpt.ai/gpt-for-sheets/
 Lines starting with # are only comments for humans
 ---
 [TARGETLANGUAGE] full code of "[PROMPT]" in HTML, CSS, JAVASCRIPT and If need those code languages then use it: PHP, Python, C++, XML, Kotlin, Java, Swift, C#, C, NoSQL, SQL, Matlab, Ruby, R, TypeScript, Cala, Laravel. Use icons if needed. Make it code real working. Make it with eye-catching, beautiful and unique design in CSS. Use mouse hover effects, elements animation. Make fully all elements Responsive Code for any device. Use unique Id, class for each code.

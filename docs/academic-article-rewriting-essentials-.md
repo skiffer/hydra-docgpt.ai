@@ -31,7 +31,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ```shell
 Revise the given text to align with academic writing standards: [PROMPT] Write all output in [TARGETLANGUAGE]
 
-Learn more about integrating DocGPT.AI for Sheets at https://docgpt.ai/gpt-for-sheets/.
+Learn more about integrating DocGPT.ai for Sheets at https://docgpt.ai/gpt-for-sheets/.
 ```
 
 Use following formula inside GPT for Sheets

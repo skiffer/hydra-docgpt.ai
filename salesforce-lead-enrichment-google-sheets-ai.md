@@ -100,7 +100,7 @@ A practical Salesforce-export sheet preserves source fields and adds reviewable 
 
 Enrichment platforms can connect to Salesforce, but many teams just need to clean and qualify an export fast. GPT for Sheets keeps the original fields, AI output, scores, and QA labels in one sheet, a lighter, Sheets-native alternative for Salesforce lead enrichment and hygiene.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

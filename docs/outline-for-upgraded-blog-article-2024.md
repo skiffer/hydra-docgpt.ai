@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Outline For Upgraded Blog Article 2024
+title: Outline For Upgraded Blog Article
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/outline-for-upgraded-blog-article-2024
-description: "Discover the ultimate guide to crafting a compelling blog article for 2024! Our upgraded outline covers the latest trends, SEO strategies, and reader engagement tips. Elevate your content creation with this essential resource for bloggers aiming for success."
+description: "Discover the ultimate guide to crafting a compelling blog article! Our upgraded outline covers the latest trends, SEO strategies, and reader engagement tips. Elevate your content creation with this essential resource for bloggers aiming for success."
 ---
 
-# Outline For Upgraded Blog Article 2024
+# Outline For Upgraded Blog Article
 
 ### Case of usage:
 > Generate a high-quality info content outline for your blog.

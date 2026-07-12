@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Fiverr Profile Description Ideas 2024
+title: Fiverr Profile Description Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/fiverr-profile-description-ideas-2024
-description: Discover creative Fiverr profile description ideas for 2024 to enhance your freelancing success. Unleash the potential to attract more clients and elevate your online presence with engaging, optimized profiles tailored for maximum impact and visibility.
+description: Discover creative Fiverr profile description ideas to enhance your freelancing success. Unleash the potential to attract more clients and elevate your online presence with engaging, optimized profiles tailored for maximum impact and visibility.
 ---
 
-# Fiverr Profile Description Ideas 2024
+# Fiverr Profile Description Ideas
 
 ### Case of usage:
 > Generate FIverr Profile Description

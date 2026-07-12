@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SmartCoder Convert Anything into Code 2024
+title: SmartCoder Convert Anything into Code
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/smartcoder-convert-anything-into-code-2024
-description: Unlock the future of programming with SmartCoder Convert Anything into Code 2024! Transform text, images, and more into seamless, efficient code in seconds. Perfect for developers, students, and tech enthusiasts seeking to simplify coding tasks. Experience unmatched versatility, speed, and accuracy today!
+description: Unlock the future of programming with SmartCoder Convert Anything into Code! Transform text, images, and more into seamless, efficient code in seconds. Perfect for developers, students, and tech enthusiasts seeking to simplify coding tasks. Experience unmatched versatility, speed, and accuracy today!
 ---
 
-# SmartCoder Convert Anything into Code 2024
+# SmartCoder Convert Anything into Code
 
 ### Case of usage:
 > Convert anything into code, that is in your mind. Hit Like if you like this Model.

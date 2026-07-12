@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Stable Diffusion Prompt Guide 2024
+title: Stable Diffusion Prompt Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/stable-diffusion-prompt-guide-2024
-description: Unlock your creative potential with the "Stable Diffusion Prompt Guide 2024." This comprehensive guide offers expert tips, innovative techniques, and step-by-step instructions to master stable diffusion prompts. Perfect for artists and creators aiming to enhance their digital artistry.
+description: Unlock your creative potential with the "Stable Diffusion Prompt Guide." This comprehensive guide offers expert tips, innovative techniques, and step-by-step instructions to master stable diffusion prompts. Perfect for artists and creators aiming to enhance their digital artistry.
 ---
 
-# Stable Diffusion Prompt Guide 2024
+# Stable Diffusion Prompt Guide
 
 ### Case of usage:
 > Generate a nice Prompt for SD with just a simple Idea.
@@ -37,7 +37,7 @@ Stable Diffusion is an AI art generation model similar to DALLE-2. Here are some
 
 3. Illustrate a futuristic cityscape at night, dominated by towering skyscrapers and neon lights. The bustling streets below are teeming with cyberpunk elements, with robotic figures. The scene is highly detailed, encapsulating the fast-paced energy of a metropolis infused with sci-fi charm. Borrow artistic cues from Tomasz Alen Kopera and Peter Mohrbacher, emphasizing the digital art’s sharpness. Create this visual in a panoramic format, ideal for cinematic viewing and popular among creators on platforms such as Artstation. 
 
-For more insightful AI-generated prompts, check DocGPT.AI.
+For more insightful AI-generated prompts, check DocGPT.ai.
 ```
 
 Use following formula inside GPT for Sheets

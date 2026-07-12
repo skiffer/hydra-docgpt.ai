@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Search Intent Based Keyword Ideas for 2024
+title: Search Intent Based Keyword Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/search-intent-based-keyword-ideas-for-2024
-description: Unlock the potential of your content strategy with search intent-based keyword ideas for 2024. Tailored to meet evolving user needs, our guide helps you stay ahead in the digital landscape, boosting relevance, engagement, and search rankings. Elevate your SEO game today!
+description: Unlock the potential of your content strategy with search intent-based keyword ideas. Tailored to meet evolving user needs, our guide helps you stay ahead in the digital landscape, boosting relevance, engagement, and search rankings. Elevate your SEO game today!
 ---
 
-# Search Intent Based Keyword Ideas for 2024
+# Search Intent Based Keyword Ideas
 
 ### Case of usage:
 > Find keyword ideas related to a keyword, and categorises them in a table by search intent.

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Upwork Cover Letter Writer in 2024
+title: Upwork Cover Letter Writer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/upwork-cover-letter-writer-in-2024
-description: Get a professional Upwork cover letter writer in 2024! Boost your freelance success with personalized, compelling proposals tailored to grab client attention. Stand out from the competition and land more gigs with expertly crafted cover letters. Hire now!
+description: Get a professional Upwork cover letter writer! Boost your freelance success with personalized, compelling proposals tailored to grab client attention. Stand out from the competition and land more gigs with expertly crafted cover letters. Hire now!
 ---
 
-# Upwork Cover Letter Writer in 2024
+# Upwork Cover Letter Writer
 
 ### Case of usage:
 > Use this tool to write Cover letter for  upwork. this save you a to of stress

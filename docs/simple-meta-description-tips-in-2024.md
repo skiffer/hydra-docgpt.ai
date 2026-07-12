@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Simple Meta Description Tips in 2024
+title: Simple Meta Description Tips
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/simple-meta-description-tips-in-2024
-description: Unlock the potential of your content with "Simple Meta Description Tips in 2024." Discover easy-to-implement strategies to enhance SEO, boost click-through rates, and improve search engine visibility. Stay ahead in digital marketing with these essential tips.
+description: Unlock the potential of your content with "Simple Meta Description Tips." Discover easy-to-implement strategies to enhance SEO, boost click-through rates, and improve search engine visibility. Stay ahead in digital marketing with these essential tips.
 ---
 
-# Simple Meta Description Tips in 2024
+# Simple Meta Description Tips
 
 ### Case of usage:
 > Create a meta description, under 160 characters, using the page or post title.

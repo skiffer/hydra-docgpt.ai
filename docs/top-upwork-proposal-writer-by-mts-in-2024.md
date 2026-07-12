@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Top Upwork Proposal Writer by MTS in 2024
+title: Top Upwork Proposal Writer by MTS
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/top-upwork-proposal-writer-by-mts-in-2024
-description: Discover the secrets of crafting winning proposals with MTS, the Top Upwork Proposal Writer of 2024. Elevate your freelancing career with proven strategies for success. Gain the competitive edge you need to stand out and secure your next project.
+description: Discover the secrets of crafting winning proposals with MTS, the Top Upwork Proposal Writer of. Elevate your freelancing career with proven strategies for success. Gain the competitive edge you need to stand out and secure your next project.
 ---
 
-# Top Upwork Proposal Writer by MTS in 2024
+# Top Upwork Proposal Writer by MTS
 
 ### Case of usage:
 > Crafting a compelling proposal is an art, and I'm ready to wield my quill as your professional proposal writer. Let's dive right into it:
@@ -33,7 +33,7 @@ Act as a Professional Proposal Writer According to Client's Requirements. Write 
 
 Note: The proposal should be 150 words long only.
 
-Created with [DocGPT.AI Prompt "Best Upwork Proposal Writer"](https://docgpt.ai/gpt-for-sheets/).
+Created with [DocGPT.ai Prompt "Best Upwork Proposal Writer"](https://docgpt.ai/gpt-for-sheets/).
 ```
 
 Use following formula inside GPT for Sheets

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Amazon KDP Ebook Description Writer 2024
+title: Amazon KDP Ebook Description Writer
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/amazon-kdp-ebook-description-writer-2024
-description: Boost your eBook sales on Amazon with our expert KDP Ebook Description Writer 2024. Craft compelling, SEO-optimized descriptions that captivate readers and enhance visibility. Perfect for authors aiming to stand out in the competitive Amazon marketplace.
+description: Boost your eBook sales on Amazon with our expert KDP Ebook Description Writer. Craft compelling, SEO-optimized descriptions that captivate readers and enhance visibility. Perfect for authors aiming to stand out in the competitive Amazon marketplace.
 ---
 
-# Amazon KDP Ebook Description Writer 2024
+# Amazon KDP Ebook Description Writer
 
 ### Case of usage:
 > Use this tool to write an Amazon ebook/KDP description. this save you a to of stress

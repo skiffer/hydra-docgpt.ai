@@ -100,7 +100,7 @@ A practical brand-research sheet starts with a store list and ends with reviewab
 
 Agencies sometimes route store lists through heavier enrichment tools, but a brand list is already tabular. GPT for Sheets keeps store rows, AI summaries, category labels, and outreach drafts in one Google Sheet, a lighter, Sheets-native alternative for ecommerce prospecting.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

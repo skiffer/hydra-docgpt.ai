@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create a YouTube Thumbnail That Gets Clicks 2024
+title: Create a YouTube Thumbnail That Gets Clicks
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-a-youtube-thumbnail-that-gets-clicks-2024
-description: Unlock the secrets to designing eye-catching YouTube thumbnails that boost your click-through rate in 2024. Discover essential tips, tools, and techniques to craft compelling visuals that captivate audiences and enhance your channel's visibility and success.
+description: Unlock the secrets to designing eye-catching YouTube thumbnails that boost your click-through rate. Discover essential tips, tools, and techniques to craft compelling visuals that captivate audiences and enhance your channel's visibility and success.
 ---
 
-# Create a YouTube Thumbnail That Gets Clicks 2024
+# Create a YouTube Thumbnail That Gets Clicks
 
 ### Case of usage:
 >  Your Next YouTube Thumbnail Ideation

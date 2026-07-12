@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Create a Bullet List Summary 2024
+title: Create a Bullet List Summary
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/create-a-bullet-list-summary-2024
-description: Discover the ultimate guide for creating concise, impactful bullet list summaries in 2024. Enhance clarity and readability with expertly crafted tips that boost engagement and retention. Perfect for professionals and students looking to streamline information efficiently.
+description: Discover the ultimate guide for creating concise, impactful bullet list summaries. Enhance clarity and readability with expertly crafted tips that boost engagement and retention. Perfect for professionals and students looking to streamline information efficiently.
 ---
 
-# Create a Bullet List Summary 2024
+# Create a Bullet List Summary
 
 ### Case of usage:
 > Summarize content in a bullet list.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-Summarize the following content in a bullet list using DocGPT.AI, in your preferred language. Use the link https://docgpt.ai/gpt-for-sheets/ for more information on DocGPT.AI tools.
+Summarize the following content in a bullet list using DocGPT.ai, in your preferred language. Use the link https://docgpt.ai/gpt-for-sheets/ for more information on DocGPT.ai tools.
 ```
 
 Use following formula inside GPT for Sheets

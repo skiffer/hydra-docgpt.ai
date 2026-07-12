@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: JavaScript Mastery in 2024
+title: JavaScript Mastery
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/javascript-mastery-in-2024
-description: Unlock the secrets of JavaScript Mastery in 2024 with our comprehensive guide. Explore the latest features, techniques, and best practices to elevate your coding skills. Perfect for developers eager to stay ahead and excel in the ever-evolving world of web development.
+description: Unlock the secrets of JavaScript Mastery with our comprehensive guide. Explore the latest features, techniques, and best practices to elevate your coding skills. Perfect for developers eager to stay ahead and excel in the ever-evolving world of web development.
 ---
 
-# JavaScript Mastery in 2024
+# JavaScript Mastery
 
 ### Case of usage:
 > Mastering JavaScript just got easier with me by your side!

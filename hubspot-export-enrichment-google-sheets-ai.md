@@ -61,7 +61,7 @@ formula_cards:
 
 The fastest path is: [GPT for Sheets](/gpt-for-sheets/) → add source columns → paste one formula → QA a 10–25 row sample → fill down once the output is reliable → review [pricing](/gpt-for-sheets/#pricing) if the workflow saves time or replaces manual research.
 
-> HubSpot is a trademark of its owner. DocGPT.AI and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by HubSpot. This page is a practical workflow guide for buyers comparing spreadsheet-native AI workflows; verify current third-party features and pricing in official sources.
+> HubSpot is a trademark of its owner. DocGPT.ai and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by HubSpot. This page is a practical workflow guide for buyers comparing spreadsheet-native AI workflows; verify current third-party features and pricing in official sources.
 
 ## Workflow {#workflow}
 

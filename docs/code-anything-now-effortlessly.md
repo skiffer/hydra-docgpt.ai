@@ -44,7 +44,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt
+# DocGPT.ai Prompt
 Lines starting with # are only comments for humans
 
 ---

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Facebook Ads Audience Generator Tool 2024
+title: Facebook Ads Audience Generator Tool
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/facebook-ads-audience-generator-tool-2024
-description: Unlock the power of precise targeting with the Facebook Ads Audience Generator Tool 2024. Tailor-make your audience profiles for optimal ad performance. Boost engagement, maximize ROI, and streamline your campaigns with advanced AI-driven insights. Perfect for savvy marketers.
+description: Unlock the power of precise targeting with the Facebook Ads Audience Generator Tool. Tailor-make your audience profiles for optimal ad performance. Boost engagement, maximize ROI, and streamline your campaigns with advanced AI-driven insights. Perfect for savvy marketers.
 ---
 
-# Facebook Ads Audience Generator Tool 2024
+# Facebook Ads Audience Generator Tool
 
 ### Case of usage:
 > Generate High-Performing Audiences for your Facebook Ads Campaign. Get the best possible Audiences Facebook Ads for your Products and increase your Ads results !!

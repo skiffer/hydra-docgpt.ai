@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Ultimate Guide to Instagram Buyer Persona 2024
+title: Ultimate Guide to Instagram Buyer Persona
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/ultimate-guide-to-instagram-buyer-persona-2024
-description: Discover the "Ultimate Guide to Instagram Buyer Persona 2024" and master crafting targeted marketing strategies. Uncover key insights and trends to effectively engage your audience and boost conversions for your brand on Instagram.
+description: Discover the "Ultimate Guide to Instagram Buyer Persona" and master crafting targeted marketing strategies. Uncover key insights and trends to effectively engage your audience and boost conversions for your brand on Instagram.
 ---
 
-# Ultimate Guide to Instagram Buyer Persona 2024
+# Ultimate Guide to Instagram Buyer Persona
 
 ### Case of usage:
 > Create a detailed Instagram Buyer Persona for your business. Pain Points, Possible Solutions, Acquisitions scheme, and much more! Well Organized in Tables!

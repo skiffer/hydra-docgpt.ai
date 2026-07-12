@@ -100,7 +100,7 @@ A practical dealership sheet starts with owned customer/vehicle data and ends wi
 
 Dealers sometimes evaluate enrichment platforms, but service and sales leads usually live in CSV exports from the DMS or CRM. GPT for Sheets keeps owned lead data, AI output, scores, and scripts in one Google Sheet, a lighter alternative for prioritizing dealership opportunities.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 

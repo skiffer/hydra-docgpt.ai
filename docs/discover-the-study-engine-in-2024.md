@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Discover the Study Engine in 2024
+title: Discover the Study Engine
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/discover-the-study-engine-in-2024
-description: Unlock academic success with "Discover the Study Engine in 2024." Dive into cutting-edge study techniques, tailored resources, and innovative tools designed to enhance learning efficiency and boost retention. Transform your educational journey with the ultimate study companion.
+description: Unlock academic success with "Discover the Study Engine." Dive into cutting-edge study techniques, tailored resources, and innovative tools designed to enhance learning efficiency and boost retention. Transform your educational journey with the ultimate study companion.
 ---
 
-# Discover the Study Engine in 2024
+# Discover the Study Engine
 
 ### Case of usage:
 > I explain, write the formula and even create examples using the formula so you can understand 

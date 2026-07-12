@@ -18,4 +18,8 @@
 /openroute-in-sheets/                           /openrouter-for-google-sheets-how-to-guide/ 301
 /openroute-in-sheets                            /openrouter-for-google-sheets-how-to-guide/ 301
 /slides-gpt-pricing           /google-slide-ai          301
-/*                             https://docgpt.ai         301!
+# DANGER: the forced catch-all below would redirect EVERY page to the homepage
+# if this file is ever honored by the host. Disabled 2026-07-12.
+# /*                             https://docgpt.ai         301!
+# www -> apex (requires www DNS record pointing at the host)
+https://www.docgpt.ai/* https://docgpt.ai/:splat 301!

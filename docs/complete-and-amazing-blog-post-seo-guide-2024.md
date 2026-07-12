@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Complete and Amazing Blog Post SEO Guide 2024
+title: Complete and Amazing Blog Post SEO Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/complete-and-amazing-blog-post-seo-guide-2024
-description: Master the art of blog post optimization with our "Complete and Amazing Blog Post SEO Guide 2024." Learn top strategies, tools, and tips to enhance your online visibility, drive traffic, and improve rankings. Perfect for bloggers, marketers, and SEO enthusiasts.
+description: Master the art of blog post optimization with our "Complete and Amazing Blog Post SEO Guide." Learn top strategies, tools, and tips to enhance your online visibility, drive traffic, and improve rankings. Perfect for bloggers, marketers, and SEO enthusiasts.
 ---
 
-# Complete and Amazing Blog Post SEO Guide 2024
+# Complete and Amazing Blog Post SEO Guide
 
 ### Case of usage:
 > A complete and amazing blog post SEO   (Biffi)

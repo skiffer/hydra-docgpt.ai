@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Capture Competitor Traffic in 2024
+title: Capture Competitor Traffic
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/capture-competitor-traffic-in-2024
-description: Unlock the secret to boosting your website's visibility with strategies to capture competitor traffic in 2024. Learn innovative SEO techniques to outsmart rivals, attract their audience, and elevate your online presence. Dominate search rankings and maximize your digital reach today!
+description: Unlock the secret to boosting your website's visibility with strategies to capture competitor traffic. Learn innovative SEO techniques to outsmart rivals, attract their audience, and elevate your online presence. Dominate search rankings and maximize your digital reach today!
 ---
 
-# Capture Competitor Traffic in 2024
+# Capture Competitor Traffic
 
 ### Case of usage:
 > Description: This prompt will ask for up to five competitor URLs and your brand name. Based on their website content, the AI model will generate five title ideas for a blog post to help you attract more traffic to your website. You can then choose one of the titles and use the AI model to generate a 700-word blog post complete with H2 and H3 headings, key points, and a FAQ section. You can also target a local city in the blog post by providing its name, which will be included in an H2 heading.
@@ -29,7 +29,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# DocGPT.AI Prompt - "Steal Your Competitor's Traffic"
+# DocGPT.ai Prompt - "Steal Your Competitor's Traffic"
 
 Once the user provides the [PROMPT] "Start," ask for up to five competitor URLs, separated by commas.
 

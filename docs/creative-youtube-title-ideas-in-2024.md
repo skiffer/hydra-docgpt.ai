@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Creative YouTube Title Ideas in 2024
+title: Creative YouTube Title Ideas
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/creative-youtube-title-ideas-in-2024
-description: Unlock your channel's potential with innovative YouTube title ideas for 2024! Boost engagement and capture viewer interest with trending, creative titles that stand out. Perfect for content creators looking to grow their audience and maximize video impact.
+description: Unlock your channel's potential with innovative YouTube title ideas! Boost engagement and capture viewer interest with trending, creative titles that stand out. Perfect for content creators looking to grow their audience and maximize video impact.
 ---
 
-# Creative YouTube Title Ideas in 2024
+# Creative YouTube Title Ideas
 
 ### Case of usage:
 > Create ranking youtube titles

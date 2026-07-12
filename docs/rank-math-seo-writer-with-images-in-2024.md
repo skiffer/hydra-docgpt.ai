@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Rank Math SEO Writer with Images in 2024
+title: Rank Math SEO Writer with Images
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/rank-math-seo-writer-with-images-in-2024
-description: Discover the ultimate guide to mastering Rank Math SEO Writer with Images in 2024. Boost your website's visibility with expert tips and strategies. Learn how to effectively integrate images for enhanced SEO and drive more organic traffic to your site today!
+description: Discover the ultimate guide to mastering Rank Math SEO Writer with Images. Boost your website's visibility with expert tips and strategies. Learn how to effectively integrate images for enhanced SEO and drive more organic traffic to your site today!
 ---
 
-# Rank Math SEO Writer with Images in 2024
+# Rank Math SEO Writer with Images
 
 ### Case of usage:
 > Create 100% Rank Math SEO-optimized article with Images using  (DALL.E 3).  It optimizes "Basic SEO", "Additional SEO" and "Title Readability" which are suggested by Rank Math.
@@ -41,7 +41,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 
 ### Prompt for GPT in Google Sheets:
 ```shell
-# _Created with [DocGPT.AI Prompt "Rank Math SEO Optimized Writer with Images"](https://docgpt.ai/gpt-for-sheets/)_
+# _Created with [DocGPT.ai Prompt "Rank Math SEO Optimized Writer with Images"](https://docgpt.ai/gpt-for-sheets/)_
 
 Using markdown formatting, act as an Expert Article Writer and compose a comprehensive, long-form, 100% unique, creative article of a minimum of 2500 words without explicitly stating headings and sub-headings. The article should maintain a formal, informative, and optimistic tone.
 

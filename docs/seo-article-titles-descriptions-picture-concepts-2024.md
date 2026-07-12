@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Article Titles Descriptions Picture Concepts 2024
+title: SEO Article Titles Descriptions Picture Concepts
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-article-titles-descriptions-picture-concepts-2024
-description: Unlock the potential of your digital content with "SEO Article Titles Descriptions Picture Concepts 2024." Discover cutting-edge strategies for crafting engaging titles and descriptions while integrating impactful visuals to enhance your SEO and captivate audiences.
+description: Unlock the potential of your digital content with "SEO Article Titles Descriptions Picture Concepts." Discover cutting-edge strategies for crafting engaging titles and descriptions while integrating impactful visuals to enhance your SEO and captivate audiences.
 ---
 
-# SEO Article Titles Descriptions Picture Concepts 2024
+# SEO Article Titles Descriptions Picture Concepts
 
 ### Case of usage:
 > Create a SEO optimized article ideas with just a prompt. SEO-optimized titles, meta description, and picture inspiration

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: SEO Product Descriptions and FAQs in 2024
+title: SEO Product Descriptions and FAQs
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/seo-product-descriptions-and-faqs-in-2024
-description: Unlock the power of SEO with cutting-edge product descriptions and FAQs for 2024. Elevate your online presence, boost search rankings, and engage customers with strategically crafted content designed to drive traffic and sales.
+description: Unlock the power of SEO with cutting-edge product descriptions and FAQs. Elevate your online presence, boost search rankings, and engage customers with strategically crafted content designed to drive traffic and sales.
 ---
 
-# SEO Product Descriptions and FAQs in 2024
+# SEO Product Descriptions and FAQs
 
 ### Case of usage:
 > Save your time! write sales engaging product descriptions, headings & subheadings, related target keywords, Meta title & descriptions, possible FAQs and Answers... 

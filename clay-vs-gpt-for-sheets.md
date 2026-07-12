@@ -59,7 +59,7 @@ formula_cards:
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) → add source columns → paste a formula → QA 10 rows → scale to the rest of the sheet → [compare pricing](/gpt-for-sheets/#pricing) when the workflow is saving time.
 
-> Clay is a trademark of its owner. DocGPT.AI and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by Clay or any other named company. This page is a factual comparison for buyers evaluating spreadsheet workflows; verify current features in each product's own documentation.
+> Clay is a trademark of its owner. DocGPT.ai and GPT for Sheets are independent products and are not affiliated with, endorsed by, or sponsored by Clay or any other named company. This page is a factual comparison for buyers evaluating spreadsheet workflows; verify current features in each product's own documentation.
 
 ## Workflow {#workflow}
 

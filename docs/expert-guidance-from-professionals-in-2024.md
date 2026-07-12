@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Expert Guidance from Professionals in 2024
+title: Expert Guidance from Professionals
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/expert-guidance-from-professionals-in-2024
-description: Unlock unparalleled insights with "Expert Guidance from Professionals in 2024". Discover strategies and cutting-edge techniques from industry leaders to enhance your skills and drive success. Gain the competitive edge you need to thrive in today's dynamic landscape.
+description: Unlock unparalleled insights with "Expert Guidance from Professionals". Discover strategies and cutting-edge techniques from industry leaders to enhance your skills and drive success. Gain the competitive edge you need to thrive in today's dynamic landscape.
 ---
 
-# Expert Guidance from Professionals in 2024
+# Expert Guidance from Professionals
 
 ### Case of usage:
 > Get Expert Advice from Pro! The expert will ask you questions to understand your needs and then provide tailored advice.

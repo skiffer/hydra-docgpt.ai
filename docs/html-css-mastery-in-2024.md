@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: HTML CSS Mastery in 2024
+title: HTML CSS Mastery
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/html-css-mastery-in-2024
-description: Unlock your web development potential with "HTML CSS Mastery in 2024." Stay ahead in the digital era by mastering the latest HTML and CSS techniques. Perfect for beginners and seasoned developers aiming to enhance their skills and craft stunning, responsive websites effortlessly.
+description: Unlock your web development potential with "HTML CSS Mastery." Stay ahead in the digital era by mastering the latest HTML and CSS techniques. Perfect for beginners and seasoned developers aiming to enhance their skills and craft stunning, responsive websites effortlessly.
 ---
 
-# HTML CSS Mastery in 2024
+# HTML CSS Mastery
 
 ### Case of usage:
 > Struggling with HTML & CSS? I can help!

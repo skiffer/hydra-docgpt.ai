@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: YouTube Script Creator in 2024
+title: YouTube Script Creator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/youtube-script-creator-in-2024
-description: Discover the ultimate YouTube Script Creator in 2024! Effortlessly craft engaging, SEO-optimized video scripts that captivate your audience and boost your channel's visibility. Perfect for content creators aiming to streamline their workflow and elevate their YouTube presence.
+description: Discover the ultimate YouTube Script Creator! Effortlessly craft engaging, SEO-optimized video scripts that captivate your audience and boost your channel's visibility. Perfect for content creators aiming to streamline their workflow and elevate their YouTube presence.
 ---
 
-# YouTube Script Creator in 2024
+# YouTube Script Creator
 
 ### Case of usage:
 > Create captivating script ideas for your YouTube videos. Enter a short description of your video.

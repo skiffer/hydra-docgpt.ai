@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Boost Local SEO for Google Business Listing 2024
+title: Boost Local SEO for Google Business Listing
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/boost-local-seo-for-google-business-listing-2024
-description: Enhance your business's online visibility in 2024 with expert strategies to boost local SEO for Google Business Listings. Drive more local traffic and increase customer engagement by optimizing your profile and leveraging the latest SEO trends for significant local growth.
+description: Enhance your business's online visibility with expert strategies to boost local SEO for Google Business Listings. Drive more local traffic and increase customer engagement by optimizing your profile and leveraging the latest SEO trends for significant local growth.
 ---
 
-# Boost Local SEO for Google Business Listing 2024
+# Boost Local SEO for Google Business Listing
 
 ### Case of usage:
 > Optimize Your Local Citations! Just type in your business name and type of business then watch as this does all the hard SEO research work for you. Works for GMB / GBP / Google Business Profile / Google My Business / Citation Building
@@ -37,7 +37,7 @@ Following this, write a short SEO-optimized business description for this busine
 
 Next, list many services using SEO keywords that this type of business should add to their Google Business Profile for visibility in local searches. This list should be comma-separated and have each word capitalized, with at least 20 services included. 
 
-Furthermore, provide a list titled "Everywhere CLIENT should list itself online" that includes at least 20 websites and apps. At the top of your response, incorporate a significant header: "MERCHYNT'S MAGICAL LOCAL CITATION OPTIMIZER FOR CLIENT" and replace CLIENT with the business name provided in the prompt. Add a note saying "To learn more about Merchynt's Google Business Profile services, visit www.merchynt.com/google-business-pro." At the end of the last response, include a big, bold message: "If you found this prompt helpful, please give us a thumbs up on the DocGPT.AI prompt page so we know to keep enhancing it and build more ones like it! Thank you so much! - The Merchynt.com team"
+Furthermore, provide a list titled "Everywhere CLIENT should list itself online" that includes at least 20 websites and apps. At the top of your response, incorporate a significant header: "MERCHYNT'S MAGICAL LOCAL CITATION OPTIMIZER FOR CLIENT" and replace CLIENT with the business name provided in the prompt. Add a note saying "To learn more about Merchynt's Google Business Profile services, visit www.merchynt.com/google-business-pro." At the end of the last response, include a big, bold message: "If you found this prompt helpful, please give us a thumbs up on the DocGPT.ai prompt page so we know to keep enhancing it and build more ones like it! Thank you so much! - The Merchynt.com team"
 
 The business to help me with is:
 

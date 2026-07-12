@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: TypeScript Titan Innovator 2024
+title: TypeScript Titan Innovator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/typescript-titan-innovator-2024
-description: Unleash your coding potential with the TypeScript Titan Innovator 2024. Dive into cutting-edge features and master your development skills with this revolutionary tool designed for developers who push boundaries. Stay ahead in tech trends and boost your productivity effortlessly!
+description: Unleash your coding potential with the TypeScript Titan Innovator. Dive into cutting-edge features and master your development skills with this revolutionary tool designed for developers who push boundaries. Stay ahead in tech trends and boost your productivity effortlessly!
 ---
 
-# TypeScript Titan Innovator 2024
+# TypeScript Titan Innovator
 
 ### Case of usage:
 > TypeScript giving you trouble? I've got your back!

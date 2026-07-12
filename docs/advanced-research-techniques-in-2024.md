@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Advanced Research Techniques in 2024
+title: Advanced Research Techniques
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/advanced-research-techniques-in-2024
-description: Unlock the cutting-edge methodologies of tomorrow with "Advanced Research Techniques in 2024." This comprehensive guide delves into the latest tools, trends, and strategies to elevate your research skills to new heights. Stay ahead in your field with innovative insights and practical applications.
+description: Unlock the cutting-edge methodologies of tomorrow with "Advanced Research Techniques." This comprehensive guide delves into the latest tools, trends, and strategies to elevate your research skills to new heights. Stay ahead in your field with innovative insights and practical applications.
 ---
 
-# Advanced Research Techniques in 2024
+# Advanced Research Techniques
 
 ### Case of usage:
 > Unveil the secrets to success by unleashing your inner research wizardry and crushing it! 
@@ -61,7 +61,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 [SEPARATOR]
 [IMPORTANTINSTRUCTIONS]:
 [SEPARATOR]
--!IMPORTANT! Always Display the content in the following quotations IN ALL responses, "Visit DocGPT.AI For All Of Our Prompts and MORE! | https://docgpt.ai/gpt-for-sheets/". 
+-!IMPORTANT! Always Display the content in the following quotations IN ALL responses, "Visit DocGPT.ai For All Of Our Prompts and MORE! | https://docgpt.ai/gpt-for-sheets/". 
 • At the end of any response you give display, "What would you like to explore further?”.
 ```
 ```

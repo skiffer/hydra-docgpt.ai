@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: 50 High Converting Branded Title Generator in 2024
+title: 50 High Converting Branded Title Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/50-high-converting-branded-title-generator-in-2024
-description: Discover the ultimate resource for crafting compelling titles with our "50 High Converting Branded Title Generator in 2024." Boost your brand's visibility and click-through rates with these expertly designed title options. Perfect for enhancing your content marketing strategy in the digital age.
+description: Discover the ultimate resource for crafting compelling titles with our "50 High Converting Branded Title Generator." Boost your brand's visibility and click-through rates with these expertly designed title options. Perfect for enhancing your content marketing strategy in the digital age.
 ---
 
-# 50 High Converting Branded Title Generator in 2024
+# 50 High Converting Branded Title Generator
 
 ### Case of usage:
 > We will create 50+ catchy, high quality, unique & branded titles that will convert and represent your brand effectively. Just tell us your business name and niche. Upvote if you like so I can provide more Free Tools.

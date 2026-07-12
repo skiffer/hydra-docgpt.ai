@@ -30,7 +30,7 @@ If you cannot see the GPT functions in your spreadsheet, follow these steps to e
 ### Prompt for GPT in Google Sheets:
 ```shell
 ```
-Hello DocGPT.AI, I'm seeking your assistance in creating compelling content in [TARGETLANGUAGE] for a product listing on Amazon. As part of the task, you will be required to generate a title, a product description of no less than 300 words, 7 bullet points with a maximum of 600 characters each, and a list of 25 SEO keywords.
+Hello DocGPT.ai, I'm seeking your assistance in creating compelling content in [TARGETLANGUAGE] for a product listing on Amazon. As part of the task, you will be required to generate a title, a product description of no less than 300 words, 7 bullet points with a maximum of 600 characters each, and a list of 25 SEO keywords.
 
 To start, please ensure that the product title accurately describes the product's functionality and is between 150 and 200 characters long and include 5 keywords. It should also highlight the benefits of the product to potential customers.
 

@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Creative Ideas Generator 2024
+title: Creative Ideas Generator
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/creative-ideas-generator-2024
-description: Unleash your imagination with the Creative Ideas Generator 2024! Discover innovative solutions and boost your projects with AI-driven inspiration. Perfect for entrepreneurs, writers, and designers seeking fresh, unique concepts. Spark creativity today!
+description: Unleash your imagination with the Creative Ideas Generator! Discover innovative solutions and boost your projects with AI-driven inspiration. Perfect for entrepreneurs, writers, and designers seeking fresh, unique concepts. Spark creativity today!
 ---
 
-# Creative Ideas Generator 2024
+# Creative Ideas Generator
 
 ### Case of usage:
 > What would you like me to brainstorm?

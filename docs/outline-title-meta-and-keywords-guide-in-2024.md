@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Outline Title Meta and Keywords Guide in 2024
+title: Outline Title Meta and Keywords Guide
 nav_order: 1
 parent: AI Prompts
 permalink: /docs/ai-prompts/outline-title-meta-and-keywords-guide-in-2024
-description: Unlock the secrets of crafting compelling titles, meta descriptions, and keywords with our 2024 guide. Enhance your SEO strategy and boost your website’s visibility with up-to-date insights and practical tips to dominate search engine rankings.
+description: Unlock the secrets of crafting compelling titles, meta descriptions, and keywords with our guide. Enhance your SEO strategy and boost your website’s visibility with up-to-date insights and practical tips to dominate search engine rankings.
 ---
 
-# Outline Title Meta and Keywords Guide in 2024
+# Outline Title Meta and Keywords Guide
 
 ### Case of usage:
 > Get blog article outline, blog title, meta description and additional keywords

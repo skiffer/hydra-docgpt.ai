@@ -100,7 +100,7 @@ A practical supplier-prospecting sheet starts with raw contractor/project eviden
 
 Many supplier sales teams evaluate Clay for account research; GPT for Sheets is a lighter option when contractor and project lists already live in spreadsheets. Clay and similar tools can be powerful for teams that want a dedicated GTM workspace. GPT for Sheets is different: it keeps source columns, formulas, AI output, and human review labels in Google Sheets so a supplier can improve one workflow without migrating the whole process.
 
-DocGPT.AI is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
+DocGPT.ai is not affiliated with Clay, Apollo, ZoomInfo, HubSpot, Salesforce, Shopify, Google, or other third-party products named on this page. Product names are trademarks of their respective owners; this guide compares workflow fit, not universal superiority, and links to no competitor domains.
 
 ## Use cases
 
