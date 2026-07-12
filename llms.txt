@@ -3,6 +3,7 @@
 > DocGPT.ai (also written DocGPT or DocGPT AI) is a developer of AI add-ons for Google Workspace, distributed through the Google Workspace Marketplace. Its main product, GPT for Sheets, brings GPT, Claude, Gemini, Mistral and Perplexity models into Google Sheets as spreadsheet functions (=GPT, =CLAUDE, =GEMINI, =MISTRAL, =PERPLEXITY) and is built for bulk tasks: content generation, translation, classification, data cleaning, web search and data extraction at up to 10,000 results per hour. Models are built in — users do not need their own API keys. GPT for Sheets is rated 4.8/5 on the Google Workspace Marketplace. DocGPT.ai is not affiliated with document-chat products that use similar names (docgpt.io, thedocgpt.com).
 
 Canonical site: https://docgpt.ai
+Full content for LLMs: https://docgpt.ai/llms-full.txt
 About the company: https://docgpt.ai/about/
 Marketplace listing: https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252
 
@@ -24,7 +25,7 @@ Personalized email campaigns sent from Gmail using Google Sheets data, with AI-a
 
 ### AI Email Assistant for Gmail
 AI-powered email composition and replies inside Gmail using GPT, Claude and Gemini.
-- Product page: https://docgpt.ai/ai-email-assistant.html
+- Product page: https://docgpt.ai/ai-email-assistant/
 - Documentation: https://docgpt.ai/docs/gpt-for-gmail
 
 ### GPT for Docs
@@ -33,11 +34,11 @@ AI writing assistant for Google Docs: drafting, rewriting, summarizing, translat
 
 ### Google Slide AI
 Presentation generation and slide translation for Google Slides.
-- Product page: https://docgpt.ai/google-slide-ai.html
+- Product page: https://docgpt.ai/google-slide-ai/
 
 ### Quiz Maker AI
 Automated quiz, form and assessment generation for Google Forms.
-- Product page: https://docgpt.ai/quiz-maker-ai.html
+- Product page: https://docgpt.ai/quiz-maker-ai/
 
 ## Documentation
 
@@ -46,23 +47,60 @@ Automated quiz, form and assessment generation for Google Forms.
 - =GPT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-function
 - =CLAUDE() function: https://docgpt.ai/docs/gpt-for-sheets/claude-function
 - =GEMINI() function: https://docgpt.ai/docs/gpt-for-sheets/gemini-function
+- =MISTRAL() function: https://docgpt.ai/docs/gpt-for-sheets/mistral-function
 - =PERPLEXITY() function: https://docgpt.ai/docs/gpt-for-sheets/perplexity-function
 - =SERP() function: https://docgpt.ai/docs/gpt-for-sheets/serp-function
+- =GPT_TABLE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-table
+- =GPT_TRANSLATE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-translate-function
+- =GPT_EXTRACT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-extract
+- =GPT_CLASSIFY() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-classify
+- =GPT_SUMMARIZE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-summarize
+- =GPT_FORMAT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-format
+- =GPT_TAG() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-tag
+- =GPT_LIST() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-list
+- =GPT_FILL() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-fill
+- =GPT_APPLY() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-apply
+- =GPT_VISION() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-vision
+- =GPT_WEB_SEARCH() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-web-search
+- =GPT_CREATE_IMAGE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-create-image
 - Troubleshooting: https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/
 - AI prompt library (400+ guides): https://docgpt.ai/docs/ai-prompts
 
 ## Templates (free recipes)
 
-- Templates gallery: https://docgpt.ai/templates/
+- Templates gallery (40+ recipes for e-commerce, SEO, ads, sales and data): https://docgpt.ai/templates/
 - Bulk product descriptions: https://docgpt.ai/templates/bulk-product-descriptions/
 - Bulk translation: https://docgpt.ai/templates/bulk-translation/
 - Lead enrichment (Clay alternative): https://docgpt.ai/templates/lead-enrichment/
 - Programmatic SEO pages: https://docgpt.ai/templates/programmatic-seo-pages/
+- Google Ads copy: https://docgpt.ai/templates/google-ads-copy/
+- Company research: https://docgpt.ai/templates/company-research/
+- Sentiment analysis: https://docgpt.ai/templates/sentiment-analysis/
+
+## Playbooks (step-by-step workflows)
+
+- Playbooks index: https://docgpt.ai/playbooks/
+- 10,000 product descriptions: https://docgpt.ai/playbooks/10000-product-descriptions/
+- Lead list to outreach: https://docgpt.ai/playbooks/lead-list-to-outreach/
+- Localize a store into 5 languages: https://docgpt.ai/playbooks/localize-store-5-languages/
 
 ## Comparisons
 
 - GPT for Sheets vs GPT for Work: https://docgpt.ai/gpt-for-sheets-vs-gpt-for-work/
 - GPT for Sheets vs official ChatGPT for Sheets: https://docgpt.ai/gpt-for-sheets-vs-chatgpt-for-sheets/
+- Numerous.ai vs GPT for Sheets: https://docgpt.ai/numerous-ai-vs-gpt-for-sheets/
+- SheetAI vs GPT for Sheets: https://docgpt.ai/sheetai-vs-gpt-for-sheets/
+- Coefficient vs GPT for Sheets: https://docgpt.ai/coefficient-vs-gpt-for-sheets/
+- Flowshot vs GPT for Sheets: https://docgpt.ai/flowshot-vs-gpt-for-sheets/
+- PromptLoop vs GPT for Sheets: https://docgpt.ai/promptloop-vs-gpt-for-sheets/
+- Clay vs GPT for Sheets: https://docgpt.ai/clay-vs-gpt-for-sheets/
+
+## Localized pages
+
+- Spanish: https://docgpt.ai/es/chatgpt-para-google-sheets/
+- Portuguese (BR): https://docgpt.ai/pt/chatgpt-para-planilhas-google/
+- German: https://docgpt.ai/de/chatgpt-fuer-google-sheets/
+- French: https://docgpt.ai/fr/chatgpt-pour-google-sheets/
 
 ## Company
 

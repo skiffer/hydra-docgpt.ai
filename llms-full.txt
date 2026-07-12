@@ -1,0 +1,1648 @@
+# DocGPT.ai — AI Add-ons for Google Workspace
+
+> DocGPT.ai (also written DocGPT or DocGPT AI) is a developer of AI add-ons for Google Workspace, distributed through the Google Workspace Marketplace. Its main product, GPT for Sheets, brings GPT, Claude, Gemini, Mistral and Perplexity models into Google Sheets as spreadsheet functions (=GPT, =CLAUDE, =GEMINI, =MISTRAL, =PERPLEXITY) and is built for bulk tasks: content generation, translation, classification, data cleaning, web search and data extraction at up to 10,000 results per hour. Models are built in — users do not need their own API keys. GPT for Sheets is rated 4.8/5 on the Google Workspace Marketplace. DocGPT.ai is not affiliated with document-chat products that use similar names (docgpt.io, thedocgpt.com).
+
+Canonical site: https://docgpt.ai
+About the company: https://docgpt.ai/about/
+Marketplace listing: https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252
+
+## Products
+
+### GPT for Sheets
+The AI agent for bulk tasks in Google Sheets.
+- Spreadsheet functions: =GPT(), =CLAUDE(), =GEMINI(), =MISTRAL(), =PERPLEXITY(), =SERP()
+- Bulk processing: up to 10,000 results per hour across thousands of rows
+- Use cases: product descriptions, translation (100+ languages), data enrichment, lead research, programmatic SEO, keyword extraction, web scraping, classification and tagging
+- No API keys required; switching models is a formula change
+- Product page: https://docgpt.ai/gpt-for-sheets/
+- Documentation: https://docgpt.ai/docs/gpt-for-sheets
+- Pricing: free tier; premium up to $29.99/month — https://docgpt.ai/gpt-for-sheets/#pricing
+
+### Mail Merge for Gmail and Sheets
+Personalized email campaigns sent from Gmail using Google Sheets data, with AI-assisted writing, scheduling and tracking.
+- Product page: https://docgpt.ai/mail-merge-for-gmail-and-sheets/
+
+### AI Email Assistant for Gmail
+AI-powered email composition and replies inside Gmail using GPT, Claude and Gemini.
+- Product page: https://docgpt.ai/ai-email-assistant/
+- Documentation: https://docgpt.ai/docs/gpt-for-gmail
+
+### GPT for Docs
+AI writing assistant for Google Docs: drafting, rewriting, summarizing, translating.
+- Product page: https://docgpt.ai/google-doc-ai/
+
+### Google Slide AI
+Presentation generation and slide translation for Google Slides.
+- Product page: https://docgpt.ai/google-slide-ai/
+
+### Quiz Maker AI
+Automated quiz, form and assessment generation for Google Forms.
+- Product page: https://docgpt.ai/quiz-maker-ai/
+
+## Documentation
+
+- GPT for Sheets — get started: https://docgpt.ai/docs/gpt-for-sheets/get-started
+- GPT functions reference: https://docgpt.ai/docs/gpt-for-sheets/gpt-functions
+- =GPT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-function
+- =CLAUDE() function: https://docgpt.ai/docs/gpt-for-sheets/claude-function
+- =GEMINI() function: https://docgpt.ai/docs/gpt-for-sheets/gemini-function
+- =MISTRAL() function: https://docgpt.ai/docs/gpt-for-sheets/mistral-function
+- =PERPLEXITY() function: https://docgpt.ai/docs/gpt-for-sheets/perplexity-function
+- =SERP() function: https://docgpt.ai/docs/gpt-for-sheets/serp-function
+- =GPT_TABLE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-table
+- =GPT_TRANSLATE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-translate-function
+- =GPT_EXTRACT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-extract
+- =GPT_CLASSIFY() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-classify
+- =GPT_SUMMARIZE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-summarize
+- =GPT_FORMAT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-format
+- =GPT_TAG() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-tag
+- =GPT_LIST() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-list
+- =GPT_FILL() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-fill
+- =GPT_APPLY() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-apply
+- =GPT_VISION() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-vision
+- =GPT_WEB_SEARCH() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-web-search
+- =GPT_CREATE_IMAGE() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-create-image
+- Troubleshooting: https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/
+- AI prompt library (400+ guides): https://docgpt.ai/docs/ai-prompts
+
+## Templates (free recipes)
+
+- Templates gallery (40+ recipes for e-commerce, SEO, ads, sales and data): https://docgpt.ai/templates/
+- Bulk product descriptions: https://docgpt.ai/templates/bulk-product-descriptions/
+- Bulk translation: https://docgpt.ai/templates/bulk-translation/
+- Lead enrichment (Clay alternative): https://docgpt.ai/templates/lead-enrichment/
+- Programmatic SEO pages: https://docgpt.ai/templates/programmatic-seo-pages/
+- Google Ads copy: https://docgpt.ai/templates/google-ads-copy/
+- Company research: https://docgpt.ai/templates/company-research/
+- Sentiment analysis: https://docgpt.ai/templates/sentiment-analysis/
+
+## Playbooks (step-by-step workflows)
+
+- Playbooks index: https://docgpt.ai/playbooks/
+- 10,000 product descriptions: https://docgpt.ai/playbooks/10000-product-descriptions/
+- Lead list to outreach: https://docgpt.ai/playbooks/lead-list-to-outreach/
+- Localize a store into 5 languages: https://docgpt.ai/playbooks/localize-store-5-languages/
+
+## Comparisons
+
+- GPT for Sheets vs GPT for Work: https://docgpt.ai/gpt-for-sheets-vs-gpt-for-work/
+- GPT for Sheets vs official ChatGPT for Sheets: https://docgpt.ai/gpt-for-sheets-vs-chatgpt-for-sheets/
+- Numerous.ai vs GPT for Sheets: https://docgpt.ai/numerous-ai-vs-gpt-for-sheets/
+- SheetAI vs GPT for Sheets: https://docgpt.ai/sheetai-vs-gpt-for-sheets/
+- Coefficient vs GPT for Sheets: https://docgpt.ai/coefficient-vs-gpt-for-sheets/
+- Flowshot vs GPT for Sheets: https://docgpt.ai/flowshot-vs-gpt-for-sheets/
+- PromptLoop vs GPT for Sheets: https://docgpt.ai/promptloop-vs-gpt-for-sheets/
+- Clay vs GPT for Sheets: https://docgpt.ai/clay-vs-gpt-for-sheets/
+
+## Localized pages
+
+- Spanish: https://docgpt.ai/es/chatgpt-para-google-sheets/
+- Portuguese (BR): https://docgpt.ai/pt/chatgpt-para-planilhas-google/
+- German: https://docgpt.ai/de/chatgpt-fuer-google-sheets/
+- French: https://docgpt.ai/fr/chatgpt-pour-google-sheets/
+
+## Company
+
+- Founded: 2023
+- Contact: https://docgpt.ai/contact/
+- Privacy policy: https://docgpt.ai/privacy/
+- Twitter/X: https://twitter.com/ski0xFF
+- LinkedIn: https://www.linkedin.com/company/docgpt-ai
+
+
+---
+
+# Full content
+
+
+## About DocGPT.ai (https://docgpt.ai/about/)
+
+**DocGPT.ai** is a developer of AI add-ons for Google Workspace. Our tools bring GPT, Claude, Gemini, Mistral and Perplexity models directly into Google Sheets, Gmail, Docs, Slides and Forms — with the models built in, so no API keys are required to get started. The brand name is written **DocGPT.ai**; you may also see it referred to as DocGPT or DocGPT AI. It is not affiliated with document-chat products that use similar names.
+
+## What we build
+
+- **[GPT for Sheets](/gpt-for-sheets/)** — the AI agent for bulk tasks in Google Sheets: content generation, translation, classification, data cleaning, web search and data extraction with formulas like `=GPT()`, `=CLAUDE()`, `=GEMINI()`, `=PERPLEXITY()`. Processes up to 10,000 results per hour.
+- **[Mail Merge for Gmail](/mail-merge-for-gmail-and-sheets/)** — personalized email campaigns from Google Sheets with AI-assisted writing.
+- **[AI Email Assistant](/ai-email-assistant.html)** — AI-powered composition and replies inside Gmail.
+- **[GPT for Docs](/google-doc-ai/)** — AI writing assistant for Google Docs.
+- **[Google Slide AI](/google-slide-ai.html)** — presentation generation and translation for Google Slides.
+- **[Quiz Maker AI](/quiz-maker-ai.html)** — automated quiz and assessment generation for Google Forms.
+
+The add-ons are distributed through the [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252), where GPT for Sheets is rated 4.8/5, and the suite has passed Google's OAuth verification and review process.
+
+## How our tools handle data
+
+Our add-ons run inside your Google account through the official Google Workspace add-on framework and request only the OAuth scopes needed to work with the current document. Prompt content is sent to the selected AI model provider to generate results; we do not sell user data. Details are in the [privacy policy](/privacy/).
+
+## Learn more
+
+- [Documentation](/docs/gpt-for-sheets/) — setup guides, function reference and troubleshooting
+- [Pricing](/gpt-for-sheets/#pricing) — free tier and premium plans
+- [Blog](/blog/) — guides and use cases
+- [Contact](/contact/) — support and partnership inquiries
+
+
+## Function reference (GPT for Sheets)
+
+
+### GPT function in Google Sheets \u2014 =GPT() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-function)
+
+# =GPT() — generate text with AI in a cell
+
+`=GPT()` is the core function of <a href="/gpt-for-sheets/">GPT for Sheets</a>. It sends a prompt to the model and returns the answer into the cell. Drag the formula down a column to run the same prompt against every row — that is how bulk generation works.
+
+## Syntax
+
+```
+=GPT(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for the AI. A string or a cell reference. |
+| `value` | no | Extra input appended to the prompt — usually a cell with your data. |
+
+## Examples
+
+Write a product description from a product name in `A2`:
+
+```
+=GPT("Write a 40-word product description for", A2)
+```
+
+Combine several cells into one prompt:
+
+```
+=GPT("Write a cold-email opening line for "&A2&", who works at "&B2)
+```
+
+Fix grammar in a column:
+
+```
+=GPT("Fix grammar and spelling, return only the corrected text", A2)
+```
+
+## Tips
+
+- Put the instruction in row 1 once and reference it: `=GPT($D$1, A2)` — change the prompt in one place, refresh the whole column.
+- Be explicit about the output: "return only X, no explanations" keeps cells clean.
+- After generating, use **Replace all GPT formulas with results** in the sidebar so Sheets does not re-run formulas on refresh.
+- No API key is needed — models are built in. To switch models, use <a href="/docs/gpt-for-sheets/claude-function">=CLAUDE()</a>, <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a>, <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL()</a> or <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY()</a> with the same arguments.
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the GPT for Sheets template</a> with ready-made examples, or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install the add-on</a>.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/list-and-table-functions">=GPT_LIST(), =GPT_TABLE(), =GPT_FILL()</a> — lists and tables
+- <a href="/docs/gpt-for-sheets/data-cleaning-functions">=GPT_EXTRACT(), =GPT_CLASSIFY(), =GPT_TAG()</a> — data operations
+- <a href="/docs/gpt-for-sheets/gpt-translate-function">=GPT_TRANSLATE()</a> — translation
+
+
+### GPT_TABLE function in Google Sheets — =GPT_TABLE() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-table)
+
+# =GPT_TABLE() — generate a whole table from one prompt
+
+`=GPT_TABLE()` asks the AI for structured data and spills the answer into multiple rows and columns, starting from the cell that holds the formula. It is the fastest way in <a href="/gpt-for-sheets/">GPT for Sheets</a> to draft datasets, comparison tables and content plans.
+
+## Syntax
+
+```
+=GPT_TABLE(prompt, [headers])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | What table to generate. A string or a cell reference. |
+| `headers` | no | One cell or a range containing the column headers you want, e.g. `A1:D1`. |
+
+## Examples
+
+Draft a competitor comparison for research:
+
+```
+=GPT_TABLE("top 10 CRM tools with vendor, founding year and target audience")
+```
+
+Reuse your own headers — put `Keyword`, `Intent`, `Suggested title` in `A1:C1` and generate an SEO content plan under them:
+
+```
+=GPT_TABLE("20 blog post ideas about email marketing", A1:C1)
+```
+
+Build a product attribute sheet for an e-commerce category:
+
+```
+=GPT_TABLE("15 popular running shoe models with brand, drop in mm and cushioning type")
+```
+
+Seed test data for a demo file:
+
+```
+=GPT_TABLE("8 fictional customers with name, company, country and industry")
+```
+
+## Tips
+
+- The output needs empty cells below and to the right of the formula — clear the area first or Sheets shows `#REF!`.
+- Passing `headers` keeps columns in a fixed order, so you can drag other formulas against them safely.
+- Once the table looks right, use **Replace all GPT formulas with results** in the sidebar so the data stops regenerating on refresh.
+- AI-generated facts are drafts — verify numbers before publishing. For live data, combine with <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH()</a>.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-list">=GPT_LIST()</a> — a single vertical list instead of a table
+- <a href="/docs/gpt-for-sheets/gpt-fill">=GPT_FILL()</a> — autofill a range from examples
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — one answer in one cell
+
+## Try it
+
+`=GPT_TABLE()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_TRANSLATE function \u2014 AI translation in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-translate-function)
+
+# =GPT_TRANSLATE() — AI translation in Google Sheets
+
+`=GPT_TRANSLATE()` translates cell content with an LLM. Unlike `GOOGLETRANSLATE()`, it keeps tone, handles idioms, and can follow instructions ("keep brand names in English") — which is why teams use it to localize catalogs and marketing copy in bulk.
+
+## Syntax
+
+```
+=GPT_TRANSLATE(text, [target_language], [source_language])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `text` | yes | Text or cell to translate. |
+| `target_language` | no | Defaults to English. |
+| `source_language` | no | Auto-detected when empty. |
+
+## Examples
+
+Translate a product description in `A2` to German:
+
+```
+=GPT_TRANSLATE(A2, "German")
+```
+
+Localize a whole catalog: put languages in row 1 (`B1`=Spanish, `C1`=French…) and drag both ways:
+
+```
+=GPT_TRANSLATE($A2, B$1)
+```
+
+Pin the source language when short strings are ambiguous (e.g. UI labels):
+
+```
+=GPT_TRANSLATE(A2, "English", "Spanish")
+```
+
+Translate customer support replies to the customer's language kept in `C2`:
+
+```
+=GPT_TRANSLATE(A2, C2)
+```
+
+## Tips
+
+- `target_language` defaults to English — `=GPT_TRANSLATE(A2)` is a quick "translate anything to English" column.
+- Leave `source_language` empty for auto-detection; set it when inputs are short or mixed-language.
+- Drag the formula down to localize thousands of rows — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar.
+- Need custom instructions ("keep brand names in English")? Use <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> with a translation prompt instead.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-apply">=GPT_APPLY()</a> — apply any rewriting task to a column
+- <a href="/docs/gpt-for-sheets/gpt-format">=GPT_FORMAT()</a> — convert between data formats
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — free-form prompts, including translation with special rules
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>. Recipe: <a href="/templates/bulk-translation/">bulk translation template</a>.
+
+
+### GPT_EXTRACT function — extract data in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-extract)
+
+# =GPT_EXTRACT() — pull structured values out of messy text
+
+`=GPT_EXTRACT()` reads a text and returns just the values you ask for, comma-separated. Where `REGEXEXTRACT()` needs a pattern, `=GPT_EXTRACT()` understands meaning — "company names", "the price", "the person's role" — which makes it the go-to cleanup formula in <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_EXTRACT(text, to_extract)
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `text` | yes | The input text to extract from — usually a cell reference. |
+| `to_extract` | yes | What to pull out, e.g. `"email, country"`. Comma-separated values or a range. |
+
+## Examples
+
+Get emails out of scraped "Contact us" text in `A2` (lead list building):
+
+```
+=GPT_EXTRACT(A2, "email")
+```
+
+Pull company names from a LinkedIn bio:
+
+```
+=GPT_EXTRACT("I worked at Apple for 5 years and at Amazon for 3 years.", "companies")
+```
+
+Extract several fields at once from an order confirmation email in `A2`:
+
+```
+=GPT_EXTRACT(A2, "order number, total amount, delivery date")
+```
+
+Mine product specs from an e-commerce description:
+
+```
+=GPT_EXTRACT(A2, "material, color, weight")
+```
+
+## Tips
+
+- Multiple fields come back comma-separated — wrap the result with `SPLIT(cell, ",")` to break them into columns.
+- If a field is missing from the text, the model may say so in words; add "return N/A if not found" style instructions via <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> when you need strict output.
+- Drag the formula down to process a whole column — GPT for Sheets handles up to 10,000 results per hour.
+- Finished extracting? Use **Replace all GPT formulas with results** in the sidebar to freeze the values.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY()</a> — put each row into one category
+- <a href="/docs/gpt-for-sheets/gpt-tag">=GPT_TAG()</a> — apply multiple labels to a text
+- <a href="/docs/gpt-for-sheets/gpt-format">=GPT_FORMAT()</a> — convert between data formats
+
+## Try it
+
+`=GPT_EXTRACT()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_CLASSIFY function — categorize data in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-classify)
+
+# =GPT_CLASSIFY() — put each row into one category
+
+`=GPT_CLASSIFY()` reads a text and returns exactly one of the categories you define. It replaces manual triage: sentiment analysis, support-ticket routing, product taxonomy — drag it down a column and every row gets sorted. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_CLASSIFY(value, categories)
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `value` | yes | The text to classify — a string or a cell reference. |
+| `categories` | yes | The allowed categories, e.g. `"fruit, vegetable"`. Comma-separated values or a range. |
+
+## Examples
+
+Sentiment analysis on customer reviews in `A2`:
+
+```
+=GPT_CLASSIFY(A2, "positive, negative, neutral")
+```
+
+Route support tickets by topic:
+
+```
+=GPT_CLASSIFY(A2, "billing, bug, feature request, other")
+```
+
+Sort products into your shop's taxonomy kept in `F1:F20` (a range works as categories):
+
+```
+=GPT_CLASSIFY(A2, $F$1:$F$20)
+```
+
+Qualify inbound leads from a "How did you hear about us?" answer:
+
+```
+=GPT_CLASSIFY(A2, "search, social media, referral, ads, unknown")
+```
+
+## Tips
+
+- Always include a catch-all like `other` or `unknown` — otherwise borderline rows get forced into a wrong bucket.
+- Keep category names short and distinct; overlapping labels ("sales" vs "business") produce inconsistent picks.
+- Drag the formula down for bulk runs — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar to freeze the answers.
+- Need multiple labels per row instead of one? Use <a href="/docs/gpt-for-sheets/gpt-tag">=GPT_TAG()</a>.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-tag">=GPT_TAG()</a> — several labels per text instead of one category
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — pull values out of text
+- <a href="/docs/gpt-for-sheets/gpt-summarize">=GPT_SUMMARIZE()</a> — condense long text before classifying
+
+## Try it
+
+`=GPT_CLASSIFY()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_SUMMARIZE function — summarize text in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-summarize)
+
+# =GPT_SUMMARIZE() — condense long text in a cell
+
+`=GPT_SUMMARIZE()` turns long text — reviews, call notes, article drafts — into a short summary, in the format you choose. By default it returns three sentences. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_SUMMARIZE(text, [format])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `text` | yes | The text to summarize — a string or a cell reference. |
+| `format` | no | The shape of the summary, e.g. `"two sentences"`, `"up to 100 words"`. Default: `"three sentences"`. |
+
+## Examples
+
+Boil each customer review in `A2` down to one line for a report:
+
+```
+=GPT_SUMMARIZE(A2, "one sentence")
+```
+
+Summarize sales-call notes for a CRM field with a word budget:
+
+```
+=GPT_SUMMARIZE(A2, "up to 50 words")
+```
+
+Turn a long article draft into bullet points:
+
+```
+=GPT_SUMMARIZE(A2, "3 bullet points")
+```
+
+Default format — three sentences:
+
+```
+=GPT_SUMMARIZE(A2)
+```
+
+## Tips
+
+- The `format` argument is free text — "one tweet", "TL;DR in plain English", "an executive summary" all work.
+- Summarize first, then run <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY()</a> on the summary column — shorter inputs classify more consistently.
+- Drag the formula down to summarize a whole column of feedback, then use **Replace all GPT formulas with results** in the sidebar so the summaries stop re-running.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — pull specific values instead of a summary
+- <a href="/docs/gpt-for-sheets/gpt-apply">=GPT_APPLY()</a> — rewrite text with any instruction
+- <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY()</a> — sort summaries into categories
+
+## Try it
+
+`=GPT_SUMMARIZE()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_FORMAT function — convert formats in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-format)
+
+# =GPT_FORMAT() — convert data between formats
+
+`=GPT_FORMAT()` rewrites the same content in another format: HTML to JSON, Markdown to HTML, raw text to JSON-LD. The special target `"table"` splits the output across multiple cells. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_FORMAT(input, target_format, [source_format])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `input` | yes | The text to reformat — a string or a cell reference. |
+| `target_format` | yes | Format to convert to: `"html"`, `"json"`, `"json-ld"`, `"markdown"`, `"table"`, … `"table"` spills the output into multiple cells. |
+| `source_format` | no | Format to convert from — usually auto-detected. |
+
+## Examples
+
+Turn scraped HTML in `A2` into JSON for an import script:
+
+```
+=GPT_FORMAT(A2, "json", "html")
+```
+
+Convert an FAQ block into JSON-LD structured data for SEO:
+
+```
+=GPT_FORMAT(A2, "json-ld")
+```
+
+Convert a Markdown product description to HTML for your e-commerce CMS:
+
+```
+=GPT_FORMAT(A2, "html", "markdown")
+```
+
+Spread a blob of contact details across cells with the `"table"` target:
+
+```
+=GPT_FORMAT(A2, "table")
+```
+
+## Tips
+
+- With `target_format` set to `"table"`, keep the cells to the right and below empty — the result spills, and blocked cells cause `#REF!`.
+- Name the `source_format` when the input is ambiguous; it removes guesswork and stabilizes output.
+- Validate machine-readable outputs (JSON, JSON-LD) before shipping — AI formatting is a draft, not a parser.
+- Freeze the converted values with **Replace all GPT formulas with results** in the sidebar.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — pull specific fields instead of converting everything
+- <a href="/docs/gpt-for-sheets/gpt-table">=GPT_TABLE()</a> — generate a table from scratch
+- <a href="/docs/gpt-for-sheets/gpt-apply">=GPT_APPLY()</a> — free-form transformations on text
+
+## Try it
+
+`=GPT_FORMAT()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_TAG function in Google Sheets — =GPT_TAG() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-tag)
+
+# =GPT_TAG() — apply all relevant labels to a text
+
+`=GPT_TAG()` reads a text and attaches every label that fits — unlike <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY()</a>, which picks exactly one. Feed it your own tag list or let the model tag freely. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_TAG(value, [tags])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `value` | yes | The text to tag — a string or a cell reference. |
+| `tags` | no | The tags to choose from, e.g. `"food, positive, negative"`. Comma-separated values or a range. Empty = the model picks tags itself. |
+
+## Examples
+
+Tag app-store reviews in `A2` with your feedback taxonomy:
+
+```
+=GPT_TAG(A2, "pricing, performance, design, support, feature request")
+```
+
+Tag products for filtered navigation in an online store:
+
+```
+=GPT_TAG(A2, "vegan, gluten-free, organic, sugar-free")
+```
+
+Keep the tag list in a range (`F1:F15`) so the whole team edits one place:
+
+```
+=GPT_TAG(A2, $F$1:$F$15)
+```
+
+Let the model suggest tags freely for a first pass over blog posts:
+
+```
+=GPT_TAG(A2)
+```
+
+## Tips
+
+- Providing a fixed `tags` list keeps output consistent — free tagging is great for discovery, bad for filters.
+- Count rows per tag afterwards with `COUNTIF(B:B, "*pricing*")` since several tags share a cell.
+- Drag the formula down for bulk tagging — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-classify">=GPT_CLASSIFY()</a> — exactly one category per row
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — pull values out of text
+- <a href="/docs/gpt-for-sheets/gpt-list">=GPT_LIST()</a> — generate a list of ideas or items
+
+## Try it
+
+`=GPT_TAG()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_LIST function in Google Sheets — =GPT_LIST() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-list)
+
+# =GPT_LIST() — generate a vertical list from a prompt
+
+`=GPT_LIST()` asks the AI for a list and spills each item into its own cell, straight down the column. Ideas, keywords, questions, names — one formula, one ready-to-use column. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_LIST(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | What list to generate — a string or a cell reference. |
+| `value` | no | One cell or a range with extra input appended to the prompt. |
+
+## Examples
+
+Brainstorm long-tail keywords around a seed keyword in `A1` (SEO):
+
+```
+=GPT_LIST("15 long-tail keyword ideas for", A1)
+```
+
+Draft FAQ questions for a product page:
+
+```
+=GPT_LIST("10 questions customers ask before buying", A2)
+```
+
+Build an outreach angle list for a sales campaign:
+
+```
+=GPT_LIST("8 pain points of e-commerce managers that our mail merge tool solves")
+```
+
+Generate name candidates for a new feature:
+
+```
+=GPT_LIST("12 short names for a Google Sheets AI autofill feature")
+```
+
+## Tips
+
+- Items spill downward — leave the cells below the formula empty or Sheets shows `#REF!`.
+- Say how many items you want in the prompt ("10 questions") — you get a predictable range size.
+- Need the list to go sideways instead? `=GPT_HLIST()` takes the same arguments and spills horizontally.
+- Happy with the list? Use **Replace all GPT formulas with results** in the sidebar to freeze it before sorting or editing.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-table">=GPT_TABLE()</a> — multiple columns, not just one list
+- <a href="/docs/gpt-for-sheets/gpt-fill">=GPT_FILL()</a> — continue a pattern from examples
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — one answer in one cell
+
+## Try it
+
+`=GPT_LIST()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_FILL function in Google Sheets — =GPT_FILL() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-fill)
+
+# =GPT_FILL() — autofill a range from examples
+
+`=GPT_FILL()` learns a pattern from a few example rows and applies it to the rest of your data. No prompt writing: your filled-in rows *are* the instruction. It is the closest thing to Smart Fill with an AI brain, inside <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_FILL(examples, inputs)
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `examples` | yes | A range with completed examples the AI learns from, e.g. `A1:B3` (inputs + expected outputs). |
+| `inputs` | yes | The column of rows to autofill, e.g. `A4:A20`. |
+
+## Examples
+
+Normalize messy company names — fill `B1:B3` by hand ("Apple Inc." → "Apple"), then:
+
+```
+=GPT_FILL(A1:B3, A4:A100)
+```
+
+Split full names into first names — examples in `A1:B2`, the rest autofilled:
+
+```
+=GPT_FILL(A1:B2, A3:A50)
+```
+
+Standardize phone numbers to one format for a CRM import:
+
+```
+=GPT_FILL(A1:B3, A4:A200)
+```
+
+Derive country from city the way your three examples show:
+
+```
+=GPT_FILL(A1:B3, A4:A60)
+```
+
+## Tips
+
+- 2–3 varied examples usually beat 10 similar ones — show the edge cases, not repetitions.
+- Keep `examples` as a block where the left column(s) are inputs and the right column(s) the outputs you expect.
+- The result spills next to your inputs — keep the target cells empty to avoid `#REF!`.
+- When the fill looks right, run **Replace all GPT formulas with results** in the sidebar so values stop recomputing.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-table">=GPT_TABLE()</a> — generate a table from a prompt
+- <a href="/docs/gpt-for-sheets/gpt-list">=GPT_LIST()</a> — generate a vertical list
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — targeted extraction with an explicit instruction
+
+## Try it
+
+`=GPT_FILL()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_APPLY function in Google Sheets — =GPT_APPLY() reference (https://docgpt.ai/docs/gpt-for-sheets/gpt-apply)
+
+# =GPT_APPLY() — run one instruction over your text
+
+`=GPT_APPLY()` takes a text and a task and returns the transformed text. Without a task it defaults to fixing grammar and spelling — the fastest proofreading formula in <a href="/gpt-for-sheets/">GPT for Sheets</a>. With a task, it becomes a general-purpose rewriter you drag down a column.
+
+## Syntax
+
+```
+=GPT_APPLY(text, [task])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `text` | yes | The input text — a string or a cell reference. |
+| `task` | no | What to do with the text — one cell or a string. Default: `"fix grammar and spelling"`. |
+
+## Examples
+
+Proofread user-submitted content in `A2` (the default task):
+
+```
+=GPT_APPLY(A2)
+```
+
+Shorten product titles for an e-commerce feed:
+
+```
+=GPT_APPLY(A2, "shorten to under 60 characters, keep brand and model")
+```
+
+Rewrite support macros in a friendlier tone:
+
+```
+=GPT_APPLY(A2, "rewrite in a warm, apologetic tone, keep it under 50 words")
+```
+
+Keep the task in one cell (`D1`) so you can change it for the whole column at once:
+
+```
+=GPT_APPLY(A2, $D$1)
+```
+
+## Tips
+
+- `=GPT_APPLY(text, task)` is `=GPT(prompt, value)` with the arguments flipped — handy when you map it over an existing data column.
+- Be explicit about what must *not* change: "keep brand names and numbers as is".
+- Drag down for bulk edits — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — free-form prompt plus value
+- <a href="/docs/gpt-for-sheets/gpt-translate-function">=GPT_TRANSLATE()</a> — language translation
+- <a href="/docs/gpt-for-sheets/gpt-summarize">=GPT_SUMMARIZE()</a> — condense instead of rewrite
+
+## Try it
+
+`=GPT_APPLY()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_VISION function — analyze images in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-vision)
+
+# =GPT_VISION() — ask questions about an image
+
+`=GPT_VISION()` sends an image URL to a vision model and returns the answer to your question about it — read text from a screenshot, describe a product photo, extract fields from a scanned document. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_VISION(url, prompt)
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `url` | yes | A link to the image, e.g. `"https://example.com/someimage.png"` — or a cell with the link. |
+| `prompt` | yes | What to do with the image, e.g. `"extract First name and Last name"`. |
+
+## Examples
+
+Write alt text for a column of product image URLs in `A2` (e-commerce SEO):
+
+```
+=GPT_VISION(A2, "Write a 10-word alt text describing this product photo")
+```
+
+Extract names from scanned business cards:
+
+```
+=GPT_VISION(A2, "extract First name and Last name")
+```
+
+Pull the total from receipt photos for expense tracking:
+
+```
+=GPT_VISION(A2, "Return only the total amount and currency")
+```
+
+Audit competitor screenshots — what's the main call to action?
+
+```
+=GPT_VISION(A2, "What is the primary call-to-action button text on this page?")
+```
+
+## Common errors
+
+- The image URL must be publicly reachable — links behind a login (including private Google Drive files) fail.
+- Point the URL at the image file itself, not at an HTML page that displays it.
+- Low-resolution photos read poorly; if extraction misses text, try a larger version of the image.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-create-image">=GPT_CREATE_IMAGE()</a> — generate images instead of reading them
+- <a href="/docs/gpt-for-sheets/gpt-extract">=GPT_EXTRACT()</a> — extract values from text
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — text-only prompts
+
+## Try it
+
+`=GPT_VISION()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_WEB_SEARCH function — live web answers in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-web-search)
+
+# =GPT_WEB_SEARCH() — answers grounded in a live web search
+
+`=GPT_WEB_SEARCH()` runs your prompt through a search-enabled GPT model, so the answer draws on current web results instead of training data alone. Use it where a plain `=GPT()` would be out of date: prices, news, people, companies. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_WEB_SEARCH(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The question or research instruction — a string or a cell reference. |
+| `value` | no | Extra input appended to the prompt — e.g. a company name or domain from your data. |
+
+## Examples
+
+Enrich a lead list — company description from a domain in `A2`:
+
+```
+=GPT_WEB_SEARCH("What does this company do? One sentence:", A2)
+```
+
+Check current pricing for competitor research:
+
+```
+=GPT_WEB_SEARCH("What is the current starting price of "&A2&"? Answer as: $X/month")
+```
+
+Find who holds a role right now (training data goes stale, search does not):
+
+```
+=GPT_WEB_SEARCH("Who is the current CEO of", A2)
+```
+
+Monitor recent coverage for a brand:
+
+```
+=GPT_WEB_SEARCH("Summarize the most recent news about "&A2&" in two sentences")
+```
+
+## Tips
+
+- Ask for a fixed answer format ("Answer as: Name — Year") so the column stays splittable and sortable.
+- Web answers can still be wrong — spot-check a sample before building reports on them.
+- Uses OpenAI's search-enabled models; by default the add-on falls back to `gpt-4o-mini-search-preview` if no search model is chosen in settings.
+- Need raw result links instead of a synthesized answer? Use <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a>.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY()</a> — another web-aware model, same idea
+- <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a> — raw search results with titles and links
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — no web access, pure model knowledge
+
+## Try it
+
+`=GPT_WEB_SEARCH()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### GPT_CREATE_IMAGE function — AI images in Google Sheets (https://docgpt.ai/docs/gpt-for-sheets/gpt-create-image)
+
+# =GPT_CREATE_IMAGE() — generate images from a prompt
+
+`=GPT_CREATE_IMAGE()` sends a description to OpenAI's image models and returns the URL of the generated image — render it right in the sheet with `=IMAGE()`. Drag it down a column of prompts to batch-produce visuals. Part of <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=GPT_CREATE_IMAGE(prompt, [size], [model])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | Description of the image to generate. |
+| `size` | no | `"1024x1024"` (default), `"1792x1024"`, `"1024x1792"` for DALL·E 3; `"256x256"`, `"512x512"`, `"1024x1024"` for DALL·E 2; `"1024x1024"`, `"1536x1024"`, `"1024x1536"` for GPT image models. |
+| `model` | no | `"dall-e-3"` (default), `"dall-e-2"`, `"gpt-image-2"`, `"gpt-image-1.5"`, `"gpt-image-1"`, `"gpt-image-1-mini"` or `"chatgpt-image-latest"`. |
+
+## Examples
+
+Generate a blog header from the post title in `A2` and preview it:
+
+```
+=IMAGE(GPT_CREATE_IMAGE("Minimal flat illustration for a blog post titled: "&A2, "1792x1024"))
+```
+
+Batch product-concept mockups for an e-commerce moodboard:
+
+```
+=GPT_CREATE_IMAGE("Studio photo of "&A2&" on a white background")
+```
+
+Square social-media visuals with a GPT image model:
+
+```
+=GPT_CREATE_IMAGE(A2, "1024x1024", "gpt-image-1")
+```
+
+Quick low-cost drafts with DALL·E 2 before rendering finals:
+
+```
+=GPT_CREATE_IMAGE(A2, "512x512", "dall-e-2")
+```
+
+## Tips
+
+- The function returns a URL, not a picture — wrap it in `=IMAGE(...)` to display, or keep the URL column for exporting.
+- Generated image URLs are typically temporary — download or re-host images you want to keep.
+- Match `size` to `model`: each model accepts only its own size list (see the table above), otherwise the request fails.
+- Freeze results with **Replace all GPT formulas with results** in the sidebar so images are not regenerated on refresh.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-vision">=GPT_VISION()</a> — analyze existing images
+- <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a> — includes `GEMINI_CREATE_IMAGE()` for Gemini image models
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — text generation
+
+## Try it
+
+`=GPT_CREATE_IMAGE()` ships with <a href="/gpt-for-sheets/">GPT for Sheets</a> — no API keys needed. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install the add-on from the Google Workspace Marketplace</a>.
+
+
+### CLAUDE function in Google Sheets \u2014 =CLAUDE() reference (https://docgpt.ai/docs/gpt-for-sheets/claude-function)
+
+# =CLAUDE() — use Anthropic Claude in Google Sheets
+
+`=CLAUDE()` sends a prompt to Anthropic's Claude models and returns the answer in the cell. No Anthropic API key is required — the model is built into <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=CLAUDE(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for Claude. A string or a cell reference. |
+| `value` | no | Extra input appended to the prompt — usually a cell with your data. |
+
+## Examples
+
+Summarize customer feedback in `A2`:
+
+```
+=CLAUDE("Summarize this feedback in one sentence and name the main complaint", A2)
+```
+
+Rewrite marketing copy in a specific tone:
+
+```
+=CLAUDE("Rewrite in a friendly, non-salesy tone, keep under 30 words", A2)
+```
+
+Digest long call transcripts pasted in `A2` (Claude handles long inputs well):
+
+```
+=CLAUDE("List the action items from this transcript as short bullet points", A2)
+```
+
+Localize marketing copy with tone preserved:
+
+```
+=CLAUDE("Translate to German, keep the playful tone and brand names in English", A2)
+```
+
+## When to pick Claude
+
+- Long inputs: Claude handles large text fragments (reports, transcripts) well.
+- Careful rewriting and summarization where tone and nuance matter.
+- Cross-checking: run `=GPT()` and `=CLAUDE()` on the same rows and compare answers side by side — switching models is just a different formula name.
+- Drag the formula down for bulk runs, then use **Replace all GPT formulas with results** in the sidebar to freeze the answers.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — the default model function, same arguments
+- <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a> — Google's Gemini models
+- <a href="/docs/gpt-for-sheets/mistral-function">=MISTRAL()</a> — fast, low-cost bulk tasks
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>. Full walkthrough: <a href="/docs/gpt-for-sheets/how-to-use-claude-in-google-sheets-in-2024">How to use Claude in Google Sheets</a>.
+
+
+### GEMINI function in Google Sheets \u2014 =GEMINI() reference (https://docgpt.ai/docs/gpt-for-sheets/gemini-function)
+
+# =GEMINI() — use Google Gemini in Google Sheets
+
+`=GEMINI()` runs Google's Gemini models from a cell. Gemini is fast and cost-effective for high-volume tasks like classification, tagging and short-form generation.
+
+## Syntax
+
+```
+=GEMINI(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for Gemini. |
+| `value` | no | Extra input appended to the prompt. |
+
+## Related Gemini functions
+
+```
+=GEMINI_CUSTOM(apiKey, model, prompt, [value])
+```
+
+Runs Gemini with **your own Google AI API key** and an exact model name — useful when you need a specific model version or your own billing.
+
+```
+=GEMINI_CREATE_IMAGE(prompt, [aspectRatio], [model])
+```
+
+Generates an image with Gemini image models and returns a URL you can render with `=IMAGE()`. Default aspect ratio is `1:1`.
+
+## Examples
+
+Classify support tickets in `A2`:
+
+```
+=GEMINI("Classify as billing, bug, feature request or other. Return one word.", A2)
+```
+
+Generate a thumbnail illustration:
+
+```
+=GEMINI_CREATE_IMAGE("Flat illustration of a mail merge robot, purple palette", "16:9")
+```
+
+Bulk-generate meta descriptions for an SEO sheet (`A2` = page title):
+
+```
+=GEMINI("Write a 150-character meta description for a page titled", A2)
+```
+
+Tag product reviews at high volume:
+
+```
+=GEMINI("Return the main topic of this review in 1-2 words", A2)
+```
+
+## Tips
+
+- Gemini shines on high-volume, short-output tasks — drag the formula down and let it churn; GPT for Sheets handles up to 10,000 results per hour.
+- No Google AI API key is needed for `=GEMINI()` — the model is built in. Use `=GEMINI_CUSTOM()` only when you need a specific model version or your own billing.
+- Done generating? Use **Replace all GPT formulas with results** in the sidebar so Sheets stops re-running the formulas.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — the default model function, same arguments
+- <a href="/docs/gpt-for-sheets/claude-function">=CLAUDE()</a> — Anthropic Claude for nuanced rewriting
+- <a href="/docs/gpt-for-sheets/gpt-create-image">=GPT_CREATE_IMAGE()</a> — image generation with OpenAI models
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>. See also: <a href="/docs/gpt-for-sheets/how-to-use-gemini-in-google-sheets-in-2024">How to use Gemini in Google Sheets</a>.
+
+
+### MISTRAL function in Google Sheets \u2014 =MISTRAL() reference (https://docgpt.ai/docs/gpt-for-sheets/mistral-function)
+
+# =MISTRAL() — use Mistral AI in Google Sheets
+
+`=MISTRAL()` runs Mistral models from a cell. Mistral is a strong choice for fast, low-cost bulk processing and for European data-residency preferences.
+
+## Syntax
+
+```
+=MISTRAL(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The instruction for Mistral. |
+| `value` | no | Extra input appended to the prompt. |
+
+## Examples
+
+Bulk-shorten titles in `A2` to 60 characters:
+
+```
+=MISTRAL("Shorten to under 60 characters, keep the key message", A2)
+```
+
+Translate French product feedback to English:
+
+```
+=MISTRAL("Translate to English, return only the translation", A2)
+```
+
+Normalize category labels in a product feed:
+
+```
+=MISTRAL("Map this category to one of: Apparel, Footwear, Accessories. Return one word.", A2)
+```
+
+Draft short LinkedIn comment replies from post text in `A2`:
+
+```
+=MISTRAL("Write a friendly one-sentence reply agreeing with this post", A2)
+```
+
+## Tips
+
+- Mistral is a good default for simple, repetitive transformations where speed matters more than nuance — save GPT or Claude for the hard rows.
+- No Mistral API key is needed — the model is built into the add-on.
+- Drag down for bulk runs — up to 10,000 results per hour — then use **Replace all GPT formulas with results** in the sidebar to freeze the output.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — the default model function, same arguments
+- <a href="/docs/gpt-for-sheets/gemini-function">=GEMINI()</a> — another fast option for bulk work
+- <a href="/docs/gpt-for-sheets/claude-function">=CLAUDE()</a> — for tone-sensitive rewriting
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>. See also: <a href="/docs/gpt-for-sheets/how-to-use-mistral-in-google-sheets-in-2024">How to use Mistral in Google Sheets</a>.
+
+
+### PERPLEXITY function in Google Sheets \u2014 =PERPLEXITY() reference (https://docgpt.ai/docs/gpt-for-sheets/perplexity-function)
+
+# =PERPLEXITY() — web-aware AI answers in Google Sheets
+
+`=PERPLEXITY()` is different from the other model functions: Perplexity answers with **live web knowledge**, which makes it the go-to formula for research and data enrichment — the kind of company lookups people otherwise do in tools like Clay.
+
+## Syntax
+
+```
+=PERPLEXITY(prompt, [value])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `prompt` | yes | The question or research instruction. |
+| `value` | no | Extra input appended to the prompt — e.g. a company name or domain. |
+
+## Examples
+
+Enrich a company list (`A2` = domain):
+
+```
+=PERPLEXITY("What does this company do? One sentence, no fluff:", A2)
+```
+
+Find the latest funding round:
+
+```
+=PERPLEXITY("Latest funding round and amount for "&A2&". Answer in the form: Round, Amount, Year")
+```
+
+Check employee count for lead scoring:
+
+```
+=PERPLEXITY("Approximate employee count for "&A2&". Return only a number or range.")
+```
+
+Verify a prospect's current job title before outreach:
+
+```
+=PERPLEXITY("Current job title of "&A2&" at "&B2&". Return only the title.")
+```
+
+## Tips
+
+- Ask for a fixed answer format — it keeps columns consistent and easy to split.
+- Combine with <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a> when you need raw Google results instead of a synthesized answer.
+- For emails and contacts, see the <a href="/templates/lead-enrichment/">lead enrichment template</a>.
+- Drag the formula down to enrich a whole list, then use **Replace all GPT formulas with results** in the sidebar so lookups are not re-run on refresh.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH()</a> — web-grounded answers via search-enabled GPT models
+- <a href="/docs/gpt-for-sheets/serp-function">=SERP()</a> — raw search results with titles and links
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — pure model knowledge, no web access
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>.
+
+
+### SERP function in Google Sheets \u2014 =SERP() reference (https://docgpt.ai/docs/gpt-for-sheets/serp-function)
+
+# =SERP() — Google search results in Google Sheets
+
+`=SERP()` fetches live Google search results for a query and returns them into your sheet — titles, links and snippets. It is the workhorse behind SEO research, competitor monitoring and list building in <a href="/gpt-for-sheets/">GPT for Sheets</a>.
+
+## Syntax
+
+```
+=SERP(query, [limit])
+```
+
+| Parameter | Required | Description |
+|---|---|---|
+| `query` | yes | The search query, string or cell reference. At least 3 characters. |
+| `limit` | no | How many results to return. Default: 20. |
+
+## Examples
+
+Top results for a keyword in `A2`:
+
+```
+=SERP(A2, 10)
+```
+
+Who ranks for your money keyword, then summarize angles with GPT:
+
+```
+=SERP("gpt for google sheets", 10)
+=GPT("Based on these titles, what content angle is missing?", B2:B11)
+```
+
+Monitor brand mentions — search your brand name from `A2`:
+
+```
+=SERP(A2&" review", 20)
+```
+
+## Common errors
+
+- `Query not provided or too short.` — the query must be at least 3 characters.
+- `Function can only be called once every 20 seconds.` — SERP is rate-limited; wait between calls instead of recalculating the whole sheet at once.
+- Results spill into multiple cells — keep the area below the formula empty or Sheets shows `#REF!`.
+
+## Related
+
+```
+=GOOGLE_SEARCH_API(query, contextId, apiKey, [pages])
+```
+
+The same idea through the **official Google Custom Search API** with your own key — for higher volumes and stable quotas.
+
+## Related functions
+
+- <a href="/docs/gpt-for-sheets/gpt-web-search">=GPT_WEB_SEARCH()</a> — a synthesized answer instead of raw results
+- <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY()</a> — web-aware research answers
+- <a href="/docs/gpt-for-sheets/gpt-function">=GPT()</a> — process the results you fetched
+
+## Try it
+
+<a href="https://docs.google.com/spreadsheets/d/1aZY-8V478qfIDWFZTzbTejldEzk3Bnd5ZtGAPcDI4PU/template/preview">Copy the template</a> or <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">install GPT for Sheets</a>. Guide: <a href="/docs/gpt-for-sheets/search-the-web-from-google-sheets-in-2024">Search the web from Google Sheets</a>.
+
+
+## Templates gallery (https://docgpt.ai/templates/)
+
+Ready-made recipes for [GPT for Sheets](/gpt-for-sheets/): copy the formulas, drag them down your rows, done. Every template uses built-in AI functions — `=GPT()`, `=CLAUDE()`, `=GEMINI()`, `=PERPLEXITY()`, `=SERP()` — with no API keys required.
+
+## E-commerce & content
+
+- **[Bulk Product Descriptions](/templates/bulk-product-descriptions/)** — unique descriptions for 1,000 products with tone and keyword control.
+- **[Amazon Product Listings](/templates/amazon-product-listings/)** — titles, bullets and descriptions built from product attributes.
+- **[Product Titles Optimization](/templates/product-titles-optimization/)** — normalize messy titles to marketplace length and style rules.
+- **[Bulk Translation](/templates/bulk-translation/)** — localize a catalog into 100+ languages with a two-formula matrix.
+- **[Review Responses](/templates/review-responses/)** — on-brand replies to customer reviews, matched to sentiment.
+- **[FAQ Generator](/templates/faq-generator/)** — FAQ blocks for product and service pages at scale.
+- **[Blog Post Outlines](/templates/blog-post-outlines/)** — H2/H3 outlines and intros from a keyword list.
+- **[Content Repurposing](/templates/content-repurposing/)** — turn one post into tweets, LinkedIn posts and newsletter blurbs.
+- **[Rewrite & Humanize Text](/templates/rewrite-humanize-text/)** — bulk rewriting and paraphrasing with tone control.
+- **[Press Release Drafts](/templates/press-release-drafts/)** — announcement drafts from launch facts.
+
+## Social media
+
+- **[Social Media Content Calendar](/templates/social-media-calendar/)** — a month of platform-specific posts from one `=GPT_TABLE()` call.
+- **[Instagram Captions](/templates/instagram-captions/)** — captions with hashtags from a topic or product column.
+- **[YouTube Titles & Descriptions](/templates/youtube-titles-descriptions/)** — titles, descriptions and tags from topics or transcripts.
+- **[Hashtag Research](/templates/hashtag-research/)** — platform-specific hashtag sets per topic.
+
+## SEO
+
+- **[SEO Meta Titles & Descriptions](/templates/seo-meta-tags/)** — length-safe metas for hundreds of pages.
+- **[SEO Content Briefs](/templates/seo-content-briefs/)** — intent, outline, entities and FAQs from one keyword.
+- **[Keyword Clustering & Intent](/templates/keyword-clustering/)** — turn a raw keyword export into a content plan.
+- **[Keyword Intent Mapping](/templates/keyword-intent-mapping/)** — map keywords to intent and funnel stage, SERP-validated.
+- **[SERP Competitor Analysis](/templates/serp-competitor-analysis/)** — analyze top-10 titles and angles per keyword with `=SERP()`.
+- **[Programmatic SEO Pages](/templates/programmatic-seo-pages/)** — one row = one landing page; export to Webflow, WordPress and others.
+- **[Bulk Image Alt Text](/templates/image-alt-text/)** — descriptive alt text from image context and product data.
+- **[Internal Linking Suggestions](/templates/internal-linking-suggestions/)** — anchor texts and targets from your own URL list.
+- **[FAQ Schema Markup](/templates/schema-faq-markup/)** — FAQPage JSON-LD blocks generated from Q&A columns.
+
+## Ads & email
+
+- **[Google Ads Copy](/templates/google-ads-copy/)** — RSA headlines (30 chars) and descriptions (90 chars) that fit.
+- **[Email Subject Lines](/templates/email-subject-lines/)** — A/B subject variants from the email body or offer.
+- **[Landing Page Copy Variants](/templates/landing-page-copy-variants/)** — headline, subhead and CTA variants for A/B tests.
+- **[UTM Campaign Builder](/templates/utm-campaign-builder/)** — consistent UTM naming and final URLs from campaign attributes.
+- **[Cold Email Personalization](/templates/cold-email-personalization/)** — personalized first lines from research columns.
+
+## Sales & data
+
+- **[Lead Enrichment](/templates/lead-enrichment/)** — company research, classification and emails; the spreadsheet-native Clay alternative.
+- **[Lead Scoring](/templates/lead-scoring/)** — score leads 1–10 against your ICP with a reasoning column.
+- **[Company Research](/templates/company-research/)** — firmographics per company with web-aware `=PERPLEXITY()`.
+- **[LinkedIn Outreach Lines](/templates/linkedin-outreach-lines/)** — personalized connection notes and InMail openers.
+- **[CRM Notes Summarization](/templates/crm-notes-summarization/)** — messy call notes into next-step summaries.
+- **[Data Cleaning](/templates/data-cleaning/)** — extract, normalize and classify messy imports without regex.
+- **[Contact Data Cleaning](/templates/contact-data-cleaning/)** — normalize names, titles and phones; split full names.
+- **[Deduplication & Normalization](/templates/deduplication-normalization/)** — flag near-duplicates and normalize company names.
+- **[Sentiment Analysis](/templates/sentiment-analysis/)** — classify reviews and NPS comments by sentiment and theme.
+- **[Support Ticket Classification](/templates/support-ticket-classification/)** — route tickets by category and urgency.
+- **[Competitor Monitoring](/templates/competitor-monitoring/)** — summarize competitor pages and changelogs into a tracker.
+- **[Web Scraping & SERP](/templates/web-scraping-serp/)** — pull top Google results per keyword and extract facts.
+- **[Survey Coding for Market Research](/templates/market-research-survey-coding/)** — code open-ended answers into themes.
+- **[Candidate Screening](/templates/candidate-screening/)** — screen CVs against job requirements with score and rationale.
+
+## How these work
+
+1. [Install GPT for Sheets](https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252) from the Google Workspace Marketplace — the free tier is enough to try every recipe.
+2. Open a template page, paste the formulas, adjust prompts to your data.
+3. Generation runs at up to 10,000 results per hour; when done, use **Replace all GPT formulas with results**.
+
+Want step-by-step workflows? See the [playbooks](/playbooks/). Need the full function list? See the [function reference](/docs/gpt-for-sheets/gpt-functions) in the docs.
+
+
+## GPT for Sheets Playbooks — Step-by-Step AI Workflows (https://docgpt.ai/playbooks/)
+
+Playbooks are complete workflows for [GPT for Sheets](/gpt-for-sheets/) — not just a formula, but the column layout, prompt design, QA step and export. Every time figure is arithmetic from the product's rate limit (up to 10,000 results per hour), not a claimed customer result.
+
+- **[10,000 Product Descriptions](/playbooks/10000-product-descriptions/)** — take a full catalog from bare attributes to finished copy: prompt design, sample QA, and the ~1 hour vs ~667 hours math.
+- **[Lead List → Personalized Outreach](/playbooks/lead-list-to-outreach/)** — CSV in, campaign out: enrich with `=PERPLEXITY()`, score with `=GPT_CLASSIFY()`, write openers with `=GPT()`, send via mail merge.
+- **[Localize a Store into 5 Languages](/playbooks/localize-store-5-languages/)** — a `=GPT_TRANSLATE()` matrix with glossary handling for brand terms and a back-translation QA trick.
+
+Want smaller, single-formula recipes instead? Browse the [templates gallery](/templates/). New to the add-on? Start at [GPT for Sheets](/gpt-for-sheets/) — free tier, no API keys.
+
+
+## 10,000 Product Descriptions in Google Sheets — AI Playbook (https://docgpt.ai/playbooks/10000-product-descriptions/)
+
+This is the full workflow for taking a 10,000-row product catalog from bare attributes to finished descriptions with `=GPT()`. First, the arithmetic that makes it worth doing: GPT for Sheets processes **up to 10,000 results per hour**, so 10,000 descriptions is roughly an hour of processing. A copywriter producing 15 descriptions per hour would need 10,000 ÷ 15 ≈ **667 hours** for the same catalog — about 83 eight-hour days, or 17 working weeks. At a $30/hour freelance rate that is roughly $20,000 of writing time. These are calculations from the product's rate limit and ordinary throughput assumptions, not claimed results — but the gap is large enough that even generous error bars don't change the conclusion.
+
+## Step 1 — set up the columns
+
+| Column | Content |
+|---|---|
+| A | Product name |
+| B | Attributes (material, size, color, use case) |
+| C | Target keyword (optional) |
+| D | Channel (site, Amazon, Instagram — optional) |
+| E | Generated description |
+
+The more structure you give the model per row, the more each description differs from its neighbors. A row that says only "blue t-shirt" produces generic copy; a row with fabric, fit, and audience produces copy no other row can duplicate.
+
+## Step 2 — design the prompt once, reference it everywhere
+
+Put the prompt in a single cell — say `H1` — instead of hardcoding it into the formula:
+
+```
+Write a 50-word product description. Tone: confident, specific,
+no clichés like "elevate" or "game-changer". Include the keyword
+naturally if one is given. Do not invent features not in the input.
+```
+
+Then in `E2`, drag down:
+
+```
+=GPT($H$1, A2&" — "&B2&" — keyword: "&C2&" — channel: "&D2)
+```
+
+One prompt cell means one place to fix problems. Change `H1`, re-run 20 test rows, and the whole catalog inherits the fix. The "do not invent features" line matters at scale: models fill gaps confidently, and at 10,000 rows you cannot proofread everything.
+
+## Step 3 — pilot on 20 rows
+
+Run rows 2–21 only. Check for the failure modes that would otherwise repeat 10,000 times: repeated opening words, invented specs, keyword stuffing, wrong length. Fix the prompt, not individual outputs. Only then drag the formula down the full catalog.
+
+## Step 4 — run the batch
+
+Drag `E2` down all 10,000 rows and let it process. Results fill in as they complete — at up to 10,000 results per hour, a 1,000-row slice lands in minutes and the full catalog in about an hour at full rate. You can keep working in other tabs while it runs.
+
+## Step 5 — QA by sampling, not by reading everything
+
+Reading 10,000 descriptions defeats the purpose. Sample instead:
+
+- Add `=RANDBETWEEN(2, 10001)` a few times to pick random rows, or sort a helper column of `=RAND()` and review the top 200 — a 2% sample, about 100 minutes at 30 seconds per description.
+- Check lengths mechanically: `=LEN(E2)` flags outliers instantly.
+- Check keyword presence mechanically: `=IF(C2="","-",IF(ISNUMBER(SEARCH(C2,E2)),"ok","MISSING"))`.
+- Re-run only flagged rows by deleting the cell and re-entering the formula.
+
+## Step 6 — Replace formulas with results
+
+When the run is done, use **Replace all GPT formulas with results** in the sidebar. This converts every `=GPT()` cell to plain text, so nothing recalculates (and re-spends quota) when you or a teammate later edits the sheet — and the file exports cleanly to CSV for your store.
+
+## The math, side by side
+
+| | AI in Sheets | Manual copywriting |
+|---|---|---|
+| Throughput | up to 10,000 results/hour | ~15 descriptions/hour |
+| 10,000 descriptions | ≈ 1 hour of processing | ≈ 667 hours (~17 work weeks) |
+| Cost basis | free tier; plans up to $29.99/month | ≈ $20,000 at $30/hour |
+| Human time needed | prompt design + ~2 hours of QA sampling | all of it |
+
+All figures are arithmetic from the rate limit and stated assumptions, not claimed customer outcomes. The honest takeaway: your time shifts from writing to prompt design and QA.
+
+## Get started
+
+1. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a> from the Google Workspace Marketplace (free tier included, no API keys needed).
+2. Set up the columns above, or start from the <a href="/templates/bulk-product-descriptions/">bulk product descriptions template</a>.
+3. Pilot 20 rows, run the catalog, sample-QA, then **Replace all GPT formulas with results**.
+
+Related: <a href="/docs/gpt-for-sheets/create-1000-product-descriptions-with-chatgpt-and-google-sheets">create 1,000 product descriptions guide</a>, <a href="/docs/gpt-for-sheets/gpt-function">=GPT() function reference</a>, <a href="/gpt-for-sheets/">GPT for Sheets pricing</a>.
+
+## FAQ
+
+**How long does 10,000 descriptions actually take?**
+
+GPT for Sheets processes up to 10,000 results per hour, so a 10,000-row catalog is roughly an hour of processing at full rate. That is arithmetic from the rate limit, not a claimed customer result — your run depends on prompt length and plan.
+
+**How do I keep quality consistent across 10,000 rows?**
+
+Pilot on 20 rows first, lock the prompt in a single cell so every row uses the same instructions, then QA a random sample after the full run — 2% of 10,000 is 200 descriptions, about 100 minutes of review at 30 seconds each.
+
+**Do I need an OpenAI API key?**
+
+No. GPT, Claude, Gemini and Mistral models are built into GPT for Sheets. Install the add-on and =GPT() works immediately — there is a free tier, and paid plans go up to $29.99/month for volume work.
+
+
+## Lead List to Outreach — Google Sheets AI Playbook (https://docgpt.ai/playbooks/lead-list-to-outreach/)
+
+You have a CSV with company names and emails; you want outreach that doesn't read like a blast. This playbook runs the whole pipeline inside Google Sheets: enrich → score → write → merge. The arithmetic first: 2,000 leads with three AI columns each is 6,000 results — about **36 minutes of processing** at up to 10,000 results per hour. Done by hand at 5 minutes of research plus 3 minutes of writing per lead, the same list is 2,000 × 8 minutes ≈ **267 hours**, about 33 working days. Those are calculations from the rate limit and stated assumptions, not claimed results.
+
+## Step 0 — import the CSV
+
+**File → Import** in Google Sheets. You need at minimum: first name, email, company name or domain. Layout for this playbook:
+
+| Column | Content |
+|---|---|
+| A | First name |
+| B | Email |
+| C | Company domain |
+| D | What they do (AI) |
+| E | Fit score (AI) |
+| F | Personalized opener (AI) |
+
+## Step 1 — enrich with =PERPLEXITY()
+
+`=PERPLEXITY()` is the one function with live web access, which makes it the enrichment tool. In `D2`, drag down:
+
+```
+=PERPLEXITY("What does this company do? Answer in 15 words, plain and specific:", C2)
+```
+
+Keeping answers to ~15 words is deliberate: short summaries are cheaper to scan, and they feed cleanly into the scoring and opener prompts below. Add a second research column if you want recent news: `=PERPLEXITY("Most recent notable news about "&C2&", one line with the year")`.
+
+## Step 2 — score with =GPT_CLASSIFY()
+
+Define your fit criteria once, then classify every lead into fixed buckets. In `E2`:
+
+```
+=GPT_CLASSIFY("Our ideal customer: B2B teams that live in spreadsheets and send outbound email. Lead: "&D2, "high fit, medium fit, low fit")
+```
+
+Fixed categories beat free-form scoring: `=GPT_CLASSIFY()` must pick one of your labels, so you can filter and sort on the result. Sort by column E and decide where to cut — there is no point writing openers for low-fit rows.
+
+## Step 3 — write openers with =GPT()
+
+For the rows that survived scoring, in `F2`:
+
+```
+=GPT("Write a one-sentence cold email opener for "&A2&" based on what their company does. Reference something specific from the summary. No flattery, no 'I hope this finds you well', under 25 words. Summary: "&D2)
+```
+
+The opener is grounded in the enrichment column, so each one is specific to that company — this is what separates the result from a template blast. Review a random sample of 20–30 before trusting the batch; if a pattern annoys you, fix the prompt and re-run the column, not individual cells.
+
+## Step 4 — freeze results and merge
+
+1. Filter to `high fit` rows.
+2. Run **Replace all GPT formulas with results** in the sidebar, so nothing recalculates when the sheet is edited later.
+3. Send with <a href="/mail-merge-for-gmail-and-sheets/">Mail Merge for Gmail and Sheets</a>: every column becomes a merge field, so your email template can open with the `F` column — first line personalized per recipient, the rest of the template shared.
+
+## The math, side by side
+
+| | AI pipeline in Sheets | Manual research + writing |
+|---|---|---|
+| 2,000 leads × 3 columns | 6,000 results ≈ 36 min of processing | 2,000 × 8 min ≈ 267 hours |
+| Your time | prompt design + sample review | all of it |
+| Output | filterable scores, per-lead openers | the same, 33 working days later |
+
+## Get started
+
+1. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a> from the Google Workspace Marketplace (free tier included, no API keys needed).
+2. Import your CSV and add the three formula columns above — or start from the <a href="/templates/lead-enrichment/">lead enrichment template</a>.
+3. Score, filter, freeze results, then send via <a href="/mail-merge-for-gmail-and-sheets/">Mail Merge for Gmail</a>.
+
+Related: <a href="/docs/gpt-for-sheets/perplexity-function">=PERPLEXITY() reference</a>, <a href="/docs/gpt-for-sheets/gpt-functions">all GPT functions</a>.
+
+## FAQ
+
+**Where does the enrichment data come from?**
+
+=PERPLEXITY() answers with live web knowledge, so company summaries and recent news come from the web at the time you run the formula. It is the one model function in GPT for Sheets with web access — the others answer from training data.
+
+**Can I really personalize 2,000 emails at once?**
+
+The processing is arithmetic: 2,000 leads with three AI columns each is 6,000 results, about 36 minutes at up to 10,000 results per hour. Quality still needs you — review a random sample of openers and tighten the prompt before sending anything.
+
+**How do I send the emails afterwards?**
+
+Convert formulas to plain text with Replace all GPT formulas with results, then use Mail Merge for Gmail and Sheets — each column becomes a merge field, so the opener column drops into your email template per recipient.
+
+
+## Localize a Store into 5 Languages — Google Sheets AI Playbook (https://docgpt.ai/playbooks/localize-store-5-languages/)
+
+One source catalog, five market-ready columns — Spanish, German, French, Portuguese and Japanese — generated inside Google Sheets with `=GPT_TRANSLATE()`. The arithmetic: 1,000 products × 5 languages = 5,000 translations, which is about **30 minutes of processing** at up to 10,000 results per hour. The same job in words: 1,000 descriptions at ~50 words each is 50,000 words per language, 250,000 words total; at 2,000 words per day — a common planning figure for professional translation — that is roughly **25 working days per language**. These are calculations from the rate limit and stated assumptions, not claimed results; what the arithmetic buys you is a first full draft of every market in one sitting.
+
+## Step 1 — build the translation matrix
+
+Put target languages in the header row and lock references so one formula fills the whole grid:
+
+| | A | B | C | D | E | F |
+|---|---|---|---|---|---|---|
+| **1** | Source (English) | Spanish | German | French | Portuguese (Brazil) | Japanese |
+| **2** | Your description | `=GPT_TRANSLATE($A2, B$1)` | → | → | → | → |
+
+The `$A2` / `B$1` locks mean you type the formula once in `B2`, then drag right and down — every cell translates the source in its row into the language of its column.
+
+## Step 2 — protect brand terms with a glossary
+
+Every store has words that must survive translation untouched: the brand name, product line names, materials you market in English ("AirMesh"), sizing labels. Put them in one cell — say `H1`:
+
+```
+Nordvik, TrailLite, AirMesh, DryShell, EU sizing
+```
+
+For brand-sensitive copy, switch from `=GPT_TRANSLATE()` to a `=GPT()` prompt that reads the glossary:
+
+```
+=GPT("Translate into "&B$1&". Keep these terms exactly as written, untranslated: "&$H$1&". Preserve the marketing tone. Text: "&$A2)
+```
+
+Use plain `=GPT_TRANSLATE()` for neutral fields (dimensions, care instructions) and the glossary prompt for names, taglines and descriptions. One glossary cell means one place to update when a new product line launches.
+
+## Step 3 — QA with the back-translation trick
+
+You probably can't read Japanese, but you can read what the model thinks the Japanese says. Add a QA column that translates the output back to English:
+
+```
+=GPT_TRANSLATE(F2, "English")
+```
+
+Then compare against the source — mechanically if you like:
+
+```
+=GPT("Do these two product descriptions convey the same meaning? Answer SAME or DIFFERENT plus a 5-word reason. 1: "&A2&" 2: "&G2)
+```
+
+Run this on a sample, not the whole grid: 5% of 5,000 cells is 250 back-translations — under two minutes of processing, and about 80 minutes of human scanning at 20 seconds per pair. Rows flagged DIFFERENT get a human look; everything else ships. Back-translation is a translator's trick, not proof of perfection — it catches meaning drift and dropped clauses, which is what actually goes wrong in bulk runs.
+
+## Step 4 — freeze and export
+
+Run **Replace all GPT formulas with results** in the sidebar so the translations become plain text — no accidental re-runs, clean CSV export. Most store platforms (Shopify, WooCommerce) take one language column per import file, so export each column against the product IDs.
+
+## The math, side by side
+
+| | AI in Sheets | Professional translation |
+|---|---|---|
+| 5,000 translations | ≈ 30 min of processing | ≈ 25 working days per language at 2,000 words/day |
+| Glossary handling | one cell, referenced in the prompt | style guide + terminology database |
+| QA | back-translate a 5% sample (~80 min of review) | second linguist review |
+| Honest fit | product copy, first drafts of every market | legal text, regulated claims, high-stakes brand copy |
+
+## Get started
+
+1. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a> from the Google Workspace Marketplace (free tier included, no API keys needed).
+2. Build the matrix above, or start from the <a href="/templates/bulk-translation/">bulk translation template</a>.
+3. Translate, back-translate a sample, then **Replace all GPT formulas with results** and export per language.
+
+Related: <a href="/docs/gpt-for-sheets/gpt-translate-function">=GPT_TRANSLATE() reference</a>, <a href="/templates/bulk-product-descriptions/">bulk product descriptions template</a>.
+
+## FAQ
+
+**How long does 1,000 products in 5 languages take?**
+
+1,000 products times 5 languages is 5,000 translations — about 30 minutes of processing at up to 10,000 results per hour. That is arithmetic from the rate limit; a human translator at a planning rate of 2,000 words per day would need roughly 25 working days per language for 50-word descriptions.
+
+**How do I stop the AI from translating my brand and product names?**
+
+Keep a glossary cell listing terms that must stay untouched, and use a =GPT() translation prompt that references it. For plain fields without brand terms, =GPT_TRANSLATE() alone is enough.
+
+**Is AI translation good enough to publish?**
+
+LLM translation preserves tone and idioms far better than literal tools, and the back-translation trick catches meaning drift cheaply. For product copy most teams publish after sample review; for legal or regulated text, use a professional translator.

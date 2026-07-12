@@ -73,6 +73,12 @@
     - name: Google Sheets AI Templates
       link: /templates/
       new_window: false
+    - name: GPT for Sheets Playbooks
+      link: /playbooks/
+      new_window: false
+    - name: GPT Functions Reference
+      link: /docs/gpt-for-sheets/gpt-functions
+      new_window: false
     - name: GPT for Sheets vs GPT for Work
       link: /gpt-for-sheets-vs-gpt-for-work/
       new_window: false
