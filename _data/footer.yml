@@ -67,25 +67,37 @@
   #    link: /contact/
 - name: "Links"
   links:
+    - name: About DocGPT.ai
+      link: /about/
+      new_window: false
+    - name: Google Sheets AI Templates
+      link: /templates/
+      new_window: false
+    - name: GPT for Sheets vs GPT for Work
+      link: /gpt-for-sheets-vs-gpt-for-work/
+      new_window: false
+    - name: GPT for Sheets vs ChatGPT for Sheets
+      link: /gpt-for-sheets-vs-chatgpt-for-sheets/
+      new_window: false
     - name: Add-On - Create Presentation with AI ChatGPT | Slides™
       link: /google-slide-ai/
       new_window: true
-    - name: SlidesAI vs Slides AI by DocGPT.AI - Comparison
+    - name: SlidesAI vs Slides AI by DocGPT.ai - Comparison
       link: /slidesai-vs-slides-ai-docgpt/
       new_window: true
-    - name: Beautiful.AI vs Slides AI by DocGPT.AI - Comparison
+    - name: Beautiful.AI vs Slides AI by DocGPT.ai - Comparison
       link: /beautiful-ai-vs-slides-ai-docgpt/
       new_window: true
-    - name: Tome App vs Slides AI by DocGPT.AI - Comparison
+    - name: Tome App vs Slides AI by DocGPT.ai - Comparison
       link: /tome-app-vs-slides-ai-docgpt/
       new_window: true
-    - name: Presentations.AI vs Slides AI by DocGPT.AI - Comparison
+    - name: Presentations.AI vs Slides AI by DocGPT.ai - Comparison
       link: /presentations-ai-vs-slides-ai-docgpt/
       new_window: true
-    - name: SlidesGo vs Slides AI by DocGPT.AI - Comparison
+    - name: SlidesGo vs Slides AI by DocGPT.ai - Comparison
       link: /slidesgo-vs-slides-ai-docgpt/
       new_window: true
-    - name: Gamma App vs Slides AI by DocGPT.AI - Comparison
+    - name: Gamma App vs Slides AI by DocGPT.ai - Comparison
       link: /gamma-app-vs-slides-ai-docgpt/
       new_window: true
     - name: Privacy Policy - GPT for Gmail™ | AI Email Assistant | Gemini
