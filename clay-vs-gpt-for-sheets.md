@@ -1,8 +1,8 @@
 ---
 layout: seo-guide
-title: "Clay vs GPT for Sheets: Spreadsheet AI for Lead Research and Enrichment"
+title: "Clay vs GPT for Sheets — Which for Lead Enrichment?"
 permalink: /clay-vs-gpt-for-sheets/
-description: "Clay vs GPT for Sheets: use GPT for Sheets to compare a dedicated enrichment platform with a Google Sheets AI formula layer for account research, segmentation, and outreach prep. Includes copyable formulas, workflow steps, QA tips, and pricing links."
+description: "Clay vs GPT for Sheets: enrichment platform vs AI formulas in Google Sheets. Honest comparison of research quality, pricing and speed for outreach prep."
 hero_title: "Clay vs GPT for Sheets: Spreadsheet AI for Lead Research and Enrichment"
 hero_subtitle: "Use GPT for Sheets to compare a dedicated enrichment platform with a Google Sheets AI formula layer for account research, segmentation, and outreach prep. Copy formulas, test 10 rows, and scale the workflow in Google Sheets with source data and QA columns visible."
 guide_product: "GPT for Sheets"
