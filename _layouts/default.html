@@ -1,12 +1,22 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="{{ page.lang | default: 'en' }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		{% seo %}
 		{% feed_meta %}
+		{% if page.hreflang_group %}
+		{%- assign hreflang_pages = site.html_pages | where: "hreflang_group", page.hreflang_group -%}
+		{%- for alt in hreflang_pages %}
+		<link rel="alternate" hreflang="{{ alt.lang | default: 'en' }}" href="{{ alt.url | absolute_url }}" />
+		{%- endfor %}
+		{%- assign hreflang_default = hreflang_pages | where: "lang", "en" | first %}
+		{%- if hreflang_default %}
+		<link rel="alternate" hreflang="x-default" href="{{ hreflang_default.url | absolute_url }}" />
+		{%- endif %}
+		{% endif %}
 		<meta name="msvalidate.01" content="195ad1717d294ccd9e7fad36832892bd" />
 		
 		<!-- LLM Discovery Meta Tags -->
