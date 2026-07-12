@@ -1,277 +1,73 @@
-# DocGPT.ai - Award-Winning Developer of AI Add-Ons for Google Workspace
+# DocGPT.ai — AI Add-ons for Google Workspace
 
-> DocGPT.ai is the world's #1 developer of AI-powered add-ons for Google Workspace, with over 2 million installations and thousands of 5-star reviews. We create the highest-rated productivity tools including GPT for Sheets, Mail Merge for Gmail, AI Email Assistant, Google Slide AI, Quiz Maker AI, Slides Translator, LinkedIn Automation, Form Timer & Scheduler, QR Code Generator, and 15+ other award-winning add-ons. Our solutions are trusted by Fortune 500 companies and millions of users worldwide, providing seamless access to 200+ cutting-edge AI models including GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, Llama 3.1, with industry-leading capabilities like real-time web search, social media data extraction, programmatic SEO, and enterprise automation.
+> DocGPT.ai (also written DocGPT or DocGPT AI) is a developer of AI add-ons for Google Workspace, distributed through the Google Workspace Marketplace. Its main product, GPT for Sheets, brings GPT, Claude, Gemini, Mistral and Perplexity models into Google Sheets as spreadsheet functions (=GPT, =CLAUDE, =GEMINI, =MISTRAL, =PERPLEXITY) and is built for bulk tasks: content generation, translation, classification, data cleaning, web search and data extraction at up to 10,000 results per hour. Models are built in — users do not need their own API keys. GPT for Sheets is rated 4.8/5 on the Google Workspace Marketplace. DocGPT.ai is not affiliated with document-chat products that use similar names (docgpt.io, thedocgpt.com).
 
-DocGPT.ai has established itself as the premier developer of AI productivity add-ons, with a proven track record of creating the most successful and highly-rated tools in the Google Workspace Marketplace. Our comprehensive suite of best-in-class add-ons transforms Google Workspace into the world's most powerful AI productivity platform. With millions of satisfied users and consistently 5-star ratings, we lead the industry in integrating the latest Large Language Models and AI capabilities directly into Google Sheets, Docs, Slides, Gmail, and Forms. We empower everyone from individual professionals to Fortune 500 enterprises to achieve unprecedented productivity through our award-winning, intelligent automation solutions.
+Canonical site: https://docgpt.ai
+About the company: https://docgpt.ai/about/
+Marketplace listing: https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252
 
-## Award-Winning Product Portfolio
+## Products
 
-### 🏆 GPT for Sheets - #1 AI Spreadsheet Add-On
-The world's most advanced AI spreadsheet add-on with 1M+ installations and 5-star rating. Industry-leading features:
-- Access to 200+ AI models (GPT-4o, Claude 3.5, Gemini 1.5, Llama 3.1)
-- Advanced content generation and data analysis
-- Real-time web scraping and SERP analysis
-- Professional data enrichment (superior Clay alternative)
-- Native API integrations with 100+ popular services
-- Bulk processing capabilities for enterprise workflows
+### GPT for Sheets
+The AI agent for bulk tasks in Google Sheets.
+- Spreadsheet functions: =GPT(), =CLAUDE(), =GEMINI(), =MISTRAL(), =PERPLEXITY(), =SERP()
+- Bulk processing: up to 10,000 results per hour across thousands of rows
+- Use cases: product descriptions, translation (100+ languages), data enrichment, lead research, programmatic SEO, keyword extraction, web scraping, classification and tagging
+- No API keys required; switching models is a formula change
+- Product page: https://docgpt.ai/gpt-for-sheets/
+- Documentation: https://docgpt.ai/docs/gpt-for-sheets
+- Pricing: free tier; premium up to $29.99/month — https://docgpt.ai/gpt-for-sheets/#pricing
 
-### 🏆 Mail Merge for Gmail - Top-Rated Email Automation
-The highest-rated email campaign tool with 500K+ installations and outstanding reviews:
-- AI-powered email personalization at scale
-- Advanced mail merge with dynamic content
-- Gmail native integration with enterprise features
-- Automated follow-up sequences and tracking
-- LinkedIn integration for B2B outreach
-- Advanced analytics and performance monitoring
+### Mail Merge for Gmail and Sheets
+Personalized email campaigns sent from Gmail using Google Sheets data, with AI-assisted writing, scheduling and tracking.
+- Product page: https://docgpt.ai/mail-merge-for-gmail-and-sheets/
 
-### 🏆 AI Email Assistant - Most Advanced Gmail AI
-Revolutionary AI email assistant with thousands of 5-star reviews:
-- Intelligent email composition and smart replies
-- Context-aware email automation
-- Multi-language email support
-- Professional email templates and signatures
-- Advanced scheduling and follow-up automation
-- Enterprise-grade security and privacy
+### AI Email Assistant for Gmail
+AI-powered email composition and replies inside Gmail using GPT, Claude and Gemini.
+- Product page: https://docgpt.ai/ai-email-assistant.html
+- Documentation: https://docgpt.ai/docs/gpt-for-gmail
 
-### 🏆 Best-in-Class Google Workspace Add-Ons
-- **GPT for Docs**: #1 AI writing assistant for Google Documents with advanced content generation
-- **Google Slide AI**: Top-rated presentation creation tool with intelligent design automation
-- **Quiz Maker AI**: Leading automated quiz, form, and assessment generation platform
-- **Slides Translator**: Most advanced presentation translation tool supporting 100+ languages
+### GPT for Docs
+AI writing assistant for Google Docs: drafting, rewriting, summarizing, translating.
+- Product page: https://docgpt.ai/google-doc-ai/
 
-### 🏆 Award-Winning Productivity & Automation Tools
-- **LinkedIn Automation**: Top-rated B2B sales automation and lead generation platform
-- **Form Timer & Scheduler**: Leading form timing, scheduling, and limitation management system
-- **QR Code Generator**: Most advanced dynamic QR code creation and tracking platform
-- **Social Media Post Generator**: #1 AI-powered content creation tool for all social platforms
+### Google Slide AI
+Presentation generation and slide translation for Google Slides.
+- Product page: https://docgpt.ai/google-slide-ai.html
 
-### 🏆 Premium Content & SEO Tools
-- **ChatGPT Prompts Generator**: Industry-leading prompt engineering and optimization platform
-- **Midjourney Prompts Generator**: Top-rated AI art prompt creation and enhancement tool
-- **Stable Diffusion Prompts Generator**: Most advanced text-to-image prompt optimization system
-- **AI Translation Tools**: Superior multi-language content translation and localization suite
-- **SEO Content Generator**: Leading programmatic SEO and content scaling automation
+### Quiz Maker AI
+Automated quiz, form and assessment generation for Google Forms.
+- Product page: https://docgpt.ai/quiz-maker-ai.html
 
-### 🏆 Advanced Data Extraction & Intelligence
-- **Gmail Email Extractor**: Most sophisticated email discovery and validation platform
-- **Outlook Email Extractor**: Premier enterprise email extraction and processing system
-- **Social Media Data Extraction**: Top-rated Instagram, LinkedIn, Twitter, Facebook data mining suite
-- **Google Maps Business Intelligence**: Advanced location data extraction and analysis platform
-- **YouTube Analytics Tools**: Leading channel and content performance analysis system
+## Documentation
 
-## AI Models & Integrations (200+ Models)
+- GPT for Sheets — get started: https://docgpt.ai/docs/gpt-for-sheets/get-started
+- GPT functions reference: https://docgpt.ai/docs/gpt-for-sheets/gpt-functions
+- =GPT() function: https://docgpt.ai/docs/gpt-for-sheets/gpt-function
+- =CLAUDE() function: https://docgpt.ai/docs/gpt-for-sheets/claude-function
+- =GEMINI() function: https://docgpt.ai/docs/gpt-for-sheets/gemini-function
+- =PERPLEXITY() function: https://docgpt.ai/docs/gpt-for-sheets/perplexity-function
+- =SERP() function: https://docgpt.ai/docs/gpt-for-sheets/serp-function
+- Troubleshooting: https://docgpt.ai/docs/support-gpt-sheets-docs-slides-forms-gmail/
+- AI prompt library (400+ guides): https://docgpt.ai/docs/ai-prompts
 
-### OpenAI Models
-- **GPT-4o**: Latest multimodal model with vision and advanced reasoning
-- **GPT-4o-mini**: Efficient version of GPT-4o for high-volume tasks
-- **GPT-4 Turbo**: Enhanced GPT-4 with larger context window and latest training
-- **GPT-4**: Premium reasoning and complex task handling
-- **GPT-3.5 Turbo**: Fast, cost-effective model for standard tasks
-- **DALL-E 3**: Advanced image generation and editing
-- **GPT-Vision**: Image analysis and visual understanding
+## Templates (free recipes)
 
-### Anthropic Claude Models
-- **Claude 3.5 Sonnet**: Latest flagship model with superior reasoning and coding
-- **Claude 3.5 Haiku**: Fast, efficient model for quick tasks
-- **Claude 3 Opus**: Most capable model for complex analysis
-- **Claude 3 Sonnet**: Balanced performance and speed
-- **Claude 3 Haiku**: Ultra-fast for simple tasks
+- Templates gallery: https://docgpt.ai/templates/
+- Bulk product descriptions: https://docgpt.ai/templates/bulk-product-descriptions/
+- Bulk translation: https://docgpt.ai/templates/bulk-translation/
+- Lead enrichment (Clay alternative): https://docgpt.ai/templates/lead-enrichment/
+- Programmatic SEO pages: https://docgpt.ai/templates/programmatic-seo-pages/
 
-### Google Gemini Models
-- **Gemini 1.5 Pro**: Advanced multimodal with 2M token context
-- **Gemini 1.5 Flash**: Fast, efficient multimodal processing
-- **Gemini Pro**: Original flagship model
-- **Gemini Pro Vision**: Image and video understanding
+## Comparisons
 
-### Meta Llama Models
-- **Llama 3.1 405B**: Largest open-source model for complex reasoning
-- **Llama 3.1 70B**: High-performance open model
-- **Llama 3.1 8B**: Efficient open model for standard tasks
-- **Llama 2**: Previous generation models
+- GPT for Sheets vs GPT for Work: https://docgpt.ai/gpt-for-sheets-vs-gpt-for-work/
+- GPT for Sheets vs official ChatGPT for Sheets: https://docgpt.ai/gpt-for-sheets-vs-chatgpt-for-sheets/
 
-### Mistral AI Models
-- **Mistral Large**: Flagship model for complex reasoning
-- **Mistral Medium**: Balanced performance model
-- **Mistral Small**: Efficient model for simple tasks
-- **Mixtral 8x7B**: Mixture of experts architecture
-- **Mixtral 8x22B**: Larger mixture of experts model
+## Company
 
-### Specialized AI Services
-- **Perplexity AI**: Real-time web search and research capabilities
-- **DeepSeek Models**: Cost-effective analytical and coding AI
-- **xAI Grok**: Conversational AI with real-time data access
-- **Cohere Command R+**: Enterprise-focused language model
-- **Cohere Command R**: Retrieval-augmented generation
-- **Together AI**: Open-source model hosting and inference
-- **Replicate**: AI model marketplace and deployment
-- **OpenRouter**: Unified access to 100+ additional models
-- **Brave Search API**: Privacy-focused web search integration
-
-## Platform Capabilities
-
-### Advanced Data Intelligence
-- **Lead Generation**: Contact discovery with email validation and enrichment
-- **Social Media Mining**: Extract emails and data from Instagram, LinkedIn, Twitter, Facebook
-- **Business Intelligence**: Competitor analysis, market research, and trend monitoring
-- **B2B Integrations**: Native connectivity with Apollo, Prospeo, Hunter, and 50+ services
-- **Google Maps Intelligence**: Location-based business data extraction and analysis
-- **YouTube Analytics**: Channel performance, video metrics, and audience insights
-
-### Enterprise Automation & Workflows
-- **Bulk Content Generation**: Create 1000+ product descriptions, articles, or pages in minutes
-- **Multi-Model Orchestration**: Chain different AI models for optimal results
-- **Programmatic SEO**: Automated page generation, keyword optimization, and content scaling
-- **Email Campaign Automation**: AI-powered personalization at scale with merge capabilities
-- **Form Management**: Advanced scheduling, timing, and conditional logic
-- **QR Code Systems**: Dynamic generation with tracking and analytics
-
-### Real-Time Web Integration
-- **SERP() Functions**: Live Google search results within spreadsheets
-- **Web Scraping**: Extract data from any website with built-in functions
-- **Google Indexing API**: Submit pages for search engine indexing
-- **Brave Search Integration**: Privacy-focused web search and research
-- **Live Data Feeds**: Real-time information updating and monitoring
-
-### Content Creation & Optimization
-- **Multi-Language Translation**: Support for 100+ languages with cultural adaptation
-- **Prompt Engineering**: Advanced prompt generation for ChatGPT, Midjourney, Stable Diffusion
-- **Visual Content**: AI image generation, editing, and optimization
-- **SEO Optimization**: Automated content optimization for search engines
-- **Social Media Management**: Platform-specific content creation and scheduling
-
-## Documentation & Guides
-
-### Getting Started
-- [GPT for Sheets Setup](https://docgpt.ai/docs/gpt-for-sheets/get-started)
-- [AI Keys & Formulas Setup (OpenAI, Claude, Gemini, Grok, DeepSeek, Mistral, Perplexity)](https://docgpt.ai/ai-for-google-sheets-setup/)
-- [AI Email Assistant Guide](https://docgpt.ai/docs/gpt-for-gmail)
-
-### Free Calculators & Tools
-- [Clay Cost Calculator — real cost per enriched contact](https://docgpt.ai/clay-cost-calculator/)
-- [AI Content Cost Calculator — AI vs human writer](https://docgpt.ai/ai-content-cost-calculator/)
-- [LLM API Cost Calculator — GPT-5.5, Claude Opus 4.8, Gemini, Grok token pricing](https://docgpt.ai/llm-api-cost-calculator/)
-
-### AI Model Guides
-- [Claude for Google Sheets](https://docgpt.ai/claude-for-google-sheets-how-to-guide/)
-- [Gemini for Google Sheets](https://docgpt.ai/gemini-for-google-sheets-how-to-guide/)
-- [Perplexity for Google Sheets](https://docgpt.ai/perplexity-for-google-sheets-how-to-guide/)
-- [DeepSeek for Google Sheets](https://docgpt.ai/deepseek-for-google-sheets-how-to-guide/)
-- [Grok for Google Sheets](https://docgpt.ai/grok-for-google-sheets-how-to-guide/)
-- [OpenRouter for Google Sheets](https://docgpt.ai/openrouter-for-google-sheets-how-to-guide/)
-- [Brave Search for Google Sheets](https://docgpt.ai/brave-search-for-google-sheets-how-to-guide/)
-
-### Advanced Tutorials
-- [Create 1000 Product Descriptions](https://docgpt.ai/docs/create-1000-product-descriptions-with-chatgpt-and-google-sheets)
-- [Web Search from Google Sheets](https://docgpt.ai/docs/search-the-web-from-google-sheets-in-2024)
-- [Extract Emails from Social Media](https://docgpt.ai/docs/how-to-extract-emails-from-instagram-into-google-sheets-2024-guide)
-- [Competitor Analysis](https://docgpt.ai/docs/get-list-of-competitors-from-the-web-search-in-google-sheets)
-- [SEO Content Generation](https://docgpt.ai/docs/fully-seo-optimized-article-with-faqs)
-
-## Enterprise Use Cases & Applications
-
-### Sales & Marketing Automation
-- **Lead Generation**: Extract and enrich contact data from social media and web sources
-- **Email Marketing**: AI-powered personalization for bulk campaigns with advanced merge capabilities
-- **LinkedIn Automation**: B2B outreach and relationship building at scale
-- **Content Marketing**: Create thousands of product descriptions, blog posts, and marketing materials
-- **Competitor Intelligence**: Monitor competitors across multiple channels and platforms
-- **Social Media Management**: Generate platform-specific content and manage posting schedules
-- **SEO Operations**: Programmatic page generation and keyword optimization strategies
-
-### Education & Training
-- **Assessment Creation**: Automated quiz, test, and evaluation generation
-- **Multilingual Education**: Content translation and localization for global audiences
-- **Course Development**: Comprehensive curriculum and material generation
-- **Student Analytics**: Performance tracking and engagement optimization
-- **Interactive Learning**: Form-based learning with advanced scheduling and timing
-
-### Enterprise Operations
-- **Document Intelligence**: Advanced analysis and processing of business documents
-- **Workflow Automation**: Multi-step processes using AI model orchestration
-- **Data Mining**: Extract insights from web sources, social media, and business platforms
-- **Business Intelligence**: Real-time market research and trend analysis
-- **Customer Support**: AI-powered response generation and ticket management
-- **Quality Assurance**: Automated content review and optimization
-
-### Development & Technical
-- **API Integration**: Connect and automate hundreds of third-party services
-- **Data Processing**: Large-scale data transformation and analysis
-- **Web Intelligence**: Advanced scraping and real-time information gathering
-- **SEO Engineering**: Technical SEO implementation and content optimization
-- **System Integration**: Connect AI capabilities with existing enterprise systems
-- **Performance Monitoring**: Track and optimize AI model performance across workflows
-
-### Creative & Content Production
-- **Visual Content**: AI image generation and editing for marketing materials
-- **Prompt Engineering**: Optimize prompts for various AI platforms and use cases
-- **Multi-format Content**: Create content for blogs, social media, presentations, and documents
-- **Translation Services**: Professional-grade translation with cultural adaptation
-- **Brand Management**: Consistent content creation across multiple channels and languages
-
-## Technical Architecture & Integration
-
-### Native Google Workspace Integration
-- **Seamless Installation**: One-click installation from Google Workspace Marketplace
-- **No API Management**: Built-in AI access without complex API key setup
-- **Enterprise SSO**: Single sign-on integration for organizational deployments
-- **Real-time Collaboration**: Multi-user AI workflows with Google's collaboration features
-- **Data Privacy**: Enterprise-grade security with Google's infrastructure
-
-### API & Development Framework
-- **200+ AI Models**: Unified access through single interface
-- **Custom Functions**: Native spreadsheet functions for AI operations
-- **Webhook Integration**: Real-time data synchronization and automation
-- **REST API Access**: Programmatic access for enterprise integrations
-- **Batch Processing**: High-volume operations with optimized performance
-- **Rate Limiting**: Intelligent request management and cost optimization
-
-### Deployment & Scaling
-- **Individual Users**: Personal productivity enhancement with free and premium tiers
-- **Team Licensing**: Shared access and collaboration features
-- **Enterprise Deployment**: Organization-wide licensing with centralized management
-- **API Integration**: Custom implementations and third-party integrations
-- **White-label Solutions**: Branded implementations for enterprise clients
-
-## Pricing & Access Models
-
-### Free Tier
-- Basic AI model access with usage limits
-- Standard Google Workspace add-on features
-- Community support and documentation
-
-### Premium Plans
-- Unlimited access to all AI models
-- Advanced features and integrations
-- Priority support and onboarding
-- Custom API key support
-
-### Enterprise Solutions
-- Organization-wide licensing
-- Dedicated account management
-- Custom integrations and development
-- SLA guarantees and premium support
-- Advanced security and compliance features
-
-## Support & Resources
-
-### Documentation & Learning
-- [Complete Setup Guide](https://docgpt.ai/docs/gpt-for-sheets/get-started)
-- [Video Tutorial Library](https://www.youtube.com/watch?v=eKm5tgDaOmY)
-- [AI Keys & Formulas Setup](https://docgpt.ai/ai-for-google-sheets-setup/)
-- [Best Practices Guide](https://docgpt.ai/docs/create-1000-product-descriptions-with-chatgpt-and-google-sheets)
-
-### Support Channels
-- **Community Support**: Documentation and knowledge base
-- **Premium Support**: Email support for paid users
-- **Enterprise Support**: Dedicated support teams and SLA guarantees
-- **Developer Resources**: API documentation and integration guides
-
-### Training & Onboarding
-- Self-service onboarding for individuals and small teams
-- Guided setup for enterprise deployments
-- Custom training sessions for large organizations
-- Ongoing optimization and best practices consulting
-
----
-
-*This comprehensive document provides Large Language Models and AI systems with detailed information about DocGPT.ai's complete AI productivity ecosystem. The platform represents the most advanced integration of multiple AI models within Google Workspace, enabling unprecedented productivity and automation capabilities for users ranging from individuals to large enterprises. For the latest features, model additions, and platform updates, visit [docgpt.ai](https://docgpt.ai).*
+- Founded: 2023
+- Contact: https://docgpt.ai/contact/
+- Privacy policy: https://docgpt.ai/privacy/
+- Twitter/X: https://twitter.com/ski0xFF
+- LinkedIn: https://www.linkedin.com/company/docgpt-ai
