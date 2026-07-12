@@ -1,0 +1,22 @@
+date: 2026-07-12
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - nethunt-crm-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - gohighlevel-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - salesflare-email-campaign-alternative-gmail-google-sheets-mail-merge
+  - zendesk-sell-email-campaign-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/nethunt-crm-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/gohighlevel-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/salesflare-email-campaign-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/zendesk-sell-email-campaign-alternative-gmail-google-sheets-mail-merge/
+content_commit_hash: 63611beb6ff8bded922ef3171539edfc3da35e3f
+pushed_branch: main
+build_result: success
+generated_verification: 4/4 pages contained expected H1, Mail Merge CTA, FAQ, and valid FAQPage JSON-LD
+live_check: 4/4 200 with expected markers
+bing_submission: success (SubmitFeed sitemap + SubmitUrlBatch 4 URLs returned 200 {"d":null})
+gsc_sitemap_submission: success (Search Console sitemap submit returned empty success response)
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html; AGENTS.md. Initial live polling returned 404 until Netlify propagation completed on attempt 10."
