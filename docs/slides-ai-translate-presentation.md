@@ -1,13 +1,13 @@
 ---
 layout: docs_layouts/default
-title: Translate a presentation with Translate Slides
+title: "How to Translate Google Slides with AI"
 parent: Slides AI by DocGPT
 nav_order: 5
 permalink: /docs/slides-ai/translate-presentation
-description: "Translate a Google Slides deck with the Translate Slides add-on by DocGPT.ai — select elements or the whole deck, pick a language, keep the layout."
+description: "How to translate a Google Slides presentation with AI: select elements or the whole deck, pick one of 100+ languages, keep layout — Translate Slides add-on."
 ---
 
-# Translate a presentation with Translate Slides™
+# How to translate Google Slides with AI
 
 **Translate Slides™ with AI GPT** is a separate sister add-on from DocGPT.ai that translates an existing Google Slides presentation into a target language. Unlike the generator in <a href="/docs/slides-ai">Slides AI by DocGPT</a>, it does not create new slides — it takes the deck you already have and replaces the text with a translation while preserving the layout.
 

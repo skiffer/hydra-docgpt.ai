@@ -98,6 +98,8 @@ The generated deck lands as normal Google Slides: a title slide, the starter que
 
 Because Slides by DocGPT.ai generates in 40+ languages, language teachers get a second workflow for free: write the lesson plan in your language, and generate the deck in the target language. A Spanish teacher can produce an A2-level deck on daily routines *in Spanish*; a French teacher can generate the same cultural topic once in French for the class and once in English for a parents' evening. The language selector applies to the whole deck, and since the output is editable Google Slides, you can adjust vocabulary to exactly the level your class has covered.
 
+Already have a finished deck in another language? You can [translate Google Slides with AI](/translate-slides-with-ai-gpt/) — the sister add-on converts an existing presentation into 100+ languages in one click while keeping the layout ([how-to guide](/docs/slides-ai/translate-presentation)).
+
 ## Verify before you teach: the honest note {#honest-limits}
 
 AI-generated educational content must be fact-checked by the teacher — no exceptions. Slides by DocGPT.ai is excellent at structure, pacing, and age-appropriate slide copy, but like any AI it can state facts with confidence that are subtly wrong, outdated, or misaligned with how your curriculum defines a term. Dates, equations, definitions, and quiz answers deserve a line-by-line check before the deck reaches students. The time math still works strongly in your favor: verifying and adapting a complete draft takes a fraction of the time building a deck from a blank slide does — but the verification pass is part of the job, not optional.

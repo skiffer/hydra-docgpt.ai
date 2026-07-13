@@ -59,6 +59,10 @@ Need control? Use =GPT() with instructions instead:
 ```
 
 
+## Beyond spreadsheets
+
+The same one-click approach works for presentations: [translate Google Slides with AI](/translate-slides-with-ai-gpt/) converts a whole deck into 100+ languages while keeping the layout.
+
 ## Get started
 
 1. <a href="https://workspace.google.com/marketplace/app/gpt_for_sheets_docs_forms_slides/466607203252">Install GPT for Sheets</a> from the Google Workspace Marketplace (free tier included, no API keys needed).

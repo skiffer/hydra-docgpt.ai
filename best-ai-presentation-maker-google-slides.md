@@ -106,7 +106,8 @@ Presentations.ai is a standalone web platform with iOS and Android apps, exporti
 1. **Slides-native or platform?** If your decks must live in Google Drive with normal Slides collaboration, pick an add-on (Slides by DocGPT.ai, Plus AI, MagicSlides, SlidesAI). If you're happy to present from a web link, Gamma and Presentations.ai open up.
 2. **What do your decks start from?** Topics and your own text → Slides by DocGPT.ai. Long documents → Plus AI Pro. YouTube videos, PDFs, URLs → MagicSlides.
 3. **How many decks per month?** Under 10 → Slides by DocGPT.ai's free tier covers you. High volume → compare unlimited tiers (MagicSlides Premium Plus, SlidesAI Premium) against your actual usage.
-4. **Test before paying.** Run the same real topic through two or three free tiers/trials and judge the drafts, not the marketing.
+4. **Generating or translating?** If the deck already exists and you only need it in another language, you don't need a generator at all — [translate Google Slides with AI](/translate-slides-with-ai-gpt/) directly, layout intact.
+5. **Test before paying.** Run the same real topic through two or three free tiers/trials and judge the drafts, not the marketing.
 
 ## Head-to-head comparisons {#head-to-head}
 
