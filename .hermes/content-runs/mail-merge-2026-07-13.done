@@ -1,0 +1,25 @@
+date: 2026-07-13
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - bettermerge-alternative-gmail-google-sheets-mail-merge
+  - mergemail-alternative-gmail-google-sheets-mail-merge
+  - mergo-alternative-gmail-google-sheets-mail-merge
+  - emerge-mail-merge-alternative-gmail-google-sheets
+created_page_urls:
+  - https://docgpt.ai/bettermerge-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mergemail-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mergo-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/emerge-mail-merge-alternative-gmail-google-sheets/
+content_commit_hash: 6eb0065d5f0303c714e53d0c13524cc06775d9bb
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_verification: 4/4 pages contained expected H1, Mail Merge CTA, FAQ, FAQPage JSON-LD, and preserved merge-field examples
+live_check: 4/4 200 with expected page markers
+bing_submission: success
+bing_submission_detail: SubmitFeed sitemap 200; SubmitUrlBatch 4 URLs 200
+gsc_sitemap_submission: success
+gsc_sitemap_submission_detail: sitemap submitted for sc-domain:docgpt.ai
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html (modified), AGENTS.md (untracked). Existing Jekyll YAML warnings in legacy Slides pages did not block build (exit 0)."
