@@ -1,0 +1,25 @@
+date: 2026-07-14
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - google-workspace-marketplace-mail-merge-alternative-gmail-sheets
+  - gmail-add-on-mail-merge-vs-google-sheets-add-on
+  - mail-merge-tool-migration-to-google-sheets-gmail
+  - mail-merge-dashboard-vs-google-sheets-row-status
+created_page_urls:
+  - https://docgpt.ai/google-workspace-marketplace-mail-merge-alternative-gmail-sheets/
+  - https://docgpt.ai/gmail-add-on-mail-merge-vs-google-sheets-add-on/
+  - https://docgpt.ai/mail-merge-tool-migration-to-google-sheets-gmail/
+  - https://docgpt.ai/mail-merge-dashboard-vs-google-sheets-row-status/
+content_commit_hash: e538c1d3def55ce32d3eb322cd1c49093b236f91
+pushed_branch: main
+build_result: success
+build_command: bundle exec jekyll build
+generated_verification: 4/4 pages contained expected H1, Mail Merge CTA, FAQ, parseable FAQPage JSON-LD, and preserved merge-field examples
+live_check: 4/4 200 with expected page markers
+bing_submission: success
+bing_submission_detail: SubmitFeed sitemap 200; SubmitUrlBatch 4 URLs 200
+gsc_sitemap_submission: success
+gsc_sitemap_submission_detail: sitemap submitted for sc-domain:docgpt.ai
+push_result: success
+notes: "Today strategist plan was missing, so builder used a non-duplicate fallback plan based on remaining high-intent Mail Merge workflow/comparison ideas. Unrelated dirty files intentionally left untouched: ai-email-assistant.html (modified), AGENTS.md (untracked). Existing RubyGems/native-extension warnings and legacy Jekyll warnings did not block build (exit 0)."
