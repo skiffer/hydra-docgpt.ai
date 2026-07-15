@@ -1,0 +1,25 @@
+date: 2026-07-15
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - quicklution-mail-merge-alternative-gmail-google-sheets
+  - autocrat-alternative-gmail-google-sheets-mail-merge
+  - formmule-alternative-gmail-google-sheets-mail-merge
+  - gmerge-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/quicklution-mail-merge-alternative-gmail-google-sheets/
+  - https://docgpt.ai/autocrat-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/formmule-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/gmerge-alternative-gmail-google-sheets-mail-merge/
+commit_hash: 6d13cc06122aad79804a99fbd0249c35cac1e30e
+content_commit_hash: 6d13cc06122aad79804a99fbd0249c35cac1e30e
+pushed_branch: main
+build_result: success
+generated_verification: "4/4 pages contained expected H1, Mail Merge CTA, FAQ, parseable FAQPage JSON-LD; source had no GPT-for-Sheets CTA leakage"
+live_check: "4/4 200 with expected H1/CTA/FAQ markers"
+bing_submission: success
+bing_details: "SubmitFeed sitemap 200 {d:null}; SubmitUrlBatch 4 URLs 200 {d:null}"
+gsc_sitemap_submission: success
+gsc_details: "Search Console sitemap submit for https://docgpt.ai/sitemap.xml returned {}"
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: ai-email-assistant.html (modified), AGENTS.md (untracked). Netlify returned 404 during propagation until live-check attempt 14, then all URLs returned 200."
