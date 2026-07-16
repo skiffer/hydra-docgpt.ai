@@ -152,6 +152,8 @@ The quickest way to compare is to run a few rows yourself. Install GPT for Sheet
 
 [Install GPT for Sheets](/gpt-for-sheets/) or [compare plans](/gpt-for-sheets/#pricing) to turn rows into reviewed research, labels, and enrichment.
 
+To set up Claude specifically, see the [Claude for Google Sheets](/claude-for-google-sheets-how-to-guide/) guide: connect an Anthropic API key and run =CLAUDE() formulas across your rows.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -4,7 +4,7 @@
 # Brand constant: canonical spelling is "DocGPT.ai" — use it in all copy.
 # Spelling variants (DocGPT, "DocGPT.AI", DocGPT AI) live only in schema alternateName.
 title: "DocGPT.ai"
-tagline: "GPT for Sheets & AI Add-ons for Google Workspace"
+tagline: "GPT for Sheets & AI Add-ons for Google Workspace: ChatGPT, Claude & Gemini in Sheets, Docs & Gmail"
 url: "https://docgpt.ai"
 baseurl:
 locale: en_US

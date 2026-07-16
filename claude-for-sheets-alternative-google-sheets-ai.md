@@ -147,6 +147,8 @@ If you came looking for AI in your spreadsheet, install GPT for Sheets and run t
 
 [Install GPT for Sheets](/gpt-for-sheets/) or [compare plans](/gpt-for-sheets/#pricing) to turn rows into reviewed research, labels, enrichment, and next actions.
 
+Want to run Claude itself in your spreadsheet? Follow the [Claude for Google Sheets](/claude-for-google-sheets-how-to-guide/) setup guide to connect an Anthropic API key and use =CLAUDE() formulas across rows.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
