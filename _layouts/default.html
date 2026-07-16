@@ -72,7 +72,11 @@
 							['$current_url', '$referrer', '$referring_domain', 'current_url', 'url', 'referrer'].forEach(function(key) {
 								if (event.properties[key]) event.properties[key] = sanitizePostHogUrl(event.properties[key]);
 							});
-							['email', 'e', 'token', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function(key) {
+							// Never delete properties.token: it is PostHog's own (public) project
+							// token and required for ingestion — the SDK drops the event client-side
+							// without it. URL query params named "token" are already stripped by
+							// sanitizePostHogUrl above.
+							['email', 'e', 'access_token', 'refresh_token', 'api_key', 'password', 'secret'].forEach(function(key) {
 								delete event.properties[key];
 							});
 						}
