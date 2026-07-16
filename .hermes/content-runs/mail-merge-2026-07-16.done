@@ -1,0 +1,22 @@
+date: 2026-07-16
+status: completed_content_batch
+created_pages: 4
+created_page_slugs:
+  - mailking-alternative-gmail-google-sheets-mail-merge
+  - easy-mail-merge-alternative-gmail-google-sheets
+  - g-merge-plus-alternative-gmail-google-sheets-mail-merge
+  - mergefactory-alternative-gmail-google-sheets-mail-merge
+created_page_urls:
+  - https://docgpt.ai/mailking-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/easy-mail-merge-alternative-gmail-google-sheets/
+  - https://docgpt.ai/g-merge-plus-alternative-gmail-google-sheets-mail-merge/
+  - https://docgpt.ai/mergefactory-alternative-gmail-google-sheets-mail-merge/
+content_commit_hash: f1518dea43d9a9be33be23b335c0c3131a9e8734
+pushed_branch: main
+build_result: success
+generated_verification: "4/4 pages contained expected H1, Mail Merge CTA, FAQ text, FAQPage JSON-LD, and preserved merge tags"
+live_check: "4/4 200 with expected markers after Netlify propagation"
+bing_submission: success
+gsc_sitemap_submission: success
+push_result: success
+notes: "Unrelated dirty files intentionally left untouched: M ai-email-assistant.html; ?? AGENTS.md. Google normal page indexing handled by sitemap submission; Bing sitemap and URL batch submitted."
