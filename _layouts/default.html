@@ -61,19 +61,13 @@
 			posthog.init('phc_fJzEwjJQly1CblAdxuLYfgmNCVtgV17LwdeYHSJVPM3',{
 				api_host:'https://us.i.posthog.com',
 				ui_host:'https://app.posthog.com',
-				// 2026-06-07: browser SDK requests to the remote-config /i/v0/e endpoint were
-				// accepted with 200 but not visible in HogQL. Disable decide/remote config and
-				// force plain /e payloads so anonymous page/checkout events are ingested while
-				// server-side purchase_completed keeps working.
-				advanced_disable_decide:true,
-				disable_compression:true,
-				request_batching:false,
+				// 2026-07-16: the 2026-06-07 workaround (advanced_disable_decide + manual
+				// api_key injection) silently stopped ALL browser captures when the
+				// auto-updating array.js moved past the option it relied on — zero events
+				// reached PostHog from 2026-06-17. Default config verified end-to-end
+				// against SDK 1.402.3: /i/v0/e returns 200 and events appear in HogQL.
 				before_send: function(event) {
 					try {
-						// PostHog JS 1.380.1 can submit /e payloads without a top-level api_key
-						// when decide/remote config is disabled, causing 401s. Inject it here;
-						// this is the public project token already present in posthog.init.
-						if (event) event.api_key = 'phc_fJzEwjJQly1CblAdxuLYfgmNCVtgV17LwdeYHSJVPM3';
 						if (event && event.properties) {
 							['$current_url', '$referrer', '$referring_domain', 'current_url', 'url', 'referrer'].forEach(function(key) {
 								if (event.properties[key]) event.properties[key] = sanitizePostHogUrl(event.properties[key]);
