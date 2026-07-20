@@ -2,6 +2,7 @@
 title: "AI Email Assistant for Gmail — Reply, Rewrite & Follow Up Faster"
 heading: "Reply to Gmail faster without starting from a blank page"
 description: "AI Email Assistant for Gmail helps you turn long threads into clear replies, rewrite tone, translate messages, draft follow-ups and reuse templates directly inside Gmail. Upgrade to Premium for unlimited email help."
+custom_hero: true
 ---
 <script src="/assets/js/checkout-attribution.js"></script>
 <script src="/assets/js/revenue-posthog.js"></script>
@@ -38,24 +39,26 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         vendor: 13096,
         eventCallback: function (data) {
             if (data.event === "Checkout.Complete") {
+                var checkout = data.eventData.checkout;
                 let dataLayerInfo = {
                     event: "purchase",
                     ecommerce: {
-                        transaction_id: data.eventData.checkout.id,
+                        transaction_id: checkout.id,
                         affiliation: "Affiliation Google Gmail",
-                        value: data.eventData.checkout.prices.customer.total,
-                        tax: data.eventData.checkout.prices.customer.total_tax,
+                        value: checkout.prices.customer.total,
+                        tax: checkout.prices.customer.total_tax,
                         shipping: null,
-                        currency: data.eventData.checkout.prices.customer.currency,
-                        customData: data.eventData.checkout.customData,
-                        coupon: data.eventData.checkout.coupon.coupon_code,
-                        items: data.eventData.checkout.prices.customer.items,
+                        currency: checkout.prices.customer.currency,
+                        customData: checkout.customData,
+                        coupon: checkout.coupon ? checkout.coupon.coupon_code : null,
+                        items: checkout.prices.customer.items,
                     },
                 };
-                dataLayer.push(dataLayerInfo);
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(dataLayerInfo);
             }
         }
-    }); // replace with your vendor ID
+    });
     // Paddle.Environment.set('sandbox'); // only include if testing in sandbox
 
 </script>
@@ -187,96 +190,127 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     /*}*/
 </style>
 <style>
-    .gmail-upgrade-hero {
-        max-width: 1080px;
-        margin: 18px auto 10px;
-        padding: 34px 24px;
-        border-radius: 24px;
-        background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 52%, #fff7ed 100%);
-        border: 1px solid #dbeafe;
-        box-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+    .gmail-pricing-section {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 24px 20px 8px;
+        scroll-margin-top: 90px;
+    }
+    .gmail-pricing-intro {
+        max-width: 780px;
+        margin: 0 auto 16px;
         text-align: center;
     }
-    .gmail-upgrade-eyebrow {
+    .gmail-pricing-eyebrow {
         display: inline-flex;
-        gap: 8px;
         align-items: center;
-        padding: 7px 12px;
+        justify-content: center;
+        min-height: 28px;
+        padding: 6px 12px;
         border-radius: 999px;
-        background: #e8f0fe;
+        background: #eff6ff;
         color: #174ea6;
-        font-weight: 700;
-        font-size: 13px;
-        margin-bottom: 14px;
-    }
-    .gmail-upgrade-hero h2 {
-        font-size: clamp(30px, 5vw, 54px);
-        line-height: 1.05;
+        font-size: 12px;
         font-weight: 800;
-        color: #111827;
-        margin-bottom: 14px;
+        letter-spacing: .02em;
     }
-    .gmail-upgrade-hero .lead-copy {
-        font-size: 1.15rem;
-        max-width: 780px;
-        margin: 0 auto 22px;
-        color: #374151;
+    .gmail-pricing-intro h1,
+    .gmail-pricing-intro h2 {
+        margin: 14px 0 10px;
+        color: #0f172a;
+        font-size: clamp(32px, 4vw, 46px);
+        font-weight: 850;
+        line-height: 1.05;
+        letter-spacing: -.035em;
     }
-    .gmail-upgrade-actions {
+    .gmail-pricing-intro p {
+        max-width: 720px;
+        margin: 0 auto;
+        color: #475569;
+        font-size: 17px;
+        line-height: 1.55;
+    }
+    .gmail-pricing-trust {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
-        margin: 22px 0 18px;
+        gap: 8px;
+        margin: 16px auto 0;
     }
-    .gmail-primary-cta,
-    .gmail-secondary-cta {
+    .gmail-pricing-trust span {
         display: inline-flex;
         align-items: center;
-        justify-content: center;
-        min-height: 48px;
-        padding: 12px 20px;
-        border-radius: 12px;
-        font-weight: 800;
-        text-decoration: none;
+        min-height: 30px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        color: #334155;
+        font-size: 12px;
+        font-weight: 700;
     }
-    .gmail-primary-cta {
-        background: #0b57d0;
-        color: #fff !important;
-        box-shadow: 0 12px 24px rgba(11, 87, 208, 0.2);
-    }
-    .gmail-secondary-cta {
-        color: #0b57d0 !important;
-        background: #fff;
-        border: 1px solid #bfdbfe;
-    }
-    .gmail-proof-grid {
+    .gmail-pain-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 12px;
-        max-width: 860px;
-        margin: 20px auto 0;
+        max-width: 920px;
+        margin: 18px auto 14px;
         text-align: left;
     }
-    .gmail-proof-card {
-        background: rgba(255, 255, 255, 0.86);
-        border: 1px solid #e5e7eb;
-        border-radius: 16px;
+    .gmail-pain-card {
         padding: 14px;
-        color: #374151;
-        font-size: 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.04);
     }
-    .gmail-proof-card strong { color: #111827; }
-    .gmail-plan-helper {
-        max-width: 960px;
-        margin: 0 auto 22px;
-        padding: 16px;
-        border-radius: 16px;
-        background: #fff7ed;
-        border: 1px solid #fed7aa;
+    .gmail-pain-card strong {
+        display: block;
+        margin-bottom: 4px;
+        color: #0f172a;
+        font-size: 13px;
+        font-weight: 850;
+    }
+    .gmail-pain-card span {
+        display: block;
+        color: #475569;
+        font-size: 13px;
+        line-height: 1.45;
+    }
+    .gmail-billing-toggle {
+        padding-top: 2px;
+    }
+    .gmail-billing-toggle .h5 {
+        color: #111827;
+        font-size: 16px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+    .gmail-billing-toggle .toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+    .gmail-billing-label {
+        margin: 0;
+        color: #475569;
+        font-weight: 650;
+    }
+    .gmail-recommendation-strip {
+        max-width: 760px;
+        margin: 10px auto 18px;
+        padding: 11px 14px;
+        border: 1px solid #bfdbfe;
+        border-radius: 12px;
+        background: #eff6ff;
+        color: #1e3a8a;
+        font-size: 13.5px;
+        line-height: 1.4;
         text-align: center;
-        color: #7c2d12;
     }
+    .gmail-recommendation-strip strong { color: #0f172a; }
     .annual-focus-note {
         font-size: 13px;
         color: #14532d;
@@ -289,16 +323,37 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     }
 
     /* Professional pricing card polish: cleaner cards, readable buttons, no clipped copy. */
-    #pricing { max-width: 1180px; }
+    .gmail-pricing-cards {
+        max-width: 920px;
+        padding-top: 14px !important;
+    }
     #pricing .pricing.card-deck {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
         align-items: stretch;
         justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #pricing .card-pricing.box-selected {
+        order: 1;
+    }
+    #pricing .card-pricing[data-plan-card="hobby"] {
+        order: 2;
+    }
+    #pricing .card-pricing[data-plan-card="organization"] {
+        order: 4;
+    }
+    #pricing .card-pricing[data-plan-card="lifetime"] {
+        order: 3;
     }
     #pricing .card-pricing {
         position: relative;
         min-width: 0;
-        padding: 0 20px 24px !important;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 22px 24px !important;
         border: 1px solid #e5edf5;
         border-radius: 18px;
         background: #ffffff;
@@ -308,7 +363,7 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     #pricing .card-pricing.box-selected {
         border: 2px solid #0b57d0 !important;
         box-shadow: rgba(11,87,208,0.22) 0 30px 55px -32px, rgba(15,23,42,0.14) 0 18px 34px -24px;
-        transform: translateY(-6px);
+        transform: none;
     }
     #pricing .card-pricing > .h6 {
         min-width: 112px;
@@ -328,10 +383,12 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     #pricing .ribbon {
         width: auto;
         height: auto;
-        transform: none;
-        top: 18px;
-        right: 18px;
-        padding: 6px 10px;
+        min-width: 76px;
+        top: 82px;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
         border-radius: 999px;
         background: #16a34a;
         box-shadow: none;
@@ -339,8 +396,19 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         font-weight: 800;
         line-height: 1;
         letter-spacing: .04em;
+        text-align: center;
+        white-space: nowrap;
+        z-index: 2;
     }
     #pricing .card-header { padding-top: 30px !important; padding-bottom: 8px !important; }
+    #pricing .card-pricing.box-selected .card-header { padding-top: 48px !important; }
+    #pricing .gmail-plan-fit {
+        min-height: 38px;
+        margin: 8px auto 2px;
+        color: #64748b;
+        font-size: 12px;
+        line-height: 1.4;
+    }
     #pricing .h2 {
         color: #0f172a !important;
         font-weight: 800 !important;
@@ -357,6 +425,11 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         line-height: 1.35;
         color: #64748b;
     }
+    #pricing .card-pricing[data-plan-card="lifetime"] .billed-annually {
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+    #pricing .card-header { min-height: 116px; }
     #pricing .paddle_button {
         display: flex !important;
         align-items: center;
@@ -373,6 +446,7 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         text-align: center;
         letter-spacing: -0.01em;
         box-shadow: none;
+        transition: background .18s ease, border-color .18s ease, color .18s ease, box-shadow .18s ease, transform .18s ease, filter .18s ease;
     }
     #pricing .btn-primary {
         background: linear-gradient(135deg, #0b57d0, #2563eb) !important;
@@ -380,11 +454,42 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         color: #fff !important;
         box-shadow: 0 12px 22px rgba(11,87,208,0.20);
     }
-    #pricing .btn-primary:hover { filter: brightness(.95); }
+    #pricing .btn-primary:hover,
+    #pricing .btn-primary:focus-visible {
+        background: linear-gradient(135deg, #094db8, #1d4ed8) !important;
+        border-color: #094db8 !important;
+        color: #fff !important;
+        filter: none;
+        transform: translateY(-1px);
+        box-shadow: 0 16px 28px rgba(11,87,208,0.26);
+    }
     #pricing .btn-outline-secondary {
         background: #fff !important;
         border: 1px solid #cbd5e1 !important;
         color: #0f172a !important;
+    }
+    #pricing .btn-outline-secondary:hover,
+    #pricing .btn-outline-secondary:focus-visible {
+        background: linear-gradient(135deg, #0b57d0, #2563eb) !important;
+        border-color: #0b57d0 !important;
+        color: #fff !important;
+        transform: translateY(-1px);
+        box-shadow: 0 14px 26px rgba(11,87,208,0.22);
+    }
+    #pricing .paddle_button:focus-visible {
+        outline: 3px solid rgba(37,99,235,0.25);
+        outline-offset: 2px;
+    }
+    #pricing .icon-pricing {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 5px;
+        color: #64748b;
+        font-style: normal;
+    }
+    #pricing .icon-pricing::before {
+        content: "\2713";
     }
     #pricing .text-feature {
         max-width: 210px;
@@ -410,55 +515,207 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         padding: 10px;
         margin: 12px 0 4px;
     }
+    .gmail-rating-proof {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto 28px;
+        color: #0f172a;
+        font-size: 13px;
+    }
+    .gmail-rating-proof-pill {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: 999px;
+        background: #fff;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+        font-weight: 800;
+        line-height: 1.2;
+    }
+    .gmail-rating-stars {
+        color: #f59e0b;
+        font-size: 15px;
+        letter-spacing: .08em;
+        line-height: 1;
+    }
+    .gmail-rating-muted {
+        color: #475569;
+        font-weight: 700;
+    }
+    .gmail-rating-divider {
+        width: 1px;
+        height: 14px;
+        background: #cbd5e1;
+    }
+    .gmail-after-checkout {
+        max-width: 760px;
+        margin: 20px auto 4px;
+        padding: 14px 16px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        background: #f8fafc;
+        color: #475569;
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .gmail-after-checkout strong { color: #0f172a; }
+    .gmail-after-checkout a {
+        color: #0b57d0;
+        font-weight: 750;
+    }
+    .cc-window,
+    .cc-banner,
+    .cookieconsent,
+    [role="dialog"][aria-label="cookieconsent"] {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+    }
     @media (max-width: 991px) {
         #pricing .pricing.card-deck { gap: 16px; }
-        #pricing .card-pricing.box-selected { transform: none; }
+    }
+    @media (max-width: 767px) {
+        .gmail-pricing-section {
+            padding: 14px 14px 8px;
+            scroll-margin-top: 12px;
+        }
+        .gmail-pricing-intro {
+            margin-bottom: 12px;
+        }
+        .gmail-pricing-intro h1,
+        .gmail-pricing-intro h2 {
+            margin-top: 10px;
+        }
+        .gmail-pricing-intro p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .gmail-pricing-trust {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        .gmail-pricing-trust span {
+            justify-content: center;
+            text-align: center;
+        }
+        .gmail-pain-grid {
+            grid-template-columns: 1fr;
+            gap: 8px;
+            margin: 12px auto 8px;
+        }
+        .gmail-pain-card {
+            display: grid;
+            grid-template-columns: 94px 1fr;
+            column-gap: 8px;
+            padding: 10px 12px;
+        }
+        .gmail-pain-card strong {
+            margin-bottom: 0;
+            font-size: 12.5px;
+        }
+        .gmail-pain-card span {
+            font-size: 12.5px;
+            line-height: 1.35;
+        }
+        .gmail-pricing-cards {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 8px !important;
+        }
+        #pricing .pricing.card-deck {
+            grid-template-columns: 1fr;
+        }
+        .gmail-recommendation-strip {
+            margin-top: 8px;
+            margin-bottom: 12px;
+            padding: 9px 12px;
+            font-size: 12.5px;
+        }
+        .gmail-rating-proof {
+            margin-top: 16px;
+        }
+        .gmail-rating-proof-pill {
+            border-radius: 16px;
+            padding: 10px 12px;
+            gap: 6px;
+        }
+        .gmail-rating-divider {
+            display: none;
+        }
+        #pricing .card-pricing {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 360px;
+        }
+        .cc-window,
+        .cc-banner,
+        .cookieconsent,
+        [role="dialog"][aria-label="cookieconsent"] {
+            padding: 10px 12px !important;
+            font-size: 13px !important;
+        }
     }
 </style>
-<section class="gmail-upgrade-hero" id="gmail-upgrade">
-    <div class="gmail-upgrade-eyebrow">⚡ Built for busy Gmail inboxes</div>
-    <h2>Turn messy email threads into clear replies.</h2>
-    <p class="lead-copy">Stop copying emails into separate chatbots. Draft replies, fix tone, summarize long conversations, translate messages and write follow-ups directly inside Gmail.</p>
-    <div class="gmail-upgrade-actions">
-        <a href="#pricing" class="gmail-primary-cta" data-cta-location="gmail_hero" data-plan-slug="premium" data-billing-period="annual">Get unlimited Gmail help</a>
-        <a href="https://workspace.google.com/marketplace/app/ai_email_assistant_gpt_claude_gemini_per/785855842489" target="_blank" class="gmail-secondary-cta" data-cta-location="gmail_hero_install">Install free add-on</a>
+<section id="pricing" class="gmail-pricing-section">
+    <div class="gmail-pricing-intro">
+        <div class="gmail-pricing-eyebrow">AI Email Assistant for Gmail</div>
+        <h1>Keep working in Gmail. Remove the limits.</h1>
+        <p>Upgrade the add-on you already use for more replies, thread summaries, rewrites, translations and follow-ups — without copying email into another tab or setting up API keys.</p>
+        <div class="gmail-pricing-trust" aria-label="Trust signals">
+            <span>Built for Gmail</span>
+            <span>255K+ installs</span>
+            <span>No API keys</span>
+            <span>Checkout by Paddle</span>
+        </div>
+        <div class="gmail-pain-grid" aria-label="What the upgrade helps with">
+            <div class="gmail-pain-card">
+                <strong>Reply with context</strong>
+                <span>Summarize the thread, pick up the details and draft the next reply.</span>
+            </div>
+            <div class="gmail-pain-card">
+                <strong>Sound like yourself</strong>
+                <span>Make a draft concise, friendly, formal or more direct before you send it.</span>
+            </div>
+            <div class="gmail-pain-card">
+                <strong>Reuse good replies</strong>
+                <span>Save templates and instructions for the messages you write again and again.</span>
+            </div>
+        </div>
     </div>
-    <div class="gmail-proof-grid">
-        <div class="gmail-proof-card"><strong>Long threads</strong><br>Understand the conversation, summarize what matters and draft a useful answer faster.</div>
-        <div class="gmail-proof-card"><strong>Right tone</strong><br>Make replies sound concise, friendly, formal, persuasive or more professional.</div>
-        <div class="gmail-proof-card"><strong>Repeat replies</strong><br>Use templates and custom instructions for support, sales, recruiting and operations emails.</div>
-    </div>
-</section>
-<div class="top" style="padding-top: 10px;">
-        <div class="h5" style="color: #111827; font-weight: 800;">Choose your Gmail AI plan</div>
+<div class="top gmail-billing-toggle">
+        <div class="h5">Billing</div>
     <div class="toggle-btn">
-        <span style="margin: 0.8em;" id="monthly-text">Monthly</span>
+        <span class="gmail-billing-label" id="monthly-text">Monthly</span>
         <label class="switch">
-            <input type="checkbox" id="checbox" onclick="check();" checked />
+            <input type="checkbox" id="checbox" onclick="check();" autocomplete="off" aria-label="Show annual billing" checked />
             <span class="slider round"></span>
         </label>
-        <span style="margin: 0.8em;" id="annually-text">Annually <span class="offer-box"> 40% OFF</span></span></div>
+        <span class="gmail-billing-label" id="annually-text">Annual <span class="offer-box">Save up to 57%</span></span></div>
 </div>
 <div class="container text-center">
-    <!--  <h2>🎃 <strong>Halloween Special!</strong> 🎃</h2>-->
-    <p class="lead"><span class="badge bg-warning text-dark">Best value: Premium Unlimited annual — for people who answer email every week.</span></p>
-    <div class="gmail-plan-helper"><strong>Coming from the Gmail add-on?</strong> Choose <strong>Premium Unlimited</strong> when you need more replies, better follow-ups and less inbox busywork.</div>
+    <div class="gmail-recommendation-strip" id="gmail-plan-recommendation"><strong>Best value for regular use:</strong> Premium Unlimited is $11.17/month, billed $133.99 annually.</div>
 </div>
-<div id="pricing" class="container mb-5 mt-2 pt-5">
+<div class="container mb-5 mt-2 gmail-pricing-cards">
     <div id="old-design" class="pricing card-deck flex-column flex-md-row mb-3">
-        <div class="card card-pricing text-center px-3 mb-4 text1">
+        <div class="card card-pricing text-center px-3 mb-4 text1" data-plan-card="hobby">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Hobby</span>
+            <p class="gmail-plan-fit">For occasional replies and rewrites</p>
             <div class="bg-transparent card-header pt-4 border-0">
                 <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">$<span class="price">15.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually">Billed monthly</div>
             </div>
-            <p></p>
             <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                     data-theme="none" data-product="843276"
                     data-plan-slug="hobby" data-plan-name="Gmail Hobby" data-billing-period="monthly" data-price="15.99"
                     data-email=""
                     data-passthrough=""
                     data-success="/docs/gpt-for-gmail/"
-                    data-custom-data="">Start Hobby monthly</button>
+                    data-custom-data="">Choose Hobby — $15.99/month</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-muted text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> 700 email assists per month</li>
@@ -473,19 +730,20 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                 </ul>
             </div>
         </div>
-        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1 box-selected">
-            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Professional</span>
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1 box-selected" data-plan-card="premium">
+            <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium Unlimited</span>
+            <p class="gmail-plan-fit">For regular Gmail work without usage limits</p>
             <div class="bg-transparent card-header pt-4 border-0">
                 <div class="ribbon">POPULAR</div>
                 <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">19.99</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually">Billed monthly</div>
             </div>
-            <p></p>
             <a href="#!" class="paddle_button btn btn-primary mb-3 btn-block"
                data-theme="none" data-product="843278" data-email=""
                data-plan-slug="premium" data-plan-name="Gmail Premium Unlimited" data-billing-period="monthly" data-price="19.99"
                data-passthrough=""
                data-success="/docs/gpt-for-gmail/"
-               data-custom-data="">Unlock Premium monthly</a>
+               data-custom-data="">Choose Premium — $19.99/month</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email assists:</span> <b style="color: green;">Unlimited</b></li>
@@ -498,19 +756,19 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                                                             </ul>
             </div>
         </div>
-        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1" data-plan-card="lifetime">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+            <p class="gmail-plan-fit">For a one-time payment and no renewal</p>
             <div class="bg-transparent card-header pt-4 border-0">
-                <!--                <div class="ribbon">POPULAR</div>-->
-                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
-            </div>
-            <p></p>
+	                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
+	                <div class="billed-annually"><strong>One payment</strong> • no subscription</div>
+	            </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="853901"
                data-plan-slug="lifetime" data-plan-name="Gmail Lifetime" data-billing-period="lifetime" data-price="249"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Lifetime</a>
+               data-email="" data-custom-data="">Buy Lifetime — $249 once</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>One-time payment</b></li>
@@ -522,19 +780,19 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                                                             </ul>
             </div>
         </div>
-        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1">
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text1" data-plan-card="organization">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Organization</span>
+            <p class="gmail-plan-fit">For five Gmail accounts on one team</p>
             <div class="bg-transparent card-header pt-4 border-0">
-                <!--                <div class="ribbon">POPULAR</div>-->
-                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ email</span></div>
-                <div class="billed-annually">💰 <strong>Save $70/year</strong> • Pay $49.99 monthly</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">9.99</span><span class="h6 text-muted ml-2">/ user / month</span></div>
+                <div class="billed-annually">5 licenses • $49.99 billed monthly</div>
             </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="869545" data-email=""
                data-plan-slug="organization" data-plan-name="Gmail Organization" data-billing-period="monthly" data-price="49.99"
                data-success="/docs/gpt-for-sheets/ai-email-assistant-organization-subscription-licenses"
                data-passthrough=""
-               data-custom-data="">Start team plan</a>
+               data-custom-data="">Choose Team — $49.99/month</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>5 Gmail licenses for your team</b></li>
@@ -546,21 +804,22 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                     </ul>
             </div>
         </div>
-        <div class="card card-pricing text-center px-3 mb-4 text2">
+        <div class="card card-pricing text-center px-3 mb-4 text2" data-plan-card="hobby">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Hobby</span>
+            <p class="gmail-plan-fit">For occasional replies and rewrites</p>
             <div class="bg-transparent card-header pt-4 border-0">
-                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="45">$<span class="price">6.99</span><span class="h6 text-muted ml-2">/ month</span></div>
-                <div class="billed-annually">💰 <strong>Save $97/year</strong> • Pay $82.99 annually</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="45">$<span class="price">6.92</span><span class="h6 text-muted ml-2">/ month</span></div>
+                <div class="billed-annually"><strong>Save $109/year (57%)</strong> • $82.99 billed annually</div>
             </div>
             <button type="button" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                     data-theme="none" data-product="843277"
                     data-plan-slug="hobby" data-plan-name="Gmail Hobby" data-billing-period="annual" data-price="82.99"
                     data-success="/docs/gpt-for-gmail/"
                     data-passthrough=""
-                    data-email="" data-custom-data="">Start Hobby</button>
+                    data-email="" data-custom-data="">Choose Hobby — $82.99/year</button>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature" >
-                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i><b> Save 60%</b></li>
+                    <li class="text-muted"><i class="bi-check-lg icon-pricing"></i><b> Save 57% vs monthly</b></li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> 1,000 email assists per month</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Draft and rewrite Gmail replies</li>
                     <li class="text-muted"><i class="bi-check-lg icon-pricing"></i> Fix tone, grammar and clarity</li>
@@ -577,22 +836,23 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                 border-radius: 10px;
             }
         </style>
-        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2 box-selected">
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2 box-selected" data-plan-card="premium">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Premium Unlimited</span>
+            <p class="gmail-plan-fit">For regular Gmail work without usage limits</p>
             <div class="bg-transparent card-header pt-4 border-0">
                 <div class="ribbon">BEST VALUE</div>
                 <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">11.17</span><span class="h6 text-muted ml-2">/ month</span></div>
-                <div class="billed-annually">💰 <strong>Save $106/year</strong> • Pay $133.99 annually</div>
+                <div class="billed-annually"><strong>Save $106/year (44%)</strong> • $133.99 billed annually</div>
             </div>
             <a href="#!" class="paddle_button btn btn-primary mb-3 btn-block"
                data-theme="none" data-product="843279"
                data-plan-slug="premium" data-plan-name="Gmail Premium Unlimited" data-billing-period="annual" data-price="133.99"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Premium Annual</a>
+               data-email="" data-custom-data="">Choose Premium — $133.99/year</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
-                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 50% vs monthly</b></li>
+                    <li><i class="bi-check-lg icon-pricing"></i><b> Save 44% vs monthly</b></li>
                     <li><span class="text-muted"><i class="bi-check-lg icon-pricing"></i> Email assists:</span> <b style="color: green;">Unlimited</b></li>
                     <li><i class="bi-check-lg icon-pricing"></i> <b>Summarize long Gmail threads</b></li>
                     <li style="color: green;"><b><i class="bi-check-lg icon-pricing"></i> Draft replies from conversation context</b></li>
@@ -603,19 +863,19 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                                                                                                     </ul>
             </div>
         </div>
-        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2">
+        <div class="card card-pricing popular shadow text-center px-3 mb-4 text2" data-plan-card="lifetime">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Lifetime</span>
+            <p class="gmail-plan-fit">For a one-time payment and no renewal</p>
             <div class="bg-transparent card-header pt-4 border-0">
-                <!--                <div class="ribbon">POPULAR</div>-->
-                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
-            </div>
-            <p></p>
+		                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="30">$<span class="price">249</span><span class="h6 text-muted ml-2"></span></div>
+		                <div class="billed-annually"><strong>One payment</strong> • no subscription</div>
+		            </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="853901"
                data-plan-slug="lifetime" data-plan-name="Gmail Lifetime" data-billing-period="lifetime" data-price="249"
                data-success="/docs/gpt-for-gmail/"
                data-passthrough=""
-               data-email="" data-custom-data="">Get Lifetime</a>
+               data-email="" data-custom-data="">Buy Lifetime — $249 once</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>One-time payment</b></li>
@@ -627,19 +887,19 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                                                                                                                         </ul>
             </div>
         </div>
-        <div class="card card-pricing text-center px-3 mb-4 text2">
+        <div class="card card-pricing text-center px-3 mb-4 text2" data-plan-card="organization">
             <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Organization</span>
+            <p class="gmail-plan-fit">For five Gmail accounts on one team</p>
             <div class="bg-transparent card-header pt-4 border-0">
-                <!--                <div class="ribbon">BEST VALUE</div>-->
-                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">7.99</span><span class="h6 text-muted ml-2">/ email</span></div>
-                <div class="billed-annually">💰 <strong>Save $480/year</strong> • Pay $479 annually</div>
+                <div class="h2 font-weight-normal text-primary text-center mb-0" data-pricing-value="60">$<span class="price">7.98</span><span class="h6 text-muted ml-2">/ user / month</span></div>
+                <div class="billed-annually"><strong>Save $121/year (20%)</strong> • $479 billed annually</div>
             </div>
             <a href="#!" class="paddle_button btn btn-outline-secondary mb-3 btn-block"
                data-theme="none" data-product="869540" data-email=""
                data-plan-slug="organization" data-plan-name="Gmail Organization" data-billing-period="annual" data-price="479"
                data-success="/docs/gpt-for-sheets/ai-email-assistant-organization-subscription-licenses"
                data-passthrough=""
-               data-custom-data="">Team Annual</a>
+               data-custom-data="">Choose Team — $479/year</a>
             <div class="card-body pt-0">
                 <ul class="list-unstyled mb-4 text-feature">
                     <li><i class="bi-check-lg icon-pricing"></i> <b>5 Gmail licenses for your team</b></li>
@@ -651,6 +911,10 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                                                                                                                                                                                                                                             </ul>
             </div>
         </div>
+    </div>
+    <div class="gmail-after-checkout">
+        <strong>After checkout:</strong> return to Gmail, refresh the page and reopen AI Email Assistant to apply Premium.
+        <a href="/docs/gpt-for-gmail/">Setup help</a>
     </div>
 <!--    <div id="new-design" class="pricing card-deck flex-column flex-md-row mb-3">-->
 
@@ -1011,13 +1275,23 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
 <!--        </div>-->
 <!--    </div>-->
 </div>
+</section>
 
 <!--<div class="container d-flex justify-content-center pb-4">-->
 <!--    <div id="explain-credit" class="credit-info" ><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-onkibi" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M264.4 95.01c-35.6-.06-80.2 11.19-124.2 34.09C96.27 152 61.45 182 41.01 211.3c-20.45 29.2-25.98 56.4-15.92 75.8 10.07 19.3 35.53 30.4 71.22 30.4 35.69.1 80.29-11.2 124.19-34 44-22.9 78.8-53 99.2-82.2 20.5-29.2 25.9-56.4 15.9-75.8-10.1-19.3-35.5-30.49-71.2-30.49zm91.9 70.29c-3.5 15.3-11.1 31-21.8 46.3-22.6 32.3-59.5 63.8-105.7 87.8-46.2 24.1-93.1 36.2-132.5 36.2-18.6 0-35.84-2.8-50.37-8.7l10.59 20.4c10.08 19.4 35.47 30.5 71.18 30.5 35.7 0 80.3-11.2 124.2-34.1 44-22.8 78.8-52.9 99.2-82.2 20.4-29.2 26-56.4 15.9-75.7zm28.8 16.8c11.2 26.7 2.2 59.2-19.2 89.7-18.9 27.1-47.8 53.4-83.6 75.4 11.1 1.2 22.7 1.8 34.5 1.8 49.5 0 94.3-10.6 125.9-27.1 31.7-16.5 49.1-38.1 49.1-59.9 0-21.8-17.4-43.4-49.1-59.9-16.1-8.4-35.7-15.3-57.6-20zm106.7 124.8c-10.2 11.9-24.2 22.4-40.7 31-35 18.2-82.2 29.1-134.3 29.1-21.2 0-41.6-1.8-60.7-5.2-23.2 11.7-46.5 20.4-68.9 26.1 1.2.7 2.4 1.3 3.7 2 31.6 16.5 76.4 27.1 125.9 27.1s94.3-10.6 125.9-27.1c31.7-16.5 49.1-38.1 49.1-59.9z"></path></svg> 1 credit = 1 email</div>-->
 <!--</div>-->
 
 
-<div class="container mb-5 mt-3" style="display: flex;justify-content: center;"><b>⭐⭐⭐⭐⭐ Rated 4.8/5 out of 250+ reviews and 255K+ installs</b></div>
+<div class="container mb-5 mt-3 gmail-rating-proof" aria-label="AI Email Assistant rating and installs">
+    <div class="gmail-rating-proof-pill">
+        <span class="gmail-rating-stars" aria-hidden="true">★★★★★</span>
+        <span>Rated 4.8/5</span>
+        <span class="gmail-rating-divider" aria-hidden="true"></span>
+        <span class="gmail-rating-muted">250+ reviews</span>
+        <span class="gmail-rating-divider" aria-hidden="true"></span>
+        <span class="gmail-rating-muted">255K+ installs</span>
+    </div>
+</div>
 
 <div class="container mb-5 mt-5 text-center center-img should-be-hidden">
     <div class="d-flex justify-content-center">
@@ -1165,10 +1439,6 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
 <!--</div>-->
 
 <style>
-    body{
-        background:#eee;
-        margin-top:20px;
-    }
     .hori-timeline .events {
         border-top: 3px solid #e9ecef;
     }
@@ -1218,7 +1488,7 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     .bg-soft-warning {
         background-color: rgba(249,213,112,.3)!important;
     }
-    .card {
+    .hori-timeline .card {
         border: none;
         margin-bottom: 24px;
         -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
@@ -1230,7 +1500,6 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
 
 <script>
     function check() {
-        console.log("Called check!");
         var checkBox = document.getElementById("checbox");
         var text1 = document.getElementsByClassName("text2");
         var text2 = document.getElementsByClassName("text1");
@@ -1238,6 +1507,7 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
         // Retrieve the element by its ID
         var monthlyText = document.getElementById("monthly-text");
         var annuallyText = document.getElementById("annually-text");
+        var recommendation = document.getElementById("gmail-plan-recommendation");
 
         for (var i = 0; i < text1.length; i++) {
             if (checkBox.checked == true) {
@@ -1245,14 +1515,18 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
                 text2[i].style.display = "none";
                 monthlyText.style.fontWeight = "normal";
                 annuallyText.style.fontWeight = "bold";
+                if (recommendation) recommendation.innerHTML = "<strong>Best value for regular use:</strong> Premium Unlimited is $11.17/month, billed $133.99 annually.";
             } else if (checkBox.checked == false) {
                 text1[i].style.display = "none";
                 text2[i].style.display = "block";
                 monthlyText.style.fontWeight = "bold";
                 annuallyText.style.fontWeight = "normal";
+                if (recommendation) recommendation.innerHTML = "<strong>Prefer monthly billing?</strong> Premium Unlimited is $19.99/month with no annual payment upfront.";
             }
         }
     }
+    var billingToggle = document.getElementById("checbox");
+    if (billingToggle) billingToggle.checked = true;
     check();
 </script>
 <script type="text/javascript">
@@ -1289,20 +1563,23 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     }
 
     var pricingSection = document.getElementById("pricing");
+    var shouldScrollToPricing = window.location.hash === '#pricing' || !!emailParam || !!productParam;
 
-    if (pricingSection) {
-        pricingSection.scrollIntoView({
-            behavior: "smooth", // You can use "auto" for instant scrolling
-            block: "start",     // "start" will align the top of the section with the top of the viewport
-            inline: "nearest"   // "nearest" will align it to the nearest edge (either top or bottom)
-        });
+    if (pricingSection && shouldScrollToPricing) {
+        setTimeout(function() {
+            pricingSection.scrollIntoView({
+                behavior: "auto",
+                block: "start",
+                inline: "nearest"
+            });
+        }, 120);
     }
 
-    // Auto-open Paddle checkout if both email and product parameters are provided
-    if (emailParam && productParam) {
-        console.log('Opening Paddle checkout with email:', emailParam, 'and product:', productParam);
+    // Auto-open Paddle checkout when the add-on supplies a valid product ID and account email.
+    const paddleProductId = parseInt(productParam, 10);
+    if (emailParam && Number.isInteger(paddleProductId)) {
         Paddle.Checkout.open({
-            product: parseInt(productParam, 10),  // Ensure product ID is an integer
+            product: paddleProductId,
             email: emailParam || '',
             customData: {
                 tolt_referral: window.tolt_referral,
@@ -1313,8 +1590,6 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
             },
             passthrough: passthroughParams.toString(),
         });
-    } else {
-        console.log('Paddle checkout not auto-opened. Email:', emailParam, 'Product:', productParam);
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -1552,404 +1827,421 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
 
 </script>
 
-<!-- FAQ Section - SEO & LLM Optimized -->
+<!-- FAQ Section - conversion focused for Gmail add-on upgrade visitors -->
 <section class="faq-section" id="faq">
   <div class="container">
     <div class="faq-header text-center">
-      <h2 class="faq-title">Frequently Asked Questions - AI Email Assistant for Gmail</h2>
-      <p class="faq-subtitle">Everything you need to know about AI Email Assistant for Gmail by DocGPT.AI</p>
+      <div class="faq-eyebrow">Before you upgrade</div>
+      <h2 class="faq-title">A few practical answers</h2>
+      <p class="faq-subtitle">What changes, which plan fits and how to get back to work after checkout.</p>
+      <div class="faq-trust-row" aria-label="Purchase reassurance">
+        <span>Uses your existing add-on</span>
+        <span>No API keys</span>
+        <span>Checkout by Paddle</span>
+        <span>Help available</span>
+      </div>
     </div>
 
     <div class="faq-container">
-      <!-- FAQ 1 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>What is AI Email Assistant for Gmail and how does it work?</span>
-          <span class="faq-icon">+</span>
+      <div class="faq-item active">
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="true" aria-controls="faq-plan-choice">
+          <span>Which plan should I choose?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
         </button>
-        <div class="faq-answer">
-          <p><strong>AI Email Assistant for Gmail</strong> is a powerful add-on that integrates ChatGPT, Claude, Gemini, and Perplexity AI directly into your Gmail interface. It analyzes your email context and helps you:</p>
+        <div class="faq-answer" id="faq-plan-choice">
+          <p><strong>Premium Unlimited annual</strong> is the straightforward choice if you use the add-on every week. It removes usage limits and costs $133.99 per year — about $11.17 per month.</p>
+          <div class="faq-plan-hints">
+            <div><strong>Hobby</strong><span>Occasional replies and rewrites.</span></div>
+            <div><strong>Premium Unlimited</strong><span>Regular work without usage limits.</span></div>
+            <div><strong>Lifetime</strong><span>One payment and a 5,000/month allowance.</span></div>
+            <div><strong>Organization</strong><span>Five Gmail accounts for one team.</span></div>
+          </div>
+          <p><a href="#pricing" class="faq-cta">Compare the plans</a></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-after-upgrade">
+          <span>What changes after I upgrade?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-after-upgrade">
+          <p>You keep using AI Email Assistant in Gmail. The upgrade changes your allowance and unlocks the paid workflow — it does not replace the add-on with a separate app.</p>
           <ul>
-            <li>✅ Generate professional emails from scratch</li>
-            <li>✅ Write intelligent replies based on incoming messages</li>
-            <li>✅ Translate emails into 100+ languages</li>
-            <li>✅ Rephrase and improve your writing</li>
-            <li>✅ Use custom templates for common scenarios</li>
+            <li>Draft, rewrite, translate and summarize more emails.</li>
+            <li>Use the conversation you are already reading as reply context.</li>
+            <li>Save templates and custom instructions for repeat work.</li>
+            <li>Use the included AI without configuring an API key.</li>
           </ul>
-          <p>Simply install the add-on, open Gmail, and access AI assistance directly in your compose window!</p>
-          <p><a href="#pricing" class="faq-cta">Try AI Email Assistant Free →</a></p>
         </div>
       </div>
 
-      <!-- FAQ 2 -->
       <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Which AI models does AI Email Assistant support?</span>
-          <span class="faq-icon">+</span>
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-activation">
+          <span>How do I activate Premium after checkout?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
         </button>
-        <div class="faq-answer">
-          <p><strong>AI Email Assistant for Gmail</strong> supports the most advanced AI models:</p>
-          <ul>
-            <li>🤖 <strong>ChatGPT (GPT-4, GPT-4o, GPT-3.5)</strong> - OpenAI's flagship models</li>
-            <li>🧠 <strong>Claude (Claude 3.5, Claude 3)</strong> - Anthropic's advanced AI</li>
-            <li>✨ <strong>Gemini (Gemini Pro, Gemini Flash)</strong> - Google's multimodal AI</li>
-            <li>🔍 <strong>Perplexity AI</strong> - Web-enabled research AI</li>
-            <li>🚀 <strong>Mistral AI</strong> - European AI champion</li>
-          </ul>
-          <p>You can switch between models depending on your needs - use GPT-4 for complex emails, Claude for creative writing, or Gemini for quick responses!</p>
+        <div class="faq-answer" id="faq-activation">
+          <p>Complete checkout with the Google account email you use for the add-on. Then return to Gmail, refresh the page and reopen AI Email Assistant. Premium should be applied to that account.</p>
+          <p>If it does not appear, follow the <a href="/docs/gpt-for-gmail/">Gmail setup steps</a> or contact support from the site chat.</p>
         </div>
       </div>
 
-      <!-- FAQ 3 -->
       <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Is AI Email Assistant safe? Does it read my emails?</span>
-          <span class="faq-icon">+</span>
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-chatgpt-difference">
+          <span>Why not just copy the email into ChatGPT?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
         </button>
-        <div class="faq-answer">
-          <p><strong>Yes, AI Email Assistant is completely safe and privacy-focused:</strong></p>
-          <ul>
-            <li>🔒 <strong>No email storage</strong> - We never store your email content</li>
-            <li>🔒 <strong>You control what to share</strong> - Only emails you explicitly select are processed</li>
-            <li>🔒 <strong>Direct API calls</strong> - Data sent directly to AI providers (OpenAI, Anthropic, Google)</li>
-            <li>🔒 <strong>No third-party access</strong> - We don't sell or share your data</li>
-            <li>🔒 <strong>Encrypted connections</strong> - All communications use HTTPS/TLS encryption</li>
-          </ul>
-          <p>Your privacy is our priority. AI Email Assistant only processes emails when you explicitly click "Generate" or "Reply".</p>
+        <div class="faq-answer" id="faq-chatgpt-difference">
+          <p>You can, but it adds a separate copy-and-paste workflow. AI Email Assistant is useful when you want to read the thread, draft the reply and adjust the tone without leaving Gmail.</p>
+          <p>The paid plans also include the AI usage, so there is no separate API key or model bill to configure.</p>
         </div>
       </div>
 
-      <!-- FAQ 4 -->
       <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>How much does AI Email Assistant for Gmail cost?</span>
-          <span class="faq-icon">+</span>
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-lifetime">
+          <span>Should I choose Lifetime or Premium Unlimited?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
         </button>
-        <div class="faq-answer">
-          <p><strong>AI Email Assistant</strong> offers flexible monthly, annual and lifetime plans:</p>
-          <ul>
-            <li>💰 <strong>Hobby</strong> - for occasional Gmail replies and rewrites</li>
-            <li>💼 <strong>Premium Unlimited</strong> - best for daily Gmail users who want unlimited AI replies</li>
-            <li>🏢 <strong>Organization</strong> - for teams that need multiple seats and domain-wide access</li>
-            <li>🚀 <strong>Lifetime</strong> - one-time access for users who do not want a subscription</li>
-          </ul>
-          <p><strong>Best value:</strong> Premium Unlimited annual saves 50% vs monthly and is the recommended plan for weekly Gmail AI use.</p>
-          <p><a href="#pricing" class="faq-cta">See Full Pricing →</a></p>
+        <div class="faq-answer" id="faq-lifetime">
+          <p><strong>Lifetime</strong> is $249 once and includes up to 5,000 email assists per month. Choose it if avoiding a subscription matters more than unlimited usage.</p>
+          <p><strong>Premium Unlimited</strong> is better for regular work when you do not want to track an allowance. The annual plan is $133.99 per year.</p>
         </div>
       </div>
 
-      <!-- FAQ 5 -->
       <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Can I use AI Email Assistant on mobile devices?</span>
-          <span class="faq-icon">+</span>
+        <button class="faq-question" onclick="toggleFAQ(this)" aria-expanded="false" aria-controls="faq-team">
+          <span>Can I buy access for my team?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
         </button>
-        <div class="faq-answer">
-          <p><strong>Yes!</strong> AI Email Assistant works on both desktop and mobile devices:</p>
-          <ul>
-            <li>📱 <strong>Gmail Mobile App</strong> - Access the add-on from the Gmail app on iOS and Android</li>
-            <li>💻 <strong>Desktop Browser</strong> - Works in Chrome, Firefox, Safari, Edge</li>
-            <li>🌐 <strong>Web Gmail</strong> - Fully integrated into Gmail web interface</li>
-          </ul>
-          <p>Your AI assistant follows you everywhere - compose professional emails on the go!</p>
+        <div class="faq-answer" id="faq-team">
+          <p>Yes. Organization includes five Gmail licenses, Premium features for each user, onboarding help and priority email support.</p>
+          <p>Choose it for support, sales, recruiting or operations teams that work from several inboxes.</p>
         </div>
       </div>
+    </div>
 
-      <!-- FAQ 6 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>What's the difference between AI Email Assistant and ChatGPT?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p><strong>AI Email Assistant</strong> is specifically designed for email productivity:</p>
-          <table class="table table-bordered mt-3">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th>AI Email Assistant</th>
-                <th>ChatGPT Alone</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Gmail Integration</td>
-                <td>✅ Native integration</td>
-                <td>❌ Copy/paste required</td>
-              </tr>
-              <tr>
-                <td>Context Awareness</td>
-                <td>✅ Auto-reads thread</td>
-                <td>❌ Manual input</td>
-              </tr>
-              <tr>
-                <td>Email Templates</td>
-                <td>✅ Built-in</td>
-                <td>❌ No templates</td>
-              </tr>
-              <tr>
-                <td>Multiple AI Models</td>
-                <td>✅ GPT, Claude, Gemini, Perplexity</td>
-                <td>⚠️ GPT only</td>
-              </tr>
-              <tr>
-                <td>Translation</td>
-                <td>✅ 100+ languages</td>
-                <td>⚠️ Limited</td>
-              </tr>
-            </tbody>
-          </table>
-          <p><strong>AI Email Assistant</strong> saves you time by working directly where you write emails!</p>
-        </div>
-      </div>
-
-      <!-- FAQ 7 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Can I translate emails with AI Email Assistant?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p><strong>Yes!</strong> AI Email Assistant includes powerful translation features:</p>
-          <ul>
-            <li>🌍 <strong>100+ languages</strong> - From Arabic to Zulu</li>
-            <li>🗣️ <strong>Regional dialects</strong> - UK English, Brazilian Portuguese, etc.</li>
-            <li>✍️ <strong>Tone preservation</strong> - Maintains formal/informal style</li>
-            <li>🎯 <strong>Context-aware</strong> - Understands business vs. casual emails</li>
-          </ul>
-          <p>Perfect for international business, customer support, or personal correspondence!</p>
-          <p><a href="#pricing" class="faq-cta">Start Writing in Any Language →</a></p>
-        </div>
-      </div>
-
-      <!-- FAQ 8 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Does AI Email Assistant work with Google Workspace (G Suite)?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p><strong>Absolutely!</strong> AI Email Assistant is fully compatible with:</p>
-          <ul>
-            <li>✅ <strong>Personal Gmail</strong> - @gmail.com accounts</li>
-            <li>✅ <strong>Google Workspace</strong> - Custom domain emails (@yourcompany.com)</li>
-            <li>✅ <strong>G Suite Legacy</strong> - Older Google Apps accounts</li>
-            <li>✅ <strong>Education accounts</strong> - @school.edu domains</li>
-          </ul>
-          <p>Install once, use across all your Gmail/Workspace accounts!</p>
-        </div>
-      </div>
-
-      <!-- FAQ 9 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>How do I install AI Email Assistant?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p><strong>Installation takes less than 1 minute:</strong></p>
-          <ol>
-            <li><strong>Visit:</strong> <a href="https://workspace.google.com/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589" target="_blank">Google Workspace Marketplace</a></li>
-            <li><strong>Click:</strong> "Install" button</li>
-            <li><strong>Authorize:</strong> Grant Gmail permissions</li>
-            <li><strong>Open Gmail:</strong> You'll see the AI Email Assistant icon in the compose window</li>
-            <li><strong>Start writing:</strong> Click the icon and generate your first email!</li>
-          </ol>
-          <p>No technical knowledge required - if you can use Gmail, you can use AI Email Assistant!</p>
-          <p><a href="https://workspace.google.com/marketplace/app/ai_email_assistant_gpt_for_gmail/899305976589" target="_blank" class="faq-cta">Install Now →</a></p>
-        </div>
-      </div>
-
-      <!-- FAQ 10 -->
-      <div class="faq-item">
-        <button class="faq-question" onclick="toggleFAQ(this)">
-          <span>Can I cancel my subscription anytime?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p><strong>Yes!</strong> AI Email Assistant offers flexible subscription management:</p>
-          <ul>
-            <li>✅ <strong>Cancel anytime</strong> - No long-term contracts</li>
-            <li>✅ <strong>No cancellation fees</strong> - Stop whenever you want</li>
-            <li>✅ <strong>Pro-rated refunds</strong> - Get refunds for unused time (within 30 days)</li>
-            <li>✅ <strong>Instant cancellation</strong> - Takes effect immediately</li>
-            <li>✅ <strong>Data export</strong> - Download your templates before leaving</li>
-          </ul>
-          <p>We're confident you'll love AI Email Assistant, but there's zero risk to try it!</p>
-          <p><a href="#pricing" class="faq-cta">Try Risk-Free →</a></p>
-        </div>
-      </div>
-
+    <div class="faq-final-cta text-center">
+      <strong>Choose a plan, then go back to Gmail.</strong>
+      <span>For regular use, Premium Unlimited annual gives you the lowest unlimited price.</span>
+      <a href="#pricing" class="faq-cta faq-cta-primary">Back to pricing</a>
     </div>
   </div>
 </section>
 
 <style>
   .faq-section {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 58px 20px 64px;
+    background: #f8fafc;
   }
 
   .faq-header {
-    margin-bottom: 50px;
+    max-width: 820px;
+    margin: 0 auto 28px;
+  }
+
+  .faq-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #e8f0fe;
+    color: #174ea6;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
   .faq-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 15px;
+    margin: 12px 0 8px;
+    color: #0f172a;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 850;
+    line-height: 1.1;
   }
 
   .faq-subtitle {
-    font-size: 1.1rem;
-    color: #666;
-    max-width: 700px;
+    max-width: 680px;
     margin: 0 auto;
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .faq-trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px auto 0;
+  }
+
+  .faq-trust-row span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 6px 10px;
+    border: 1px solid #dbeafe;
+    border-radius: 999px;
+    background: #fff;
+    color: #334155;
+    font-size: 12px;
+    font-weight: 750;
   }
 
   .faq-container {
-    max-width: 900px;
+    max-width: 920px;
     margin: 0 auto;
   }
 
   .faq-item {
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 12px;
     overflow: hidden;
-    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.05);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
   }
 
-  .faq-item:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  .faq-item:hover,
+  .faq-item.active {
+    border-color: #bfdbfe;
+    box-shadow: 0 20px 44px rgba(15, 23, 42, 0.08);
   }
 
   .faq-question {
     width: 100%;
-    background: none;
+    min-height: 64px;
+    padding: 18px 22px;
     border: none;
-    padding: 20px 25px;
-    text-align: left;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #333;
+    background: #fff;
+    color: #0f172a;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
+    gap: 16px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 850;
+    line-height: 1.25;
+    transition: background .2s ease, color .2s ease;
   }
 
-  .faq-question:hover {
-    background: #f8f9fa;
+  .faq-question:hover,
+  .faq-question:focus-visible {
+    background: #eff6ff;
+    outline: none;
   }
 
   .faq-icon {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: #667eea;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-    margin-left: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 999px;
+    background: #e8f0fe;
+    color: #0b57d0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform .2s ease, background .2s ease, color .2s ease;
   }
 
   .faq-item.active .faq-icon {
     transform: rotate(45deg);
+    background: #0b57d0;
+    color: #fff;
   }
 
   .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 25px;
+    padding: 0 22px;
+    transition: max-height .24s ease, padding .24s ease;
   }
 
   .faq-item.active .faq-answer {
-    max-height: 2000px;
-    padding: 0 25px 25px 25px;
+    max-height: 1200px;
+    padding: 0 22px 22px;
   }
 
   .faq-answer p {
-    margin-bottom: 15px;
-    line-height: 1.8;
-    color: #555;
+    margin: 0 0 12px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .faq-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .faq-answer strong {
+    color: #0f172a;
+    font-weight: 850;
   }
 
   .faq-answer ul {
-    margin-bottom: 15px;
-    padding-left: 20px;
+    margin: 0 0 14px;
+    padding-left: 0;
+    list-style: none;
   }
 
   .faq-answer li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: #555;
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 22px;
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.55;
   }
 
-  .faq-answer ol {
-    margin-bottom: 15px;
-    padding-left: 20px;
+  .faq-answer li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0b57d0;
+    font-weight: 850;
   }
 
-  .faq-answer ol li {
-    margin-bottom: 12px;
-    line-height: 1.6;
-    color: #555;
+  .faq-plan-hints {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 14px 0;
+  }
+
+  .faq-plan-hints div {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f8fafc;
+  }
+
+  .faq-plan-hints strong,
+  .faq-plan-hints span {
+    display: block;
+  }
+
+  .faq-plan-hints strong {
+    margin-bottom: 4px;
+    color: #0f172a;
+    font-size: 13px;
+    font-weight: 850;
+  }
+
+  .faq-plan-hints span {
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
   .faq-cta {
-    display: inline-block;
-    background: #667eea;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0b57d0, #2563eb);
+    border: 1px solid #0b57d0;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 850;
+    line-height: 1.15;
+    text-decoration: none !important;
+    box-shadow: 0 12px 22px rgba(11,87,208,0.18);
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease;
   }
 
-  .faq-cta:hover {
-    background: #5568d3;
-    text-decoration: none;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+  .faq-cta:hover,
+  .faq-cta:focus-visible {
+    background: linear-gradient(135deg, #094db8, #1d4ed8);
+    border-color: #094db8;
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 16px 28px rgba(11,87,208,0.24);
+    outline: none;
+  }
+
+  .faq-final-cta {
+    display: grid;
+    gap: 8px;
+    max-width: 920px;
+    margin: 22px auto 0;
+    padding: 18px 20px;
+    border: 1px solid #bfdbfe;
+    border-radius: 16px;
+    background: #eff6ff;
+    color: #1e3a8a;
+  }
+
+  .faq-final-cta strong {
+    color: #0f172a;
+    font-size: 18px;
+    font-weight: 850;
+  }
+
+  .faq-final-cta span {
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .faq-cta-primary {
+    justify-self: center;
+    margin-top: 4px;
   }
 
   @media (max-width: 768px) {
     .faq-section {
-      padding: 40px 15px;
+      padding: 42px 14px 48px;
     }
 
     .faq-title {
-      font-size: 1.75rem;
+      font-size: 28px;
     }
 
     .faq-subtitle {
-      font-size: 1rem;
+      font-size: 15px;
+    }
+
+    .faq-trust-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .faq-trust-row span {
+      justify-content: center;
+      text-align: center;
     }
 
     .faq-question {
-      font-size: 1rem;
-      padding: 15px 20px;
+      min-height: 58px;
+      padding: 15px 16px;
+      font-size: 15px;
     }
 
-    .faq-answer {
-      font-size: 0.95rem;
+    .faq-answer,
+    .faq-item.active .faq-answer {
+      padding-left: 16px;
+      padding-right: 16px;
     }
-  }
 
-  .table {
-    font-size: 0.9rem;
-  }
+    .faq-item.active .faq-answer {
+      padding-bottom: 18px;
+    }
 
-  .table th {
-    background: #667eea;
-    color: white;
-    font-weight: 600;
+    .faq-plan-hints {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -1958,14 +2250,15 @@ description: "AI Email Assistant for Gmail helps you turn long threads into clea
     const faqItem = button.closest('.faq-item');
     const wasActive = faqItem.classList.contains('active');
 
-    // Close all FAQ items
     document.querySelectorAll('.faq-item').forEach(item => {
       item.classList.remove('active');
+      const itemButton = item.querySelector('.faq-question');
+      if (itemButton) itemButton.setAttribute('aria-expanded', 'false');
     });
 
-    // Open clicked item if it wasn't active
     if (!wasActive) {
       faqItem.classList.add('active');
+      button.setAttribute('aria-expanded', 'true');
     }
   }
 </script>
