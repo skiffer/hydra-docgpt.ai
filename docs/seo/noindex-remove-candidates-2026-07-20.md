@@ -4,13 +4,14 @@
 
 **Evidence window:** 2026-04-19 through 2026-07-17, Google Web Search, stable cutoff.
 
-**Status:** partially implemented on 2026-07-20. Twenty source pages were removed; no Render redirect was deployed.
+**Status:** partially implemented on 2026-07-20. Nineteen source pages were removed; the English o1 page was restored after a page-level Search Console review. No Render redirect was deployed.
 
 ## Decision summary
 
 This quality-remediation list started with 23 URLs. The first cleanup pass implemented the following:
 
-- 5 stale OpenAI o1 news/translation pages were removed and now fall through to the site's real HTTP 404 response.
+- The English OpenAI o1 page was restored because it had high search visibility despite zero clicks; it is not classified as spam.
+- 4 translated OpenAI o1 duplicates were removed and now fall through to the site's real HTTP 404 response.
 - 15 visibly malformed, zero-click programmatic landing pages were removed; internal links were repointed to the selected topical hubs.
 - 3 malformed pages were retained: 2 had clicks and 1 is an exact duplicate with a clear redirect target. They require working Render redirect rules before source removal.
 - 21 of the 23 had zero clicks in the stable window.
@@ -20,11 +21,11 @@ Exact raw Search Console metrics and query strings are omitted because the repos
 
 ## Candidate table
 
-The action column records the original recommendation. The implementation status above supersedes it for the 20 removed pages.
+The action column records the current recommendation. The implementation status above identifies the 19 removed pages and the restored exception.
 
 | URL | Source file | Proposed final action | Proposed target | Evidence/reason |
 | --- | --- | --- | --- | --- |
-| https://docgpt.ai/chatgpt-introducing-o1-preview-and-o1-mini-september-2024/ | `chatgpt-introducing-o1-preview-and-o1-mini-2024.md` | noindex → remove/410 | — | Stale, off-topic news page; empty description; zero-click visibility. |
+| https://docgpt.ai/chatgpt-introducing-o1-preview-and-o1-mini-september-2024/ | `chatgpt-introducing-o1-preview-and-o1-mini-2024.md` | restore → improve/monitor | — | Zero clicks, but high search visibility; retain as a non-spam exception and reassess its snippet and freshness. |
 | https://docgpt.ai/chatgpt-presente-o1-preview-et-o1-mini-septembre-2024/ | `chatgpt-introducing-o1-preview-and-o1-mini-2024-french.md` | noindex → remove/410 | — | Translated duplicate of stale, off-topic news page. |
 | https://docgpt.ai/chatgpt-stellt-o1-preview-und-o1-mini-vor-september-2024/ | `chatgpt-introducing-o1-preview-and-o1-mini-2024-germany.md` | noindex → remove/410 | — | Translated duplicate of stale, off-topic news page. |
 | https://docgpt.ai/chatgpt-wprowadza-o1-preview-i-o1-mini-wrzesien-2024/ | `chatgpt-introducing-o1-preview-and-o1-mini-2024-poland.md` | noindex → remove/410 | — | Translated duplicate of stale, off-topic news page. |
