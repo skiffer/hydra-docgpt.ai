@@ -131,7 +131,7 @@ Do not imply roof condition, project timing, or contract needs unless the source
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative google sheets](/clay-alternative-google-sheets/)
 - [Roofing contractor lead research google sheets ai](/roofing-contractor-lead-research-google-sheets-ai/)
-- [Google maps business enrichment google sheets ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google maps business enrichment google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Local business research google sheets ai](/local-business-research-google-sheets-ai/)
 - [Docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)
 - [Docs/gpt for sheets/gpt functions](/docs/gpt-for-sheets/gpt-functions)

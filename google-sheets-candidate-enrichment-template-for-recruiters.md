@@ -115,7 +115,7 @@ Test on a small sample first. If the output is generic, make the prompt narrower
 ## Related GPT for Sheets guides
 
 - [/gpt-for-sheets/](/gpt-for-sheets/) — product/pricing CTA.
-- [/recruiter-candidate-research-google-sheets-ai/](/recruiter-candidate-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/candidate-shortlist-enrichment-google-sheets-ai/](/candidate-shortlist-enrichment-google-sheets-ai/)
 - [/recruiter-outreach-personalization-google-sheets-ai/](/recruiter-outreach-personalization-google-sheets-ai/)
 - [/clay-alternative-for-recruiters-google-sheets-ai/](/clay-alternative-for-recruiters-google-sheets-ai/)

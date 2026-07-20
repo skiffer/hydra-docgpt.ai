@@ -115,7 +115,7 @@ Test on a small sample first. If the output is generic, make the prompt narrower
 ## Related GPT for Sheets guides
 
 - [/gpt-for-sheets/](/gpt-for-sheets/) — product/pricing CTA.
-- [/ai-lead-enrichment-car-dealerships-google-sheets/](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/auto-dealer-bdc-ai-lead-enrichment-google-sheets/](/auto-dealer-bdc-ai-lead-enrichment-google-sheets/)
 - [/used-car-inventory-lead-enrichment-google-sheets-ai/](/used-car-inventory-lead-enrichment-google-sheets-ai/)
 - [/car-dealer-bdc-lead-enrichment-google-sheets-ai/](/car-dealer-bdc-lead-enrichment-google-sheets-ai/)

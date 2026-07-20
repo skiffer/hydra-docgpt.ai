@@ -126,7 +126,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [pricing](/gpt-for-sheets/#pricing)
 - [founder Clay-style workflow](/google-sheets-clay-workflow-for-founders/)
 - [domain enrichment](/domain-enrichment-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality
 

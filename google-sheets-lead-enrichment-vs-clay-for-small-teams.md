@@ -130,7 +130,7 @@ Dedicated enrichment platforms can still be the right fit when the workflow depe
 ## Internal links and next steps
 
 - [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
-- [Clay alternative for lead enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative for lead enrichment](/clay-alternative-google-sheets/)
 - [Clay in Sheets lead enrichment workflow](/clay-in-sheets-lead-enrichment/)
 - [Clay cost calculator](/clay-cost-calculator/)
 - [GPT for Sheets product page](/gpt-for-sheets/)

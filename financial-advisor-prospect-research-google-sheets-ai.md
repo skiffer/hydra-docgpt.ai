@@ -125,9 +125,9 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-research-automation-google-sheets-ai/](/account-research-automation-google-sheets-ai/)
-- [/cold-email-personalization-from-google-sheets-ai/](/cold-email-personalization-from-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 
 ## Safety, compliance, and data quality
 

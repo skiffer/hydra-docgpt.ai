@@ -123,7 +123,7 @@ Before using the output externally:
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/logistics-broker-prospect-research-google-sheets-ai/](/logistics-broker-prospect-research-google-sheets-ai/)
 - [/clay-alternative-for-logistics-brokers-google-sheets-ai/](/clay-alternative-for-logistics-brokers-google-sheets-ai/)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## FAQ
 ### Can GPT for Sheets estimate freight volume?

@@ -132,7 +132,7 @@ Dedicated enrichment platforms can still be the right fit when the workflow depe
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [AI lead enrichment in Google Sheets](/ai-lead-enrichment-google-sheets/)
 - [Logistics shipper list enrichment](/logistics-shipper-list-enrichment-google-sheets-ai/)
-- [Clay in Sheets account research workflow](/clay-in-sheets-account-research/)
+- [Clay in Sheets account research workflow](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT functions reference](/docs/gpt-for-sheets/gpt-functions)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)

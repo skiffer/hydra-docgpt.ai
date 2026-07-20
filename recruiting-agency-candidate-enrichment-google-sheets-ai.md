@@ -122,7 +122,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Recruiter Candidate Research Google Sheets Ai](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter Candidate Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Linkedin Lead Research Google Sheets Ai](/linkedin-lead-research-google-sheets-ai/)
 - [Gpt For Sheets](/gpt-for-sheets/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)

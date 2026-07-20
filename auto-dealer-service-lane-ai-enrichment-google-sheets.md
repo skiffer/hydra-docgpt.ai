@@ -120,7 +120,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 ## Internal links and next workflows
 
-- [Ai Lead Enrichment Car Dealerships Google Sheets](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [Ai Lead Enrichment Car Dealerships Google Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Google Sheets Lead Enrichment Template For Car Dealers](/google-sheets-lead-enrichment-template-for-car-dealers/)
 - [Auto Dealer Bdc Ai Lead Enrichment Google Sheets](/auto-dealer-bdc-ai-lead-enrichment-google-sheets/)
 - [Car Dealer Bdc Lead Enrichment Google Sheets Ai](/car-dealer-bdc-lead-enrichment-google-sheets-ai/)

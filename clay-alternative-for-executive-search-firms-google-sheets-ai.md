@@ -139,7 +139,7 @@ No claims about scraping private profiles or protected classes. Include human-re
 
 ## Internal links and next steps {#internal-links}
 
-- [recruiter candidate research google sheets ai](/recruiter-candidate-research-google-sheets-ai/)
+- [recruiter candidate research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [recruiter hiring manager research google sheets ai](/recruiter-hiring-manager-research-google-sheets-ai/)
 - [executive search candidate research google sheets ai](/executive-search-candidate-research-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)

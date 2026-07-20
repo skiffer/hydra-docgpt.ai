@@ -126,8 +126,8 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/recruiting-agency-candidate-enrichment-google-sheets-ai/](/recruiting-agency-candidate-enrichment-google-sheets-ai/)
-- [/recruiter-candidate-research-google-sheets-ai/](/recruiter-candidate-research-google-sheets-ai/)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## Safety, compliance, and data quality
 

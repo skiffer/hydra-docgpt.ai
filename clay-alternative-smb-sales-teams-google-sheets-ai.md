@@ -113,7 +113,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 - [AI sales prospecting in Sheets](/ai-sales-prospecting-google-sheets/)
 - [Cold email personalization](/cold-email-personalization-google-sheets-ai/)
-- [Local business prospecting](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting](/ai-lead-enrichment-google-sheets-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 

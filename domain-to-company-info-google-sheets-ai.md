@@ -109,7 +109,7 @@ The strongest use case is standardizing a messy domain list into name, industry,
 - [Categorize leads by industry](/categorize-leads-by-industry-google-sheets-ai/)
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
-- [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)
+- [Apollo export enrichment](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality
 

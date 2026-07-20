@@ -121,7 +121,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 ## Internal links and next workflows
 
 - [/agency-client-prospecting-google-sheets-ai/](/agency-client-prospecting-google-sheets-ai/)
-- [/agency-lead-research-google-sheets-ai/](/agency-lead-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/rfp-response-drafting-google-sheets-ai/](/rfp-response-drafting-google-sheets-ai/)
 - [/clay-alternative-for-agencies-google-sheets-ai/](/clay-alternative-for-agencies-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)

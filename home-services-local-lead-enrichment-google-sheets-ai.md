@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Clay Alternative For Home Services Marketing Google Sheets Ai](/clay-alternative-for-home-services-marketing-google-sheets-ai/)
 - [Google Maps Local Business Enrichment Google Sheets Ai](/google-maps-local-business-enrichment-google-sheets-ai/)
-- [Local Business Prospecting Google Sheets Ai](/local-business-prospecting-google-sheets-ai/)
+- [Local Business Prospecting Google Sheets Ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Home Services Lead Prospecting Google Sheets Ai](/home-services-lead-prospecting-google-sheets-ai/)
 - [Gpt For Sheets](/gpt-for-sheets/)
 - [Gpt For Sheets/#Pricing](/gpt-for-sheets/#pricing)

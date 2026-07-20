@@ -111,7 +111,7 @@ Do not cancel or change tools based only on AI output. Verify current product fe
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/clay-vs-google-sheets-lead-enrichment-workflow/](/clay-vs-google-sheets-lead-enrichment-workflow/)
 - [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/docs/gpt-for-sheets/get-started](/docs/gpt-for-sheets/get-started)
 
 ## Frequently Asked Questions

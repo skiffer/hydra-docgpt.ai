@@ -122,9 +122,9 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Icp Scoring Formulas Google Sheets Ai](/icp-scoring-formulas-google-sheets-ai/)
+- [Icp Scoring Formulas Google Sheets Ai](/icp-fit-scoring-google-sheets-ai/)
 - [Linkedin Lead Research Google Sheets Ai](/linkedin-lead-research-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Ai Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality

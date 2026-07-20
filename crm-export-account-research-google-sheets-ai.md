@@ -123,7 +123,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 - [Sales Operations Pipeline Cleanup Google Sheets AI](/sales-operations-pipeline-cleanup-google-sheets-ai/)
 - [Salesforce Account Research Google Sheets AI](/salesforce-account-research-google-sheets-ai/)
 - [HubSpot Contact Enrichment Google Sheets AI](/hubspot-contact-enrichment-google-sheets-ai/)
-- [CRM Cleanup Deduping Google Sheets AI](/crm-cleanup-deduping-google-sheets-ai/)
+- [CRM Cleanup Deduping Google Sheets AI](/gpt-for-sheets-for-b2b-sales/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)
 

@@ -126,7 +126,7 @@ Before using the output externally:
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/law-firm-lead-research-google-sheets-ai/](/law-firm-lead-research-google-sheets-ai/)
 - [/clay-alternative-law-firm-lead-research-google-sheets-ai/](/clay-alternative-law-firm-lead-research-google-sheets-ai/)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## FAQ
 ### Can GPT for Sheets write legal advice?

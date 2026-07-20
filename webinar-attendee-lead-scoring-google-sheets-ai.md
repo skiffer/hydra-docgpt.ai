@@ -112,7 +112,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 ## Internal links and next workflows
 
 - [AI lead scoring formulas](/ai-lead-scoring-formulas-google-sheets/)
-- [Cold email personalization from Sheets](/cold-email-personalization-from-google-sheets-ai/)
+- [Cold email personalization from Sheets](/gpt-for-sheets-for-b2b-sales/)
 - [Website visitor lead research](/website-visitor-lead-research-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

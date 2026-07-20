@@ -126,8 +126,8 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/real-estate-agent-follow-up-google-sheets-ai/](/real-estate-agent-follow-up-google-sheets-ai/)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
-- [/crm-cleanup-deduping-google-sheets-ai/](/crm-cleanup-deduping-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 
 ## Safety, compliance, and data quality
 

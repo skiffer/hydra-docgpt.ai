@@ -122,8 +122,8 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Crm Cleanup Deduping Google Sheets Ai](/crm-cleanup-deduping-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [Crm Cleanup Deduping Google Sheets Ai](/gpt-for-sheets-for-b2b-sales/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
 - [Ai Sales Prospecting Google Sheets](/ai-sales-prospecting-google-sheets/)
 

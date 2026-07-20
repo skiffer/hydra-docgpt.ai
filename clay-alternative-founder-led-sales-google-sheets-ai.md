@@ -113,7 +113,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 - [Google Sheets Clay workflow for founders](/google-sheets-clay-workflow-for-founders/)
 - [Clay in Sheets founder outbound system](/clay-in-sheets-founder-outbound-system/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 

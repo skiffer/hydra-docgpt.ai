@@ -118,7 +118,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 
 - [/car-dealer-inventory-descriptions-google-sheets-ai/](/car-dealer-inventory-descriptions-google-sheets-ai/)
 - [/dealership-inventory-merchandising-google-sheets-ai/](/dealership-inventory-merchandising-google-sheets-ai/)
-- [/ai-lead-enrichment-car-dealerships-google-sheets/](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 

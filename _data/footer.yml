@@ -33,9 +33,6 @@
     - name: AI Email Reply Generator
       link: /ai-email-generator/
       new_window: true
-    - name: ChatGPT Introducing o1-preview and o1-mini
-      link: /chatgpt-introducing-o1-preview-and-o1-mini-september-2024/
-      new_window: true
     - name: QR Code Generator Add-On
       link: /qr-code-generator-pricing/
       new_window: true

@@ -115,9 +115,9 @@ GPT for Sheets does not provide a licensed contact database or guaranteed verifi
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Build a prospect list in Google Sheets with AI](/build-prospect-list-in-google-sheets-with-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [CSV lead enrichment](/csv-lead-enrichment-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality
 

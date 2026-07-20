@@ -139,7 +139,7 @@ State that Apollo is a trademark of its owner; no affiliation. Do not claim impr
 
 ## Internal links and next steps {#internal-links}
 
-- [apollo export enrichment google sheets ai](/apollo-export-enrichment-google-sheets-ai/)
+- [apollo export enrichment google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [apollo export ai enrichment google sheets](/apollo-export-ai-enrichment-google-sheets/)
 - [sales outreach mail merge gmail google sheets](/sales-outreach-mail-merge-gmail-google-sheets/)
 - [mail merge for gmail and sheets](/mail-merge-for-gmail-and-sheets/)

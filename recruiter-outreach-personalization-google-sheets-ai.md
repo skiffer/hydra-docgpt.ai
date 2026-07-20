@@ -114,7 +114,7 @@ A practical sheet for candidate research and role-specific outreach personalizat
 
 Use these related DocGPT pages to build a complete workflow:
 
-- [/recruiter-candidate-research-google-sheets-ai/](/recruiter-candidate-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/recruiter-engineer-sourcing-google-sheets-ai/](/recruiter-engineer-sourcing-google-sheets-ai/)
 - [/clay-alternative-recruiters-google-sheets-ai/](/clay-alternative-recruiters-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)

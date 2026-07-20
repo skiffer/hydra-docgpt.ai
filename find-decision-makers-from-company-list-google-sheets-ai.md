@@ -115,9 +115,9 @@ Test on a small sample first. If the output is generic, make the prompt narrower
 ## Related GPT for Sheets guides
 
 - [/gpt-for-sheets/](/gpt-for-sheets/) — product/pricing CTA.
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-based-marketing-research-google-sheets-ai/](/account-based-marketing-research-google-sheets-ai/)
-- [/icp-scoring-formulas-google-sheets-ai/](/icp-scoring-formulas-google-sheets-ai/)
+- [/icp-fit-scoring-google-sheets-ai/](/icp-fit-scoring-google-sheets-ai/)
 - [/outbound-personalization-formulas-google-sheets-ai/](/outbound-personalization-formulas-google-sheets-ai/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 

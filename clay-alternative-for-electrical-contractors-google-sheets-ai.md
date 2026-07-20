@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of electrical contractors
 - [Electrician lead prospecting](/electrician-lead-prospecting-google-sheets-ai/)
 - [Construction bid research](/construction-bid-research-google-sheets-ai/)
 - [Construction subcontractor vendor research](/construction-subcontractor-vendor-research-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

@@ -156,7 +156,7 @@ Plan-specific safety note: output should say “possible stakeholders to verify,
 ## Internal links and next steps
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
-- [B2b sales account research google sheets ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2b sales account research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [B2b sales multithreading account research google sheets ai](/b2b-sales-multithreading-account-research-google-sheets-ai/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)

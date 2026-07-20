@@ -127,7 +127,7 @@ Respect privacy, platform terms, consent requirements, and sensitive employment 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Ai google sheets for recruiters](/ai-google-sheets-for-recruiters/)
-- [Recruiter candidate research google sheets ai](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter candidate research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Google sheets candidate enrichment template for recruiters](/google-sheets-candidate-enrichment-template-for-recruiters/)
 - [Recruiter outreach personalization google sheets ai](/recruiter-outreach-personalization-google-sheets-ai/)
 - [Docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)

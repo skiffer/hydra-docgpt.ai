@@ -120,7 +120,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 
 ## Internal links and next workflows
 
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/small-business-enrichment-tool-google-sheets-ai/](/small-business-enrichment-tool-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)

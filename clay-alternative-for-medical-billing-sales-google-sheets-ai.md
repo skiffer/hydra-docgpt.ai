@@ -119,7 +119,7 @@ The strongest use case is when you already have a list of prospects and need str
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative for payroll & HR sales](/clay-alternative-for-payroll-hr-sales-google-sheets-ai/)
 - [Dental practice lead enrichment in Sheets](/dental-practice-lead-enrichment-google-sheets-ai/)
-- [B2B sales account research in Sheets](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research in Sheets](/google-sheets-ai-account-research-buyers-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

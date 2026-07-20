@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Clay Alternative For Recruiters Google Sheets AI](/clay-alternative-for-recruiters-google-sheets-ai/)
 - [Recruiting Client Account Research Google Sheets AI](/recruiting-client-account-research-google-sheets-ai/)
-- [Recruiter Candidate Research Google Sheets AI](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter Candidate Research Google Sheets AI](/google-sheets-ai-account-research-buyers-guide/)
 - [Staffing Agency Client Research Google Sheets AI](/staffing-agency-client-research-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)

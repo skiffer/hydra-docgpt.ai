@@ -119,7 +119,7 @@ The strongest use case is when you already have a list of buildings or accounts 
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative for home services marketing](/clay-alternative-for-home-services-marketing-google-sheets-ai/)
 - [Clay alternative for local business prospecting](/clay-alternative-local-business-prospecting-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

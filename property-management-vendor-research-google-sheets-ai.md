@@ -127,7 +127,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/local-business-research-google-sheets-ai/](/local-business-research-google-sheets-ai/)
 - [/review-analysis-google-sheets-ai/](/review-analysis-google-sheets-ai/)
-- [/google-maps-business-enrichment-google-sheets-ai/](/google-maps-business-enrichment-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality
 

@@ -146,7 +146,7 @@ Clay-style workflows are useful when a team wants a dedicated GTM workspace. GPT
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets for agencies](/gpt-for-sheets-for-agencies/)
 - [Agency client prospecting](/agency-client-prospecting-google-sheets-ai/)
-- [Agency lead research](/agency-lead-research-google-sheets-ai/)
+- [Agency lead research](/google-sheets-ai-account-research-buyers-guide/)
 - [AI lead enrichment](/ai-lead-enrichment-google-sheets/)
 - [Clay alternative for Google Sheets](/clay-alternative-google-sheets/)
 

@@ -111,7 +111,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 ## Internal links and next workflows
 
-- [Recruiter candidate research](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter candidate research](/google-sheets-ai-account-research-buyers-guide/)
 - [Recruiting agency candidate enrichment](/recruiting-agency-candidate-enrichment-google-sheets-ai/)
 - [Clay alternative for recruiters](/clay-alternative-recruiters-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)

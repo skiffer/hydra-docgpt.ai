@@ -119,7 +119,7 @@ The strongest use case is enriching and prioritizing lists you already control. 
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [AI sales prospecting in Google Sheets](/ai-sales-prospecting-google-sheets/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
-- [B2B sales account research in Sheets](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research in Sheets](/google-sheets-ai-account-research-buyers-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

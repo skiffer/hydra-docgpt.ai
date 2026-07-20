@@ -120,7 +120,7 @@ The strongest use case is when you already have a list of prospects and need str
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 - [Gym & fitness studio lead enrichment in Sheets](/gym-fitness-studio-lead-enrichment-google-sheets-ai/)
 - [Clay alternative for local business prospecting](/clay-alternative-local-business-prospecting-google-sheets-ai/)
-- [Google Maps business enrichment in Sheets](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google Maps business enrichment in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality
 

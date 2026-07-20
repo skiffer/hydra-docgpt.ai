@@ -116,7 +116,7 @@ Use these related DocGPT pages to build a complete workflow:
 
 - [/serp-analysis-google-sheets-guide/](/serp-analysis-google-sheets-guide/)
 - [/serp-competitor-intelligence-google-sheets-ai/](/serp-competitor-intelligence-google-sheets-ai/)
-- [/seo-keyword-clustering-google-sheets-ai/](/seo-keyword-clustering-google-sheets-ai/)
+- [/gpt-for-sheets-for-seo-teams/](/gpt-for-sheets-for-seo-teams/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 
 

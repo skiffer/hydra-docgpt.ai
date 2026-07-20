@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Franchise Sales Prospecting Google Sheets Ai](/franchise-sales-prospecting-google-sheets-ai/)
 - [Clay Alternative Franchise Sales Google Sheets Ai](/clay-alternative-franchise-sales-google-sheets-ai/)
-- [Google Maps Business Enrichment Google Sheets Ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google Maps Business Enrichment Google Sheets Ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Google Maps Local Business Enrichment Google Sheets Ai](/google-maps-local-business-enrichment-google-sheets-ai/)
 - [Gpt For Sheets](/gpt-for-sheets/)
 - [Gpt For Sheets/#Pricing](/gpt-for-sheets/#pricing)

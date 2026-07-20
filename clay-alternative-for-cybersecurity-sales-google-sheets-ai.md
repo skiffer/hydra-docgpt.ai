@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of cybersecurity sales ac
 - [Cybersecurity account research](/cybersecurity-account-research-google-sheets-ai/)
 - [B2B SaaS account scoring](/b2b-saas-account-scoring-google-sheets-ai/)
 - [Intent signal research](/intent-signal-research-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

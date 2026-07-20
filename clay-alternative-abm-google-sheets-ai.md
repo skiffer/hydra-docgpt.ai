@@ -115,7 +115,7 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 - [/account-based-marketing-research-google-sheets-ai/](/account-based-marketing-research-google-sheets-ai/)
 - [/saas-account-research-google-sheets-ai/](/saas-account-research-google-sheets-ai/)
 - [/salesforce-account-research-google-sheets-ai/](/salesforce-account-research-google-sheets-ai/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## FAQ {#faq}
 

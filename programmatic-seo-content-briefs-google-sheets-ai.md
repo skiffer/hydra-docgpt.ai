@@ -105,7 +105,7 @@ AI output should be treated as a draft, not a verified database. Add checks befo
 Continue with these GPT for Sheets resources:
 - [/programmatic-seo-google-sheets-ai/](/programmatic-seo-google-sheets-ai/)
 - [/bulk-meta-descriptions-google-sheets-ai/](/bulk-meta-descriptions-google-sheets-ai/)
-- [/seo-keyword-clustering-google-sheets-ai/` after creation](/seo-keyword-clustering-google-sheets-ai/` after creation)
+- [/gpt-for-sheets-for-seo-teams/` after creation](/gpt-for-sheets-for-seo-teams/` after creation)
 - [/gpt-for-sheets/`.](/gpt-for-sheets/`.)
 - [GPT for Sheets](/gpt-for-sheets/)
 

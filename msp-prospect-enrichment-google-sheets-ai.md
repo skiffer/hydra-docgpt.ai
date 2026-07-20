@@ -115,7 +115,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative for MSPs](/clay-alternative-for-msps-google-sheets-ai/)
-- [Clay in Sheets account research](/clay-in-sheets-account-research/)
+- [Clay in Sheets account research](/google-sheets-ai-account-research-buyers-guide/)
 - [outbound personalization formulas](/outbound-personalization-formulas-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

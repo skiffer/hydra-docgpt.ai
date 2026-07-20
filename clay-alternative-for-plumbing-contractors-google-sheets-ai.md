@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of plumbing contractors a
 - [Plumbing company lead prospecting](/plumbing-company-lead-prospecting-google-sheets-ai/)
 - [Home services local lead enrichment](/home-services-local-lead-enrichment-google-sheets-ai/)
 - [Clay alternative for HVAC contractors](/clay-alternative-for-hvac-contractors-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

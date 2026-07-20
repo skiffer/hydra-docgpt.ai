@@ -129,7 +129,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/cold-email-personalization-google-sheets-ai/](/cold-email-personalization-google-sheets-ai/)
 - [/openrouter-for-google-sheets-how-to-guide/](/openrouter-for-google-sheets-how-to-guide/)
 

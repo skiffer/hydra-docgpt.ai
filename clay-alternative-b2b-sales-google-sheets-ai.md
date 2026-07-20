@@ -112,10 +112,10 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/ai-sales-prospecting-google-sheets/](/ai-sales-prospecting-google-sheets/)
-- [/icp-scoring-formulas-google-sheets-ai/](/icp-scoring-formulas-google-sheets-ai/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/icp-fit-scoring-google-sheets-ai/](/icp-fit-scoring-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## FAQ {#faq}
 

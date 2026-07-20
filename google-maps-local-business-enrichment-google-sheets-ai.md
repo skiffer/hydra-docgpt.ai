@@ -122,8 +122,8 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [pricing](/gpt-for-sheets/#pricing)
-- [Google Maps business enrichment](/google-maps-business-enrichment-google-sheets-ai/)
-- [local business prospecting](/local-business-prospecting-google-sheets-ai/)
+- [Google Maps business enrichment](/ai-lead-enrichment-google-sheets-guide/)
+- [local business prospecting](/ai-lead-enrichment-google-sheets-guide/)
 - [extract Google Maps business data](/how-to-extract-google-maps-business-data/)
 
 ## Safety, compliance, and data quality

@@ -132,7 +132,7 @@ Cannabis regulations vary by jurisdiction. This workflow organizes research; it 
 - [Clay alternative google sheets](/clay-alternative-google-sheets/)
 - [Local business research google sheets ai](/local-business-research-google-sheets-ai/)
 - [Google maps local business enrichment google sheets ai](/google-maps-local-business-enrichment-google-sheets-ai/)
-- [B2b sales account research google sheets ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2b sales account research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Docs/gpt for sheets/gpt functions](/docs/gpt-for-sheets/gpt-functions)
 
 

@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Clay In Sheets Lead Enrichment](/clay-in-sheets-lead-enrichment/)
 - [Clay Alternative SMB Sales Teams Google Sheets AI](/clay-alternative-smb-sales-teams-google-sheets-ai/)
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
 - [AI Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)

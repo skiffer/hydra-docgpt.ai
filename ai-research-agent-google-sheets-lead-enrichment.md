@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [AI Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
 - [ChatGPT For Google Sheets Lead Enrichment](/chatgpt-for-google-sheets-lead-enrichment/)
-- [Clay In Sheets Account Research](/clay-in-sheets-account-research/)
+- [Clay In Sheets Account Research](/google-sheets-ai-account-research-buyers-guide/)
 - [Build Prospect List In Google Sheets With AI](/build-prospect-list-in-google-sheets-with-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)

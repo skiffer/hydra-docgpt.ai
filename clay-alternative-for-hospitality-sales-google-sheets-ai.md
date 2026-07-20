@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of hospitality sales team
 - [Hotel sales prospecting](/hotel-sales-prospecting-google-sheets-ai/)
 - [Event planner vendor prospecting](/event-planner-vendor-prospecting-google-sheets-ai/)
 - [B2B event booth follow-up](/b2b-event-booth-follow-up-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

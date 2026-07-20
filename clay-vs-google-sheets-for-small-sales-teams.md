@@ -124,7 +124,7 @@ Before using the output externally:
 ## Related GPT for Sheets resources
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
-- [/clay-alternative-google-sheets-lead-enrichment/](/clay-alternative-google-sheets-lead-enrichment/)
+- [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
 - [/clay-in-sheets-founder-outbound-system/](/clay-in-sheets-founder-outbound-system/)
 - [/founder-led-sales-clay-in-sheets-playbook/](/founder-led-sales-clay-in-sheets-playbook/)
 

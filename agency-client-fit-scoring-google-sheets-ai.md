@@ -157,7 +157,7 @@ Plan-specific safety note: avoid unsupported revenue/budget assumptions; require
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [Agency client prospecting google sheets ai](/agency-client-prospecting-google-sheets-ai/)
-- [Agency lead research google sheets ai](/agency-lead-research-google-sheets-ai/)
+- [Agency lead research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)
 - [GPT functions reference](/docs/gpt-for-sheets/gpt-functions)

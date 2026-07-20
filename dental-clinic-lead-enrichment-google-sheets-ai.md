@@ -123,7 +123,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Local Business Research Google Sheets Ai](/local-business-research-google-sheets-ai/)
-- [Google Maps Business Enrichment Google Sheets Ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google Maps Business Enrichment Google Sheets Ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
 - [Cold Email Personalization Google Sheets Ai](/cold-email-personalization-google-sheets-ai/)
 

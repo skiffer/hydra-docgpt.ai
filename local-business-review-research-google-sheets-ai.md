@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 ## Internal links and next workflows
 
-- [Local Business Prospecting Google Sheets AI](/local-business-prospecting-google-sheets-ai/)
+- [Local Business Prospecting Google Sheets AI](/ai-lead-enrichment-google-sheets-guide/)
 - [Review Analysis Google Sheets AI](/review-analysis-google-sheets-ai/)
 - [Local SEO Agency Citation Prospect Cleanup Google Sheets AI](/local-seo-agency-citation-prospect-cleanup-google-sheets-ai/)
 - [Customer Review Response Google Sheets AI](/customer-review-response-google-sheets-ai/)

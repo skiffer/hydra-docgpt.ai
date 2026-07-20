@@ -125,7 +125,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
-- [/google-maps-business-enrichment-google-sheets-ai/](/google-maps-business-enrichment-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/local-business-research-google-sheets-ai/](/local-business-research-google-sheets-ai/)
 - [/seo-agency-prospect-audit-google-sheets-ai/](/seo-agency-prospect-audit-google-sheets-ai/)
 

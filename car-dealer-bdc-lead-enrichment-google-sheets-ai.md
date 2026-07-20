@@ -111,7 +111,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 ## Internal links and next workflows
 
-- [AI lead enrichment for car dealerships](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [AI lead enrichment for car dealerships](/ai-lead-enrichment-google-sheets-guide/)
 - [Car dealer inventory descriptions](/car-dealer-inventory-descriptions-google-sheets-ai/)
 - [Clay alternative for car dealers](/clay-alternative-for-car-dealers-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)

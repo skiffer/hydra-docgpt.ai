@@ -112,7 +112,7 @@ Do not invent revenue, employee count, tech stack, or platform-use claims. Mark 
 - [/gpt-for-sheets-for-ecommerce/](/gpt-for-sheets-for-ecommerce/)
 - [/shopify-wholesale-buyer-research-google-sheets-ai/](/shopify-wholesale-buyer-research-google-sheets-ai/)
 - [/amazon-brand-owner-lead-enrichment-google-sheets-ai/](/amazon-brand-owner-lead-enrichment-google-sheets-ai/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 
 ## Frequently Asked Questions
 

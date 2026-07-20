@@ -142,7 +142,7 @@ Clay disclaimer; avoid suggesting GPT for Sheets replaces CRM source-of-record c
 - [gpt for sheets account research](/gpt-for-sheets-account-research/)
 - [google sheets account research template for b2b sales](/google-sheets-account-research-template-for-b2b-sales/)
 - [account research agent google sheets ai](/account-research-agent-google-sheets-ai/)
-- [clay in sheets account research](/clay-in-sheets-account-research/)
+- [clay in sheets account research](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)

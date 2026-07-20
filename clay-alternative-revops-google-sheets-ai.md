@@ -111,7 +111,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 ## Internal links and next workflows
 
-- [CRM cleanup and deduping](/crm-cleanup-deduping-google-sheets-ai/)
+- [CRM cleanup and deduping](/gpt-for-sheets-for-b2b-sales/)
 - [Sales operations pipeline cleanup](/sales-operations-pipeline-cleanup-google-sheets-ai/)
 - [HubSpot lead enrichment](/hubspot-lead-enrichment-google-sheets-ai/)
 - [Salesforce account research](/salesforce-account-research-google-sheets-ai/)

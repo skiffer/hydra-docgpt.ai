@@ -115,10 +115,10 @@ Senior living deals usually need more than one contact. Use the stakeholder map 
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [Find decision-makers from a company list](/find-decision-makers-from-company-list-google-sheets-ai/)
 - [Account research automation](/account-research-automation-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality
 

@@ -124,7 +124,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Ai Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Domain Enrichment Google Sheets Ai](/domain-enrichment-google-sheets-ai/)
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
 - [Ai Sales Prospecting Google Sheets](/ai-sales-prospecting-google-sheets/)
 
 ## Safety, compliance, and data quality

@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of accounting firms accou
 - [Accounting firm client research](/accounting-firm-client-research-google-sheets-ai/)
 - [Accounting firm prospect research](/accounting-firm-prospect-research-google-sheets-ai/)
 - [Bookkeeping firm client prospecting](/bookkeeping-firm-client-prospecting-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

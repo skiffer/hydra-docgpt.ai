@@ -106,7 +106,7 @@ The strongest use case is turning scattered news into a sortable signal column o
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [Account research automation](/account-research-automation-google-sheets-ai/)
 - [B2B sales trigger monitoring](/b2b-sales-trigger-monitoring-google-sheets-ai/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)

@@ -126,7 +126,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/car-dealer-inventory-descriptions-google-sheets-ai/](/car-dealer-inventory-descriptions-google-sheets-ai/)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/cold-email-personalization-google-sheets-ai/](/cold-email-personalization-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

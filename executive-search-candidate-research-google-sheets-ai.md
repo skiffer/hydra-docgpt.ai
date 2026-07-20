@@ -120,7 +120,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 
 ## Internal links and next workflows
 
-- [/recruiter-candidate-research-google-sheets-ai/](/recruiter-candidate-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/clay-alternative-for-recruiters-google-sheets-ai/](/clay-alternative-for-recruiters-google-sheets-ai/)
 - [/recruiting-agency-candidate-enrichment-google-sheets-ai/](/recruiting-agency-candidate-enrichment-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)

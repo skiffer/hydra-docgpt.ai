@@ -118,7 +118,7 @@ Once each clinic has a fit score and a signal-based hook, sort by score and draf
 - [Dental practice lead enrichment](/dental-practice-lead-enrichment-google-sheets-ai/)
 - [Medspa lead enrichment](/medspa-lead-enrichment-google-sheets-ai/)
 - [Local business research in Sheets](/local-business-research-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality
 

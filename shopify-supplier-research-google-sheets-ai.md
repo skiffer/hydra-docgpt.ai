@@ -116,7 +116,7 @@ Use these related DocGPT pages to build a complete workflow:
 
 - [/ecommerce-supplier-research-google-sheets-ai/](/ecommerce-supplier-research-google-sheets-ai/)
 - [/shopify-catalog-cleanup-google-sheets-ai/](/shopify-catalog-cleanup-google-sheets-ai/)
-- [/ecommerce-product-data-enrichment-google-sheets-ai/](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [/gpt-for-sheets-for-ecommerce/](/gpt-for-sheets-for-ecommerce/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 
 

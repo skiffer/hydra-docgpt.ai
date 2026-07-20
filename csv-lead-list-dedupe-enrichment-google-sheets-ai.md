@@ -114,7 +114,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Clay alternative lead enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative lead enrichment](/clay-alternative-google-sheets/)
 - [small business enrichment](/small-business-enrichment-tool-google-sheets-ai/)
 - [GPT for Sheets docs](/docs/gpt-for-sheets)
 

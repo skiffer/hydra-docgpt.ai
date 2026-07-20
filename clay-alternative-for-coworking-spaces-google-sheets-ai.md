@@ -117,7 +117,7 @@ The strongest use case is when you already have a list of local prospects and ne
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Local business prospecting in Sheets](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Google Maps local business enrichment in Sheets](/google-maps-local-business-enrichment-google-sheets-ai/)
 - [Cold email personalization in Sheets](/cold-email-personalization-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)

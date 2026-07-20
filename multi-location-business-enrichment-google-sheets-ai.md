@@ -126,7 +126,7 @@ Frame pain points as hypotheses based on visible evidence. Verify location count
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)
 - [Multi Location Franchise Prospecting Google Sheets Ai](/multi-location-franchise-prospecting-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Target Account News Trigger Scoring Google Sheets Ai](/target-account-news-trigger-scoring-google-sheets-ai/)
 - [Google Sheets Lead Enrichment Roi Calculator](/google-sheets-lead-enrichment-roi-calculator/)
 

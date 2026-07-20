@@ -111,7 +111,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 
 ## Internal links and next workflows
 
-- [Ecommerce product data enrichment](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [Ecommerce product data enrichment](/gpt-for-sheets-for-ecommerce/)
 - [Ecommerce supplier research](/ecommerce-supplier-research-google-sheets-ai/)
 - [Shopify catalog cleanup](/shopify-catalog-cleanup-google-sheets-ai/)
 - [Clay alternative for ecommerce](/clay-alternative-ecommerce-google-sheets-ai/)

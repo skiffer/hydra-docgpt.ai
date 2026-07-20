@@ -125,7 +125,7 @@ Before using the output externally:
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/clay-alternative-for-recruiters-google-sheets-ai/](/clay-alternative-for-recruiters-google-sheets-ai/)
-- [/recruiter-candidate-research-google-sheets-ai/](/recruiter-candidate-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/recruiting-agency-candidate-enrichment-google-sheets-ai/](/recruiting-agency-candidate-enrichment-google-sheets-ai/)
 
 ## FAQ

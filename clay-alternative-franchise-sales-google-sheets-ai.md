@@ -117,7 +117,7 @@ Use these related DocGPT pages to build a complete workflow:
 - [/franchise-sales-prospecting-google-sheets-ai/](/franchise-sales-prospecting-google-sheets-ai/)
 - [/ai-sales-prospecting-google-sheets/](/ai-sales-prospecting-google-sheets/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 
 
 For most teams, the best next step is to install the add-on, run one formula on a small sample, then upgrade when you need higher-volume usage or team workflows: [see GPT for Sheets pricing](/gpt-for-sheets/#pricing).

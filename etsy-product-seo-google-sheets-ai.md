@@ -127,7 +127,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/bulk-product-descriptions-google-sheets-ai/](/bulk-product-descriptions-google-sheets-ai/)
 - [/shopify-seo-title-meta-google-sheets-ai/](/shopify-seo-title-meta-google-sheets-ai/)
-- [/ecommerce-product-data-enrichment-google-sheets-ai/](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [/gpt-for-sheets-for-ecommerce/](/gpt-for-sheets-for-ecommerce/)
 
 ## Safety, compliance, and data quality
 

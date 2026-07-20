@@ -129,7 +129,7 @@ Confirm funding and job data from public sources. Treat hiring need as a hypothe
 - [Recruiter company research google sheets ai](/recruiter-company-research-google-sheets-ai/)
 - [Executive recruiter client target list google sheets ai](/executive-recruiter-client-target-list-google-sheets-ai/)
 - [Job posting signal research google sheets ai](/job-posting-signal-research-google-sheets-ai/)
-- [B2b sales account research google sheets ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2b sales account research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Mail merge for gmail and sheets](/mail-merge-for-gmail-and-sheets/)
 
 

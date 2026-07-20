@@ -116,7 +116,7 @@ Use these related DocGPT pages to build a complete workflow:
 
 - [/insurance-agency-lead-research-google-sheets-ai/](/insurance-agency-lead-research-google-sheets-ai/)
 - [/clay-alternative-for-insurance-agencies-google-sheets-ai/](/clay-alternative-for-insurance-agencies-google-sheets-ai/)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 
 

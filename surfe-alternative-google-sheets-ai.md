@@ -129,7 +129,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [/linkedin-sales-navigator-export-enrichment-google-sheets-ai/](/linkedin-sales-navigator-export-enrichment-google-sheets-ai/)
 - [/enrich-linkedin-profile-urls-in-google-sheets-ai/](/enrich-linkedin-profile-urls-in-google-sheets-ai/)
 - [/clay-in-sheets-lead-enrichment/](/clay-in-sheets-lead-enrichment/)
-- [/icp-scoring-formulas-google-sheets-ai/](/icp-scoring-formulas-google-sheets-ai/)
+- [/icp-fit-scoring-google-sheets-ai/](/icp-fit-scoring-google-sheets-ai/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 
 ## Safety, compliance, and data quality

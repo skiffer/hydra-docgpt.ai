@@ -114,7 +114,7 @@ A practical sheet for BDC lead qualification, vehicle-fit notes, and follow-up m
 
 Use these related DocGPT pages to build a complete workflow:
 
-- [/ai-lead-enrichment-car-dealerships-google-sheets/](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/car-dealer-bdc-lead-enrichment-google-sheets-ai/](/car-dealer-bdc-lead-enrichment-google-sheets-ai/)
 - [/car-dealership-lead-qualification-google-sheets-ai/](/car-dealership-lead-qualification-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)

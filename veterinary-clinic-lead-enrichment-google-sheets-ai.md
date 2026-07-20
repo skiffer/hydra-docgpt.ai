@@ -117,8 +117,8 @@ A practical sheet for this workflow usually has these columns:
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [AI lead scoring formulas](/ai-lead-scoring-formulas-google-sheets/)
 
 ## Safety, compliance, and data quality

@@ -120,10 +120,10 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 ## Internal links and next workflows
 
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
 - [Manufacturing Distributor Lead Research Google Sheets AI](/manufacturing-distributor-lead-research-google-sheets-ai/)
 - [Construction Bid Research Google Sheets AI](/construction-bid-research-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets AI](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets AI](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)
 

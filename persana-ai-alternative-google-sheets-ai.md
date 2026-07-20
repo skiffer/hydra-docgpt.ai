@@ -117,7 +117,7 @@ If you need many native data integrations, managed enrichment "waterfalls" acros
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay in Sheets lead enrichment](/clay-in-sheets-lead-enrichment/)
 - [Google Sheets Clay-style workflow template](/google-sheets-clay-style-workflow-template/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Outbound personalization formulas](/outbound-personalization-formulas-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

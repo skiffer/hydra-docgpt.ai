@@ -122,7 +122,7 @@ The strongest fit is when your team already works in Google Sheets and needs str
 
 - [/clay-alternative-growth-consultants-google-sheets-ai/](/clay-alternative-growth-consultants-google-sheets-ai/)
 - [/consulting-firm-account-research-google-sheets-ai/](/consulting-firm-account-research-google-sheets-ai/)
-- [/cold-email-personalization-from-google-sheets-ai/](/cold-email-personalization-from-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 

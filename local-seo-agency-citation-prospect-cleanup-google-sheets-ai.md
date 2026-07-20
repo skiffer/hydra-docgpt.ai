@@ -119,7 +119,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 ## Internal links and next workflows
 
 - [Local Seo Citation Cleanup Google Sheets Ai](/local-seo-citation-cleanup-google-sheets-ai/)
-- [Seo Keyword Clustering Google Sheets Ai](/seo-keyword-clustering-google-sheets-ai/)
+- [Seo Keyword Clustering Google Sheets Ai](/gpt-for-sheets-for-seo-teams/)
 - [Seo Agency Prospect Audit Google Sheets Ai](/seo-agency-prospect-audit-google-sheets-ai/)
 - [Google Sheets Ai Data Cleaning For Crm Imports](/google-sheets-ai-data-cleaning-for-crm-imports/)
 - [Gpt For Sheets](/gpt-for-sheets/)

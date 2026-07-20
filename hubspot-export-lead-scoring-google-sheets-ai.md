@@ -112,7 +112,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 ## Internal links and next workflows
 
 - [HubSpot lead enrichment](/hubspot-lead-enrichment-google-sheets-ai/)
-- [CRM cleanup and deduping](/crm-cleanup-deduping-google-sheets-ai/)
+- [CRM cleanup and deduping](/gpt-for-sheets-for-b2b-sales/)
 - [AI lead scoring formulas](/ai-lead-scoring-formulas-google-sheets/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

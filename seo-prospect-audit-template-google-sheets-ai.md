@@ -118,7 +118,7 @@ Test on a small sample first. If the output is generic, make the prompt narrower
 - [/seo-agency-prospect-audit-google-sheets-ai/](/seo-agency-prospect-audit-google-sheets-ai/)
 - [/clay-alternative-for-seo-teams-google-sheets-ai/](/clay-alternative-for-seo-teams-google-sheets-ai/)
 - [/serp-ai-enrichment-google-sheets-seo-teams/](/serp-ai-enrichment-google-sheets-seo-teams/)
-- [/seo-keyword-clustering-google-sheets-ai/](/seo-keyword-clustering-google-sheets-ai/)
+- [/gpt-for-sheets-for-seo-teams/](/gpt-for-sheets-for-seo-teams/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 
 ## FAQ {#faq}

@@ -124,7 +124,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [pricing](/gpt-for-sheets/#pricing)
-- [ecommerce product enrichment](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [ecommerce product enrichment](/gpt-for-sheets-for-ecommerce/)
 - [Shopify supplier research](/shopify-supplier-research-google-sheets-ai/)
 - [Shopify catalog cleanup](/shopify-catalog-cleanup-google-sheets-ai/)
 

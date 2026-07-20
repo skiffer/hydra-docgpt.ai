@@ -114,7 +114,7 @@ The strongest use case is drafting at scale and approving in the same sheet. GPT
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Bulk meta descriptions in Google Sheets](/bulk-meta-descriptions-google-sheets-ai/)
 - [Shopify SEO titles and meta in Google Sheets](/shopify-seo-title-meta-google-sheets-ai/)
-- [SEO keyword clustering in Google Sheets](/seo-keyword-clustering-google-sheets-ai/)
+- [SEO keyword clustering in Google Sheets](/gpt-for-sheets-for-seo-teams/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

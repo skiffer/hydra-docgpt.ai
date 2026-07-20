@@ -122,7 +122,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Cold Email Personalization Google Sheets Ai](/cold-email-personalization-google-sheets-ai/)
 - [Google Search Api Google Sheets Guide](/google-search-api-google-sheets-guide/)
 - [Account Based Marketing Research Google Sheets Ai](/account-based-marketing-research-google-sheets-ai/)

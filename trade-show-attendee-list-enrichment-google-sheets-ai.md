@@ -118,7 +118,7 @@ The strongest use case is when you already have an attendee list and need struct
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [AI enrichment for CSV exports](/ai-enrichment-for-csv-exports-google-sheets/)
 - [AI lead scoring formulas](/ai-lead-scoring-formulas-google-sheets/)
-- [Clay alternative for lead enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative for lead enrichment](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

@@ -119,7 +119,7 @@ Use GPT for Sheets to triage and personalize expansion signals you collect. Alwa
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [B2B sales trigger monitoring in Sheets](/b2b-sales-trigger-monitoring-google-sheets-ai/)
 - [Job-posting signal research in Sheets](/job-posting-signal-research-google-sheets-ai/)
-- [Local business prospecting in Sheets](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

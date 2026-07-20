@@ -109,9 +109,9 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/auto-repair-shop-lead-prospecting-google-sheets-ai/](/auto-repair-shop-lead-prospecting-google-sheets-ai/)
-- [/google-maps-business-enrichment-google-sheets-ai/](/google-maps-business-enrichment-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 
 ## FAQ {#faq}
 

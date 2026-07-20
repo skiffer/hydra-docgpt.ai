@@ -119,7 +119,7 @@ The strongest use case is when you already have a list of local prospects and ne
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative for printing companies](/clay-alternative-for-printing-companies-google-sheets-ai/)
 - [New-location expansion signal research in Sheets](/new-location-expansion-signal-research-google-sheets-ai/)
-- [Local business prospecting in Sheets](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

@@ -112,7 +112,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 ## Internal links and next workflows
 
 - [Agency client prospecting](/agency-client-prospecting-google-sheets-ai/)
-- [Agency lead research](/agency-lead-research-google-sheets-ai/)
+- [Agency lead research](/google-sheets-ai-account-research-buyers-guide/)
 - [Clay for agencies alternative](/clay-for-agencies-alternative-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

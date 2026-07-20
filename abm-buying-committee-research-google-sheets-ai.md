@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Clay Alternative Abm Google Sheets Ai](/clay-alternative-abm-google-sheets-ai/)
 - [Abm Target Account List Building Google Sheets Ai](/abm-target-account-list-building-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Account Based Marketing Research Google Sheets Ai](/account-based-marketing-research-google-sheets-ai/)
 - [Gpt For Sheets](/gpt-for-sheets/)
 - [Gpt For Sheets/#Pricing](/gpt-for-sheets/#pricing)

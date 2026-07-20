@@ -118,7 +118,7 @@ Use GPT for Sheets as the research and personalization layer after you have a li
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [RocketReach alternative in Google Sheets](/rocketreach-alternative-google-sheets-ai/)
-- [Recruiter candidate research in Sheets](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter candidate research in Sheets](/google-sheets-ai-account-research-buyers-guide/)
 - [Enrich LinkedIn profile URLs in Sheets](/enrich-linkedin-profile-urls-in-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 

@@ -117,7 +117,7 @@ AI research is a structured draft, not a verified record. It does not confirm di
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [People Data Labs alternative in Google Sheets](/people-data-labs-alternative-google-sheets-ai/)
 - [Enrich LinkedIn profile URLs in Sheets](/enrich-linkedin-profile-urls-in-google-sheets-ai/)
-- [Recruiter candidate research](/recruiter-candidate-research-google-sheets-ai/)
+- [Recruiter candidate research](/google-sheets-ai-account-research-buyers-guide/)
 - [Find decision-makers from a company list](/find-decision-makers-from-company-list-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

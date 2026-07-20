@@ -126,7 +126,7 @@ Use lawful public records and verify before outreach. AI can organize records bu
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Local business prospecting google sheets ai](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Local business owner email research google sheets ai](/local-business-owner-email-research-google-sheets-ai/)
 - [Google maps local business enrichment google sheets ai](/google-maps-local-business-enrichment-google-sheets-ai/)
 - [Small business enrichment tool google sheets ai](/small-business-enrichment-tool-google-sheets-ai/)

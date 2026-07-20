@@ -121,8 +121,8 @@ The strongest use case is when you already have a list of biotech and life scien
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [VC startup lead research](/vc-startup-lead-research-google-sheets-ai/)
 - [Funding news trigger research](/funding-news-trigger-research-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

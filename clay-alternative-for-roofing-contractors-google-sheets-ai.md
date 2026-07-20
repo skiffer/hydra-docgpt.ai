@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of roofing contractors ac
 - [Roofing contractor lead research](/roofing-contractor-lead-research-google-sheets-ai/)
 - [Home services local lead enrichment](/home-services-local-lead-enrichment-google-sheets-ai/)
 - [Clay alternative for home services marketing](/clay-alternative-for-home-services-marketing-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

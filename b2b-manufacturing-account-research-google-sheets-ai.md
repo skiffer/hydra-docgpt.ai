@@ -119,7 +119,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 ## Internal links and next workflows
 
 - [Manufacturing Rep Lead Research Google Sheets AI](/manufacturing-rep-lead-research-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets AI](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets AI](/google-sheets-ai-account-research-buyers-guide/)
 - [Account Research Automation Google Sheets AI](/account-research-automation-google-sheets-ai/)
 - [Manufacturing Distributor Lead Research Google Sheets AI](/manufacturing-distributor-lead-research-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)

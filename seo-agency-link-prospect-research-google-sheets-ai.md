@@ -123,7 +123,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 - [Clay Alternative For SEO Teams Google Sheets AI](/clay-alternative-for-seo-teams-google-sheets-ai/)
 - [Backlink Prospect Qualification Google Sheets AI](/backlink-prospect-qualification-google-sheets-ai/)
 - [SEO Agency Prospect Audit Google Sheets AI](/seo-agency-prospect-audit-google-sheets-ai/)
-- [SEO Keyword Clustering Google Sheets AI](/seo-keyword-clustering-google-sheets-ai/)
+- [SEO Keyword Clustering Google Sheets AI](/gpt-for-sheets-for-seo-teams/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)
 

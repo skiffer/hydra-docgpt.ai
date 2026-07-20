@@ -129,7 +129,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links)
 - [GPT for Sheets pricing](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_account_research_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links_pricing#pricing)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-based-marketing-research-google-sheets-ai/](/account-based-marketing-research-google-sheets-ai/)
 - [/docs/translate-content-using-claude-from-google-sheets-in-2024/](/docs/translate-content-using-claude-from-google-sheets-in-2024/)
 

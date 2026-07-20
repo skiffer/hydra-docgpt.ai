@@ -122,7 +122,7 @@ Before using the output externally:
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/account-research-automation-google-sheets-ai/](/account-research-automation-google-sheets-ai/)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/intent-signal-research-google-sheets-ai/](/intent-signal-research-google-sheets-ai/)
 
 ## FAQ

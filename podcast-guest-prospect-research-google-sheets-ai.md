@@ -114,7 +114,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [agency lead research](/agency-lead-research-google-sheets-ai/)
+- [agency lead research](/google-sheets-ai-account-research-buyers-guide/)
 - [outbound personalization formulas](/outbound-personalization-formulas-google-sheets-ai/)
 - [GPT for Sheets docs](/docs/gpt-for-sheets)
 

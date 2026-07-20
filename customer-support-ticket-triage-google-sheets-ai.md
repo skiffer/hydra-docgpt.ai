@@ -127,7 +127,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/customer-success-account-summaries-google-sheets-ai/](/customer-success-account-summaries-google-sheets-ai/)
 - [/review-analysis-google-sheets-ai/](/review-analysis-google-sheets-ai/)
-- [/crm-cleanup-deduping-google-sheets-ai/](/crm-cleanup-deduping-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 
 ## Safety, compliance, and data quality
 

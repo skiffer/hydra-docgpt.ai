@@ -119,7 +119,7 @@ Use GPT for Sheets to prioritize accounts when you can't justify an enterprise i
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Intent signal research in Sheets](/intent-signal-research-google-sheets-ai/)
 - [Account-based marketing research in Sheets](/account-based-marketing-research-google-sheets-ai/)
-- [ICP scoring formulas in Google Sheets](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

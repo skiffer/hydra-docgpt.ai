@@ -123,7 +123,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Ai Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Google Search Api Google Sheets Guide](/google-search-api-google-sheets-guide/)
 - [Ai Sales Prospecting Google Sheets](/ai-sales-prospecting-google-sheets/)
 

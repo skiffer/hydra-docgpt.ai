@@ -129,7 +129,7 @@ Do not quote payments, credit terms, or equity claims unless verified by the dea
 - [Gpt for sheets for car dealers](/gpt-for-sheets-for-car-dealers/)
 - [Car dealer service appointment reactivation google sheets ai](/car-dealer-service-appointment-reactivation-google-sheets-ai/)
 - [Dealership service drive equity mining google sheets ai](/dealership-service-drive-equity-mining-google-sheets-ai/)
-- [Ai lead enrichment car dealerships google sheets](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [Ai lead enrichment car dealerships google sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Mail merge for gmail and sheets](/mail-merge-for-gmail-and-sheets/)
 
 

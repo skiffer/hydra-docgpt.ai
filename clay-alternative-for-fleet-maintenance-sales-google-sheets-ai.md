@@ -129,7 +129,7 @@ Fleet size is often inferred from imperfect clues. Label assumptions clearly and
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [B2b sales account research google sheets ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2b sales account research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Domain to company info google sheets ai](/domain-to-company-info-google-sheets-ai/)
 - [Salesforce account research google sheets ai](/salesforce-account-research-google-sheets-ai/)
 - [Hubspot export enrichment google sheets ai](/hubspot-export-enrichment-google-sheets-ai/)

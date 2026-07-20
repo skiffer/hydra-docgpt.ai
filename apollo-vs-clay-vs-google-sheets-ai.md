@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Apollo Alternative Google Sheets AI](/apollo-alternative-google-sheets-ai/)
 - [Apollo Clay Alternative Google Sheets AI](/apollo-clay-alternative-google-sheets-ai/)
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
 - [Clay In Sheets Lead Enrichment](/clay-in-sheets-lead-enrichment/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)

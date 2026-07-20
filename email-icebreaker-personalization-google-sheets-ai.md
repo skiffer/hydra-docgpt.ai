@@ -108,7 +108,7 @@ The strongest use case is turning a real detail per prospect into a tailored ope
 - [AI sales prospecting in Sheets](/ai-sales-prospecting-google-sheets/)
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
-- [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)
+- [Apollo export enrichment](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality
 

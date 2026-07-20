@@ -126,7 +126,7 @@ Before using the output externally:
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/wealth-management-prospect-research-google-sheets-ai/](/wealth-management-prospect-research-google-sheets-ai/)
 - [/financial-advisor-prospect-research-google-sheets-ai/](/financial-advisor-prospect-research-google-sheets-ai/)
-- [/clay-alternative-google-sheets-lead-enrichment/](/clay-alternative-google-sheets-lead-enrichment/)
+- [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
 
 ## FAQ
 ### Can wealth advisors use GPT for Sheets for compliant prospecting?

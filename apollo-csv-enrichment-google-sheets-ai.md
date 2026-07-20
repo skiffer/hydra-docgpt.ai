@@ -123,7 +123,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets](/gpt-for-sheets/)
 - [pricing](/gpt-for-sheets/#pricing)
 - [domain enrichment](/domain-enrichment-google-sheets-ai/)
-- [ICP scoring](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring](/icp-fit-scoring-google-sheets-ai/)
 - [sales prospecting formulas](/openai-formulas-google-sheets-sales-prospecting/)
 
 ## Safety, compliance, and data quality

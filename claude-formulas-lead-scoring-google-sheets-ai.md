@@ -122,7 +122,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links)
 - [pricing](/gpt-for-sheets/?utm_source=seo&utm_medium=claude_lead_scoring_guide&utm_campaign=workflow_page_text_cta&utm_content=internal_links_pricing#pricing)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 - [OpenAI sales prospecting formulas](/openai-formulas-google-sheets-sales-prospecting/)
 - [enrichment formulas for founders](/google-sheets-enrichment-formulas-founders/)
 

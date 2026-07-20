@@ -124,7 +124,7 @@ GPT for Sheets is strongest when your team already works in Google Sheets and th
 Use these related GPT for Sheets resources to connect this workflow with lead enrichment, Clay-in-Sheets workflows, CRM cleanup, model selection, and outreach personalization:
 
 - [/gpt-for-sheets/](/gpt-for-sheets/)
-- [/crm-cleanup-deduping-google-sheets-ai/](/crm-cleanup-deduping-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 - [/csv-lead-list-dedupe-enrichment-google-sheets-ai/](/csv-lead-list-dedupe-enrichment-google-sheets-ai/)
 - [/google-sheets-ai-data-cleaning-for-crm-imports/](/google-sheets-ai-data-cleaning-for-crm-imports/)
 - [/clay-in-sheets-lead-enrichment/](/clay-in-sheets-lead-enrichment/)

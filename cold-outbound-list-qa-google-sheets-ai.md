@@ -119,7 +119,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 ## Internal links and next workflows
 
 - [Verify And Clean Emails In Google Sheets AI](/verify-and-clean-emails-in-google-sheets-ai/)
-- [Cold Email Personalization From Google Sheets AI](/cold-email-personalization-from-google-sheets-ai/)
+- [Cold Email Personalization From Google Sheets AI](/gpt-for-sheets-for-b2b-sales/)
 - [AI Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
 - [CSV Lead List Dedupe Enrichment Google Sheets AI](/csv-lead-list-dedupe-enrichment-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)

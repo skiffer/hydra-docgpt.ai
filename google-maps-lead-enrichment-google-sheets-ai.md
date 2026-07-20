@@ -120,7 +120,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 ## Internal links and next workflows
 
-- [Google Maps Business Enrichment Google Sheets AI](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google Maps Business Enrichment Google Sheets AI](/ai-lead-enrichment-google-sheets-guide/)
 - [Local Business Clay Alternative Google Sheets AI](/local-business-clay-alternative-google-sheets-ai/)
 - [Local Business Enrichment Template Google Sheets AI](/local-business-enrichment-template-google-sheets-ai/)
 - [How To Extract Google Maps Business Data](/how-to-extract-google-maps-business-data/)

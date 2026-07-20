@@ -107,7 +107,7 @@ The strongest use case is converting uneven raw notes into a uniform summary, ac
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Account research automation](/account-research-automation-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [AI sales prospecting in Sheets](/ai-sales-prospecting-google-sheets/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 

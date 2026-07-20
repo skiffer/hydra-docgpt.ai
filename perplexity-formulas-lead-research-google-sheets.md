@@ -116,7 +116,7 @@ Use these related DocGPT pages to build a complete workflow:
 
 - [/perplexity-for-google-sheets-how-to-guide/](/perplexity-for-google-sheets-how-to-guide/)
 - [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 
 

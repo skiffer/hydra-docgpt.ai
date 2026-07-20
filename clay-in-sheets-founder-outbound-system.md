@@ -122,9 +122,9 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
-- [Clay In Sheets Account Research](/clay-in-sheets-account-research/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
+- [Clay In Sheets Account Research](/google-sheets-ai-account-research-buyers-guide/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Cold Email Personalization Google Sheets Ai](/cold-email-personalization-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

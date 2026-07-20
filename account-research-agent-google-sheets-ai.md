@@ -126,7 +126,7 @@ Ground every summary in source columns and require review before outreach or CRM
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)
 - [Gpt For Sheets Account Research](/gpt-for-sheets-account-research/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Build Lead Enrichment Agent Google Sheets](/build-lead-enrichment-agent-google-sheets/)
 - [Ai Research Agent Google Sheets Lead Enrichment](/ai-research-agent-google-sheets-lead-enrichment/)
 

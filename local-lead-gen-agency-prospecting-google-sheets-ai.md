@@ -129,7 +129,7 @@ Dedicated enrichment platforms can still be the right fit when the workflow depe
 
 - [Google Maps lead lists in Google Sheets](/google-maps-lead-list-google-sheets-ai/)
 - [Local SEO client prospecting](/local-seo-client-prospecting-google-sheets-ai/)
-- [Agency lead research in Google Sheets](/agency-lead-research-google-sheets-ai/)
+- [Agency lead research in Google Sheets](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

@@ -120,9 +120,9 @@ The strongest use case is when you already have a list of moving companies accou
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Moving company lead research](/moving-company-lead-research-google-sheets-ai/)
-- [Local business prospecting](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting](/ai-lead-enrichment-google-sheets-guide/)
 - [Real estate agent lead enrichment](/real-estate-agent-lead-enrichment-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

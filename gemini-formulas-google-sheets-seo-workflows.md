@@ -130,7 +130,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/gemini-for-google-sheets-how-to-guide/](/gemini-for-google-sheets-how-to-guide/)
-- [/seo-keyword-clustering-google-sheets-ai/](/seo-keyword-clustering-google-sheets-ai/)
+- [/gpt-for-sheets-for-seo-teams/](/gpt-for-sheets-for-seo-teams/)
 - [/programmatic-seo-google-sheets-ai/](/programmatic-seo-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

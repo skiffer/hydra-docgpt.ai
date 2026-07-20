@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of landscaping companies 
 - [Landscaping company lead research](/landscaping-company-lead-research-google-sheets-ai/)
 - [Property management vendor research](/property-management-vendor-research-google-sheets-ai/)
 - [Clay alternative for local business prospecting](/clay-alternative-local-business-prospecting-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

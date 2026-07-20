@@ -111,7 +111,7 @@ Label hypotheses clearly, keep source evidence visible, and avoid unsupported cl
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/gpt-for-sheets-for-agencies/](/gpt-for-sheets-for-agencies/)
 - [/agency-client-prospecting-google-sheets-ai/](/agency-client-prospecting-google-sheets-ai/)
-- [/agency-lead-research-google-sheets-ai/](/agency-lead-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-research-automation-google-sheets-ai](/account-research-automation-google-sheets-ai)
 
 ## Frequently Asked Questions

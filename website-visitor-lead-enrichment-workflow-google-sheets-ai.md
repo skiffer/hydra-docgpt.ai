@@ -116,7 +116,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [website visitor AI enrichment](/website-visitor-ai-enrichment-google-sheets/)
 - [website visitor lead research](/website-visitor-lead-research-google-sheets-ai/)
-- [Clay in Sheets account research](/clay-in-sheets-account-research/)
+- [Clay in Sheets account research](/google-sheets-ai-account-research-buyers-guide/)
 
 ## Safety, compliance, and data quality
 

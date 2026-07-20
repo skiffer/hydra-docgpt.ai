@@ -124,7 +124,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Serp Competitor Intelligence Google Sheets Ai](/serp-competitor-intelligence-google-sheets-ai/)
 - [Programmatic Seo Google Sheets Ai](/programmatic-seo-google-sheets-ai/)
-- [Seo Keyword Clustering Google Sheets Ai](/seo-keyword-clustering-google-sheets-ai/)
+- [Seo Keyword Clustering Google Sheets Ai](/gpt-for-sheets-for-seo-teams/)
 - [Ai Search Prompt Testing Google Sheets](/ai-search-prompt-testing-google-sheets/)
 
 ## Safety, compliance, and data quality

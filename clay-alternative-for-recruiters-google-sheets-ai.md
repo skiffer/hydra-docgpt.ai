@@ -124,7 +124,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [recruiter candidate research](/recruiter-candidate-research-google-sheets-ai/)
+- [recruiter candidate research](/google-sheets-ai-account-research-buyers-guide/)
 - [recruiting agency enrichment](/recruiting-agency-candidate-enrichment-google-sheets-ai/)
 - [recruiter outreach personalization](/recruiter-outreach-personalization-google-sheets-ai/)
 

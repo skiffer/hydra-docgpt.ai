@@ -123,8 +123,8 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Ai Lead Enrichment Real Estate Agents Google Sheets](/ai-lead-enrichment-real-estate-agents-google-sheets/)
-- [Local Business Prospecting Google Sheets Ai](/local-business-prospecting-google-sheets-ai/)
-- [Google Maps Business Enrichment Google Sheets Ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Local Business Prospecting Google Sheets Ai](/ai-lead-enrichment-google-sheets-guide/)
+- [Google Maps Business Enrichment Google Sheets Ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
 
 ## Safety, compliance, and data quality

@@ -127,8 +127,8 @@ Verify certifications and partnerships from official sources. Do not imply insur
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Auto dealer lead research google sheets ai](/auto-dealer-lead-research-google-sheets-ai/)
-- [Local business prospecting google sheets ai](/local-business-prospecting-google-sheets-ai/)
-- [Google maps business enrichment google sheets ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Local business prospecting google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
+- [Google maps business enrichment google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Customer review response google sheets ai](/customer-review-response-google-sheets-ai/)
 - [Docs/gpt for sheets/gpt functions](/docs/gpt-for-sheets/gpt-functions)
 

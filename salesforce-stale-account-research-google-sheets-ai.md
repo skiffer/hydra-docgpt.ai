@@ -112,7 +112,7 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 ## Internal links and next workflows
 
 - [Salesforce account research](/salesforce-account-research-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [Customer success account summaries](/customer-success-account-summaries-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

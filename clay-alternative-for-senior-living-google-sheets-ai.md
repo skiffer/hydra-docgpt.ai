@@ -115,7 +115,7 @@ The strongest use case is turning a flat list of communities, operators, and car
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 - [Categorize leads by industry](/categorize-leads-by-industry-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 
 ## Safety, compliance, and data quality
 

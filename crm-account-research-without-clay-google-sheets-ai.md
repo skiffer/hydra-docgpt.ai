@@ -110,7 +110,7 @@ Preserve CRM IDs, maintain audit trails, and verify current product features bef
 - [Install GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/hubspot-export-enrichment-google-sheets-ai/](/hubspot-export-enrichment-google-sheets-ai/)
 - [/crm-data-enrichment-google-sheets-ai](/crm-data-enrichment-google-sheets-ai)
 

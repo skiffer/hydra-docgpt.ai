@@ -126,7 +126,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/google-sheets-ai-firmographic-enrichment-template/](/google-sheets-ai-firmographic-enrichment-template/)
 - [/enrich-company-domains-from-google-sheets-ai/](/enrich-company-domains-from-google-sheets-ai/)
-- [/icp-scoring-formulas-google-sheets-ai/](/icp-scoring-formulas-google-sheets-ai/)
+- [/icp-fit-scoring-google-sheets-ai/](/icp-fit-scoring-google-sheets-ai/)
 - [/clay-in-sheets-lead-enrichment/](/clay-in-sheets-lead-enrichment/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 

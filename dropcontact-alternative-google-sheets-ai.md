@@ -118,7 +118,7 @@ If you need deterministic, repeatable cleaning at very high volume, strict GDPR-
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clean and enrich CSV leads in Sheets](/clean-enrich-csv-leads-google-sheets-ai/)
 - [CSV lead list dedupe + enrichment](/csv-lead-list-dedupe-enrichment-google-sheets-ai/)
-- [CRM cleanup and deduping](/crm-cleanup-deduping-google-sheets-ai/)
+- [CRM cleanup and deduping](/gpt-for-sheets-for-b2b-sales/)
 - [AI enrichment for CSV exports](/ai-enrichment-for-csv-exports-google-sheets/)
 
 ## Safety, compliance, and data quality

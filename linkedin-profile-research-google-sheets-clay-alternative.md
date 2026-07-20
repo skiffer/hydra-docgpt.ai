@@ -141,7 +141,7 @@ Do not instruct scraping LinkedIn or bypassing terms. Say users should use data 
 
 - [linkedin lead list enrichment google sheets ai](/linkedin-lead-list-enrichment-google-sheets-ai/)
 - [sales navigator export enrichment google sheets ai](/sales-navigator-export-enrichment-google-sheets-ai/)
-- [recruiter candidate research google sheets ai](/recruiter-candidate-research-google-sheets-ai/)
+- [recruiter candidate research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)

@@ -125,7 +125,7 @@ Do not invent owner names, emails, or private details. Use source fields, respec
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [local business enrichment template google sheets ai](/local-business-enrichment-template-google-sheets-ai/)
 - [google sheets local business enrichment template](/google-sheets-local-business-enrichment-template/)
-- [google maps business enrichment google sheets ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [google maps business enrichment google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [local business directory cleanup enrichment google sheets ai](/local-business-directory-cleanup-enrichment-google-sheets-ai/)
 
 ## Frequently Asked Questions

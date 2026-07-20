@@ -118,7 +118,7 @@ The strongest use case is turning a flat list into prioritized tiers your reps c
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
-- [ICP scoring formulas in Google Sheets](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 - [B2B SaaS account scoring in Sheets](/b2b-saas-account-scoring-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 

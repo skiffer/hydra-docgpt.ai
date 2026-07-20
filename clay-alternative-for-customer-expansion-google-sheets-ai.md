@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of customer success and e
 - [Customer success account summaries](/customer-success-account-summaries-google-sheets-ai/)
 - [HubSpot stale account reactivation without Clay](/hubspot-stale-account-reactivation-without-clay-google-sheets-ai/)
 - [Salesforce stale account research without Clay](/salesforce-account-research-without-clay-google-sheets-ai/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

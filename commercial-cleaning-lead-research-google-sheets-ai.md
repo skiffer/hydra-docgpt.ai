@@ -121,7 +121,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 - [Local Business Research Google Sheets AI](/local-business-research-google-sheets-ai/)
 - [Small Business Enrichment Tool Google Sheets AI](/small-business-enrichment-tool-google-sheets-ai/)
 - [Write Personalized Cold Email Lines Google Sheets AI](/write-personalized-cold-email-lines-google-sheets-ai/)
-- [Local Business Prospecting Google Sheets AI](/local-business-prospecting-google-sheets-ai/)
+- [Local Business Prospecting Google Sheets AI](/ai-lead-enrichment-google-sheets-guide/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [Compare GPT for Sheets plans](/gpt-for-sheets/#pricing)
 

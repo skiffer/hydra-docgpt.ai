@@ -117,7 +117,7 @@ The strongest use case is turning a raw export into a prioritized outreach list.
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Google Maps business enrichment in Sheets](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google Maps business enrichment in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Clay alternative for local business prospecting](/clay-alternative-local-business-prospecting-google-sheets-ai/)
 - [Dedupe a lead list in Google Sheets](/dedupe-lead-list-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)

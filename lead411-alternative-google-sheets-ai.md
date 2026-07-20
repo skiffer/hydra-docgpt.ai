@@ -118,7 +118,7 @@ Use GPT for Sheets to turn your account list into prioritized, reasoned tiers. P
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Intent signal research in Sheets](/intent-signal-research-google-sheets-ai/)
-- [B2B sales account research in Sheets](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research in Sheets](/google-sheets-ai-account-research-buyers-guide/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 

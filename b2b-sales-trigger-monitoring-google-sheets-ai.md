@@ -122,7 +122,7 @@ The best results come from prompts that are narrow, sourced, and easy to review.
 
 - [Founder Led Sales Trigger Monitoring Google Sheets Ai](/founder-led-sales-trigger-monitoring-google-sheets-ai/)
 - [Intent Signal Research Google Sheets Ai](/intent-signal-research-google-sheets-ai/)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Funding News Trigger Research Google Sheets Ai](/funding-news-trigger-research-google-sheets-ai/)
 - [Gpt For Sheets](/gpt-for-sheets/)
 - [Gpt For Sheets/#Pricing](/gpt-for-sheets/#pricing)

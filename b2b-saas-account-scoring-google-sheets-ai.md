@@ -114,8 +114,8 @@ A practical sheet for ICP scoring and account-fit explanations for SaaS sales us
 
 Use these related DocGPT pages to build a complete workflow:
 
-- [/b2b-sales-account-research-google-sheets-ai/](/b2b-sales-account-research-google-sheets-ai/)
-- [/icp-scoring-formulas-google-sheets-ai/](/icp-scoring-formulas-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
+- [/icp-fit-scoring-google-sheets-ai/](/icp-fit-scoring-google-sheets-ai/)
 - [/saas-account-research-google-sheets-ai/](/saas-account-research-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 

@@ -125,7 +125,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 - [GPT for Sheets](/gpt-for-sheets/)
 - [pricing](/gpt-for-sheets/#pricing)
 - [local business research](/local-business-research-google-sheets-ai/)
-- [local business prospecting](/local-business-prospecting-google-sheets-ai/)
+- [local business prospecting](/ai-lead-enrichment-google-sheets-guide/)
 - [home services lead prospecting](/home-services-lead-prospecting-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

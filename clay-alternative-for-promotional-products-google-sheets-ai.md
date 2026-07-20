@@ -118,7 +118,7 @@ The strongest use case is when you already have a list of prospects and need str
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [B2B event booth follow-up in Sheets](/b2b-event-booth-follow-up-google-sheets-ai/)
-- [Local business prospecting in Sheets](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Cold email personalization in Sheets](/cold-email-personalization-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 

@@ -115,7 +115,7 @@ The strongest fit is a spreadsheet-first workflow where your team already has ro
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Clay alternative for B2B sales](/clay-alternative-b2b-sales-google-sheets-ai/)
-- [Clay in Sheets account research](/clay-in-sheets-account-research/)
+- [Clay in Sheets account research](/google-sheets-ai-account-research-buyers-guide/)
 - [intent signal research](/intent-signal-research-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

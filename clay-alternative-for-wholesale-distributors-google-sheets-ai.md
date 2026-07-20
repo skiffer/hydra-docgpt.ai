@@ -114,8 +114,8 @@ The strongest use case is turning a flat list of retailers, contractors, and B2B
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Categorize leads by industry](/categorize-leads-by-industry-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
-- [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
+- [Apollo export enrichment](/ai-lead-enrichment-google-sheets-guide/)
 
 ## Safety, compliance, and data quality
 

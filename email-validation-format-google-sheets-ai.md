@@ -109,7 +109,7 @@ The strongest use case is a quick pre-send pass that removes broken addresses an
 - [Extract email addresses from text](/gmail-email-extractor/)
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Categorize leads by industry](/categorize-leads-by-industry-google-sheets-ai/)
-- [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)
+- [Apollo export enrichment](/ai-lead-enrichment-google-sheets-guide/)
 - [ICP fit scoring in Google Sheets](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

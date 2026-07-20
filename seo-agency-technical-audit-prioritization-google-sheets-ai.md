@@ -127,7 +127,7 @@ Do not promise ranking gains. Technical recommendations should be reviewed by an
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Programmatic seo google sheets ai](/programmatic-seo-google-sheets-ai/)
-- [Seo keyword clustering google sheets ai](/seo-keyword-clustering-google-sheets-ai/)
+- [Seo keyword clustering google sheets ai](/gpt-for-sheets-for-seo-teams/)
 - [Bulk meta descriptions google sheets ai](/bulk-meta-descriptions-google-sheets-ai/)
 - [Seo client prospect prioritization google sheets ai](/seo-client-prospect-prioritization-google-sheets-ai/)
 - [Docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)

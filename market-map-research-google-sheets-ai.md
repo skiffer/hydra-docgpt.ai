@@ -110,7 +110,7 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/competitor-research-google-sheets-ai/](/competitor-research-google-sheets-ai/)
-- [/competitive-intelligence-tracker-google-sheets-ai/](/competitive-intelligence-tracker-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-based-marketing-research-google-sheets-ai/](/account-based-marketing-research-google-sheets-ai/)
 
 ## FAQ {#faq}

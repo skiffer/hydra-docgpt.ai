@@ -125,7 +125,7 @@ Before using the output externally:
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
 - [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
-- [/clay-alternative-google-sheets-lead-enrichment/](/clay-alternative-google-sheets-lead-enrichment/)
+- [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
 - [/google-sheets-ai-firmographic-enrichment-template/](/google-sheets-ai-firmographic-enrichment-template/)
 
 ## FAQ

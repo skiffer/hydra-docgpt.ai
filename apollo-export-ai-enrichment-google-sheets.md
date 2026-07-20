@@ -114,7 +114,7 @@ A practical sheet for Apollo CSV enrichment, ICP scoring, and personalization us
 
 Use these related DocGPT pages to build a complete workflow:
 
-- [/apollo-export-enrichment-google-sheets-ai/](/apollo-export-enrichment-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/apollo-clay-alternative-google-sheets-ai/](/apollo-clay-alternative-google-sheets-ai/)
 - [/cold-email-personalization-google-sheets-ai/](/cold-email-personalization-google-sheets-ai/)
 - [/gpt-for-sheets/](/gpt-for-sheets/)

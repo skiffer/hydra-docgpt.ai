@@ -110,7 +110,7 @@ Keep CRM IDs and source fields intact. Human-review AI research before sales dec
 - [Install GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
-- [/clay-in-sheets-account-research/](/clay-in-sheets-account-research/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/account-research-automation-google-sheets-ai/](/account-research-automation-google-sheets-ai/)
 - [/account-tiering-scoring-google-sheets-ai](/account-tiering-scoring-google-sheets-ai)
 

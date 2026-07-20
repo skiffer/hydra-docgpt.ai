@@ -129,9 +129,9 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/agency-lead-research-google-sheets-ai/](/agency-lead-research-google-sheets-ai/)
+- [/google-sheets-ai-account-research-buyers-guide/](/google-sheets-ai-account-research-buyers-guide/)
 - [/agency-reporting-insights-google-sheets-ai/](/agency-reporting-insights-google-sheets-ai/)
-- [/clay-alternative-google-sheets-lead-enrichment/](/clay-alternative-google-sheets-lead-enrichment/)
+- [/clay-alternative-google-sheets/](/clay-alternative-google-sheets/)
 
 ## Safety, compliance, and data quality
 

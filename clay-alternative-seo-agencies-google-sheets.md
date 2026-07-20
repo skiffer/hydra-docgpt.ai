@@ -122,10 +122,10 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Seo Keyword Clustering Google Sheets Ai](/seo-keyword-clustering-google-sheets-ai/)
+- [Seo Keyword Clustering Google Sheets Ai](/gpt-for-sheets-for-seo-teams/)
 - [Serp Competitor Intelligence Google Sheets Ai](/serp-competitor-intelligence-google-sheets-ai/)
-- [Agency Lead Research Google Sheets Ai](/agency-lead-research-google-sheets-ai/)
-- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Agency Lead Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
+- [Clay Alternative Google Sheets Lead Enrichment](/clay-alternative-google-sheets/)
 
 ## Safety, compliance, and data quality
 

@@ -119,7 +119,7 @@ The strongest use case is when you already have a list of prospects and need str
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Construction bid research in Sheets](/construction-bid-research-google-sheets-ai/)
 - [Construction equipment dealer lead enrichment](/construction-equipment-dealer-lead-enrichment-google-sheets-ai/)
-- [Local business prospecting in Sheets](/local-business-prospecting-google-sheets-ai/)
+- [Local business prospecting in Sheets](/ai-lead-enrichment-google-sheets-guide/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

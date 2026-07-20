@@ -132,7 +132,7 @@ Do not automate underwriting decisions or coverage advice. Outputs are research 
 - [Commercial insurance broker lead research google sheets ai](/commercial-insurance-broker-lead-research-google-sheets-ai/)
 - [Insurance agency lead research google sheets ai](/insurance-agency-lead-research-google-sheets-ai/)
 - [Clay alternative for insurance agencies google sheets ai](/clay-alternative-for-insurance-agencies-google-sheets-ai/)
-- [B2b sales account research google sheets ai](/b2b-sales-account-research-google-sheets-ai/)
+- [B2b sales account research google sheets ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)
 
 

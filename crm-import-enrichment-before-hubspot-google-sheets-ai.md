@@ -121,7 +121,7 @@ Before using the output externally:
 ## Related GPT for Sheets resources
 - [/gpt-for-sheets/](/gpt-for-sheets/)
 - [/gpt-for-sheets/#pricing](/gpt-for-sheets/#pricing)
-- [/crm-cleanup-deduping-google-sheets-ai/](/crm-cleanup-deduping-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 - [/hubspot-contact-enrichment-google-sheets-ai/](/hubspot-contact-enrichment-google-sheets-ai/)
 - [/hubspot-export-lead-scoring-google-sheets-ai/](/hubspot-export-lead-scoring-google-sheets-ai/)
 - [/google-sheets-ai-data-cleaning-for-crm-imports/](/google-sheets-ai-data-cleaning-for-crm-imports/)

@@ -112,7 +112,7 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/ecommerce-product-data-enrichment-google-sheets-ai/](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [/gpt-for-sheets-for-ecommerce/](/gpt-for-sheets-for-ecommerce/)
 - [/ecommerce-supplier-research-google-sheets-ai/](/ecommerce-supplier-research-google-sheets-ai/)
 - [/shopify-catalog-cleanup-google-sheets-ai/](/shopify-catalog-cleanup-google-sheets-ai/)
 - [/bulk-product-descriptions-google-sheets-ai/](/bulk-product-descriptions-google-sheets-ai/)

@@ -116,7 +116,7 @@ Test on a small sample first. If the output is generic, make the prompt narrower
 
 - [/gpt-for-sheets/](/gpt-for-sheets/) — product/pricing CTA.
 - [/local-business-research-google-sheets-ai/](/local-business-research-google-sheets-ai/)
-- [/local-business-prospecting-google-sheets-ai/](/local-business-prospecting-google-sheets-ai/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 - [/google-maps-local-business-enrichment-google-sheets-ai/](/google-maps-local-business-enrichment-google-sheets-ai/)
 - [/local-business-clay-alternative-google-sheets-ai/](/local-business-clay-alternative-google-sheets-ai/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)

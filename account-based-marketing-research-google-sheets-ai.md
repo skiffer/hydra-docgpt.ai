@@ -122,8 +122,8 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [B2B Sales Account Research Google Sheets Ai](/b2b-sales-account-research-google-sheets-ai/)
-- [Competitive Intelligence Tracker Google Sheets Ai](/competitive-intelligence-tracker-google-sheets-ai/)
+- [B2B Sales Account Research Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
+- [Competitive Intelligence Tracker Google Sheets Ai](/google-sheets-ai-account-research-buyers-guide/)
 - [Cold Email Personalization Google Sheets Ai](/cold-email-personalization-google-sheets-ai/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
 

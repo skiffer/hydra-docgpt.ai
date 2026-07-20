@@ -122,7 +122,7 @@ The strongest use case is when you already hold a list and need structured AI ou
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Claude for Google Sheets how-to guide](/claude-for-google-sheets-how-to-guide/)
 - [Clay in Sheets lead enrichment](/clay-in-sheets-lead-enrichment/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 - [Outbound personalization formulas](/outbound-personalization-formulas-google-sheets-ai/)
 
 ## Safety, compliance, and data quality

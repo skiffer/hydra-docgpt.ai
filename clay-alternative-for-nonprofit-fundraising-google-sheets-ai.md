@@ -122,7 +122,7 @@ The strongest use case is when you already have a list of nonprofit fundraising 
 - [Nonprofit donor research](/nonprofit-donor-research-google-sheets-ai/)
 - [Nonprofit grant prospect research](/nonprofit-grant-prospect-research-google-sheets-ai/)
 - [Nonprofit donor outreach mail merge](/nonprofit-donor-outreach-mail-merge-google-sheets/)
-- [Clay alternative in Google Sheets](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative in Google Sheets](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

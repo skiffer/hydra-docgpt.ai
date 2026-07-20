@@ -114,7 +114,7 @@ A good prompt is specific about output shape. Ask for bullets, JSON, a score wit
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [/car-dealership-lead-qualification-google-sheets-ai/](/car-dealership-lead-qualification-google-sheets-ai/)
 - [/car-dealer-inventory-descriptions-google-sheets-ai/](/car-dealer-inventory-descriptions-google-sheets-ai/)
-- [/ai-lead-enrichment-car-dealerships-google-sheets/](/ai-lead-enrichment-car-dealerships-google-sheets/)
+- [/ai-lead-enrichment-google-sheets-guide/](/ai-lead-enrichment-google-sheets-guide/)
 
 ## FAQ {#faq}
 

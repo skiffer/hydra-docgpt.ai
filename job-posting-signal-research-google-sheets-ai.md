@@ -112,8 +112,8 @@ The strongest use case is when you already have rows in a spreadsheet and need s
 ## Internal links and next workflows
 
 - [Funding/news trigger research](/funding-news-trigger-research-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 - [GPT for Sheets](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 

@@ -122,7 +122,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets](/gpt-for-sheets/)
 - [pricing](/gpt-for-sheets/#pricing)
-- [local business prospecting](/local-business-prospecting-google-sheets-ai/)
+- [local business prospecting](/ai-lead-enrichment-google-sheets-guide/)
 - [domain enrichment](/domain-enrichment-google-sheets-ai/)
 - [GPT for Sheets upgrade](/gpt-for-sheets-upgrade/)
 

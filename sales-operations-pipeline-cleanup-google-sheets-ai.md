@@ -125,7 +125,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/crm-cleanup-deduping-google-sheets-ai/](/crm-cleanup-deduping-google-sheets-ai/)
+- [/gpt-for-sheets-for-b2b-sales/](/gpt-for-sheets-for-b2b-sales/)
 - [/salesforce-account-research-google-sheets-ai/](/salesforce-account-research-google-sheets-ai/)
 - [/hubspot-lead-enrichment-google-sheets-ai/](/hubspot-lead-enrichment-google-sheets-ai/)
 

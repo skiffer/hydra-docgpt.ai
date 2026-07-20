@@ -118,9 +118,9 @@ The strongest use case is when you already have an export and need structured AI
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)
+- [Apollo export enrichment](/ai-lead-enrichment-google-sheets-guide/)
 - [AI enrichment for CSV exports](/ai-enrichment-for-csv-exports-google-sheets/)
-- [Clay alternative for lead enrichment](/clay-alternative-google-sheets-lead-enrichment/)
+- [Clay alternative for lead enrichment](/clay-alternative-google-sheets/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 
 ## Safety, compliance, and data quality

@@ -125,7 +125,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/ecommerce-product-data-enrichment-google-sheets-ai/](/ecommerce-product-data-enrichment-google-sheets-ai/)
+- [/gpt-for-sheets-for-ecommerce/](/gpt-for-sheets-for-ecommerce/)
 - [/bulk-product-descriptions-google-sheets-ai/](/bulk-product-descriptions-google-sheets-ai/)
 - [/local-business-research-google-sheets-ai/](/local-business-research-google-sheets-ai/)
 

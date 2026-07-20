@@ -122,7 +122,7 @@ Use these related GPT for Sheets guides to connect this workflow with lead enric
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [Crm Cleanup Deduping Google Sheets Ai](/crm-cleanup-deduping-google-sheets-ai/)
+- [Crm Cleanup Deduping Google Sheets Ai](/gpt-for-sheets-for-b2b-sales/)
 - [Cold Email Personalization Google Sheets Ai](/cold-email-personalization-google-sheets-ai/)
 - [Ai Lead Enrichment Google Sheets Guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Ai Lead Scoring Formulas Google Sheets](/ai-lead-scoring-formulas-google-sheets/)

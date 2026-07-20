@@ -128,7 +128,7 @@ AI cleanup is a draft. Keep source columns visible and verify high-value rows be
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [Local business research google sheets ai](/local-business-research-google-sheets-ai/)
 - [Deduplicate company list google sheets ai](/deduplicate-company-list-google-sheets-ai/)
-- [Google maps business enrichment google sheets ai](/google-maps-business-enrichment-google-sheets-ai/)
+- [Google maps business enrichment google sheets ai](/ai-lead-enrichment-google-sheets-guide/)
 - [Local seo citation cleanup google sheets ai](/local-seo-citation-cleanup-google-sheets-ai/)
 - [Docs/gpt for sheets/get started](/docs/gpt-for-sheets/get-started)
 

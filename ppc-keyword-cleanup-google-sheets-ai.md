@@ -125,7 +125,7 @@ Use these related GPT for Sheets resources to connect this workflow with lead en
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [/seo-keyword-clustering-google-sheets-ai/](/seo-keyword-clustering-google-sheets-ai/)
+- [/gpt-for-sheets-for-seo-teams/](/gpt-for-sheets-for-seo-teams/)
 - [/serp-analysis-google-sheets-guide/](/serp-analysis-google-sheets-guide/)
 - [/agency-reporting-insights-google-sheets-ai/](/agency-reporting-insights-google-sheets-ai/)
 

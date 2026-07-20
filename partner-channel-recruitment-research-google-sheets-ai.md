@@ -120,7 +120,7 @@ The strongest use case is when you already have a list and need structured, revi
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
 - [Build a prospect list in Google Sheets with AI](/build-prospect-list-in-google-sheets-with-ai/)
 - [AI lead scoring formulas for Google Sheets](/ai-lead-scoring-formulas-google-sheets/)
-- [B2B sales account research in Sheets](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research in Sheets](/google-sheets-ai-account-research-buyers-guide/)
 
 ## Safety, compliance, and data quality
 

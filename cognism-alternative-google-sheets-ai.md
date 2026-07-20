@@ -116,9 +116,9 @@ If your team relies on licensed contact data, verified phone numbers, or specifi
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [ZoomInfo alternative in Google Sheets](/zoominfo-alternative-google-sheets-ai/)
-- [B2B sales account research](/b2b-sales-account-research-google-sheets-ai/)
+- [B2B sales account research](/google-sheets-ai-account-research-buyers-guide/)
 - [Account research automation](/account-research-automation-google-sheets-ai/)
-- [ICP scoring formulas](/icp-scoring-formulas-google-sheets-ai/)
+- [ICP scoring formulas](/icp-fit-scoring-google-sheets-ai/)
 
 ## Safety, compliance, and data quality
 

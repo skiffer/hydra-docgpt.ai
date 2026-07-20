@@ -111,7 +111,7 @@ The strongest use case is triaging large keyword lists into a plan. GPT for Shee
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
-- [SEO keyword clustering in Google Sheets](/seo-keyword-clustering-google-sheets-ai/)
+- [SEO keyword clustering in Google Sheets](/gpt-for-sheets-for-seo-teams/)
 - [Bulk meta descriptions in Google Sheets](/bulk-meta-descriptions-google-sheets-ai/)
 - [Classify support tickets in Google Sheets](/classify-support-tickets-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)
