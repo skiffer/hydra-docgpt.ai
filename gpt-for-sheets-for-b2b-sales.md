@@ -117,6 +117,7 @@ For B2B sales teams, the best workflows are repeatable and reviewable:
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
 - [GPT for Sheets setup guide](/docs/gpt-for-sheets/get-started)
 - [GPT functions reference](/docs/gpt-for-sheets/gpt-functions)
+- [Best AI tools for Google Sheets comparison](/best-ai-tool-for-sheets/)
 - [GPT for Sheets vs Claude for Sheets](/gpt-for-sheets-vs-claude-for-sheets/)
 - [GPT for Sheets vs Gemini for Sheets](/gpt-for-sheets-vs-gemini-for-sheets/)
 

@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay Credit-Saving Workflow for Recruiters in Google Sheets - H2: Triage hiring-manager and candidate rows before enrichment - H2: Source columns that prevent unsupported recruiting claims - H2: GPT formulas for summary, priority, missing fields, and outreach angle - H2: Which rows need deeper research or a recruiting platform - H2: Review checklist for compliant outreach - H2: FAQ"
+title: "Clay Credit-Saving Workflow for Recruiters in Google Sheets"
 permalink: /clay-credit-saving-workflow-for-recruiters-google-sheets/
-description: "Clay Credit-Saving Workflow for Recruiters in Google Sheets - H2: Triage hiring-manager and candidate rows before enrichment - H2: Source columns that prevent unsupported recruiting claims - H2: GPT formulas for summary, priority, missing fields, and outreach angle - H2: Whi"
-hero_title: "Clay Credit-Saving Workflow for Recruiters in Google Sheets - H2: Triage hiring-manager and candidate rows before enrichment - H2: Source columns that prevent unsupported recruiting claims - H2: GPT formulas for summary, priority, missing fields, and outreach angle - H2: Which rows need deeper research or a recruiting platform - H2: Review checklist for compliant outreach - H2: FAQ"
+description: "Recruiters can use GPT for Sheets to prioritize which companies/candidates/hiring managers need deeper paid enrichment."
+hero_title: "Clay Credit-Saving Workflow for Recruiters in Google Sheets"
 hero_subtitle: "Recruiters can use GPT for Sheets to prioritize which companies/candidates/hiring managers need deeper paid enrichment. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay Credit-Saving Workflow for Recruiters in Google Sheets - H2: Triage hiring-manager and candidate rows before enrichment - H2: Source columns that prevent unsupported recruiting claims - H2: GPT formulas for summary, priority, missing fields, and outreach angle - H2: Which rows need deeper research or a recruiting platform - H2: Review checklist for compliant outreach - H2: FAQ** is a spreadsheet-native workflow for Recruiters, staffing agencies, sourcers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay Credit-Saving Workflow for Recruiters in Google Sheets** is a spreadsheet-native workflow for Recruiters, staffing agencies, sourcers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -108,7 +108,12 @@ A reliable save clay credits recruiters workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Triage hiring-manager and candidate rows before enrichment - H2: Source columns that prevent unsupported recruiting claims - H2: GPT formulas for summary, priority, missing fields, and outreach angle - H2: Which rows need deeper research or a recruiting platform - H2: Review checklist for compliant outreach - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Triage hiring-manager and candidate rows before enrichment**
+- **Source columns that prevent unsupported recruiting claims**
+- **GPT formulas for summary, priority, missing fields, and outreach angle**
+- **Which rows need deeper research or a recruiting platform**
+- **Review checklist for compliant outreach**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -163,7 +168,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay credit-saving workflow for recruiters in google sheets - h2: triage hiring-manager and candidate rows before enrichment - h2: source columns that prevent unsupported recruiting claims - h2: gpt formulas for summary, priority, missing fields, and outreach angle - h2: which rows need deeper research or a recruiting platform - h2: review checklist for compliant outreach - h2: faq?
+### What is Clay Credit-Saving Workflow for Recruiters in Google Sheets?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -190,7 +195,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay credit-saving workflow for recruiters in google sheets - h2: triage hiring-manager and candidate rows before enrichment - h2: source columns that prevent unsupported recruiting claims - h2: gpt formulas for summary, priority, missing fields, and outreach angle - h2: which rows need deeper research or a recruiting platform - h2: review checklist for compliant outreach - h2: faq?",
+      "name": "What is Clay Credit-Saving Workflow for Recruiters in Google Sheets?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

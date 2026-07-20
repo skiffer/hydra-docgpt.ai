@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for Ecommerce Brands - H2: Ecommerce workflows that benefit from AI in Sheets - H2: Columns for brand, store URL, product category, wholesale fit, source evidence - H2: GPT formulas for supplier research, buyer fit, and product-data cleanup - H2: Review rules for claims, pricing, and inventory notes - H2: When to use a dedicated enrichment platform - H2: FAQ"
+title: "Clay to Google Sheets for Ecommerce Brands"
 permalink: /clay-to-google-sheets-for-ecommerce-brands/
-description: "Clay to Google Sheets for Ecommerce Brands - H2: Ecommerce workflows that benefit from AI in Sheets - H2: Columns for brand, store URL, product category, wholesale fit, source evidence - H2: GPT formulas for supplier research, buyer fit, and product-data cleanup - H2: Review"
-hero_title: "Clay to Google Sheets for Ecommerce Brands - H2: Ecommerce workflows that benefit from AI in Sheets - H2: Columns for brand, store URL, product category, wholesale fit, source evidence - H2: GPT formulas for supplier research, buyer fit, and product-data cleanup - H2: Review rules for claims, pricing, and inventory notes - H2: When to use a dedicated enrichment platform - H2: FAQ"
+description: "Ecommerce teams use Sheets for product catalogs, vendor lists, Shopify exports, marketplace research, and partner outreach; GPT for Sheets can enrich and classify rows."
+hero_title: "Clay to Google Sheets for Ecommerce Brands"
 hero_subtitle: "Ecommerce teams use Sheets for product catalogs, vendor lists, Shopify exports, marketplace research, and partner outreach; GPT for Sheets can enrich and classify rows. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for Ecommerce Brands - H2: Ecommerce workflows that benefit from AI in Sheets - H2: Columns for brand, store URL, product category, wholesale fit, source evidence - H2: GPT formulas for supplier research, buyer fit, and product-data cleanup - H2: Review rules for claims, pricing, and inventory notes - H2: When to use a dedicated enrichment platform - H2: FAQ** is a spreadsheet-native workflow for Ecommerce brands, Shopify operators, wholesale teams, marketplace sellers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for Ecommerce Brands** is a spreadsheet-native workflow for Ecommerce brands, Shopify operators, wholesale teams, marketplace sellers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative ecommerce workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Ecommerce workflows that benefit from AI in Sheets - H2: Columns for brand, store URL, product category, wholesale fit, source evidence - H2: GPT formulas for supplier research, buyer fit, and product-data cleanup - H2: Review rules for claims, pricing, and inventory notes - H2: When to use a dedicated enrichment platform - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Ecommerce workflows that benefit from AI in Sheets**
+- **Columns for brand, store URL, product category, wholesale fit, source evidence**
+- **GPT formulas for supplier research, buyer fit, and product-data cleanup**
+- **Review rules for claims, pricing, and inventory notes**
+- **When to use a dedicated enrichment platform**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for ecommerce brands - h2: ecommerce workflows that benefit from ai in sheets - h2: columns for brand, store url, product category, wholesale fit, source evidence - h2: gpt formulas for supplier research, buyer fit, and product-data cleanup - h2: review rules for claims, pricing, and inventory notes - h2: when to use a dedicated enrichment platform - h2: faq?
+### What is Clay to Google Sheets for Ecommerce Brands?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for ecommerce brands - h2: ecommerce workflows that benefit from ai in sheets - h2: columns for brand, store url, product category, wholesale fit, source evidence - h2: gpt formulas for supplier research, buyer fit, and product-data cleanup - h2: review rules for claims, pricing, and inventory notes - h2: when to use a dedicated enrichment platform - h2: faq?",
+      "name": "What is Clay to Google Sheets for Ecommerce Brands?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

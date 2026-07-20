@@ -1,6 +1,6 @@
 ---
-title: AI Email Generator
-description: Craft exceptional emails effortlessly with our advanced AI email generator—ideal for anyone aiming to elevate their email marketing to a luxury standard!
+title: Free AI Email Generator | Write Emails with AI
+description: Write an email from a short brief, then choose the tone, style, and language. Get copy-ready output from this free AI email generator.
 permalink: /ai-email-generator/
 ---
 
@@ -40,7 +40,8 @@ permalink: /ai-email-generator/
 
 <div class="container">
     <div class="form-container">
-        <h2 class="text-center">🤖 AI-Powered Email Generator </h2>
+        <h2 class="text-center">Free AI Email Generator</h2>
+        <p class="text-center text-muted">Describe the email you need, choose a tone, style, and language, then generate a copy-ready draft. Review names, dates, links, and claims before sending.</p>
         <form id="promptForm">
             <div class="form-group">
                 <label for="inputPrompt">Purpose</label>
@@ -235,7 +236,13 @@ permalink: /ai-email-generator/
         <div class="col-md-8">
             <div class="card shadow-sm">
                 <div class="card-body">
-
+                    <h2 class="h4">More email tools</h2>
+                    <ul class="mb-0">
+                        <li><a href="/docs/gpt-for-gmail">Draft and reply inside Gmail with the AI Email Assistant</a></li>
+                        <li><a href="/email-marketing-from-google-sheets-gmail/">Plan reviewed email campaigns with Google Sheets and Gmail</a></li>
+                        <li><a href="/gmail-mail-merge-from-google-sheets/">Run a Gmail mail merge from Google Sheets</a></li>
+                        <li><a href="/gmail-email-extractor/">Extract email addresses from text</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -356,7 +363,7 @@ permalink: /ai-email-generator/
     function updateCharCount() {
         const text = outputTextarea.value;
         const charCount = text.length;
-        charCountElement.textContent = `${charCount} / 300 characters`;
+        charCountElement.textContent = `${charCount} / 500 characters`;
     }
 
     // Event listener to update character count whenever the content changes

@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets - H2: Use Sheets for triage before spending enrichment credits - H2: Which real estate rows to research with GPT for Sheets first - H2: Formulas for source summary, missing fields, and outreach angle - H2: When to send a row to a dedicated enrichment platform - H2: Pilot and review checklist - H2: FAQ"
+title: "Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets"
 permalink: /clay-credit-saving-workflow-for-real-estate-agents-google-sheets/
-description: "Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets - H2: Use Sheets for triage before spending enrichment credits - H2: Which real estate rows to research with GPT for Sheets first - H2: Formulas for source summary, missing fields, and outreach angle - H2: W"
-hero_title: "Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets - H2: Use Sheets for triage before spending enrichment credits - H2: Which real estate rows to research with GPT for Sheets first - H2: Formulas for source summary, missing fields, and outreach angle - H2: When to send a row to a dedicated enrichment platform - H2: Pilot and review checklist - H2: FAQ"
+description: "A cost-control workflow can lead buyers to try GPT for Sheets for early-stage triage before using paid enrichment credits elsewhere."
+hero_title: "Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets"
 hero_subtitle: "A cost-control workflow can lead buyers to try GPT for Sheets for early-stage triage before using paid enrichment credits elsewhere. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets - H2: Use Sheets for triage before spending enrichment credits - H2: Which real estate rows to research with GPT for Sheets first - H2: Formulas for source summary, missing fields, and outreach angle - H2: When to send a row to a dedicated enrichment platform - H2: Pilot and review checklist - H2: FAQ** is a spreadsheet-native workflow for Realtors, real estate agents, small real estate teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets** is a spreadsheet-native workflow for Realtors, real estate agents, small real estate teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -108,7 +108,12 @@ A reliable save clay credits real estate workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Use Sheets for triage before spending enrichment credits - H2: Which real estate rows to research with GPT for Sheets first - H2: Formulas for source summary, missing fields, and outreach angle - H2: When to send a row to a dedicated enrichment platform - H2: Pilot and review checklist - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Use Sheets for triage before spending enrichment credits**
+- **Which real estate rows to research with GPT for Sheets first**
+- **Formulas for source summary, missing fields, and outreach angle**
+- **When to send a row to a dedicated enrichment platform**
+- **Pilot and review checklist**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -163,7 +168,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay credit-saving workflow for real estate agents in google sheets - h2: use sheets for triage before spending enrichment credits - h2: which real estate rows to research with gpt for sheets first - h2: formulas for source summary, missing fields, and outreach angle - h2: when to send a row to a dedicated enrichment platform - h2: pilot and review checklist - h2: faq?
+### What is Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -190,7 +195,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay credit-saving workflow for real estate agents in google sheets - h2: use sheets for triage before spending enrichment credits - h2: which real estate rows to research with gpt for sheets first - h2: formulas for source summary, missing fields, and outreach angle - h2: when to send a row to a dedicated enrichment platform - h2: pilot and review checklist - h2: faq?",
+      "name": "What is Clay Credit-Saving Workflow for Real Estate Agents in Google Sheets?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

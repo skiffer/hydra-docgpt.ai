@@ -130,6 +130,7 @@ Before sending, confirm:
 ## Related resources
 
 - [Mail Merge for Gmail and Google Sheets](/mail-merge-for-gmail-and-sheets/)
+- [Free AI email generator](/ai-email-generator/)
 - [How to send emails from Google Sheets](/send-emails-from-google-sheets-guide/)
 - [Mail Merge privacy information](/privacy_mail_merge/)
 

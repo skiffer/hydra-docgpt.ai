@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Google Sheets AI Lead Enrichment Buyers Guide - H2: What lead enrichment in Google Sheets should do - H2: Spreadsheet-native AI vs dedicated enrichment platforms like Clay - H2: Must-have fields: source, output, QA flag, owner, next action - H2: Example workflows by vertical - H2: Pricing and pilot checklist - H2: FAQ"
+title: "Google Sheets AI Lead Enrichment Buyers Guide"
 permalink: /google-sheets-ai-lead-enrichment-buyers-guide/
-description: "Google Sheets AI Lead Enrichment Buyers Guide - H2: What lead enrichment in Google Sheets should do - H2: Spreadsheet-native AI vs dedicated enrichment platforms like Clay - H2: Must-have fields: source, output, QA flag, owner, next action - H2: Example workflows by vertical"
-hero_title: "Google Sheets AI Lead Enrichment Buyers Guide - H2: What lead enrichment in Google Sheets should do - H2: Spreadsheet-native AI vs dedicated enrichment platforms like Clay - H2: Must-have fields: source, output, QA flag, owner, next action - H2: Example workflows by vertical - H2: Pricing and pilot checklist - H2: FAQ"
+description: "A buyers guide can route undecided visitors to GPT for Sheets as the lightweight, spreadsheet-native option and then to pricing/install CTAs."
+hero_title: "Google Sheets AI Lead Enrichment Buyers Guide"
 hero_subtitle: "A buyers guide can route undecided visitors to GPT for Sheets as the lightweight, spreadsheet-native option and then to pricing/install CTAs. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Google Sheets AI Lead Enrichment Buyers Guide - H2: What lead enrichment in Google Sheets should do - H2: Spreadsheet-native AI vs dedicated enrichment platforms like Clay - H2: Must-have fields: source, output, QA flag, owner, next action - H2: Example workflows by vertical - H2: Pricing and pilot checklist - H2: FAQ** is a spreadsheet-native workflow for Growth teams, B2B sales, agencies, recruiters, local business sellers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Google Sheets AI Lead Enrichment Buyers Guide** is a spreadsheet-native workflow for Growth teams, B2B sales, agencies, recruiters, local business sellers. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable google sheets ai lead enrichment workflow usually has these columns:
 
 ## What to build from the plan
 
-- **What lead enrichment in Google Sheets should do - H2: Spreadsheet-native AI vs dedicated enrichment platforms like Clay - H2: Must-have fields: source, output, QA flag, owner, next action - H2: Example workflows by vertical - H2: Pricing and pilot checklist - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **What lead enrichment in Google Sheets should do**
+- **Spreadsheet-native AI vs dedicated enrichment platforms like Clay**
+- **Must-have fields: source, output, QA flag, owner, next action**
+- **Example workflows by vertical**
+- **Pricing and pilot checklist**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is google sheets ai lead enrichment buyers guide - h2: what lead enrichment in google sheets should do - h2: spreadsheet-native ai vs dedicated enrichment platforms like clay - h2: must-have fields: source, output, qa flag, owner, next action - h2: example workflows by vertical - h2: pricing and pilot checklist - h2: faq?
+### What is Google Sheets AI Lead Enrichment Buyers Guide?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is google sheets ai lead enrichment buyers guide - h2: what lead enrichment in google sheets should do - h2: spreadsheet-native ai vs dedicated enrichment platforms like clay - h2: must-have fields: source, output, qa flag, owner, next action - h2: example workflows by vertical - h2: pricing and pilot checklist - h2: faq?",
+      "name": "What is Google Sheets AI Lead Enrichment Buyers Guide?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

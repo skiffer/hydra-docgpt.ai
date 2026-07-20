@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for B2B Sales Teams - H2: When a spreadsheet-native AI workflow is enough for outbound - H2: Columns for account, trigger, ICP criteria, source note, next action - H2: GPT formulas for account summary, buying-committee hypothesis, and QA - H2: CRM export/import workflow - H2: When Clay or a sales engagement platform remains appropriate - H2: FAQ"
+title: "Clay to Google Sheets for B2B Sales Teams"
 permalink: /clay-to-google-sheets-for-b2b-sales-teams/
-description: "Clay to Google Sheets for B2B Sales Teams - H2: When a spreadsheet-native AI workflow is enough for outbound - H2: Columns for account, trigger, ICP criteria, source note, next action - H2: GPT formulas for account summary, buying-committee hypothesis, and QA - H2: CRM expor"
-hero_title: "Clay to Google Sheets for B2B Sales Teams - H2: When a spreadsheet-native AI workflow is enough for outbound - H2: Columns for account, trigger, ICP criteria, source note, next action - H2: GPT formulas for account summary, buying-committee hypothesis, and QA - H2: CRM export/import workflow - H2: When Clay or a sales engagement platform remains appropriate - H2: FAQ"
+description: "Sales teams can test account research, segmentation, and personalized opener workflows inside Sheets before buying or expanding an enrichment platform."
+hero_title: "Clay to Google Sheets for B2B Sales Teams"
 hero_subtitle: "Sales teams can test account research, segmentation, and personalized opener workflows inside Sheets before buying or expanding an enrichment platform. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for B2B Sales Teams - H2: When a spreadsheet-native AI workflow is enough for outbound - H2: Columns for account, trigger, ICP criteria, source note, next action - H2: GPT formulas for account summary, buying-committee hypothesis, and QA - H2: CRM export/import workflow - H2: When Clay or a sales engagement platform remains appropriate - H2: FAQ** is a spreadsheet-native workflow for B2B sales teams, SDR managers, founder-led sales, RevOps. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for B2B Sales Teams** is a spreadsheet-native workflow for B2B sales teams, SDR managers, founder-led sales, RevOps. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative b2b sales workflow usually has these columns:
 
 ## What to build from the plan
 
-- **When a spreadsheet-native AI workflow is enough for outbound - H2: Columns for account, trigger, ICP criteria, source note, next action - H2: GPT formulas for account summary, buying-committee hypothesis, and QA - H2: CRM export/import workflow - H2: When Clay or a sales engagement platform remains appropriate - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **When a spreadsheet-native AI workflow is enough for outbound**
+- **Columns for account, trigger, ICP criteria, source note, next action**
+- **GPT formulas for account summary, buying-committee hypothesis, and QA**
+- **CRM export/import workflow**
+- **When Clay or a sales engagement platform remains appropriate**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for b2b sales teams - h2: when a spreadsheet-native ai workflow is enough for outbound - h2: columns for account, trigger, icp criteria, source note, next action - h2: gpt formulas for account summary, buying-committee hypothesis, and qa - h2: crm export/import workflow - h2: when clay or a sales engagement platform remains appropriate - h2: faq?
+### What is Clay to Google Sheets for B2B Sales Teams?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for b2b sales teams - h2: when a spreadsheet-native ai workflow is enough for outbound - h2: columns for account, trigger, icp criteria, source note, next action - h2: gpt formulas for account summary, buying-committee hypothesis, and qa - h2: crm export/import workflow - h2: when clay or a sales engagement platform remains appropriate - h2: faq?",
+      "name": "What is Clay to Google Sheets for B2B Sales Teams?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

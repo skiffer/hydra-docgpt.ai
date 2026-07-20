@@ -116,6 +116,7 @@ The strongest use case is when you already have an email list and need company-l
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
+- [Extract email addresses from text](/gmail-email-extractor/)
 - [Domain list to company research](/domain-list-company-research-google-sheets-ai/)
 - [AI lead scoring formulas](/ai-lead-scoring-formulas-google-sheets/)
 - [HubSpot list enrichment without Clay](/hubspot-list-enrichment-without-clay-google-sheets-ai/)

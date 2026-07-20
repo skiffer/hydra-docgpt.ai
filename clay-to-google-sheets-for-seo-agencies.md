@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for SEO Agencies - H2: SEO prospecting tasks that do not need a heavy enrichment setup - H2: Columns for domain, SERP note, topical fit, DR/traffic fields, contact status - H2: GPT formulas for prospect summaries, pitch angle, and risk flags - H2: Local SEO and link-building examples - H2: Comparison: spreadsheet workflow vs dedicated enrichment platform - H2: FAQ"
+title: "Clay to Google Sheets for SEO Agencies"
 permalink: /clay-to-google-sheets-for-seo-agencies/
-description: "Clay to Google Sheets for SEO Agencies - H2: SEO prospecting tasks that do not need a heavy enrichment setup - H2: Columns for domain, SERP note, topical fit, DR/traffic fields, contact status - H2: GPT formulas for prospect summaries, pitch angle, and risk flags - H2: Local"
-hero_title: "Clay to Google Sheets for SEO Agencies - H2: SEO prospecting tasks that do not need a heavy enrichment setup - H2: Columns for domain, SERP note, topical fit, DR/traffic fields, contact status - H2: GPT formulas for prospect summaries, pitch angle, and risk flags - H2: Local SEO and link-building examples - H2: Comparison: spreadsheet workflow vs dedicated enrichment platform - H2: FAQ"
+description: "SEO teams already work from SERP exports, backlink exports, citation lists, and prospect spreadsheets; GPT for Sheets can summarize, classify, and prioritize rows."
+hero_title: "Clay to Google Sheets for SEO Agencies"
 hero_subtitle: "SEO teams already work from SERP exports, backlink exports, citation lists, and prospect spreadsheets; GPT for Sheets can summarize, classify, and prioritize rows. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for SEO Agencies - H2: SEO prospecting tasks that do not need a heavy enrichment setup - H2: Columns for domain, SERP note, topical fit, DR/traffic fields, contact status - H2: GPT formulas for prospect summaries, pitch angle, and risk flags - H2: Local SEO and link-building examples - H2: Comparison: spreadsheet workflow vs dedicated enrichment platform - H2: FAQ** is a spreadsheet-native workflow for SEO agencies, link-building teams, local SEO sales teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for SEO Agencies** is a spreadsheet-native workflow for SEO agencies, link-building teams, local SEO sales teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative seo agency workflow usually has these columns:
 
 ## What to build from the plan
 
-- **SEO prospecting tasks that do not need a heavy enrichment setup - H2: Columns for domain, SERP note, topical fit, DR/traffic fields, contact status - H2: GPT formulas for prospect summaries, pitch angle, and risk flags - H2: Local SEO and link-building examples - H2: Comparison: spreadsheet workflow vs dedicated enrichment platform - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **SEO prospecting tasks that do not need a heavy enrichment setup**
+- **Columns for domain, SERP note, topical fit, DR/traffic fields, contact status**
+- **GPT formulas for prospect summaries, pitch angle, and risk flags**
+- **Local SEO and link-building examples**
+- **Comparison: spreadsheet workflow vs dedicated enrichment platform**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for seo agencies - h2: seo prospecting tasks that do not need a heavy enrichment setup - h2: columns for domain, serp note, topical fit, dr/traffic fields, contact status - h2: gpt formulas for prospect summaries, pitch angle, and risk flags - h2: local seo and link-building examples - h2: comparison: spreadsheet workflow vs dedicated enrichment platform - h2: faq?
+### What is Clay to Google Sheets for SEO Agencies?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for seo agencies - h2: seo prospecting tasks that do not need a heavy enrichment setup - h2: columns for domain, serp note, topical fit, dr/traffic fields, contact status - h2: gpt formulas for prospect summaries, pitch angle, and risk flags - h2: local seo and link-building examples - h2: comparison: spreadsheet workflow vs dedicated enrichment platform - h2: faq?",
+      "name": "What is Clay to Google Sheets for SEO Agencies?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

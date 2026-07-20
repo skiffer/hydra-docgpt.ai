@@ -106,6 +106,7 @@ The strongest use case is a quick pre-send pass that removes broken addresses an
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
+- [Extract email addresses from text](/gmail-email-extractor/)
 - [AI lead enrichment guide](/ai-lead-enrichment-google-sheets-guide/)
 - [Categorize leads by industry](/categorize-leads-by-industry-google-sheets-ai/)
 - [Apollo export enrichment](/apollo-export-enrichment-google-sheets-ai/)

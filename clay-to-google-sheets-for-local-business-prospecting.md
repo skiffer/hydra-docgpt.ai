@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for Local Business Prospecting - H2: Why local-business lists are ideal for spreadsheet AI - H2: Columns for business name, category, location, reviews, website, notes - H2: GPT formulas for service fit, website gap, and outreach angle - H2: Local compliance and claim-review checklist - H2: Dedicated enrichment platform vs Sheets workflow - H2: FAQ"
+title: "Clay to Google Sheets for Local Business Prospecting"
 permalink: /clay-to-google-sheets-for-local-business-prospecting/
-description: "Clay to Google Sheets for Local Business Prospecting - H2: Why local-business lists are ideal for spreadsheet AI - H2: Columns for business name, category, location, reviews, website, notes - H2: GPT formulas for service fit, website gap, and outreach angle - H2: Local compl"
-hero_title: "Clay to Google Sheets for Local Business Prospecting - H2: Why local-business lists are ideal for spreadsheet AI - H2: Columns for business name, category, location, reviews, website, notes - H2: GPT formulas for service fit, website gap, and outreach angle - H2: Local compliance and claim-review checklist - H2: Dedicated enrichment platform vs Sheets workflow - H2: FAQ"
+description: "Local prospecting often starts with map/directory exports and needs simple summarization, categorization, review gaps, and outreach notes."
+hero_title: "Clay to Google Sheets for Local Business Prospecting"
 hero_subtitle: "Local prospecting often starts with map/directory exports and needs simple summarization, categorization, review gaps, and outreach notes. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for Local Business Prospecting - H2: Why local-business lists are ideal for spreadsheet AI - H2: Columns for business name, category, location, reviews, website, notes - H2: GPT formulas for service fit, website gap, and outreach angle - H2: Local compliance and claim-review checklist - H2: Dedicated enrichment platform vs Sheets workflow - H2: FAQ** is a spreadsheet-native workflow for Local marketing agencies, home-service sellers, SMB prospectors. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for Local Business Prospecting** is a spreadsheet-native workflow for Local marketing agencies, home-service sellers, SMB prospectors. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative local business prospecting workflow usually has thes
 
 ## What to build from the plan
 
-- **Why local-business lists are ideal for spreadsheet AI - H2: Columns for business name, category, location, reviews, website, notes - H2: GPT formulas for service fit, website gap, and outreach angle - H2: Local compliance and claim-review checklist - H2: Dedicated enrichment platform vs Sheets workflow - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Why local-business lists are ideal for spreadsheet AI**
+- **Columns for business name, category, location, reviews, website, notes**
+- **GPT formulas for service fit, website gap, and outreach angle**
+- **Local compliance and claim-review checklist**
+- **Dedicated enrichment platform vs Sheets workflow**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for local business prospecting - h2: why local-business lists are ideal for spreadsheet ai - h2: columns for business name, category, location, reviews, website, notes - h2: gpt formulas for service fit, website gap, and outreach angle - h2: local compliance and claim-review checklist - h2: dedicated enrichment platform vs sheets workflow - h2: faq?
+### What is Clay to Google Sheets for Local Business Prospecting?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for local business prospecting - h2: why local-business lists are ideal for spreadsheet ai - h2: columns for business name, category, location, reviews, website, notes - h2: gpt formulas for service fit, website gap, and outreach angle - h2: local compliance and claim-review checklist - h2: dedicated enrichment platform vs sheets workflow - h2: faq?",
+      "name": "What is Clay to Google Sheets for Local Business Prospecting?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

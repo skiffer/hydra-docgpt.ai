@@ -56,6 +56,12 @@ def main():
         pages += 1
         url = expected_url(rel)
 
+        visible_html = re.sub(
+            r"<(script|style)\b.*?</\1>", "", html, flags=re.S | re.I
+        )
+        if re.search(r"\bH[2-6]\s*:", visible_html, re.I):
+            issues["heading-marker-in-content"].append(url)
+
         m = RE_TITLE.search(html)
         title = re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
         if not title:
@@ -69,8 +75,22 @@ def main():
             if "2024" in title:
                 issues["title-has-2024"].append(url)
 
-        if not RE_DESC.search(html):
+        if re.search(r"\bH[2-6]\s*:", title, re.I):
+            issues["metadata-heading-leak"].append(f"{url} title: {title[:90]}")
+
+        dm = RE_DESC.search(html)
+        if not dm or not dm.group(1).strip():
             issues["missing-description"].append(url)
+        else:
+            description = re.sub(r"\s+", " ", dm.group(1)).strip()
+            if len(description) > 165:
+                issues["description-too-long"].append(
+                    f"{url} ({len(description)}) {description[:90]}"
+                )
+            if re.search(r"\bH[2-6]\s*:", description, re.I):
+                issues["metadata-heading-leak"].append(
+                    f"{url} description: {description[:90]}"
+                )
 
         cm = RE_CANON.search(html)
         if not cm:

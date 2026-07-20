@@ -120,6 +120,7 @@ The most common reason people compare AI-in-Sheets tools is lead enrichment and 
 
 - [A Claude for Sheets alternative](/claude-for-sheets-alternative-google-sheets-ai/)
 - [GPT for Sheets product page](/gpt-for-sheets/)
+- [Best AI tools for Google Sheets comparison](/best-ai-tool-for-sheets/)
 - [GPT for Sheets get started](/docs/gpt-for-sheets/get-started)
 - [Apollo vs Clay vs Google Sheets AI](/apollo-vs-clay-vs-google-sheets-ai/)
 - [Upgrade GPT for Sheets](/gpt-for-sheets-upgrade/)

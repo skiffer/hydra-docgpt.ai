@@ -113,6 +113,7 @@ Email marketing needs more care than one-to-one email. Use consented contacts, h
 ## Related Mail Merge resources
 
 - [Mail Merge for Gmail and Google Sheets](/mail-merge-for-gmail-and-sheets/)
+- [Free AI email generator](/ai-email-generator/)
 - [How to run a Gmail mail merge from Google Sheets](/gmail-mail-merge-from-google-sheets/)
 - [Personalized email from Google Sheets](/personalized-email-from-google-sheets/)
 - [Mail merge with attachments in Gmail and Google Sheets](/mail-merge-with-attachments-gmail-google-sheets/)

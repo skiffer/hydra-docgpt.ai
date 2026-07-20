@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for Car Dealer BDC Teams - H2: Why dealership BDC workflows are spreadsheet-native - H2: Source columns: lead source, vehicle, appointment status, trade-in, service history note - H2: GPT formulas for priority, follow-up angle, and missing-field checks - H2: Sample BDC workflow: new lead → review → mail merge or CRM note - H2: Dedicated-platform limits and when to keep Clay - H2: FAQ"
+title: "Clay to Google Sheets for Car Dealer BDC Teams"
 permalink: /clay-to-google-sheets-for-car-dealer-bdc/
-description: "Clay to Google Sheets for Car Dealer BDC Teams - H2: Why dealership BDC workflows are spreadsheet-native - H2: Source columns: lead source, vehicle, appointment status, trade-in, service history note - H2: GPT formulas for priority, follow-up angle, and missing-field checks"
-hero_title: "Clay to Google Sheets for Car Dealer BDC Teams - H2: Why dealership BDC workflows are spreadsheet-native - H2: Source columns: lead source, vehicle, appointment status, trade-in, service history note - H2: GPT formulas for priority, follow-up angle, and missing-field checks - H2: Sample BDC workflow: new lead → review → mail merge or CRM note - H2: Dedicated-platform limits and when to keep Clay - H2: FAQ"
+description: "BDC teams need repeatable lead triage, trade-in context, service-lane follow-up, and no-show recovery; Google Sheets is common for exports and manual lists."
+hero_title: "Clay to Google Sheets for Car Dealer BDC Teams"
 hero_subtitle: "BDC teams need repeatable lead triage, trade-in context, service-lane follow-up, and no-show recovery; Google Sheets is common for exports and manual lists. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for Car Dealer BDC Teams - H2: Why dealership BDC workflows are spreadsheet-native - H2: Source columns: lead source, vehicle, appointment status, trade-in, service history note - H2: GPT formulas for priority, follow-up angle, and missing-field checks - H2: Sample BDC workflow: new lead → review → mail merge or CRM note - H2: Dedicated-platform limits and when to keep Clay - H2: FAQ** is a spreadsheet-native workflow for Auto dealer BDC managers, internet sales managers, used-car dealership operators. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for Car Dealer BDC Teams** is a spreadsheet-native workflow for Auto dealer BDC managers, internet sales managers, used-car dealership operators. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative car dealer bdc workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Why dealership BDC workflows are spreadsheet-native - H2: Source columns: lead source, vehicle, appointment status, trade-in, service history note - H2: GPT formulas for priority, follow-up angle, and missing-field checks - H2: Sample BDC workflow: new lead → review → mail merge or CRM note - H2: Dedicated-platform limits and when to keep Clay - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Why dealership BDC workflows are spreadsheet-native**
+- **Source columns: lead source, vehicle, appointment status, trade-in, service history note**
+- **GPT formulas for priority, follow-up angle, and missing-field checks**
+- **Sample BDC workflow: new lead → review → mail merge or CRM note**
+- **Dedicated-platform limits and when to keep Clay**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for car dealer bdc teams - h2: why dealership bdc workflows are spreadsheet-native - h2: source columns: lead source, vehicle, appointment status, trade-in, service history note - h2: gpt formulas for priority, follow-up angle, and missing-field checks - h2: sample bdc workflow: new lead → review → mail merge or crm note - h2: dedicated-platform limits and when to keep clay - h2: faq?
+### What is Clay to Google Sheets for Car Dealer BDC Teams?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for car dealer bdc teams - h2: why dealership bdc workflows are spreadsheet-native - h2: source columns: lead source, vehicle, appointment status, trade-in, service history note - h2: gpt formulas for priority, follow-up angle, and missing-field checks - h2: sample bdc workflow: new lead \u2192 review \u2192 mail merge or crm note - h2: dedicated-platform limits and when to keep clay - h2: faq?",
+      "name": "What is Clay to Google Sheets for Car Dealer BDC Teams?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

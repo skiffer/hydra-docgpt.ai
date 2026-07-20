@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay Credit-Saving Workflow for Car Dealers in Google Sheets - H2: Triage dealership rows before using paid enrichment - H2: Columns for lead source, vehicle interest, appointment status, service cue - H2: GPT formulas for lead priority, follow-up angle, and QA - H2: Which rows deserve deeper enrichment - H2: Safety notes for finance, trade-in, and compliance - H2: FAQ"
+title: "Clay Credit-Saving Workflow for Car Dealers in Google Sheets"
 permalink: /clay-credit-saving-workflow-for-car-dealers-google-sheets/
-description: "Clay Credit-Saving Workflow for Car Dealers in Google Sheets - H2: Triage dealership rows before using paid enrichment - H2: Columns for lead source, vehicle interest, appointment status, service cue - H2: GPT formulas for lead priority, follow-up angle, and QA - H2: Which r"
-hero_title: "Clay Credit-Saving Workflow for Car Dealers in Google Sheets - H2: Triage dealership rows before using paid enrichment - H2: Columns for lead source, vehicle interest, appointment status, service cue - H2: GPT formulas for lead priority, follow-up angle, and QA - H2: Which rows deserve deeper enrichment - H2: Safety notes for finance, trade-in, and compliance - H2: FAQ"
+description: "Dealerships can triage appointment/no-show/service-drive exports in Sheets before deciding which rows need more enrichment."
+hero_title: "Clay Credit-Saving Workflow for Car Dealers in Google Sheets"
 hero_subtitle: "Dealerships can triage appointment/no-show/service-drive exports in Sheets before deciding which rows need more enrichment. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay Credit-Saving Workflow for Car Dealers in Google Sheets - H2: Triage dealership rows before using paid enrichment - H2: Columns for lead source, vehicle interest, appointment status, service cue - H2: GPT formulas for lead priority, follow-up angle, and QA - H2: Which rows deserve deeper enrichment - H2: Safety notes for finance, trade-in, and compliance - H2: FAQ** is a spreadsheet-native workflow for Dealership BDC, used-car dealers, internet sales directors. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay Credit-Saving Workflow for Car Dealers in Google Sheets** is a spreadsheet-native workflow for Dealership BDC, used-car dealers, internet sales directors. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -108,7 +108,12 @@ A reliable save clay credits car dealers workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Triage dealership rows before using paid enrichment - H2: Columns for lead source, vehicle interest, appointment status, service cue - H2: GPT formulas for lead priority, follow-up angle, and QA - H2: Which rows deserve deeper enrichment - H2: Safety notes for finance, trade-in, and compliance - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Triage dealership rows before using paid enrichment**
+- **Columns for lead source, vehicle interest, appointment status, service cue**
+- **GPT formulas for lead priority, follow-up angle, and QA**
+- **Which rows deserve deeper enrichment**
+- **Safety notes for finance, trade-in, and compliance**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -163,7 +168,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay credit-saving workflow for car dealers in google sheets - h2: triage dealership rows before using paid enrichment - h2: columns for lead source, vehicle interest, appointment status, service cue - h2: gpt formulas for lead priority, follow-up angle, and qa - h2: which rows deserve deeper enrichment - h2: safety notes for finance, trade-in, and compliance - h2: faq?
+### What is Clay Credit-Saving Workflow for Car Dealers in Google Sheets?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -190,7 +195,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay credit-saving workflow for car dealers in google sheets - h2: triage dealership rows before using paid enrichment - h2: columns for lead source, vehicle interest, appointment status, service cue - h2: gpt formulas for lead priority, follow-up angle, and qa - h2: which rows deserve deeper enrichment - h2: safety notes for finance, trade-in, and compliance - h2: faq?",
+      "name": "What is Clay Credit-Saving Workflow for Car Dealers in Google Sheets?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

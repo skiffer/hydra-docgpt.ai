@@ -115,6 +115,7 @@ The strongest reason to choose GPT for Sheets is multi-model, formula-driven wor
 
 - [GPT for Sheets product page](/gpt-for-sheets/)
 - [GPT for Sheets pricing](/gpt-for-sheets/#pricing)
+- [Best AI tools for Google Sheets comparison](/best-ai-tool-for-sheets/)
 - [GPT for Sheets vs Claude for Sheets](/gpt-for-sheets-vs-claude-for-sheets/)
 - [Gemini for Google Sheets how-to guide](/gemini-for-google-sheets-how-to-guide/)
 - [Gemini for Google Sheets lead enrichment](/gemini-for-google-sheets-lead-enrichment/)

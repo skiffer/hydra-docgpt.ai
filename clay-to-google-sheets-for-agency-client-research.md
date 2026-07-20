@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay to Google Sheets for Agency Client Research - H2: Agency prospecting workflows that fit GPT for Sheets - H2: Columns for vertical, website notes, service gap, proof point, reviewer - H2: GPT formulas for fit scoring and proposal angle drafts - H2: Build a reusable client-research template - H2: When a specialized enrichment platform is still right - H2: FAQ"
+title: "Clay to Google Sheets for Agency Client Research"
 permalink: /clay-to-google-sheets-for-agency-client-research/
-description: "Clay to Google Sheets for Agency Client Research - H2: Agency prospecting workflows that fit GPT for Sheets - H2: Columns for vertical, website notes, service gap, proof point, reviewer - H2: GPT formulas for fit scoring and proposal angle drafts - H2: Build a reusable clien"
-hero_title: "Clay to Google Sheets for Agency Client Research - H2: Agency prospecting workflows that fit GPT for Sheets - H2: Columns for vertical, website notes, service gap, proof point, reviewer - H2: GPT formulas for fit scoring and proposal angle drafts - H2: Build a reusable client-research template - H2: When a specialized enrichment platform is still right - H2: FAQ"
+description: "Agencies need repeatable prospect research but often operate in client/prospect spreadsheets before committing to a dedicated enrichment system."
+hero_title: "Clay to Google Sheets for Agency Client Research"
 hero_subtitle: "Agencies need repeatable prospect research but often operate in client/prospect spreadsheets before committing to a dedicated enrichment system. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay to Google Sheets for Agency Client Research - H2: Agency prospecting workflows that fit GPT for Sheets - H2: Columns for vertical, website notes, service gap, proof point, reviewer - H2: GPT formulas for fit scoring and proposal angle drafts - H2: Build a reusable client-research template - H2: When a specialized enrichment platform is still right - H2: FAQ** is a spreadsheet-native workflow for Marketing agencies, boutique agencies, consultants, fractional sales teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay to Google Sheets for Agency Client Research** is a spreadsheet-native workflow for Marketing agencies, boutique agencies, consultants, fractional sales teams. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -105,7 +105,12 @@ A reliable clay alternative agencies workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Agency prospecting workflows that fit GPT for Sheets - H2: Columns for vertical, website notes, service gap, proof point, reviewer - H2: GPT formulas for fit scoring and proposal angle drafts - H2: Build a reusable client-research template - H2: When a specialized enrichment platform is still right - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Agency prospecting workflows that fit GPT for Sheets**
+- **Columns for vertical, website notes, service gap, proof point, reviewer**
+- **GPT formulas for fit scoring and proposal angle drafts**
+- **Build a reusable client-research template**
+- **When a specialized enrichment platform is still right**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -160,7 +165,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay to google sheets for agency client research - h2: agency prospecting workflows that fit gpt for sheets - h2: columns for vertical, website notes, service gap, proof point, reviewer - h2: gpt formulas for fit scoring and proposal angle drafts - h2: build a reusable client-research template - h2: when a specialized enrichment platform is still right - h2: faq?
+### What is Clay to Google Sheets for Agency Client Research?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -187,7 +192,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay to google sheets for agency client research - h2: agency prospecting workflows that fit gpt for sheets - h2: columns for vertical, website notes, service gap, proof point, reviewer - h2: gpt formulas for fit scoring and proposal angle drafts - h2: build a reusable client-research template - h2: when a specialized enrichment platform is still right - h2: faq?",
+      "name": "What is Clay to Google Sheets for Agency Client Research?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."

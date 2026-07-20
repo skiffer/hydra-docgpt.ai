@@ -1,9 +1,9 @@
 ---
 layout: seo-guide
-title: "Clay Credit-Saving Workflow for SEO Teams in Google Sheets - H2: Use AI in Sheets to pre-qualify prospect lists - H2: Columns for domain, topic, quality note, contact status, outreach fit - H2: GPT formulas for relevance, pitch angle, and risk review - H2: When to enrich or discard a prospect - H2: Reporting the savings hypothesis without overclaiming - H2: FAQ"
+title: "Clay Credit-Saving Workflow for SEO Teams in Google Sheets"
 permalink: /clay-credit-saving-workflow-for-seo-teams-google-sheets/
-description: "Clay Credit-Saving Workflow for SEO Teams in Google Sheets - H2: Use AI in Sheets to pre-qualify prospect lists - H2: Columns for domain, topic, quality note, contact status, outreach fit - H2: GPT formulas for relevance, pitch angle, and risk review - H2: When to enrich or"
-hero_title: "Clay Credit-Saving Workflow for SEO Teams in Google Sheets - H2: Use AI in Sheets to pre-qualify prospect lists - H2: Columns for domain, topic, quality note, contact status, outreach fit - H2: GPT formulas for relevance, pitch angle, and risk review - H2: When to enrich or discard a prospect - H2: Reporting the savings hypothesis without overclaiming - H2: FAQ"
+description: "SEO prospecting lists are often large and noisy; GPT for Sheets can filter/score rows before spending enrichment credits on the best prospects."
+hero_title: "Clay Credit-Saving Workflow for SEO Teams in Google Sheets"
 hero_subtitle: "SEO prospecting lists are often large and noisy; GPT for Sheets can filter/score rows before spending enrichment credits on the best prospects. Use GPT for Sheets to keep source columns, AI outputs, QA flags, and next actions in one reviewable Google Sheet."
 guide_product: "GPT for Sheets"
 primary_cta_text: "Install GPT for Sheets"
@@ -64,7 +64,7 @@ formula_cards:
 ---
 ## Short answer {#short-answer}
 
-**Clay Credit-Saving Workflow for SEO Teams in Google Sheets - H2: Use AI in Sheets to pre-qualify prospect lists - H2: Columns for domain, topic, quality note, contact status, outreach fit - H2: GPT formulas for relevance, pitch angle, and risk review - H2: When to enrich or discard a prospect - H2: Reporting the savings hypothesis without overclaiming - H2: FAQ** is a spreadsheet-native workflow for SEO teams, link-building agencies, local SEO agencies. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
+**Clay Credit-Saving Workflow for SEO Teams in Google Sheets** is a spreadsheet-native workflow for SEO teams, link-building agencies, local SEO agencies. Instead of moving every row into a separate GTM workspace or asking a chatbot one record at a time, GPT for Sheets lets you write one formula, keep the source evidence beside the result, and review output before it reaches a CRM, outreach tool, client deck, or customer-facing document.
 
 The fastest path is: [install GPT for Sheets](/gpt-for-sheets/) and test a 25-row pilot before you [compare pricing](/gpt-for-sheets/#pricing). Keep the first run small: source columns, one AI output column, one QA flag, and one human-reviewed next-action column.
 
@@ -108,7 +108,12 @@ A reliable save clay credits seo workflow usually has these columns:
 
 ## What to build from the plan
 
-- **Use AI in Sheets to pre-qualify prospect lists - H2: Columns for domain, topic, quality note, contact status, outreach fit - H2: GPT formulas for relevance, pitch angle, and risk review - H2: When to enrich or discard a prospect - H2: Reporting the savings hypothesis without overclaiming - H2: FAQ:** use this section as a checkpoint while you adapt the workflow to your own list.
+- **Use AI in Sheets to pre-qualify prospect lists**
+- **Columns for domain, topic, quality note, contact status, outreach fit**
+- **GPT formulas for relevance, pitch angle, and risk review**
+- **When to enrich or discard a prospect**
+- **Reporting the savings hypothesis without overclaiming**
+- **FAQ**
 
 For purchase-intent visitors, the value is not simply "AI in a spreadsheet." The value is a repeatable row-level process: define the source columns, run the same prompt across a controlled sample, filter rows that need review, and scale only after the output is specific enough for the team to trust.
 
@@ -163,7 +168,7 @@ Before scaling the formula, confirm that each row has:
 
 ## Frequently Asked Questions
 
-### What is clay credit-saving workflow for seo teams in google sheets - h2: use ai in sheets to pre-qualify prospect lists - h2: columns for domain, topic, quality note, contact status, outreach fit - h2: gpt formulas for relevance, pitch angle, and risk review - h2: when to enrich or discard a prospect - h2: reporting the savings hypothesis without overclaiming - h2: faq?
+### What is Clay Credit-Saving Workflow for SEO Teams in Google Sheets?
 
 It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping the original source data visible for review.
 
@@ -190,7 +195,7 @@ Start at the [GPT for Sheets product page](/gpt-for-sheets/), connect your model
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is clay credit-saving workflow for seo teams in google sheets - h2: use ai in sheets to pre-qualify prospect lists - h2: columns for domain, topic, quality note, contact status, outreach fit - h2: gpt formulas for relevance, pitch angle, and risk review - h2: when to enrich or discard a prospect - h2: reporting the savings hypothesis without overclaiming - h2: faq?",
+      "name": "What is Clay Credit-Saving Workflow for SEO Teams in Google Sheets?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "It is a Google Sheets workflow that uses GPT for Sheets formulas to summarize, classify, score, draft, and QA rows while keeping source data visible for review."
