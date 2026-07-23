@@ -1,0 +1,25 @@
+<style>
+  .vc-wrap { max-width: 980px; margin: 0 auto; color: #202124; }
+  .vc-hero { padding: 54px 32px; border-radius: 28px; background: linear-gradient(135deg, #eef4ff, #f7f0ff); text-align: center; margin-bottom: 34px; }
+  .vc-kicker { color: #5b4fc5; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .85rem; }
+  .vc-hero h1 { margin: 12px auto 16px; max-width: 760px; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.08; }
+  .vc-lead { max-width: 720px; margin: 0 auto 24px; font-size: 1.15rem; line-height: 1.65; }
+  .vc-button { display: inline-block; padding: 14px 22px; border-radius: 12px; background: #202124; color: #fff !important; font-weight: 700; text-decoration: none; }
+  .vc-button:hover { background: #4b43a8; }
+  .vc-proof { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px; color: #555; font-size: .94rem; }
+  .vc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin: 28px 0; }
+  .vc-card { padding: 22px; border: 1px solid #e2e5ea; border-radius: 18px; background: #fff; }
+  .vc-card h2, .vc-card h3 { margin-top: 0; }
+  .vc-steps { counter-reset: vc-step; padding: 0; list-style: none; }
+  .vc-steps li { position: relative; padding: 0 0 24px 54px; min-height: 42px; }
+  .vc-steps li::before { counter-increment: vc-step; content: counter(vc-step); position: absolute; left: 0; top: -4px; width: 36px; height: 36px; border-radius: 50%; background: #6257d5; color: #fff; display: grid; place-items: center; font-weight: 700; }
+  .vc-table { width: 100%; border-collapse: collapse; margin: 22px 0; }
+  .vc-table th, .vc-table td { padding: 12px; border-bottom: 1px solid #e2e5ea; text-align: left; vertical-align: top; }
+  .vc-note { padding: 18px 20px; border-left: 4px solid #6257d5; background: #f6f5ff; border-radius: 8px; }
+  .vc-related { padding: 24px; margin-top: 36px; border-radius: 18px; background: #f6f7f9; }
+  .vc-related ul { margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .vc-hero { padding: 36px 20px; }
+    .vc-table { font-size: .92rem; }
+  }
+</style>

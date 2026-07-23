@@ -9,6 +9,16 @@ Marketplace listing: https://workspace.google.com/marketplace/app/gpt_for_sheets
 
 ## Products
 
+### Video Converter 1-Click for Mac
+An offline video and audio converter for macOS with batch processing, quality and resolution controls, and local editing tools.
+- Video formats: MP4, MOV, M4V, AVI, MKV and WebM
+- Audio extraction: MP3, M4A, WAV, FLAC and OGG
+- Privacy: media processing happens locally; files are not uploaded
+- Purchase: one-time Mac App Store purchase, no subscription
+- Product page: https://docgpt.ai/video-converter-mac/
+- Support: https://docgpt.ai/video-converter-mac-support/
+- Download: https://apps.apple.com/us/app/video-converter-1-click/id6759910717?mt=12
+
 ### GPT for Sheets
 The AI agent for bulk tasks in Google Sheets.
 - Spreadsheet functions: =GPT(), =CLAUDE(), =GEMINI(), =MISTRAL(), =PERPLEXITY(), =SERP()
