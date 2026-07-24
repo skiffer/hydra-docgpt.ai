@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.2.0'
+gem 'base64', '~> 0.3'
+gem 'bigdecimal', '~> 4.0'
+gem 'csv', '~> 3.3'
+gem 'logger', '~> 1.7'
 
 group :jekyll_plugins do
   gem 'jekyll-archives', '~> 2.2.1'
