@@ -1,18 +1,18 @@
 ---
 title: "Privacy Policy: Video Converter 1-Click"
-description: "Privacy policy for Video Converter 1-Click macOS application — data collection, use, and privacy disclosure"
+description: "Privacy policy for Video Converter 1-Click on iPhone, iPad and Mac — data collection, use, and privacy disclosure"
 permalink: /privacy-video-converter-1-click/
 ---
 
 # Privacy Policy for Video Converter 1-Click
 
-**Last updated: March 3, 2026**
+**Last updated: July 24, 2026**
 
-This Privacy Policy describes how Video Converter 1-Click ("we", "our", or "us") handles your information when you use our macOS application ("App"). We are committed to protecting your privacy and being transparent about our data practices.
+This Privacy Policy describes how Video Converter 1-Click ("we", "our", or "us") handles your information when you use our application on iPhone, iPad or Mac ("App"). We are committed to protecting your privacy and being transparent about our data practices.
 
 ## 1. OVERVIEW
 
-Video Converter 1-Click is a macOS application that converts video and audio files between formats. **The App operates entirely on your device.** We do not collect, transmit, or store any personal data or user content on external servers.
+Video Converter 1-Click converts video and audio files between supported formats. **The App operates entirely on your device.** We do not collect, transmit, or store any personal data or user content on external servers.
 
 ## 2. INFORMATION WE DO NOT COLLECT
 
@@ -22,42 +22,40 @@ We want to be clear about what we **do not** do:
 - **No Usage Tracking**: We do not track how you use the App
 - **No Analytics**: We do not use any analytics or tracking frameworks
 - **No Telemetry**: We do not send any telemetry data to external servers
-- **No File Access Beyond Conversion**: We do not access, read, or transmit your files to any server — all processing happens locally on your Mac
+- **No File Access Beyond Conversion**: We do not access, read, or transmit your files to any server — all processing happens locally on your device
 - **No Cookies**: The App does not use cookies or similar tracking technologies
 - **No Advertising**: The App does not contain ads or advertising SDKs
 
 ## 3. LOCAL DATA PROCESSING
 
 ### Video & Audio Conversion
-- All video and audio conversion is performed **entirely on your device** using local processing (FFmpeg and Apple's VideoToolbox)
-- Your files never leave your Mac
-- Converted files are saved to a location you choose on your local file system
+- All video and audio conversion is performed **entirely on your device** using local media frameworks
+- Your files never leave your device
+- Converted files are shared or saved to a location you choose
 
 ### Editor Features
-- All editing operations (trim, crop, rotate, adjust, enhance, watermark, merge, extract audio) are performed locally
+- All available editing operations, including trim, merge and audio extraction, are performed locally
 - No cloud processing is involved
 
 ### Temporary Files
 - The App may create temporary files during conversion, which are automatically deleted after the operation completes
-- Temporary files are stored in the system's standard temporary directory on your Mac
+- Temporary files are stored in the operating system's standard temporary directory
 
-## 4. APPLE APP STORE & IN-APP PURCHASES
+## 4. APP STORE PURCHASES
 
-### StoreKit
-- If you purchase a premium version through the App Store, the transaction is handled entirely by Apple
-- We do not receive or store your payment information, credit card details, or Apple ID
-- Purchase verification is handled through Apple's StoreKit framework
-- Please refer to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/) for information about how Apple handles your purchase data
+- If you purchase the App through the App Store, the transaction is handled by the App Store
+- We do not receive or store your payment information, credit card details, or account credentials
+- Please refer to the App Store provider's privacy information for details about purchase processing
 
 ## 5. DATA STORAGE
 
 - **No Cloud Storage**: We do not store any of your data in the cloud
-- **No Server Communication**: The App does not communicate with any external servers (except Apple's App Store servers for purchase verification)
-- **Local Preferences**: App settings (such as default format, quality, and resolution preferences) are stored locally on your device using macOS standard defaults and are not transmitted anywhere
+- **No Server Communication**: The App does not send your media or personal data to our servers
+- **Local Preferences**: App settings (such as default format, quality, and resolution preferences) are stored locally on your device and are not transmitted anywhere
 
 ## 6. THIRD-PARTY SERVICES
 
-The App does **not** integrate with any third-party services, SDKs, or APIs that collect user data. The only external communication is with Apple's App Store for in-app purchase verification.
+The App does **not** integrate with third-party analytics, advertising services, SDKs, or APIs that collect user data.
 
 ## 7. DATA SHARING
 
